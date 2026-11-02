@@ -1,0 +1,118 @@
+FILL-HEIGHT RESEARCH FOLLOW-UP
+Accessed: 2026-11-02 America/Chicago
+Question: should small-seed crops have a higher medium bed and pea/sunflower a lower bed in shallow trays?
+Decision: document the supported relative-fill method; remove unsupported 6/8/6/8 default; use general six-cup baseline plus a separately labeled 12/12/8/8 adaptation.
+
+[C21] Scintilla Farms / Paperpot guide, 2021
+URL: https://paperpot.co/wp-content/uploads/2023/02/Microgreens-Growing-Guide.pdf
+Class: Firsthand commercial grower / equipment supplier
+Access: Fetched PDF text, 22 pages; screenshot endpoint failed
+Support: Pages 6–7 describe low/middle/high fill by crop and stacking contact.
+Limits: Paperpot geometry and mixed potting medium differ; no exact Bootstrap cups or replicated optimum. No other chemical or sanitizing instructions adopted.
+Used in: coir guide fill-height comparison and calculator preset provenance.
+Preservation: URL-only, original limited paraphrase retained here; full copyrighted text not redistributed.
+
+[C22] Mumm’s Sprouting Seeds microgreen guide
+URL: https://sprouting.com/pages/how-to-grow-microgreens
+Class: Primary seed supplier instructions
+Access: Live fetched
+Support: One-inch trays preferred; ¾-inch soil layer.
+Limits: Soil guidance, not a species-specific pure-coir dose.
+Used in: coir guide fill-height comparison and calculator preset provenance.
+Preservation: URL-only, original limited paraphrase retained here; full copyrighted text not redistributed.
+
+[C23] True Leaf Market black-oil sunflower instructions
+URL: https://trueleafmarket.com/products/sunflower-black-oil-microgreens-seeds
+Class: Primary seed supplier instructions
+Access: Live fetched
+Support: Initially fill half full with a soil or hydroponic medium.
+Limits: Article includes a covering step and other rates not adopted; no exact tray-depth normalization.
+Used in: coir guide fill-height comparison and calculator preset provenance.
+Preservation: URL-only, original limited paraphrase retained here; full copyrighted text not redistributed.
+
+[C24] Copper Dog Farms complete growing instructions
+URL: https://copperdogfarms.com/complete-instructions-2/
+Class: Firsthand microgreen farm kit instructions
+Access: Live fetched
+Support: Leave approximately ½ inch above medium in their tabletop kit.
+Limits: Different kit size and medium; no 1020 cups inferred.
+Used in: coir guide fill-height comparison and calculator preset provenance.
+Preservation: URL-only, original limited paraphrase retained here; full copyrighted text not redistributed.
+
+[C25] Johnny’s growing microgreens year-round
+URL: https://www.johnnyseeds.com/growers-library/vegetables/microgreens/year-round-micro-greens-production.html
+Class: Primary seed supplier growing guide
+Access: Search-indexed
+Support: Common 1020/20-row-flat system with 1½–2 inches mix.
+Limits: Not directly compatible with a 1¼-inch tray; retained as an example of system variation.
+Used in: coir guide fill-height comparison and calculator preset provenance.
+Preservation: URL-only, original limited paraphrase retained here; full copyrighted text not redistributed.
+
+[C26] Maryland Extension microgreens and baby greens
+URL: https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors
+Class: Extension guide
+Access: Search-indexed
+Support: General depth of 1–1½ inches moist soilless medium.
+Limits: Not a pure-coir crop split or an instruction to overfill a shallower tray.
+Used in: coir guide fill-height comparison and calculator preset provenance.
+Preservation: URL-only, original limited paraphrase retained here; full copyrighted text not redistributed.
+
+[C1 recheck] On The Grow 1020 complete guide
+URL: https://onthegrow.net/blogs/microgreens/how-to-grow-microgreens-10x20-trays-complete-guide
+Class: Primary grower instructions
+Access: Live fetched
+Support: Explicit six-cup general shallow-tray usage and matching 21 x 10.75 x 1.25 external dimensions.
+Limits: Six cups cannot simultaneously mean full-depth 1.25 inches on this footprint. Treat as usage, not physical capacity.
+Used in: coir guide fill-height comparison and calculator preset provenance.
+Preservation: URL-only, original limited paraphrase retained here; full copyrighted text not redistributed.
+
+[C2 recheck] USU Extension microgreens
+URL: https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens
+Class: Extension guide
+Access: Live fetched
+Support: Two-quart coir recipe and no-drip endpoint.
+Limits: No crop-specific medium-volume split.
+Used in: coir guide fill-height comparison and calculator preset provenance.
+Preservation: URL-only, original limited paraphrase retained here; full copyrighted text not redistributed.
+
+[C3 recheck] Bootstrap Farmer shallow 1020 product
+URL: https://www.bootstrapfarmer.com/products/microgreen-trays
+Class: Manufacturer specs
+Access: Live fetched
+Support: Exact geometry distinguishes volume and headroom.
+Limits: No manufacturer per-crop fill prescription established.
+Used in: coir guide fill-height comparison and calculator preset provenance.
+Preservation: URL-only, original limited paraphrase retained here; full copyrighted text not redistributed.
+
+[Supplement] Bootstrap Farmer media, mesh-tray, seed-to-harvest and watering guides
+URL: https://www.bootstrapfarmer.com/blogs/microgreens/microgreens-growing-media ; https://www.bootstrapfarmer.com/blogs/homesteading/how-to-use-1020-mesh-trays-for-seed-starting-and-microgreens ; https://www.bootstrapfarmer.com/blogs/microgreens/how-to-grow-microgreens-indoors-seed-to-harvest ; https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best
+Class: Manufacturer educational guides
+Access: Search-indexed
+Support: Supports distinguishing tray depth, harvest access, substrate and watering.
+Limits: No precise four-crop coir volume standard extracted.
+Used in: coir guide fill-height comparison and calculator preset provenance.
+Preservation: URL-only, original limited paraphrase retained here; full copyrighted text not redistributed.
+
+[Supplement OTG] On The Grow FAQ, medium comparison, coir overview
+URL: https://onthegrow.net/pages/faq ; https://onthegrow.net/blogs/microgreens/meet-our-new-reusable-microgreen-grow-medium-silicone ; https://onthegrow.net/blogs/microgreens/how-to-grow-microgreens-a-complete-guide-from-microgreen-experts-on-the-grow
+Class: Primary grower / commercial
+Access: Search-indexed
+Support: Further examples of general coir usage and depth language.
+Limits: Article-specific brick yields and generic depths do not define exact fill heights for every tray.
+Used in: coir guide fill-height comparison and calculator preset provenance.
+Preservation: URL-only, original limited paraphrase retained here; full copyrighted text not redistributed.
+
+[Discovery only] Grower forum anecdotes and Start Microgreens article
+URL: https://www.reddit.com/r/microgreens/comments/1gz7t1m/ ; https://startmicrogreens.com/filling-trays-and-growing-of-microgreens/
+Class: Anecdotal / secondary discovery
+Access: Search-indexed
+Support: Discovery led to the original Scintilla Farms / Paperpot manual.
+Limits: Not counted as independent validation; the secondary article repeats the primary method.
+Used in: coir guide fill-height comparison and calculator preset provenance.
+Preservation: URL-only, original limited paraphrase retained here; full copyrighted text not redistributed.
+
+NUMERIC ADAPTATION
+12 cups (small seed) and 8 cups (large seed) are selected trial targets for the user’s physical tray, not quantities reported by Scintilla Farms.
+Geometry: approximately 0.92/0.62 in beds; approximately 0.33/0.63 in headroom before seed. Actual fit must be checked with prepared seed and the upper tray.
+Original 4 mL/g hydration ratio remains an uncalibrated starting assumption; this research does not validate it.
+Historical November 1 trial notes remain preserved; old saved browser plans are retained with a visible legacy explanation.

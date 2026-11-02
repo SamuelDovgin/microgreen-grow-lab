@@ -1,0 +1,185 @@
+# Specific lighting guide: 4-foot bars, rack geometry and a 16-hour day
+
+*Compiled October 30, 2026. Source IDs L01–L16 are indexed in the [source recovery log](source_docs/research_resource_log_2026-10-30.txt). The purchase specification and starting distances are an editorial synthesis; no installed shelf has been measured.*
+
+## Start with this specification
+
+For a 48-inch shelf, shortlist **4-foot T5-style white LED bars drawing 20–24 actual watts each**, in roughly **5000–6500 K**. Begin with two bars for a modest two-tray shelf or a measured low-cost four-tray trial; allow three distributed bars on a 24-inch-deep four-tray shelf. The visualizer now opens with your purchased **Barrina T8 shop lights (B07G2Q4VZN), two 40 W fixtures per shelf**, retaining the prior 18-inch layout and 10-inch pitch. The T5 shortlist below remains an alternative, not your selected fixture. [L29] The three-bar 24-inch roomy trial remains an optional preset. The recommendation combines creator practice and dimensional reasoning, not a promise that a given count reaches a particular PPFD. [L03–L09]
+
+Prefer individually switched, linkable fixtures with suitable mounting hardware, stated voltage, certification for the exact SKU and clear connection-chain limits. Confirm dimensions between rack posts. T5 originated as a tube-diameter designation (5/8 inch); in LED listings it is a form convention, not a guarantee of photon output. Do not substitute “equivalent watts” for electrical draw. [L07,L11]
+
+A **6–10 inch gap from the upper leaves to the LED face**, initially around 8 inches, is a practical trial for modest-power bars. Check actual PPFD and temperature. The usable gap depends on optics, bar spacing, crop, airflow and fixture heat; there is no verified universal cutoff. Leave room for taller shoots instead of copying a creator’s shelf pitch without accounting for crop height. [L02,L09,L12]
+
+At **16 h on / 8 h off**, trial an average **156–208 PPFD** (about **9–12 DLI**), with **200 PPFD → 11.52 mol/m²/day** as an easy initial comparison. Virginia Tech’s microgreen-production publication gives a broader **9–16 DLI** reference; its DLI guide’s Table 3 lists **9–12** for microgreens. Crop-specific studies in the existing archive include successful lower-light conditions. These are trial reference bands, not universal minimums or proof of the best yield, nutrition or energy return. [L01,L02,L13]
+
+**What this section found:** inexpensive, distributed white LED bars are well supported as a practical starting architecture. The missing link is actual photon delivery across your canopy. Buying more watts is not a substitute for measuring that link.
+
+## Microgreen Manager: exactly how many lights?
+
+The official creator sources distinguish configurations:
+
+| Configuration | Lit shelves | Bars per shelf | Actual watts/bar | Rack lights | Rack light watts | Tray positions |
+|---|---:|---:|---:|---:|---:|---:|
+| Full starter/production synthesis | 5 | 2 | 22 | 10 | 220 | 20 if four supported trays fit per level |
+| Older beginner build | 3, with 2 lower germination shelves | 2 | 22 | 6 | 132 | 12 if four supported trays fit per lit level |
+| Optional sixth working level | 6 | 2 | 22 | 12 | 264 | 24 if four supported trays fit per level |
+
+His starter kit describes a six-tier Trinity **48 × 18 × 72 in** rack: five working levels and a top storage shelf, approximately **10-inch shelf spacing**, two **4-foot 22 W LED bars** per lit shelf and **16/8** timing. The older beginner article lights only three shelves and reserves two for germination. This explains why one shopping list has a six-pack while the later full-rack video lists ten lamps. A six-pack cannot light all five working levels with two lamps each. [L03,L08,L14]
+
+The **four trays per shelf** count is explicit in his profit-margin article. Combined with two 22 W bars, this allocates **44 W/shelf or 11 W/tray**; it does not mean a dedicated half-lamp is positioned over each tray. The two long bars distribute light across the whole shelf. The optional sixth growing level appears in the rack-layout article; its light totals above are arithmetic, not an audited photograph of every rack. [L04,L15]
+
+His lighting article says Hykolity is the inexpensive shop light he has used in large numbers, while offering stronger Barrina alternatives. Both its Hykolity link and the starter-kit light link resolve to **Amazon ASIN B07XJXPWFL**, currently titled a Hykolity 4 ft, **22 W, 6500 K, 2200 lm** T5 shop light. The current page variant is a ten-pack, whereas the starter material describes a six-pack. The manufacturer family is **SLB-1141**, with a **46.1 × 0.92 × 1.53 in** body. This is a traced product-family match, not a serial-number audit of installed fixtures. The manufacturer does not provide a validated shelf PPFD grid in the consulted page. [L06,L11]
+
+### Two unresolved details must remain visible
+
+1. **Tray fit:** four nominal 1020 trays typically place their short sides across the 48-inch width, leaving their long sides across shelf depth. A nominal 20-inch canopy cannot lie wholly inside an 18-inch-deep shelf. The tool uses illustrative **10.75 × 21.25 in outer trays**, producing **1.625 in overhang on both front and back** of an 18-inch shelf. Real outer dimensions, usable shelf depth, posts and required support differ. His starter-rack depth and production four-tray count come from separate sources; their combination does not prove contained fit. A **24-inch-deep shelf** is the clearer starting purchase for four trays.
+2. **Placement:** an older beginner article describes bars about 8 inches apart and about 2 inches from outside edges. Those dimensions do not uniquely reconstruct an 18-inch-deep shelf. The follow-up visual check of the rack chapter (about 00:57–01:50, including a frame around 01:15) supports bars near the front and rear edges. The original 18-inch reference reconstructs that placement with **2-inch centerline insets**, giving **14 inches between centers**. The separate MGM-method adaptation uses **24-inch depth**, retaining assumed 2-inch insets and using **20-inch separation**, so trays remain contained. This follows the edge-placement description and the footage; it does not claim to measure 14 inches from perspective video. The older 8-inch statement remains documented as inconsistent with this reconstruction. Exact installed coordinates, emitter height, crop height and canopy PPFD are unmeasured. [L08,L22]
+
+His crop guides corroborate two 22 W T5 LEDs, 10-inch shelf spacing and a 16-hour day. His general lighting article cites **150–300 PPFD** and **12–18 DLI**, but these bands do not map to each other at 16 hours: 150–300 PPFD calculates to **8.64–17.28 DLI**, while 12–18 DLI requires **208–313 PPFD**. Neither is a measured map of the two-bar arrangement. [L05,L06]
+
+**What this section found:** two 22 W bars per shelf is directly documented commercial practice. Its exact DLI is unknown. The rack count depends on whether lower shelves germinate or grow under lights, and tray support must be checked separately.
+
+## How the other creators compare
+
+| Source | Documented lighting | Comparison limit |
+|---|---|---|
+| On The Grow professional build | 48 × 24 in shelf; 3 × 20 W Barrina bars per 4 trays; 6 growing levels; 18 bars, 360 W; describes 9–10 in pitch and 17 h/day | The planner normalizes to 16 h. Front/middle/back bar placement is documented, but exact coordinates and optical field are not. Build’s own light-pack cost line does not cover its stated 18-bar installation; no total purchase budget is adopted. [L09] |
+| Growing With Jonah | Archived basil/cilantro notes describe 3 bars per 4 trays; 18 h examples for basil/amaranth; creator-linked Barrina T8 4 ft 42 W option | Do not assume one current linked fixture powers every older crop protocol. Count × watts is not canopy PPFD. [L10] |
+| Donny Greens | Archived links identify SunBlaster SL0900304 4 ft 54 W T5HO fluorescent and a separate 42 W Barrina T8 LED option; earlier 12/12 example | Different fixture technologies and periods. A 54 W T5HO fluorescent is not interchangeable with a 20 W LED T5. No verified universal bars-per-shelf count is assigned. [L10] |
+
+Our **20–24 W white-bar shortlist** comes principally from MGM’s 22 W shop lights and On The Grow’s 20 W distributed layout, plus current manufacturer specifications. The cited higher-power creator products are alternatives, not evidence that all microgreens require 42–54 W lamps.
+
+## Specific light families to consider
+
+| Model / role | Actual draw | Nominal / body length | Appearance / luminous claim | What is missing |
+|---|---:|---|---|---|
+| Hykolity SLB-1141, closest traced MGM family | 22 W | 4 ft / 46.1 in | 6500 K / 2200 lm | PPF, independent efficacy and installed PPFD grid. Current pack/stock differ from historical creator descriptions. [L11] |
+| Barrina AAL20 shop light, practical alternative | 20 W | 4 ft / 46.1 in | 6500 K / 2200 lm | PPF and validated shelf grid. This is not the ML20 grow-light SKU from older archive comparisons. Manufacturer lists a 270° beam; the illustrative model is not its actual optical profile. [L07] |
+
+Use actual product length for mounting: “4 ft” need not mean 48 inches of emitting area. Fixture body length is used as a provisional emitter length in the tool; true diode coverage can be shorter. Lumens weight human vision; they cannot supply an exact PAR conversion without spectral data. The guide intentionally does not repeat pasted Amazon prices as current offers. No fixtures were purchased. [L02,L07,L11,L16]
+
+## What happens as the shoots grow?
+
+`leaf-to-LED clearance = shelf pitch − upper shelf/fixture drop − medium-top elevation − shoot height`
+
+All dimensions must share a reference: pitch is lower shelf support surface to upper shelf support surface; drop is upper support surface down to LED face; medium elevation is lower support surface to the actual top of the growing medium. The generic examples use **1.5 in drop and 1.5 in medium elevation**, both **illustrative assumptions**, not measured creator dimensions. The MGM preset now uses the [detailed TRINITY rack reconstruction](05_trinity_rack_geometry.md): **1.78-inch drop** and **1.275-inch medium elevation**, assembled from published product dimensions plus explicitly editable mounting/nesting/fill assumptions. Use measured overrides for an installed result.
+
+| Shelf pitch | Shoots above medium | Clearance with those offsets | Practical implication |
+|---:|---:|---:|---|
+| 14 in | 1 in | 10 in | Room for emergence and later growth |
+| 14 in | 3 in | 8 in | Initial comparison geometry |
+| 14 in | 5 in | 6 in | Re-map near harvest |
+| 10 in | 1 in | 6 in | Tight pitch can suit a short crop |
+| 10 in | 3 in | 4 in | Below initial trial band; verify before copying |
+| 10 in | 5 in | 2 in | Very tight; taller shoots need more room |
+
+To maintain a 6–10 in gap around **5-inch shoots**, these offsets require **14–18 inch pitch**. That can reduce lit shelf count, so compare capacity as well as per-shelf lighting. Tall peas/sunflowers and short brassicas need not share one pitch. Increasing distance changes both overlap and photon loss. Lowering an entire array to fix dark edges may worsen the center-to-edge difference. [L02,L09]
+
+A long bar is an extended emitter. A whole-fixture inverse-square calculation is inappropriate at these short distances. The tool sums finite source segments instead, with its assumptions disclosed. It remains a geometry illustration and cannot establish a precise usable height range without an actual map.
+
+## Dose and electricity over your 16-hour schedule
+
+`DLI (mol/m²/day) = mean PPFD (µmol/m²/s) × 16 h/day × 0.0036`
+
+| Average canopy PPFD | DLI at 16 h | Meaning for a trial |
+|---:|---:|---|
+| 100 | 5.76 | Below broad reference, though some crop trials work at lower light |
+| 156 | 8.99 | Near the 9-DLI lower starting reference |
+| 200 | 11.52 | Convenient initial comparison point |
+| 208 | 11.98 | Near 12 DLI |
+| 250 | 14.40 | Higher-light trial in broader reference |
+| 278 | 16.01 | Near the broader upper reference |
+| 300 | 17.28 | Above broader reference; compare crop response and cost |
+
+These labels describe dose relative to references, not whether a crop will succeed. The archive’s sunflower/radish/cabbage study and chia photoperiod findings show why a universal optimum would overstate the evidence. [L01,L02,L13]
+
+`lighting kWh = rack light watts ÷ 1000 × 16 × lit days`
+
+At an **illustrative $0.15/kWh**, 30 days of operation gives:
+
+| Layout | Per-shelf kWh / 30 d | Rack kWh / 30 d | Rack cost / 30 d |
+|---|---:|---:|---:|
+| MGM 2 × 22 W, 5 lit levels | 21.12 | 105.60 | $15.84 |
+| 3 × 20 W, 5 lit levels | 28.80 | 144.00 | $21.60 |
+| On The Grow geometry, 6 lit levels, normalized to 16 h | 28.80 | 172.80 | $25.92 |
+| 2 × 20 W, one two-tray home shelf | 19.20 | 19.20 | $2.88 |
+
+Only lights are counted. For a crop, use actual **days under lights**, excluding its covered stage. Fans, cooling, water, fixture purchase, labor and unused lit tray positions need their own accounting. Three 20 W bars allocate 15 W/tray over four trays; two 22 W bars allocate 11 W/tray. This corrects the pasted 15–25 W/tray rule as a requirement: it is an approximate budgeting heuristic and can be above a documented working layout. [L04,L16]
+
+## Commission and adjust
+
+1. Install one shelf with adjustable mounting and secure tray support. Place long bars parallel to the 48-inch shelf width, distributed front-to-back.
+2. Set 16 h on/8 h off after the selected covered germination stage; keep that fixed while comparing geometry.
+3. Measure at the canopy, including center, edges and corners of **each** tray. A 3 × 3 grid per tray is a useful beginning; average a regular grid consistently.
+4. Record minimum, average, maximum, actual watts, fixture model, bar positions, leaf-to-light gap, crop and date. A point at the brightest center is not the shelf average.
+5. Convert average PPFD to DLI. Check edge values too; a satisfactory mean can hide weak corners. Minimum/mean is a comparison metric, not a universal crop acceptance standard.
+6. If the center is adequate and edges weak, first improve placement/overlap or add a distributed bar. If the entire canopy is low, trial another bar, a closer position within product/crop limits, or a higher-output documented fixture.
+7. Re-map near harvest. Measure leaf/air temperature if close placement is causing concern; record stem length, coloration, lodging and saleable yield. Repeat controlled crop batches before scaling.
+
+A calibrated quantum/PAR sensor is the strongest practical way to verify absolute PPFD. A phone can help with relative comparisons, but device response, spectrum, orientation and diffuser procedure matter. Do not turn a universal lux conversion or a manufacturer lumen claim into a precise PPFD map. Daylight adds variable photons; the tool’s calculation assumes constant electric lighting only. See the existing [measurement-tool value guide](../04_light_environment_equipment/05_light_measurement_tools_value.md). [L02,L13]
+
+## Dose over a chosen period and the reference-range result
+
+The tool now accepts **hours on each day** (default 16) and **days under lights** (default 7), plus canopy PPFD and a choice of the **9–12 starting reference** or the **9–16 broader reference**. Covered germination/blackout days do not belong in this lit-period count. [L01,L02]
+
+`daily DLI = average PPFD × light hours/day × 0.0036`
+
+`total exposure (mol/m²) = daily DLI × lit days`
+
+`period comparison band (mol/m²) = selected daily DLI band × lit days`
+
+For **200 PPFD × 16 h/day × 7 days**, daily DLI is **11.52**, total exposure is **80.64 mol/m²**, and the 9–12 reference extended over seven days is **63–84 mol/m²**. The result reads **Within reference range**. The broader seven-day comparison is **63–112 mol/m²**.
+
+At **200 PPFD for 12 h/day**, daily DLI is **8.64**. Seven days yields **60.48 mol/m²**, below the 63–84 band. Fourteen days yields **120.96 mol/m²**, still below the corresponding **126–168** band. Simply adding days cannot change the result relative to the same daily reference.
+
+These totals assume the same PPFD and schedule every day. The reference comes from **daily** guidance, not a study validating a particular lifetime crop-dose threshold. A matching cumulative total cannot establish that each day was appropriate; it can hide low/high days and does not predict yield or quality. Re-measure as shoots grow. The chart displays end-of-day cumulative totals and the daily reference extended over days; it does not model within-day light/dark transitions.
+
+Period exposure is **mol/m²**; daily DLI is **mol/m²/day**. Electrical costs now follow the chosen hours per day and show both a 30-day rack estimate and the selected period. The original tables above remain 16-hour baseline examples. The planner starts with **Auto · estimated canopy median** from lamp wattage plus explicit output assumptions and the geometry model. Fixed 100/150/200/250/300 examples and custom/measured entry remain available. No meter is needed to explore these estimates, but they do not establish actual installed lamp output. Changing time settings preserves the value. Physical layout changes clear measured readings, while explicitly assumed examples stay selected.
+
+## Remaining uncertainty and what would change the recommendation
+
+- The exact installed PPFD maps at early and harvest canopy heights for the Hykolity/Barrina arrays.
+- Actual usable rack depth, tray rims, support and post clearance; 18-inch starter racks and four-tray production counts are separate facts.
+- Measured emitter length, angular distribution, PPF and electrical draw for the purchased SKU.
+- Crop/cultivar and saleable-quality responses over repeat batches at matched water, medium and climate.
+- Whether a third modest bar improves the weakest positions enough to justify cost and reduced clearance.
+
+The first shelf’s readings and crop results can justify keeping two bars, adding a third, changing spacing or choosing a different output class. The tool does not pre-decide that purchase from wattage alone.
+
+## Sources and linked research
+
+All source URLs, support notes, limitations, preservation hashes and consultation records appear in the [full recovery log](source_docs/research_resource_log_2026-10-30.txt). Primary paths:
+
+- [L01 Virginia Tech microgreen production](https://www.pubs.ext.vt.edu/SPES/spes-756.html).
+- [L02 Virginia Tech DLI guide, Table 3 and calculation](https://www.pubs.ext.vt.edu/SPES/spes-720/spes-720.html).
+- [L03 MGM starter kit](https://microgreenmanager.com/blog/beginner-starter-kit-buy-guide), [L04 four-tray electrical allocation](https://microgreenmanager.com/blog/microgreen-profit-margin), [L05 crop conditions](https://microgreenmanager.com/blog/growing-arugula-microgreens), [L06 fixture choices](https://microgreenmanager.com/blog/best-grow-lights), [L08 earlier beginner configuration](https://microgreenmanager.com/blog/microgreen-grow-setup-beginner-profit).
+- [L07 Barrina AAL20](https://www.barrina-led.com/products/barrina-t5-20w-led-shop-lights-4ft-2200lm-6500k-linkable-emc), [L11 Hykolity SLB-1141](https://www.hykolity.com/products/led-shop-light-4ft-t5-integrated-single-fixture-22w-2200lm-6500k).
+- [L09 On The Grow rack build](https://onthegrow.net/blogs/microgreens/professional-microgreens-grow-rack-setup-step-by-step-build-guide), [L12 lighting guide](https://onthegrow.net/blogs/microgreens/microgreen-lighting-complete-guide-7-years-testing).
+- L10 existing [Jonah exact products](../15_growing_with_jonah/12_exact_products_and_supplier_links.md), [Donny exact products](../16_donny_greens/11_exact_products_and_supplier_links.md) and [creator comparison](../10_appendices/06_creator_methods_comparison_and_test_plan.md).
+- L13 existing [DLI and crop-trial synthesis](../04_light_environment_equipment/02_light_sizing_and_DLI.md).
+- L14 existing [MGM equipment/video inventory](../14_microgreen_manager/01_setup_equipment_and_purchase_list.md), [L15 rack layout](https://microgreenmanager.com/blog/maximizing-production-microgreen-farm-layout).
+- [L22 rack video chapter, starting at 00:57](https://www.youtube.com/watch?v=texxpCjbRak&t=57) — visually checked for front/rear edge placement; coordinates remain reconstructed.
+- L16 preserved [user-supplied lighting discussion](source_docs/user_supplied_lighting_notes.txt), evaluated as an earlier proposal rather than verified current pricing.
+
+
+## Current starting height and selected setup
+
+The lighting planner now selects **My Barrina T8 · 2 × 40 W** on opening. The order listing supplied November 2, 2026 identifies **B07G2Q4VZN**, nominal 4 ft, 40 W, 5,500 lm, 5000 K and a V-shaped clear cover. Two fixtures give **80 W per shelf**. A six-pack supports three shelves at that count; the retained five-lit-shelf scenario requires ten fixtures. [L29]
+
+The prior layout remains: four trays, assumed 14-inch bar separation, 10-inch pitch, **assumed** 46.1-inch lamps and 1.78-inch lamp drop (not verified dimensions for this T8), 1.275-inch medium elevation and five lit shelves; the day starts at 16 hours. The single shoot-height control defaults to **1.5 inches above the medium**, a representative mid-growth planning example rather than a measured average across crops. All lighting presets and the detailed rack page use that same starting height. With the MGM assumptions, canopy clearance is **5.445 inches**, displayed as **5.45 inches**. Adjust the one slider for the actual crop; lamp clearance changes with height. Auto now estimates PPFD using wattage plus explicit output assumptions and geometry, with its median held constant over the lit days; a custom measured reading can replace it.
+
+[University of Maryland Extension (L27)](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) gives a typical microgreen harvest height of **2–3 inches**. Three inches therefore remains a plausible crop-dependent example; it is not a universal requirement. Use the canopy height before cutting, which can exceed the length of the harvested stem. A fixed 200 PPFD example remains available, while Auto is the default and is explicitly labeled as an estimate rather than an MGM measurement.
+
+
+## Automatic estimate from lamp settings
+
+The dose dropdown defaults to **Auto · estimated canopy median**. It samples equal canopy areas on every planted tray and takes the true sample median: half the modeled canopy receives less, half more. This is not `(minimum + maximum) / 2`, and it is not the area-average light normally used for a shelf-wide DLI comparison. It represents a typical modeled canopy location; weak corners still matter.
+
+The Barrina T8 default uses **137.5 lm/W = 5,500 lm / 40 W** from the user-supplied product title [L29]. Other presets retain **100 lm/W** from [Hykolity’s 2200 lm / 22 W specification (L11)](https://www.hykolity.com/products/led-shop-light-4ft-t5-integrated-single-fixture-22w-2200lm-6500k), and **60 lm per µmol/s** from [Iowa State Extension’s rough conversion (L28)](https://yardandgarden.extension.iastate.edu/how-to/how-determine-how-much-supplemental-light-provide-indoor-plants). Thus `PPF/bar ≈ watts × selected_lumens_per_watt / 60`. The efficacy is editable under Fixture, trays & rack costs; exported assumptions record its current value. The model distributes that assumed flux downward along the fixture and samples the resulting canopy field in square meters. Changes to wattage, bar count, fixture length, spacing, pitch, medium/fixture offsets and shoot height update the estimate and dose. Rack-level count changes total electricity, not the light received on one identical shelf.
+
+For the current MGM reconstruction (2 × 22 W, 18-inch depth, 14-inch bar separation, 10-inch pitch and 1.5-inch shoots), the estimate is about **81 median PPFD**, with sampled canopy values about **34–115 PPFD**. At 16 hours/day that gives **4.66 DLI**, or **32.65 mol/m² over 7 days**, below the 9–12 reference under these assumptions. This does not establish a deficiency in his measured farm setup: its real beam, output, reflections and crop conditions remain unmeasured. The previous fixed 200 PPFD example was never a measurement of his lamps.
+
+Iowa State notes that lumen-to-photon factors can vary widely (roughly 40–80 lm per µmol/s). Holding geometry and lm/W fixed gives **0.75–1.5 times the central estimate** (about 61–121 median PPFD here). This is a spectrum-conversion sensitivity scenario, **not a confidence interval or a bound on all model error**. No additional utilization factor is applied on top of geometric spill. The default T8 listing gives about **202 median PPFD**, **11.66 DLI** and **81.62 mol/m² over seven days** with the retained geometry; these are uncalibrated model outputs, not measured T8 performance. The V-shaped beam, actual length and mounted drop still need measurement. The Hykolity-based efficacy is borrowed for other presets; it is not a verified specification for every lamp. The model excludes side emission, reflections, daylight and a growth trajectory. The displayed representative-height PPFD is held constant for period-dose arithmetic.
+
+
+[L29 · Purchased Barrina T8 shop light](https://www.amazon.com/dp/B07G2Q4VZN): product title supplied by the user November 2, 2026. Listing claims only; no independent optical test or current webpage verification. Personal order identifiers are not retained in the public guide.

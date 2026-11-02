@@ -1,0 +1,223 @@
+COCO COIR SOURCE AND MODEL NOTEBOOK
+Access/research date: 2026-11-01 America/Chicago
+User decision: how much dry coir to portion and how much starting water to stage for 1–4 shallow 1020 trays.
+All scientific-looking depth/quantity outputs are transparent geometry/recipe calculations, not crop-response predictions.
+Model source: site/dist/coir-model.js; reader guide: 12_coco_coir_preparation_and_calculator.md.
+
+[C0] User-supplied coir preparation conversation
+URL/local: local attachment, preserved as user_supplied_coir_notes_2026-11-01.txt
+Accessed: 2026-11-01 America/Chicago
+Class: user supplied
+Status: live local file
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Brick 4,536 g/51 US qt, $19.98 paid; shallow Bootstrap trays; revised 6/8/6/8 cup and 22/30/230/125 g seed trials; 4 mL/g water assumption.
+Limits: Prior assistant replies contradict each other; source URLs and attachment images absent. Claims require independent checks.
+Local preservation: source_docs/coir/user_supplied_coir_notes_2026-11-01.txt; text; sha256 9139de132a9411912232a2b6e6a81baa2e2bdc4cbe6f0e350aff82e2aad08ae9
+
+[C1] On The Grow: 10x20 complete growing guide
+URL/local: https://onthegrow.net/blogs/microgreens/how-to-grow-microgreens-10x20-trays-complete-guide
+Accessed: 2026-11-01 America/Chicago
+Class: primary grower / commercial
+Status: live indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Uses about six cups of hydrated coir for most crops in standard shallow trays.
+Limits: Other tray styles and practices differ; not a replicated crop-specific coir trial. No dry mass for this brick.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C2] USU Extension: Grow Your Own Microgreens, Stephen Beck
+URL/local: https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens
+Accessed: 2026-11-01 America/Chicago
+Class: extension protocol
+Status: live indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Two US quarts premoistened coir/1020, no-drip squeeze endpoint. Separate initial bottom-water step and drainage.
+Limits: Not a dry-brick hydration ratio. Publication and revision metadata differ across HTML/PDF/repository; no inferred expansion measurement.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C3] Bootstrap Farmer: shallow 1020 microgreen trays
+URL/local: https://www.bootstrapfarmer.com/products/microgreen-trays
+Accessed: 2026-11-01 America/Chicago
+Class: official product
+Status: live indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: 1.25 in sides; 19.75 x 9.5 in interior bottom; drainage version has 36 holes; no-hole version is separate.
+Limits: Taper and ridges are not parameterized; numerical layer depths are our rectangular approximation.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C4] Back to the Roots: Organic Coconut Coir Mulch 10lb Block
+URL/local: https://backtotheroots.com/products/organic-coconut-coir-mulch-10lb-block
+Accessed: 2026-11-01 America/Chicago
+Class: official product
+Status: live indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Current manufacturer copy describes over 2 cubic feet expansion.
+Limits: Does not prove the supplied 51 qt label wrong; exact package and yield must be checked. Not used to silently overwrite the user label.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C5] Lowe’s: Back to the Roots 51 qt, model 47037, item 6469155
+URL/local: https://www.lowes.com/pd/Back-to-the-Roots-Organic-Coir-51-Quart-Expanding-Soil-Great-for-Seeds-and-Potting-51-Quart-s-OMRI-listed-Potting-soil-mix/5023011078
+Accessed: 2026-11-01 America/Chicago
+Class: retailer product
+Status: live indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Listing describes 10 lb block expanding to 51 qt; corroborates supplied package identity.
+Limits: Marketing expansion not a measurement. Price availability is volatile; calculator uses the supplied paid amount.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C6] On The Grow: broccoli microgreens
+URL/local: https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens
+Accessed: 2026-11-01 America/Chicago
+Class: primary grower / commercial
+Status: live fetched
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: 17–25 g dry seed/1020, no presoak; describes coir filled below rim.
+Limits: No measured coir cups attached to near-rim wording; cannot equate that phrase to the six-cup general article for all trays.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C7] On The Grow: radish microgreens
+URL/local: https://onthegrow.net/blogs/microgreens/how-to-grow-radish-microgreens
+Accessed: 2026-11-01 America/Chicago
+Class: primary grower / commercial
+Status: live indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: About 25 g/1020, up to 30 g; discusses a Daikon grow on coir.
+Limits: Does not validate the chosen eight-cup fill or yield gain from extra medium.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C8] On The Grow: pea microgreens on various trays
+URL/local: https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide
+Accessed: 2026-11-01 America/Chicago
+Class: primary grower / commercial
+Status: live indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: 200–260 g dry seed for 1020 and 8–12 h soaking. Different small-kit seed and reservoir quantities are separate.
+Limits: No exact coir grams for this block. Smaller-tray quantities cannot transfer without geometry.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C9] On The Grow: sunflower microgreens
+URL/local: https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens
+Accessed: 2026-11-01 America/Chicago
+Class: primary grower / commercial
+Status: live indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: 125 g dry black-oil sunflower/1020, current rinse/no-soak approach; approximately eight-hour soak as an alternative.
+Limits: Creator experience does not establish universal no-soak superiority; no eight-cup fill requirement measured.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C10] PBS Utah Modern Gardener: planting and watering microgreens
+URL/local: https://www.pbsutah.org/blogs/modern-gardener/how-to-grow-microgreens-at-home-planting-and-watering/
+Accessed: 2026-11-01 America/Chicago
+Class: public educational demonstration
+Status: indexed excerpt; direct open 403
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Search-indexed instruction fills coir/soilless medium to top for harvesting access.
+Limits: Full video/audio not inspected. Indexed technique only; no dry coir conversion or majority claim.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C11] Natural Yield: broccoli microgreen seeds
+URL/local: https://naturalyield.com.au/shop/microgreen-seeds/broccoli-seeds/
+Accessed: 2026-11-01 America/Chicago
+Class: primary grower / commercial
+Status: live fetched
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: 28 g seed/10x20, no presoak; fill with coir or soil and flatten evenly.
+Limits: No measured coir volume or new video review. Not used to calculate coir grams.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C12] On The Grow official video library
+URL/local: https://onthegrow.net/pages/video-library
+Accessed: 2026-11-01 America/Chicago
+Class: primary creator catalog
+Status: live indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Discovery for crop walkthroughs and related guides.
+Limits: No new video transcript measurements derived; the unnamed November 2023 brick video in the paste remains unverified.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C13] Local creator-caption review and media chapters
+URL/local: 08_creator_transcript_density_and_water_review.md; data/video-review.json; ../15_growing_with_jonah/03_media_fertilizer_water_and_environment.md; ../16_donny_greens/03_media_water_light_and_environment.md
+Accessed: 2026-11-01 America/Chicago
+Class: local archive
+Status: local files
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Existing targeted caption-review record V01 identifies cabbage video D3vnBEvYDZo; media chapters retain creator-specific substrates.
+Limits: No new visual/audio verification. The supplied 2:17 timestamp is not newly certified.
+Local preservation: existing original archive research notes and structured caption annotations; no full copyrighted transcripts redistributed.
+
+[C14] On The Grow FAQ
+URL/local: https://onthegrow.net/pages/faq
+Accessed: 2026-11-01 America/Chicago
+Class: primary grower / commercial
+Status: live indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Coir hydration: mix until fluffy and damp, no dripping; discusses about one inch depth.
+Limits: General wording differs from six-cup guide. No brick-specific ratio derived.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C15] On The Grow silicone reusable medium comparison
+URL/local: https://onthegrow.net/blogs/microgreens/meet-our-new-reusable-microgreen-grow-medium-silicone
+Accessed: 2026-11-01 America/Chicago
+Class: primary grower / commercial
+Status: live indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Comparison uses six cups/1020 and its own brand-dependent brick yield.
+Limits: Commercial comparison; brick yield differs from other OTG articles. Not a mass anchor for the user brick.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C16] On The Grow growing media rankings
+URL/local: https://onthegrow.net/blogs/microgreens/hydroponic-grow-mediums-for-growing-microgreens
+Accessed: 2026-11-01 America/Chicago
+Class: primary grower / commercial
+Status: live indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Another six-cup coir example; current preference includes mesh-only peas.
+Limits: Different brick counts between articles. Do not infer grams from generic brick counts.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C17] Home Depot indexed Back to the Roots listing
+URL/local: https://www.homedepot.com/b/Outdoors-Garden-Center-Organic-Gardening-Organic-Soil-Organic-Potting-Soil/Best-Rated/Back-to-the-Roots/Ship-to-Home/N-5yc1vZ1z18gpmZehyZbwo5qZbwo60
+Accessed: 2026-11-01 America/Chicago
+Class: retailer product
+Status: indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Model 47037 is described as 10 lb expanding to 15 gallons in this result.
+Limits: Conflicting expansion wording reinforces the need to check packaging/calibrate. No default changed.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C18] MIgardener Bootstrap Farmer shallow tray listing
+URL/local: https://migardener.com/products/bootstrap-farmer-1020-shallow-tray
+Accessed: 2026-11-01 America/Chicago
+Class: retailer product
+Status: indexed
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Corroborates 1.25 in height and 19.75 x 9.5 in bottom.
+Limits: This listing defaults to no holes. Manufacturer C3 is used for drainage version details.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C19] On The Grow pea crop guide / bulk seed guide / coir radish trial / fertilizer guide
+URL/local: https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens ; https://onthegrow.net/blogs/microgreens/the-benefits-of-buying-microgreen-seeds-in-bulk-rather-than-small-batches ; https://onthegrow.net/blogs/microgreens/experimenting-with-growth-mediums-for-microgreens-coco-coir-vs-paper-towels ; https://onthegrow.net/blogs/microgreens/best-nutrients-fertilizers-for-growing-microgreens
+Accessed: 2026-11-01 America/Chicago
+Class: primary grower / commercial
+Status: indexed supplemental results
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Consulted during source discovery; primary numeric anchors are C6–C9, not these general examples.
+Limits: No fertilizer recipe or harvest prediction added to this hydration tool.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+[C20] Natural Yield grow media and substrates
+URL/local: https://naturalyield.com.au/grow-media-and-substrates/
+Accessed: 2026-11-01 America/Chicago
+Class: primary grower / commercial
+Status: indexed supplemental result
+Used in: coir guide, source ledger, calculator provenance (supplemental entries discovery only)
+Supports/key record: Confirms coir usage during source discovery.
+Limits: Not used as a mass, volume or hydration-ratio anchor.
+Local preservation: URL-only — no full source copy made; original limited paraphrase preserved in this notebook.
+
+MODEL DECISIONS
+4 mL/g is retained as a supplied practical starting assumption, not falsely attributed to a manufacturer.
+135/180 g recipe comes from rounding each exact label conversion UP to a 5 g weigh-out; mixed batch sums the rounded rows.
+12-cup near-rim preset and 13.5-cup comparison preserve earlier discussion without treating it as a crop optimum.
+Water +/-20% display is sensitivity only, not a statistical interval or prescribed final range.
+Calibration requires dry sample mass + expanded volume + a damp/no-drip observation. Optional retained water calibrates water separately.
+No daily-irrigation, nutrient dose, shelf life or harvest forecast is computed.

@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-01",
+  "crop_profiles": 54,
+  "botanical_families": 11,
+  "functional_protocol_groups": 17,
+  "reviewed_caption_tracks": 17,
+  "experimental_curves": 8,
+  "source_records": 47,
+  "preserved_primary_files": 9,
+  "checks": {
+    "crop_math": "passed",
+    "actual_crop_script_interactions": "passed",
+    "existing_lighting_math_and_interactions": "passed",
+    "existing_rack_math_and_interactions": "passed",
+    "topic_links": "0 broken / 0 warnings",
+    "portable_local_links": 283,
+    "primary_file_checksums": "passed",
+    "new_page_hub_reachability": "passed",
+    "html_control_labels": "passed",
+    "git_diff_whitespace": "passed",
+    "local_http_readiness": "passed"
+  },
+  "limits": {
+    "browser_rendering": "unverified: local browser use disabled in Work settings",
+    "publication": "not deployed: retained Sites project returned not found",
+    "transcript_scope": "17 selected caption tracks, targeted passages; not every creator video online",
+    "defaults": "source-based starting plans; local optimum requires measurements"
+  },
+  "grow_journal": {
+    "local_storage_and_failure_modes": "passed",
+    "actual_ui_save_reload_import_export": "passed",
+    "failed_trays_and_context_grouping": "passed",
+    "water_interval_mass_balance": "passed",
+    "planner_trial_and_water_handoffs": "passed",
+    "local_http_readiness": "passed",
+    "new_pages_reachable_from_hub": "passed",
+    "browser_rendering": "unverified: browser control disabled",
+    "photos": "text references only; original images not stored",
+    "sharing": "browser-local; export required to share in chat"
+  }
+}

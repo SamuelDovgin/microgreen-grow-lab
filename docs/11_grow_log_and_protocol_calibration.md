@@ -1,0 +1,78 @@
+# Grow log: record real trays and refine the protocols
+
+*Added November 1, 2026. [Open My grow log](site/dist/grow-log.html) · [seed/water planner](site/dist/crops.html).*
+
+## What is saved
+
+Use **Log this tray** in the planner to copy its original plan into a new tray record. Check the actual seed mass, tray surface, medium product/depth, seed lot, soak and emergence method, nutrient program, rack zone and position. Save one record per independently sown tray. Duplicating a setup creates a new ID and does not copy observations or harvest results.
+
+The original planner snapshot remains separate from actual inputs. Planned light and climate examples are not automatically entered as measured PPFD, temperature or RH. Check the actual-setup box after correcting copied inputs and updating the actual cover/blackout durations. Unknown measured values stay blank. An estimated germination or height measurement should be described as estimated in the notes.
+
+Each tray supports:
+
+- A supplier/lot, exact cultivar/seed form, cycle label and growing location/position.
+- Actual dry seed, usable area, medium category/product/depth, nutrient program, soak, contact/dome method, cover/stretch duration, load and light schedule.
+- Dated observations: phase, height, emergence, pre-watering weight, water supplied and drained, crop condition, measured temperature/RH/PPFD, pH/EC and free-form notes.
+- Photo **references** as filenames or URLs. Original photos are not uploaded, embedded or stored in the backup; keep them alongside the exported journal and share them separately for visual review.
+- Harvest/failure date, intended harvest stage, gross, rejected, saleable and actually sold mass, optional flavor/texture scores and loss/deviation notes.
+- The original plan and source context, creation/update times and an archive flag. Archived trays can be restored and remain in full backups.
+
+Save buttons commit the record; unsubmitted form edits are not in a backup. Editing an observation corrects that observation rather than creating a second independent tray or measurement. This is a grow journal, not an immutable compliance/audit system.
+
+## Persistence and sharing
+
+Records save in this browser’s `localStorage`. They are not written into the project’s research files or synchronized to an account, another device or this conversation. **I can analyze records you export and share here; I cannot automatically see your browser’s saved log.**
+
+Export a full JSON backup after each grow cycle. The backup includes every saved/in-memory tray, original plan snapshot, observation, photo reference and archived record. An export status explicitly notes that unsaved form edits and original images are excluded.
+
+Importing a valid Grow Lab journal merges new tray IDs and skips identical records. Conflicting versions of an existing ID are left unchanged and counted in the status; this release does not silently replace an existing tray with a different backup copy. Restore onto an empty browser store to recover a complete backup, or inspect conflicts before making manual corrections. A planner JSON export can also be imported as a new, unverified tray setup.
+
+Browser storage is tied to an origin/browser profile. Clearing site data, private browsing and moving between HTTP origins can affect availability. Behavior for local `file:` URLs is browser-dependent. Use one stable location and keep exported backups. The page checks actual storage access and reports failures. If storage is blocked/full, changes remain in the current tab and can be exported; the page does not claim they were persisted. An unreadable existing store is left untouched. A stale writer is rejected when another tab has changed the stored revision. These guards reduce accidental overwrites; they are not a cloud synchronization or transactional multi-user system. [G01,G02]
+
+## A useful recording routine
+
+1. **At sowing:** save the dry seed mass, lot, cultivar, actual growing surface and root zone. Label the tray with its journal label/ID. Give trays from the same sowing round a shared cycle label and distinct positions.
+2. **During emergence:** record surface moisture, estimated emergence, cover changes, hull problems and any deviations. These observations help identify a seed-contact or lot problem that would be hidden by harvest mass alone.
+3. **Under lights:** record representative height/leaf stage and a consistent complete-tray weight. Enter water and drainage explicitly, including zero when measured as none. Log corner drying, wilt, patches, condensation or airflow changes as observations, not diagnosed causes.
+4. **At harvest:** record the actual date and intended product stage. Weigh gross, rejected and saleable material separately where possible. A failed tray records zero saleable grams; it is not deleted from the comparison. Sold grams remain separate from usable crop mass.
+5. **After the cycle:** export a backup. Share it here with the question you want answered: density, water demand, emergence method, timing, quality or throughput. Include the referenced photos if visual symptoms matter.
+
+## Comparing results without inventing an optimum
+
+Completed, nonarchived records enter comparison groups only after their actual setup is verified and they have seed-lot, medium-product, nutrient, growing-zone, harvest-stage and measured PPFD/temperature/RH context. The journal separates recorded cultivar, lot, media/depth, nutrition, cover/soak/load, light/climate and growing-zone differences. Tray **position** and sowing-cycle label remain recorded but are not grouping barriers, so independent shelf-position replicates and repeated cycles can be compared.
+
+Missing context is listed as an exclusion, while the raw tray remains saved. A new grower can log useful observations with unknown fields; those records do not become automatically controlled density evidence. Exact context matching is conservative and cannot verify unrecorded environment fluctuations or prove causality.
+
+The comparison groups seed input by `seed grams / usable m²` and elapsed sow-to-harvest days, then shows saleable area yield, independent tray count, sample SD and cycle-label count. Failed trays contribute zero. Observations within one tray are **not independent tray replicates**. One seed rate gives an observed baseline. A richer comparison is marked repeated only when each treatment/time group has at least three trays and spans at least two cycle labels; labels alone do not prove independent experimental runs or treatment balance.
+
+Use **Analyze this group in the planner** to pass that one group’s tray rows into the existing bounded optimizer. It ranks observed means under the selected objective. It does not rewrite the archive’s published defaults or establish a universally optimal density. A group CSV remains available when browser-to-page transfer is unavailable. The journal JSON retains the richer context omitted from the compact optimizer CSV.
+
+## Learning water demand from logged weights
+
+An observation’s weight is measured **before watering**. Water added and drained are recorded at that same check after the weight. For consecutive under-light observations:
+
+`apparent water loss(mL) ≈ previous pre-watering weight(g) + previous water added(mL) − previous drainage(mL) − current pre-watering weight(g)`
+
+`apparent loss(mm/day) = apparent loss / [usable area(m²) × 1000] × 24 / elapsed hours`
+
+The estimate assumes water density near 1 g/mL, consistent complete-tray contents and no unlogged water inputs/outputs between checks. Missing water/drainage stays unknown and excludes that interval. Nonpositive time and net mass gain are excluded, not forced into a drought estimate. Plant growth, seed-water uptake, evaporative loss outside the tray and changing reservoir/assembly contents can bias the result.
+
+The page displays the elapsed-time-weighted average of the latest three complete under-light intervals. It can transfer this input to the planner only with a verified setup, a recorded weighing convention and demand inside the planner’s 0.1–6 mm/day range. The slider rounds to 0.1 mm/day, and the planner displays the source tray and uncertainty note. This replaces an illustrative loss input; it does not validate a refill threshold, extrapolate demand to a different stage/environment, or establish crop safety.
+
+## How a protocol refinement should be made
+
+Keep the best-supported starting recipe while accumulating tray evidence. A first local density comparison can use 75%, 100% and 125% of that rate with independent tray repeats, randomized/blocked positions and multiple sowing cycles. Hold other conditions and the intended harvest stage constant. Test substrate or irrigation changes in a separate comparison unless the experiment is designed for multiple factors.
+
+After reviewing a shared backup, a proposed refinement should identify the crop/lot/system, outcome being improved, observed tradeoff, number of trays/cycles, variation, failed trays and the next test. Changes remain local working protocols until the evidence justifies a broader claim. The tool supplies arithmetic and organization; interpreting causes and changing protocols still requires review.
+
+## Verification and implementation access
+
+The browser log is implemented by `site/dist/grow-log-model.js` and `site/dist/grow-log.js`, with a small planner handoff script. It stores plain JSON with a versioned schema and validates backups before merging. Tests cover persistence/reload, duplicate/conflicting imports, zero-saleable failures, invalid harvest mass, missing context, conservative grouping, repeated-cycle checks, water bookkeeping, storage quota/availability/corruption, stale tabs and actual UI event handlers.
+
+Run `node site/test-grow-log.cjs`, `node site/test-grow-log-interactions.cjs` and `node site/test-grow-log-planner.cjs`, then the crop interaction regression and shared link audit. Browser visual rendering remains a separate verification step; browser control is disabled in this environment. The self-contained portable ZIP includes the journal alongside the existing tools.
+
+## Sources
+
+- **G01:** MDN, [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage), consulted November 1, 2026. Supports origin/profile persistence, storage exceptions, private-session behavior and undefined/browser-dependent `file:` behavior. API documentation, not a guarantee of backup durability. URL-only; no full article redistributed.
+- **G02:** MDN, [Window.sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), consulted November 1, 2026. Supports tab/origin-scoped temporary handoff and possible storage exceptions. Not cloud synchronization. URL-only; no full article redistributed.
+- Existing agronomic rationale: [density/water synthesis](07_seed_density_water_and_family_protocols.md), [model specification](10_crop_model_equations_and_validation.md), and [dated source notebook](source_docs/research_resource_log_2026-11-01.txt). The journal adds measurement and record handling; it does not introduce new agronomic constants.

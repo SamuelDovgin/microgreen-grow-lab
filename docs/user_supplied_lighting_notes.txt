@@ -1,0 +1,273 @@
+Worked for 1m 29s
+You do not need expensive, specialized grow lights to grow microgreens. Affordable white LED shop lights, including the T5 models you're looking at on Amazon, can work very well.
+
+For standard 1020 trays (10 × 20 inches), I'd start with approximately 15–25 watts of actual LED power per tray, assuming reasonably efficient lights mounted close to the plants. But the more important measurement is how much light actually reaches the seedlings.
+
+1. What does T5 mean?
+(1 Pack) Barrina T5 LED FIXTURE, 4FT, 2200lm, 6500K (Super Bright Whit
+ – Electric Deals
+
+T5 describes the tube size, not how powerful the light is.
+
+T = tubular
+
+5 = five eighths of an inch in diameter (approximately 16 mm)
+
+T8 = eight eighths, or 1 inch (25.4 mm)
+
+Originally, these labels described fluorescent tubes. LED manufacturers now also use them for similarly shaped fixtures.
+
+A T5 light isn't automatically better or worse than a T8, and T5 does not mean full-spectrum or plant-specific lighting.
+
+For microgreens, focus on the light's intensity, efficiency, coverage, color spectrum, and price instead.
+
+2. How much light does a microgreen tray actually need?
+The scientific metric is PPFD, measured in µmol/m²/s. It tells you how much photosynthetically useful light reaches the plants.
+
+Virginia Tech's 2026 microgreen production guide recommends a daily light integral (DLI) of approximately 9–16 mol/m²/day, depending on the crop and production goals. 
+
+Virginia Tech
+
+At 16 hours of lighting per day:
+
+PPFD at the plants
+
+Daily light (DLI)
+
+Assessment
+
+100
+
+5.8
+
+Low
+
+150
+
+8.6
+
+Near lower target
+
+200
+
+11.5
+
+Good starting target
+
+250
+
+14.4
+
+Higher-intensity target
+
+300
+
+17.3
+
+Above general range; crop-dependent
+
+I would initially target approximately 200 PPFD for 16 hours daily, then adjust for individual crops and your measured results.
+
+How many 20W T5 lights?
+Example: two 1020 trays on a 4-foot shelf
+
+
+Top-down conceptual layout: two 20W strips distributed above two trays. Not to scale.
+2
+LED bars
+40W
+Total power
+20W
+Per tray
+For inexpensive 20W T5 strips, here's my practical starting configuration:
+
+Tray arrangement
+
+Number of 20W bars
+
+Total watts
+
+2 trays on a 4-ft shelf
+
+2
+
+40W
+
+4 trays on a 4-ft shelf that fits them
+
+4
+
+80W
+
+6 trays across shelving
+
+6
+
+120W
+
+These are initial configurations, not guaranteed PPFD outputs. Light-bar optics, mounting distance and the amount of light lost outside the tray determine actual intensity.
+
+Start with the lights about 6–10 inches above the crop canopy, measure the PPFD across the trays, and adjust height or quantity as needed. Community growers report good results with two Barrina T5 strips per shelf, with some using three. 
+
+Reddit
++1
+
+3. Best deals from your Amazon results
+These are the listings and advertised prices in the Amazon page you shared.
+
+Light
+
+Pack price
+
+Per light
+
+Advertised output
+
+Ghiuop T5, 20-pack
+
+$99.99
+
+$5.00
+
+20W each
+
+Ensenior T5, 6-pack
+
+$43.29
+
+$7.22
+
+20W, 2,000 lm
+
+Hykolity T5, 6-pack
+
+$44.64
+
+$7.44
+
+22W, 2,200 lm
+
+Barrina T5, 8-pack
+
+$59.99
+
+$7.50
+
+20W, 2,200 lm
+
+Barrina T5, 12-pack
+
+$89.99
+
+$7.50
+
+20W, 2,200 lm
+
+Barrina T5, 6-pack
+
+$49.99
+
+$8.33
+
+20W, 2,200 lm
+
+Prices before tax or applicable checkout discounts. Lumens are manufacturer claims, not verified PAR measurements.
+Barrina 8-Pack LED T5 Integrated Single Fixture 4FT 2200lm 6500K (Super Bright White) 20W Utility Shop Light Ceiling and Under Cabinet Light ETL Listed Corded Electric with ON/Off Switch
+Best balanced purchase
+
+Barrina 8-Pack LED T5 Integrated Single Fixture 4FT 2200lm 6…
+
+8-pack · 20W · 2,200 lumens · 6500K
+
+Established model, linkable fixtures, useful mounting accessories, and reasonable cost per lamp.
+
+$59.99 at Walmart - Barrina
+
+View retailer listing
+4ft 20-Watt T5 LED Shop Light, 6500K Daylight White, Linkable Utility Lighting for Garage/Ceiling/Under Cabinet, 6-Pack 27ISA05542 - The Home Depot
+
+Cheapest small-pack option among established listings
+
+Ensenior T5 4FT 6500K six-pack
+
+$43.29 for six in your Amazon results
+
+Slightly fewer advertised lumens than Barrina, but a little cheaper per fixture.
+
+View on Amazon
+The Ghiuop 20-pack is the cheapest per light, but I couldn't establish its certification and long-term reliability as confidently. I wouldn't buy twenty just to save money before testing the setup.
+
+4. What color temperature should you choose?
+Color
+
+Appearance
+
+Suitability
+
+3000K
+
+Warm yellowish white
+
+Usable, but not my first choice
+
+4000K
+
+Neutral white
+
+Good
+
+5000K
+
+Daylight white
+
+Excellent
+
+6500K
+
+Cool bluish white
+
+Excellent
+
+For your setup, 5000K or 6500K is fine. I wouldn't pay extra simply because a fixture is marketed as "full spectrum." The actual delivered PPFD and spectral distribution matter more than the label. 
+
+MU Extension
+
+5. Measure before buying more lights
+Since Barrina shop lights generally don't publish a detailed PPFD map, I'd verify the lighting after installation rather than relying exclusively on wattage. 
+
+Linkable & Corded El
+
+The Photone – Grow Light Meter iPhone app measures PPFD and estimates DLI. It requires a diffuser over the camera, and some features are paid. It's a useful budget approximation, although a calibrated quantum sensor is preferable for precision. 
+
+Photone
+
+Interactive lighting calculator
+
+Number of 1020 trays
+4
+
+Lighting hours per day
+16 h
+
+Measured PPFD at tray level
+200 µmol/m²/s
+
+Electricity rate ($/kWh)
+0.15
+Initial lamp estimate
+4 × 20W
+One bar per tray, distributed across shelving
+Calculated DLI
+11.5
+mol/m²/day
+Monthly electricity
+$5.76
+30 days, lighting only
+Using $7.50 lights
+$30.00
+Initial lamp cost
+The lamp quantity is an installation starting point, not a prediction of PPFD. The DLI calculator uses your entered or measured PPFD independently of the lamp count.
+
+My purchase recommendation: I'd get the Barrina 8-pack for $59.99 if you're building multiple shelves, install two bars above your first two trays, run them for 16 hours, and measure the light before installing the rest.
+
+That should give you a cost-effective foundation without committing to expensive horticultural fixtures before you know whether your crops need them.

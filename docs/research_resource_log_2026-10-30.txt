@@ -1,0 +1,412 @@
+LIGHTING RESEARCH RESOURCE LOG — October 30, 2026 (America/Chicago)
+Purpose: recover the exact recommendation trail, distinguish measurements from assumptions, and preserve consulted context. No installed shelf was measured.
+Usage map: guide sections cite L01–L16, L22 and L24–L26; L17–L21 and L23 record consultation/discovery context. Model constants are separately classified in 02_lighting_model_and_validation.md.
+
+[L01] Introduction to Microgreen Production in Indoor Vertical Farms and Greenhouses — SPES-756NP
+URL: https://www.pubs.ext.vt.edu/SPES/spes-756.html
+Accessed: 2026-10-30 America/Chicago
+Class: Extension primary educational guidance
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: General DLI 9–16; example 250 PPFD for 18 h gives 16.2 DLI.
+Limits: Guidance is crop/system dependent. No performance guarantee for a particular bar.
+Local preservation: site/dist/sources/virginia-tech-microgreen-production-SPES-756.pdf; format .pdf; capture/reuse 2026-10-30; sha256 8f68282ed08af4b6166b53adb54fab4e0539fe44a1c48794913926e23562f18d
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L02] Calculating and Using Daily Light Integral — SPES-720NP
+URL: https://www.pubs.ext.vt.edu/SPES/spes-720/spes-720.html
+Accessed: 2026-10-30 America/Chicago
+Class: Extension primary educational guidance
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Table 3 lists micro-greens 9–12 DLI. Steady electric DLI conversion and distance/uniformity tradeoff.
+Limits: Table reference is not a cultivar optimum. Web prose has some unit typos; use dimensional mol/m²/day conversion.
+Local preservation: site/dist/sources/virginia-tech-DLI-SPES-720.pdf; format .pdf; capture/reuse 2026-10-30; sha256 ced63c97d8eef94535bc9cbe880413b395e6eee9db26bd502d3ac6c1c310dff2
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L03] The Microgreen Farmer’s Starter Kit (Buy Guide) — Garrett Corwin
+URL: https://microgreenmanager.com/blog/beginner-starter-kit-buy-guide
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party practice
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Published Apr 15, 2026: five working shelves, two 22 W bars/shelf, 16/8 timer; top storage. PDF identifies 48×18×72 rack.
+Limits: Six-pack wording does not cover ten-light full rack. Historical creator prices not live checkout.
+Local preservation: site/dist/sources/microgreen-farmer-starter-kit.pdf; format .pdf; capture/reuse 2026-10-30; sha256 ab7453aacabc767035c9df7ebde92eaec5bba9e5f258fc959b96b8298cf8b305
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L04] The Profit Margins for 24 of the Most Common Microgreens — Garrett Corwin
+URL: https://microgreenmanager.com/blog/microgreen-profit-margin
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party cost assumptions
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Explicit four trays per shelf, two 22 W lights, 16 hours; derived 11 W/tray.
+Limits: Production cost allocation is not measured PPFD or proof four trays fit an 18-inch shelf.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L05] Growing Arugula Microgreens — Garrett Corwin
+URL: https://microgreenmanager.com/blog/growing-arugula-microgreens
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party crop protocol
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Conditions table corroborates 10-inch shelf spacing, 2×22 W T5 LEDs and 16 h on/8 off.
+Limits: Does not measure canopy distance, PAR grid or optimal setting.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L06] Best Lights for Growing Microgreens — Garrett Corwin
+URL: https://microgreenmanager.com/blog/best-grow-lights
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party use and recommendations
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Hykolity described as long-used low-cost fixture; alternatives include 20 W T5 and 42 W T8 Barrina. Article PPFD 150–300 and DLI 12–18 are not equivalent bands at 16 h.
+Limits: No installed PPFD grid. Simplified spectrum claims are not adopted as botanical proof. Prices dated.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L07] Barrina AAL20 4ft 20W 6500K EMC shop light
+URL: https://www.barrina-led.com/products/barrina-t5-20w-led-shop-lights-4ft-2200lm-6500k-linkable-emc
+Accessed: 2026-10-30 America/Chicago
+Class: Official product manufacturer
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: 20 W; 46.1×0.9×1.4-inch body; nominal 4 ft; 6500 K, 2200 lm; stated 270-degree beam.
+Limits: Manufacturer claims, no validated shelf PPFD map. AAL20 shop SKU differs from ML20 grow SKU. No current purchase-price recommendation is made.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L08] How to Start Growing Microgreens for Profit with Less Than $1,000
+URL: https://microgreenmanager.com/blog/microgreen-grow-setup-beginner-profit
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party beginner procedure
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Three upper lit levels with two bars each; two lower germination levels; six lights total. Describes roughly 8-inch bar separation.
+Limits: Placement wording about 2-inch edges and 8-inch separation does not uniquely reproduce stated rack dimensions. Six lamps is not a fully lit five-level rack.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L09] How to Build a Professional Microgreens Grow Rack — On The Grow, Jan 27 2026
+URL: https://onthegrow.net/blogs/microgreens/professional-microgreens-grow-rack-setup-step-by-step-build-guide
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party practice
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: 48×24 shelf; four 1020 trays/shelf; three 20 W bars; six lit levels, 18 lamps; 9–10-inch pitch and 17-hour operating example.
+Limits: Tool normalizes 17 to 16 h. Exact coordinates/PPFD unknown. Article pack-cost list does not supply all 18 bars; budget not adopted.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L10] Existing Jonah and Donny creator investigations and comparison
+URL: local archive: 15_growing_with_jonah; 16_donny_greens; 10_appendices/06_creator_methods_comparison_and_test_plan.md
+Accessed: 2026-10-30 America/Chicago
+Class: Local archive, attributed creator practice
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Jonah: three bars/four trays in selected guides, 18 h examples, linked Barrina T8 42 W. Donny: linked SunBlaster 54 W T5HO fluorescent and separate 42 W LED; older 12/12 example.
+Limits: Reused dated prior source tracing. Not a new visual audit or proof of identical current setup.
+Local preservation: 04_creator_lighting_notes.md; format .md; capture/reuse 2026-10-30; sha256 e85f579a52b5eaeb3ffebee6b18cac8412ec77822f2d6a432349d9ac3c5239cf
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L11] Hykolity SLB-1141 manufacturer and traced MGM Amazon link B07XJXPWFL
+URL: https://www.hykolity.com/products/led-shop-light-4ft-t5-integrated-single-fixture-22w-2200lm-6500k | https://www.amazon.com/dp/B07XJXPWFL
+Accessed: 2026-10-30 America/Chicago
+Class: Official manufacturer plus creator-linked retailer
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: 22 W; 4ft nominal, 46.1×0.92×1.53 in body; 6500 K, 2200 lm. Both MGM light links resolve to this Amazon identifier; current title says ten-pack.
+Limits: Creator six-pack and current ten-pack differ. Listing/stock mutable; no PPF or full PPFD grid. Manufacturer current chain claim differs from historical creator six-light wording; use exact product instructions.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L12] Microgreen Lighting: Best Grow Lights After 7 Years of Testing — On The Grow
+URL: https://onthegrow.net/blogs/microgreens/microgreen-lighting-complete-guide-7-years-testing
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party educational page, search-index consultation
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Indexed page describes white shop lights 5500–6500 K, 6–12-inch canopy distance and 16–17 h photoperiod.
+Limits: Search-index support only in this pass; 6–10-inch initial planner gap is an editorial subset, not a measured universal optimum.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L13] Existing light sizing/DLI and measurement-tools research
+URL: local archive: research_project/04_light_environment_equipment/02_light_sizing_and_DLI.md; 05_light_measurement_tools_value.md
+Accessed: 2026-10-30 America/Chicago
+Class: Local archive scientific synthesis
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Prior species-dependent trials include lower-light sunflower/radish/cabbage cases and chia photoperiod responses. Measurement/value comparison supplies sensor caveats.
+Limits: No new paper-level reanalysis was performed on every crop study. Conclusions remain conditional on their recorded facility/cultivar designs.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L14] MGM setup, equipment and source inventory
+URL: local archive: research_project/14_microgreen_manager/01_setup_equipment_and_purchase_list.md; 09_blog_library.md
+Accessed: 2026-10-30 America/Chicago
+Class: Local archive primary-source inventory
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Video texxpCjbRak description inventory identifies ten lights; written starter/PDF inventory five working levels and 22 W bars.
+Limits: Video description metadata is not a full transcript or measured rack map.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L15] How to Maximize Rack Count in a Small Space — Garrett Corwin
+URL: https://microgreenmanager.com/blog/maximizing-production-microgreen-farm-layout
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party farm planning
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Six physical shelves generally provide five working levels; extra seventh shelf can create sixth working level.
+Limits: Does not establish measured capacity or lighting for all crop heights. Extra-level light count in guide is arithmetic.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L16] User pasted earlier lighting recommendation
+URL: User attachment Pasted text.txt; preserved unchanged in this topic
+Accessed: 2026-10-30 America/Chicago
+Class: User-supplied discussion
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Earlier 15–25 W/tray, two/four lamp table, 6–10-inch gap, 200 PPFD example and historical retailer prices were proposals to evaluate.
+Limits: Not independently verified primary evidence. Per-tray wattage treated as heuristic, prices not repeated as current.
+Local preservation: source_docs/user_supplied_lighting_notes.txt; format .txt; capture/reuse 2026-10-30; sha256 3534da47155ab1c12c5bb4c10aa34ba8ec87bb7e3f284b38aa8c428032e854bc
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L17] Electrical Considerations in Your Microgreen Farm — Garrett Corwin
+URL: https://microgreenmanager.com/blog/electrical-considerations
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party system example
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Each rack five shelves with two lamps; compares 22 W with 42 W across multi-rack systems.
+Limits: Creator is not an electrician; no circuit-design advice or wiring plan is inferred. Simple energy model only.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L18] Calculating Airflow for Your Microgreen Farm — Garrett Corwin
+URL: https://microgreenmanager.com/blog/calculating-airflow
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party educational page
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Indexed introduction advocates testing 22 vs 42 W, 8/10/12-inch shelf spacing and photoperiods.
+Limits: Discovery corroboration only; not a measured lighting trial or airflow specification.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L19] Additional MGM crop conditions: beet, basil, cilantro and sunflower
+URL: https://microgreenmanager.com/blog/growing-beet-microgreens | https://microgreenmanager.com/blog/growing-basil-microgreens | https://microgreenmanager.com/blog/growing-cilantro-microgreens | https://microgreenmanager.com/blog/growing-sunflower-microgreens
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party crop guides, search-index consultation
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Indexed tables corroborate 2×22 W/shelf, 10-inch shelf spacing and 16/8 timing.
+Limits: Corroboration; full cultivation advice not re-evaluated here.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L20] On The Grow beginner and equipment pages
+URL: https://onthegrow.net/blogs/microgreens/how-to-start-growing-microgreens-beginners-guide | https://onthegrow.net/pages/microgreen-grow-lights-setup
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party pages, search-index consultation
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Smaller home rack uses two 2-foot bars and 8–10-inch placement example; illustrates scale differences.
+Limits: Not substituted for four-foot shelf quantities. Home two-tray preset is editorial.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L22] MGM rack chapter visually inspected — YouTube texxpCjbRak, 00:57–01:50
+URL: https://www.youtube.com/watch?v=texxpCjbRak&t=57
+Accessed: 2026-10-30 America/Chicago
+Class: Creator primary video, direct visual inspection
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Downloaded a 53-second public rack chapter for local research; inspected a contact sheet and frame around 01:15. Visible bars lie toward front/rear shelf edges rather than close to shelf center. Preset changed to centers 2 and 16 inches on nominal 18-inch depth.
+Limits: The 2-inch inset/14-inch gap are an explicit reconstruction consistent with the edge-position wording, not measurements from perspective footage. Earlier article also says about 8 inches apart; both statements cannot define the same 18-inch geometry. No PPFD is inferred. Video clip and frame stay in local research records and are not included in the website ZIP.
+Local preservation: source_docs/placement_check/mgm-rack-01m15s.jpg; format .jpg; capture/reuse 2026-10-30; sha256 e39d4b4394840ab73abe7e3d5a3b5e69fcb1db8baf8463b8cc7aae01a209502c
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L23] MGM arugula day-3/day-8 article images, placement-check candidates
+URL: https://microgreenmanager.com/public/growing-arugula-microgreens-22be390f-3c99-811c-a5a9-edddb36b973d.png | https://microgreenmanager.com/public/growing-arugula-microgreens-22be390f-3c99-8106-9527-ceb1978324c8.png
+Accessed: 2026-10-30 America/Chicago
+Class: Creator first-party photographs, direct visual inspection
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Inspected the article photos for rack positioning; both are crop close-ups and do not establish light-bar locations.
+Limits: Not used to set spacing. They are recorded to make clear why video frames, rather than crop appearance, support the placement update.
+Local preservation: source_docs/placement_check/arugula-day3.png; format .png; capture/reuse 2026-10-30; sha256 7f702ed16aee53c3e921ac008bc913e099748793248540fc18e9863262f7d8ef
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L24] MGM linked Costco rack item 1242823 and matching TRINITY TBFZ-0945 family
+URL: https://www.costco.com/p/-/100412448 | https://trinityii.com/products/ecostorage-6-tier-48x18x72-wire-shelving-nsf-with-wheels-chrome
+Accessed: 2026-10-30 America/Chicago
+Class: Creator-linked retailer and manufacturer specifications
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Six 48x18 shelf decks; 72-inch overall on feet, 77-inch on wheels; one-inch shelf adjustment increments. Creator link resolves to Costco item 1242823.
+Limits: Matching family is not an installed serial/revision audit. Rail/grid depth, bottom deck location and seated offsets are not published; editable assumptions cannot be called measured. Business/overseas and EcoTuff search variants were not substituted.
+Local preservation: source_docs/rack_geometry/source_notes_2026-10-30.txt; format .txt; capture/reuse 2026-10-30; sha256 b0f7a43278a04937f2ca2b199c6e50e0b03d5632747528caf1e88edd7359b02d
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L25] Official TRINITY TBFZ-0945 family manual, live page download
+URL: https://trinityii.com/cdn/shop/files/TBFZ-0945_Manual_171213_Final_1.pdf?v=15226408710188050051
+Accessed: 2026-10-30 America/Chicago
+Class: Manufacturer owner manual
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Inspected shelf assembly pages: split slip sleeves and seated shelves; shows same basic six-shelf construction. Downloaded PDF is a 2017 revision.
+Limits: Not a dimensioned installation drawing. No rail/grid depth or creator-specific mounting dimensions. Old /content/ canonical URL returned 404; used live manufacturer page link.
+Local preservation: site/dist/sources/TRINITY-TBFZ-0945-manual.pdf; format .pdf; capture/reuse 2026-10-30; sha256 e514dff368ad8d3dbc0fcd6fe2f7aad47a6bcd4885294a96f8f20ece25163d58
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L26] Bootstrap Farmer shallow 1020 tray family, black and colored specifications
+URL: https://www.bootstrapfarmer.com/products/microgreen-trays | https://www.bootstrapfarmer.com/products/microgreen-trays-multi-color
+Accessed: 2026-10-30 America/Chicago
+Class: Official manufacturer product specifications
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Single tray outer 21x10.75x1.25 inches; inner bottom 19.75x9.5; material thickness 1.8-2.0mm. Same-depth nesting recommended.
+Limits: Does not specify nested-pair installed height or fill. Material thickness is not proof of exact bottom rib height. Detailed rack model retains editable nesting and fill parameters or measured medium override.
+Local preservation: source_docs/rack_geometry/source_notes_2026-10-30.txt; format .txt; capture/reuse 2026-10-30; sha256 b0f7a43278a04937f2ca2b199c6e50e0b03d5632747528caf1e88edd7359b02d
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+[L21] Discovery-only secondary pages and inaccessible paths
+URL: https://microgreensguru.com/blog/microgreens-equipment-list/ | https://www.pwice.com/best-grow-lights-for-microgreens/ | https://knowlya.com/topics/45-microgreens/problems/462-how-do-i-set-up-to-grow-microgreens-at-home/solutions/2284-set-up-led-grow-lights-on-a-shelf-rack
+Accessed: 2026-10-30 America/Chicago
+Class: Secondary discovery; not used as technical evidence
+Used in: 01_specific_lighting_guide; 02_lighting_model; lighting.html; creator-notes where relevant
+Supports/key record: Search results prompted first-party verification of counts and product names. Also queried MGM microgreen-farming-grow-lights and maximizing-tray-throughput paths; not used after inaccessible/noncanonical results.
+Limits: No numeric recommendation relies on these secondary pages or Reddit results. No retailer review evidence adopted.
+Local preservation: URL-only — no full local copy supplied; curated bibliographic/support notes retained in this log.
+Status/recheck: public links live or indexed at consultation unless flagged; product stock, pack variants, price, connector compatibility and certification must be rechecked at purchase.
+
+FOLLOW-UP: Dose comparison now supports adjustable hours/day and lit days; period reference is daily DLI band times days, not an independently validated lifetime crop threshold. MGM preset now follows video-informed edge placement (L22) with an explicit assumed 2-inch centerline inset rather than treating the older 8-inch text as established geometry.
+
+CHANGE NOTE: The earlier 15–25 W/tray rule is a budget heuristic, not a demonstrated requirement. MGM four-tray allocation is 11 W/tray. Six-light versus ten-light lists correspond to different numbers of lit shelves. A 10-inch shelf pitch does not establish a 10-inch leaf-to-LED gap.
+
+
+[L27] University of Maryland Extension — Growing Microgreens and Baby Greens Indoors
+URL: https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors
+Accessed: 2026-10-30 (America/Chicago); live; page updated May 8, 2026.
+Class: primary university extension guidance.
+Used in: lighting planner shoot-height control; specific lighting guide; model notes.
+Supports: 2–3-inch typical microgreen height at harvest; canopy-height example can start at 2 inches.
+Key record: general guidance table gives microgreens 2–3 inches / 7–21 days; baby greens 4–6 inches. Harvest removes stems above the medium.
+Finding: 3 inches is within the typical guidance, while 2 inches is a reasonable adjustable planning example for shorter crops.
+Limits: not a crop-specific measurement, not MGM’s canopy height, not a universal harvest target; height before cutting differs from harvested stem length.
+Local preservation: URL-only — no full-text copy preserved; this factual support note is the local record.
+Status/recheck: live.
+
+2026-10-30 height/default follow-up discovery and corroboration:
+- MGM arugula guide https://microgreenmanager.com/blog/growing-arugula-microgreens re-opened live: re-confirms 10-inch spacing, 2 × 22 W bars and 16 h on/8 h off. Calls arugula short at harvest without a numeric height. Existing L05/L23; no new measured height inferred.
+- Search discovery: Penn State https://extension.psu.edu/growing-microgreens (snippet 1.5–3 inches); direct open 403. Mississippi State https://www.extension.msstate.edu/publications/growing-microgreens-for-the-mississippi-gardener (snippet 1–3 inches); direct open timed out. Oregon State https://extension.oregonstate.edu/news/microgreens-add-big-flavor-small-footprint (snippet 2-inch harvest); direct open timed out. These are discovery context only, URL-only; not used as the page’s adopted quantitative reference. Maryland’s accessible table supplies the cited range.
+
+
+2026-10-30 midpoint-height UI follow-up (local model change; no additional external research):
+- Added user-editable 1-inch first-light and 2-inch harvest examples; these are illustrative assumptions, not normal first-light measurements or documented MGM canopy heights.
+- Default representative height is the endpoint midpoint (1.5 inches). Time-average height equivalence assumes roughly linear growth; mean PPFD is not calculated from this midpoint. Existing uncalibrated optical geometry and constant assumed/measured PPFD dose calculation remain separate.
+
+
+[L28] Iowa State University Extension — How to Determine How Much Supplemental Light to Provide for Indoor Plants
+URL: https://yardandgarden.extension.iastate.edu/how-to/how-determine-how-much-supplemental-light-provide-indoor-plants
+Accessed: 2026-10-30 (America/Chicago); live.
+Class: primary university extension guidance.
+Used in: automatic lamp-output scale, lighting model equations, guide and UI source L28.
+Supports: rough PPF estimation from lumens when manufacturer PPF is absent; then DLI from PPFD and photoperiod.
+Key record: divide lumens by roughly 60 for PPF; conversion factors can vary from about 40 to 75–80 depending on source spectrum. Area-based fixture calculation accounts for utilization; geometry, angle and growing area complicate prediction. Verifying the built setup with measurements is advised.
+Finding: permits a transparent rough output estimate, not a universal conversion. We use 60 centrally and 40/80 only for sensitivity, with geometry already accounting for spill instead of multiplying another generic utilization factor.
+Limits: not a 6500 K Hykolity-specific calibration. Does not establish actual PPF, angular output, spatial median or any measured MGM reading. The sensitivity span is not a confidence interval or total-error bound.
+Local preservation: URL-only — full copyrighted page not republished; numeric support note preserved here.
+Status/recheck: live; methods and assumptions remain explicit.
+
+[L11 recheck] Hykolity SLB-1141 — manufacturer efficacy anchor
+URL: https://www.hykolity.com/products/led-shop-light-4ft-t5-integrated-single-fixture-22w-2200lm-6500k
+Accessed: 2026-10-30 (America/Chicago); live.
+Class: official product specification.
+Used in: default 100 lm/W assumption for automatic estimate.
+Supports: manufacturer lists 2200 lm, 22 W, 6500 K and 46.1-inch body length.
+Finding: 2200/22 = 100 lm/W; combining that rating with L28's approximate /60 conversion yields about 1.67 µmol/J in the central scenario.
+Limits: not measured PPF or an IES angular file. Holding this efficacy constant at other wattages and for other presets is an explicit borrowed assumption, not verified product data.
+Local preservation: URL-only — product page not republished; original product/source entry remains above.
+Status/recheck: live; verify exact fixture family when purchasing.
+
+[L29] Lighting Analysts AGi32 — Photosynthetic Photon Flux Density Concepts
+URL: https://docs.agi32.com/AGi32/Content/adding_calculation_points/PPFD_Concepts.htm
+Accessed: 2026-10-30 (America/Chicago); live.
+Class: primary technical documentation by lighting-software author.
+Used in: verification of spectrum-dependent conversion and distinction between lumens/PPF/PPFD; central numeric conversion ultimately uses L28 instead.
+Key record: PPF/lumen can be derived from spectral power distribution. Example white-LED conversion factors vary with specific LED spectra; a 5000 K example is 14.6 µmol/m²/s per kilolux.
+Finding: reinforces that a color temperature or watt rating alone does not identify an exact photon conversion. Its 5000 K example was not silently applied as a verified coefficient for the 6500 K Hykolity.
+Limits: sample spectra are not this installed lamp; no MGM calibration or spatial geometry is provided.
+Local preservation: URL-only — factual support note only, no full-text redistribution.
+Status/recheck: live.
+
+[L30] Horticulture Lighting Group — Converting Lux to PPFD
+URL: https://horticulturelightinggroup.com/blogs/calculators/converting-lux-to-ppfd
+Accessed: 2026-10-30 (America/Chicago); direct access returned 423 Locked.
+Class: manufacturer technical/calculator page; discovery context only.
+Used in: source discovery; no coefficient adopted.
+Supports: no retrieved content adopted as evidence.
+Limits: blocked retrieval; central method instead comes from accessible Iowa State L28.
+Local preservation: URL-only — no full-text copy.
+Status/recheck: blocked in tool.
+
+Automatic-estimate recovery map:
+- Constants: site/dist/model.js photonAssumptions (100 lm/W, central 60 lm per µmol/s, sensitivity 40–80, inch-to-meter 0.0254).
+- Physics: finite downward Lambertian line source; same 16×8 equal-area cells per tray feed the displayed relative map and absolute median. No reflection, daylight or extra utilization multiplier.
+- Default reconstruction benchmark: 80.971395 median PPFD; sampled 33.876657–115.251254 PPFD; 4.663952 DLI at 16 h; 32.647667 mol/m² over seven days. These are deterministic model results, not experimental observations.
+- Adopted source facts: L11 product efficacy; L28 rough conversion. Median choice is the user's requested summary statistic; it differs from the area-average basis typically used for shelf DLI references.
+- Search discovery included other lux-conversion pages; none of their coefficients was adopted. Only actually opened pages are recorded as consulted sources above.
+
+
+2026-10-30 assessment of user-pasted lighting setup:
+Re-opened L01 (Virginia Tech production), L02 (Virginia Tech DLI), L05 (MGM arugula), and L28 (Iowa State); all live. Key new interpretation: L01 Table 1 includes 70–90 PPFD cabbage/Chinese kale guidance alongside the general 9–16 DLI band; therefore a below-general-band result is not a universal crop failure. The user's snapshot was preserved unchanged as source_docs/user_lighting_setup_snapshot_2026-10-30.txt.
+Snapshot SHA-256: 0814c2c2ee02a40e9279b1f4c92af438bb6f4aca61e70f4be2ecb6eb5e081dc8
+Used in: 06_assessment_of_mgm_lighting_setup.md. Model comparisons were recalculated from site/dist/model.js with unchanged assumptions; they are not measured observations. No user plan or lighting setting was changed by this assessment.
+
+[L31] Liu et al. (2022) — Light Intensity and Photoperiod Affect Growth and Nutritional Quality of Brassica Microgreens
+Identifiers: DOI 10.3390/molecules27030883; PMCID PMC8839875; PMID 35164148.
+URLs: https://pmc.ncbi.nlm.nih.gov/articles/PMC8839875/ ; https://pubmed.ncbi.nlm.nih.gov/35164148/
+Accessed: 2026-10-30; primary PMC/PubMed text available through search result; DOI direct open failed.
+Class: peer-reviewed controlled crop study.
+Used in: 06 setup assessment; interpretation of L01 Table 1.
+Key record: cabbage Huafeng Zhonggan 11 and Chinese kale Sijicutai, artificial-light factory; 3 dark days then red/blue/green LEDs. Experiment 1 tested 30/50/70/90 PPFD at 12 h/day. Experiment 2 held 70 PPFD and compared 12/14/16/18/20 h/day. Authors synthesize 90 PPFD for cabbage, 70 for Chinese kale and 14–16 h, with biomass and nutritional endpoints differing.
+Finding: relatively low-light cultivation is studied directly; the general 9-DLI band is not a universal biological minimum.
+Limits: distinct experiments, not every intensity × photoperiod combination; narrow crops, RGB spectrum, fresh/dry mass and composition endpoints. Does not validate white shop lamps, a specific rack, all species, or an exact optimum. No universal human nutritional benefit inferred.
+Local preservation: URL-only — no additional full article copy; methods and limitations preserved here.
+Status/recheck: accessible primary text; direct DOI tool route failed.
+
+[L32] de Lima et al. (2026) — Seeding Density Outweighs Light Intensity in Microgreens Yield on a Vertical Farming System
+Identifiers: DOI 10.3390/horticulturae12091149; Horticulturae 12(9), 1149.
+URL: https://www.mdpi.com/2311-7524/12/9/1149
+Accessed: 2026-10-30; publisher HTML returned 429. Archived full publisher PDF re-read locally; previously captured/reviewed 2026-10-28 in main project source record S326.
+Class: peer-reviewed controlled vertical-farm crop experiment.
+Used in: 06 setup assessment, crop-specific interpretation of low light.
+Key record: separate sunflower/radish/green-cabbage/red-cabbage experiments; four PPFD levels 50/100/150/200, three densities, three replicates/combination. PPFD sampled at 16 positions/layer, reported <10% variation; 16 h lit stage. Results section 3.1: no significant PPFD main effect on fresh/dry yield for sunflower, radish or red cabbage; green cabbage responded up to approximately 158 PPFD for fresh mass.
+Finding: crop response can be weak over a wide light-intensity range in one setup; seed density was influential.
+Limits: single facility/cultivars, nutrition and climate differ from household conditions, short lit stage, no metered electricity comparison, no universal 50-PPFD recommendation. Publisher highlight/abstract wording is inconsistent with some results; follow full results and tables.
+Local preservation: ../source_docs/studies/de-Lima-2026-microgreen-seed-density-PPFD.pdf relative to the topic folder's parent research_project; full main-project source record S326 has checksum 903047b3fb5defa5c413ae55ab2fab4ae8ebddf60e20ccb9823d9462d45d24c3. No duplicate full-text file added to this topic.
+Status/recheck: archived full text used; publisher live route rate-limited.
+
+
+2026-10-30 dose-benefit clarification:
+User clarified that the question concerns raising light dose and possible crop effects, rather than budget/rack suitability. Their latest custom snapshot (attachment 7e9e1420-a666-493c-9b17-1664ed1fbd3b) uses 3 × 22 W bars, 7-inch spacing, 18-inch shelf and 5.445-inch modeled clearance: 139.345267 median PPFD, 8.026287 DLI at 16 h. Current dose is therefore about 8, not the original two-bar 4.66. This distinction is preserved in the assessment.
+Editorial trial recommendation: compare current ~8 with 9–10 DLI, without promising yield gains. At 16 h, the target corresponds to 156.25–173.61 PPFD. No preset, reference band or dose equation was changed.
+
+[L33] Jonathan Asher Allred (2017), Cornell MS thesis — Environmental and Cultural Practices to Optimize the Growth and Development of Three Microgreen Species
+Identifiers: DOI 10.7298/X4TX3CJW; Handle 1813/56890; main project source S60.
+URL: https://ecommons.cornell.edu/entities/publication/8096509a-7c87-47ed-8558-2e6a05657255
+Accessed: 2026-10-30; official repository record live; archived full PDF re-read locally.
+Class: primary controlled-environment thesis.
+Used in: 06 setup assessment dose-benefit follow-up.
+Key record: arugula/mizuna/mustard DLI 3/6/9/12 crossed with CO₂ 400/600/800/1000 ppm. At 400 ppm, fresh weight increased 27% in mizuna and 35% in mustard over 3→12 DLI. Arugula gains were 27% for 3→6, 21% for 6→9 and 5% for 9→12. Dry weight rose and defined days-to-harvest declined as DLI increased; height decreased in mizuna/mustard.
+Finding: increasing dose can improve biomass and cycle time in particular crops, with diminishing returns; it is not only a survival threshold.
+Limits: one Cornell system, cells/defined harvest stage, selected cultivars and CO₂ factorial; no percentage prediction for the user's 8→10 comparison or a commercial tray ROI guarantee.
+Local preservation: main project source_docs/studies/Allred-2017-microgreen-environmental-practices-thesis.pdf; SHA-256 477dc1723b01f47b78248efa325120a18654afaf25c177aa220651db8cb426fb. Existing lawful institutional archive copy, no duplicate added.
+Status/recheck: repository live; local full text used.
+
+[L34] Flores, Hernández-Adasme, Guevara & Escalona (2024) — Effect of different light intensities on agronomic characteristics and antioxidant compounds of Brassicaceae microgreens in a vertical farm system
+Identifier: DOI 10.3389/fsufs.2024.1349423.
+URL: https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2024.1349423/full
+Accessed: 2026-10-30; publisher full text live, methods and tables reviewed.
+Class: peer-reviewed controlled vertical-farm experiment.
+Used in: 06 assessment dose-benefit follow-up; fresh/dry yield, height and composition distinction.
+Key record: green/red cabbage, kale, mizuna and mustard at measured 120±5.06, 160±3.60 and 210±5.91 PPFD; 16 h/day, day/night25/20±1.2°C, RH79±2%; 3 blocks/trays per cultivar/intensity. Hypocotyls generally shortened at higher intensity, dry mass/content increased in selected entries; fresh yields often unchanged or lower at higher intensity. Color/pigment/phenolic responses differed by crop/compound.
+Finding: higher light can create a shorter crop with more dry matter without raising fresh saleable mass; nutrient/quality direction is not uniform.
+Limits: one system, specific cultivars and climate, modest replication; chemical antioxidant assays are not human health endpoints. The paper's abstract/discussion cite other intensity studies; only its own 120/160/210 treatments are treated as direct evidence here.
+Local preservation: URL-only — full article not duplicated; methods/results support notes above.
+Status/recheck: live.
+
+Discovery-only record: https://www.mdpi.com/2311-7524/12/2/200 (Light Intensity Drives Species-Specific Growth and Phytochemical Accumulation in Microgreens) direct open returned 429; no results adopted. Virginia Tech L01 re-opened live for reference-band context; the follow-up does not turn its general band into a universal optimum.
+
+
+[L29] Purchased Barrina T8 LED Shop Lights — ASIN B07G2Q4VZN
+URL: https://www.amazon.com/dp/B07G2Q4VZN
+Accessed: 2026-11-02, America/Chicago — user-supplied order title; product webpage not independently consulted.
+Class: supplier listing supplied by user.
+Used in: lighting default, 01_specific_lighting_guide, 02_lighting_model_and_validation.
+Supports: purchased model, 4 ft nominal, 40 W, 5500 lm, 5000 K, six-pack, V-shape clear cover; user requested two per shelf. Derived efficacy 5500/40 = 137.5 lm/W; two fixtures = 80 W/shelf.
+Limits: seller claims; not a photon or angular-output measurement. Fixture body length and mounted drop remain provisional previous layout values. Six-pack covers three shelves; five shelves need ten fixtures. No independent page verification.
+Local preservation: product title/specs retained here; personal order number, shipping details and private account links omitted.

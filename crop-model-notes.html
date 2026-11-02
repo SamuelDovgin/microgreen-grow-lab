@@ -1,0 +1,209 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Crop model &amp; validation · Grow Lab</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">↟</span>Microgreen Guide <small>Grow Lab</small></a><nav aria-label="Main"><a href="index.html">All tools</a><a href="coir.html">Coco coir</a><a href="crops.html">Seed &amp; water</a><a href="lighting.html">Lighting</a><a href="rack.html">Rack model</a><a href="grow-log.html">My grow log</a></nav></header><main class="doc" id="main"><a class="back" href="crops.html">← Back to the seed & water planner</a><p class="eyebrow">Research notes · November 1, 2026</p><div class="rendered"><h1 id="crop-model-equations-evidence-classes-and-validation">Crop model: equations, evidence classes and validation</h1>
+<p><em>November 1, 2026. <a href="crops.html">Open the planner</a> · <a href="crop-research.html">research synthesis</a>.</em></p>
+<h2 id="model-endpoints">Model endpoints</h2>
+<p>The model returns dry seed input, an assumed or measured-lot expected stand, growing dates, a root-zone storage/demand scenario, a conditional weight-based refill, and the best observed treatment for a selected objective. It does not return guaranteed yield, a disease probability, a pathogen-safe density, a crop ET prediction or a universal biological optimum.</p>
+<h2 id="evidence-classes">Evidence classes</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Class</th>
+<th>Treatment in the app</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inches-to-area/volume and mass balance</td>
+<td>Unit identities / arithmetic</td>
+<td>Exact conversion constants; dimensional regression checks</td>
+</tr>
+<tr>
+<td>Johnny’s seed and harvest records</td>
+<td>Supplier trial</td>
+<td>Successful baseline; no optimized-density claim</td>
+</tr>
+<tr>
+<td>MGM, Jonah, Donny and On The Grow</td>
+<td>Creator observations</td>
+<td>Separate, attributed recipes; no cross-creator response curve</td>
+</tr>
+<tr>
+<td>de Lima/Arthur density treatments</td>
+<td>Primary experimental data</td>
+<td>Separate study means and contexts; no reconstructed raw replicates</td>
+</tr>
+<tr>
+<td>Broccoli/beet/mustard counts</td>
+<td>Extension approximation</td>
+<td>Lot estimate, superseded by measurement</td>
+</tr>
+<tr>
+<td>Arthur herb seed weights</td>
+<td>Primary measurement from another lot</td>
+<td>Explicit borrowed-lot label</td>
+</tr>
+<tr>
+<td>Other initial units/g</td>
+<td>Illustrative assumption</td>
+<td>User-editable; does not drive a mass-recipe default</td>
+</tr>
+<tr>
+<td>Germination 95%, establishment 90%</td>
+<td>Illustrative example</td>
+<td>User replaces with lot/tray measurement</td>
+</tr>
+<tr>
+<td>Substrate retention, demand and growth ramp</td>
+<td>Illustrative assumptions</td>
+<td>Visible explanation; no fixed irrigation doses</td>
+</tr>
+<tr>
+<td>Wet/current tray weights</td>
+<td>Measured only after replacement</td>
+<td>Example fields clearly labeled; conditional refill arithmetic</td>
+</tr>
+<tr>
+<td>Family cover windows absent from a source</td>
+<td>Editorial synthesis</td>
+<td>Species/source overrides and developmental cues</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="seed-density">Seed density</h2>
+<p>Constants: <code>1 in² = 6.4516 cm² = 0.00064516 m²</code>; <code>1 in³ = 16.387064 mL</code>; <code>1 oz = 28.349523125 g</code>.</p>
+<p>Reference mass: <code>m = m0 × A/A0 × trialFactor</code>.</p>
+<p>Target emerged count: <code>m = A × Dlive / (q × p × e × r) × trialFactor</code>.</p>
+<p>Expected emerged shoots: <code>N = m × q × p × e × r</code>.</p>
+<p>Here <code>q</code> is planting units/g, <code>p</code> laboratory germination, <code>e</code> conditional establishment and <code>r</code> shoots per viable planting unit. Expected spacing is square-grid equivalent <code>10 × sqrt(Acm²/N)</code> mm, calculated for inspection but not presented as an actual canopy or seed diameter. A deterministic random scatter shows even sowing qualitatively; symbols are sampled and do not depict every seed, plant size or disease physics.</p>
+<p>Mung/lentil baseline: <code>m = 3 × Acm²/q</code>, preserving seeds <strong>sown</strong> per cm². Source-recipe mass is deliberately independent of changed <code>p/e/q</code>, except these two count-based presets. Target-live mode explicitly depends on those terms. Zero and invalid fractions are rejected rather than divided by zero.</p>
+<h2 id="water-model">Water model</h2>
+<p>Root-zone reserve: <code>Vwater = A × depth × 16.387064 × retention + accessibleReservoir</code>.</p>
+<p>Demand: <code>L = input mm/day × Am² × 1000</code> mL/day.</p>
+<p>Selected drawdown: <code>D = Vwater × depletionFraction</code>; central trigger time <code>24D/L</code> hours. Low/high demand are <code>L × (1 ± uncertainty)</code>. These bounds are sensitivity scenarios, not statistical confidence intervals. No temperature, humidity, seed density, leaf area or substrate calibration is fitted to ET.</p>
+<p>Measured mode uses <code>Mtrigger = Mwet − measuredReserve × depletionFraction</code>. If current mass is at/below the trigger, <code>refill = max(0,Mwet−Mnow)</code> mL using 1 g/mL; otherwise refill is zero. It rejects reserve ≥ complete wet mass. Values are approximate because biomass, retained reservoir water and accessories can change the weighing denominator. Zero refill does not override a dry germinating seed surface or root-access problem.</p>
+<p>The schedule’s illustrative water-loss series is 20% of late demand before light, then a linear 35→100% ramp during the lit interval. The integrated scenario totals days 0 through the day before harvest and excludes initial hydration, drainage and soaking. This is an educational budget, not a species-calibrated irrigation model. It never issues that scenario amount as an automatic daily refill.</p>
+<p>Air vapor pressure deficit: <code>es = 0.6108 exp[17.27T/(T+237.3)]</code> kPa, <code>VPDair = es × (1−RH/100)</code>. This common saturation-pressure approximation is a diagnostic, not leaf VPD. DLI is <code>PPFD × lightHours × 0.0036</code> mol/m²/day. Changing these diagnostics does not silently change seed rate or water demand.</p>
+<h2 id="date-and-protocol-model">Date and protocol model</h2>
+<p>Day 0 is sowing. Calendar-day offsets are calculated in UTC from an ISO date at noon, avoiding daylight-saving shifts in the generated dates. The default sow date is the user’s local calendar date. Presoaking occurs beforehand and is not counted as a sowing day. Emergence cover and optional noncontact stretch blackout are separate intervals. Their sum must be less than harvest day; an impossible schedule produces no rows. A manual source/method change can be explored but the mismatch is disclosed.</p>
+<p>Covered time, top load and harvest dates are planning settings. The recipe’s actual developmental cues govern transitions. A dome has zero added top load by default. The 3-lb contact-cover example sits within the USU 2–5-lb guidance but is not an experimentally optimized pressure; a pounds-only input also does not model load distribution or inter-tray contact mechanics.</p>
+<p>Source selection restores known medium category/light hours. A source, crop, substrate or physical root-zone change resets measured-water mode; the weighing target must be measured again for the revised assembly. Unknown depth, capacity and load remain scenarios rather than unreported source measurements.</p>
+<h2 id="bounded-optimization">Bounded optimization</h2>
+<p>Study data remain in g seed/m², g fresh harvest/m² and days. Local saleable data are normalized to the same units. A response is not interpolated. Exact numerical ties prefer less seed. Largest-density winners are flagged as boundary winners; all-negative contribution scenarios are disclosed.</p>
+<p>Objectives: yield/m²; harvest/seed; harvest per occupied day; contribution/m²; and contribution per occupied day. Dollar/kg inputs divide by 1,000 before multiplying by grams/m². Other cost is $/m²/crop and turnaround is days. Contribution is not net profit. Study gross mass is not assumed to have measured packout or sales. Numerical mean rankings are not claims of statistical significance; some top treatment groups overlap in the papers.</p>
+<p>The CSV schema is <code>crop_id,seed_g,saleable_g,area_in2,days,substrate,lot,stage</code>. It accepts finite numeric values, including zero saleable yield, and simple identifiers without embedded commas. It rejects missing/blank cells, invalid units/ranges, another crop, mixed substrate/lot/stage contexts and fewer than two distinct rates. Independent trays at the same normalized rate and days are summarized by mean and sample SD. SD is not a confidence interval. Context tags cannot verify whether users actually held light, temperature, irrigation and harvest criteria constant; the accompanying instructions require that.</p>
+<h2 id="validation-commands">Validation commands</h2>
+<p>From <code>research_project/17_visualizers/site/</code>:</p>
+<pre><code class="language-text">python3 build-crop-research.py
+python3 build-crop-data.py
+python3 build-crop-pages.py
+node test-crops.cjs
+node test-crop-interactions.cjs
+python3 validate-site.py
+node test-model.cjs
+node test-interactions.cjs
+node test-rack.cjs
+node test-rack-interactions.cjs
+</code></pre>
+<p>The source-note builder uses the temporary downloaded captions to regenerate annotations/checksums. Existing generated JSON and notes remain usable without those working copies; normal offline use needs no Python, Node or network. The crop-data and page builders are deterministic local rebuilds.</p>
+<p>Required invariants include the nominal 1020 conversion; half-area seed scaling; count-mode germination/seed-size behavior; source-mode independence from unsupported adjustments; sown versus live target semantics; water units and conservation; demand monotonicity; zero intrinsic reusable-medium reserve; measured trigger/refill boundaries; exact dates through daylight-saving transitions; bounded optimization, ties and negative economics; CSV context rejection and zero-saleable retention; all 54 crop presets and recipe transitions; exported source context; and valid local links/labels.</p>
+<p>Actual visual browser rendering is a separate check. Browser control was disabled in Work settings during this task; DOM interaction regression and static responsive checks do not prove pixel layout or mobile rendering. Publication recovery also returned <code>Sites project not found</code> for the existing project identity. The completed local/portable build remains available independently of that hosting failure.</p>
+<p><a href="data/crop-qa-report.json">Machine-readable QA record</a> records the completed checks and verification limits for this delivery.</p>
+<h2 id="follow-up-persistent-grow-records">Follow-up: persistent grow records</h2>
+<p><a href="grow-log.html">My grow log</a> preserves actual tray conditions and outcomes separately from the initial plan. The <a href="grow-log-notes.html">logging guide</a> defines persistence, backup/merge behavior, comparable-trial grouping and the apparent mass-loss calculation. Journal checks are <code>node site/test-grow-log.cjs</code> and <code>node site/test-grow-log-interactions.cjs</code>. Locally entered records are not automatically visible in chat or used to rewrite research defaults.</p>
+</div><details><summary>Read raw source</summary><pre># Crop model: equations, evidence classes and validation
+
+*November 1, 2026. [Open the planner](site/dist/crops.html) · [research synthesis](07_seed_density_water_and_family_protocols.md).*
+
+## Model endpoints
+
+The model returns dry seed input, an assumed or measured-lot expected stand, growing dates, a root-zone storage/demand scenario, a conditional weight-based refill, and the best observed treatment for a selected objective. It does not return guaranteed yield, a disease probability, a pathogen-safe density, a crop ET prediction or a universal biological optimum.
+
+## Evidence classes
+
+| Layer | Class | Treatment in the app |
+|---|---|---|
+| Inches-to-area/volume and mass balance | Unit identities / arithmetic | Exact conversion constants; dimensional regression checks |
+| Johnny’s seed and harvest records | Supplier trial | Successful baseline; no optimized-density claim |
+| MGM, Jonah, Donny and On The Grow | Creator observations | Separate, attributed recipes; no cross-creator response curve |
+| de Lima/Arthur density treatments | Primary experimental data | Separate study means and contexts; no reconstructed raw replicates |
+| Broccoli/beet/mustard counts | Extension approximation | Lot estimate, superseded by measurement |
+| Arthur herb seed weights | Primary measurement from another lot | Explicit borrowed-lot label |
+| Other initial units/g | Illustrative assumption | User-editable; does not drive a mass-recipe default |
+| Germination 95%, establishment 90% | Illustrative example | User replaces with lot/tray measurement |
+| Substrate retention, demand and growth ramp | Illustrative assumptions | Visible explanation; no fixed irrigation doses |
+| Wet/current tray weights | Measured only after replacement | Example fields clearly labeled; conditional refill arithmetic |
+| Family cover windows absent from a source | Editorial synthesis | Species/source overrides and developmental cues |
+
+## Seed density
+
+Constants: `1 in² = 6.4516 cm² = 0.00064516 m²`; `1 in³ = 16.387064 mL`; `1 oz = 28.349523125 g`.
+
+Reference mass: `m = m0 × A/A0 × trialFactor`.
+
+Target emerged count: `m = A × Dlive / (q × p × e × r) × trialFactor`.
+
+Expected emerged shoots: `N = m × q × p × e × r`.
+
+Here `q` is planting units/g, `p` laboratory germination, `e` conditional establishment and `r` shoots per viable planting unit. Expected spacing is square-grid equivalent `10 × sqrt(Acm²/N)` mm, calculated for inspection but not presented as an actual canopy or seed diameter. A deterministic random scatter shows even sowing qualitatively; symbols are sampled and do not depict every seed, plant size or disease physics.
+
+Mung/lentil baseline: `m = 3 × Acm²/q`, preserving seeds **sown** per cm². Source-recipe mass is deliberately independent of changed `p/e/q`, except these two count-based presets. Target-live mode explicitly depends on those terms. Zero and invalid fractions are rejected rather than divided by zero.
+
+## Water model
+
+Root-zone reserve: `Vwater = A × depth × 16.387064 × retention + accessibleReservoir`.
+
+Demand: `L = input mm/day × Am² × 1000` mL/day.
+
+Selected drawdown: `D = Vwater × depletionFraction`; central trigger time `24D/L` hours. Low/high demand are `L × (1 ± uncertainty)`. These bounds are sensitivity scenarios, not statistical confidence intervals. No temperature, humidity, seed density, leaf area or substrate calibration is fitted to ET.
+
+Measured mode uses `Mtrigger = Mwet − measuredReserve × depletionFraction`. If current mass is at/below the trigger, `refill = max(0,Mwet−Mnow)` mL using 1 g/mL; otherwise refill is zero. It rejects reserve ≥ complete wet mass. Values are approximate because biomass, retained reservoir water and accessories can change the weighing denominator. Zero refill does not override a dry germinating seed surface or root-access problem.
+
+The schedule’s illustrative water-loss series is 20% of late demand before light, then a linear 35→100% ramp during the lit interval. The integrated scenario totals days 0 through the day before harvest and excludes initial hydration, drainage and soaking. This is an educational budget, not a species-calibrated irrigation model. It never issues that scenario amount as an automatic daily refill.
+
+Air vapor pressure deficit: `es = 0.6108 exp[17.27T/(T+237.3)]` kPa, `VPDair = es × (1−RH/100)`. This common saturation-pressure approximation is a diagnostic, not leaf VPD. DLI is `PPFD × lightHours × 0.0036` mol/m²/day. Changing these diagnostics does not silently change seed rate or water demand.
+
+## Date and protocol model
+
+Day 0 is sowing. Calendar-day offsets are calculated in UTC from an ISO date at noon, avoiding daylight-saving shifts in the generated dates. The default sow date is the user’s local calendar date. Presoaking occurs beforehand and is not counted as a sowing day. Emergence cover and optional noncontact stretch blackout are separate intervals. Their sum must be less than harvest day; an impossible schedule produces no rows. A manual source/method change can be explored but the mismatch is disclosed.
+
+Covered time, top load and harvest dates are planning settings. The recipe’s actual developmental cues govern transitions. A dome has zero added top load by default. The 3-lb contact-cover example sits within the USU 2–5-lb guidance but is not an experimentally optimized pressure; a pounds-only input also does not model load distribution or inter-tray contact mechanics.
+
+Source selection restores known medium category/light hours. A source, crop, substrate or physical root-zone change resets measured-water mode; the weighing target must be measured again for the revised assembly. Unknown depth, capacity and load remain scenarios rather than unreported source measurements.
+
+## Bounded optimization
+
+Study data remain in g seed/m², g fresh harvest/m² and days. Local saleable data are normalized to the same units. A response is not interpolated. Exact numerical ties prefer less seed. Largest-density winners are flagged as boundary winners; all-negative contribution scenarios are disclosed.
+
+Objectives: yield/m²; harvest/seed; harvest per occupied day; contribution/m²; and contribution per occupied day. Dollar/kg inputs divide by 1,000 before multiplying by grams/m². Other cost is $/m²/crop and turnaround is days. Contribution is not net profit. Study gross mass is not assumed to have measured packout or sales. Numerical mean rankings are not claims of statistical significance; some top treatment groups overlap in the papers.
+
+The CSV schema is `crop_id,seed_g,saleable_g,area_in2,days,substrate,lot,stage`. It accepts finite numeric values, including zero saleable yield, and simple identifiers without embedded commas. It rejects missing/blank cells, invalid units/ranges, another crop, mixed substrate/lot/stage contexts and fewer than two distinct rates. Independent trays at the same normalized rate and days are summarized by mean and sample SD. SD is not a confidence interval. Context tags cannot verify whether users actually held light, temperature, irrigation and harvest criteria constant; the accompanying instructions require that.
+
+## Validation commands
+
+From `research_project/17_visualizers/site/`:
+
+```text
+python3 build-crop-research.py
+python3 build-crop-data.py
+python3 build-crop-pages.py
+node test-crops.cjs
+node test-crop-interactions.cjs
+python3 validate-site.py
+node test-model.cjs
+node test-interactions.cjs
+node test-rack.cjs
+node test-rack-interactions.cjs
+```
+
+The source-note builder uses the temporary downloaded captions to regenerate annotations/checksums. Existing generated JSON and notes remain usable without those working copies; normal offline use needs no Python, Node or network. The crop-data and page builders are deterministic local rebuilds.
+
+Required invariants include the nominal 1020 conversion; half-area seed scaling; count-mode germination/seed-size behavior; source-mode independence from unsupported adjustments; sown versus live target semantics; water units and conservation; demand monotonicity; zero intrinsic reusable-medium reserve; measured trigger/refill boundaries; exact dates through daylight-saving transitions; bounded optimization, ties and negative economics; CSV context rejection and zero-saleable retention; all 54 crop presets and recipe transitions; exported source context; and valid local links/labels.
+
+Actual visual browser rendering is a separate check. Browser control was disabled in Work settings during this task; DOM interaction regression and static responsive checks do not prove pixel layout or mobile rendering. Publication recovery also returned `Sites project not found` for the existing project identity. The completed local/portable build remains available independently of that hosting failure.
+
+[Machine-readable QA record](data/crop-qa-report.json) records the completed checks and verification limits for this delivery.
+
+## Follow-up: persistent grow records
+
+[My grow log](site/dist/grow-log.html) preserves actual tray conditions and outcomes separately from the initial plan. The [logging guide](11_grow_log_and_protocol_calibration.md) defines persistence, backup/merge behavior, comparable-trial grouping and the apparent mass-loss calculation. Journal checks are `node site/test-grow-log.cjs` and `node site/test-grow-log-interactions.cjs`. Locally entered records are not automatically visible in chat or used to rewrite research defaults.
+</pre></details><p><a href="docs/10_crop_model_equations_and_validation.md" download>Download original source</a></p></main><footer><span>Microgreen Guide / Grow Lab</span><span>Sources, units, assumptions and limits stay visible.</span></footer></body></html>

@@ -1,0 +1,669 @@
+
+I have a big brick of coco coir
+
+Given I will only do like 4 trays at any one time max to start. Should I moisten the whole brick or should I seperate a part and use it from there?
+
+What do people recommend for microgreens
+I recommend breaking off only as much coco coir as you need and keeping the rest of the brick dry. Especially since you're starting with a maximum of four 1020 microgreen trays.
+
+I checked microgreen growing guides and Reddit discussions. Both approaches are used, but hydrating small portions is particularly practical for home growers.
+
+What growers recommend
+Method
+
+Advantages
+
+Disadvantages
+
+My verdict
+
+Break off dry portions
+
+Easy long-term storage, less moisture-related mold risk, less waste
+
+Breaking a compressed brick takes effort
+
+Best for you
+
+Hydrate the entire brick
+
+Convenient if planting many trays frequently
+
+Requires a large container; damp leftovers need care
+
+Better for high-volume growers
+
+Hydrate one edge at a time
+
+Easy to remove portions without sawing
+
+Part of the remaining brick gets damp
+
+Excellent compromise
+
+In a Reddit discussion about splitting large coir bricks, growers recommended wetting just one edge until the fibers peel away. One commenter described keeping the partially used brick in a plastic storage tub and hydrating more as needed.
+
+A microgreens-specific Reddit discussion also favors cutting off the amount needed before hydrating it.
+
+How much should you hydrate?
+Utah State University's microgreens guide recommends 2 quarts (1.9 liters) of expanded coco coir per 1020 tray. 
+
+USU
+
+Trays you're planting
+
+Expanded coco coir needed
+
+1 tray
+
+2 quarts / 1.9 L
+
+2 trays
+
+4 quarts / 3.8 L
+
+3 trays
+
+6 quarts / 5.7 L
+
+4 trays
+
+8 quarts / 7.6 L
+
+These are starting estimates, particularly for your shallow Bootstrap Farmer trays. Adjust based on your preferred growing-medium depth.
+
+My suggested process
+Nutrifield Coco Coir Mega Brick, Premium Organic Medium
+ – Perris Hydroponics
+1. Remove a small portion
+
+Put the dry brick in a large plastic tub. Sprinkle water along one edge, wait a few minutes, then scrape or peel off the loosened coir. Keep the remaining block as dry as possible.
+
+PlantBest™ BeatsPeat Jr™ 8 qt. Brick Compressed Coconut Coir Growing M
+– Greenhouse Megastore
+2. Hydrate in a separate bucket
+
+Add warm water gradually, breaking up clumps until the coir feels like a wrung-out sponge: consistently damp, without water dripping when squeezed.
+
+A young woman patting down the coco soil in a tray
+3. Fill your trays
+
+Spread the moistened coir evenly in your shallow trays with drainage holes. Lightly level the surface without heavily compressing it.
+
+What about storage?
+Remaining dry brick: Keep somewhere cool and dry, preferably in a clean container or bag protected from humidity.
+
+Unused hydrated coir: Store in a clean, loosely covered container for short-term use. Don't leave wet coir sealed away for extended periods.
+
+Longer-term leftovers: Let unused clean coir dry completely before storing it dry. Discard any that develop mold or an unpleasant odor.
+
+The microgreen guide at RusticWise specifically recommends mixing only what you need, although it notes that properly stored hydrated coir can last longer.
+
+For your setup: I'd hydrate enough for just two trays at a time (about 4 quarts expanded), rather than all four. You'll have less material sitting around damp, and you can adjust your coir depth and moisture after your first couple of grows.
+
+User attachment
+For this exactly and my 1020 micro trays can you explicitly decide the mass volute to break off and water ratio to rehydrate. And turn it into a formula of sorts
+For your exact Back to the Roots 10 lb / 51-quart coco coir brick and your Bootstrap Farmer shallow 1020 microgreen trays, I'd standardize on the following recipe.
+
+MY RECOMMENDED RECIPE — PER TRAY
+
+180 g
+Dry compressed coir
+
+700 mL
+Initial warm water
+
+Let expand for 15–30 minutes, fluff thoroughly, then add water in 50–100 mL increments if needed. Expect roughly 700–900 mL total water per tray.
+
+Target expanded volume: 2 US quarts (1.89 L) per tray.
+
+The 2-quart growing-medium recommendation comes from Utah State University. Your trays are only 1¼ inches deep, so this produces approximately a 0.6-inch layer of coir. 
+
+USU
++1
+
+Calculate any number of trays
+Number of 1020 trays
+1
+2
+3
+4
+Break off dry coir
+
+360 g
+Start with warm water
+
+1.40 L
+Possible total water
+
+1.40–1.80 L
+Expected expanded coir
+
+4 quarts
+At your $19.98 purchase price, that's about $1.57 of coir for 2 trays.
+
+The formulas
+The brick's advertised expanded yield gives us:
+
+4
+,
+536
+ g
+51
+ qt
+×
+2
+ qt/tray
+≈
+178
+ g/tray
+51 qt
+4,536 g
+​
+ ×2 qt/tray≈178 g/tray
+Rounded for easy weighing:
+
+Dry coir (g)
+=
+180
+×
+N
+Dry coir (g)=180×N
+​
+ 
+Initial water (mL)
+≈
+4
+×
+dry coir (g)
+Initial water (mL)≈4×dry coir (g)
+​
+ 
+Here, 
+N
+N is your number of trays. The water formula is a starting hydration ratio of about 4 mL water per gram of dry coir, not a guaranteed final water requirement. General coir hydration guidance commonly ranges around 3.6–5 mL/g. 
+
+coirproducts.co.uk
++1
+
+How to tell when it's correct
+Bloques de Fibra de coco
+– OURGARDEN
+Use the squeeze test after mixing thoroughly.
+
+Crumbly with dry patches: add water.
+
+Damp, fluffy, and holds together briefly: ideal.
+
+Water streaming or dripping when squeezed: too wet.
+
+Utah State recommends the consistency of a wrung-out sponge: your hand becomes wet, but water doesn't drip. 
+
+USU
+
+One important distinction: the 700 mL is for initially hydrating the dry coir. It is not the amount you should add each time you bottom-water your planted trays.
+
+My choice for your first batch: Break off 360 g of the brick, add 1.4 L of warm water, and prepare two trays. Measure the final expanded volume, and you'll know whether this particular brick needs a small adjustment for future batches.
+
+Don't most people fill the tray to level or no. Can you please look this up specifically for micro green growers who specialize in coco coir
+Yes—you're right that many microgreen growers fill their shallow trays nearly to the top, including growers who specialize in coco coir. After looking at their actual instructions, I would revise my earlier recommendation for your Bootstrap Farmer trays.
+
+There isn't a universal fill level. But for your 1¼-inch-deep trays, I would target approximately ¾–1 inch of hydrated coir, leaving a little room below the rim.
+
+What coco coir growers actually recommend
+Grower / source
+
+Their coir filling method
+
+On The Grow
+
+6–8 cups of hydrated coir per 1020 tray, leveled just below the rim. Their newer shallow-tray instructions specify approximately 6 cups. 
+
+On The Grow
++1
+
+Sproutpeople
+
+Prefers filling the growing tray at least ¾ full; their preferred substrate includes coconut coir and worm castings. 
+
+Sproutpeople
+
+Seedmart
+
+Recommends roughly 2–4 cm (0.8–1.6 inches) of growing medium, depending on crop and conditions. 
+
+Soil vs Coco Coir
+
+Reddit r/microgreens growers
+
+Mixed practices: some use around 6 cups, some fill shallow trays to the top, others only halfway. 
+
+Reddit
+
+The important distinction: 6–8 cups can sit at very different heights depending on whether a grower uses a shallow mesh insert, slotted tray, or solid-bottom tray with drainage holes. That's why I wouldn't blindly copy On The Grow's cup quantity into your Bootstrap Farmer trays.
+
+Revised recommendation for your exact trays
+Bootstrap Farmer confirms that your trays have 1¼-inch sides and a 19¾ × 9½-inch interior bottom. 
+
+Bootstrap Farmer
+
+Here is how the fill options work out, using your brick's advertised 51-quart expanded yield.
+
+Coir per tray
+
+Dry brick mass
+
+Approx. coir depth
+
+2 quarts
+
+180 g
+
+0.6 inch
+
+3 quarts
+
+270 g
+
+0.8–0.9 inch
+
+3.5 quarts
+
+310 g
+
+About 1 inch
+
+4 quarts
+
+355 g
+
+1.1–1.2 inches
+
+Depths are geometric estimates, not measured fill heights. Actual volume depends on fluffing, compaction and the sloping tray walls.
+MY UPDATED CHOICE FOR YOUR SETUP
+
+310 g
+Dry coir per tray
+
+1.0 L
+Warm water to start
+
+Then add water gradually, generally aiming for about 1.2–1.5 L total if needed, until the coir is uniformly moist but not dripping.
+
+That puts the growing surface roughly ¼ inch below the rim. Lightly level and press it with another tray.
+
+For your radish and broccoli, I favor this fuller approach. For your speckled peas and sunflower, I'd start with 270 g (about 3 quarts expanded) to leave a bit more room for the larger seeds and tray stacking.
+
+One especially relevant source is Microgreens Corner's coir guide, which explicitly recommends filling to about two-thirds of tray capacity. Bootstrap Farmer also emphasizes how shallow trays reduce unnecessary media use. 
+
+Microgreens Corner
++1
+
+Bottom line: Filling nearly to the top is a well-established practice, but not a universal majority rule. My earlier 180 g recommendation was a legitimate thin-medium approach, not an optimal near-full-tray recipe. For your preference, 310 g per tray is the better starting experiment.
+
+User attachment
+User attachment
+And yes I'm using the shallow trays please factor this in too
+Yes. These are the exact Bootstrap Farmer shallow 1020 trays with 36 drainage holes, and I can now account for their dimensions.
+
+After checking Bootstrap Farmer and coco-coir-focused grower instructions, I'd keep the recommendation at approximately 300 g of dry coir per tray if your goal is to fill nearly to the top.
+
+Your exact tray specifications
+1020 Microgreen Trays | Shop Extra Strength Shallow Trays for Microgreens - Bootstrap Farmer - Bootstrap Farmer
+Bootstrap Farmer 1020 Shallow
+
+Height: 1.25 inches
+
+Interior bottom: 19.75 × 9.5 inches
+
+Drainage holes: 36
+
+Best used nested inside a no-hole tray for bottom watering
+
+Manufacturer specifications 
+Bootstrap Farmer
+
+How full to fill it?
+
+Target: about 1 inch of gently leveled coir, leaving roughly ¼ inch below the rim.
+
+This near-full approach differs from the thinner layers recommended by some specialists. For comparison, On The Grow recommends around 6 cups of hydrated coir in its shallow trays, while Utah State University recommends 2 quarts per 1020 tray. 
+
+On The Grow
++1
+
+Your near-full preference calls for roughly 3.25–3.5 quarts of expanded coir, based on your actual tray's dimensions.
+
+Final preparation formula
+BACK TO THE ROOTS · 10 LB / 51 QT BRICK
+
+300 g
+Dry coir per tray
+
+1.2 L
+Starting warm water per tray
+
+Trays
+
+Dry coir
+
+Starting water
+
+1
+
+300 g
+
+1.2 L
+
+2
+
+600 g
+
+2.4 L
+
+3
+
+900 g
+
+3.6 L
+
+4
+
+1,200 g
+
+4.8 L
+
+Water is an initial estimate. Add more in small increments only if the coir remains dry. This is hydration water, not bottom-watering volume.
+
+The generalized formula is:
+
+Dry coir (g)
+=
+300
+N
+Dry coir (g)=300N
+​
+ 
+Initial water (mL)
+=
+4
+×
+dry coir (g)
+Initial water (mL)=4×dry coir (g)
+​
+ 
+Where 
+N
+N is the number of trays.
+
+For your first two trays, break off 600 g of dry coir and start with 2.4 L of warm water. Let it expand, fluff and lightly tamp it, then check the actual fill height. Since the brick's 51-quart yield is approximate, adjust the dry weight next time if the finished layer is noticeably above or below 1 inch.
+
+For your peas and sunflower, you can also experiment with a slightly thinner 0.75–0.85-inch layer to give the large seeds more clearance.
+
+Bottom line: Your shallow trays are excellent for coco coir microgreens. At the near-full depth you want, 300 g per tray is the starting quantity I would use, rather than the earlier 180 g thin-layer recipe.
+
+Can you check out videos for on the grow and other creators where they specifically state how they do it and volume which you can calculate 
+
+And can you please create a formula for each family of seed specifically for broccoli radish pea and sunflower because that is what I will start out with
+Coco coir recipes for your four microgreens
+I found an important difference between what experienced growers actually use and the near-full approach we discussed earlier.
+
+On The Grow explicitly recommends 6 cups of hydrated coco coir for most crops in shallow 1020 trays, and its older general guide gives a range of 6–8 cups. That is considerably less than my previous 300 g dry-coir recommendation. 
+
+On The Grow
++1
+
+Your Back to the Roots brick advertises 10 lb of dry coir expanding to 51 US quarts. Using that advertised yield:
+
+Expanded coir per tray
+
+Calculated dry coir
+
+4 cups
+
+89 g
+
+6 cups
+
+133 g
+
+8 cups
+
+178 g
+
+10 cups
+
+222 g
+
+12 cups
+
+267 g
+
+13.5 cups
+
+300 g
+
+These are estimates derived from the brick's advertised expansion, not measured dry weights reported by On The Grow.
+
+The difference is significant: 300 g gives you roughly twice the coir that On The Grow normally recommends. A nearly full tray isn't inherently wrong, but it consumes more medium without established evidence that it increases microgreen yield.
+
+1. What I found in the videos and grower demonstrations
+A young woman patting down the coco soil in a tray
+On The Grow — Coco Coir Brick Preparation
+
+Video: November 2023
+
+Their video description specifies a 1.4 lb brick, enough for approximately seven of their 7×14 trays, using about 6 cups of coir per tray.
+
+This works out to approximately 91 g dry coir per 7×14 tray, for their particular brick.
+
+Watch the coir preparation video
+
+YouTube
+Growing Microgreens with Coco Coir
+ – Noboa Tropicals
+On The Grow — Complete Seed-to-Harvest Tutorial
+
+Video: December 2019
+
+Demonstrates preparing coir and growing Red Acre cabbage in a 1020 tray. Brick preparation starts at 2:17, and the grower levels the medium before seeding.
+
+Their accompanying guide specifies 6–8 cups per 1020 tray.
+
+Watch the coir preparation and tray filling
+
+YouTube
++1
+Coco Coir VS Reusable Microgreen Grow Medium for Sunflower Microgreens
+– On The Grow
+Natural Yield — Bootstrap Farmer Tray Demonstration
+
+They use CANNA coco coir in Bootstrap Farmer 1020 trays. Their documented method is to mound in the coir, break up clumps, and level the surface.
+
+They specify 28 g of broccoli seed, but do not give a measured coir volume in the accompanying instructions.
+
+View demonstration and instructions
+
+naturalyield.com.au
+Grow Microgreens Easily: Master Sprouting Trays Guide | On The Grow
+PBS Utah — Modern Gardener
+
+Their instructional video and companion article explicitly recommend filling a tray to the top with coir or soilless potting mix, then leveling it, primarily to make harvesting easier.
+
+This supports the fuller-tray technique you had in mind.
+
+Watch the filling and planting demonstration
+
+PBS Utah
+I also checked two creators you've been following. Jonah Krochmalnek recommends filling shallow trays to the top, but his documented method uses peat-based growing mix rather than pure coir. Donny Greens demonstrates a peat-and-perlite mix, leveling it with a second tray. Neither establishes a precise coco-coir-specific quantity in those guides. 
+
+joegardener®
++1
+
+The numerical video details above come from the published descriptions and accompanying grow guides; I couldn't independently verify every spoken measurement in the video audio.
+
+2. My specific formulas for your four crops
+I would use an On The Grow-style economical fill, modified slightly for crops that consume more water. This is an experimental starting plan, not four independently validated crop-specific coir requirements.
+
+PER BOOTSTRAP FARMER SHALLOW 1020 TRAY
+
+Crop
+
+Expanded coir
+
+Dry coir
+
+Starting hydration water
+
+Dry seed
+
+Microgreen Broccoli 45g
+ – MamaKali'sFarm
+Broccoli Waltham
+
+6 cups
+
+135 g
+
+540 mL
+
+22 g
+
+|
+
+Radish Daikon Microgreens Seeds | Crisp Texture | Intense Flavor
+ – Deliseeds
+Radish Daikon | 8 cups | 180 g | 720 mL | 30 g |
+|
+
+Speckled Pea Shoots Microgreens
+ – FarmFreshXpress - Local Food to Your Doorstep
+Pea Speckled | 6 cups | 135 g | 540 mL | 230 g |
+|
+
+Sunflower seeds sprouts for a healthy diet food. Microgreens. Green growing seedlings.
+Sunflower Black Oil | 8 cups | 180 g | 720 mL | 125 g |
+
+Water means the initial water used to expand the compressed coir, not daily irrigation. The dry-coir weights are rounded from your brick's labeled yield. Volumes refer to expanded, lightly leveled coir.
+Why these particular quantities?
+
+Broccoli: 6 cups matches On The Grow's baseline. Its current broccoli guide recommends 17–25 g of seeds per 1020 tray. 
+
+
+Radish: I increased coir to 8 cups for moisture buffering. On The Grow's Daikon-related growing guidance uses about 25 g, with 30 g possible; some extension guidance uses higher seeding densities. 
+
++1
+
+Peas: Aggressive roots don't automatically require more coir, so 6 cups is a reasonable starting point. On The Grow reports 200–260 g dry pea seed per 1020 tray, including coir grows. 
+
+
+Sunflower: I chose 8 cups for extra moisture buffering. On The Grow's newer sunflower guide uses approximately 125 g dry black-oil sunflower seed, a lighter density than some of its older recipes. 
+
+
+A grower in this r/microgreens discussion reports using 4–8 cups of expanded coir depending on crop, specifically using 6–8 cups for radish and sunflower because of their water consumption. That supports the distinction as a reasonable trial, though not as controlled experimental evidence. 
+
+Reddit
+
+3. Your reusable formulas
+For your Back to the Roots brick:
+
+Dry coir (g)
+=
+4536
+51
+×
+4
+×
+C
+ 
+Or, simplified:
+
+M
+=
+22.24
+C
+ 
+Where 
+C
+C is the number of cups of expanded coir you want.
+
+For initial hydration:
+
+W
+=
+4
+M
+ 
+Where 
+W
+W is water in mL and 
+M
+M is dry coir in grams.
+
+That 4:1 water ratio is a practical starting point, not a fixed requirement. Add water slowly until the coir is uniformly damp without dripping when squeezed. Actual expansion varies by brand, water content, and how tightly you level the fibers.
+
+Interactive batch calculator
+Choose how many trays of each crop
+
+Broccoli
+
+135 g coir/tray
+
+Radish
+
+180 g coir/tray
+
+Pea
+
+135 g coir/tray
+
+Sunflower
+
+180 g coir/tray
+
+Total dry coir
+
+630 g
+Initial hydration water
+
+2.52 L
+Expanded volume target
+
+28 cups
+Coir cost at $19.98/brick
+
+$2.78
+4. What if you still prefer nearly full trays?
+Using the interior footprint of your 1.25-inch shallow trays, these are approximate levelled coir depths:
+
+Approximate growing-medium depth
+Estimates from expanded volume and tray footprint, before accounting for tapered sides and compaction.
+
+0 in
+0.3 in
+0.6 in
+0.9 in
+1.2 in
+6 cups
+8 cups
+12 cups
+13.5 cups
+6 cups: Estimated depth 0.5 in
+8 cups: Estimated depth 0.6 in
+12 cups: Estimated depth 0.9 in
+13.5 cups: Estimated depth 1 in
+If you want to grow closer to the rim, I'd choose approximately 12 cups / 267 g of dry coir per tray, initially hydrated with about 1.07 L of water.
+
+But I'd actually start with the 6–8-cup recipes above. You can test whether adding more coir improves moisture stability or harvest weight, rather than paying for extra medium without a demonstrated benefit.
+
+For your four varieties, I'd also use these seed treatments: no presoak for broccoli or radish; soak your speckled peas 8–12 hours; and start sunflower with On The Grow's newer rinse-and-no-soak approach, although an approximately 8-hour soak is another established option. 
+
+On The Grow
++1
+
+One final calibration I strongly recommend: On your first grow, measure the expanded coir using a kitchen measuring jug after hydration and light leveling. If 135 g produces something other than 6 cups, record the actual yield. This will give you a more accurate dry-coir formula for your specific brick than any creator's measurements from a different coir brand.
+
+
+
+
+0 in
