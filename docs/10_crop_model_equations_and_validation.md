@@ -32,7 +32,7 @@ Target emerged count: `m = A × Dlive / (q × p × e × r) × trialFactor`.
 
 Expected emerged shoots: `N = m × q × p × e × r`.
 
-Here `q` is planting units/g, `p` laboratory germination, `e` conditional establishment and `r` shoots per viable planting unit. Expected spacing is square-grid equivalent `10 × sqrt(Acm²/N)` mm, calculated for inspection but not presented as an actual canopy or seed diameter. A deterministic random scatter shows even sowing qualitatively; symbols are sampled and do not depict every seed, plant size or disease physics.
+Here `q` is planting units/g, `p` laboratory germination, `e` conditional establishment and `r` shoots per viable planting unit. Expected spacing is square-grid equivalent `10 × sqrt(Acm²/N)` mm, calculated for inspection but not presented as an actual canopy or seed diameter. A deterministic random scatter draws one circle per rounded planting unit up to 12,000 units, then explicitly labels a sample and warns that crowding is understated. Dot diameter is scaled to usable tray dimensions. Automatic diameter is a visual proxy `d(mm) = cbrt(6000 / (π × unitsPerGram))`, treating a planting unit as a sphere at an assumed 1 g/cm³. This is not a measured species dimension. An optional 0.3–30 mm diameter overrides the drawing without changing seed mass or count. Seed shape, nonoverlapping packing, canopy growth and disease physics are not simulated.
 
 Mung/lentil baseline: `m = 3 × Acm²/q`, preserving seeds **sown** per cm². Source-recipe mass is deliberately independent of changed `p/e/q`, except these two count-based presets. Target-live mode explicitly depends on those terms. Zero and invalid fractions are rejected rather than divided by zero.
 
@@ -46,13 +46,17 @@ Selected drawdown: `D = Vwater × depletionFraction`; central trigger time `24D/
 
 Measured mode uses `Mtrigger = Mwet − measuredReserve × depletionFraction`. If current mass is at/below the trigger, `refill = max(0,Mwet−Mnow)` mL using 1 g/mL; otherwise refill is zero. It rejects reserve ≥ complete wet mass. Values are approximate because biomass, retained reservoir water and accessories can change the weighing denominator. Zero refill does not override a dry germinating seed surface or root-access problem.
 
-The schedule’s illustrative water-loss series is 20% of late demand before light, then a linear 35→100% ramp during the lit interval. The integrated scenario totals days 0 through the day before harvest and excludes initial hydration, drainage and soaking. This is an educational budget, not a species-calibrated irrigation model. It never issues that scenario amount as an automatic daily refill.
+The schedule’s illustrative water-loss series is 20% of late demand before light, then a linear 35→100% ramp during the lit interval. The integrated scenario totals days 0 through the day before harvest and excludes initial hydration, drainage and soaking. This is an educational budget, not a species-calibrated irrigation model. It never issues that scenario amount as an automatic daily refill. The calendar and list express each day in US cups and mL: `1 cup = 236.5882365 mL`. Morning allocation is `daily mL × morningShare/100`; night is the remainder. The initial 50/50 split is an editable planning assumption, not a measured diurnal demand curve. All amounts remain estimates even when the separate current-tray refill calculator uses measured weights. Harvest-day amounts are conditional on continuing the grow through that day; the integrated preharvest total excludes them.
 
 Air vapor pressure deficit: `es = 0.6108 exp[17.27T/(T+237.3)]` kPa, `VPDair = es × (1−RH/100)`. This common saturation-pressure approximation is a diagnostic, not leaf VPD. DLI is `PPFD × lightHours × 0.0036` mol/m²/day. Changing these diagnostics does not silently change seed rate or water demand.
 
 ## Date and protocol model
 
 Day 0 is sowing. Calendar-day offsets are calculated in UTC from an ISO date at noon, avoiding daylight-saving shifts in the generated dates. The default sow date is the user’s local calendar date. Presoaking occurs beforehand and is not counted as a sowing day. Emergence cover and optional noncontact stretch blackout are separate intervals. Their sum must be less than harvest day; an impossible schedule produces no rows. A manual source/method change can be explored but the mismatch is disclosed.
+
+The calendar aligns dates under Sunday–Saturday headings and crosses month/year boundaries. Calendar and list views share the same schedule rows; CSV includes method, morning/night mL and US cups, daily cups, and the estimate boundary. JSON includes the cup conversion and allocation assumptions.
+
+The first bottom-watering day defaults to covered plus stretch days and updates when either phase is adjusted. The user can then move it independently from day 1 through harvest. Earlier dates show spray-bottle checks; later dates show conditional bottom watering. A date alone does not establish root access: confirm roots reach the base or the medium wicks from below; otherwise continue fine surface misting as needed and delay the switch. Day 0 excludes initial medium wetting from its demand budget.
 
 Covered time, top load and harvest dates are planning settings. The recipe’s actual developmental cues govern transitions. A dome has zero added top load by default. The 3-lb contact-cover example sits within the USU 2–5-lb guidance but is not an experimentally optimized pressure; a pounds-only input also does not model load distribution or inter-tray contact mechanics.
 
@@ -94,3 +98,7 @@ Actual visual browser rendering is a separate check. Browser control was disable
 ## Follow-up: persistent grow records
 
 [My grow log](site/dist/grow-log.html) preserves actual tray conditions and outcomes separately from the initial plan. The [logging guide](11_grow_log_and_protocol_calibration.md) defines persistence, backup/merge behavior, comparable-trial grouping and the apparent mass-loss calculation. Journal checks are `node site/test-grow-log.cjs` and `node site/test-grow-log-interactions.cjs`. Locally entered records are not automatically visible in chat or used to rewrite research defaults.
+
+## Watering calendar and seed-dot update · November 2, 2026
+
+Added daily spray-to-bottom method labels, editable transition day, morning/night and total cup estimates, an adjustable morning allocation, calendar/list views, matching exports and tray-scaled seed diameters. No new agronomic demand coefficient or species dimension was introduced. Regression checks cover cup conversion/conservation at 0/50/75/100% splits, root-access delays, area scaling, invalid estimates/transitions, year boundaries, view switching, export consistency, seed-dot radius and diameter-only changes. Desktop and narrow-screen browser layout were checked for this update; earlier browser-access limits above describe the original delivery.

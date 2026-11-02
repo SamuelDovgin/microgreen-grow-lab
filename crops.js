@@ -4,11 +4,11 @@ const D=window.CropData,M=window.CropModel,$=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=(n,d=1)=>Number.isFinite(n)?n.toLocaleString('en-US',{maximumFractionDigits:d,minimumFractionDigits:0}):'—';
 const n=id=>$(id).value.trim()===''?NaN:Number($(id).value);
-const nums=['length','width','seedsPerGram','germination','establishment','shootsPerUnit','multiplier','targetShoots','depth','theta','reserve','depletion','wetWeight','currentWeight','measuredBuffer','demand','demandUncertainty','temp','rh','ppfd','hours','ph','ec','coverDays','blackoutDays','harvestDay','weightLb','soakHours','seedPrice','salePrice','otherCost','turnaround'];
+const nums=['length','width','seedsPerGram','germination','establishment','shootsPerUnit','multiplier','targetShoots','depth','theta','reserve','depletion','wetWeight','currentWeight','measuredBuffer','demand','demandUncertainty','temp','rh','ppfd','hours','ph','ec','coverDays','blackoutDays','harvestDay','bottomStartDay','amShare','weightLb','soakHours','seedPrice','salePrice','otherCost','turnaround'];
 const texts=['mode','substrate','waterBasis','airflow','sowDate','method','objective'];
 let crop=D.crops[0],recipe=crop.alternatives[0],localTrials=null,activeCurve=null,ranked=null,lastPlan=null,extraRecipe=null,weightResetNote='',loggedWaterNote='';
 const sourceLink=(id,label)=>{const s=D.sources[id];return s?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(label||s.title)} ↗</a>`:esc(label||'Your measured trays');};
-function state(){const s={};nums.forEach(id=>s[id]=n(id));texts.forEach(id=>s[id]=$(id).value);return s;}
+function state(){const s={};nums.forEach(id=>s[id]=n(id));texts.forEach(id=>s[id]=$(id).value);s.seedDiameterMm=$('seedDiameterMm').value.trim()===''?null:n('seedDiameterMm');return s;}
 function set(id,value){$(id).value=String(value);}
 function range(a){return a[0]===a[1]?String(a[0]):a.join('–');}
 function notice(text,error=false){return `<p class="notice${error?' error':''}">${esc(text)}</p>`;}
@@ -21,6 +21,7 @@ function applyRecipe(){
  recipe=[...crop.alternatives,...(extraRecipe?[extraRecipe]:[])].find(r=>r.id===$('recipe').value)||crop.alternatives[0];
  set('mode','reference');set('multiplier',1);set('coverDays',Math.round((recipe.cover[0]+recipe.cover[1])/2));set('blackoutDays',recipe.source==='V01'?3:recipe.source==='V02'?1:0);set('harvestDay',Math.round((recipe.harvest[0]+recipe.harvest[1])/2));set('method',recipe.method);set('weightLb',recipe.method==='dome'?0:3);
  const soak=recipe.soak||crop.soakHours;set('soakHours',soak[0]===soak[1]?soak[0]:Math.round((soak[0]+soak[1])/2));
+ set('bottomStartDay',n('coverDays')+n('blackoutDays'));
  if(recipe.lightHours)set('hours',recipe.lightHours);
  if(recipe.substrateId){const sub=D.substrates.find(x=>x.id===recipe.substrateId);set('substrate',sub.id);set('depth',sub.depth);set('theta',sub.theta*100);set('reserve',0);}
  set('waterBasis','scenario');weightResetNote='Crop/source changes reset measured-water mode. Reweigh this specific tray and root-zone setup before calculating a refill.';
@@ -29,7 +30,7 @@ function applyRecipe(){
 }
 function chooseCrop(id){
  crop=D.crops.find(c=>c.id===id)||D.crops[0];set('crop',crop.id);extraRecipe=null;localTrials=null;
- set('seedsPerGram',crop.seedsPerGram);set('germination',95);set('establishment',90);set('shootsPerUnit',1);set('trials','');$('trial-status').textContent='Use one crop, substrate, lot and harvest stage per comparison. Include failed trays as zero saleable grams.';
+ set('seedDiameterMm','');set('seedsPerGram',crop.seedsPerGram);set('germination',95);set('establishment',90);set('shootsPerUnit',1);set('trials','');$('trial-status').textContent='Use one crop, substrate, lot and harvest stage per comparison. Include failed trays as zero saleable grams.';
  fillRecipes();fillCurves();applyRecipe();
 }
 function filterCrops(){
@@ -42,17 +43,19 @@ function fillCurves(){
  const matched=D.curves.find(c=>c.crop===crop.id);set('curve',localTrials?'local':matched?matched.id:'');
 }
 function labelOutputs(s){
- const suffix={length:' in',width:' in',germination:'%',establishment:'%',depletion:'%',theta:'%',demandUncertainty:'%',reserve:' mL',depth:' in',temp:'°C',rh:'%',ppfd:'',hours:' h',coverDays:' d',blackoutDays:' d',harvestDay:' d',weightLb:' lb',soakHours:' h',demand:' mm/d',seedPrice:' $/kg',salePrice:' $/kg',otherCost:' $/m²',turnaround:' d',targetShoots:'/in²',ph:'',ec:' mS/cm'};
+ const suffix={length:' in',width:' in',bottomStartDay:' d',amShare:'%',germination:'%',establishment:'%',depletion:'%',theta:'%',demandUncertainty:'%',reserve:' mL',depth:' in',temp:'°C',rh:'%',ppfd:'',hours:' h',coverDays:' d',blackoutDays:' d',harvestDay:' d',weightLb:' lb',soakHours:' h',demand:' mm/d',seedPrice:' $/kg',salePrice:' $/kg',otherCost:' $/m²',turnaround:' d',targetShoots:'/in²',ph:'',ec:' mS/cm'};
  for(const id of nums){const out=$(id+'-out');if(out)out.textContent=id==='multiplier'?fmt(s[id]*100,0)+'%':fmt(s[id],id==='depth'?2:1)+(suffix[id]||'');}
 }
 function seedMap(d,s){
- if(!d){$('seed-map').innerHTML='';return;}
- const w=590,h=w*s.width/s.length,top=37,pad=55,count=Math.min(900,Math.max(1,Math.round(d.units))),r=Math.max(.8,Math.min(3.2,150/Math.sqrt(count))),seed=d.units;
+ if(!d){$('seed-map').innerHTML='';$('seed-map-caption').textContent='Enter valid tray and seed-lot inputs to draw the tray.';return;}
+ const diameter=s.seedDiameterMm===null?M.seedDiameter(s.seedsPerGram):s.seedDiameterMm;
+ if(!Number.isFinite(diameter)||diameter<.3||diameter>30){$('seed-map').innerHTML='';$('seed-map-caption').textContent='Enter a seed dot diameter from 0.3 to 30 mm, or leave it blank for automatic sizing.';return;}
+ const w=590,h=w*s.width/s.length,top=37,pad=55,count=Math.min(12000,Math.max(1,Math.round(d.units))),r=diameter/25.4*w/s.length/2;
  let dots='';let z=7457;const random=()=>{z=(z*1664525+1013904223)>>>0;return z/4294967296;};
- for(let i=0;i<count;i++){const x=pad+7+random()*(w-14),y=top+7+random()*(h-14);dots+=`<circle cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="${r}" fill="${i/count<s.germination/100?'#527a48':'#a69779'}" opacity=".8"/>`;}
+ for(let i=0;i<count;i++){const x=pad+r+random()*Math.max(0,w-2*r),y=top+r+random()*Math.max(0,h-2*r);dots+=`<circle cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="${r.toFixed(3)}" fill="${i/count<s.germination/100?'#527a48':'#a69779'}" opacity=".8"/>`;}
  $('seed-map').setAttribute('viewBox',`0 0 700 ${h+90}`);
- $('seed-map').innerHTML=`<title>Seed distribution on ${fmt(s.length)} by ${fmt(s.width)} inch planted surface</title><rect x="${pad-7}" y="${top-7}" width="${w+14}" height="${h+14}" rx="12" fill="#e1e6d4" stroke="#81936c"/><rect x="${pad}" y="${top}" width="${w}" height="${h}" rx="4" fill="#f5f3e5"/>${dots}<text x="350" y="20" text-anchor="middle">${fmt(s.length)}″ USABLE LENGTH</text><text x="350" y="${h+72}" text-anchor="middle">${fmt(d.area.in2)} in² · ${fmt(d.area.cm2,0)} cm² · ${fmt(d.area.m2,4)} m²</text>`;
- $('seed-map-caption').textContent=`Distribution sketch: ${fmt(seed/count,1)} planting unit${seed/count>1.1?'s':''} per dot. Green = potentially viable; muted = assumed germination loss. Dots show sowing uniformity, not seed diameter or a validated canopy simulation.`;
+ $('seed-map').innerHTML=`<title>Seed distribution on ${fmt(s.length)} by ${fmt(s.width)} inch planted surface; illustrative seed diameter ${fmt(diameter,1)} mm</title><rect x="${pad-7}" y="${top-7}" width="${w+14}" height="${h+14}" rx="12" fill="#e1e6d4" stroke="#81936c"/><rect x="${pad}" y="${top}" width="${w}" height="${h}" rx="4" fill="#f5f3e5"/>${dots}<text x="350" y="20" text-anchor="middle">${fmt(s.length)}″ USABLE LENGTH</text><text x="350" y="${h+72}" text-anchor="middle">${fmt(d.area.in2)} in² · ${fmt(d.area.cm2,0)} cm² · ${fmt(d.area.m2,4)} m²</text>`;
+ $('seed-map-caption').textContent=`Seed dots: ${fmt(diameter,1)} mm across, scaled to the tray. ${s.seedDiameterMm===null?'Automatic size is a spherical illustration from units/g at an assumed 1 g/cm³; enter a measured diameter to match your lot.':'Using your entered diameter.'} ${d.units>12000?'Showing a 12,000-unit sample of '+fmt(d.units,0)+' planting units; crowding is understated.':'One dot per planting unit (rounded).'} Green = potentially viable; muted = assumed germination loss. Scatter may overlap; seed shape and canopy growth are not simulated.`;
 }
 function renderSeed(s,d){
  $('count-controls').hidden=s.mode!=='count';
@@ -128,12 +131,26 @@ function renderSchedule(s,rows){
  if(s.method!==recipe.method)flags.push('Covered method differs from this source recipe; treat it as a separate method trial.');
  if(s.harvestDay<recipe.harvest[0]||s.harvestDay>recipe.harvest[1])flags.push('Harvest day is outside this source’s reported window; inspect actual leaf stage and do not assume the source yield applies.');
  if(s.blackoutDays>0)flags.push('Stretch blackout is optional. It changes stem length, light exposure and occupied time; it is not required for every crop.');
- if(!rows){$('schedule-body').innerHTML='<tr><td colspan="4">Enter a valid date and ensure covered + stretch days are shorter than the harvest cycle.</td></tr>';$('schedule-chart').innerHTML='';$('schedule-note').textContent='Invalid schedule: covered emergence plus stretch must end before harvest.';return;}
+ if(!rows){$('watering-calendar').innerHTML='';$('watering-transition').textContent='Check the growing dates, bottom-watering day and morning share.';$('schedule-body').innerHTML='<tr><td colspan="6">Enter a valid date and ensure covered + stretch days are shorter than the harvest cycle.</td></tr>';$('schedule-chart').innerHTML='';$('schedule-note').textContent='Invalid schedule: covered emergence plus stretch must end before harvest; the first bottom-watering day must be between day 1 and harvest.';return;}
  const x=d=>45+d/s.harvestDay*660,width=d=>d/s.harvestDay*660,start=s.coverDays+s.blackoutDays;
  $('schedule-chart').innerHTML=`<title>Growing phases over ${s.harvestDay} days after sowing</title><rect x="45" y="42" width="${width(s.coverDays)}" height="36" rx="3" fill="#a5ae87"/>${s.blackoutDays?`<rect x="${x(s.coverDays)}" y="42" width="${width(s.blackoutDays)}" height="36" fill="#647351"/>`:''}<rect x="${x(start)}" y="42" width="${width(s.harvestDay-start)}" height="36" rx="3" fill="#b9cf81"/><text x="45" y="25">COVERED ${s.coverDays} d · STRETCH ${s.blackoutDays} d · LIGHT ${s.harvestDay-start} d</text><text x="45" y="104">Day 0</text><text x="705" y="104" text-anchor="end">Day ${s.harvestDay}</text><text x="45" y="137">${esc(s.sowDate)} → ${esc(M.dateAt(s.sowDate,s.harvestDay))} · ${s.hours} h light/day after emergence</text>`;
  const total=rows.slice(0,-1).reduce((v,r)=>v+(r.waterScenarioMl||0),0);
- $('schedule-note').textContent='Day 0 = sowing; presoak is a separate preparation step. Check at lights-on and late light period. Emergence loss = 20% of the late-crop input; lit-stage loss ramps 35→100%: both are illustrative assumptions. Approximate scenario total '+fmt(total/1000,2)+' L/tray through harvest, excluding initial wetting, soak water and drainage. '+flags.join(' ');
- $('schedule-body').innerHTML=rows.map(r=>`<tr><td><strong>D${r.day}</strong><br><small>${esc(r.date)}</small></td><td>${esc(r.stage)}</td><td>${esc(r.action)}</td><td>${r.waterScenarioMl===null?'—':fmt(r.waterScenarioMl,0)+' mL/d'}</td></tr>`).join('');
+ $('schedule-note').textContent='Day 0 = sowing; presoak is a separate preparation step. Morning and night checks split the daily estimate '+fmt(s.amShare,0)+'/'+fmt(100-s.amShare,0)+'; amounts are planning estimates, including in measured-refill mode. Harvest-day amounts apply only if you keep growing through that day. Emergence loss = 20% of the late-crop input; lit-stage loss ramps 35→100%: both are illustrative assumptions. Approximate scenario total '+fmt(total/1000,2)+' L/tray through harvest, excluding initial wetting, soak water and drainage. '+flags.join(' ');
+ $('watering-transition').textContent=`Spray bottle: D0–D${s.bottomStartDay-1}. First planned bottom water: D${s.bottomStartDay} (${M.dateAt(s.sowDate,s.bottomStartDay)}), only when roots reach the base or the medium wicks water. Keep misting as needed and move this day if the crop is not ready.`;
+ const method=r=>r.wateringMethod==='spray'?'Spray bottle':'Bottom water';
+ const volume=(cups,ml)=>cups===null?'Estimate unavailable':`≈ ${fmt(cups,2)} cup${cups===1?'':'s'} <small>(${fmt(ml,0)} mL)</small>`;
+ $('schedule-body').innerHTML=rows.map(r=>`<tr><td><strong>D${r.day}</strong><br><small>${esc(r.date)}</small></td><td>${esc(r.stage)}<br><strong>${method(r)}</strong></td><td>${esc(r.action)}</td><td>${volume(r.amCups,r.amMl)}</td><td>${volume(r.pmCups,r.pmMl)}</td><td>${volume(r.dailyCups,r.waterScenarioMl)}</td></tr>`).join('');
+ const offset=new Date(s.sowDate+'T12:00:00Z').getUTCDay();
+ let cells=Array.from({length:offset},()=>'<div class="calendar-empty" aria-hidden="true"></div>').join('');
+ cells+=rows.map(r=>{
+  const monthDay=new Date(r.date+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'});
+  const cue=r.day===0?'Moisten & sow':r.day===s.harvestDay?'Harvest checkpoint':r.day===s.bottomStartDay?'Check roots before switching':r.wateringMethod==='spray'?'Mist only if surface needs it':'Check weight before watering';
+  return `<article class="calendar-day ${r.wateringMethod}${r.day===s.bottomStartDay?' switch-day':''}"><div class="calendar-date"><time datetime="${r.date}">${monthDay}</time><strong>D${r.day}</strong></div><p class="calendar-phase">${esc(r.stage)}</p><span class="water-method">${method(r)}</span><dl class="calendar-volumes"><dt>Morning</dt><dd>${volume(r.amCups,r.amMl)}</dd><dt>Night</dt><dd>${volume(r.pmCups,r.pmMl)}</dd></dl><p class="calendar-total">Day ≈ ${r.dailyCups===null?'—':fmt(r.dailyCups,2)+' cups'}</p><p class="calendar-cue">${cue}</p></article>`;
+ }).join('');
+ const trailing=(7-(offset+rows.length)%7)%7;
+ cells+=Array.from({length:trailing},()=>'<div class="calendar-empty" aria-hidden="true"></div>').join('');
+ $('watering-calendar').innerHTML='<div class="calendar-grid">'+['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map(day=>`<div class="calendar-weekday">${day}</div>`).join('')+cells+'</div>';
+
 }
 function renderOptimization(s,d){
  const id=$('curve').value;activeCurve=id==='local'&&localTrials?{...localTrials,kind:'local',source:'LOCAL',crop:crop.id}:D.curves.find(c=>c.id===id)||null;ranked=null;
@@ -161,7 +178,7 @@ function renderSources(){
 }
 function render(){
  const s=state(),d=M.density(s,crop,recipe),w=M.water(s),rows=M.schedule(s,crop);labelOutputs(s);renderSeed(s,d);renderWater(s,w);renderSchedule(s,rows);renderOptimization(s,d);renderSources();
- lastPlan={version:D.version,crop:{id:crop.id,name:crop.name,species:crop.species,family:crop.family,protocolGroup:crop.group},sourceRecipe:recipe,inputs:s,density:d,water:w,schedule:rows,optimizer:activeCurve?{source:activeCurve.source,context:activeCurve.context,ranking:ranked}:null,evidenceBoundary:'Published starting plan and measured arithmetic; no universal agronomic optimum. All unmeasured seed sizes, capacities and demand inputs are illustrative.',sourceRecords:[...new Set([recipe.source,crop.seedSizeSource,'D01','D09','D16'].filter(Boolean))].map(id=>D.sources[id]).filter(Boolean)};
+ lastPlan={version:D.version,crop:{id:crop.id,name:crop.name,species:crop.species,family:crop.family,protocolGroup:crop.group},sourceRecipe:recipe,inputs:s,density:d,water:w,schedule:rows,wateringPlan:{cupMl:M.CUP_ML,amSharePercent:s.amShare,bottomStartDay:s.bottomStartDay,volumeBasis:'Illustrative daily loss split between morning and night; check actual moisture and root access. Initial wetting, soaking and drainage excluded.'},optimizer:activeCurve?{source:activeCurve.source,context:activeCurve.context,ranking:ranked}:null,evidenceBoundary:'Published starting plan and measured arithmetic; no universal agronomic optimum. All unmeasured seed sizes, capacities and demand inputs are illustrative.',sourceRecords:[...new Set([recipe.source,crop.seedSizeSource,'D01','D09','D16'].filter(Boolean))].map(id=>D.sources[id]).filter(Boolean)};
 }
 function download(name,text,type){const blob=new Blob([text],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 function csvCell(v){return '"'+String(v??'').replace(/"/g,'""')+'"';}
@@ -174,14 +191,15 @@ $('all-sources').innerHTML=Object.values(D.sources).map(s=>`<li id="source-${esc
 $('family-filter').addEventListener('change',filterCrops);
 $('crop').addEventListener('change',()=>chooseCrop($('crop').value));
 $('recipe').addEventListener('change',applyRecipe);
-for(const form of ['seed-form','water-form','schedule-form']){$(form).addEventListener('submit',e=>e.preventDefault());$(form).addEventListener('input',e=>{if(['length','width','depth','reserve','multiplier'].includes(e.target.id)&&$('waterBasis').value==='measured'){set('waterBasis','scenario');weightResetNote='The tray/seed/root-zone setup changed. Reweigh the revised assembly before reusing measured refill mode.';}render();});$(form).addEventListener('change',render);}
+for(const [id,calendar] of [['calendar-view',true],['list-view',false]])$(id).addEventListener('click',()=>{$('watering-calendar').hidden=!calendar;$('schedule-list').hidden=calendar;$('calendar-view').setAttribute('aria-pressed',String(calendar));$('list-view').setAttribute('aria-pressed',String(!calendar));});
+for(const form of ['seed-form','water-form','schedule-form']){$(form).addEventListener('submit',e=>e.preventDefault());$(form).addEventListener('input',e=>{if(['coverDays','blackoutDays'].includes(e.target.id))set('bottomStartDay',n('coverDays')+n('blackoutDays'));if(['length','width','depth','reserve','multiplier'].includes(e.target.id)&&$('waterBasis').value==='measured'){set('waterBasis','scenario');weightResetNote='The tray/seed/root-zone setup changed. Reweigh the revised assembly before reusing measured refill mode.';}render();});$(form).addEventListener('change',render);}
 $('substrate').addEventListener('change',()=>{const s=D.substrates.find(x=>x.id===$('substrate').value);set('depth',s.depth);set('theta',s.theta*100);set('reserve',0);set('waterBasis','scenario');weightResetNote='Substrate changed: reweigh this assembly before selecting measured refill mode.';render();});
 ['curve','objective','seedPrice','salePrice','otherCost','turnaround'].forEach(id=>{$(id).addEventListener('input',render);$(id).addEventListener('change',render);});
 $('method').addEventListener('change',()=>{if($('method').value==='dome')set('weightLb',0);render();});
 $('reset-crop').addEventListener('click',()=>chooseCrop(crop.id));
 $('export-plan').addEventListener('click',()=>download('grow-lab-'+crop.id+'-plan.json',JSON.stringify(lastPlan,null,2),'application/json'));
 $('print-plan').addEventListener('click',()=>window.print());
-$('export-schedule').addEventListener('click',()=>{if(!lastPlan?.schedule)return;const header=['day','date','stage','check_action','illustrative_loss_ml_day'];const lines=[header,...lastPlan.schedule.map(r=>[r.day,r.date,r.stage,r.action,r.waterScenarioMl===null?'':r.waterScenarioMl.toFixed(1)])];download('grow-lab-'+crop.id+'-schedule.csv',lines.map(r=>r.map(csvCell).join(',')).join('\n'),'text/csv');});
+$('export-schedule').addEventListener('click',()=>{if(!lastPlan?.schedule)return;const header=['day','date','stage','check_action','illustrative_loss_ml_day','watering_method','morning_ml','night_ml','morning_us_cups','night_us_cups','daily_us_cups','estimate_basis'];const lines=[header,...lastPlan.schedule.map(r=>[r.day,r.date,r.stage,r.action,r.waterScenarioMl===null?'':r.waterScenarioMl.toFixed(1),r.wateringMethod,...[r.amMl,r.pmMl,r.amCups,r.pmCups,r.dailyCups].map(v=>v===null?'':v.toFixed(4)),'Planning scenario; check moisture and roots before watering; initial wetting and soak water excluded'])];download('grow-lab-'+crop.id+'-schedule.csv',lines.map(r=>r.map(csvCell).join(',')).join('\n'),'text/csv');});
 $('trial-template').addEventListener('click',()=>download('grow-lab-'+crop.id+'-blank-trial.csv','crop_id,seed_g,saleable_g,area_in2,days,substrate,lot,stage\n','text/csv'));
 $('analyze-trials').addEventListener('click',()=>{const result=M.parseTrials($('trials').value,crop.id);if(result.error){$('trial-status').textContent=result.error;return;}localTrials=result;fillCurves();set('curve','local');render();$('trial-status').textContent=result.rows.length+' independent tray rows · '+result.points.length+' treatment means. '+result.warning;});
 $('apply-optimum').addEventListener('click',()=>{

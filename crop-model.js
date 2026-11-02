@@ -1,7 +1,7 @@
 /* Pure, unit-explicit calculations. No fitted agronomic coefficients. */
 (function(root){
 'use strict';
-const IN2_M2=.00064516, IN3_ML=16.387064;
+const IN2_M2=.00064516, IN3_ML=16.387064, CUP_ML=236.5882365;
 const finite=x=>typeof x==='number'&&Number.isFinite(x);
 const between=(x,a,b)=>finite(x)&&x>=a&&x<=b;
 function area(length,width){return between(length,1,48)&&between(width,1,48)?{in2:length*width,cm2:length*width*6.4516,m2:length*width*IN2_M2}:null;}
@@ -63,13 +63,23 @@ function dateAt(iso,offset){
  if(!Number.isFinite(d.getTime())||d.toISOString().slice(0,10)!==iso)return null;
  d.setUTCDate(d.getUTCDate()+offset);return d.toISOString().slice(0,10);
 }
+// Visual proxy only: spherical planting unit at an assumed 1 g/cm³.
+function seedDiameter(seedsPerGram){return between(seedsPerGram,.1,5000)?Math.cbrt(6000/(Math.PI*seedsPerGram)):null;}
 function schedule(s,c){
  if(!Number.isInteger(s.coverDays)||!between(s.coverDays,1,14)||!Number.isInteger(s.blackoutDays)||!between(s.blackoutDays,0,5)||!Number.isInteger(s.harvestDay)||!between(s.harvestDay,4,40)||s.coverDays+s.blackoutDays>=s.harvestDay||!dateAt(s.sowDate,0))return null;
  const list=[],lightStart=s.coverDays+s.blackoutDays;
+ const bottomStart=s.bottomStartDay??lightStart,amShare=s.amShare??50;
+ if(!Number.isInteger(bottomStart)||!between(bottomStart,1,s.harvestDay)||!between(amShare,0,100))return null;
  for(let day=0;day<=s.harvestDay;day++){
   let stage=day<s.coverDays?(s.method==='dome'?'Dome / emergence':'Contact cover / emergence'):day<lightStart?'Noncontact dark cover':day===s.harvestDay?'Harvest checkpoint':'Under lights';
   let action=day===0?'Pre-moisten and drain medium; weigh dry seed, sow evenly, start the selected cover.':day<s.coverDays?'Inspect seed-zone moisture and emergence; add a fine mist only if needed.':day===s.coverDays?'Use the root/stand exit cue; remove contact cover or vent/remove dome.':day<lightStart?'Optional stretch phase: inspect closely; stop before stems weaken.':day===lightStart?'Move to light; check root access, tray weight and drainage.':day===s.harvestDay?'Inspect actual leaf stage, flavor, hulls and dry foliage; harvest only a suitable crop.':'Check tray weight at lights-on and late light period; refill only when the selected trigger is reached.';
-  list.push({day,date:dateAt(s.sowDate,day),stage,action,waterScenarioMl:dailyDemand(s,day)});
+  const wateringMethod=day<bottomStart?'spray':'bottom',waterScenarioMl=dailyDemand(s,day);
+  if(day===0)action+=' Use a spray bottle to settle seeds without pooling.';
+  else if(wateringMethod==='spray')action+=' Use the spray bottle only if the seed surface needs moisture; avoid pooling.';
+  else if(day===bottomStart)action+=' First planned bottom watering: confirm roots reach the tray base or the medium wicks from below. If not ready, keep using a fine spray and move the switch day.';
+  else action+=' Bottom-water only as needed after checking tray weight and moisture; drain unabsorbed water.';
+  const amMl=waterScenarioMl===null?null:waterScenarioMl*amShare/100,pmMl=waterScenarioMl===null?null:waterScenarioMl-amMl;
+  list.push({day,date:dateAt(s.sowDate,day),stage,action,wateringMethod,bottomStartDay:bottomStart,waterScenarioMl,amMl,pmMl,dailyCups:waterScenarioMl===null?null:waterScenarioMl/CUP_ML,amCups:amMl===null?null:amMl/CUP_ML,pmCups:pmMl===null?null:pmMl/CUP_ML});
  }
  return list;
 }
@@ -110,6 +120,6 @@ function parseTrials(text,expectedCrop){
  if(new Set(points.map(p=>p.seedGm2.toFixed(5))).size<2)return {error:'Provide at least two distinct seed rates; repeated rows at one rate cannot locate a density winner.'};
  return {rows,points,context:rows[0].substrate+' / '+rows[0].lot+' / '+rows[0].stage,warning:points.some(p=>p.n<3)?'Fewer than three trays at one or more rates: exploratory evidence only.':'Replicates summarized by mean and sample SD; repeated independent cycles are still needed.'};
 }
-const api={IN2_M2,IN3_ML,area,density,climate,reservoir,water,dailyDemand,dateAt,schedule,rank,parseTrials};
+const api={IN2_M2,IN3_ML,CUP_ML,area,density,climate,reservoir,water,dailyDemand,dateAt,seedDiameter,schedule,rank,parseTrials};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.CropModel=api;
 })(typeof window!=='undefined'?window:globalThis);

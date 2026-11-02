@@ -10,14 +10,14 @@
     "creator-notes.html": "f5ad008e276073c2e776b24b53882c365ce6ecf6600a7824014f557d27a13e82",
     "crop-catalog.html": "49bd5d6fcf691eba8f534af5ee402d4b1aa724c2a823803321545f75e2ac0406",
     "crop-data.js": "7a120e027658101f3df79e5d53f5ba77276e36fcb17320fe7876358f99cf65e2",
-    "crop-model-notes.html": "9958b50d08a1d5194c2d44c0ee6b7d5a91ef22527df82d34fb39fe0df8345b58",
-    "crop-model.js": "27b518fc8a3dfa4060cc1ce7d8a93bb5384bdcaa9f029b563f2db56083f49731",
+    "crop-model-notes.html": "8bda4bbc901bd0b7ddbb3d4e8122fed05618acfd3600aa26b030b57b272089e3",
+    "crop-model.js": "3b3fa0728c280d93be8d3c1cc34602fdd66d029e36f664efc29f066a2928bfec",
     "crop-research.html": "518a106e9ee0131020d3c20f77be38614315875bce3b3e9931e1db058732c8dc",
     "crop-source-log.html": "71b6c6684e8203bb4ac73e27a1380195ee7566ece64bea1c0de3f4aa14467572",
     "crop-video-notes.html": "1696f6ec4a61a03e59802f7cf62db52fc0f84b36176f8571576e8ba90a147002",
-    "crops.css": "e4247c4a97be963ed5f6a927e4aaf23023535e4842ece3c13069b7b1de1be582",
-    "crops.html": "d28462e6607754d74dbc303f10fcff89d10d5725091d7ea69170ff12b3f7cf51",
-    "crops.js": "40782c17f9347f7cc81feda9b397152206ff4954c27694c573417d1285789dc9",
+    "crops.css": "9dd2e7624a7b772abd7398ed9c51c0a2db24777b5420a0594e025e99c44afd3c",
+    "crops.html": "b83fe913c179925510c27b1eb7a87ae31521134ca038a6f7869ffb5f913930df",
+    "crops.js": "2bbc4886eee0e67aba08830b04b7a090eaac4b9f039d5ed155adfea8ae3360dd",
     "data/crop-protocols.json": "81051c775d43d7e1278b502ff3b5e70afd8e4292a21a9fa3749edda729590734",
     "data/crop-qa-report.json": "9378aa295002407eae29bc82cf7c30cbd97a7172c691880f137fb8b9e1f72dcc",
     "data/crop-starting-rates.csv": "7261e523fc56eb5e00b35a8554e9d607231ec9606d49aad0c50b3abaf421e5e2",
@@ -31,7 +31,7 @@
     "docs/07_seed_density_water_and_family_protocols.md": "1c249ca1e4ae45f87bffa67099bed4dd2c22545cada21ad8071ecf1d3e3bb3e2",
     "docs/08_creator_transcript_density_and_water_review.md": "51e3c8ab718be4748e4aefb3524669a50f244974081586ef858b7d604e4131be",
     "docs/09_species_density_and_protocol_catalog.md": "6a6fda01f71fa455246955ed5729c497e69b87d7557d1bc9059b9d82a65d2095",
-    "docs/10_crop_model_equations_and_validation.md": "dca1bb23d59d412502b454fda59d389c620884cc52445461d196feaa8cda9e29",
+    "docs/10_crop_model_equations_and_validation.md": "f84f6bfd1ea87614f48a899bcb35bf95ed476f2615d0dc966c41a7f46cb88a1c",
     "docs/11_grow_log_and_protocol_calibration.md": "6d3874fe213dfb17db452c4e765c264d2868a91da614dada995c62167e496224",
     "docs/12_coco_coir_preparation_and_calculator.md": "0992f7d032b5c5b4224c120ca815ebd0df9e47c6a4f9c7a0b017072e3dd0e627",
     "docs/coir_research_resource_log_2026-11-01.txt": "80b874cce1f3faab2c0cf7437a107093317afab6597316084a8cb309afaddbba",
@@ -75,5 +75,5 @@
     "style.css": "745f7f22dd404d93a58c210f34ed68a4b93df47b2864d8260dfd2bd1b98bdf40"
   },
   "publisher": "grow-lab",
-  "source_commit": "72a2604f976b5e40a3edfc3d98e64f5f65c276db"
+  "source_commit": "bfbd6415d017b5e3899673fa2e943c1cd62ed944"
 }
