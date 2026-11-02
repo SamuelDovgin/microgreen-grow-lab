@@ -16,7 +16,7 @@
     "crop-source-log.html": "71b6c6684e8203bb4ac73e27a1380195ee7566ece64bea1c0de3f4aa14467572",
     "crop-video-notes.html": "1696f6ec4a61a03e59802f7cf62db52fc0f84b36176f8571576e8ba90a147002",
     "crops.css": "9dd2e7624a7b772abd7398ed9c51c0a2db24777b5420a0594e025e99c44afd3c",
-    "crops.html": "b83fe913c179925510c27b1eb7a87ae31521134ca038a6f7869ffb5f913930df",
+    "crops.html": "e242f87e738ccb9bbc79fff5180f2bb43243a649dbff2345cffc48fa14cf0e44",
     "crops.js": "2bbc4886eee0e67aba08830b04b7a090eaac4b9f039d5ed155adfea8ae3360dd",
     "data/crop-protocols.json": "81051c775d43d7e1278b502ff3b5e70afd8e4292a21a9fa3749edda729590734",
     "data/crop-qa-report.json": "9378aa295002407eae29bc82cf7c30cbd97a7172c691880f137fb8b9e1f72dcc",
@@ -75,5 +75,5 @@
     "style.css": "745f7f22dd404d93a58c210f34ed68a4b93df47b2864d8260dfd2bd1b98bdf40"
   },
   "publisher": "grow-lab",
-  "source_commit": "bfbd6415d017b5e3899673fa2e943c1cd62ed944"
+  "source_commit": "6802e901907e8bff42c879c2344a94b8b2d458ca"
 }
