@@ -650,7 +650,7 @@ Class: local archive / prior primary-source annotations or metadata
 Used in: source recovery, crop and creator context, recipe or unit validation.
 Supports: existing evidence inventory, crop-specific method limits, or creator catalog discovery; no new independent experiment.
 Local preservation: research_project/14_microgreen_manager/README.md
-SHA-256 at this pass: e242c3303d355e438d5792c1212c46f2406d93b63bf01fc2b70a3ed6276e1266
+SHA-256 at this pass: aee0d8ea9a80a9125eeac36ad1a21f30293b32db457ca45086de9ea452bec59f
 Limits: inherited summaries were checked against primary papers/pages where used quantitatively; discovery metadata alone does not establish spoken settings.
 
 [L14] Local archive consulted: 14_microgreen_manager/12_crop_reference_tables.md
