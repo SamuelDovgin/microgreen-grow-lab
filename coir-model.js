@@ -1,7 +1,7 @@
 /* Pure, deterministic coir planning model. Browser + Node; no dependencies. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.CoirModel=api;})(typeof window!=='undefined'?window:globalThis,function(){
 'use strict';
-const CUP_ML=236.5882365, IN3_ML=16.387064;
+const CUP_ML=236.5882365, IN3_ML=16.387064, MAX_TRAYS_PER_CROP=100;
 const crops=[
  {id:'broccoli',name:'Broccoli · Waltham',family:'Brassicaceae',cups:6,seedG:22,treatment:'No presoak. Sow dry seed onto evenly moist coir.',basis:'6 cups follows the general shallow-tray grower baseline; 22 g seed is the selected starting trial from your notes.'},
  {id:'radish',name:'Radish · Daikon',family:'Brassicaceae',cups:6,seedG:30,treatment:'No presoak. Sow evenly; avoid dense clumps.',basis:'6 cups is the OTG general shallow-tray baseline. A higher fill can ease access to shorter crops; the separate clearance preset is an adaptation, not a measured optimum. 30 g seed remains the selected trial.'},
@@ -33,9 +33,8 @@ function calculate(s){
  const rows=s.rows||[];
  if(rows.length!==4||crops.some((c,i)=>rows[i]?.id!==c.id))errors.push('The plan needs all four crop rows in the standard order.');
  let trays=0;
- for(const r of rows){if(!present(r.count)||!Number.isInteger(Number(r.count))||Number(r.count)<0||Number(r.count)>4)errors.push('Each tray count must be a whole number from 0 to 4.');else trays+=Number(r.count);
+ for(const r of rows){if(!present(r.count)||!Number.isInteger(Number(r.count))||Number(r.count)<0||Number(r.count)>MAX_TRAYS_PER_CROP)errors.push(`Each tray count must be a whole number from 0 to ${MAX_TRAYS_PER_CROP}.`);else trays+=Number(r.count);
  if(!present(r.cups)||!Number.isFinite(Number(r.cups))||Number(r.cups)<4||Number(r.cups)>16)errors.push('Each fill must be from 4 to 16 expanded US cups.');}
- if(trays>4)errors.push('This starter plan is limited to four trays total. Reduce a crop count.');
  const basis=calibration(s);if(!basis.valid)errors.push(basis.message);
  if(errors.length)return {valid:false,errors:[...new Set(errors)]};
  const detail=rows.map((r,i)=>({...crops[i],...row(Number(r.cups),Number(r.count),basis,s.rounding)}));
@@ -47,5 +46,5 @@ function calculate(s){
 }
 function worksheet(s,p){if(!p.valid)return null;return {tool:'Grow Lab coco coir',version:'2026-11-02',inputs:s,outputs:p,notes:['Expanded volumes are lightly leveled US cups, not water cups.','Dry grams use label yield or one measured sample, with rounding applied per tray.','Initial water is for coir hydration; it excludes soaking and irrigation.','Confirm damp/no-drip texture and actual fill height. Depth uses a rectangular bottom-footprint approximation.']};}
 function selfTest(){const s=defaults(),a=calculate(s);if(!a.valid||a.dryG!==540||a.waterMl!==2160||a.cups!==24)throw Error('Default batch identity failed');s.rows.forEach(r=>r.count=0);if(!calculate(s).empty)throw Error('Empty batch failed');return {passed:2};}
-return {crops,defaults,calculate,calibration,depth,worksheet,selfTest,CUP_ML};
+return {crops,defaults,calculate,calibration,depth,worksheet,selfTest,CUP_ML,MAX_TRAYS_PER_CROP};
 });

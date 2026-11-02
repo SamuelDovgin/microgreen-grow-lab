@@ -6,7 +6,7 @@
 
 ## Start with the next batch
 
-For a maximum of four trays at a time, separate and hydrate the portion you will sow. Keep the rest of the brick dry. This is a practical storage choice, not a demonstrated yield benefit. Whole-brick hydration makes sense when the material will be used promptly and there is adequate clean mixing/storage space. Wetting one edge can make separation easier, but that edge is no longer dry coir for weighing. [C0]
+For a small sowing batch, separate and hydrate the portion you will sow. Keep the rest of the brick dry. This is a practical storage choice, not a demonstrated yield benefit. Whole-brick hydration makes sense when the material will be used promptly and there is adequate clean mixing/storage space. Wetting one edge can make separation easier, but that edge is no longer dry coir for weighing. [C0]
 
 The default is now the documented economical baseline: six expanded cups for all four crops. The original 6/8/6/8-cup split was an experimental assumption, not a standard, and has been removed as the default. The separate **Seed clearance trial** implements a higher bed for broccoli/radish and a lower bed for pea/sunflower; exact volumes in that adaptation are a practical trial.
 
@@ -71,7 +71,7 @@ For your preference for a fuller small-seed tray, this is a reasonable first com
 | 3 | 540 g | 2,160 mL | 24 cups / 5.68 L |
 | 4 | 720 g | 2,880 mL | 32 cups / 7.57 L |
 
-For any mixture, add the per-tray quantities for the crops selected. The calculator supports 0–4 of each crop with a four-tray total limit and flags excess counts rather than silently changing the plan.
+For any mixture, add the per-tray quantities for the crops selected. Use **+ Add tray** or **−** on any crop card to adjust that crop’s count. The calculator supports 0–100 trays per crop, including mixed batches above four trays. Coir and starting water scale with each added tray; larger batches may need multiple clean mixing containers. Counts outside the supported range are flagged rather than silently changed.
 
 ## Should a shallow tray be filled to the rim?
 

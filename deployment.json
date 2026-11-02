@@ -1,12 +1,12 @@
 {
   "files": {
     "coir-fill-source-log.html": "efa12383bf1f2902aedbca7bbb45f047c848006dba163d0e65de4bb5903b775c",
-    "coir-guide.html": "a46111da07e2867ccd50f7b7c97ce5919c5ceb579dd7fdb02326d552dae29edd",
-    "coir-model.js": "8c0cd9492a4f0c024af42fc65d524531ad1127d7ef91f1664466085440bda7d2",
+    "coir-guide.html": "d244c416f6b61874e85a2f058b9a60539be16c1ee9165ee112d8e9c3e28fdd90",
+    "coir-model.js": "fd3b2447fc8401648273ceca839c34fbb273effce3d0095e42c655684287892f",
     "coir-source-log.html": "9f2cf8d3c3b9da6f47d016d94c7ab95a820d3d97d868703760af630a2178aa7a",
-    "coir.css": "6d555b138c0e0757e097f528111a5ef84639ef7e0a91a2cdb078db2c579c362c",
-    "coir.html": "17e8f1c23ce94bfdd1a5bc453c92344175028db25ddd7b5d989c46538d3f741a",
-    "coir.js": "ef191948dbcf0a6e1df00b12db7590aa6518fe24c43e7b685f20477a8fc0e314",
+    "coir.css": "2e181e1835ae7da1d44619267f4a8cde715af173533b3128b73a61ab6c51b48d",
+    "coir.html": "08bceeba2a331555ba22dc8d83ad024996d984d9f4b7257a848d044565a3eedc",
+    "coir.js": "06808a6d454bffbbf61565c599ef795e20ee14af2075b8b7a839f687565f9ecb",
     "creator-notes.html": "f5ad008e276073c2e776b24b53882c365ce6ecf6600a7824014f557d27a13e82",
     "crop-catalog.html": "49bd5d6fcf691eba8f534af5ee402d4b1aa724c2a823803321545f75e2ac0406",
     "crop-data.js": "7a120e027658101f3df79e5d53f5ba77276e36fcb17320fe7876358f99cf65e2",
@@ -33,7 +33,7 @@
     "docs/09_species_density_and_protocol_catalog.md": "6a6fda01f71fa455246955ed5729c497e69b87d7557d1bc9059b9d82a65d2095",
     "docs/10_crop_model_equations_and_validation.md": "dca1bb23d59d412502b454fda59d389c620884cc52445461d196feaa8cda9e29",
     "docs/11_grow_log_and_protocol_calibration.md": "6d3874fe213dfb17db452c4e765c264d2868a91da614dada995c62167e496224",
-    "docs/12_coco_coir_preparation_and_calculator.md": "0bbae6f1f67022e3e7d92050aa4282f4a1c41b1d56b1d8028176df1139ee6d13",
+    "docs/12_coco_coir_preparation_and_calculator.md": "0992f7d032b5c5b4224c120ca815ebd0df9e47c6a4f9c7a0b017072e3dd0e627",
     "docs/coir_research_resource_log_2026-11-01.txt": "80b874cce1f3faab2c0cf7437a107093317afab6597316084a8cb309afaddbba",
     "docs/coir_research_resource_log_2026-11-02.txt": "eddbb1277aa3821b4c32d26fa48524fb268c68aeead1a0ba2577632e3ca98fd0",
     "docs/research_resource_log_2026-10-30.txt": "c55495c300a0b1980976c8182f2803db5fa5fbb7f17b7946dac24b059ce31e55",
@@ -48,7 +48,7 @@
     "grow-log.html": "31fffd74d67d8c16b48f7b168e543f4582985eb4aa17a6f5de3ccbe2d09957f5",
     "grow-log.js": "d01509ee79cc3dabb2ad5d007452f863cde725310c35db4a07d640d7de7b401c",
     "guide.html": "9042108be3fe7a32bb003ba3b4de48fd861e39c12652779c29b2f875665774ec",
-    "index.html": "1818112b994035e53e3a277637735aecbec91c49bf5ea557111ab25563f02f05",
+    "index.html": "e584b53b6e0575a78fbc6e60219b1cf04348f278e67069110d3f40d68e4ecc8f",
     "lighting.html": "f3ff4fbb7829b24aa6a72ca6a6e480e17e6f336fcca44fce72aedbfcfecb3a1d",
     "lighting.js": "6cc6e7bbcba072852b5ea70f0ff27f6c2a6c1cfff1b111eed4b05956fd4b56e2",
     "model-notes.html": "df617e6055f1393492e610c2b9ba76b3b2e0f74adaeb50732c248cb33d7e27f6",
@@ -75,5 +75,5 @@
     "style.css": "745f7f22dd404d93a58c210f34ed68a4b93df47b2864d8260dfd2bd1b98bdf40"
   },
   "publisher": "grow-lab",
-  "source_commit": "e4ecdf82cc6231e1dbe552a221d0ece6404a07f3"
+  "source_commit": "72a2604f976b5e40a3edfc3d98e64f5f65c276db"
 }

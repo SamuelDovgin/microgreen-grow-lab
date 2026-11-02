@@ -15,6 +15,7 @@ function tray(r){
 }
 function render(){
  const s=read(),p=M.calculate(s);last={inputs:s,plan:p};
+ M.crops.forEach((c,i)=>{const count=Number(s.rows[i].count);$(c.id+'-remove').disabled=!Number.isFinite(count)||count<=0;$(c.id+'-add').disabled=count>=M.MAX_TRAYS_PER_CROP;});
  const fills=s.rows.map(r=>Number(r.cups)).join('/');
  $('fill-mode').textContent=fills==='6/6/6/6'?'Source baseline: 6 cups for all four crops. This economical layer is not a near-rim fill.':fills==='12/12/8/8'?'Seed-clearance trial: broccoli/radish 12 cups; pea/sunflower 8 cups. The relative fill pattern follows grower practice; these exact quantities are an adaptation for your tray, not a validated optimum.':fills==='8/8/8/8'?'USU-style comparison: 2 US quarts / 8 cups per tray, without a crop-specific split.':fills==='6/8/6/8'?'Earlier saved trial: 6/8/6/8 cups. The extra radish/sunflower coir was an assumption, not a standard. Your saved plan is preserved; use Source baseline or Seed clearance trial to switch.':'Custom fill comparison. Confirm real seed clearance and weighted-tray contact; the selected quantities do not predict yield.';
  M.crops.forEach(c=>{$(c.id+'-cups-out').textContent=fmt(Number($(c.id+'-cups').value),1)+' US cups';$(c.id+'-note').textContent=c.basis;});
@@ -23,7 +24,7 @@ function render(){
  const b=M.calibration(s);$('calibration-tag').textContent=s.calibration?(b.valid?'One measured sample':'Calibration incomplete'):'Label estimate';
  $('calibration-result').textContent=b.valid?`${b.basis}. ${fmt(b.gramsPerCup,3)} g per expanded US cup. ${b.waterBasis}: ${fmt(b.waterRatio,2)} mL/g.`:b.message;
  if(!p.valid){$('coir-verdict').textContent=p.errors.join(' ');$('batch-title').textContent='Check your batch';$('tray-visuals').innerHTML='';$('fill-comparison').innerHTML='';M.crops.forEach(c=>$(c.id+'-facts').textContent='— Check the inputs to recalculate.');return;}
- $('coir-verdict').textContent=p.empty?'No trays selected. Set a crop count to 1–4 to prepare a batch.':p.shortfallG>0?`This batch exceeds one whole brick by ${mass(p.shortfallG,true)}. Use more coir or reduce the fill/count.`:`${p.trays} tray${p.trays===1?'':'s'} selected · ${p.basis.basis}. Check expansion and moisture before sowing.`;
+ $('coir-verdict').textContent=p.empty?'No trays selected. Tap + Add tray on a crop to prepare a batch.':p.shortfallG>0?`This batch exceeds one whole brick by ${mass(p.shortfallG,true)}. Use more coir or reduce the fill/count.`:`${p.trays} tray${p.trays===1?'':'s'} selected · ${p.basis.basis}. Check expansion and moisture before sowing.`;
  $('batch-title').textContent=p.empty?'Choose your next tray.':`One bucket. ${p.trays===1?'One tray':p.trays+' trays'}.`;
  $('total-coir').textContent=mass(p.dryG,s.rounding==='0');$('total-water').textContent=water(p.waterMl);$('total-volume').textContent=fmt(p.cups,1)+' cups';$('total-volume-sub').textContent=fmt(p.liters,2)+' L / '+fmt(p.quarts,2)+' US qt expanded target';$('total-cost').textContent='$'+fmt(p.cost,2);
  $('basis-label').textContent=`${p.basis.waterBasis}. Water follows ${s.rounding==='0'?'exact':'rounded'} dry grams; volume is the target before any rounding surplus.`;
@@ -41,7 +42,13 @@ function exportPlan(){const s=read(),p=M.calculate(s);if(!p.valid||p.empty){$('c
 $('coir-form').addEventListener('submit',e=>e.preventDefault());
 for(const id of ids)$(id).addEventListener('input',render);
 for(const id of ['calibration','condition','rounding'])$(id).addEventListener('change',render);
-M.crops.forEach(c=>{$(c.id+'-count').addEventListener('input',render);$(c.id+'-cups').addEventListener('input',()=>{syncFill(c.id);render();});$(c.id+'-fill').addEventListener('change',()=>{if($(c.id+'-fill').value!=='custom')$(c.id+'-cups').value=$(c.id+'-fill').value;render();});});
+M.crops.forEach(c=>{
+ for(const [action,delta] of [['add',1],['remove',-1]])$(c.id+'-'+action).addEventListener('click',()=>{
+  const input=$(c.id+'-count'),current=Number(input.value);
+  input.value=Math.min(M.MAX_TRAYS_PER_CROP,Math.max(0,(Number.isFinite(current)?Math.floor(current):0)+delta));
+  render();
+ });
+ $(c.id+'-count').addEventListener('input',render);$(c.id+'-cups').addEventListener('input',()=>{syncFill(c.id);render();});$(c.id+'-fill').addEventListener('change',()=>{if($(c.id+'-fill').value!=='custom')$(c.id+'-cups').value=$(c.id+'-fill').value;render();});});
 $('reset-coir').addEventListener('click',()=>{load(M.defaults());$('coir-export-status').textContent='Starter plan and blank calibration restored.';render();});
 $('starter-mix').addEventListener('click',()=>{M.crops.forEach(c=>{$(c.id+'-count').value=1;$(c.id+'-cups').value=c.cups;syncFill(c.id);});render();});
 $('two-trays').addEventListener('click',()=>{M.crops.forEach((c,i)=>$(c.id+'-count').value=i<2?1:0);render();});
