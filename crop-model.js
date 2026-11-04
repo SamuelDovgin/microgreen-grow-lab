@@ -72,9 +72,20 @@ function soakStart(sowDate,sowTime,hours){
  return {date:[start.getFullYear(),pad(start.getMonth()+1),pad(start.getDate())].join('-'),
          time:pad(start.getHours())+':'+pad(start.getMinutes())};
 }
+function lightReadiness(s,c){
+ const r=c?.calendar?.lightReadiness;
+ const h=r?.heightIn;
+ const height=Array.isArray(h)&&h.length===2&&h.every(x=>between(x,.1,6))
+   ?`${h[0]}–${h[1]} in (${(h[0]*2.54).toFixed(1)}–${(h[1]*2.54).toFixed(1)} cm)`:'height not established';
+ const dome=s.method==='dome'&&s.blackoutDays===0;
+ const hold=dome?'Otherwise keep the vented dome; recheck in 12 hours.':'Otherwise keep in blackout under a loose, unweighted cover; recheck in 12 hours.';
+ return {height,basis:r?.basis||'Approximate observation cue; use actual emergence.',
+  cue:`Uncover when rooted and upright · estimated ${height} · ${dome?'otherwise keep vented dome':'otherwise keep in blackout'} and recheck in 12 h`,
+  action:`Estimated height at uncovering is ${height}. Measure from the medium surface to the top of a typical seedling. Look for rooted, upright seedlings across most of the tray. ${r?.check||''} ${hold} Remove any contact tray and load once shoots lift or bend beneath them. Use height as a guide and move to light sooner if stems start leaning or tangling. ${r?.basis||''}`};
+}
 function schedule(s,c,recipe,densityResult){
  if(!Number.isInteger(s.coverDays)||!between(s.coverDays,1,14)||!Number.isInteger(s.blackoutDays)||!between(s.blackoutDays,0,5)||!Number.isInteger(s.harvestDay)||!between(s.harvestDay,4,40)||s.coverDays+s.blackoutDays>=s.harvestDay||!dateAt(s.sowDate,0))return null;
- const list=[],lightStart=s.coverDays+s.blackoutDays;
+ const list=[],lightStart=s.coverDays+s.blackoutDays,readiness=lightReadiness(s,c);
  const bottomStart=s.bottomStartDay??lightStart,amShare=s.amShare??50,soakHours=s.soakHours??0,sowTime=s.sowTime??'08:00';
  if(!Number.isInteger(bottomStart)||!between(bottomStart,s.coverDays,s.harvestDay)||!between(amShare,0,100)||!between(soakHours,0,18)||!/^([01]\d|2[0-3]):[0-5]\d$/.test(sowTime))return null;
  const weight=s.method==='dome'?0:(s.weightLb??0);
@@ -98,7 +109,7 @@ function schedule(s,c,recipe,densityResult){
  const topdress=recipe?.topdress??c?.topdress;
  for(let day=0;day<=s.harvestDay;day++){
   const phase=day===0?'sow':day<s.coverDays?'emergence':day<lightStart?'blackout':day===s.harvestDay?'harvest':'light';
-  const stage=day<s.coverDays?coverStage:phase==='blackout'?'Blackout · loose cover, 0 lb':phase==='harvest'?'Harvest checkpoint':'Under lights';
+  const stage=day<s.coverDays?coverStage:phase==='blackout'?'Blackout · loose cover, 0 lb':phase==='harvest'?'Harvest checkpoint':day===lightStart?'Light readiness check':'Under lights';
   const wateringMethod=day<bottomStart?'spray':'bottom';
   let action,cue;
   if(day===0){
@@ -115,8 +126,8 @@ function schedule(s,c,recipe,densityResult){
     actions.push(weight>0?'When the stand is ready, remove the weight and contact tray.':'Remove the contact cover or vented dome when the stand is ready.');
     if(protocol.exit)actions.push(protocol.exit);
    }
-   if(phase==='blackout')actions.push('Keep the tray dark under a raised or inverted solid cover with space above the shoots. Leave all added weight off.');
-   if(day===lightStart)actions.push('Remove any loose blackout cover and move under lights when the stand is ready.');
+   if(phase==='blackout')actions.push('Keep the tray dark under a raised or inverted solid cover with space above the shoots. Leave all added weight off.',`Check for the estimated light-transition height of ${readiness.height}, rooted and upright. Move to light earlier if ready; do not wait for the calendar date or stretch weak stems.`);
+   if(day===lightStart)actions.push(readiness.action,'When ready, remove the cover and move under lights. If uncovering is delayed, update the covered/blackout days so later planned tasks follow the actual transition.');
    if(phase==='harvest')actions.push(protocol.harvest||'Check leaf stage and harvest when ready.','Water only if the tray needs it and you are leaving it to grow.');
    else if(wateringMethod==='spray')actions.push('Lightly mist only if the seed surface is drying.');
    else if(day===bottomStart)actions.push('Bottom-water only if the tray needs it and the medium can wick from below. Delay the switch if it cannot.');
@@ -127,7 +138,7 @@ function schedule(s,c,recipe,densityResult){
    }
    if(phase==='harvest')cue='Harvest if ready';
    else if(phase==='blackout')cue=day===s.coverDays?'Remove contact cover'+(weight>0?' and weight':'')+' · start loose blackout':'Keep dark under loose cover';
-   else if(day===lightStart)cue=(day===s.coverDays&&weight>0?'Remove weight and cover if ready':'Uncover if ready')+' · lights on'+(day===bottomStart?' · check wicking':'');
+   else if(day===lightStart)cue=readiness.cue+(day===bottomStart?' · check wicking':'');
    else if(day===bottomStart)cue='Check wicking before switching';
    else cue=wateringMethod==='spray'?'Mist only if drying':'Check weight and moisture';
    if(broccoli&&day===7&&day<s.harvestDay&&day>=lightStart){
@@ -182,6 +193,6 @@ function parseTrials(text,expectedCrop){
  if(new Set(points.map(p=>p.seedGm2.toFixed(5))).size<2)return {error:'Provide at least two distinct seed rates; repeated rows at one rate cannot locate a density winner.'};
  return {rows,points,context:rows[0].substrate+' / '+rows[0].lot+' / '+rows[0].stage,warning:points.some(p=>p.n<3)?'Fewer than three trays at one or more rates: exploratory evidence only.':'Replicates summarized by mean and sample SD; repeated independent cycles are still needed.'};
 }
-const api={IN2_M2,IN3_ML,CUP_ML,area,density,climate,reservoir,water,dailyDemand,dateAt,seedDiameter,schedule,rank,parseTrials};
+const api={IN2_M2,IN3_ML,CUP_ML,area,density,climate,reservoir,water,dailyDemand,dateAt,seedDiameter,lightReadiness,schedule,rank,parseTrials};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.CropModel=api;
 })(typeof window!=='undefined'?window:globalThis);

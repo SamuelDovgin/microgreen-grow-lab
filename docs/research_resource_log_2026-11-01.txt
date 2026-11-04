@@ -1,6 +1,6 @@
 SEED DENSITY, WATER AND PROTOCOL RESEARCH — November 1, 2026
 
-Scope: original research and the November 4 calendar update. 54 crop/cultivar profiles, 11 botanical families, 17 functional groups and 8 experimental response curves. Source IDs D01–D40 and V01–V17.
+Scope: original research and the November 4 calendar update. 54 crop/cultivar profiles, 11 botanical families, 17 functional groups and 8 experimental response curves. Source IDs D01–D46 and V01–V17.
 
 Access method: primary web search/open plus direct public page requests, existing lawful PDFs/XML, creator metadata catalogs, and public English captions via yt-dlp. Browser UI observation was unavailable (Work browser use disabled). Caption research working copies remained temporary; only original paraphrases, metadata, timestamps and SHA-256 track checksums are distributed. Full caption retrieval is not full audiovisual review.
 
@@ -415,6 +415,76 @@ Local preservation: URL-only — no full lawful local copy redistributed; biblio
 Status: Live official source reviewed.
 Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
 
+[D41] On The Grow · when to end blackout
+URL: https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout
+Accessed: 2026-11-04
+Class: Firsthand grower guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Remove pressure when the stand dominates the hulls and begins bending. End loose blackout while stems still support themselves; most crops in this grower’s method get at most about 24 hours. No universal height threshold is supplied.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D42] MP Seeds · broccoli light transition
+URL: https://mpseeds.eu/broccoli-calabrese-microgreens-seeds
+Accessed: 2026-11-04
+Class: Seed supplier
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Calabrese broccoli: introduce light at about 2 cm stem height. This is a supplier cue, not a cultivar-independent minimum.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D43] Quantum Microgreens · broccoli topper removal
+URL: https://quantummicrogreens.com/how-to-grow-broccoli-microgreens/
+Accessed: 2026-11-04
+Class: Firsthand grower guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Remove the topper and introduce light at about half an inch of broccoli growth in small household containers. Some unevenness at uncovering is normal.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D44] Wholly Water Farms · basil light transition
+URL: https://www.whollywaterfarms.com/blog/basil-microgreens-growing-guide
+Accessed: 2026-11-04
+Class: Grower guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Basil transition cue is about half an inch to an inch, with emerging cotyledons. Applies to that guide’s dark-cover method; does not require adding blackout to a clear-dome recipe.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D45] Wind River Greens · sunflower light transition
+URL: https://windrivergreens.com/blogs/guides/how-to-grow-sunflower-microgreens-step-by-step-complete-beginner-s-guide
+Accessed: 2026-11-04
+Class: Grower guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Sunflower light transition at about 1–2 inches. Only this height cue is used; its other watering and harvest recommendations do not replace the selected recipe.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D46] LaNiTex · pea light transition
+URL: https://lanitexhydrogarden.com.au/blogs/microgreen-blog/how-to-grow-pea-microgreens-australia
+Accessed: 2026-11-04
+Class: Supplier growing guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Pea shoots move to light at about 2–3 cm. Planner rounds this to a 0.75–1.25 inch observation range, not a mandatory stretch target or proof for every cultivar.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[P01] Pasted comparison · dry seed rates
+URL: crop-catalog.html#seed-rate-comparison
+Accessed: 2026-11-04
+Class: User-supplied comparison
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Sowing rates from the supplied comparison, normalized to a nominal 200 in² tray. The planner uses the suggested starting amount where given and the arithmetic mean elsewhere. The original recipe remains selectable.
+Local preservation: data/seed-rate-comparison.csv stores all 51 rows of listed rates and explicit profile mappings. The rendered catalogue shows recomputed means and dry seed densities.
+Status: user-supplied attachment. Selected Johnny’s, Bootstrap Farmer, Utah State and On The Grow entries spot-checked against primary pages.
+Limits: methods, cultivars, tray surface and weight basis can vary across entries. No pooled optimum or yield forecast. Unmapped entries are comparison references.
+
 [V01] On The Grow · Red Acre cabbage seed-to-harvest
 URL: https://www.youtube.com/watch?v=D3vnBEvYDZo
 Accessed: 2026-11-01
@@ -635,6 +705,18 @@ Caption working-copy SHA-256: f6a415aada3b9188de22cfae6ef12fb795d748faf7f483d583
 Limits: The weight pair is a demonstration, not a desired 2-L refill for every tray. Reported farm tray counts and seconds/tray are unaudited operational figures. This supports measuring demand; it does not calibrate the visualizer’s 2-mm/day scenario.
 Local preservation: data/video-review.json and 08_creator_transcript_density_and_water_review.md; original annotation, metadata and timestamps only. Full copyrighted transcript not redistributed.
 Status: public English caption track retrieved successfully.
+
+[H01] LaNiTex — sunflower light transition (comparison only)
+URL: https://lanitexhydrogarden.com.au/blogs/microgreen-blog/how-to-grow-sunflower-microgreens-australia
+Accessed: 2026-11-04; live web reader. Class: supplier growing guide.
+Used in: November 4 light-readiness source comparison.
+Supports: removes weight/lid when shoots push the upper tray up 2–3 cm. This measures tray lift, not clearly shoot height above medium; the planner instead uses D45 for its displayed sunflower height.
+Limits: no numeric default borrowed; supplier guidance and kit context, not a controlled height trial.
+Local preservation: URL-only — bibliographic and paraphrase notes here; full copyrighted page not redistributed.
+
+LIGHT-READINESS CHANGE NOTE — 2026-11-04
+All 54 profiles now expose an approximate above-medium light-transition height. D42/D43 anchor broccoli, D44 basil, D45 sunflower and D46 peas. Other groups carry explicitly editorial observation estimates, not crop-specific validated thresholds. D41 supplies pressure-removal and upright-stem criteria. Clear-dome recipes with no separate blackout retain a vented dome while not ready. The planned light-start date is a readiness check, not proof of emergence; the user must adjust cover/blackout days after an actual delay. No daily growth prediction or automatic observation is implied.
+Access exception: guessed Bootstrap Farmer what-is-the-blackout-period-for-microgreens route failed. A basil route resolved to its general growing resource; no numeric height taken from either. Seedmart when-to-weight-microgreens was reviewed for qualitative comparison; its sufficient-height language supplies no numeric threshold. See D41 for the selected upright-stem rule.
 
 [L01] Local archive consulted: 02_crops_seeds/01_crop_seed_reference.md
 Accessed: 2026-11-01

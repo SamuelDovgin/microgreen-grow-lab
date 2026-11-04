@@ -12,7 +12,7 @@ function state(){const s={};nums.forEach(id=>s[id]=n(id));texts.forEach(id=>s[id
 function set(id,value){$(id).value=String(value);}
 function range(a){return a[0]===a[1]?String(a[0]):a.join('–');}
 function notice(text,error=false){return `<p class="notice${error?' error':''}">${esc(text)}</p>`;}
-function fillRecipes(selected='baseline'){
+function fillRecipes(selected=crop.alternatives[0].id){
  const all=[...crop.alternatives,...(extraRecipe?[extraRecipe]:[])];
  $('recipe').innerHTML=all.map(r=>`<option value="${esc(r.id)}">${esc(r.label)}</option>`).join('');set('recipe',selected);recipe=all.find(r=>r.id===selected)||all[0];
 }
@@ -71,14 +71,14 @@ function renderSeed(s,d){
  $('crop-title').textContent=crop.name;
  $('included-packet').hidden=!crop.includedPacket;
  $('included-packet').textContent=crop.includedPacket?'Includes '+crop.includedPacket+'. Select its True Leaf recipe for packet-specific settings.':'';
- $('confidence').textContent=recipe.id==='tested'?'Tested rate · context applies':crop.confidence;
+ $('confidence').textContent=recipe.id==='tested'?'Tested rate · context applies':recipe.id==='comparison'?'Starting rate from seed comparison':crop.confidence;
  $('source-context').innerHTML=sourceLink(recipe.source)+' · '+esc(recipe.note||crop.notes||'A published starting rate, scaled by usable surface area.')+' Source crop settings are restored where documented; depth, emergence assumptions and top load remain editable planning examples.';
  $('seed-size-basis').textContent=crop.seedSizeBasis+'. '+crop.seedForm+'. Count and weigh a representative sample; units/g = sample count ÷ dry grams.';
  $('mode-explanation').textContent=s.mode==='count'?'Compensates for measured germination and establishment to reach your selected emerged-shoot target. The target itself needs local validation.':'Area-scales the source’s dry seed rate. Germination changes the expected stand; it does not automatically inflate an already empirical mass recipe.';
  const notes=[];
  if(!d){$('seed-result').textContent='—';$('shoot-result').textContent='—';$('seed-rate-result').textContent='Check inputs';$('stand-result').textContent='';$('seed-equation').textContent='Enter valid tray dimensions and lot inputs.';notes.push(notice('Check the tray area and positive seed-lot inputs. A zero/blank seed count or invalid emergence value cannot be calculated.',true));}
  else{
-  $('seed-result').textContent=fmt(d.grams,1)+' g';$('seed-rate-result').textContent=fmt(d.grams/28.349523125,2)+' oz · '+fmt(d.gramsM2,0)+' g/m²';
+  $('seed-result').textContent=fmt(d.grams,1)+' g';$('seed-rate-result').textContent=fmt(d.grams/28.349523125,2)+' oz · '+fmt(d.grams/d.area.in2,4)+' g/in² · '+fmt(d.gramsM2,0)+' g/m²';
   $('shoot-result').textContent='≈ '+fmt(d.shoots,0);$('stand-result').textContent=fmt(d.shootsIn2,1)+' shoots/in² · '+fmt(d.units,0)+' units sown';
   $('seed-equation').textContent=d.formula+' = '+fmt(d.grams,2)+' g dry seed. Expected stand = '+fmt(d.grams,2)+' × '+fmt(s.seedsPerGram,2)+' × '+fmt(s.germination/100,2)+' × '+fmt(s.establishment/100,2)+' × '+fmt(s.shootsPerUnit,1)+'.';
   if(s.mode==='count')notes.push(notice('Count mode maintains the chosen emerged population. Extra nonemerging seed can still create crowding and decay; investigate low lot performance before compensating with more seed.'));
@@ -88,7 +88,7 @@ function renderSeed(s,d){
   if(s.multiplier!==1)notes.push(notice('You are testing '+fmt(s.multiplier*100,0)+'% of the selected source rate. This trial change has no validated yield forecast.'));
  }
  if(['mung','lentil'].includes(crop.id))notes.push(notice('Research pilot: agronomic density evidence exists, but raw-food safety remains unresolved in the archive. This growing plan does not establish a safe serving stage.'));
- if(crop.id==='fenugreek')notes.push(notice('The fenugreek paper’s tray dimensions conflict. Treat 25 g as a nominal-tray test, without an area-yield forecast.'));
+ if(crop.id==='fenugreek'&&recipe.id==='baseline')notes.push(notice('The fenugreek paper’s tray dimensions conflict. Treat 25 g as a nominal-tray test, without an area-yield forecast.'));
  $('seed-notices').innerHTML=notes.join('');
  $('harvest-result').textContent='Day '+fmt(s.harvestDay,0);$('cover-result').textContent=fmt(s.coverDays,0)+' d emergence + '+fmt(s.blackoutDays,0)+' d loose blackout';
  $('recipe-table').innerHTML=crop.alternatives.map(r=>{
@@ -132,7 +132,8 @@ function renderWater(s,w){
 }
 function renderSchedule(s,rows){
  const g=D.groups[crop.group];$('group-label').textContent=crop.family+' / '+g.name;$('protocol-title').textContent=g.name;$('protocol-exception').textContent=g.exception;
- const items=[['Sow',(recipe.topdress??crop.topdress)?'Sow evenly and use a thin species-appropriate top dress; do not bury fine seeds indiscriminately.':'Evenly surface-sow on a level, moistened medium. Keep clumps and multi-layer seed piles out of the tray.'],['Leave the cover',g.exit],['Water checks',g.water],['Harvest cue',g.stage]];
+ const readiness=M.lightReadiness(s,crop);
+ const items=[['Sow',(recipe.topdress??crop.topdress)?'Sow evenly and use a thin species-appropriate top dress; do not bury fine seeds indiscriminately.':'Evenly surface-sow on a level, moistened medium. Keep clumps and multi-layer seed piles out of the tray.'],['Uncover / light readiness',readiness.action],['Water checks',g.water],['Harvest cue',g.stage]];
  $('protocol-steps').innerHTML=items.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
  const soak=recipe.soak||crop.soakHours;
  $('soak-note').textContent=`Recipe: ${soak[1]===0?'direct sow':range(soak)+' h presoak'}. ${recipe.soakBasis||'Use the selected crop preparation.'}`;
@@ -154,7 +155,7 @@ function renderSchedule(s,rows){
  const prep=rows.find(r=>r.phase==='presoak');
  const prepText=prep?`Presoak starts ${prep.date} at ${prep.time} for ${s.soakHours} h. Drain and rinse before sowing.`:crop.id==='sunflower'?'Rinse, drain and sow on day 0.':'Direct sow on day 0.';
  const blackoutText=s.blackoutDays?`After ${s.coverDays} covered days, remove the contact tray and any load. Allow ${s.blackoutDays} d under a loose unweighted blackout cover.`:'This recipe goes directly to lights after covered emergence.';
- $('schedule-note').textContent=[prepText,blackoutText,'Use actual emergence and root anchoring to time each change.',...flags].join(' ');
+ $('schedule-note').textContent=[prepText,blackoutText,`Estimated light-transition height: ${readiness.height} above the medium. ${readiness.basis}`,'Dates are planning checkpoints. Use actual emergence and root anchoring; if uncovering is delayed, update covered/blackout days to shift later tasks. Once uncovered, continue under lights.',...flags].join(' ');
  $('watering-transition').textContent=`First planned bottom-water check: D${s.bottomStartDay} (${M.dateAt(s.sowDate,s.bottomStartDay)}). Water only if the tray needs it and the medium can wick from below. Until the switch, lightly mist a drying seed surface as needed.`;
  const method=r=>r.wateringMethod==='prep'?'Seed prep':r.wateringMethod==='spray'?(r.day===0?'Mist at sowing':'Mist only if drying'):'Bottom-water check';
  const volume=(cups,ml)=>cups===null?'—':`≈ ${fmt(cups,2)} cups <small>(${fmt(ml,0)} mL)</small>`;

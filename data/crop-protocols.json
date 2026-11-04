@@ -21,9 +21,9 @@
       "species": "Brassica oleracea var. italica",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 13,
+      "defaultGrams": 20.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         12,
         13
@@ -47,8 +47,43 @@
       "notes": "13 g and 12.5 days are the supplier trial anchors; other recipes use 20–28 g. The day-13 checkpoint rounds the trial mean, not a fitted optimum.",
       "alternatives": [
         {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 20.0,
+          "area": 200,
+          "harvest": [
+            12,
+            13
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Suggested starting amount: 20 g dry seed per nominal 1020. Listed rates: 13–28.4 g across 7 entries (mean 20.5 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Direct sow from the broccoli guide.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 0,
+          "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D32",
+            "D41",
+            "D42",
+            "D43"
+          ],
+          "substrateId": "coir"
+        },
+        {
           "id": "baseline",
-          "label": "Research starting plan",
+          "label": "Johnny’s · 13 g trial rate",
           "grams": 13,
           "area": 200,
           "harvest": [
@@ -73,7 +108,10 @@
           "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
           "calendarSources": [
             "D02",
-            "D32"
+            "D32",
+            "D41",
+            "D42",
+            "D43"
           ],
           "substrateId": "coir"
         },
@@ -105,7 +143,10 @@
           "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
           "calendarSources": [
             "D05",
-            "D32"
+            "D32",
+            "D41",
+            "D42",
+            "D43"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -137,7 +178,10 @@
           "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
           "calendarSources": [
             "D04",
-            "D32"
+            "D32",
+            "D41",
+            "D42",
+            "D43"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -169,7 +213,10 @@
           "weightBasis": "3 lb selected within USU’s general 2–5 lb example.",
           "calendarSources": [
             "D03",
-            "D32"
+            "D32",
+            "D41",
+            "D42",
+            "D43"
           ],
           "substrateId": "coir",
           "lightHours": 18
@@ -201,7 +248,10 @@
           "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
           "calendarSources": [
             "V02",
-            "D32"
+            "D32",
+            "D41",
+            "D42",
+            "D43"
           ],
           "substrateId": "reusable"
         },
@@ -232,7 +282,10 @@
           "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
           "substrateId": "coir",
           "calendarSources": [
-            "D32"
+            "D32",
+            "D41",
+            "D42",
+            "D43"
           ],
           "lightHours": 16
         },
@@ -264,7 +317,10 @@
           "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
           "calendarSources": [
             "D38",
-            "D32"
+            "D32",
+            "D41",
+            "D42",
+            "D43"
           ],
           "substrateId": "coir"
         },
@@ -295,7 +351,10 @@
           "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
           "calendarSources": [
             "D34",
-            "D32"
+            "D32",
+            "D41",
+            "D42",
+            "D43"
           ]
         }
       ],
@@ -305,6 +364,19 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Grower/supplier height cue; approximate and method-dependent.",
+          "sources": [
+            "D41",
+            "D42",
+            "D43"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -313,7 +385,7 @@
         "waterBasis": "Lower starting scenario; grower reports 1–2 cups/day in its setup."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -331,9 +403,9 @@
       "species": "Raphanus sativus",
       "family": "Brassicaceae",
       "group": "radish",
-      "defaultGrams": 22.5,
+      "defaultGrams": 28.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         8,
         8
@@ -356,6 +428,40 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 28.0,
+          "area": 200,
+          "harvest": [
+            8,
+            8
+          ],
+          "cover": [
+            2,
+            3
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Suggested starting amount: 28 g dry seed per nominal 1020. Listed rates: 22.5–32.5 g across 5 entries (mean 28.2 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D35",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -384,7 +490,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D35"
+            "D35",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -417,7 +524,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D35"
+            "D35",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -450,7 +558,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D35"
+            "D35",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -484,7 +593,8 @@
           "calendarSources": [
             "D39",
             "D16",
-            "D35"
+            "D35",
+            "D41"
           ],
           "substrateId": "coir"
         }
@@ -495,6 +605,17 @@
         "exit": "Even rooted emergence, before stems tangle beneath the cover.",
         "water": "Check morning and late light period; mature radish can deplete a shallow root zone rapidly. Refill from tray-weight deficit, then drain excess.",
         "harvest": "Expanded cotyledons; inspect flavor and texture before extending the cycle.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Even rooted emergence, before stems tangle beneath the cover."
+        },
         "litCare": "",
         "demand": 3.1,
         "waterSources": [
@@ -504,7 +625,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -575,7 +696,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D35"
+            "D35",
+            "D41"
           ],
           "substrateId": "peat"
         }
@@ -585,6 +707,17 @@
         "exit": "Even rooted emergence, before stems tangle beneath the cover.",
         "water": "Check morning and late light period; mature radish can deplete a shallow root zone rapidly. Refill from tray-weight deficit, then drain excess.",
         "harvest": "Expanded cotyledons; inspect flavor and texture before extending the cycle.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Even rooted emergence, before stems tangle beneath the cover."
+        },
         "litCare": "",
         "demand": 3.1,
         "waterSources": [
@@ -665,7 +798,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D35"
+            "D35",
+            "D41"
           ],
           "substrateId": "peat"
         }
@@ -675,6 +809,17 @@
         "exit": "Even rooted emergence, before stems tangle beneath the cover.",
         "water": "Check morning and late light period; mature radish can deplete a shallow root zone rapidly. Refill from tray-weight deficit, then drain excess.",
         "harvest": "Expanded cotyledons; inspect flavor and texture before extending the cycle.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Even rooted emergence, before stems tangle beneath the cover."
+        },
         "litCare": "",
         "demand": 3.1,
         "waterSources": [
@@ -755,7 +900,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D35"
+            "D35",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -789,7 +935,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D35"
+            "D35",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -822,7 +969,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D35"
+            "D35",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -833,6 +981,17 @@
         "exit": "Even rooted emergence, before stems tangle beneath the cover.",
         "water": "Check morning and late light period; mature radish can deplete a shallow root zone rapidly. Refill from tray-weight deficit, then drain excess.",
         "harvest": "Expanded cotyledons; inspect flavor and texture before extending the cycle.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Even rooted emergence, before stems tangle beneath the cover."
+        },
         "litCare": "",
         "demand": 3.1,
         "waterSources": [
@@ -860,9 +1019,9 @@
       "species": "Brassica oleracea var. capitata",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 10.5,
+      "defaultGrams": 18.7,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         13,
         14
@@ -885,6 +1044,40 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 18.7,
+          "area": 200,
+          "harvest": [
+            13,
+            14
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 18.7 g dry seed per nominal 1020. Listed rates: 10.5–28.4 g across 5 entries (mean 18.7 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -913,7 +1106,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -946,7 +1140,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -979,7 +1174,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1012,7 +1208,8 @@
           "calendarSources": [
             "V01",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "coir"
         }
@@ -1022,6 +1219,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -1031,7 +1239,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -1102,7 +1310,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1136,7 +1345,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1169,7 +1379,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1180,6 +1391,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -1207,9 +1429,9 @@
       "species": "Brassica napus (Red Russian type)",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 10,
+      "defaultGrams": 19.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         13,
         14
@@ -1232,6 +1454,40 @@
       "confidence": "Published starting rate",
       "notes": "Red Russian is B. napus; curly/Toscano kale is generally B. oleracea. Keep seed lots distinct.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 19.0,
+          "area": 200,
+          "harvest": [
+            13,
+            14
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Midpoint of suggested starting range: 19 g dry seed per nominal 1020. Listed rates: 10–40 g across 7 entries (mean 22.9 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -1260,7 +1516,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -1293,7 +1550,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1326,7 +1584,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1337,6 +1596,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -1346,7 +1616,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -1364,9 +1634,9 @@
       "species": "Brassica oleracea var. acephala",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 22,
+      "defaultGrams": 19.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         10,
         10
@@ -1389,6 +1659,41 @@
       "confidence": "Published starting rate",
       "notes": "MGM table does not identify the cultivar; confirm the supplied seed’s botanical identity.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 19.0,
+          "area": 200,
+          "harvest": [
+            10,
+            10
+          ],
+          "cover": [
+            3,
+            3
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Midpoint of suggested starting range: 19 g dry seed per nominal 1020. Listed rates: 10–40 g across 7 entries (mean 22.9 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -1417,7 +1722,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1451,7 +1757,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1484,7 +1791,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1495,6 +1803,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -1504,7 +1823,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -1522,9 +1841,9 @@
       "species": "Brassica oleracea var. gongylodes",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 9.5,
+      "defaultGrams": 16.1,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         16,
         16
@@ -1547,6 +1866,40 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 16.1,
+          "area": 200,
+          "harvest": [
+            16,
+            16
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 16.1 g dry seed per nominal 1020. Listed rates: 9.5–19.8 g across 5 entries (mean 16.1 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -1575,7 +1928,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -1608,7 +1962,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1641,7 +1996,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1652,6 +2008,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -1661,7 +2028,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -1679,9 +2046,9 @@
       "species": "Brassica oleracea var. botrytis",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 20,
+      "defaultGrams": 15.9,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         10,
         10
@@ -1704,6 +2071,41 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 15.9,
+          "area": 200,
+          "harvest": [
+            10,
+            10
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 15.9 g dry seed per nominal 1020. Listed rates: 14.2–17.5 g across 2 entries (mean 15.9 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -1732,7 +2134,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1766,7 +2169,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1777,6 +2181,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -1786,7 +2201,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -1804,9 +2219,9 @@
       "species": "Brassica rapa subsp. chinensis",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 10.5,
+      "defaultGrams": 12.5,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         13,
         13
@@ -1829,6 +2244,40 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 12.5,
+          "area": 200,
+          "harvest": [
+            13,
+            13
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 12.5 g dry seed per nominal 1020. Listed rates: 9.6–17.5 g across 3 entries (mean 12.5 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -1857,7 +2306,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -1890,7 +2340,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -1901,6 +2352,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -1910,7 +2372,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -1928,9 +2390,9 @@
       "species": "Brassica rapa var. japonica",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 9.5,
+      "defaultGrams": 11.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         12,
         12
@@ -1953,6 +2415,40 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 11.0,
+          "area": 200,
+          "harvest": [
+            12,
+            12
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 11 g dry seed per nominal 1020. Listed rates: 9.5–12.5 g across 2 entries (mean 11.0 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -1981,7 +2477,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         }
@@ -1991,6 +2488,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2000,7 +2508,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -2018,9 +2526,9 @@
       "species": "Brassica rapa subsp. narinosa",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 7.5,
+      "defaultGrams": 10.2,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         13,
         14
@@ -2043,6 +2551,40 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 10.2,
+          "area": 200,
+          "harvest": [
+            13,
+            14
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 10.2 g dry seed per nominal 1020. Listed rates: 7.5–12.5 g across 3 entries (mean 10.2 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -2071,7 +2613,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         }
@@ -2081,6 +2624,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2090,7 +2644,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -2161,7 +2715,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         }
@@ -2171,6 +2726,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2198,9 +2764,9 @@
       "species": "Brassica juncea",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 8,
+      "defaultGrams": 12.5,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         12,
         13
@@ -2223,6 +2789,40 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 12.5,
+          "area": 200,
+          "harvest": [
+            12,
+            13
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 12.5 g dry seed per nominal 1020. Listed rates: 8–19.8 g across 5 entries (mean 12.5 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -2251,7 +2851,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -2284,7 +2885,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -2317,7 +2919,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -2328,6 +2931,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2337,7 +2951,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -2355,9 +2969,9 @@
       "species": "Brassica juncea",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 9.5,
+      "defaultGrams": 12.5,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         14,
         14
@@ -2380,6 +2994,40 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 12.5,
+          "area": 200,
+          "harvest": [
+            14,
+            14
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 12.5 g dry seed per nominal 1020. Listed rates: 8–19.8 g across 5 entries (mean 12.5 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -2408,7 +3056,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -2441,7 +3090,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -2474,7 +3124,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -2485,6 +3136,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2494,7 +3156,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -2512,9 +3174,9 @@
       "species": "Eruca vesicaria subsp. sativa",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 10,
+      "defaultGrams": 12.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         14,
         14
@@ -2537,6 +3199,40 @@
       "confidence": "Published starting rate",
       "notes": "Mild mucilage: no presoak. MGM uses a stack; long blackout is optional, not a necessary stage.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 12.0,
+          "area": 200,
+          "harvest": [
+            14,
+            14
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 12 g dry seed per nominal 1020. Listed rates: 9.2–19.8 g across 6 entries (mean 12.0 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -2565,7 +3261,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -2598,7 +3295,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -2631,7 +3329,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -2664,7 +3363,8 @@
           "calendarSources": [
             "D03",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "coir",
           "lightHours": 18
@@ -2675,6 +3375,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2684,7 +3395,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -2702,9 +3413,9 @@
       "species": "Lepidium sativum",
       "family": "Brassicaceae",
       "group": "brassica",
-      "defaultGrams": 10.5,
+      "defaultGrams": 14.3,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         13,
         13
@@ -2727,6 +3438,40 @@
       "confidence": "Published starting rate",
       "notes": "Mucilaginous: direct sow; avoid seed clumps and free-water presoaking.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 14.3,
+          "area": 200,
+          "harvest": [
+            13,
+            13
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 14.3 g dry seed per nominal 1020. Listed rates: 10.5–20 g across 3 entries (mean 14.3 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -2755,7 +3500,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         }
@@ -2765,6 +3511,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2774,7 +3531,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -2845,7 +3602,8 @@
           "calendarSources": [
             "D03",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "coir",
           "lightHours": 18
@@ -2856,6 +3614,17 @@
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
         "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
         "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2883,9 +3652,9 @@
       "species": "Ocimum basilicum",
       "family": "Lamiaceae",
       "group": "mucilage",
-      "defaultGrams": 4,
+      "defaultGrams": 9.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         24,
         24
@@ -2908,6 +3677,42 @@
       "confidence": "Published starting rate",
       "notes": "Default uses MGM’s long-cycle dome recipe. Select Jonah for a separate short-cycle light-stack recipe.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 9.0,
+          "area": 200,
+          "harvest": [
+            24,
+            24
+          ],
+          "cover": [
+            5,
+            7
+          ],
+          "method": "dome",
+          "source": "P01",
+          "note": "Midpoint of suggested starting range: 9 g dry seed per nominal 1020. Listed rates: 6.5–28.4 g across 6 entries (mean 15.6 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41",
+            "D44"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -2936,7 +3741,9 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -2970,7 +3777,9 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -3003,7 +3812,9 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -3036,7 +3847,9 @@
           "calendarSources": [
             "D21",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat",
           "lightHours": 18
@@ -3069,7 +3882,9 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat"
         }
@@ -3079,6 +3894,18 @@
         "exit": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates.",
         "water": "Direct sow without a free-water presoak. Maintain a moist seed surface beneath a vented dome; avoid pooling. Bottom-water after roots reach the medium.",
         "harvest": "Basil at the selected leaf size; chia has its own shorter study schedule.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Grower/supplier height cue; approximate and method-dependent.",
+          "sources": [
+            "D41",
+            "D44"
+          ],
+          "check": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -3088,7 +3915,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -3106,9 +3933,9 @@
       "species": "Ocimum basilicum",
       "family": "Lamiaceae",
       "group": "mucilage",
-      "defaultGrams": 6.5,
+      "defaultGrams": 9.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         19,
         19
@@ -3131,6 +3958,41 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 9.0,
+          "area": 200,
+          "harvest": [
+            19,
+            19
+          ],
+          "cover": [
+            4,
+            7
+          ],
+          "method": "dome",
+          "source": "P01",
+          "note": "Midpoint of suggested starting range: 9 g dry seed per nominal 1020. Listed rates: 6.5–28.4 g across 6 entries (mean 15.6 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41",
+            "D44"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -3159,7 +4021,9 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat"
         }
@@ -3169,6 +4033,18 @@
         "exit": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates.",
         "water": "Direct sow without a free-water presoak. Maintain a moist seed surface beneath a vented dome; avoid pooling. Bottom-water after roots reach the medium.",
         "harvest": "Basil at the selected leaf size; chia has its own shorter study schedule.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Grower/supplier height cue; approximate and method-dependent.",
+          "sources": [
+            "D41",
+            "D44"
+          ],
+          "check": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -3178,7 +4054,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -3249,7 +4125,9 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat"
         },
@@ -3282,7 +4160,9 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -3315,7 +4195,9 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -3326,6 +4208,18 @@
         "exit": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates.",
         "water": "Direct sow without a free-water presoak. Maintain a moist seed surface beneath a vented dome; avoid pooling. Bottom-water after roots reach the medium.",
         "harvest": "Basil at the selected leaf size; chia has its own shorter study schedule.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Grower/supplier height cue; approximate and method-dependent.",
+          "sources": [
+            "D41",
+            "D44"
+          ],
+          "check": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -3406,7 +4300,9 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat"
         },
@@ -3439,7 +4335,9 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -3472,7 +4370,9 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -3483,6 +4383,18 @@
         "exit": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates.",
         "water": "Direct sow without a free-water presoak. Maintain a moist seed surface beneath a vented dome; avoid pooling. Bottom-water after roots reach the medium.",
         "harvest": "Basil at the selected leaf size; chia has its own shorter study schedule.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Grower/supplier height cue; approximate and method-dependent.",
+          "sources": [
+            "D41",
+            "D44"
+          ],
+          "check": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -3563,7 +4475,9 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -3597,7 +4511,9 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41",
+            "D44"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -3608,6 +4524,18 @@
         "exit": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates.",
         "water": "Direct sow without a free-water presoak. Maintain a moist seed surface beneath a vented dome; avoid pooling. Bottom-water after roots reach the medium.",
         "harvest": "Basil at the selected leaf size; chia has its own shorter study schedule.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Grower/supplier height cue; approximate and method-dependent.",
+          "sources": [
+            "D41",
+            "D44"
+          ],
+          "check": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -3635,9 +4563,9 @@
       "species": "Perilla frutescens var. crispa",
       "family": "Lamiaceae",
       "group": "shiso",
-      "defaultGrams": 11.5,
+      "defaultGrams": 11.1,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         16,
         16
@@ -3660,6 +4588,40 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 11.1,
+          "area": 200,
+          "harvest": [
+            16,
+            16
+          ],
+          "cover": [
+            4,
+            7
+          ],
+          "method": "dome",
+          "source": "P01",
+          "note": "Average of the listed rates: 11.1 g dry seed per nominal 1020. Listed rates: 7.5–13.5 g across 4 entries (mean 11.1 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -3688,7 +4650,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -3720,7 +4683,8 @@
           "calendarSources": [
             "D34",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -3729,6 +4693,17 @@
         "exit": "An even rooted stand; germination can be lot- and cultivar-sensitive.",
         "water": "Maintain the surface gently during slow emergence; avoid prolonged waterlogging. Once rooted, use weight-based bottom watering.",
         "harvest": "Expanded aromatic leaves at the chosen market specification.",
+        "lightReadiness": {
+          "heightIn": [
+            0.25,
+            0.75
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "An even rooted stand; germination can be lot- and cultivar-sensitive."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -3738,7 +4713,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -3756,9 +4731,9 @@
       "species": "Perilla frutescens var. crispa",
       "family": "Lamiaceae",
       "group": "shiso",
-      "defaultGrams": 12,
+      "defaultGrams": 11.1,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         17,
         17
@@ -3781,6 +4756,41 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 11.1,
+          "area": 200,
+          "harvest": [
+            17,
+            17
+          ],
+          "cover": [
+            5,
+            5
+          ],
+          "method": "dome",
+          "source": "P01",
+          "note": "Average of the listed rates: 11.1 g dry seed per nominal 1020. Listed rates: 7.5–13.5 g across 4 entries (mean 11.1 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -3809,7 +4819,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -3843,7 +4854,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -3876,7 +4888,8 @@
           "calendarSources": [
             "D34",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -3885,6 +4898,17 @@
         "exit": "An even rooted stand; germination can be lot- and cultivar-sensitive.",
         "water": "Maintain the surface gently during slow emergence; avoid prolonged waterlogging. Once rooted, use weight-based bottom watering.",
         "harvest": "Expanded aromatic leaves at the chosen market specification.",
+        "lightReadiness": {
+          "heightIn": [
+            0.25,
+            0.75
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "An even rooted stand; germination can be lot- and cultivar-sensitive."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -3894,7 +4918,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -3912,9 +4936,9 @@
       "species": "Perilla frutescens var. crispa",
       "family": "Lamiaceae",
       "group": "shiso",
-      "defaultGrams": 8,
+      "defaultGrams": 11.1,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         24,
         24
@@ -3937,6 +4961,41 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 11.1,
+          "area": 200,
+          "harvest": [
+            24,
+            24
+          ],
+          "cover": [
+            5,
+            5
+          ],
+          "method": "dome",
+          "source": "P01",
+          "note": "Average of the listed rates: 11.1 g dry seed per nominal 1020. Listed rates: 7.5–13.5 g across 4 entries (mean 11.1 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -3965,7 +5024,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -3999,7 +5059,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4032,7 +5093,8 @@
           "calendarSources": [
             "D34",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -4041,6 +5103,17 @@
         "exit": "An even rooted stand; germination can be lot- and cultivar-sensitive.",
         "water": "Maintain the surface gently during slow emergence; avoid prolonged waterlogging. Once rooted, use weight-based bottom watering.",
         "harvest": "Expanded aromatic leaves at the chosen market specification.",
+        "lightReadiness": {
+          "heightIn": [
+            0.25,
+            0.75
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "An even rooted stand; germination can be lot- and cultivar-sensitive."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -4050,7 +5123,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -4068,9 +5141,9 @@
       "species": "Coriandrum sativum",
       "family": "Apiaceae",
       "group": "apiaceae",
-      "defaultGrams": 40,
+      "defaultGrams": 32.1,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         20,
         20
@@ -4093,6 +5166,41 @@
       "confidence": "Published starting rate",
       "notes": "Detailed MGM article cycle selected; 2024 summary table instead says 17 d. Whole fruit contains two mericarps: units/g is not embryos/g.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 32.1,
+          "area": 200,
+          "harvest": [
+            20,
+            20
+          ],
+          "cover": [
+            7,
+            8
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 32.1 g dry seed per nominal 1020. Listed rates: 18.7–56.7 g across 7 entries (mean 32.1 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D18",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -4121,7 +5229,8 @@
           "calendarSources": [
             "D18",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4155,7 +5264,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4188,7 +5298,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4221,7 +5332,8 @@
           "calendarSources": [
             "D34",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -4230,6 +5342,17 @@
         "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
         "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
         "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -4239,7 +5362,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D18",
+        "density": "P01",
         "harvest": "D18; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -4257,9 +5380,9 @@
       "species": "Coriandrum sativum",
       "family": "Apiaceae",
       "group": "apiaceae",
-      "defaultGrams": 20,
+      "defaultGrams": 20.6,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         15,
         18
@@ -4282,6 +5405,40 @@
       "confidence": "Published starting rate",
       "notes": "Jonah recipe; optional thin vermiculite and daily moisture checks. Split seed is a distinct count unit.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 20.6,
+          "area": 200,
+          "harvest": [
+            15,
+            18
+          ],
+          "cover": [
+            6,
+            7
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 20.6 g dry seed per nominal 1020. Listed rates: 18.7–22.5 g across 2 entries (mean 20.6 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D22",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -4310,7 +5467,8 @@
           "calendarSources": [
             "D22",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -4343,7 +5501,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4376,7 +5535,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4409,7 +5569,8 @@
           "calendarSources": [
             "V06",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "coir"
         },
@@ -4441,7 +5602,8 @@
           "calendarSources": [
             "D34",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -4450,6 +5612,17 @@
         "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
         "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
         "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -4459,7 +5632,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D22",
+        "density": "P01",
         "harvest": "D22; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -4477,9 +5650,9 @@
       "species": "Anethum graveolens",
       "family": "Apiaceae",
       "group": "apiaceae",
-      "defaultGrams": 20,
+      "defaultGrams": 21.3,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         17,
         17
@@ -4502,6 +5675,41 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 21.3,
+          "area": 200,
+          "harvest": [
+            17,
+            17
+          ],
+          "cover": [
+            6,
+            6
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 21.3 g dry seed per nominal 1020. Listed rates: 12.5–30 g across 2 entries (mean 21.3 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -4530,7 +5738,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4564,7 +5773,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4597,7 +5807,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4608,6 +5819,17 @@
         "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
         "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
         "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -4617,7 +5839,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -4635,9 +5857,9 @@
       "species": "Foeniculum vulgare",
       "family": "Apiaceae",
       "group": "apiaceae",
-      "defaultGrams": 20,
+      "defaultGrams": 26.1,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         17,
         17
@@ -4660,6 +5882,41 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 26.1,
+          "area": 200,
+          "harvest": [
+            17,
+            17
+          ],
+          "cover": [
+            6,
+            6
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 26.1 g dry seed per nominal 1020. Listed rates: 25–28.4 g across 3 entries (mean 26.1 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -4688,7 +5945,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4722,7 +5980,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4755,7 +6014,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4788,7 +6048,8 @@
           "calendarSources": [
             "D34",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -4797,6 +6058,17 @@
         "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
         "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
         "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -4806,7 +6078,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -4824,9 +6096,9 @@
       "species": "Anthriscus cerefolium",
       "family": "Apiaceae",
       "group": "apiaceae",
-      "defaultGrams": 20,
+      "defaultGrams": 13.8,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         17,
         17
@@ -4849,6 +6121,41 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 13.8,
+          "area": 200,
+          "harvest": [
+            17,
+            17
+          ],
+          "cover": [
+            6,
+            6
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 13.8 g dry seed per nominal 1020. Listed rates: 12.5–15 g across 2 entries (mean 13.8 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -4877,7 +6184,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4911,7 +6219,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4944,7 +6253,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -4955,6 +6265,17 @@
         "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
         "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
         "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -4964,7 +6285,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -4982,9 +6303,9 @@
       "species": "Petroselinum crispum",
       "family": "Apiaceae",
       "group": "apiaceae",
-      "defaultGrams": 12,
+      "defaultGrams": 17.5,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         24,
         24
@@ -5007,6 +6328,41 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 17.5,
+          "area": 200,
+          "harvest": [
+            24,
+            24
+          ],
+          "cover": [
+            10,
+            10
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 17.5 g dry seed per nominal 1020. Listed rates: 17.5–17.5 g across 3 entries (mean 17.5 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -5035,7 +6391,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5069,7 +6426,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5102,7 +6460,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5113,6 +6472,17 @@
         "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
         "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
         "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -5122,7 +6492,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -5140,9 +6510,9 @@
       "species": "Apium graveolens",
       "family": "Apiaceae",
       "group": "apiaceae",
-      "defaultGrams": 4,
+      "defaultGrams": 17.9,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         24,
         24
@@ -5165,6 +6535,41 @@
       "confidence": "Published starting rate",
       "notes": "Species override: MGM uses a humidity dome for this slow, tiny seed.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 17.9,
+          "area": 200,
+          "harvest": [
+            24,
+            24
+          ],
+          "cover": [
+            10,
+            10
+          ],
+          "method": "dome",
+          "source": "P01",
+          "note": "Average of the listed rates: 17.9 g dry seed per nominal 1020. Listed rates: 15–21.3 g across 3 entries (mean 17.9 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -5193,7 +6598,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5227,7 +6633,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5260,7 +6667,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5271,6 +6679,17 @@
         "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
         "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
         "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -5280,7 +6699,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -5298,9 +6717,9 @@
       "species": "Beta vulgaris (beet group)",
       "family": "Amaranthaceae",
       "group": "seedball",
-      "defaultGrams": 23,
+      "defaultGrams": 30.4,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         17,
         17
@@ -5323,6 +6742,40 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 30.4,
+          "area": 200,
+          "harvest": [
+            17,
+            17
+          ],
+          "cover": [
+            4,
+            6
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 30.4 g dry seed per nominal 1020. Listed rates: 23–56.7 g across 6 entries (mean 30.4 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -5351,7 +6804,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -5384,7 +6838,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5417,7 +6872,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5450,7 +6906,8 @@
           "calendarSources": [
             "D34",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -5459,6 +6916,17 @@
         "exit": "Anchored roots and emerging cotyledons; evaluate hull shedding before removing the contact cover.",
         "water": "Pre-moisten the medium evenly; a thin cover can retain seed-zone moisture and assist hull shedding. Avoid saturating dense seed clusters.",
         "harvest": "Expanded colored cotyledons to first true leaf; remove retained hard hulls.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Anchored roots and emerging cotyledons; evaluate hull shedding before removing the contact cover."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -5468,7 +6936,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -5486,9 +6954,9 @@
       "species": "Beta vulgaris (cicla group)",
       "family": "Amaranthaceae",
       "group": "seedball",
-      "defaultGrams": 31.5,
+      "defaultGrams": 34.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         16,
         17
@@ -5511,6 +6979,40 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 34.0,
+          "area": 200,
+          "harvest": [
+            16,
+            17
+          ],
+          "cover": [
+            4,
+            6
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 34 g dry seed per nominal 1020. Listed rates: 25–56.7 g across 6 entries (mean 34.0 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -5539,7 +7041,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -5572,7 +7075,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5605,7 +7109,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5638,7 +7143,8 @@
           "calendarSources": [
             "D34",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -5647,6 +7153,17 @@
         "exit": "Anchored roots and emerging cotyledons; evaluate hull shedding before removing the contact cover.",
         "water": "Pre-moisten the medium evenly; a thin cover can retain seed-zone moisture and assist hull shedding. Avoid saturating dense seed clusters.",
         "harvest": "Expanded colored cotyledons to first true leaf; remove retained hard hulls.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Anchored roots and emerging cotyledons; evaluate hull shedding before removing the contact cover."
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -5656,7 +7173,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -5674,9 +7191,9 @@
       "species": "Amaranthus tricolor / cruentus trade types",
       "family": "Amaranthaceae",
       "group": "amaranth",
-      "defaultGrams": 7.5,
+      "defaultGrams": 15.8,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         17,
         18
@@ -5699,6 +7216,40 @@
       "confidence": "Published starting rate",
       "notes": "Confirm supplier botanical identity; “Garnet Red” is not a complete species identifier.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 15.8,
+          "area": 200,
+          "harvest": [
+            17,
+            18
+          ],
+          "cover": [
+            2,
+            3
+          ],
+          "method": "light-stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 15.8 g dry seed per nominal 1020. Listed rates: 7.5–28.4 g across 6 entries (mean 15.8 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -5727,7 +7278,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -5760,7 +7312,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5793,7 +7346,8 @@
           "calendarSources": [
             "D23",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 18
@@ -5804,6 +7358,17 @@
         "exit": "Fine roots anchor and seedlings emerge; avoid crushing the delicate stand.",
         "water": "Fine mist to keep the tiny surface-sown seed moist without washing it into clumps. Then gentle bottom watering; avoid standing water around fine stems.",
         "harvest": "Sufficient leaf development and stem strength; often first/second true leaf.",
+        "lightReadiness": {
+          "heightIn": [
+            0.25,
+            0.5
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Fine roots anchor and seedlings emerge; avoid crushing the delicate stand."
+        },
         "litCare": "",
         "demand": 1.5,
         "waterSources": [
@@ -5813,7 +7378,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -5831,9 +7396,9 @@
       "species": "Pisum sativum",
       "family": "Fabaceae",
       "group": "pea",
-      "defaultGrams": 150,
+      "defaultGrams": 225.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         8,
         10
@@ -5856,6 +7421,42 @@
       "confidence": "Published starting rate",
       "notes": "USU’s lower seed-use household recipe; MGM has a separate 300-g commercial recipe.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 225.0,
+          "area": 200,
+          "harvest": [
+            8,
+            10
+          ],
+          "cover": [
+            3,
+            3
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Suggested starting amount: 225 g dry seed per nominal 1020. Listed rates: 150–340.2 g across 6 entries (mean 233.0 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "USU reports 6 h for peas in its household coir method.",
+          "soak": [
+            6,
+            6
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 3,
+          "weightBasis": "3 lb selected within USU’s general 2–5 lb example.",
+          "calendarSources": [
+            "P01",
+            "D03",
+            "D16",
+            "D35",
+            "D41",
+            "D46"
+          ],
+          "substrateId": "coir",
+          "lightHours": 18
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -5884,7 +7485,9 @@
           "calendarSources": [
             "D03",
             "D16",
-            "D35"
+            "D35",
+            "D41",
+            "D46"
           ],
           "substrateId": "coir",
           "lightHours": 18
@@ -5919,7 +7522,9 @@
             "D05",
             "D33",
             "D16",
-            "D35"
+            "D35",
+            "D41",
+            "D46"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5953,7 +7558,9 @@
             "D04",
             "D33",
             "D16",
-            "D35"
+            "D35",
+            "D41",
+            "D46"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -5987,7 +7594,9 @@
             "D05",
             "D33",
             "D16",
-            "D35"
+            "D35",
+            "D41",
+            "D46"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -6021,7 +7630,9 @@
           "calendarSources": [
             "D33",
             "D16",
-            "D35"
+            "D35",
+            "D41",
+            "D46"
           ],
           "lightHours": 16
         },
@@ -6054,7 +7665,9 @@
           "calendarSources": [
             "D37",
             "D16",
-            "D35"
+            "D35",
+            "D41",
+            "D46"
           ],
           "substrateId": "peat"
         }
@@ -6065,6 +7678,18 @@
         "exit": "Strong anchored shoots lifting the contact cover; prevent unstable tall stacks.",
         "water": "Weigh dry seed before soaking, drain completely, then sow evenly. Check the mature root mat twice daily; use measured refill rather than leaving an uncalibrated reservoir.",
         "harvest": "Tender shoots with the cultivar’s desired leaf/tendril development.",
+        "lightReadiness": {
+          "heightIn": [
+            0.75,
+            1.25
+          ],
+          "basis": "Grower/supplier height cue; approximate and method-dependent.",
+          "sources": [
+            "D41",
+            "D46"
+          ],
+          "check": "Strong anchored shoots lifting the contact cover; prevent unstable tall stacks."
+        },
         "litCare": "",
         "demand": 3.7,
         "waterSources": [
@@ -6074,7 +7699,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D03",
+        "density": "P01",
         "harvest": "D03; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -6146,7 +7771,9 @@
             "D05",
             "D33",
             "D16",
-            "D35"
+            "D35",
+            "D41",
+            "D46"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -6181,7 +7808,9 @@
             "D05",
             "D33",
             "D16",
-            "D35"
+            "D35",
+            "D41",
+            "D46"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -6215,7 +7844,9 @@
             "D04",
             "D33",
             "D16",
-            "D35"
+            "D35",
+            "D41",
+            "D46"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -6249,7 +7880,9 @@
           "calendarSources": [
             "D33",
             "D16",
-            "D35"
+            "D35",
+            "D41",
+            "D46"
           ],
           "lightHours": 16
         }
@@ -6259,6 +7892,18 @@
         "exit": "Strong anchored shoots lifting the contact cover; prevent unstable tall stacks.",
         "water": "Weigh dry seed before soaking, drain completely, then sow evenly. Check the mature root mat twice daily; use measured refill rather than leaving an uncalibrated reservoir.",
         "harvest": "Harvest tender shoots before the tendrils mat together.",
+        "lightReadiness": {
+          "heightIn": [
+            0.75,
+            1.25
+          ],
+          "basis": "Grower/supplier height cue; approximate and method-dependent.",
+          "sources": [
+            "D41",
+            "D46"
+          ],
+          "check": "Strong anchored shoots lifting the contact cover; prevent unstable tall stacks."
+        },
         "litCare": "",
         "demand": 3.7,
         "waterSources": [
@@ -6286,9 +7931,9 @@
       "species": "Helianthus annuus",
       "family": "Asteraceae",
       "group": "sunflower",
-      "defaultGrams": 120,
+      "defaultGrams": 130.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         9,
         9
@@ -6311,6 +7956,44 @@
       "confidence": "Published starting rate",
       "notes": "120 g is the 2024 recipe; 130 g appears in MGM’s 2025 germination table. Seed hull/lot size matters.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 130.0,
+          "area": 200,
+          "harvest": [
+            9,
+            9
+          ],
+          "cover": [
+            3,
+            3
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Suggested starting amount: 130 g dry seed per nominal 1020. Listed rates: 48–255.2 g across 6 entries (mean 160.0 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM reports overnight; 6–12 h is the planner window.",
+          "soak": [
+            6,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 15,
+          "weightBasis": "On The Grow specifies a 15 lb paver and about one loose dark day. The MGM recipe keeps its own covered time and overnight soak.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D31",
+            "D04",
+            "D40",
+            "D35",
+            "D41",
+            "D45"
+          ],
+          "substrateId": "coir",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Sunflower · overnight coir starter",
@@ -6341,7 +8024,9 @@
             "D31",
             "D04",
             "D40",
-            "D35"
+            "D35",
+            "D41",
+            "D45"
           ],
           "substrateId": "coir",
           "lightHours": 16
@@ -6377,7 +8062,9 @@
             "D31",
             "D04",
             "D40",
-            "D35"
+            "D35",
+            "D41",
+            "D45"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -6412,7 +8099,9 @@
             "D31",
             "D05",
             "D40",
-            "D35"
+            "D35",
+            "D41",
+            "D45"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -6446,7 +8135,9 @@
             "D03",
             "D40",
             "D31",
-            "D35"
+            "D35",
+            "D41",
+            "D45"
           ],
           "substrateId": "coir",
           "lightHours": 18
@@ -6480,7 +8171,9 @@
             "V13",
             "D40",
             "D31",
-            "D35"
+            "D35",
+            "D41",
+            "D45"
           ],
           "substrateId": "peat"
         },
@@ -6513,7 +8206,9 @@
             "V11",
             "D31",
             "D40",
-            "D35"
+            "D35",
+            "D41",
+            "D45"
           ],
           "substrateId": "peat"
         },
@@ -6546,7 +8241,9 @@
             "V03",
             "D31",
             "D40",
-            "D35"
+            "D35",
+            "D41",
+            "D45"
           ],
           "substrateId": "coir"
         },
@@ -6579,7 +8276,9 @@
           "calendarSources": [
             "D31",
             "D40",
-            "D35"
+            "D35",
+            "D41",
+            "D45"
           ],
           "lightHours": 16
         },
@@ -6612,7 +8311,9 @@
           "calendarSources": [
             "D31",
             "D40",
-            "D35"
+            "D35",
+            "D41",
+            "D45"
           ],
           "lightHours": 16
         }
@@ -6622,6 +8323,18 @@
         "exit": "Strong, even roots and shoots lifting the cover; avoid stacked seed layers.",
         "water": "Drain soaked seed thoroughly. Bottom-water the established crop; any early top watering for hull release must allow foliage to dry before harvest.",
         "harvest": "Well-expanded tender cotyledons before objectionable true-leaf texture/flavor.",
+        "lightReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Grower/supplier height cue; approximate and method-dependent.",
+          "sources": [
+            "D41",
+            "D45"
+          ],
+          "check": "Strong, even roots and shoots lifting the cover; avoid stacked seed layers."
+        },
         "litCare": "Check for trapped hulls after blackout. If needed, soften them with a targeted mist and gently lift loose hulls; let the foliage dry.",
         "demand": 3.7,
         "waterSources": [
@@ -6631,7 +8344,7 @@
         "waterBasis": "High-use planning scenario; grower example is about one cup at a time, once or twice daily."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -6649,9 +8362,9 @@
       "species": "Lactuca sativa",
       "family": "Asteraceae",
       "group": "lettuce",
-      "defaultGrams": 10,
+      "defaultGrams": 13.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         17,
         17
@@ -6674,6 +8387,41 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 13.0,
+          "area": 200,
+          "harvest": [
+            17,
+            17
+          ],
+          "cover": [
+            5,
+            5
+          ],
+          "method": "dome",
+          "source": "P01",
+          "note": "Average of the listed rates: 13 g dry seed per nominal 1020. Listed rates: 10–17.5 g across 3 entries (mean 13.0 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -6702,7 +8450,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -6736,7 +8485,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -6769,7 +8519,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -6780,6 +8531,17 @@
         "exit": "Emergence and root anchoring; vent promptly to avoid humid stagnant conditions.",
         "water": "Surface-sow; keep the seed zone moist beneath a vented clear dome. Do not automatically impose a long dark, weighted phase.",
         "harvest": "Tender true leaves; watch bolting/elongation and harvest specification.",
+        "lightReadiness": {
+          "heightIn": [
+            0.25,
+            0.5
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Emergence and root anchoring; vent promptly to avoid humid stagnant conditions."
+        },
         "litCare": "",
         "demand": 1.7,
         "waterSources": [
@@ -6789,7 +8551,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -6807,9 +8569,9 @@
       "species": "Allium cepa",
       "family": "Amaryllidaceae",
       "group": "allium",
-      "defaultGrams": 35,
+      "defaultGrams": 37.5,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         17,
         17
@@ -6832,6 +8594,41 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 37.5,
+          "area": 200,
+          "harvest": [
+            17,
+            17
+          ],
+          "cover": [
+            6,
+            6
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 37.5 g dry seed per nominal 1020. Listed rates: 30–45 g across 2 entries (mean 37.5 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -6860,7 +8657,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -6894,7 +8692,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -6927,7 +8726,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -6938,6 +8738,17 @@
         "exit": "Rooted loops/green shoots appearing across the tray; inspect hulls and anchorage.",
         "water": "Prevent surface drying during slower emergence; use gentle bottom watering once rooted. Thin mats may need more frequent checks than deep mix.",
         "harvest": "Tender green shoots at the desired loop/leaf development.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Rooted loops/green shoots appearing across the tray; inspect hulls and anchorage."
+        },
         "litCare": "",
         "demand": 1.7,
         "waterSources": [
@@ -6947,7 +8758,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -7018,7 +8829,8 @@
           "calendarSources": [
             "D07",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -7027,6 +8839,17 @@
         "exit": "Rooted loops/green shoots appearing across the tray; inspect hulls and anchorage.",
         "water": "Prevent surface drying during slower emergence; use gentle bottom watering once rooted. Thin mats may need more frequent checks than deep mix.",
         "harvest": "Tender green shoots at the desired loop/leaf development.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Rooted loops/green shoots appearing across the tray; inspect hulls and anchorage."
+        },
         "litCare": "",
         "demand": 1.7,
         "waterSources": [
@@ -7107,7 +8930,8 @@
           "calendarSources": [
             "D07",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -7116,6 +8940,17 @@
         "exit": "Rooted loops/green shoots appearing across the tray; inspect hulls and anchorage.",
         "water": "Prevent surface drying during slower emergence; use gentle bottom watering once rooted. Thin mats may need more frequent checks than deep mix.",
         "harvest": "Tender green shoots at the desired loop/leaf development.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Rooted loops/green shoots appearing across the tray; inspect hulls and anchorage."
+        },
         "litCare": "",
         "demand": 1.7,
         "waterSources": [
@@ -7143,9 +8978,9 @@
       "species": "Tropaeolum majus",
       "family": "Tropaeolaceae",
       "group": "nasturtium",
-      "defaultGrams": 100,
+      "defaultGrams": 117.5,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         10,
         10
@@ -7168,6 +9003,41 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 117.5,
+          "area": 200,
+          "harvest": [
+            10,
+            10
+          ],
+          "cover": [
+            5,
+            5
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 117.5 g dry seed per nominal 1020. Listed rates: 80–155 g across 2 entries (mean 117.5 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D05",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "lightHours": 16
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -7196,7 +9066,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -7230,7 +9101,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -7263,7 +9135,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -7296,7 +9169,8 @@
           "calendarSources": [
             "D34",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -7305,6 +9179,17 @@
         "exit": "Anchored shoots emerging through the top dress.",
         "water": "Evenly moisten the medium; a thin top dress can help hull release. Sow without piled seeds and bottom-water the established roots.",
         "harvest": "Expanded cotyledons/young leaves at the chosen culinary size.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1.5
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Anchored shoots emerging through the top dress."
+        },
         "litCare": "",
         "demand": 2.3,
         "waterSources": [
@@ -7314,7 +9199,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D05",
+        "density": "P01",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -7332,9 +9217,9 @@
       "species": "Rumex sanguineus",
       "family": "Polygonaceae",
       "group": "sorrel",
-      "defaultGrams": 3.5,
+      "defaultGrams": 4.0,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         24,
         24
@@ -7357,6 +9242,40 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 4.0,
+          "area": 200,
+          "harvest": [
+            24,
+            24
+          ],
+          "cover": [
+            4,
+            7
+          ],
+          "method": "dome",
+          "source": "P01",
+          "note": "Average of the listed rates: 4 g dry seed per nominal 1020. Listed rates: 3–6.5 g across 4 entries (mean 4.0 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "P01",
+            "D02",
+            "D16",
+            "D36",
+            "D41"
+          ],
+          "substrateId": "peat"
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -7385,7 +9304,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         },
@@ -7418,7 +9338,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -7429,6 +9350,17 @@
         "exit": "An established stand; avoid drying the top layer during slow emergence.",
         "water": "Careful surface moisture for tiny seeds; avoid pooling, then bottom-water the fine roots.",
         "harvest": "Recognizable red-veined true leaves.",
+        "lightReadiness": {
+          "heightIn": [
+            0.25,
+            0.5
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "An established stand; avoid drying the top layer during slow emergence."
+        },
         "litCare": "",
         "demand": 1.5,
         "waterSources": [
@@ -7438,7 +9370,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D02",
+        "density": "P01",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -7509,7 +9441,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -7543,7 +9476,8 @@
           "calendarSources": [
             "D05",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -7576,7 +9510,8 @@
           "calendarSources": [
             "D04",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat",
           "lightHours": 16
@@ -7587,6 +9522,17 @@
         "exit": "Uniform anchored cotyledon emergence.",
         "water": "Keep good seed contact and even moisture, avoiding waterlogged large seeds. Bottom-water once roots establish.",
         "harvest": "Expanded, tender seed leaves before the crop becomes fibrous.",
+        "lightReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Uniform anchored cotyledon emergence."
+        },
         "litCare": "",
         "demand": 2.3,
         "waterSources": [
@@ -7667,7 +9613,8 @@
           "calendarSources": [
             "D02",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ],
           "substrateId": "peat"
         }
@@ -7677,6 +9624,17 @@
         "exit": "Even emerged stand with anchored roots.",
         "water": "Gentle surface watering during emergence, then bottom-water by weight; inspect long-cycle nutrient supply.",
         "harvest": "Johnny’s notes waiting for a second true-leaf set may improve harvestability.",
+        "lightReadiness": {
+          "heightIn": [
+            0.25,
+            0.75
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Even emerged stand with anchored roots."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -7704,9 +9662,9 @@
       "species": "Salvia hispanica",
       "family": "Lamiaceae",
       "group": "mucilage",
-      "defaultGrams": 120,
-      "referenceAreaIn2": 1550.0031000062,
-      "referenceAreaBasis": "Exact arithmetic reference: 1 m²",
+      "defaultGrams": 22.1,
+      "referenceAreaIn2": 200,
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         12,
         12
@@ -7729,6 +9687,39 @@
       "confidence": "Area-scaled experimental rate",
       "notes": "120 g/m² constant rate in a photoperiod experiment; 12 d is the study endpoint, not a universal density optimum.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 22.1,
+          "area": 200,
+          "harvest": [
+            12,
+            12
+          ],
+          "cover": [
+            2,
+            2
+          ],
+          "method": "dome",
+          "source": "P01",
+          "note": "Average of the listed rates: 22.1 g dry seed per nominal 1020. Listed rates: 12.5–28.4 g across 4 entries (mean 22.1 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "P01",
+            "D14",
+            "D16",
+            "D36",
+            "D41"
+          ]
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -7757,7 +9748,8 @@
           "calendarSources": [
             "D14",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -7766,6 +9758,17 @@
         "exit": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates.",
         "water": "Direct sow without a free-water presoak. Maintain a moist seed surface beneath a vented dome; avoid pooling. Bottom-water after roots reach the medium.",
         "harvest": "Basil at the selected leaf size; chia has its own shorter study schedule.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates."
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -7775,7 +9778,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D14",
+        "density": "P01",
         "harvest": "D14; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -7793,9 +9796,9 @@
       "species": "Trigonella foenum-graecum",
       "family": "Fabaceae",
       "group": "legume",
-      "defaultGrams": 25,
+      "defaultGrams": 26.1,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         10,
         12
@@ -7818,6 +9821,39 @@
       "confidence": "Experimental; geometry uncertain",
       "notes": "Published central treatment with a tray-dimension conflict. Covered phase is an editorial starting window, not reported exact study timing.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 26.1,
+          "area": 200,
+          "harvest": [
+            10,
+            12
+          ],
+          "cover": [
+            2,
+            4
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 26.1 g dry seed per nominal 1020. Listed rates: 15–35 g across 3 entries (mean 26.1 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D12",
+            "D16",
+            "D36",
+            "D41"
+          ]
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -7846,7 +9882,8 @@
           "calendarSources": [
             "D12",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -7855,6 +9892,17 @@
         "exit": "Anchored, even emergence; monitor seed decay independently of crop size.",
         "water": "Follow the named study/seed-lot protocol; soaking is optional unless explicitly part of that recipe. Drain soaked seed and inspect dense roots closely.",
         "harvest": "Use a species-specific endpoint and count units.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Anchored, even emergence; monitor seed decay independently of crop size."
+        },
         "litCare": "",
         "demand": 2.3,
         "waterSources": [
@@ -7864,7 +9912,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D12",
+        "density": "P01",
         "harvest": "D12; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -7935,7 +9983,8 @@
           "calendarSources": [
             "D11",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -7945,6 +9994,17 @@
         "exit": "Anchored, even emergence; monitor seed decay independently of crop size.",
         "water": "Follow the named study/seed-lot protocol; soaking is optional unless explicitly part of that recipe. Drain soaked seed and inspect dense roots closely.",
         "harvest": "Use a species-specific endpoint and count units.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Anchored, even emergence; monitor seed decay independently of crop size."
+        },
         "litCare": "",
         "demand": 2.3,
         "waterSources": [
@@ -8025,7 +10085,8 @@
           "calendarSources": [
             "D11",
             "D16",
-            "D36"
+            "D36",
+            "D41"
           ]
         }
       ],
@@ -8035,6 +10096,17 @@
         "exit": "Anchored, even emergence; monitor seed decay independently of crop size.",
         "water": "Follow the named study/seed-lot protocol; soaking is optional unless explicitly part of that recipe. Drain soaked seed and inspect dense roots closely.",
         "harvest": "Use a species-specific endpoint and count units.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Anchored, even emergence; monitor seed decay independently of crop size."
+        },
         "litCare": "",
         "demand": 2.3,
         "waterSources": [
@@ -8062,9 +10134,9 @@
       "species": "Triticum aestivum",
       "family": "Poaceae",
       "group": "cereal",
-      "defaultGrams": 275,
+      "defaultGrams": 417.9,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
         10,
         12
@@ -8087,6 +10159,39 @@
       "confidence": "Supplier range midpoint",
       "notes": "275 g midpoint of supplier’s 200–350 g range; this is juice grass, not a universal cut-leaf microgreen optimum.",
       "alternatives": [
+        {
+          "id": "comparison",
+          "label": "Seed rate comparison · starting plan",
+          "grams": 417.9,
+          "area": 200,
+          "harvest": [
+            10,
+            12
+          ],
+          "cover": [
+            2,
+            3
+          ],
+          "method": "stack",
+          "source": "P01",
+          "note": "Average of the listed rates: 417.9 g dry seed per nominal 1020. Listed rates: 350–453.6 g across 3 entries (mean 417.9 g). The growing schedule follows the original starting plan.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            8,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "P01",
+            "D13",
+            "D16",
+            "D35",
+            "D41"
+          ]
+        },
         {
           "id": "baseline",
           "label": "Research starting plan",
@@ -8115,7 +10220,8 @@
           "calendarSources": [
             "D13",
             "D16",
-            "D35"
+            "D35",
+            "D41"
           ]
         }
       ],
@@ -8124,6 +10230,17 @@
         "exit": "Anchored, even emerging grass shoots.",
         "water": "Use food-use whole grain, weigh before soaking, and drain. Dense grass roots require drainage and airflow; check at least morning and evening.",
         "harvest": "Defined cut grass stage; exclude grain/root from cut-shoot yield.",
+        "lightReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Anchored, even emerging grass shoots."
+        },
         "litCare": "",
         "demand": 3.7,
         "waterSources": [
@@ -8133,7 +10250,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D13",
+        "density": "P01",
         "harvest": "D13; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -8875,6 +10992,69 @@
       "accessed": "2026-11-04",
       "local": null
     },
+    "D41": {
+      "id": "D41",
+      "title": "On The Grow · when to end blackout",
+      "url": "https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout",
+      "kind": "Firsthand grower guide",
+      "note": "Remove pressure when the stand dominates the hulls and begins bending. End loose blackout while stems still support themselves; most crops in this grower’s method get at most about 24 hours. No universal height threshold is supplied.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D42": {
+      "id": "D42",
+      "title": "MP Seeds · broccoli light transition",
+      "url": "https://mpseeds.eu/broccoli-calabrese-microgreens-seeds",
+      "kind": "Seed supplier",
+      "note": "Calabrese broccoli: introduce light at about 2 cm stem height. This is a supplier cue, not a cultivar-independent minimum.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D43": {
+      "id": "D43",
+      "title": "Quantum Microgreens · broccoli topper removal",
+      "url": "https://quantummicrogreens.com/how-to-grow-broccoli-microgreens/",
+      "kind": "Firsthand grower guide",
+      "note": "Remove the topper and introduce light at about half an inch of broccoli growth in small household containers. Some unevenness at uncovering is normal.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D44": {
+      "id": "D44",
+      "title": "Wholly Water Farms · basil light transition",
+      "url": "https://www.whollywaterfarms.com/blog/basil-microgreens-growing-guide",
+      "kind": "Grower guide",
+      "note": "Basil transition cue is about half an inch to an inch, with emerging cotyledons. Applies to that guide’s dark-cover method; does not require adding blackout to a clear-dome recipe.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D45": {
+      "id": "D45",
+      "title": "Wind River Greens · sunflower light transition",
+      "url": "https://windrivergreens.com/blogs/guides/how-to-grow-sunflower-microgreens-step-by-step-complete-beginner-s-guide",
+      "kind": "Grower guide",
+      "note": "Sunflower light transition at about 1–2 inches. Only this height cue is used; its other watering and harvest recommendations do not replace the selected recipe.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D46": {
+      "id": "D46",
+      "title": "LaNiTex · pea light transition",
+      "url": "https://lanitexhydrogarden.com.au/blogs/microgreen-blog/how-to-grow-pea-microgreens-australia",
+      "kind": "Supplier growing guide",
+      "note": "Pea shoots move to light at about 2–3 cm. Planner rounds this to a 0.75–1.25 inch observation range, not a mandatory stretch target or proof for every cultivar.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "P01": {
+      "id": "P01",
+      "title": "Pasted comparison · dry seed rates",
+      "url": "crop-catalog.html#seed-rate-comparison",
+      "kind": "User-supplied comparison",
+      "note": "Sowing rates from the supplied comparison, normalized to a nominal 200 in² tray. The planner uses the suggested starting amount where given and the arithmetic mean elsewhere. The original recipe remains selectable.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
     "V01": {
       "id": "V01",
       "title": "On The Grow · Red Acre cabbage seed-to-harvest",
@@ -9327,6 +11507,713 @@
       "theta": 0,
       "capacityBasis": "No modeled bulk water reserve in nonabsorbent mesh",
       "note": "Use an accessible measured root-zone reservoir. Check the germinating seed surface morning and evening; seed size must suit mesh openings."
+    }
+  ],
+  "seedRateComparison": [
+    {
+      "crop": "Broccoli — Waltham",
+      "rates": {
+        "OTG": 21.0,
+        "BF": 17.5,
+        "J": 13.0,
+        "USU": 28.0,
+        "HM": 17.8,
+        "SM": 17.5,
+        "CK": 28.4
+      },
+      "meanGrams": 20.5,
+      "startingGrams": 20.0,
+      "profileIds": [
+        "broccoli"
+      ],
+      "selection": "Suggested starting amount"
+    },
+    {
+      "crop": "Radish — Daikon",
+      "rates": {
+        "OTG": 25.0,
+        "BF": 32.5,
+        "J": 22.5,
+        "HM": 29.3,
+        "SM": 31.5
+      },
+      "meanGrams": 28.2,
+      "startingGrams": 28.0,
+      "profileIds": [
+        "radish-daikon"
+      ],
+      "selection": "Suggested starting amount"
+    },
+    {
+      "crop": "Pea — Speckled",
+      "rates": {
+        "OTG": 230.0,
+        "BF": 237.5,
+        "USU": 150.0,
+        "HM": 202.7,
+        "SM": 237.5,
+        "CK": 340.2
+      },
+      "meanGrams": 233.0,
+      "startingGrams": 225.0,
+      "profileIds": [
+        "pea-basic"
+      ],
+      "selection": "Suggested starting amount"
+    },
+    {
+      "crop": "Sunflower — black oil",
+      "rates": {
+        "OTG": 125.0,
+        "BF": 250.0,
+        "USU": 48.0,
+        "HM": 121.6,
+        "SM": 160.0,
+        "CK": 255.2
+      },
+      "meanGrams": 160.0,
+      "startingGrams": 130.0,
+      "profileIds": [
+        "sunflower"
+      ],
+      "selection": "Suggested starting amount"
+    },
+    {
+      "crop": "Red cabbage",
+      "rates": {
+        "OTG": 18.5,
+        "BF": 17.5,
+        "J": 10.5,
+        "HM": 18.7,
+        "CK": 28.4
+      },
+      "meanGrams": 18.7,
+      "startingGrams": 18.7,
+      "profileIds": [
+        "red-cabbage"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Kale",
+      "rates": {
+        "OTG": 40.0,
+        "BF": 17.5,
+        "J": 10.0,
+        "USU": 28.0,
+        "HM": 18.7,
+        "SM": 17.5,
+        "CK": 28.4
+      },
+      "meanGrams": 22.9,
+      "startingGrams": 19.0,
+      "profileIds": [
+        "kale-red-russian",
+        "kale-curly"
+      ],
+      "selection": "Midpoint of suggested starting range"
+    },
+    {
+      "crop": "Purple kohlrabi",
+      "rates": {
+        "BF": 17.5,
+        "J": 9.5,
+        "HM": 16.0,
+        "SM": 17.5,
+        "CK": 19.8
+      },
+      "meanGrams": 16.1,
+      "startingGrams": 16.1,
+      "profileIds": [
+        "kohlrabi"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Mustard (red/green)",
+      "rates": {
+        "BF": 12.5,
+        "J": 8.0,
+        "HM": 9.6,
+        "SM": 12.5,
+        "CK": 19.8
+      },
+      "meanGrams": 12.5,
+      "startingGrams": 12.5,
+      "profileIds": [
+        "mustard-garnet",
+        "mustard-ruby"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Arugula",
+      "rates": {
+        "BF": 12.0,
+        "J": 10.0,
+        "USU": 10.0,
+        "HM": 9.2,
+        "SM": 11.0,
+        "CK": 19.8
+      },
+      "meanGrams": 12.0,
+      "startingGrams": 12.0,
+      "profileIds": [
+        "arugula"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Mizuna",
+      "rates": {
+        "J": 9.5,
+        "SM": 12.5
+      },
+      "meanGrams": 11.0,
+      "startingGrams": 11.0,
+      "profileIds": [
+        "mizuna"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Bok choy / pak choi",
+      "rates": {
+        "J": 10.5,
+        "HM": 9.6,
+        "MS": 17.5
+      },
+      "meanGrams": 12.5,
+      "startingGrams": 12.5,
+      "profileIds": [
+        "pak-choi"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Tatsoi",
+      "rates": {
+        "J": 7.5,
+        "HM": 10.6,
+        "MS": 12.5
+      },
+      "meanGrams": 10.2,
+      "startingGrams": 10.2,
+      "profileIds": [
+        "tatsoi"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Cauliflower",
+      "rates": {
+        "BF": 17.5,
+        "REV": 14.2
+      },
+      "meanGrams": 15.9,
+      "startingGrams": 15.9,
+      "profileIds": [
+        "cauliflower"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Collard greens",
+      "rates": {
+        "BF": 17.5,
+        "MS": 17.5
+      },
+      "meanGrams": 17.5,
+      "startingGrams": 17.5,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Brussels sprouts",
+      "rates": {
+        "BF": 17.5,
+        "GEC": 27.5
+      },
+      "meanGrams": 22.5,
+      "startingGrams": 22.5,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Turnip",
+      "rates": {
+        "MS": 20.0,
+        "DS": 25.0
+      },
+      "meanGrams": 22.5,
+      "startingGrams": 22.5,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Broccoli raab / rapini",
+      "rates": {
+        "MS": 20.0,
+        "DS": 25.0
+      },
+      "meanGrams": 22.5,
+      "startingGrams": 22.5,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Komatsuna",
+      "rates": {
+        "MS": 17.5,
+        "DS": 21.0
+      },
+      "meanGrams": 19.3,
+      "startingGrams": 19.3,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Basil (Genovese/Italian)",
+      "rates": {
+        "BF": 10.0,
+        "J": 6.5,
+        "USU": 28.0,
+        "SM": 9.0,
+        "CK": 28.4,
+        "MS": 11.5
+      },
+      "meanGrams": 15.6,
+      "startingGrams": 9.0,
+      "profileIds": [
+        "basil-genovese",
+        "basil-italian"
+      ],
+      "selection": "Midpoint of suggested starting range"
+    },
+    {
+      "crop": "Beetroot",
+      "rates": {
+        "BF": 25.0,
+        "J": 23.0,
+        "HM": 27.8,
+        "SM": 25.0,
+        "MS": 25.0,
+        "CK": 56.7
+      },
+      "meanGrams": 30.4,
+      "startingGrams": 30.4,
+      "profileIds": [
+        "beet"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Swiss chard",
+      "rates": {
+        "BF": 25.0,
+        "J": 31.5,
+        "HM": 34.7,
+        "SM": 26.0,
+        "MS": 30.0,
+        "CK": 56.7
+      },
+      "meanGrams": 34.0,
+      "startingGrams": 34.0,
+      "profileIds": [
+        "chard"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Cilantro (whole seed)",
+      "rates": {
+        "BF": 35.0,
+        "J": 26.0,
+        "USU": 28.0,
+        "HM": 18.7,
+        "SM": 30.0,
+        "CK": 56.7,
+        "MS": 30.0
+      },
+      "meanGrams": 32.1,
+      "startingGrams": 32.1,
+      "profileIds": [
+        "cilantro-whole"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Cilantro (split seed)",
+      "rates": {
+        "OTG": 22.5,
+        "HM": 18.7
+      },
+      "meanGrams": 20.6,
+      "startingGrams": 20.6,
+      "profileIds": [
+        "cilantro-split"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Dill",
+      "rates": {
+        "BF": 30.0,
+        "MS": 12.5
+      },
+      "meanGrams": 21.3,
+      "startingGrams": 21.3,
+      "profileIds": [
+        "dill"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Parsley",
+      "rates": {
+        "BF": 17.5,
+        "SM": 17.5,
+        "MS": 17.5
+      },
+      "meanGrams": 17.5,
+      "startingGrams": 17.5,
+      "profileIds": [
+        "parsley"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Fennel",
+      "rates": {
+        "BF": 25.0,
+        "CK": 28.4,
+        "MS": 25.0
+      },
+      "meanGrams": 26.1,
+      "startingGrams": 26.1,
+      "profileIds": [
+        "fennel"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Carrot",
+      "rates": {
+        "BF": 17.5,
+        "MS": 20.0
+      },
+      "meanGrams": 18.8,
+      "startingGrams": 18.8,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Celery",
+      "rates": {
+        "BF": 17.5,
+        "CK": 21.3,
+        "MS": 15.0
+      },
+      "meanGrams": 17.9,
+      "startingGrams": 17.9,
+      "profileIds": [
+        "celery"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Chervil",
+      "rates": {
+        "BF": 15.0,
+        "MS": 12.5
+      },
+      "meanGrams": 13.8,
+      "startingGrams": 13.8,
+      "profileIds": [
+        "chervil"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Garden cress",
+      "rates": {
+        "BF": 20.0,
+        "J": 10.5,
+        "MS": 12.5
+      },
+      "meanGrams": 14.3,
+      "startingGrams": 14.3,
+      "profileIds": [
+        "cress"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Shiso / perilla",
+      "rates": {
+        "BF": 12.0,
+        "J": 11.5,
+        "SM": 13.5,
+        "MS": 7.5
+      },
+      "meanGrams": 11.1,
+      "startingGrams": 11.1,
+      "profileIds": [
+        "shiso-britton",
+        "shiso-green",
+        "shiso-purple"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Red-veined sorrel",
+      "rates": {
+        "BF": 3.0,
+        "J": 3.5,
+        "OTG": 6.5,
+        "SM": 3.0
+      },
+      "meanGrams": 4.0,
+      "startingGrams": 4.0,
+      "profileIds": [
+        "sorrel"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Lettuce",
+      "rates": {
+        "BF": 17.5,
+        "HM": 10.0,
+        "REV": 11.6
+      },
+      "meanGrams": 13.0,
+      "startingGrams": 13.0,
+      "profileIds": [
+        "lettuce"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Endive",
+      "rates": {
+        "BF": 17.5,
+        "MS": 12.5
+      },
+      "meanGrams": 15.0,
+      "startingGrams": 15.0,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Red amaranth",
+      "rates": {
+        "OTG": 15.0,
+        "BF": 15.0,
+        "J": 7.5,
+        "SM": 17.5,
+        "MS": 11.5,
+        "CK": 28.4
+      },
+      "meanGrams": 15.8,
+      "startingGrams": 15.8,
+      "profileIds": [
+        "amaranth"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Chia",
+      "rates": {
+        "BF": 12.5,
+        "CK": 28.4,
+        "MS": 21.5,
+        "REV": 26.0
+      },
+      "meanGrams": 22.1,
+      "startingGrams": 22.1,
+      "profileIds": [
+        "chia"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Fenugreek",
+      "rates": {
+        "BF": 15.0,
+        "HM": 28.2,
+        "MS": 35.0
+      },
+      "meanGrams": 26.1,
+      "startingGrams": 26.1,
+      "profileIds": [
+        "fenugreek"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Clover",
+      "rates": {
+        "BF": 17.5,
+        "MS": 17.5
+      },
+      "meanGrams": 17.5,
+      "startingGrams": 17.5,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Onion",
+      "rates": {
+        "BF": 45.0,
+        "MS": 30.0
+      },
+      "meanGrams": 37.5,
+      "startingGrams": 37.5,
+      "profileIds": [
+        "onion"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Leek",
+      "rates": {
+        "BF": 45.0,
+        "MS": 35.0,
+        "CK": 56.7
+      },
+      "meanGrams": 45.6,
+      "startingGrams": 45.6,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Garlic chives",
+      "rates": {
+        "BF": 45.0,
+        "MS": 25.0
+      },
+      "meanGrams": 35.0,
+      "startingGrams": 35.0,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Spinach",
+      "rates": {
+        "HM": 24.0,
+        "REV": 25.8
+      },
+      "meanGrams": 24.9,
+      "startingGrams": 24.9,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Nasturtium",
+      "rates": {
+        "BF": 155.0,
+        "MS": 80.0
+      },
+      "meanGrams": 117.5,
+      "startingGrams": 117.5,
+      "profileIds": [
+        "nasturtium"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Borage",
+      "rates": {
+        "BF": 12.5,
+        "MS": 40.0
+      },
+      "meanGrams": 26.3,
+      "startingGrams": 26.3,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Shungiku / chrysanthemum",
+      "rates": {
+        "BF": 17.5,
+        "HM": 9.6
+      },
+      "meanGrams": 13.6,
+      "startingGrams": 13.6,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Buckwheat",
+      "rates": {
+        "BF": 100.0,
+        "MS": 270.0,
+        "CK": 340.2
+      },
+      "meanGrams": 236.7,
+      "startingGrams": 236.7,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Wheatgrass",
+      "rates": {
+        "BF": 450.0,
+        "MS": 350.0,
+        "CK": 453.6
+      },
+      "meanGrams": 417.9,
+      "startingGrams": 417.9,
+      "profileIds": [
+        "wheat"
+      ],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Corn / popcorn shoots",
+      "rates": {
+        "BF": 250.0,
+        "MS": 237.5,
+        "CK": 226.8
+      },
+      "meanGrams": 238.1,
+      "startingGrams": 238.1,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Fava bean shoots",
+      "rates": {
+        "BF": 237.5,
+        "MS": 300.0
+      },
+      "meanGrams": 268.8,
+      "startingGrams": 268.8,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Alfalfa",
+      "rates": {
+        "MS": 17.5,
+        "DS": 15.0
+      },
+      "meanGrams": 16.3,
+      "startingGrams": 16.3,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
+    },
+    {
+      "crop": "Flax",
+      "rates": {
+        "MS": 17.5,
+        "REV": 26.0
+      },
+      "meanGrams": 21.8,
+      "startingGrams": 21.8,
+      "profileIds": [],
+      "selection": "Average of the listed rates"
     }
   ],
   "videos": [

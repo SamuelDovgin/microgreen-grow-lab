@@ -1,55 +1,55 @@
 id,crop,species,family,protocol_group,reference_seed_g,reference_area_in2,harvest_days,source,evidence_limit
-broccoli,Broccoli,Brassica oleracea var. italica,Brassicaceae,brassica,13,200,12–13,D02,Published starting rate
-radish-daikon,Radish · Daikon,Raphanus sativus,Brassicaceae,radish,22.5,200,8–8,D02,Published starting rate
+broccoli,Broccoli,Brassica oleracea var. italica,Brassicaceae,brassica,20.0,200,12–13,P01,Starting amount from supplied comparison
+radish-daikon,Radish · Daikon,Raphanus sativus,Brassicaceae,radish,28.0,200,8–8,P01,Starting amount from supplied comparison
 radish-red-arrow,Radish · Red Arrow,Raphanus sativus,Brassicaceae,radish,24.5,200,8–8,D02,Published starting rate
 radish-hong-vit,Radish · Hong Vit,Raphanus sativus,Brassicaceae,radish,28.5,200,9–10,D02,Published starting rate
 radish-rambo,Radish · Rambo / Triton,Raphanus sativus,Brassicaceae,radish,40,200,8–8,D05,Published starting rate
-red-cabbage,Red cabbage,Brassica oleracea var. capitata,Brassicaceae,brassica,10.5,200,13–14,D02,Published starting rate
+red-cabbage,Red cabbage,Brassica oleracea var. capitata,Brassicaceae,brassica,18.7,200,13–14,P01,Starting amount from supplied comparison
 green-cabbage,Green cabbage,Brassica oleracea var. capitata,Brassicaceae,brassica,19,200,10–10,D05,Published starting rate
-kale-red-russian,Kale · Red Russian,Brassica napus (Red Russian type),Brassicaceae,brassica,10,200,13–14,D02,Published starting rate
-kale-curly,Kale · curly / generic farm recipe,Brassica oleracea var. acephala,Brassicaceae,brassica,22,200,10–10,D05,Published starting rate
-kohlrabi,Kohlrabi · Purple,Brassica oleracea var. gongylodes,Brassicaceae,brassica,9.5,200,16–16,D02,Published starting rate
-cauliflower,Cauliflower,Brassica oleracea var. botrytis,Brassicaceae,brassica,20,200,10–10,D05,Published starting rate
-pak-choi,Pak choi · Red,Brassica rapa subsp. chinensis,Brassicaceae,brassica,10.5,200,13–13,D02,Published starting rate
-mizuna,Mizuna,Brassica rapa var. japonica,Brassicaceae,brassica,9.5,200,12–12,D02,Published starting rate
-tatsoi,Tatsoi,Brassica rapa subsp. narinosa,Brassicaceae,brassica,7.5,200,13–14,D02,Published starting rate
+kale-red-russian,Kale · Red Russian,Brassica napus (Red Russian type),Brassicaceae,brassica,19.0,200,13–14,P01,Starting amount from supplied comparison
+kale-curly,Kale · curly / generic farm recipe,Brassica oleracea var. acephala,Brassicaceae,brassica,19.0,200,10–10,P01,Starting amount from supplied comparison
+kohlrabi,Kohlrabi · Purple,Brassica oleracea var. gongylodes,Brassicaceae,brassica,16.1,200,16–16,P01,Starting amount from supplied comparison
+cauliflower,Cauliflower,Brassica oleracea var. botrytis,Brassicaceae,brassica,15.9,200,10–10,P01,Starting amount from supplied comparison
+pak-choi,Pak choi · Red,Brassica rapa subsp. chinensis,Brassicaceae,brassica,12.5,200,13–13,P01,Starting amount from supplied comparison
+mizuna,Mizuna,Brassica rapa var. japonica,Brassicaceae,brassica,11.0,200,12–12,P01,Starting amount from supplied comparison
+tatsoi,Tatsoi,Brassica rapa subsp. narinosa,Brassicaceae,brassica,10.2,200,13–14,P01,Starting amount from supplied comparison
 tokyo-bekana,Tokyo Bekana,Brassica rapa (pekinensis group),Brassicaceae,brassica,14,200,10–10,D02,Published starting rate
-mustard-garnet,Mustard · Garnet Giant,Brassica juncea,Brassicaceae,brassica,8,200,12–13,D02,Published starting rate
-mustard-ruby,Mustard · Ruby Streaks,Brassica juncea,Brassicaceae,brassica,9.5,200,14–14,D02,Published starting rate
-arugula,Arugula / rocket,Eruca vesicaria subsp. sativa,Brassicaceae,brassica,10,200,14–14,D02,Published starting rate
-cress,Garden cress · Cressida,Lepidium sativum,Brassicaceae,brassica,10.5,200,13–13,D02,Published starting rate
+mustard-garnet,Mustard · Garnet Giant,Brassica juncea,Brassicaceae,brassica,12.5,200,12–13,P01,Starting amount from supplied comparison
+mustard-ruby,Mustard · Ruby Streaks,Brassica juncea,Brassicaceae,brassica,12.5,200,14–14,P01,Starting amount from supplied comparison
+arugula,Arugula / rocket,Eruca vesicaria subsp. sativa,Brassicaceae,brassica,12.0,200,14–14,P01,Starting amount from supplied comparison
+cress,Garden cress · Cressida,Lepidium sativum,Brassicaceae,brassica,14.3,200,13–13,P01,Starting amount from supplied comparison
 rutabaga,Rutabaga,Brassica napus (napobrassica group),Brassicaceae,brassica,28,200,8–12,D03,Published starting rate
-basil-genovese,Basil · Genovese,Ocimum basilicum,Lamiaceae,mucilage,4,200,24–24,D05,Published starting rate
-basil-italian,Basil · Italian Large Leaf,Ocimum basilicum,Lamiaceae,mucilage,6.5,200,19–19,D02,Published starting rate
+basil-genovese,Basil · Genovese,Ocimum basilicum,Lamiaceae,mucilage,9.0,200,24–24,P01,Starting amount from supplied comparison
+basil-italian,Basil · Italian Large Leaf,Ocimum basilicum,Lamiaceae,mucilage,9.0,200,19–19,P01,Starting amount from supplied comparison
 basil-dark-opal,Basil · Dark Opal,Ocimum basilicum,Lamiaceae,mucilage,5,200,25–26,D02,Published starting rate
 basil-red-rubin,Basil · Red Rubin,Ocimum basilicum,Lamiaceae,mucilage,6,200,25–26,D02,Published starting rate
 basil-lemon,Basil · Lemon,Ocimum × africanum / citriodorum trade types,Lamiaceae,mucilage,4,200,17–17,D05,Published starting rate
-shiso-britton,Shiso · Britton,Perilla frutescens var. crispa,Lamiaceae,shiso,11.5,200,16–16,D02,Published starting rate
-shiso-green,Shiso · Green,Perilla frutescens var. crispa,Lamiaceae,shiso,12,200,17–17,D05,Published starting rate
-shiso-purple,Shiso · Purple,Perilla frutescens var. crispa,Lamiaceae,shiso,8,200,24–24,D05,Published starting rate
-cilantro-whole,Cilantro · whole fruit,Coriandrum sativum,Apiaceae,apiaceae,40,200,20–20,D18,Published starting rate
-cilantro-split,Cilantro · split mericarps,Coriandrum sativum,Apiaceae,apiaceae,20,200,15–18,D22,Published starting rate
-dill,Dill,Anethum graveolens,Apiaceae,apiaceae,20,200,17–17,D05,Published starting rate
-fennel,Fennel,Foeniculum vulgare,Apiaceae,apiaceae,20,200,17–17,D05,Published starting rate
-chervil,Chervil,Anthriscus cerefolium,Apiaceae,apiaceae,20,200,17–17,D05,Published starting rate
-parsley,Parsley,Petroselinum crispum,Apiaceae,apiaceae,12,200,24–24,D05,Published starting rate
-celery,Celery,Apium graveolens,Apiaceae,apiaceae,4,200,24–24,D05,Published starting rate
-beet,Beet · Bull’s Blood,Beta vulgaris (beet group),Amaranthaceae,seedball,23,200,17–17,D02,Published starting rate
-chard,Chard · Bright Lights,Beta vulgaris (cicla group),Amaranthaceae,seedball,31.5,200,16–17,D02,Published starting rate
-amaranth,Amaranth · Garnet Red,Amaranthus tricolor / cruentus trade types,Amaranthaceae,amaranth,7.5,200,17–18,D02,Published starting rate
-pea-basic,Pea · field / basic,Pisum sativum,Fabaceae,pea,150,200,8–10,D03,Published starting rate
+shiso-britton,Shiso · Britton,Perilla frutescens var. crispa,Lamiaceae,shiso,11.1,200,16–16,P01,Starting amount from supplied comparison
+shiso-green,Shiso · Green,Perilla frutescens var. crispa,Lamiaceae,shiso,11.1,200,17–17,P01,Starting amount from supplied comparison
+shiso-purple,Shiso · Purple,Perilla frutescens var. crispa,Lamiaceae,shiso,11.1,200,24–24,P01,Starting amount from supplied comparison
+cilantro-whole,Cilantro · whole fruit,Coriandrum sativum,Apiaceae,apiaceae,32.1,200,20–20,P01,Starting amount from supplied comparison
+cilantro-split,Cilantro · split mericarps,Coriandrum sativum,Apiaceae,apiaceae,20.6,200,15–18,P01,Starting amount from supplied comparison
+dill,Dill,Anethum graveolens,Apiaceae,apiaceae,21.3,200,17–17,P01,Starting amount from supplied comparison
+fennel,Fennel,Foeniculum vulgare,Apiaceae,apiaceae,26.1,200,17–17,P01,Starting amount from supplied comparison
+chervil,Chervil,Anthriscus cerefolium,Apiaceae,apiaceae,13.8,200,17–17,P01,Starting amount from supplied comparison
+parsley,Parsley,Petroselinum crispum,Apiaceae,apiaceae,17.5,200,24–24,P01,Starting amount from supplied comparison
+celery,Celery,Apium graveolens,Apiaceae,apiaceae,17.9,200,24–24,P01,Starting amount from supplied comparison
+beet,Beet · Bull’s Blood,Beta vulgaris (beet group),Amaranthaceae,seedball,30.4,200,17–17,P01,Starting amount from supplied comparison
+chard,Chard · Bright Lights,Beta vulgaris (cicla group),Amaranthaceae,seedball,34.0,200,16–17,P01,Starting amount from supplied comparison
+amaranth,Amaranth · Garnet Red,Amaranthus tricolor / cruentus trade types,Amaranthaceae,amaranth,15.8,200,17–18,P01,Starting amount from supplied comparison
+pea-basic,Pea · field / basic,Pisum sativum,Fabaceae,pea,225.0,200,8–10,P01,Starting amount from supplied comparison
 pea-tendril,Pea · tendril,Pisum sativum,Fabaceae,pea,300,200,11–11,D05,Published starting rate
-sunflower,Sunflower · black oil,Helianthus annuus,Asteraceae,sunflower,120,200,9–9,D05,Published starting rate
-lettuce,Lettuce,Lactuca sativa,Asteraceae,lettuce,10,200,17–17,D05,Published starting rate
-onion,Bulb onion,Allium cepa,Amaryllidaceae,allium,35,200,17–17,D05,Published starting rate
+sunflower,Sunflower · black oil,Helianthus annuus,Asteraceae,sunflower,130.0,200,9–9,P01,Starting amount from supplied comparison
+lettuce,Lettuce,Lactuca sativa,Asteraceae,lettuce,13.0,200,17–17,P01,Starting amount from supplied comparison
+onion,Bulb onion,Allium cepa,Amaryllidaceae,allium,37.5,200,17–17,P01,Starting amount from supplied comparison
 scallion,Scallion · Evergreen Hardy White,Allium fistulosum,Amaryllidaceae,allium,375,1550.0031000062,16–18,D07,Area-scaled experimental rate
 chives,Common chives,Allium schoenoprasum,Amaryllidaceae,allium,300,1550.0031000062,19–19,D07,Area-scaled experimental rate
-nasturtium,Nasturtium,Tropaeolum majus,Tropaeolaceae,nasturtium,100,200,10–10,D05,Published starting rate
-sorrel,Sorrel · Red Veined,Rumex sanguineus,Polygonaceae,sorrel,3.5,200,24–24,D02,Published starting rate
+nasturtium,Nasturtium,Tropaeolum majus,Tropaeolaceae,nasturtium,117.5,200,10–10,P01,Starting amount from supplied comparison
+sorrel,Sorrel · Red Veined,Rumex sanguineus,Polygonaceae,sorrel,4.0,200,24–24,P01,Starting amount from supplied comparison
 cantaloupe,Cantaloupe,Cucumis melo,Cucurbitaceae,cantaloupe,30,200,10–10,D05,Published starting rate
 marigold,Marigold · Gem,Tagetes tenuifolia,Asteraceae,marigold,4,200,18–20,D02,Published starting rate
-chia,Chia,Salvia hispanica,Lamiaceae,mucilage,120,1550.0031000062,12–12,D14,Area-scaled experimental rate
-fenugreek,Fenugreek / methi,Trigonella foenum-graecum,Fabaceae,legume,25,200,10–12,D12,Experimental; geometry uncertain
+chia,Chia,Salvia hispanica,Lamiaceae,mucilage,22.1,200,12–12,P01,Starting amount from supplied comparison
+fenugreek,Fenugreek / methi,Trigonella foenum-graecum,Fabaceae,legume,26.1,200,10–12,P01,Starting amount from supplied comparison
 mung,Mung bean · research pilot,Vigna radiata,Fabaceae,legume,154.8384,200,7–9,D11,Count-based experimental rate
 lentil,Lentil · research pilot,Lens culinaris,Fabaceae,legume,107.526667,200,7–11,D11,Count-based experimental rate
-wheat,Wheatgrass,Triticum aestivum,Poaceae,cereal,275,200,10–12,D13,Supplier range midpoint
+wheat,Wheatgrass,Triticum aestivum,Poaceae,cereal,417.9,200,10–12,P01,Starting amount from supplied comparison
