@@ -8,7 +8,17 @@
 
 For a small sowing batch, separate and hydrate the portion you will sow. Keep the rest of the brick dry. This is a practical storage choice, not a demonstrated yield benefit. Whole-brick hydration makes sense when the material will be used promptly and there is adequate clean mixing/storage space. Wetting one edge can make separation easier, but that edge is no longer dry coir for weighing. [C0]
 
-The starter plan targets **½ inch from the rim of the drainage tray to the leveled coir before sowing**. Working backward from the published 1¼-inch outside height and 19¾ × 9½-inch inside floor gives a 0.75-inch bed and about 9.75 US cups in a rectangular model. The preset uses **10 cups**, which gives roughly 0.48 inch of headspace in that model. The actual inside depth, taper, ridges and leveling can shift the result. [C3]
+The calculator starts with your full-tray trial. The **½-inch gap** is available as a separate comparison. Working backward from the published 1¼-inch outside height and 19¾ × 9½-inch inside floor gives about 9.75 US cups for that gap in a rectangular model. The 10-cup preset gives roughly 0.48 inch of modeled headspace. Inside depth, taper, ridges and leveling can shift the result. [C3]
+
+## Your full tray measurement
+
+On November 4, 2026, one Bootstrap Farmer shallow 1020 was filled from the stated **225 g dry coir + 900 mL water** batch, and **466 g hydrated coir remained**. The starting mass was not weighed after mixing. Water weighs about 1 g/mL, so the ingredients imply about 1,125 g before losses. Subtracting 466 g gives **659 g hydrated coir attributed to the tray**. At 4 mL/g, an evenly mixed batch with little loss is one part dry coir to four parts water by mass. The inferred dry coir is therefore **659 ÷ 5 = 131.8 g**. The calculator rounds up to **132 g dry coir + 528 mL starting water per tray** by default.
+
+The modeled near-rim volume is **about 3.8 L or 16 US cups** from the tray dimensions. It does not enter the mass calculation. The same dry mass would expand to about 6 cups under the brick label estimate, which highlights why the 16 cups should be treated as geometry only. A measuring jug can settle how many cups went into the actual tray. Weigh the mixed batch before filling and the leftover after filling, and account for any drainage or spills. This records one trial at its original moisture and leveling.
+
+The full-tray setting uses the mass inferred from the leftover. Other fills use the brick label or a measured expansion sample. Test cover clearance before using the full fill for a larger seed. The archived source record is the user's reported scale measurement in the November 4 conversation, with the earlier batch ingredients supplied in the same chat.
+
+## Compare cup-based fills
 
 | Fill per tray | Estimated headspace | Exact dry coir | Practical weigh-out | Starting water |
 | --- | ---: | ---: | ---: | ---: |
@@ -16,7 +26,7 @@ The starter plan targets **½ inch from the rim of the drainage tray to the leve
 | 8 cups, extension comparison | 0.63 in | 177.9 g | 180 g | 720 mL |
 | 10 cups, ½-inch target | 0.48 in | 222.4 g | 225 g | 900 mL |
 
-The calculator rounds **up to the next 5 g per tray** and calculates water from that weigh-out. The default 10-cup plan for one of each crop totals **900 g dry coir, 3.60 L starting water and 40 cups / 10 US qt / 9.46 L expanded coir**, about $3.96 at the supplied $19.98 brick price. The price and weighing precision are editable. [C0, C5]
+This comparison table uses the optional **round up to 5 g** setting. The calculator defaults to rounding up to 1 g and derives water from the actual dry weigh-out. Price and precision are editable. [C0, C5]
 
 Six cups follows On The Grow's current general shallow-tray guide. Its article lists the same external/bottom dimensions as these Bootstrap trays, but its stated six-cup medium capacity does not geometrically describe a full 1¼-inch bed. Treat it as a use amount, not a rim-height measurement. Eight cups for radish and sunflower in the original version was a moisture-buffering assumption with no demonstrated requirement; it should not have been the crop-specific default. The 4 mL/g starting-water factor remains a trial assumption until measured. [C0, C1, C3]
 
