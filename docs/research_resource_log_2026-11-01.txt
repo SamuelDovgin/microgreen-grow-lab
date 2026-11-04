@@ -1,6 +1,6 @@
 SEED DENSITY, WATER AND PROTOCOL RESEARCH — November 1, 2026
 
-Scope: original research and the November 4 calendar update. 54 crop/cultivar profiles, 11 botanical families, 17 functional groups and 8 experimental response curves. Source IDs D01–D46 and V01–V17.
+Scope: original research and the November 4 calendar and seed-rate updates. 54 crop/cultivar profiles, 11 botanical families, 17 functional groups and 8 experimental response curves. Source IDs D01–D61, P01 and V01–V17.
 
 Access method: primary web search/open plus direct public page requests, existing lawful PDFs/XML, creator metadata catalogs, and public English captions via yt-dlp. Browser UI observation was unavailable (Work browser use disabled). Caption research working copies remained temporary; only original paraphrases, metadata, timestamps and SHA-256 track checksums are distributed. Full caption retrieval is not full audiovisual review.
 
@@ -475,15 +475,165 @@ Local preservation: URL-only — no full lawful local copy redistributed; biblio
 Status: Live official source reviewed.
 Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
 
-[P01] Pasted comparison · dry seed rates
+[D47] Bootstrap Farmer · live 1020 growing chart
+URL: https://www.bootstrapfarmer.com/pages/ultimate-microgreen-growing-resource
+Accessed: 2026-11-04
+Class: Supplier chart
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Crop-specific 1020 rates and methods. Main chart uses 250 g sunflower and a wide 90–220 g soaked nasturtium range. Grouped crop rows and dated PDF editions can differ.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D48] On The Grow · radish
+URL: https://onthegrow.net/blogs/microgreens/how-to-grow-radish-microgreens
+Accessed: 2026-11-04
+Class: Firsthand grower guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Reports a 25 g Daikon tray run on coir and higher amounts for some other varieties. Daikon and generic radish rates are separate comparisons.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D49] CropKing · 10 × 20 seed chart
+URL: https://cropking.com/blogs/knowledge-center/microgreen-seed-density-charts
+Accessed: 2026-11-04
+Class: Supplier chart
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Chart explicitly uses 10 × 20 trays. Ounce conversions are real, including 12 oz peas and 9 oz sunflower. Some crops are generic and the method differs from the shallow coir starter.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D50] Seedmart · reviewed 1020 ranges
+URL: https://seedmart.com.au/microgreen-seeding-density-chart-for-australian-tray-sizes/
+Accessed: 2026-11-04
+Class: Supplier reference chart
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Separates 1020 reference rates from other tray formats. The publisher calls these reviewed reference ranges, so they may overlap other published recommendations.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D51] Home Microgreens · Waltham broccoli
+URL: https://homemicrogreens.com/product/waltham-broccoli-microgreen-seeds/
+Accessed: 2026-11-04
+Class: Firsthand supplier guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: 17.8 g per 1020 for its Waltham lot. The same supplier’s general calculator cautions that larger trays scale less closely for pea and sunflower.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D52] On The Grow · Red Acre cabbage
+URL: https://onthegrow.net/blogs/microgreens/how-to-grow-red-cabbage-microgreens
+Accessed: 2026-11-04
+Class: Firsthand grower guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Recommends 17–20 g Red Acre in a 1020. A 21 g demonstration and next-batch adjustment are from the same grower.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D53] Seedmart · Tatsoi
+URL: https://seedmart.com.au/how-to-grow-tatsoi-microgreens-step-by-step-guide-for-beginners/
+Accessed: 2026-11-04
+Class: Supplier guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: About 25 g on 10 × 20 and about 12–13 g on 10 × 10. This is a denser method than Johnny’s 7.5 g observation.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D54] On The Grow · split cilantro
+URL: https://onthegrow.net/blogs/microgreens/how-to-grow-cilantro-microgreens
+Accessed: 2026-11-04
+Class: Firsthand grower guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: 20–25 g of split seed per 10 × 20. Seed form and growing method differ from whole cilantro.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D55] On The Grow · Red Garnet amaranth
+URL: https://onthegrow.net/fr/blogs/microgreens/how-to-grow-red-garnet-amaranth-microgreens
+Accessed: 2026-11-04
+Class: Firsthand grower guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: 15 g per 10 × 20 in the grower’s setup.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D56] Home Microgreens · Red Garnet amaranth
+URL: https://homemicrogreens.com/product/red-garnet-amaranth-seed/
+Accessed: 2026-11-04
+Class: Firsthand supplier guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: 5.9 g per 1020 for the supplier’s Red Garnet seed.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D57] Sangpituk et al. · chia density experiment
+URL: https://geomatejournal.com/geomate/article/download/2126/2010/2915
+Accessed: 2026-11-04
+Class: Controlled study
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Tested chia density up to 204 g/m² in its method. Keep this result separate from the 120 g/m² rate used in the day-12 photoperiod experiment.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D58] Deliseeds · Raab seed packet
+URL: https://deliseeds.com/products/broccoli-raab-microgreens-seeds
+Accessed: 2026-11-04
+Class: Supplier guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Lists 12–15 g per 25 × 50 cm for Raab. The 25 g from the supplied table could not be reproduced.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D59] Bootstrap Farmer · shallow 1020 tray dimensions
+URL: https://www.bootstrapfarmer.com/products/microgreen-trays
+Accessed: 2026-11-04
+Class: Manufacturer specification
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: 1020 is the trade size. Inner floor 19.75 × 9.5 in, 187.625 in². Sowing surface may widen at the fill line. Outer dimensions include the rim.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D60] Home Microgreens · seed calculator notes
+URL: https://homemicrogreens.com/microgreens-seed-calculator/
+Accessed: 2026-11-04
+Class: Firsthand grower guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Author reports 9.8 oz peas and 4.8 oz sunflower in 1020 trays and says the small-tray calculator is less accurate for larger trays. This differs from the pasted estimates.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D61] Microgreens & Sprouts · seed-rate compilation
+URL: https://microgreensandsprouts.com/microgreens-seeding-chart/
+Accessed: 2026-11-04
+Class: Secondary compilation
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Lists nominal 1020 dry weight ranges and cites CropKing. Its rows are retained as supplied inputs, not independent grower measurements.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[P01] Seed rate comparison and source audit
 URL: crop-catalog.html#seed-rate-comparison
 Accessed: 2026-11-04
-Class: User-supplied comparison
+Class: User-supplied comparison with source audit
 Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
-Supports / key record: Sowing rates from the supplied comparison, normalized to a nominal 200 in² tray. The planner uses the suggested starting amount where given and the arithmetic mean elsewhere. The original recipe remains selectable.
-Local preservation: data/seed-rate-comparison.csv stores all 51 rows of listed rates and explicit profile mappings. The rendered catalogue shows recomputed means and dry seed densities.
-Status: user-supplied attachment. Selected Johnny’s, Bootstrap Farmer, Utah State and On The Grow entries spot-checked against primary pages.
-Limits: methods, cultivars, tray surface and weight basis can vary across entries. No pooled optimum or yield forecast. Unmapped entries are comparison references.
+Supports / key record: The arithmetic means describe the supplied values. Planner defaults are checked against named sources and changed where a more comparable growing method supports a different starting amount.
+Local preservation: data/seed-rate-comparison.csv stores all 51 rows, original rates, reviewed defaults, profile mappings and row-level audit notes.
+Status: user-supplied attachment. The 33 mapped rows were checked against named grower, supplier or study sources. The 18 comparison-only rows are outside the planner default audit.
+Limits: some supplied values could not be reproduced. Raw means retain them for traceability. The published-source comparison does not estimate a pooled optimum.
 
 [V01] On The Grow · Red Acre cabbage seed-to-harvest
 URL: https://www.youtube.com/watch?v=D3vnBEvYDZo
@@ -717,6 +867,13 @@ Local preservation: URL-only — bibliographic and paraphrase notes here; full c
 LIGHT-READINESS CHANGE NOTE — 2026-11-04
 All 54 profiles now expose an approximate above-medium light-transition height. D42/D43 anchor broccoli, D44 basil, D45 sunflower and D46 peas. Other groups carry explicitly editorial observation estimates, not crop-specific validated thresholds. D41 supplies pressure-removal and upright-stem criteria. Clear-dome recipes with no separate blackout retain a vented dome while not ready. The planned light-start date is a readiness check, not proof of emergence; the user must adjust cover/blackout days after an actual delay. No daily growth prediction or automatic observation is implied.
 Access exception: guessed Bootstrap Farmer what-is-the-blackout-period-for-microgreens route failed. A basil route resolved to its general growing resource; no numeric height taken from either. Seedmart when-to-weight-microgreens was reviewed for qualitative comparison; its sufficient-height language supplies no numeric threshold. See D41 for the selected upright-stem rule.
+
+SEED RATE AUDIT — 2026-11-04
+The 51 supplied rows were checked arithmetically. All 33 rows that set planner defaults now carry row-level source comparisons. Existing recipes and unmapped profiles retain their own evidence. The four starter rates were kept. Nine crop rows changed because the chosen schedule or a better-matched source supported a different starting amount.
+D59 confirms floor dimensions. A reference density uses the area ratio, while a source that already uses the same tray needs no tray-size correction to reproduce its recipe.
+CropKing’s old blog URL was inaccessible. The linked current source D49 explicitly identifies 10 × 20 trays. Penn State’s general sowing guide uses a 12 × 20 in tray, so its grams were not pooled directly. Lovin’ Mama Farm conference proceedings use spoon volumes on 12 × 24 trays and soaked cups on 1020 shoot trays. Neither was included as dry grams in an average.
+Related source checks: https://extension.psu.edu/growing-microgreens (indexed access, direct reader 403); https://newenglandvfc.org/wp-content/uploads/2024/11/NEVFproceedingsFINAL_2024.pdf (live, grower proceedings, page 132). URL-only notes.
+Seedmart’s chart describes reviewed rates. Microgreens & Sprouts cites CropKing. Treat these as reference or compilation material. Home Microgreens’ calculator notes disagree with some of the supplied pea and sunflower numbers, so those inputs remain historical. The Deliseeds Raab correction is also recorded on its comparison-only row.
 
 [L01] Local archive consulted: 02_crops_seeds/01_crop_seed_reference.md
 Accessed: 2026-11-01

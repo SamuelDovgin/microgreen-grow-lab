@@ -29,14 +29,14 @@ shiso-green,Shiso · Green,Perilla frutescens var. crispa,Lamiaceae,shiso,11.1,2
 shiso-purple,Shiso · Purple,Perilla frutescens var. crispa,Lamiaceae,shiso,11.1,200,24–24,P01,Starting amount from supplied comparison
 cilantro-whole,Cilantro · whole fruit,Coriandrum sativum,Apiaceae,apiaceae,32.1,200,20–20,P01,Starting amount from supplied comparison
 cilantro-split,Cilantro · split mericarps,Coriandrum sativum,Apiaceae,apiaceae,20.6,200,15–18,P01,Starting amount from supplied comparison
-dill,Dill,Anethum graveolens,Apiaceae,apiaceae,21.3,200,17–17,P01,Starting amount from supplied comparison
+dill,Dill,Anethum graveolens,Apiaceae,apiaceae,20.0,200,17–17,P01,Starting amount from supplied comparison
 fennel,Fennel,Foeniculum vulgare,Apiaceae,apiaceae,26.1,200,17–17,P01,Starting amount from supplied comparison
-chervil,Chervil,Anthriscus cerefolium,Apiaceae,apiaceae,13.8,200,17–17,P01,Starting amount from supplied comparison
+chervil,Chervil,Anthriscus cerefolium,Apiaceae,apiaceae,15.0,200,17–17,P01,Starting amount from supplied comparison
 parsley,Parsley,Petroselinum crispum,Apiaceae,apiaceae,17.5,200,24–24,P01,Starting amount from supplied comparison
-celery,Celery,Apium graveolens,Apiaceae,apiaceae,17.9,200,24–24,P01,Starting amount from supplied comparison
+celery,Celery,Apium graveolens,Apiaceae,apiaceae,4.0,200,24–24,P01,Starting amount from supplied comparison
 beet,Beet · Bull’s Blood,Beta vulgaris (beet group),Amaranthaceae,seedball,30.4,200,17–17,P01,Starting amount from supplied comparison
 chard,Chard · Bright Lights,Beta vulgaris (cicla group),Amaranthaceae,seedball,34.0,200,16–17,P01,Starting amount from supplied comparison
-amaranth,Amaranth · Garnet Red,Amaranthus tricolor / cruentus trade types,Amaranthaceae,amaranth,15.8,200,17–18,P01,Starting amount from supplied comparison
+amaranth,Amaranth · Garnet Red,Amaranthus tricolor / cruentus trade types,Amaranthaceae,amaranth,10.0,200,17–18,P01,Starting amount from supplied comparison
 pea-basic,Pea · field / basic,Pisum sativum,Fabaceae,pea,225.0,200,8–10,P01,Starting amount from supplied comparison
 pea-tendril,Pea · tendril,Pisum sativum,Fabaceae,pea,300,200,11–11,D05,Published starting rate
 sunflower,Sunflower · black oil,Helianthus annuus,Asteraceae,sunflower,130.0,200,9–9,P01,Starting amount from supplied comparison
@@ -44,12 +44,12 @@ lettuce,Lettuce,Lactuca sativa,Asteraceae,lettuce,13.0,200,17–17,P01,Starting 
 onion,Bulb onion,Allium cepa,Amaryllidaceae,allium,37.5,200,17–17,P01,Starting amount from supplied comparison
 scallion,Scallion · Evergreen Hardy White,Allium fistulosum,Amaryllidaceae,allium,375,1550.0031000062,16–18,D07,Area-scaled experimental rate
 chives,Common chives,Allium schoenoprasum,Amaryllidaceae,allium,300,1550.0031000062,19–19,D07,Area-scaled experimental rate
-nasturtium,Nasturtium,Tropaeolum majus,Tropaeolaceae,nasturtium,117.5,200,10–10,P01,Starting amount from supplied comparison
-sorrel,Sorrel · Red Veined,Rumex sanguineus,Polygonaceae,sorrel,4.0,200,24–24,P01,Starting amount from supplied comparison
+nasturtium,Nasturtium,Tropaeolum majus,Tropaeolaceae,nasturtium,100.0,200,10–10,P01,Starting amount from supplied comparison
+sorrel,Sorrel · Red Veined,Rumex sanguineus,Polygonaceae,sorrel,3.5,200,24–24,P01,Starting amount from supplied comparison
 cantaloupe,Cantaloupe,Cucumis melo,Cucurbitaceae,cantaloupe,30,200,10–10,D05,Published starting rate
 marigold,Marigold · Gem,Tagetes tenuifolia,Asteraceae,marigold,4,200,18–20,D02,Published starting rate
-chia,Chia,Salvia hispanica,Lamiaceae,mucilage,22.1,200,12–12,P01,Starting amount from supplied comparison
-fenugreek,Fenugreek / methi,Trigonella foenum-graecum,Fabaceae,legume,26.1,200,10–12,P01,Starting amount from supplied comparison
+chia,Chia,Salvia hispanica,Lamiaceae,mucilage,15.5,200,12–12,P01,Starting amount from supplied comparison
+fenugreek,Fenugreek / methi,Trigonella foenum-graecum,Fabaceae,legume,25.0,200,10–12,P01,Starting amount from supplied comparison
 mung,Mung bean · research pilot,Vigna radiata,Fabaceae,legume,154.8384,200,7–9,D11,Count-based experimental rate
 lentil,Lentil · research pilot,Lens culinaris,Fabaceae,legume,107.526667,200,7–11,D11,Count-based experimental rate
-wheat,Wheatgrass,Triticum aestivum,Poaceae,cereal,417.9,200,10–12,P01,Starting amount from supplied comparison
+wheat,Wheatgrass,Triticum aestivum,Poaceae,cereal,300.0,200,10–12,P01,Starting amount from supplied comparison

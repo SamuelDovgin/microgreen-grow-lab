@@ -61,7 +61,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Suggested starting amount: 20 g dry seed per nominal 1020. Listed rates: 13–28.4 g across 7 entries (mean 20.5 g). The growing schedule follows the original starting plan.",
+          "note": "20 g dry seed for a standard 1020 starting plan. Johnny’s used 13 g, Home Microgreens specifies 17.8 g for Waltham, On The Grow uses 17–25 g, and True Leaf’s Waltham 29 packet lists 28.35 g. Keep 20 g. The original mean combines cultivars.",
           "soakBasis": "Direct sow from the broccoli guide.",
           "soak": [
             0,
@@ -443,7 +443,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Suggested starting amount: 28 g dry seed per nominal 1020. Listed rates: 22.5–32.5 g across 5 entries (mean 28.2 g). The growing schedule follows the original starting plan.",
+          "note": "28 g dry seed for a standard 1020 starting plan. Johnny’s Daikon trial used 22.5 g, On The Grow reports a Daikon run at 25 g, and True Leaf’s Minowase lists 28.35 g. Bootstrap’s 30–35 g is generic radish. Keep 28 g.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -1059,7 +1059,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 18.7 g dry seed per nominal 1020. Listed rates: 10.5–28.4 g across 5 entries (mean 18.7 g). The growing schedule follows the original starting plan.",
+          "note": "18.7 g dry seed for a standard 1020 starting plan. Johnny’s Red used 10.5 g and On The Grow Red Acre recommends 17–20 g. Keep 18.7 g as a coir-oriented trial amount. Generic cabbage rates mix cultivars.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -1469,7 +1469,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Midpoint of suggested starting range: 19 g dry seed per nominal 1020. Listed rates: 10–40 g across 7 entries (mean 22.9 g). The growing schedule follows the original starting plan.",
+          "note": "19 g dry seed for a standard 1020 starting plan. Johnny’s Red Russian used 10 g, Piedmont’s generic kale uses 18 g, and Bootstrap lists 15–20 g. Keep 19 g as the mixed-cultivar starting plan.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -1674,7 +1674,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Midpoint of suggested starting range: 19 g dry seed per nominal 1020. Listed rates: 10–40 g across 7 entries (mean 22.9 g). The growing schedule follows the original starting plan.",
+          "note": "19 g dry seed for a standard 1020 starting plan. Johnny’s Red Russian used 10 g, Piedmont’s generic kale uses 18 g, and Bootstrap lists 15–20 g. Keep 19 g as the mixed-cultivar starting plan.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -1881,7 +1881,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 16.1 g dry seed per nominal 1020. Listed rates: 9.5–19.8 g across 5 entries (mean 16.1 g). The growing schedule follows the original starting plan.",
+          "note": "16.1 g dry seed for a standard 1020 starting plan. Johnny’s Purple used 9.5 g, Piedmont uses 16 g, and Bootstrap lists 15–20 g. The 16.1 g starting amount agrees with the latter two.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -2086,7 +2086,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 15.9 g dry seed per nominal 1020. Listed rates: 14.2–17.5 g across 2 entries (mean 15.9 g). The growing schedule follows the original starting plan.",
+          "note": "15.9 g dry seed for a standard 1020 starting plan. Bootstrap lists 15–20 g and Piedmont uses 20 g. Keep 15.9 g within the lower end of that range. The review-derived input is method-specific.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -2259,7 +2259,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 12.5 g dry seed per nominal 1020. Listed rates: 9.6–17.5 g across 3 entries (mean 12.5 g). The growing schedule follows the original starting plan.",
+          "note": "12.5 g dry seed for a standard 1020 starting plan. Johnny’s Red Pac used 10.5 g and Piedmont reports 12 g for Red Choi. Keep 12.5 g as an approximate starting amount. The 17.5 g compilation value is generic.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -2430,7 +2430,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 11 g dry seed per nominal 1020. Listed rates: 9.5–12.5 g across 2 entries (mean 11.0 g). The growing schedule follows the original starting plan.",
+          "note": "11 g dry seed for a standard 1020 starting plan. Johnny’s used 9.5 g and Seedmart lists 10–15 g for its shared mustard/mizuna row. Keep 11 g with limited cultivar-specific support.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -2566,7 +2566,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 10.2 g dry seed per nominal 1020. Listed rates: 7.5–12.5 g across 3 entries (mean 10.2 g). The growing schedule follows the original starting plan.",
+          "note": "10.2 g dry seed for a standard 1020 starting plan. Johnny’s used 7.5 g, while Seedmart recommends 25 g in its own method. Keep 10.2 g as a lower-density starting amount with sparse comparable evidence.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -2804,7 +2804,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 12.5 g dry seed per nominal 1020. Listed rates: 8–19.8 g across 5 entries (mean 12.5 g). The growing schedule follows the original starting plan.",
+          "note": "12.5 g dry seed for a standard 1020 starting plan. Johnny’s Garnet Giant and Ruby Streaks used 8 and 9.5 g respectively, Piedmont uses 10 g for generic mustard, and Bootstrap lists 10–15 g. Keep 12.5 g as a generic starting amount.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -3009,7 +3009,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 12.5 g dry seed per nominal 1020. Listed rates: 8–19.8 g across 5 entries (mean 12.5 g). The growing schedule follows the original starting plan.",
+          "note": "12.5 g dry seed for a standard 1020 starting plan. Johnny’s Garnet Giant and Ruby Streaks used 8 and 9.5 g respectively, Piedmont uses 10 g for generic mustard, and Bootstrap lists 10–15 g. Keep 12.5 g as a generic starting amount.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -3214,7 +3214,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 12 g dry seed per nominal 1020. Listed rates: 9.2–19.8 g across 6 entries (mean 12.0 g). The growing schedule follows the original starting plan.",
+          "note": "12 g dry seed for a standard 1020 starting plan. Johnny’s and Utah State list 10 g, while Piedmont and Bootstrap list 12 g. Keep 12 g.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -3453,7 +3453,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 14.3 g dry seed per nominal 1020. Listed rates: 10.5–20 g across 3 entries (mean 14.3 g). The growing schedule follows the original starting plan.",
+          "note": "14.3 g dry seed for a standard 1020 starting plan. Johnny’s Cressida used 10.5 g and Bootstrap’s generic cress entry lists 20 g. Keep 14.3 g as an intermediate trial amount.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -3692,7 +3692,7 @@
           ],
           "method": "dome",
           "source": "P01",
-          "note": "Midpoint of suggested starting range: 9 g dry seed per nominal 1020. Listed rates: 6.5–28.4 g across 6 entries (mean 15.6 g). The growing schedule follows the original starting plan.",
+          "note": "9 g dry seed for a standard 1020 starting plan. Johnny’s Italian used 6.5 g, Piedmont Genovese uses 4 g, and Bootstrap and Seedmart list 8–10 g across their guides. Keep 9 g.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -3973,7 +3973,7 @@
           ],
           "method": "dome",
           "source": "P01",
-          "note": "Midpoint of suggested starting range: 9 g dry seed per nominal 1020. Listed rates: 6.5–28.4 g across 6 entries (mean 15.6 g). The growing schedule follows the original starting plan.",
+          "note": "9 g dry seed for a standard 1020 starting plan. Johnny’s Italian used 6.5 g, Piedmont Genovese uses 4 g, and Bootstrap and Seedmart list 8–10 g across their guides. Keep 9 g.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -4603,7 +4603,7 @@
           ],
           "method": "dome",
           "source": "P01",
-          "note": "Average of the listed rates: 11.1 g dry seed per nominal 1020. Listed rates: 7.5–13.5 g across 4 entries (mean 11.1 g). The growing schedule follows the original starting plan.",
+          "note": "11.1 g dry seed for a standard 1020 starting plan. Johnny’s Britton used 11.5 g, Piedmont and Bootstrap list 12 g, and Seedmart lists 12–15 g. Keep 11.1 g. Cultivar matters.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -4771,7 +4771,7 @@
           ],
           "method": "dome",
           "source": "P01",
-          "note": "Average of the listed rates: 11.1 g dry seed per nominal 1020. Listed rates: 7.5–13.5 g across 4 entries (mean 11.1 g). The growing schedule follows the original starting plan.",
+          "note": "11.1 g dry seed for a standard 1020 starting plan. Johnny’s Britton used 11.5 g, Piedmont and Bootstrap list 12 g, and Seedmart lists 12–15 g. Keep 11.1 g. Cultivar matters.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -4976,7 +4976,7 @@
           ],
           "method": "dome",
           "source": "P01",
-          "note": "Average of the listed rates: 11.1 g dry seed per nominal 1020. Listed rates: 7.5–13.5 g across 4 entries (mean 11.1 g). The growing schedule follows the original starting plan.",
+          "note": "11.1 g dry seed for a standard 1020 starting plan. Johnny’s Britton used 11.5 g, Piedmont and Bootstrap list 12 g, and Seedmart lists 12–15 g. Keep 11.1 g. Cultivar matters.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -5181,7 +5181,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 32.1 g dry seed per nominal 1020. Listed rates: 18.7–56.7 g across 7 entries (mean 32.1 g). The growing schedule follows the original starting plan.",
+          "note": "32.1 g dry seed for a standard 1020 starting plan. Bootstrap explicitly lists 30–40 g whole seed and Piedmont uses 40 g. Johnny’s 26 g trial entry does not specify seed form. Keep 32.1 g.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -5420,7 +5420,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 20.6 g dry seed per nominal 1020. Listed rates: 18.7–22.5 g across 2 entries (mean 20.6 g). The growing schedule follows the original starting plan.",
+          "note": "20.6 g dry seed for a standard 1020 starting plan. Jonah reports 20 g and On The Grow recommends 20–25 g for split seed. Keep 20.6 g.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -5650,7 +5650,7 @@
       "species": "Anethum graveolens",
       "family": "Apiaceae",
       "group": "apiaceae",
-      "defaultGrams": 21.3,
+      "defaultGrams": 20.0,
       "referenceAreaIn2": 200,
       "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
@@ -5678,7 +5678,7 @@
         {
           "id": "comparison",
           "label": "Seed rate comparison · starting plan",
-          "grams": 21.3,
+          "grams": 20.0,
           "area": 200,
           "harvest": [
             17,
@@ -5690,7 +5690,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 21.3 g dry seed per nominal 1020. Listed rates: 12.5–30 g across 2 entries (mean 21.3 g). The growing schedule follows the original starting plan.",
+          "note": "20 g dry seed for a standard 1020 starting plan. Use Piedmont’s 20 g for the planner’s Piedmont schedule. Bootstrap uses 30 g with longer covered emergence. The 12.5 g input is a compilation midpoint.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -5897,7 +5897,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 26.1 g dry seed per nominal 1020. Listed rates: 25–28.4 g across 3 entries (mean 26.1 g). The growing schedule follows the original starting plan.",
+          "note": "26.1 g dry seed for a standard 1020 starting plan. Piedmont uses 20 g, Bootstrap lists 20–30 g, and CropKing lists 28.35 g. Keep 26.1 g within that spread.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -6096,7 +6096,7 @@
       "species": "Anthriscus cerefolium",
       "family": "Apiaceae",
       "group": "apiaceae",
-      "defaultGrams": 13.8,
+      "defaultGrams": 15.0,
       "referenceAreaIn2": 200,
       "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
@@ -6124,7 +6124,7 @@
         {
           "id": "comparison",
           "label": "Seed rate comparison · starting plan",
-          "grams": 13.8,
+          "grams": 15.0,
           "area": 200,
           "harvest": [
             17,
@@ -6136,7 +6136,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 13.8 g dry seed per nominal 1020. Listed rates: 12.5–15 g across 2 entries (mean 13.8 g). The growing schedule follows the original starting plan.",
+          "note": "15 g dry seed for a standard 1020 starting plan. Bootstrap lists 15 g and Piedmont uses 20 g. The original 13.8 g falls below both. Use the verified 15 g lower rate as the starting amount.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -6343,7 +6343,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 17.5 g dry seed per nominal 1020. Listed rates: 17.5–17.5 g across 3 entries (mean 17.5 g). The growing schedule follows the original starting plan.",
+          "note": "17.5 g dry seed for a standard 1020 starting plan. Piedmont uses 12 g. Bootstrap and Seedmart give 15–20 g. Keep 17.5 g as the centre of the two ranges.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -6510,7 +6510,7 @@
       "species": "Apium graveolens",
       "family": "Apiaceae",
       "group": "apiaceae",
-      "defaultGrams": 17.9,
+      "defaultGrams": 4.0,
       "referenceAreaIn2": 200,
       "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
@@ -6538,7 +6538,7 @@
         {
           "id": "comparison",
           "label": "Seed rate comparison · starting plan",
-          "grams": 17.9,
+          "grams": 4.0,
           "area": 200,
           "harvest": [
             24,
@@ -6550,7 +6550,7 @@
           ],
           "method": "dome",
           "source": "P01",
-          "note": "Average of the listed rates: 17.9 g dry seed per nominal 1020. Listed rates: 15–21.3 g across 3 entries (mean 17.9 g). The growing schedule follows the original starting plan.",
+          "note": "4 g dry seed for a standard 1020 starting plan. Piedmont uses 4 g in its vented-dome method. Bootstrap uses 15–20 g with blackout, and CropKing lists about 21.3 g for celery leaf. Use 4 g for the planner’s Piedmont dome schedule.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -6757,7 +6757,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 30.4 g dry seed per nominal 1020. Listed rates: 23–56.7 g across 6 entries (mean 30.4 g). The growing schedule follows the original starting plan.",
+          "note": "30.4 g dry seed for a standard 1020 starting plan. Johnny’s Bull’s Blood used 23 g, Bootstrap and Seedmart list 20–30 g, and Piedmont reports 35 g. Keep 30.4 g as a practical trial amount.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -6994,7 +6994,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 34 g dry seed per nominal 1020. Listed rates: 25–56.7 g across 6 entries (mean 34.0 g). The growing schedule follows the original starting plan.",
+          "note": "34 g dry seed for a standard 1020 starting plan. Johnny’s Bright Lights used 31.5 g, Seedmart lists 20–32 g and Piedmont chard rates vary from 35 to 40 g by type. Keep 34 g.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -7191,7 +7191,7 @@
       "species": "Amaranthus tricolor / cruentus trade types",
       "family": "Amaranthaceae",
       "group": "amaranth",
-      "defaultGrams": 15.8,
+      "defaultGrams": 10.0,
       "referenceAreaIn2": 200,
       "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
@@ -7219,7 +7219,7 @@
         {
           "id": "comparison",
           "label": "Seed rate comparison · starting plan",
-          "grams": 15.8,
+          "grams": 10.0,
           "area": 200,
           "harvest": [
             17,
@@ -7231,7 +7231,7 @@
           ],
           "method": "light-stack",
           "source": "P01",
-          "note": "Average of the listed rates: 15.8 g dry seed per nominal 1020. Listed rates: 7.5–28.4 g across 6 entries (mean 15.8 g). The growing schedule follows the original starting plan.",
+          "note": "10 g dry seed for a standard 1020 starting plan. Johnny’s Garnet Red used 7.5 g, Home Microgreens lists 5.9 g, Piedmont uses 10 g, and Bootstrap and On The Grow list 15 g. Use 10 g and keep the heavier rates as references.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -7436,7 +7436,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Suggested starting amount: 225 g dry seed per nominal 1020. Listed rates: 150–340.2 g across 6 entries (mean 233.0 g). The growing schedule follows the original starting plan.",
+          "note": "225 g dry seed for a standard 1020 starting plan. On The Grow uses 200–260 g dry, Bootstrap 200–275 g, and True Leaf’s exact Speckled packet about 142–227 g. Keep 225 g. CropKing’s generic 340 g and Utah State’s 150 g use different methods.",
           "soakBasis": "USU reports 6 h for peas in its household coir method.",
           "soak": [
             6,
@@ -7971,7 +7971,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Suggested starting amount: 130 g dry seed per nominal 1020. Listed rates: 48–255.2 g across 6 entries (mean 160.0 g). The growing schedule follows the original starting plan.",
+          "note": "130 g dry seed for a standard 1020 starting plan. On The Grow uses 125 g on a shallow Bootstrap tray and Piedmont reports 130 g. Utah State’s 48 g and the 250–255 g chart recipes illustrate method differences. Keep 130 g.",
           "soakBasis": "MGM reports overnight; 6–12 h is the planner window.",
           "soak": [
             6,
@@ -8402,7 +8402,7 @@
           ],
           "method": "dome",
           "source": "P01",
-          "note": "Average of the listed rates: 13 g dry seed per nominal 1020. Listed rates: 10–17.5 g across 3 entries (mean 13.0 g). The growing schedule follows the original starting plan.",
+          "note": "13 g dry seed for a standard 1020 starting plan. Piedmont’s dome method uses 10 g and Bootstrap’s stacked method lists 15–20 g. Keep 13 g as a low-middle trial amount with method sensitivity.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -8609,7 +8609,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 37.5 g dry seed per nominal 1020. Listed rates: 30–45 g across 2 entries (mean 37.5 g). The growing schedule follows the original starting plan.",
+          "note": "37.5 g dry seed for a standard 1020 starting plan. Piedmont uses 35 g for onion. Bootstrap’s combined onion/chives/leek row spans 40–50 g. Keep 37.5 g as a close trial amount.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -8978,7 +8978,7 @@
       "species": "Tropaeolum majus",
       "family": "Tropaeolaceae",
       "group": "nasturtium",
-      "defaultGrams": 117.5,
+      "defaultGrams": 100.0,
       "referenceAreaIn2": 200,
       "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
@@ -9006,7 +9006,7 @@
         {
           "id": "comparison",
           "label": "Seed rate comparison · starting plan",
-          "grams": 117.5,
+          "grams": 100.0,
           "area": 200,
           "harvest": [
             10,
@@ -9018,7 +9018,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 117.5 g dry seed per nominal 1020. Listed rates: 80–155 g across 2 entries (mean 117.5 g). The growing schedule follows the original starting plan.",
+          "note": "100 g dry seed for a standard 1020 starting plan. Piedmont reports 90–100 g across its tables. Bootstrap’s 90–220 g range uses an 8–12 h soak and a longer cycle. Use the 100 g direct-sow rate that matches the planner’s schedule.",
           "soakBasis": "MGM 2024 reports direct sowing for this crop.",
           "soak": [
             0,
@@ -9217,7 +9217,7 @@
       "species": "Rumex sanguineus",
       "family": "Polygonaceae",
       "group": "sorrel",
-      "defaultGrams": 4.0,
+      "defaultGrams": 3.5,
       "referenceAreaIn2": 200,
       "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
@@ -9245,7 +9245,7 @@
         {
           "id": "comparison",
           "label": "Seed rate comparison · starting plan",
-          "grams": 4.0,
+          "grams": 3.5,
           "area": 200,
           "harvest": [
             24,
@@ -9257,7 +9257,7 @@
           ],
           "method": "dome",
           "source": "P01",
-          "note": "Average of the listed rates: 4 g dry seed per nominal 1020. Listed rates: 3–6.5 g across 4 entries (mean 4.0 g). The growing schedule follows the original starting plan.",
+          "note": "3.5 g dry seed for a standard 1020 starting plan. Use Johnny’s exact red-veined 3.5 g trial rate. Bootstrap and Seedmart list around 3 g, and Piedmont reports 1 g. The 6.5 g attribution was not independently verified.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -9662,7 +9662,7 @@
       "species": "Salvia hispanica",
       "family": "Lamiaceae",
       "group": "mucilage",
-      "defaultGrams": 22.1,
+      "defaultGrams": 15.5,
       "referenceAreaIn2": 200,
       "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
@@ -9690,7 +9690,7 @@
         {
           "id": "comparison",
           "label": "Seed rate comparison · starting plan",
-          "grams": 22.1,
+          "grams": 15.5,
           "area": 200,
           "harvest": [
             12,
@@ -9702,7 +9702,7 @@
           ],
           "method": "dome",
           "source": "P01",
-          "note": "Average of the listed rates: 22.1 g dry seed per nominal 1020. Listed rates: 12.5–28.4 g across 4 entries (mean 22.1 g). The growing schedule follows the original starting plan.",
+          "note": "15.5 g dry seed for a standard 1020 starting plan. Use the original day-12 study protocol’s 120 g/m², which scales to 15.5 g per 200 in². Bootstrap gives 10–15 g. The separate 204 g/m² trial used a different method.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -9796,7 +9796,7 @@
       "species": "Trigonella foenum-graecum",
       "family": "Fabaceae",
       "group": "legume",
-      "defaultGrams": 26.1,
+      "defaultGrams": 25.0,
       "referenceAreaIn2": 200,
       "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
@@ -9824,7 +9824,7 @@
         {
           "id": "comparison",
           "label": "Seed rate comparison · starting plan",
-          "grams": 26.1,
+          "grams": 25.0,
           "area": 200,
           "harvest": [
             10,
@@ -9836,7 +9836,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 26.1 g dry seed per nominal 1020. Listed rates: 15–35 g across 3 entries (mean 26.1 g). The growing schedule follows the original starting plan.",
+          "note": "25 g dry seed for a standard 1020 starting plan. Keep the 25 g coir trial treatment as the nominal-tray starting amount. The paper gives inconsistent tray dimensions, so its optimum cannot be area-normalized reliably. Bootstrap lists 15 g under its own method.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -10134,7 +10134,7 @@
       "species": "Triticum aestivum",
       "family": "Poaceae",
       "group": "cereal",
-      "defaultGrams": 417.9,
+      "defaultGrams": 300.0,
       "referenceAreaIn2": 200,
       "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
       "harvestDays": [
@@ -10162,7 +10162,7 @@
         {
           "id": "comparison",
           "label": "Seed rate comparison · starting plan",
-          "grams": 417.9,
+          "grams": 300.0,
           "area": 200,
           "harvest": [
             10,
@@ -10174,7 +10174,7 @@
           ],
           "method": "stack",
           "source": "P01",
-          "note": "Average of the listed rates: 417.9 g dry seed per nominal 1020. Listed rates: 350–453.6 g across 3 entries (mean 417.9 g). The growing schedule follows the original starting plan.",
+          "note": "300 g dry seed for a standard 1020 starting plan. Mumm’s lists 200–350 g, while Bootstrap and CropKing list about 450 g. Use 300 g within the supplier range that supplies the planner’s timing. Higher rates remain method-specific.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             8,
@@ -11046,12 +11046,147 @@
       "accessed": "2026-11-04",
       "local": null
     },
+    "D47": {
+      "id": "D47",
+      "title": "Bootstrap Farmer · live 1020 growing chart",
+      "url": "https://www.bootstrapfarmer.com/pages/ultimate-microgreen-growing-resource",
+      "kind": "Supplier chart",
+      "note": "Crop-specific 1020 rates and methods. Main chart uses 250 g sunflower and a wide 90–220 g soaked nasturtium range. Grouped crop rows and dated PDF editions can differ.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D48": {
+      "id": "D48",
+      "title": "On The Grow · radish",
+      "url": "https://onthegrow.net/blogs/microgreens/how-to-grow-radish-microgreens",
+      "kind": "Firsthand grower guide",
+      "note": "Reports a 25 g Daikon tray run on coir and higher amounts for some other varieties. Daikon and generic radish rates are separate comparisons.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D49": {
+      "id": "D49",
+      "title": "CropKing · 10 × 20 seed chart",
+      "url": "https://cropking.com/blogs/knowledge-center/microgreen-seed-density-charts",
+      "kind": "Supplier chart",
+      "note": "Chart explicitly uses 10 × 20 trays. Ounce conversions are real, including 12 oz peas and 9 oz sunflower. Some crops are generic and the method differs from the shallow coir starter.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D50": {
+      "id": "D50",
+      "title": "Seedmart · reviewed 1020 ranges",
+      "url": "https://seedmart.com.au/microgreen-seeding-density-chart-for-australian-tray-sizes/",
+      "kind": "Supplier reference chart",
+      "note": "Separates 1020 reference rates from other tray formats. The publisher calls these reviewed reference ranges, so they may overlap other published recommendations.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D51": {
+      "id": "D51",
+      "title": "Home Microgreens · Waltham broccoli",
+      "url": "https://homemicrogreens.com/product/waltham-broccoli-microgreen-seeds/",
+      "kind": "Firsthand supplier guide",
+      "note": "17.8 g per 1020 for its Waltham lot. The same supplier’s general calculator cautions that larger trays scale less closely for pea and sunflower.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D52": {
+      "id": "D52",
+      "title": "On The Grow · Red Acre cabbage",
+      "url": "https://onthegrow.net/blogs/microgreens/how-to-grow-red-cabbage-microgreens",
+      "kind": "Firsthand grower guide",
+      "note": "Recommends 17–20 g Red Acre in a 1020. A 21 g demonstration and next-batch adjustment are from the same grower.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D53": {
+      "id": "D53",
+      "title": "Seedmart · Tatsoi",
+      "url": "https://seedmart.com.au/how-to-grow-tatsoi-microgreens-step-by-step-guide-for-beginners/",
+      "kind": "Supplier guide",
+      "note": "About 25 g on 10 × 20 and about 12–13 g on 10 × 10. This is a denser method than Johnny’s 7.5 g observation.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D54": {
+      "id": "D54",
+      "title": "On The Grow · split cilantro",
+      "url": "https://onthegrow.net/blogs/microgreens/how-to-grow-cilantro-microgreens",
+      "kind": "Firsthand grower guide",
+      "note": "20–25 g of split seed per 10 × 20. Seed form and growing method differ from whole cilantro.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D55": {
+      "id": "D55",
+      "title": "On The Grow · Red Garnet amaranth",
+      "url": "https://onthegrow.net/fr/blogs/microgreens/how-to-grow-red-garnet-amaranth-microgreens",
+      "kind": "Firsthand grower guide",
+      "note": "15 g per 10 × 20 in the grower’s setup.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D56": {
+      "id": "D56",
+      "title": "Home Microgreens · Red Garnet amaranth",
+      "url": "https://homemicrogreens.com/product/red-garnet-amaranth-seed/",
+      "kind": "Firsthand supplier guide",
+      "note": "5.9 g per 1020 for the supplier’s Red Garnet seed.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D57": {
+      "id": "D57",
+      "title": "Sangpituk et al. · chia density experiment",
+      "url": "https://geomatejournal.com/geomate/article/download/2126/2010/2915",
+      "kind": "Controlled study",
+      "note": "Tested chia density up to 204 g/m² in its method. Keep this result separate from the 120 g/m² rate used in the day-12 photoperiod experiment.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D58": {
+      "id": "D58",
+      "title": "Deliseeds · Raab seed packet",
+      "url": "https://deliseeds.com/products/broccoli-raab-microgreens-seeds",
+      "kind": "Supplier guide",
+      "note": "Lists 12–15 g per 25 × 50 cm for Raab. The 25 g from the supplied table could not be reproduced.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D59": {
+      "id": "D59",
+      "title": "Bootstrap Farmer · shallow 1020 tray dimensions",
+      "url": "https://www.bootstrapfarmer.com/products/microgreen-trays",
+      "kind": "Manufacturer specification",
+      "note": "1020 is the trade size. Inner floor 19.75 × 9.5 in, 187.625 in². Sowing surface may widen at the fill line. Outer dimensions include the rim.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D60": {
+      "id": "D60",
+      "title": "Home Microgreens · seed calculator notes",
+      "url": "https://homemicrogreens.com/microgreens-seed-calculator/",
+      "kind": "Firsthand grower guide",
+      "note": "Author reports 9.8 oz peas and 4.8 oz sunflower in 1020 trays and says the small-tray calculator is less accurate for larger trays. This differs from the pasted estimates.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D61": {
+      "id": "D61",
+      "title": "Microgreens & Sprouts · seed-rate compilation",
+      "url": "https://microgreensandsprouts.com/microgreens-seeding-chart/",
+      "kind": "Secondary compilation",
+      "note": "Lists nominal 1020 dry weight ranges and cites CropKing. Its rows are retained as supplied inputs, not independent grower measurements.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
     "P01": {
       "id": "P01",
-      "title": "Pasted comparison · dry seed rates",
+      "title": "Seed rate comparison and source audit",
       "url": "crop-catalog.html#seed-rate-comparison",
-      "kind": "User-supplied comparison",
-      "note": "Sowing rates from the supplied comparison, normalized to a nominal 200 in² tray. The planner uses the suggested starting amount where given and the arithmetic mean elsewhere. The original recipe remains selectable.",
+      "kind": "User-supplied comparison with source audit",
+      "note": "The arithmetic means describe the supplied values. Planner defaults are checked against named sources and changed where a more comparable growing method supports a different starting amount.",
       "accessed": "2026-11-04",
       "local": null
     },
@@ -11526,7 +11661,15 @@
       "profileIds": [
         "broccoli"
       ],
-      "selection": "Suggested starting amount"
+      "selection": "Suggested starting amount",
+      "auditSources": [
+        "D02",
+        "D32",
+        "D38",
+        "D47",
+        "D51"
+      ],
+      "auditNote": "Johnny’s used 13 g, Home Microgreens specifies 17.8 g for Waltham, On The Grow uses 17–25 g, and True Leaf’s Waltham 29 packet lists 28.35 g. Keep 20 g. The original mean combines cultivars."
     },
     {
       "crop": "Radish — Daikon",
@@ -11542,7 +11685,14 @@
       "profileIds": [
         "radish-daikon"
       ],
-      "selection": "Suggested starting amount"
+      "selection": "Suggested starting amount",
+      "auditSources": [
+        "D02",
+        "D39",
+        "D47",
+        "D48"
+      ],
+      "auditNote": "Johnny’s Daikon trial used 22.5 g, On The Grow reports a Daikon run at 25 g, and True Leaf’s Minowase lists 28.35 g. Bootstrap’s 30–35 g is generic radish. Keep 28 g."
     },
     {
       "crop": "Pea — Speckled",
@@ -11559,7 +11709,14 @@
       "profileIds": [
         "pea-basic"
       ],
-      "selection": "Suggested starting amount"
+      "selection": "Suggested starting amount",
+      "auditSources": [
+        "D33",
+        "D37",
+        "D47",
+        "D49"
+      ],
+      "auditNote": "On The Grow uses 200–260 g dry, Bootstrap 200–275 g, and True Leaf’s exact Speckled packet about 142–227 g. Keep 225 g. CropKing’s generic 340 g and Utah State’s 150 g use different methods."
     },
     {
       "crop": "Sunflower — black oil",
@@ -11576,7 +11733,15 @@
       "profileIds": [
         "sunflower"
       ],
-      "selection": "Suggested starting amount"
+      "selection": "Suggested starting amount",
+      "auditSources": [
+        "D31",
+        "D04",
+        "D03",
+        "D47",
+        "D49"
+      ],
+      "auditNote": "On The Grow uses 125 g on a shallow Bootstrap tray and Piedmont reports 130 g. Utah State’s 48 g and the 250–255 g chart recipes illustrate method differences. Keep 130 g."
     },
     {
       "crop": "Red cabbage",
@@ -11592,7 +11757,13 @@
       "profileIds": [
         "red-cabbage"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D02",
+        "D52",
+        "D47"
+      ],
+      "auditNote": "Johnny’s Red used 10.5 g and On The Grow Red Acre recommends 17–20 g. Keep 18.7 g as a coir-oriented trial amount. Generic cabbage rates mix cultivars."
     },
     {
       "crop": "Kale",
@@ -11611,7 +11782,13 @@
         "kale-red-russian",
         "kale-curly"
       ],
-      "selection": "Midpoint of suggested starting range"
+      "selection": "Midpoint of suggested starting range",
+      "auditSources": [
+        "D02",
+        "D04",
+        "D47"
+      ],
+      "auditNote": "Johnny’s Red Russian used 10 g, Piedmont’s generic kale uses 18 g, and Bootstrap lists 15–20 g. Keep 19 g as the mixed-cultivar starting plan."
     },
     {
       "crop": "Purple kohlrabi",
@@ -11627,7 +11804,13 @@
       "profileIds": [
         "kohlrabi"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D02",
+        "D04",
+        "D47"
+      ],
+      "auditNote": "Johnny’s Purple used 9.5 g, Piedmont uses 16 g, and Bootstrap lists 15–20 g. The 16.1 g starting amount agrees with the latter two."
     },
     {
       "crop": "Mustard (red/green)",
@@ -11644,7 +11827,13 @@
         "mustard-garnet",
         "mustard-ruby"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D02",
+        "D04",
+        "D47"
+      ],
+      "auditNote": "Johnny’s Garnet Giant and Ruby Streaks used 8 and 9.5 g respectively, Piedmont uses 10 g for generic mustard, and Bootstrap lists 10–15 g. Keep 12.5 g as a generic starting amount."
     },
     {
       "crop": "Arugula",
@@ -11661,7 +11850,14 @@
       "profileIds": [
         "arugula"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D02",
+        "D03",
+        "D04",
+        "D47"
+      ],
+      "auditNote": "Johnny’s and Utah State list 10 g, while Piedmont and Bootstrap list 12 g. Keep 12 g."
     },
     {
       "crop": "Mizuna",
@@ -11674,7 +11870,12 @@
       "profileIds": [
         "mizuna"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D02",
+        "D50"
+      ],
+      "auditNote": "Johnny’s used 9.5 g and Seedmart lists 10–15 g for its shared mustard/mizuna row. Keep 11 g with limited cultivar-specific support."
     },
     {
       "crop": "Bok choy / pak choi",
@@ -11688,7 +11889,12 @@
       "profileIds": [
         "pak-choi"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D02",
+        "D05"
+      ],
+      "auditNote": "Johnny’s Red Pac used 10.5 g and Piedmont reports 12 g for Red Choi. Keep 12.5 g as an approximate starting amount. The 17.5 g compilation value is generic."
     },
     {
       "crop": "Tatsoi",
@@ -11702,7 +11908,12 @@
       "profileIds": [
         "tatsoi"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D02",
+        "D53"
+      ],
+      "auditNote": "Johnny’s used 7.5 g, while Seedmart recommends 25 g in its own method. Keep 10.2 g as a lower-density starting amount with sparse comparable evidence."
     },
     {
       "crop": "Cauliflower",
@@ -11715,7 +11926,12 @@
       "profileIds": [
         "cauliflower"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D05",
+        "D47"
+      ],
+      "auditNote": "Bootstrap lists 15–20 g and Piedmont uses 20 g. Keep 15.9 g within the lower end of that range. The review-derived input is method-specific."
     },
     {
       "crop": "Collard greens",
@@ -11726,7 +11942,9 @@
       "meanGrams": 17.5,
       "startingGrams": 17.5,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Brussels sprouts",
@@ -11737,7 +11955,9 @@
       "meanGrams": 22.5,
       "startingGrams": 22.5,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Turnip",
@@ -11748,7 +11968,9 @@
       "meanGrams": 22.5,
       "startingGrams": 22.5,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Broccoli raab / rapini",
@@ -11759,7 +11981,11 @@
       "meanGrams": 22.5,
       "startingGrams": 22.5,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D58"
+      ],
+      "auditNote": "The supplied DS 25 g could not be reproduced. The current Deliseeds Raab packet lists 12–15 g per 25 × 50 cm tray. This row is retained as comparison history."
     },
     {
       "crop": "Komatsuna",
@@ -11770,7 +11996,9 @@
       "meanGrams": 19.3,
       "startingGrams": 19.3,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Basil (Genovese/Italian)",
@@ -11788,7 +12016,14 @@
         "basil-genovese",
         "basil-italian"
       ],
-      "selection": "Midpoint of suggested starting range"
+      "selection": "Midpoint of suggested starting range",
+      "auditSources": [
+        "D02",
+        "D04",
+        "D47",
+        "D50"
+      ],
+      "auditNote": "Johnny’s Italian used 6.5 g, Piedmont Genovese uses 4 g, and Bootstrap and Seedmart list 8–10 g across their guides. Keep 9 g."
     },
     {
       "crop": "Beetroot",
@@ -11805,7 +12040,14 @@
       "profileIds": [
         "beet"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D02",
+        "D05",
+        "D47",
+        "D50"
+      ],
+      "auditNote": "Johnny’s Bull’s Blood used 23 g, Bootstrap and Seedmart list 20–30 g, and Piedmont reports 35 g. Keep 30.4 g as a practical trial amount."
     },
     {
       "crop": "Swiss chard",
@@ -11822,7 +12064,14 @@
       "profileIds": [
         "chard"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D02",
+        "D04",
+        "D47",
+        "D50"
+      ],
+      "auditNote": "Johnny’s Bright Lights used 31.5 g, Seedmart lists 20–32 g and Piedmont chard rates vary from 35 to 40 g by type. Keep 34 g."
     },
     {
       "crop": "Cilantro (whole seed)",
@@ -11840,7 +12089,14 @@
       "profileIds": [
         "cilantro-whole"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D02",
+        "D04",
+        "D47",
+        "D49"
+      ],
+      "auditNote": "Bootstrap explicitly lists 30–40 g whole seed and Piedmont uses 40 g. Johnny’s 26 g trial entry does not specify seed form. Keep 32.1 g."
     },
     {
       "crop": "Cilantro (split seed)",
@@ -11853,7 +12109,12 @@
       "profileIds": [
         "cilantro-split"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D22",
+        "D54"
+      ],
+      "auditNote": "Jonah reports 20 g and On The Grow recommends 20–25 g for split seed. Keep 20.6 g."
     },
     {
       "crop": "Dill",
@@ -11862,11 +12123,16 @@
         "MS": 12.5
       },
       "meanGrams": 21.3,
-      "startingGrams": 21.3,
+      "startingGrams": 20.0,
       "profileIds": [
         "dill"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Reviewed starting amount",
+      "auditSources": [
+        "D04",
+        "D47"
+      ],
+      "auditNote": "Use Piedmont’s 20 g for the planner’s Piedmont schedule. Bootstrap uses 30 g with longer covered emergence. The 12.5 g input is a compilation midpoint."
     },
     {
       "crop": "Parsley",
@@ -11880,7 +12146,13 @@
       "profileIds": [
         "parsley"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D04",
+        "D47",
+        "D50"
+      ],
+      "auditNote": "Piedmont uses 12 g. Bootstrap and Seedmart give 15–20 g. Keep 17.5 g as the centre of the two ranges."
     },
     {
       "crop": "Fennel",
@@ -11894,7 +12166,13 @@
       "profileIds": [
         "fennel"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D04",
+        "D47",
+        "D49"
+      ],
+      "auditNote": "Piedmont uses 20 g, Bootstrap lists 20–30 g, and CropKing lists 28.35 g. Keep 26.1 g within that spread."
     },
     {
       "crop": "Carrot",
@@ -11905,7 +12183,9 @@
       "meanGrams": 18.8,
       "startingGrams": 18.8,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Celery",
@@ -11915,11 +12195,17 @@
         "MS": 15.0
       },
       "meanGrams": 17.9,
-      "startingGrams": 17.9,
+      "startingGrams": 4.0,
       "profileIds": [
         "celery"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Reviewed starting amount",
+      "auditSources": [
+        "D04",
+        "D47",
+        "D49"
+      ],
+      "auditNote": "Piedmont uses 4 g in its vented-dome method. Bootstrap uses 15–20 g with blackout, and CropKing lists about 21.3 g for celery leaf. Use 4 g for the planner’s Piedmont dome schedule."
     },
     {
       "crop": "Chervil",
@@ -11928,11 +12214,16 @@
         "MS": 12.5
       },
       "meanGrams": 13.8,
-      "startingGrams": 13.8,
+      "startingGrams": 15.0,
       "profileIds": [
         "chervil"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Reviewed starting amount",
+      "auditSources": [
+        "D04",
+        "D47"
+      ],
+      "auditNote": "Bootstrap lists 15 g and Piedmont uses 20 g. The original 13.8 g falls below both. Use the verified 15 g lower rate as the starting amount."
     },
     {
       "crop": "Garden cress",
@@ -11946,7 +12237,12 @@
       "profileIds": [
         "cress"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D02",
+        "D47"
+      ],
+      "auditNote": "Johnny’s Cressida used 10.5 g and Bootstrap’s generic cress entry lists 20 g. Keep 14.3 g as an intermediate trial amount."
     },
     {
       "crop": "Shiso / perilla",
@@ -11963,7 +12259,14 @@
         "shiso-green",
         "shiso-purple"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D02",
+        "D04",
+        "D47",
+        "D50"
+      ],
+      "auditNote": "Johnny’s Britton used 11.5 g, Piedmont and Bootstrap list 12 g, and Seedmart lists 12–15 g. Keep 11.1 g. Cultivar matters."
     },
     {
       "crop": "Red-veined sorrel",
@@ -11974,11 +12277,18 @@
         "SM": 3.0
       },
       "meanGrams": 4.0,
-      "startingGrams": 4.0,
+      "startingGrams": 3.5,
       "profileIds": [
         "sorrel"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Reviewed starting amount",
+      "auditSources": [
+        "D02",
+        "D05",
+        "D47",
+        "D50"
+      ],
+      "auditNote": "Use Johnny’s exact red-veined 3.5 g trial rate. Bootstrap and Seedmart list around 3 g, and Piedmont reports 1 g. The 6.5 g attribution was not independently verified."
     },
     {
       "crop": "Lettuce",
@@ -11992,7 +12302,12 @@
       "profileIds": [
         "lettuce"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D04",
+        "D47"
+      ],
+      "auditNote": "Piedmont’s dome method uses 10 g and Bootstrap’s stacked method lists 15–20 g. Keep 13 g as a low-middle trial amount with method sensitivity."
     },
     {
       "crop": "Endive",
@@ -12003,7 +12318,9 @@
       "meanGrams": 15.0,
       "startingGrams": 15.0,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Red amaranth",
@@ -12016,11 +12333,19 @@
         "CK": 28.4
       },
       "meanGrams": 15.8,
-      "startingGrams": 15.8,
+      "startingGrams": 10.0,
       "profileIds": [
         "amaranth"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Reviewed starting amount",
+      "auditSources": [
+        "D02",
+        "D05",
+        "D47",
+        "D55",
+        "D56"
+      ],
+      "auditNote": "Johnny’s Garnet Red used 7.5 g, Home Microgreens lists 5.9 g, Piedmont uses 10 g, and Bootstrap and On The Grow list 15 g. Use 10 g and keep the heavier rates as references."
     },
     {
       "crop": "Chia",
@@ -12031,11 +12356,17 @@
         "REV": 26.0
       },
       "meanGrams": 22.1,
-      "startingGrams": 22.1,
+      "startingGrams": 15.5,
       "profileIds": [
         "chia"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Reviewed starting amount",
+      "auditSources": [
+        "D14",
+        "D47",
+        "D57"
+      ],
+      "auditNote": "Use the original day-12 study protocol’s 120 g/m², which scales to 15.5 g per 200 in². Bootstrap gives 10–15 g. The separate 204 g/m² trial used a different method."
     },
     {
       "crop": "Fenugreek",
@@ -12045,11 +12376,16 @@
         "MS": 35.0
       },
       "meanGrams": 26.1,
-      "startingGrams": 26.1,
+      "startingGrams": 25.0,
       "profileIds": [
         "fenugreek"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Reviewed starting amount",
+      "auditSources": [
+        "D12",
+        "D47"
+      ],
+      "auditNote": "Keep the 25 g coir trial treatment as the nominal-tray starting amount. The paper gives inconsistent tray dimensions, so its optimum cannot be area-normalized reliably. Bootstrap lists 15 g under its own method."
     },
     {
       "crop": "Clover",
@@ -12060,7 +12396,9 @@
       "meanGrams": 17.5,
       "startingGrams": 17.5,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Onion",
@@ -12073,7 +12411,12 @@
       "profileIds": [
         "onion"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D04",
+        "D47"
+      ],
+      "auditNote": "Piedmont uses 35 g for onion. Bootstrap’s combined onion/chives/leek row spans 40–50 g. Keep 37.5 g as a close trial amount."
     },
     {
       "crop": "Leek",
@@ -12085,7 +12428,9 @@
       "meanGrams": 45.6,
       "startingGrams": 45.6,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Garlic chives",
@@ -12096,7 +12441,9 @@
       "meanGrams": 35.0,
       "startingGrams": 35.0,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Spinach",
@@ -12107,7 +12454,9 @@
       "meanGrams": 24.9,
       "startingGrams": 24.9,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Nasturtium",
@@ -12116,11 +12465,17 @@
         "MS": 80.0
       },
       "meanGrams": 117.5,
-      "startingGrams": 117.5,
+      "startingGrams": 100.0,
       "profileIds": [
         "nasturtium"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Reviewed starting amount",
+      "auditSources": [
+        "D04",
+        "D05",
+        "D47"
+      ],
+      "auditNote": "Piedmont reports 90–100 g across its tables. Bootstrap’s 90–220 g range uses an 8–12 h soak and a longer cycle. Use the 100 g direct-sow rate that matches the planner’s schedule."
     },
     {
       "crop": "Borage",
@@ -12131,7 +12486,9 @@
       "meanGrams": 26.3,
       "startingGrams": 26.3,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Shungiku / chrysanthemum",
@@ -12142,7 +12499,9 @@
       "meanGrams": 13.6,
       "startingGrams": 13.6,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Buckwheat",
@@ -12154,7 +12513,13 @@
       "meanGrams": 236.7,
       "startingGrams": 236.7,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [
+        "D13",
+        "D47",
+        "D49"
+      ],
+      "auditNote": "Bootstrap lists 100 g and Mumm’s 120 g, while CropKing lists 340 g. The original mean combines widely different methods."
     },
     {
       "crop": "Wheatgrass",
@@ -12164,11 +12529,17 @@
         "CK": 453.6
       },
       "meanGrams": 417.9,
-      "startingGrams": 417.9,
+      "startingGrams": 300.0,
       "profileIds": [
         "wheat"
       ],
-      "selection": "Average of the listed rates"
+      "selection": "Reviewed starting amount",
+      "auditSources": [
+        "D13",
+        "D47",
+        "D49"
+      ],
+      "auditNote": "Mumm’s lists 200–350 g, while Bootstrap and CropKing list about 450 g. Use 300 g within the supplier range that supplies the planner’s timing. Higher rates remain method-specific."
     },
     {
       "crop": "Corn / popcorn shoots",
@@ -12180,7 +12551,9 @@
       "meanGrams": 238.1,
       "startingGrams": 238.1,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Fava bean shoots",
@@ -12191,7 +12564,9 @@
       "meanGrams": 268.8,
       "startingGrams": 268.8,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Alfalfa",
@@ -12202,7 +12577,9 @@
       "meanGrams": 16.3,
       "startingGrams": 16.3,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     },
     {
       "crop": "Flax",
@@ -12213,7 +12590,9 @@
       "meanGrams": 21.8,
       "startingGrams": 21.8,
       "profileIds": [],
-      "selection": "Average of the listed rates"
+      "selection": "Average of the listed rates",
+      "auditSources": [],
+      "auditNote": ""
     }
   ],
   "videos": [
