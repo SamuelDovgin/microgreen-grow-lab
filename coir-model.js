@@ -2,13 +2,16 @@
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.CoirModel=api;})(typeof window!=='undefined'?window:globalThis,function(){
 'use strict';
 const CUP_ML=236.5882365, IN3_ML=16.387064, MAX_TRAYS_PER_CROP=100;
+const TRAY_HEIGHT_IN=1.25, HEADSPACE_TARGET_IN=.5;
+const CUP_DEPTH_IN=CUP_ML/(19.75*9.5*IN3_ML);
+const HALF_INCH_CUPS=Math.round((TRAY_HEIGHT_IN-HEADSPACE_TARGET_IN)/CUP_DEPTH_IN);
 const crops=[
  {id:'broccoli',name:'Broccoli · Waltham',family:'Brassicaceae',cups:6,seedG:22,treatment:'No presoak. Sow dry seed onto evenly moist coir.',basis:'6 cups follows the general shallow-tray grower baseline; 22 g seed is the selected starting trial from your notes.'},
  {id:'radish',name:'Radish · Daikon',family:'Brassicaceae',cups:6,seedG:30,treatment:'No presoak. Sow evenly; avoid dense clumps.',basis:'6 cups is the OTG general shallow-tray baseline. A higher fill can ease access to shorter crops; the separate clearance preset is an adaptation, not a measured optimum. 30 g seed remains the selected trial.'},
  {id:'pea',name:'Pea · Speckled',family:'Fabaceae',cups:6,seedG:230,treatment:'Weigh dry, then soak 8–12 hours, rinse and drain before sowing. Soak water is separate.',basis:'6 cups is the economical coir baseline. A lower fill relative to small-seed crops can leave room for large seeds and the stacking tray. 230 g seed is within OTG’s 200–260 g 1020 range.'},
  {id:'sunflower',name:'Sunflower · Black oil',family:'Asteraceae',cups:6,seedG:125,treatment:'Rinse and sow without soaking for the current OTG approach. An approximately 8-hour presoak is an alternative trial.',basis:'6 cups is the economical coir baseline. The previous 8-cup sunflower default had no established crop-specific basis. Large seeds need clearance; 125 g dry seed follows OTG’s current guide.'}
 ];
-const defaults=()=>({brickG:4536,brickQt:51,price:19.98,rounding:'5',calibration:false,sampleG:'',sampleCups:'',sampleWater:'',condition:'unknown',rows:crops.map(c=>({id:c.id,count:1,cups:c.cups}))});
+const defaults=()=>({brickG:4536,brickQt:51,price:19.98,rounding:'5',calibration:false,sampleG:'',sampleCups:'',sampleWater:'',condition:'unknown',rows:crops.map(c=>({id:c.id,count:1,cups:HALF_INCH_CUPS}))});
 const present=v=>v!==''&&v!==null&&v!==undefined;
 const positive=v=>present(v)&&Number.isFinite(Number(v))&&Number(v)>0;
 function calibration(s){
@@ -19,10 +22,10 @@ function calibration(s){
  if(present(s.sampleWater)&&(!positive(s.sampleWater)||Number(s.sampleWater)<0.1||Number(s.sampleWater)>1000000))return {valid:false,message:'Measured water must be 0.1–1,000,000 mL, or leave it blank to retain the 4 mL/g starting estimate.'};
  return {valid:true,basis:'One measured expansion sample · repeatability unknown',gramsPerCup:Number(s.sampleG)/Number(s.sampleCups),waterRatio:present(s.sampleWater)?Number(s.sampleWater)/Number(s.sampleG):4,waterBasis:present(s.sampleWater)?'Measured sample ratio · recheck each batch':'Expansion measured; water remains a 4 mL/g estimate'};
 }
-const depth=cups=>cups*CUP_ML/(19.75*9.5*IN3_ML);
+const depth=cups=>cups*CUP_DEPTH_IN;
 function row(cups,count,basis,rounding){
  const exactG=cups*basis.gramsPerCup,step=Number(rounding),weighG=step===0?exactG:Math.ceil((exactG-1e-9)/step)*step;
- return {cups,count,exactG,weighG,waterMl:weighG*basis.waterRatio,liters:cups*CUP_ML/1000,depthIn:depth(cups),headroomIn:1.25-depth(cups),batchG:weighG*count,batchWaterMl:weighG*basis.waterRatio*count};
+ return {cups,count,exactG,weighG,waterMl:weighG*basis.waterRatio,liters:cups*CUP_ML/1000,depthIn:depth(cups),headroomIn:TRAY_HEIGHT_IN-depth(cups),batchG:weighG*count,batchWaterMl:weighG*basis.waterRatio*count};
 }
 function calculate(s){
  const errors=[];
@@ -40,11 +43,11 @@ function calculate(s){
  const detail=rows.map((r,i)=>({...crops[i],...row(Number(r.cups),Number(r.count),basis,s.rounding)}));
  const dryG=detail.reduce((v,r)=>v+r.batchG,0),waterMl=detail.reduce((v,r)=>v+r.batchWaterMl,0),cups=detail.reduce((v,r)=>v+r.count*r.cups,0),fraction=dryG/Number(s.brickG);
  return {valid:true,basis,rows:detail,trays,dryG,waterMl,cups,liters:cups*CUP_ML/1000,quarts:cups/4,cost:fraction*Number(s.price),fraction,remainingG:Math.max(0,Number(s.brickG)-dryG),shortfallG:Math.max(0,dryG-Number(s.brickG)),empty:trays===0,
- comparisons:[4,6,8,10,12,13.5].map(c=>row(c,1,basis,s.rounding)),
+ comparisons:[4,6,8,HALF_INCH_CUPS,12,13.5].map(c=>row(c,1,basis,s.rounding)),
  // A deliberate +/-20% scenario, not a confidence interval or final-water recommendation.
  waterSensitivity:[waterMl*.8,waterMl*1.2]};
 }
-function worksheet(s,p){if(!p.valid)return null;return {tool:'Grow Lab coco coir',version:'2026-11-02',inputs:s,outputs:p,notes:['Expanded volumes are lightly leveled US cups, not water cups.','Dry grams use label yield or one measured sample, with rounding applied per tray.','Initial water is for coir hydration; it excludes soaking and irrigation.','Confirm damp/no-drip texture and actual fill height. Depth uses a rectangular bottom-footprint approximation.']};}
-function selfTest(){const s=defaults(),a=calculate(s);if(!a.valid||a.dryG!==540||a.waterMl!==2160||a.cups!==24)throw Error('Default batch identity failed');s.rows.forEach(r=>r.count=0);if(!calculate(s).empty)throw Error('Empty batch failed');return {passed:2};}
-return {crops,defaults,calculate,calibration,depth,worksheet,selfTest,CUP_ML,MAX_TRAYS_PER_CROP};
+function worksheet(s,p){if(!p.valid)return null;return {tool:'Grow Lab coco coir',version:'2026-11-04',inputs:s,outputs:p,notes:['Expanded volumes are US cups of damp, lightly leveled coir.','Dry grams use label yield or one measured sample, with rounding applied per tray.','Initial water is for coir hydration; it excludes soaking and irrigation.','Check headspace from the rim of the drainage tray to the leveled coir before sowing. Estimated geometry uses published outside height and a rectangular bottom footprint.']};}
+function selfTest(){const s=defaults(),a=calculate(s);if(!a.valid||a.dryG!==900||a.waterMl!==3600||a.cups!==40||Math.abs(a.rows[0].headroomIn-HEADSPACE_TARGET_IN)>.05)throw Error('Default batch identity failed');s.rows.forEach(r=>r.count=0);if(!calculate(s).empty)throw Error('Empty batch failed');return {passed:2};}
+return {crops,defaults,calculate,calibration,depth,worksheet,selfTest,CUP_ML,MAX_TRAYS_PER_CROP,TRAY_HEIGHT_IN,HEADSPACE_TARGET_IN,HALF_INCH_CUPS};
 });

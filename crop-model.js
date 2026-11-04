@@ -65,24 +65,86 @@ function dateAt(iso,offset){
 }
 // Visual proxy only: spherical planting unit at an assumed 1 g/cm³.
 function seedDiameter(seedsPerGram){return between(seedsPerGram,.1,5000)?Math.cbrt(6000/(Math.PI*seedsPerGram)):null;}
-function schedule(s,c){
+// Preparation is scheduled from the local sow time; subtract elapsed hours across midnight or a clock change.
+function soakStart(sowDate,sowTime,hours){
+ const sow=new Date(sowDate+'T'+sowTime),start=new Date(sow.getTime()-hours*3600000);
+ const pad=n=>String(n).padStart(2,'0');
+ return {date:[start.getFullYear(),pad(start.getMonth()+1),pad(start.getDate())].join('-'),
+         time:pad(start.getHours())+':'+pad(start.getMinutes())};
+}
+function schedule(s,c,recipe,densityResult){
  if(!Number.isInteger(s.coverDays)||!between(s.coverDays,1,14)||!Number.isInteger(s.blackoutDays)||!between(s.blackoutDays,0,5)||!Number.isInteger(s.harvestDay)||!between(s.harvestDay,4,40)||s.coverDays+s.blackoutDays>=s.harvestDay||!dateAt(s.sowDate,0))return null;
  const list=[],lightStart=s.coverDays+s.blackoutDays;
- const bottomStart=s.bottomStartDay??lightStart,amShare=s.amShare??50;
- if(!Number.isInteger(bottomStart)||!between(bottomStart,1,s.harvestDay)||!between(amShare,0,100))return null;
+ const bottomStart=s.bottomStartDay??lightStart,amShare=s.amShare??50,soakHours=s.soakHours??0,sowTime=s.sowTime??'08:00';
+ if(!Number.isInteger(bottomStart)||!between(bottomStart,s.coverDays,s.harvestDay)||!between(amShare,0,100)||!between(soakHours,0,18)||!/^([01]\d|2[0-3]):[0-5]\d$/.test(sowTime))return null;
+ const weight=s.method==='dome'?0:(s.weightLb??0);
+ if(!between(weight,0,15))return null;
+ const broccoli=c?.id==='broccoli',sunflower=c?.id==='sunflower',protocol=c?.calendar||{};
+ const emptyBroccoliCover=broccoli&&s.method!=='dome'&&weight===0;
+ const paver=sunflower&&(weight===15||weight===14&&recipe?.source==='V13');
+ const coverStage=s.method==='dome'?'Vented humidity dome':paver?`Weighted dark cover · ${weight} lb paver`:weight>0?`Weighted cover · ${weight} lb added`:emptyBroccoliCover?'Empty cover tray · no 15 lb paver':'Contact cover · no added weight';
+ const coverAction=emptyBroccoliCover?'Invert an empty tray so it rests gently on the seeds. Keep it dark and leave the 15 lb paver off.'
+   :s.method==='dome'?'Place a vented dome above the seed surface.'
+   :paver?`Rest a solid cover tray on the seeds, center the ${weight} lb paver on it and keep the tray dark.`
+   :weight>0?`Set a contact tray over the seeds, add the selected ${weight} lb evenly and keep the tray dark.`
+   :'Rest an empty tray on the seed surface and keep the tray dark.';
+ const seed=Number.isFinite(densityResult?.grams)?`about ${Number(densityResult.grams.toFixed(1))} g of dry seed`:'the dry seed';
+ if(soakHours>0){
+  const start=soakStart(s.sowDate,sowTime,soakHours);
+  list.push({day:start.date===s.sowDate?0:-1,date:start.date,time:start.time,phase:'presoak',
+   stage:`Presoak · ${soakHours} h`,cue:'Weigh dry seed, then start soak',action:`Weigh ${seed}${sunflower?', rinse it and': ' and'} soak in clean water for ${soakHours} h. Drain and rinse before sowing at ${sowTime} on ${s.sowDate}.`,
+   wateringMethod:'prep',bottomStartDay:bottomStart,waterScenarioMl:null,amMl:null,pmMl:null,dailyCups:null,amCups:null,pmCups:null,lowCups:null,highCups:null});
+ }
+ const topdress=recipe?.topdress??c?.topdress;
  for(let day=0;day<=s.harvestDay;day++){
-  let stage=day<s.coverDays?(s.method==='dome'?'Dome / emergence':'Contact cover / emergence'):day<lightStart?'Noncontact dark cover':day===s.harvestDay?'Harvest checkpoint':'Under lights';
-  let action=day===0?'Pre-moisten and drain medium; weigh dry seed, sow evenly, start the selected cover.':day<s.coverDays?'Inspect seed-zone moisture and emergence; add a fine mist only if needed.':day===s.coverDays?'Use the root/stand exit cue; remove contact cover or vent/remove dome.':day<lightStart?'Optional stretch phase: inspect closely; stop before stems weaken.':day===lightStart?'Move to light; check root access, tray weight and drainage.':day===s.harvestDay?'Inspect actual leaf stage, flavor, hulls and dry foliage; harvest only a suitable crop.':'Check tray weight at lights-on and late light period; refill only when the selected trigger is reached.';
-  const wateringMethod=day<bottomStart?'spray':'bottom',waterScenarioMl=dailyDemand(s,day);
-  if(day===0)action+=' Use a spray bottle to settle seeds without pooling.';
-  else if(wateringMethod==='spray')action+=' Use the spray bottle only if the seed surface needs moisture; avoid pooling.';
-  else if(day===bottomStart)action+=' First planned bottom watering: confirm roots reach the tray base or the medium wicks from below. If not ready, keep using a fine spray and move the switch day.';
-  else action+=' Bottom-water only as needed after checking tray weight and moisture; drain unabsorbed water.';
+  const phase=day===0?'sow':day<s.coverDays?'emergence':day<lightStart?'blackout':day===s.harvestDay?'harvest':'light';
+  const stage=day<s.coverDays?coverStage:phase==='blackout'?'Blackout · loose cover, 0 lb':phase==='harvest'?'Harvest checkpoint':'Under lights';
+  const wateringMethod=day<bottomStart?'spray':'bottom';
+  let action,cue;
+  if(day===0){
+   const prep=soakHours>0?'Rinse and drain soaked seed well.':sunflower?`Weigh ${seed}, rinse and drain it, then sow the same day.`:`Weigh ${seed} and direct-sow.`;
+   action=[prep,'Use evenly moistened, drained medium. Sow evenly and mist to settle the seeds without pooling.',protocol.sow,
+           topdress?'Apply a thin top dress as directed by the selected recipe.':'',coverAction].filter(Boolean).join(' ');
+   cue=soakHours>0?'Drain, rinse, sow and cover':'Direct-sow, mist and cover';
+  }else if(phase==='emergence'){
+   action='Keep the selected cover in place. Check the seed surface and lightly mist only if it is drying.';
+   cue='Keep covered · mist only if drying';
+  }else{
+   const actions=[];
+   if(day===s.coverDays){
+    actions.push(weight>0?'When the stand is ready, remove the weight and contact tray.':'Remove the contact cover or vented dome when the stand is ready.');
+    if(protocol.exit)actions.push(protocol.exit);
+   }
+   if(phase==='blackout')actions.push('Keep the tray dark under a raised or inverted solid cover with space above the shoots. Leave all added weight off.');
+   if(day===lightStart)actions.push('Remove any loose blackout cover and move under lights when the stand is ready.');
+   if(phase==='harvest')actions.push(protocol.harvest||'Check leaf stage and harvest when ready.','Water only if the tray needs it and you are leaving it to grow.');
+   else if(wateringMethod==='spray')actions.push('Lightly mist only if the seed surface is drying.');
+   else if(day===bottomStart)actions.push('Bottom-water only if the tray needs it and the medium can wick from below. Delay the switch if it cannot.');
+   else actions.push('Check tray weight and moisture. Bottom-water only as needed and drain excess.');
+   if(day===lightStart){
+    if(protocol.water)actions.push(protocol.water);
+    if(protocol.litCare)actions.push(protocol.litCare);
+   }
+   if(phase==='harvest')cue='Harvest if ready';
+   else if(phase==='blackout')cue=day===s.coverDays?'Remove contact cover'+(weight>0?' and weight':'')+' · start loose blackout':'Keep dark under loose cover';
+   else if(day===lightStart)cue=(day===s.coverDays&&weight>0?'Remove weight and cover if ready':'Uncover if ready')+' · lights on'+(day===bottomStart?' · check wicking':'');
+   else if(day===bottomStart)cue='Check wicking before switching';
+   else cue=wateringMethod==='spray'?'Mist only if drying':'Check weight and moisture';
+   if(broccoli&&day===7&&day<s.harvestDay&&day>=lightStart){
+    actions.push('Start checking for fully open, green cotyledons and harvest when ready.');
+    cue+=' · check harvest readiness';
+   }
+   action=actions.join(' ');
+  }
+  const waterScenarioMl=wateringMethod==='bottom'&&s.showWaterEstimate?dailyDemand(s,day):null;
   const amMl=waterScenarioMl===null?null:waterScenarioMl*amShare/100,pmMl=waterScenarioMl===null?null:waterScenarioMl-amMl;
-  list.push({day,date:dateAt(s.sowDate,day),stage,action,wateringMethod,bottomStartDay:bottomStart,waterScenarioMl,amMl,pmMl,dailyCups:waterScenarioMl===null?null:waterScenarioMl/CUP_ML,amCups:amMl===null?null:amMl/CUP_ML,pmCups:pmMl===null?null:pmMl/CUP_ML});
+  const spread=s.demandUncertainty/100;
+  list.push({day,date:dateAt(s.sowDate,day),time:day===0?sowTime:null,phase,stage,action,cue,wateringMethod,bottomStartDay:bottomStart,waterScenarioMl,amMl,pmMl,dailyCups:waterScenarioMl===null?null:waterScenarioMl/CUP_ML,amCups:amMl===null?null:amMl/CUP_ML,pmCups:pmMl===null?null:pmMl/CUP_ML,
+             lowCups:waterScenarioMl===null?null:waterScenarioMl*(1-spread)/CUP_ML,highCups:waterScenarioMl===null?null:waterScenarioMl*(1+spread)/CUP_ML});
  }
  return list;
 }
+
 function objective(row,seedPrice,salePrice,otherCost,turnaround,goal){
  const contribution=row.yieldGm2*salePrice/1000-row.seedGm2*seedPrice/1000-otherCost;
  if(goal==='yield')return row.yieldGm2;

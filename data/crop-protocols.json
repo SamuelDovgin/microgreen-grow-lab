@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-01",
+  "version": "2026-11-04",
   "crops": [
     {
       "id": "broccoli",
@@ -48,7 +48,20 @@
           "method": "stack",
           "source": "D02",
           "note": "13 g and 12.5 days are the supplier trial anchors; other recipes use 20–28 g. The day-13 checkpoint rounds the trial mean, not a fitted optimum.",
-          "substrateId": "peat"
+          "soakBasis": "Direct sow from the broccoli guide.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 0,
+          "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
+          "calendarSources": [
+            "D02",
+            "D32"
+          ],
+          "substrateId": "coir"
         },
         {
           "id": "mgm2024",
@@ -67,6 +80,19 @@
           "source": "D05",
           "yieldG": 184.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
+          "calendarSources": [
+            "D05",
+            "D32"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -86,6 +112,19 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
+          "calendarSources": [
+            "D04",
+            "D32"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -105,6 +144,19 @@
           "method": "stack",
           "source": "D03",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 3,
+          "weightBasis": "3 lb selected within USU’s general 2–5 lb example.",
+          "calendarSources": [
+            "D03",
+            "D32"
+          ],
           "substrateId": "coir",
           "lightHours": 18
         },
@@ -124,9 +176,95 @@
           "method": "stack",
           "source": "V02",
           "note": "20 g at 01:04; one stretch day; twice-daily germination checks on reusable medium; reported 95 g harvest.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 0,
+          "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
+          "calendarSources": [
+            "V02",
+            "D32"
+          ],
           "substrateId": "reusable"
+        },
+        {
+          "id": "otg-coir",
+          "label": "On The Grow · coir and empty cover",
+          "grams": 21,
+          "area": 200,
+          "harvest": [
+            7,
+            10
+          ],
+          "cover": [
+            2,
+            3
+          ],
+          "method": "stack",
+          "source": "D32",
+          "note": "21 g midpoint of 17–25 g; one loose dark day after contact cover.",
+          "soak": [
+            0,
+            0
+          ],
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 0,
+          "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
+          "substrateId": "coir",
+          "calendarSources": [
+            "D32"
+          ],
+          "lightHours": 16
+        },
+        {
+          "id": "bootstrap",
+          "label": "Bootstrap Farmer · chart comparison",
+          "grams": 17.5,
+          "area": 200,
+          "harvest": [
+            7,
+            10
+          ],
+          "cover": [
+            2,
+            3
+          ],
+          "method": "stack",
+          "source": "D34",
+          "note": "Chart-based comparison; cultivar and equipment can differ. A single setting is selected within any published range.",
+          "soak": [
+            0,
+            0
+          ],
+          "blackoutDays": 0,
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "weightLb": 0,
+          "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
+          "calendarSources": [
+            "D34",
+            "D32"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Scatter dry seed in a single even layer and avoid overlapping piles.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D32"
+        ],
+        "waterBasis": "Lower starting scenario; grower reports 1–2 cups/day in its setup."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -187,6 +325,20 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat"
         },
         {
@@ -206,6 +358,20 @@
           "source": "D05",
           "yieldG": 312.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -225,10 +391,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Spread the larger radish seed evenly without overlap. The selected cultivar has its own dry seed rate.",
+        "exit": "Even rooted emergence, before stems tangle beneath the cover.",
+        "water": "Check morning and late light period; mature radish can deplete a shallow root zone rapidly. Refill from tray-weight deficit, then drain excess.",
+        "harvest": "Expanded cotyledons; inspect flavor and texture before extending the cycle.",
+        "litCare": "",
+        "demand": 3.1,
+        "waterSources": [
+          "D16",
+          "D35"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -289,9 +482,36 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat"
         }
       ],
+      "calendar": {
+        "sow": "Spread the larger radish seed evenly without overlap. The selected cultivar has its own dry seed rate.",
+        "exit": "Even rooted emergence, before stems tangle beneath the cover.",
+        "water": "Check morning and late light period; mature radish can deplete a shallow root zone rapidly. Refill from tray-weight deficit, then drain excess.",
+        "harvest": "Expanded cotyledons; inspect flavor and texture before extending the cycle.",
+        "litCare": "",
+        "demand": 3.1,
+        "waterSources": [
+          "D16",
+          "D35"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -352,9 +572,36 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat"
         }
       ],
+      "calendar": {
+        "sow": "Spread the larger radish seed evenly without overlap. The selected cultivar has its own dry seed rate.",
+        "exit": "Even rooted emergence, before stems tangle beneath the cover.",
+        "water": "Check morning and late light period; mature radish can deplete a shallow root zone rapidly. Refill from tray-weight deficit, then drain excess.",
+        "harvest": "Expanded cotyledons; inspect flavor and texture before extending the cycle.",
+        "litCare": "",
+        "demand": 3.1,
+        "waterSources": [
+          "D16",
+          "D35"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -415,6 +662,20 @@
           "method": "stack",
           "source": "D05",
           "note": "Creator table reports 40 g for each; these cultivars are grouped for recipe selection, not declared identical.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -435,6 +696,20 @@
           "source": "D05",
           "yieldG": 312.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -454,10 +729,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Spread the larger radish seed evenly without overlap. The selected cultivar has its own dry seed rate.",
+        "exit": "Even rooted emergence, before stems tangle beneath the cover.",
+        "water": "Check morning and late light period; mature radish can deplete a shallow root zone rapidly. Refill from tray-weight deficit, then drain excess.",
+        "harvest": "Expanded cotyledons; inspect flavor and texture before extending the cycle.",
+        "litCare": "",
+        "demand": 3.1,
+        "waterSources": [
+          "D16",
+          "D35"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -518,6 +820,20 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -537,6 +853,20 @@
           "source": "D05",
           "yieldG": 184.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -556,6 +886,20 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -575,9 +919,36 @@
           "method": "stack",
           "source": "V01",
           "note": "Separate noncontact blackout until day 6; 287 g reported. Creator suggests 17 g next grow; not an observed 17-g yield.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 3,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "V01",
+            "D16",
+            "D36"
+          ],
           "substrateId": "coir"
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow evenly. Check the selected recipe for a separate dark stage; the Red Acre coir demonstration includes one.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -638,6 +1009,20 @@
           "method": "stack",
           "source": "D05",
           "note": "",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -658,6 +1043,20 @@
           "source": "D05",
           "yieldG": 184.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -677,10 +1076,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow evenly. Check the selected recipe for a separate dark stage; the Red Acre coir demonstration includes one.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -741,6 +1167,20 @@
           "method": "stack",
           "source": "D02",
           "note": "Red Russian is B. napus; curly/Toscano kale is generally B. oleracea. Keep seed lots distinct.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -760,6 +1200,20 @@
           "source": "D05",
           "yieldG": 227.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -779,10 +1233,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Keep the medium level and surface-sow. Record the kale type and lot before comparing stands.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -843,6 +1324,20 @@
           "method": "stack",
           "source": "D05",
           "note": "MGM table does not identify the cultivar; confirm the supplied seed’s botanical identity.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -863,6 +1358,20 @@
           "source": "D05",
           "yieldG": 227.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -882,10 +1391,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Keep the medium level and surface-sow. Record the kale type and lot before comparing stands.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -946,6 +1482,20 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -965,6 +1515,20 @@
           "source": "D05",
           "yieldG": 184.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -984,10 +1548,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow the purple kohlrabi seed evenly. Use its own harvest checkpoint and check cotyledon stage.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -1048,6 +1639,20 @@
           "method": "stack",
           "source": "D05",
           "note": "",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -1068,10 +1673,37 @@
           "source": "D05",
           "yieldG": 170.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Sow evenly on the surface. Check early for a uniformly rooted stand before removing the cover.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -1132,6 +1764,20 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -1151,10 +1797,37 @@
           "source": "D05",
           "yieldG": 142.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Spread the small Brassica rapa seed in a thin surface layer. Keep the varieties separate when recording seed mass and harvest stage.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -1215,9 +1888,36 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         }
       ],
+      "calendar": {
+        "sow": "Spread the small Brassica rapa seed in a thin surface layer. Keep the varieties separate when recording seed mass and harvest stage.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -1278,9 +1978,36 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         }
       ],
+      "calendar": {
+        "sow": "Spread the small Brassica rapa seed in a thin surface layer. Keep the varieties separate when recording seed mass and harvest stage.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -1341,9 +2068,36 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         }
       ],
+      "calendar": {
+        "sow": "Spread the small Brassica rapa seed in a thin surface layer. Keep the varieties separate when recording seed mass and harvest stage.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -1404,6 +2158,20 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -1423,6 +2191,20 @@
           "source": "D05",
           "yieldG": 142.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -1442,10 +2224,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Direct-sow the fine mustard seed and mist gently so it does not gather in patches.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -1506,6 +2315,20 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -1525,6 +2348,20 @@
           "source": "D05",
           "yieldG": 142.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -1544,10 +2381,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Direct-sow the fine mustard seed and mist gently so it does not gather in patches.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -1608,6 +2472,20 @@
           "method": "stack",
           "source": "D02",
           "note": "Mild mucilage: no presoak. MGM uses a stack; long blackout is optional, not a necessary stage.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -1627,6 +2505,20 @@
           "source": "D05",
           "yieldG": 142.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -1646,6 +2538,20 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -1665,10 +2571,37 @@
           "method": "stack",
           "source": "D03",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 3,
+          "weightBasis": "3 lb selected within USU’s general 2–5 lb example.",
+          "calendarSources": [
+            "D03",
+            "D16",
+            "D36"
+          ],
           "substrateId": "coir",
           "lightHours": 18
         }
       ],
+      "calendar": {
+        "sow": "Direct-sow the sticky seed thinly and keep it from clumping as it wets.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -1729,9 +2662,36 @@
           "method": "stack",
           "source": "D02",
           "note": "Mucilaginous: direct sow; avoid seed clumps and free-water presoaking.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         }
       ],
+      "calendar": {
+        "sow": "Direct-sow in a single layer. Keep the mucilaginous seed from forming clumps.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -1792,10 +2752,37 @@
           "method": "stack",
           "source": "D03",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 3,
+          "weightBasis": "3 lb selected within USU’s general 2–5 lb example.",
+          "calendarSources": [
+            "D03",
+            "D16",
+            "D36"
+          ],
           "substrateId": "coir",
           "lightHours": 18
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow the dry seed and check emergence at the earlier end of the selected cover window.",
+        "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
+        "water": "Keep the seed surface evenly moist during germination. Once rooted, bottom-water to measured need; inspect at lights-on and again late in the light period.",
+        "harvest": "Expanded cotyledons to first true leaf; specify the product before comparing yields.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D03",
         "harvest": "D03; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -1856,6 +2843,20 @@
           "method": "dome",
           "source": "D05",
           "note": "Default uses MGM’s long-cycle dome recipe. Select Jonah for a separate short-cycle light-stack recipe.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -1876,6 +2877,20 @@
           "source": "D05",
           "yieldG": 99.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -1895,6 +2910,20 @@
           "method": "dome",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -1918,6 +2947,16 @@
             0,
             0
           ],
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D21",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 18
         },
@@ -1937,9 +2976,36 @@
           "method": "dome",
           "source": "D02",
           "note": "Different named cultivar; dome timing is editorial, not from the supplier yield trial.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow dry basil seed in one layer. Wet seed forms mucilage; use a fine mist and the selected dome or light-stack method.",
+        "exit": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates.",
+        "water": "Direct sow without a free-water presoak. Maintain a moist seed surface beneath a vented dome; avoid pooling. Bottom-water after roots reach the medium.",
+        "harvest": "Basil at the selected leaf size; chia has its own shorter study schedule.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -2000,9 +3066,36 @@
           "method": "dome",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow dry basil seed in one layer. Wet seed forms mucilage; use a fine mist and the selected dome or light-stack method.",
+        "exit": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates.",
+        "water": "Direct sow without a free-water presoak. Maintain a moist seed surface beneath a vented dome; avoid pooling. Bottom-water after roots reach the medium.",
+        "harvest": "Basil at the selected leaf size; chia has its own shorter study schedule.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -2063,6 +3156,20 @@
           "method": "dome",
           "source": "D02",
           "note": "Arthur’s Dark Opal density study uses much higher sowing rates and a different 16-day endpoint.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -2082,6 +3189,20 @@
           "source": "D05",
           "yieldG": 113.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2101,10 +3222,37 @@
           "method": "dome",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow dry basil seed in one layer. Wet seed forms mucilage; use a fine mist and the selected dome or light-stack method.",
+        "exit": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates.",
+        "water": "Direct sow without a free-water presoak. Maintain a moist seed surface beneath a vented dome; avoid pooling. Bottom-water after roots reach the medium.",
+        "harvest": "Basil at the selected leaf size; chia has its own shorter study schedule.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -2165,6 +3313,20 @@
           "method": "dome",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -2184,6 +3346,20 @@
           "source": "D05",
           "yieldG": 113.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2203,10 +3379,37 @@
           "method": "dome",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow dry basil seed in one layer. Wet seed forms mucilage; use a fine mist and the selected dome or light-stack method.",
+        "exit": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates.",
+        "water": "Direct sow without a free-water presoak. Maintain a moist seed surface beneath a vented dome; avoid pooling. Bottom-water after roots reach the medium.",
+        "harvest": "Basil at the selected leaf size; chia has its own shorter study schedule.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -2267,6 +3470,20 @@
           "method": "dome",
           "source": "D05",
           "note": "Confirm exact botanical identity on the lot; “lemon basil” can refer to different taxa.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2287,10 +3504,37 @@
           "source": "D05",
           "yieldG": 113.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow dry basil seed in one layer. Wet seed forms mucilage; use a fine mist and the selected dome or light-stack method.",
+        "exit": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates.",
+        "water": "Direct sow without a free-water presoak. Maintain a moist seed surface beneath a vented dome; avoid pooling. Bottom-water after roots reach the medium.",
+        "harvest": "Basil at the selected leaf size; chia has its own shorter study schedule.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -2351,9 +3595,67 @@
           "method": "dome",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
+        },
+        {
+          "id": "bootstrap",
+          "label": "Bootstrap Farmer · chart comparison",
+          "grams": 12,
+          "area": 200,
+          "harvest": [
+            18,
+            24
+          ],
+          "cover": [
+            2,
+            3
+          ],
+          "method": "stack",
+          "source": "D34",
+          "note": "Chart-based comparison; cultivar and equipment can differ. A single setting is selected within any published range.",
+          "soak": [
+            0,
+            0
+          ],
+          "blackoutDays": 5,
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D34",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow evenly, verify the lot and monitor the seed surface through the longer emergence window.",
+        "exit": "An even rooted stand; germination can be lot- and cultivar-sensitive.",
+        "water": "Maintain the surface gently during slow emergence; avoid prolonged waterlogging. Once rooted, use weight-based bottom watering.",
+        "harvest": "Expanded aromatic leaves at the chosen market specification.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -2414,6 +3716,20 @@
           "method": "dome",
           "source": "D05",
           "note": "",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2434,10 +3750,68 @@
           "source": "D05",
           "yieldG": 99.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
+        },
+        {
+          "id": "bootstrap",
+          "label": "Bootstrap Farmer · chart comparison",
+          "grams": 12,
+          "area": 200,
+          "harvest": [
+            18,
+            24
+          ],
+          "cover": [
+            2,
+            3
+          ],
+          "method": "stack",
+          "source": "D34",
+          "note": "Chart-based comparison; cultivar and equipment can differ. A single setting is selected within any published range.",
+          "soak": [
+            0,
+            0
+          ],
+          "blackoutDays": 5,
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D34",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow evenly, verify the lot and monitor the seed surface through the longer emergence window.",
+        "exit": "An even rooted stand; germination can be lot- and cultivar-sensitive.",
+        "water": "Maintain the surface gently during slow emergence; avoid prolonged waterlogging. Once rooted, use weight-based bottom watering.",
+        "harvest": "Expanded aromatic leaves at the chosen market specification.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -2498,6 +3872,20 @@
           "method": "dome",
           "source": "D05",
           "note": "",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2518,10 +3906,68 @@
           "source": "D05",
           "yieldG": 142.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
+        },
+        {
+          "id": "bootstrap",
+          "label": "Bootstrap Farmer · chart comparison",
+          "grams": 12,
+          "area": 200,
+          "harvest": [
+            18,
+            24
+          ],
+          "cover": [
+            2,
+            3
+          ],
+          "method": "stack",
+          "source": "D34",
+          "note": "Chart-based comparison; cultivar and equipment can differ. A single setting is selected within any published range.",
+          "soak": [
+            0,
+            0
+          ],
+          "blackoutDays": 5,
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D34",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow evenly, verify the lot and monitor the seed surface through the longer emergence window.",
+        "exit": "An even rooted stand; germination can be lot- and cultivar-sensitive.",
+        "water": "Maintain the surface gently during slow emergence; avoid prolonged waterlogging. Once rooted, use weight-based bottom watering.",
+        "harvest": "Expanded aromatic leaves at the chosen market specification.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -2582,6 +4028,20 @@
           "method": "stack",
           "source": "D18",
           "note": "Detailed MGM article cycle selected; 2024 summary table instead says 17 d. Whole fruit contains two mericarps: units/g is not embryos/g.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D18",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2602,6 +4062,20 @@
           "source": "D05",
           "yieldG": 142.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2621,10 +4095,68 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
+        },
+        {
+          "id": "bootstrap",
+          "label": "Bootstrap Farmer · chart comparison",
+          "grams": 35,
+          "area": 200,
+          "harvest": [
+            15,
+            20
+          ],
+          "cover": [
+            7,
+            9
+          ],
+          "method": "stack",
+          "source": "D34",
+          "note": "Chart-based comparison; cultivar and equipment can differ. A single setting is selected within any published range.",
+          "soak": [
+            2,
+            4
+          ],
+          "blackoutDays": 0,
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": true,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D34",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Spread whole fruits evenly. Retain the thin top dress when the selected recipe calls for it.",
+        "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
+        "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
+        "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D18",
         "harvest": "D18; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -2685,6 +4217,20 @@
           "method": "stack",
           "source": "D22",
           "note": "Jonah recipe; optional thin vermiculite and daily moisture checks. Split seed is a distinct count unit.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D22",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -2704,6 +4250,20 @@
           "source": "D05",
           "yieldG": 142.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2723,6 +4283,20 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2746,9 +4320,63 @@
             0,
             0
           ],
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "V06",
+            "D16",
+            "D36"
+          ],
           "substrateId": "coir"
+        },
+        {
+          "id": "bootstrap",
+          "label": "Bootstrap Farmer · chart comparison",
+          "grams": 30,
+          "area": 200,
+          "harvest": [
+            15,
+            20
+          ],
+          "cover": [
+            7,
+            9
+          ],
+          "method": "stack",
+          "source": "D34",
+          "note": "Chart-based comparison; cultivar and equipment can differ. A single setting is selected within any published range.",
+          "soak": [
+            2,
+            4
+          ],
+          "blackoutDays": 0,
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": true,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D34",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Spread split mericarps evenly and check any thin cover for dry spots.",
+        "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
+        "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
+        "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D22",
         "harvest": "D22; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -2809,6 +4437,20 @@
           "method": "stack",
           "source": "D05",
           "note": "",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2829,6 +4471,20 @@
           "source": "D05",
           "yieldG": 113.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2848,10 +4504,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Direct-sow evenly and maintain surface moisture through slow emergence. Check for recognizably feathery leaves at harvest.",
+        "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
+        "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
+        "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -2912,6 +4595,20 @@
           "method": "stack",
           "source": "D05",
           "note": "",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2932,6 +4629,20 @@
           "source": "D05",
           "yieldG": 142.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -2951,10 +4662,68 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
+        },
+        {
+          "id": "bootstrap",
+          "label": "Bootstrap Farmer · chart comparison",
+          "grams": 25,
+          "area": 200,
+          "harvest": [
+            16,
+            20
+          ],
+          "cover": [
+            3,
+            4
+          ],
+          "method": "stack",
+          "source": "D34",
+          "note": "Chart-based comparison; cultivar and equipment can differ. A single setting is selected within any published range.",
+          "soak": [
+            0,
+            0
+          ],
+          "blackoutDays": 3,
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D34",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Direct-sow the dry seed. The Bootstrap Farmer comparison includes a distinct loose dark stage.",
+        "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
+        "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
+        "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -3015,6 +4784,20 @@
           "method": "stack",
           "source": "D05",
           "note": "",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3035,6 +4818,20 @@
           "source": "D05",
           "yieldG": 108.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3054,10 +4851,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Direct-sow in an even layer and check surface moisture through the longer cover phase.",
+        "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
+        "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
+        "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -3118,6 +4942,20 @@
           "method": "stack",
           "source": "D05",
           "note": "",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3138,6 +4976,20 @@
           "source": "D05",
           "yieldG": 78.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3157,10 +5009,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Direct-sow evenly. Its longer covered phase calls for repeated moisture checks without pooling.",
+        "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
+        "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
+        "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -3221,6 +5100,20 @@
           "method": "dome",
           "source": "D05",
           "note": "Species override: MGM uses a humidity dome for this slow, tiny seed.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3241,6 +5134,20 @@
           "source": "D05",
           "yieldG": 85.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3260,10 +5167,37 @@
           "method": "dome",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Scatter the tiny seed over a level, moist surface. Use a vented dome when the selected recipe specifies it.",
+        "exit": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand.",
+        "water": "Do not allow the seed zone to crust or dry during the extended covered stage. Check daily; mist only as needed. After emergence, bottom-water by measured deficit.",
+        "harvest": "Usually recognizable first true leaves for culinary identity.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -3324,6 +5258,20 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -3343,6 +5291,20 @@
           "source": "D05",
           "yieldG": 99.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3362,10 +5324,68 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
+        },
+        {
+          "id": "bootstrap",
+          "label": "Bootstrap Farmer · chart comparison",
+          "grams": 25,
+          "area": 200,
+          "harvest": [
+            10,
+            14
+          ],
+          "cover": [
+            4,
+            5
+          ],
+          "method": "stack",
+          "source": "D34",
+          "note": "Chart-based comparison; cultivar and equipment can differ. A single setting is selected within any published range.",
+          "soak": [
+            4,
+            8
+          ],
+          "blackoutDays": 0,
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": true,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D34",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Distribute seed clusters evenly. Several seedlings can emerge from one cluster, so avoid tightly packed seed piles.",
+        "exit": "Anchored roots and emerging cotyledons; evaluate hull shedding before removing the contact cover.",
+        "water": "Pre-moisten the medium evenly; a thin cover can retain seed-zone moisture and assist hull shedding. Avoid saturating dense seed clusters.",
+        "harvest": "Expanded colored cotyledons to first true leaf; remove retained hard hulls.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -3426,6 +5446,20 @@
           "method": "stack",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -3445,6 +5479,20 @@
           "source": "D05",
           "yieldG": 113.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3464,10 +5512,68 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
+        },
+        {
+          "id": "bootstrap",
+          "label": "Bootstrap Farmer · chart comparison",
+          "grams": 25,
+          "area": 200,
+          "harvest": [
+            10,
+            14
+          ],
+          "cover": [
+            4,
+            5
+          ],
+          "method": "stack",
+          "source": "D34",
+          "note": "Chart-based comparison; cultivar and equipment can differ. A single setting is selected within any published range.",
+          "soak": [
+            4,
+            8
+          ],
+          "blackoutDays": 0,
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": true,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D34",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Distribute the multigerm clusters in one layer. Keep any top dress thin so shoots can emerge.",
+        "exit": "Anchored roots and emerging cotyledons; evaluate hull shedding before removing the contact cover.",
+        "water": "Pre-moisten the medium evenly; a thin cover can retain seed-zone moisture and assist hull shedding. Avoid saturating dense seed clusters.",
+        "harvest": "Expanded colored cotyledons to first true leaf; remove retained hard hulls.",
+        "litCare": "",
+        "demand": 2,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -3528,6 +5634,20 @@
           "method": "light-stack",
           "source": "D02",
           "note": "Confirm supplier botanical identity; “Garnet Red” is not a complete species identifier.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -3547,6 +5667,20 @@
           "source": "D05",
           "yieldG": 85.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3566,10 +5700,37 @@
           "method": "light-stack",
           "source": "D23",
           "note": "5 g is the editorial midpoint of a 4–6 g range.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D23",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 18
         }
       ],
+      "calendar": {
+        "sow": "Scatter the fine seed without piling. Use a gentle mist so seeds stay where they land.",
+        "exit": "Fine roots anchor and seedlings emerge; avoid crushing the delicate stand.",
+        "water": "Fine mist to keep the tiny surface-sown seed moist without washing it into clumps. Then gentle bottom watering; avoid standing water around fine stems.",
+        "harvest": "Sufficient leaf development and stem strength; often first/second true leaf.",
+        "litCare": "",
+        "demand": 1.5,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -3630,6 +5791,20 @@
           "method": "stack",
           "source": "D03",
           "note": "USU’s lower seed-use household recipe; MGM has a separate 300-g commercial recipe.",
+          "soakBasis": "USU reports 6 h for peas in its household coir method.",
+          "soak": [
+            6,
+            6
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 3,
+          "weightBasis": "3 lb selected within USU’s general 2–5 lb example.",
+          "calendarSources": [
+            "D03",
+            "D16",
+            "D35"
+          ],
           "substrateId": "coir",
           "lightHours": 18
         },
@@ -3650,6 +5825,21 @@
           "source": "D05",
           "yieldG": 454.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM reports overnight; 6–12 h is the planner window.",
+          "soak": [
+            6,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 10,
+          "weightBasis": "10 lb planning setting within On The Grow’s 7–15 lb range for 1020 trays.",
+          "calendarSources": [
+            "D05",
+            "D33",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3669,6 +5859,21 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM reports overnight; 6–12 h is the planner window.",
+          "soak": [
+            6,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 10,
+          "weightBasis": "10 lb planning setting within On The Grow’s 7–15 lb range for 1020 trays.",
+          "calendarSources": [
+            "D04",
+            "D33",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3688,10 +5893,71 @@
           "method": "stack",
           "source": "D05",
           "note": "Overnight soak reported; duration not numerically defined.",
+          "soakBasis": "MGM reports overnight; 6–12 h is the planner window.",
+          "soak": [
+            6,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 10,
+          "weightBasis": "10 lb planning setting within On The Grow’s 7–15 lb range for 1020 trays.",
+          "calendarSources": [
+            "D05",
+            "D33",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat",
+          "lightHours": 16
+        },
+        {
+          "id": "otg-coir",
+          "label": "On The Grow · 1020 coir",
+          "grams": 230,
+          "area": 200,
+          "harvest": [
+            8,
+            14
+          ],
+          "cover": [
+            3,
+            3
+          ],
+          "method": "stack",
+          "source": "D33",
+          "note": "230 g midpoint of 200–260 g; use 7–15 lb in this source method.",
+          "soak": [
+            8,
+            12
+          ],
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 10,
+          "weightBasis": "10 lb planning setting within On The Grow’s 7–15 lb range for 1020 trays.",
+          "substrateId": "coir",
+          "calendarSources": [
+            "D33",
+            "D16",
+            "D35"
+          ],
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Spread drained peas in one even layer, with room for swelling and rooting.",
+        "exit": "Strong anchored shoots lifting the contact cover; prevent unstable tall stacks.",
+        "water": "Weigh dry seed before soaking, drain completely, then sow evenly. Check the mature root mat twice daily; use measured refill rather than leaving an uncalibrated reservoir.",
+        "harvest": "Tender shoots with the cultivar’s desired leaf/tendril development.",
+        "litCare": "",
+        "demand": 3.7,
+        "waterSources": [
+          "D16",
+          "D35"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D03",
         "harvest": "D03; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -3752,6 +6018,21 @@
           "method": "stack",
           "source": "D05",
           "note": "MGM specifies overnight, not a precise duration; 6–12 h is an editorial operating window to test.",
+          "soakBasis": "MGM reports overnight; 6–12 h is the planner window.",
+          "soak": [
+            6,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 10,
+          "weightBasis": "10 lb planning setting within On The Grow’s 7–15 lb range for 1020 trays.",
+          "calendarSources": [
+            "D05",
+            "D33",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3772,6 +6053,21 @@
           "source": "D05",
           "yieldG": 397.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM reports overnight; 6–12 h is the planner window.",
+          "soak": [
+            6,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 10,
+          "weightBasis": "10 lb planning setting within On The Grow’s 7–15 lb range for 1020 trays.",
+          "calendarSources": [
+            "D05",
+            "D33",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3791,10 +6087,71 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM reports overnight; 6–12 h is the planner window.",
+          "soak": [
+            6,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 10,
+          "weightBasis": "10 lb planning setting within On The Grow’s 7–15 lb range for 1020 trays.",
+          "calendarSources": [
+            "D04",
+            "D33",
+            "D16",
+            "D35"
+          ],
           "substrateId": "peat",
+          "lightHours": 16
+        },
+        {
+          "id": "otg-coir",
+          "label": "On The Grow · 1020 coir",
+          "grams": 230,
+          "area": 200,
+          "harvest": [
+            8,
+            14
+          ],
+          "cover": [
+            3,
+            3
+          ],
+          "method": "stack",
+          "source": "D33",
+          "note": "230 g midpoint of 200–260 g; use 7–15 lb in this source method.",
+          "soak": [
+            8,
+            12
+          ],
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 10,
+          "weightBasis": "10 lb planning setting within On The Grow’s 7–15 lb range for 1020 trays.",
+          "substrateId": "coir",
+          "calendarSources": [
+            "D33",
+            "D16",
+            "D35"
+          ],
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Spread drained peas in one layer. Cut promptly once the shoots are tender and before tendrils tangle.",
+        "exit": "Strong anchored shoots lifting the contact cover; prevent unstable tall stacks.",
+        "water": "Weigh dry seed before soaking, drain completely, then sow evenly. Check the mature root mat twice daily; use measured refill rather than leaving an uncalibrated reservoir.",
+        "harvest": "Harvest tender shoots before the tendrils mat together.",
+        "litCare": "",
+        "demand": 3.7,
+        "waterSources": [
+          "D16",
+          "D35"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -3841,7 +6198,7 @@
       "alternatives": [
         {
           "id": "baseline",
-          "label": "Research starting plan",
+          "label": "Sunflower · overnight coir starter",
           "grams": 120,
           "area": 200,
           "harvest": [
@@ -3854,8 +6211,23 @@
           ],
           "method": "stack",
           "source": "D05",
-          "note": "120 g is the 2024 recipe; 130 g appears in MGM’s 2025 germination table. Seed hull/lot size matters.",
-          "substrateId": "peat",
+          "note": "120 g and overnight soak from MGM 2024, three covered days from MGM 2025, 15 lb and loose blackout from On The Grow.",
+          "soakBasis": "MGM reports overnight; 6–12 h is the planner window.",
+          "soak": [
+            6,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 15,
+          "weightBasis": "On The Grow specifies a 15 lb paver and about one loose dark day. The MGM recipe keeps its own covered time and overnight soak.",
+          "calendarSources": [
+            "D05",
+            "D31",
+            "D04",
+            "D35"
+          ],
+          "substrateId": "coir",
           "lightHours": 16
         },
         {
@@ -3875,6 +6247,21 @@
           "source": "D05",
           "yieldG": 454.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM reports overnight; 6–12 h is the planner window.",
+          "soak": [
+            6,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 15,
+          "weightBasis": "On The Grow specifies a 15 lb paver and about one loose dark day. The MGM recipe keeps its own covered time and overnight soak.",
+          "calendarSources": [
+            "D05",
+            "D31",
+            "D04",
+            "D35"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3894,6 +6281,21 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM reports overnight; 6–12 h is the planner window.",
+          "soak": [
+            6,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 15,
+          "weightBasis": "On The Grow specifies a 15 lb paver and about one loose dark day. The MGM recipe keeps its own covered time and overnight soak.",
+          "calendarSources": [
+            "D04",
+            "D31",
+            "D05",
+            "D35"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -3916,6 +6318,16 @@
           "soak": [
             12,
             12
+          ],
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 3,
+          "weightBasis": "3 lb selected within USU’s general 2–5 lb example.",
+          "calendarSources": [
+            "D03",
+            "D31",
+            "D35"
           ],
           "substrateId": "coir",
           "lightHours": 18
@@ -3940,6 +6352,16 @@
             4,
             4
           ],
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 14,
+          "weightBasis": "14 lb paver reported in Donny’s walkthrough.",
+          "calendarSources": [
+            "V13",
+            "D31",
+            "D35"
+          ],
           "substrateId": "peat"
         },
         {
@@ -3962,6 +6384,16 @@
             4,
             12
           ],
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 15,
+          "weightBasis": "15 lb starting load borrowed from On The Grow’s current written sunflower method.",
+          "calendarSources": [
+            "V11",
+            "D31",
+            "D35"
+          ],
           "substrateId": "peat"
         },
         {
@@ -3980,9 +6412,100 @@
           "method": "stack",
           "source": "V03",
           "note": "125 g spoken at 01:00, 536 g reported at 28:42. Not a replicated density comparison.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            6,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 15,
+          "weightBasis": "15 lb starting load borrowed from On The Grow’s current written sunflower method.",
+          "calendarSources": [
+            "V03",
+            "D31",
+            "D35"
+          ],
           "substrateId": "coir"
+        },
+        {
+          "id": "otg-rinse",
+          "label": "On The Grow · rinse, then sow",
+          "grams": 125,
+          "area": 200,
+          "harvest": [
+            8,
+            10
+          ],
+          "cover": [
+            4,
+            4
+          ],
+          "method": "stack",
+          "source": "D31",
+          "note": "Current written method; rinse, drain and sow the same day.",
+          "soak": [
+            0,
+            0
+          ],
+          "soakBasis": "On The Grow gives rinse-only and an optional 8 h presoak.",
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 15,
+          "weightBasis": "On The Grow specifies a 15 lb paver and about one loose dark day.",
+          "substrateId": "coir",
+          "calendarSources": [
+            "D31",
+            "D35"
+          ],
+          "lightHours": 16
+        },
+        {
+          "id": "otg-soak",
+          "label": "On The Grow · 8 h soak option",
+          "grams": 125,
+          "area": 200,
+          "harvest": [
+            8,
+            10
+          ],
+          "cover": [
+            4,
+            4
+          ],
+          "method": "stack",
+          "source": "D31",
+          "note": "Optional soak from the same guide; rinse and drain before sowing.",
+          "soak": [
+            8,
+            8
+          ],
+          "soakBasis": "On The Grow gives rinse-only and an optional 8 h presoak.",
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 15,
+          "weightBasis": "On The Grow specifies a 15 lb paver and about one loose dark day.",
+          "substrateId": "coir",
+          "calendarSources": [
+            "D31",
+            "D35"
+          ],
+          "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Spread black-oil seed in one layer, separate clumps and use a stable solid tray under the load.",
+        "exit": "Strong, even roots and shoots lifting the cover; avoid stacked seed layers.",
+        "water": "Drain soaked seed thoroughly. Bottom-water the established crop; any early top watering for hull release must allow foliage to dry before harvest.",
+        "harvest": "Well-expanded tender cotyledons before objectionable true-leaf texture/flavor.",
+        "litCare": "Check for trapped hulls after blackout. If needed, soften them with a targeted mist and gently lift loose hulls; let the foliage dry.",
+        "demand": 3.7,
+        "waterSources": [
+          "D31",
+          "D35"
+        ],
+        "waterBasis": "High-use planning scenario; grower example is about one cup at a time, once or twice daily."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4043,6 +6566,20 @@
           "method": "dome",
           "source": "D05",
           "note": "",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -4063,6 +6600,20 @@
           "source": "D05",
           "yieldG": 170.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -4082,10 +6633,37 @@
           "method": "dome",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow and keep the seed surface lightly moist. The farm dome method uses a vented cover.",
+        "exit": "Emergence and root anchoring; vent promptly to avoid humid stagnant conditions.",
+        "water": "Surface-sow; keep the seed zone moist beneath a vented clear dome. Do not automatically impose a long dark, weighted phase.",
+        "harvest": "Tender true leaves; watch bolting/elongation and harvest specification.",
+        "litCare": "",
+        "demand": 1.7,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4146,6 +6724,20 @@
           "method": "stack",
           "source": "D05",
           "note": "",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -4166,6 +6758,20 @@
           "source": "D05",
           "yieldG": 170.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -4185,10 +6791,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Sow the dry seed evenly and check for anchored green loops before removing the cover.",
+        "exit": "Rooted loops/green shoots appearing across the tray; inspect hulls and anchorage.",
+        "water": "Prevent surface drying during slower emergence; use gentle bottom watering once rooted. Thin mats may need more frequent checks than deep mix.",
+        "harvest": "Tender green shoots at the desired loop/leaf development.",
+        "litCare": "",
+        "demand": 1.7,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4248,9 +6881,36 @@
           ],
           "method": "stack",
           "source": "D07",
-          "note": "375 g/m² was the highest tested yield rate in Arthur’s study, not an interior optimum."
+          "note": "375 g/m² was the highest tested yield rate in Arthur’s study, not an interior optimum.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D07",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Sow the dry seed evenly and check for anchored green loops before removing the cover.",
+        "exit": "Rooted loops/green shoots appearing across the tray; inspect hulls and anchorage.",
+        "water": "Prevent surface drying during slower emergence; use gentle bottom watering once rooted. Thin mats may need more frequent checks than deep mix.",
+        "harvest": "Tender green shoots at the desired loop/leaf development.",
+        "litCare": "",
+        "demand": 1.7,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D07",
         "harvest": "D07; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4310,9 +6970,36 @@
           ],
           "method": "stack",
           "source": "D07",
-          "note": "300 g/m² is the lower tested member of an overlapping top-yield group in Arthur; no local 1020 validation."
+          "note": "300 g/m² is the lower tested member of an overlapping top-yield group in Arthur; no local 1020 validation.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D07",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Sow the dry seed evenly and check for anchored green loops before removing the cover.",
+        "exit": "Rooted loops/green shoots appearing across the tray; inspect hulls and anchorage.",
+        "water": "Prevent surface drying during slower emergence; use gentle bottom watering once rooted. Thin mats may need more frequent checks than deep mix.",
+        "harvest": "Tender green shoots at the desired loop/leaf development.",
+        "litCare": "",
+        "demand": 1.7,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D07",
         "harvest": "D07; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4373,6 +7060,20 @@
           "method": "stack",
           "source": "D05",
           "note": "",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -4393,6 +7094,20 @@
           "source": "D05",
           "yieldG": 142.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -4412,10 +7127,68 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": true,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
+        },
+        {
+          "id": "bootstrap",
+          "label": "Bootstrap Farmer · chart comparison",
+          "grams": 100,
+          "area": 200,
+          "harvest": [
+            15,
+            20
+          ],
+          "cover": [
+            7,
+            9
+          ],
+          "method": "stack",
+          "source": "D34",
+          "note": "Chart-based comparison; cultivar and equipment can differ. A single setting is selected within any published range.",
+          "soak": [
+            8,
+            12
+          ],
+          "blackoutDays": 0,
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": true,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D34",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Sow in one layer with space between large seeds. Follow the selected recipe for soaking and top dress.",
+        "exit": "Anchored shoots emerging through the top dress.",
+        "water": "Evenly moisten the medium; a thin top dress can help hull release. Sow without piled seeds and bottom-water the established roots.",
+        "harvest": "Expanded cotyledons/young leaves at the chosen culinary size.",
+        "litCare": "",
+        "demand": 2.3,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4476,6 +7249,20 @@
           "method": "dome",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         },
         {
@@ -4495,10 +7282,37 @@
           "source": "D05",
           "yieldG": 28.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Surface-sow fine seed evenly. Keep the seed zone moist under the dome without saturating it.",
+        "exit": "An established stand; avoid drying the top layer during slow emergence.",
+        "water": "Careful surface moisture for tiny seeds; avoid pooling, then bottom-water the fine roots.",
+        "harvest": "Recognizable red-veined true leaves.",
+        "litCare": "",
+        "demand": 1.5,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4559,6 +7373,20 @@
           "method": "stack",
           "source": "D05",
           "note": "",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -4579,6 +7407,20 @@
           "source": "D05",
           "yieldG": 170.0,
           "note": "Seed/time/yield from 2024 table; covered method/time from separate 2025 table when present. Two vintages, not one controlled trial.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D05",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         },
@@ -4598,10 +7440,37 @@
           "method": "stack",
           "source": "D04",
           "note": "2025 seed/germination snapshot only. Harvest retained as a planning assumption; no paired yield.",
+          "soakBasis": "MGM 2024 reports direct sowing for this crop.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D04",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat",
           "lightHours": 16
         }
       ],
+      "calendar": {
+        "sow": "Spread the seeds in one layer for even contact. Keep the melon seeds moist and aerated.",
+        "exit": "Uniform anchored cotyledon emergence.",
+        "water": "Keep good seed contact and even moisture, avoiding waterlogged large seeds. Bottom-water once roots establish.",
+        "harvest": "Expanded, tender seed leaves before the crop becomes fibrous.",
+        "litCare": "",
+        "demand": 2.3,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D05",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4662,9 +7531,36 @@
           "method": "dome",
           "source": "D02",
           "note": "",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D02",
+            "D16",
+            "D36"
+          ],
           "substrateId": "peat"
         }
       ],
+      "calendar": {
+        "sow": "Use food-use Gem marigold seed and sow evenly. Check for sufficient true-leaf development before harvest.",
+        "exit": "Even emerged stand with anchored roots.",
+        "water": "Gentle surface watering during emergence, then bottom-water by weight; inspect long-cycle nutrient supply.",
+        "harvest": "Johnny’s notes waiting for a second true-leaf set may improve harvestability.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D02",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4724,9 +7620,36 @@
           ],
           "method": "dome",
           "source": "D14",
-          "note": "120 g/m² constant rate in a photoperiod experiment; 12 d is the study endpoint, not a universal density optimum."
+          "note": "120 g/m² constant rate in a photoperiod experiment; 12 d is the study endpoint, not a universal density optimum.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D14",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Direct-sow the mucilaginous seed on moist medium. Use a fine mist if the surface dries.",
+        "exit": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates.",
+        "water": "Direct sow without a free-water presoak. Maintain a moist seed surface beneath a vented dome; avoid pooling. Bottom-water after roots reach the medium.",
+        "harvest": "Basil at the selected leaf size; chia has its own shorter study schedule.",
+        "litCare": "",
+        "demand": 1.6,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D14",
         "harvest": "D14; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4786,9 +7709,36 @@
           ],
           "method": "stack",
           "source": "D12",
-          "note": "Published central treatment with a tray-dimension conflict. Covered phase is an editorial starting window, not reported exact study timing."
+          "note": "Published central treatment with a tray-dimension conflict. Covered phase is an editorial starting window, not reported exact study timing.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D12",
+            "D16",
+            "D36"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Sow evenly and track the lot and tray dimensions. The selected density study has conflicting tray dimensions.",
+        "exit": "Anchored, even emergence; monitor seed decay independently of crop size.",
+        "water": "Follow the named study/seed-lot protocol; soaking is optional unless explicitly part of that recipe. Drain soaked seed and inspect dense roots closely.",
+        "harvest": "Use a species-specific endpoint and count units.",
+        "litCare": "",
+        "demand": 2.3,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D12",
         "harvest": "D12; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4848,10 +7798,37 @@
           ],
           "method": "stack",
           "source": "D11",
-          "note": "3 sown seeds/cm² converted with illustrative 25 seeds/g. Actual study genotype seed mass varied greatly. Agronomic pilot; raw-food safety remains unresolved."
+          "note": "3 sown seeds/cm² converted with illustrative 25 seeds/g. Actual study genotype seed mass varied greatly. Agronomic pilot; raw-food safety remains unresolved.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D11",
+            "D16",
+            "D36"
+          ]
         }
       ],
       "sownCountCm2": 3,
+      "calendar": {
+        "sow": "Spread the counted planting units evenly for this research pilot. Record the genotype and actual units per gram.",
+        "exit": "Anchored, even emergence; monitor seed decay independently of crop size.",
+        "water": "Follow the named study/seed-lot protocol; soaking is optional unless explicitly part of that recipe. Drain soaked seed and inspect dense roots closely.",
+        "harvest": "Use a species-specific endpoint and count units.",
+        "litCare": "",
+        "demand": 2.3,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D11",
         "harvest": "D11; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4911,10 +7888,37 @@
           ],
           "method": "stack",
           "source": "D11",
-          "note": "3 sown seeds/cm² converted with illustrative 36 seeds/g. Harvest-day reporting conflict; raw-food safety remains unresolved."
+          "note": "3 sown seeds/cm² converted with illustrative 36 seeds/g. Harvest-day reporting conflict; raw-food safety remains unresolved.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D11",
+            "D16",
+            "D36"
+          ]
         }
       ],
       "sownCountCm2": 3,
+      "calendar": {
+        "sow": "Spread the counted planting units evenly for this research pilot. Record the genotype and actual units per gram.",
+        "exit": "Anchored, even emergence; monitor seed decay independently of crop size.",
+        "water": "Follow the named study/seed-lot protocol; soaking is optional unless explicitly part of that recipe. Drain soaked seed and inspect dense roots closely.",
+        "harvest": "Use a species-specific endpoint and count units.",
+        "litCare": "",
+        "demand": 2.3,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D11",
         "harvest": "D11; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -4974,9 +7978,36 @@
           ],
           "method": "stack",
           "source": "D13",
-          "note": "275 g midpoint of supplier’s 200–350 g range; this is juice grass, not a universal cut-leaf microgreen optimum."
+          "note": "275 g midpoint of supplier’s 200–350 g range; this is juice grass, not a universal cut-leaf microgreen optimum.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            8,
+            12
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D13",
+            "D16",
+            "D35"
+          ]
         }
       ],
+      "calendar": {
+        "sow": "Spread drained grain evenly in one layer. Follow the selected grass harvest stage and keep drainage clear.",
+        "exit": "Anchored, even emerging grass shoots.",
+        "water": "Use food-use whole grain, weigh before soaking, and drain. Dense grass roots require drainage and airflow; check at least morning and evening.",
+        "harvest": "Defined cut grass stage; exclude grain/root from cut-shoot yield.",
+        "litCare": "",
+        "demand": 3.7,
+        "waterSources": [
+          "D16",
+          "D35"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
       "provenance": {
         "density": "D13",
         "harvest": "D13; fractional source days rounded to adjacent integer checkpoints where needed",
@@ -5630,6 +8661,60 @@
       "accessed": "2026-11-01",
       "local": null
     },
+    "D31": {
+      "id": "D31",
+      "title": "On The Grow · black-oil sunflower",
+      "url": "https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens",
+      "kind": "Firsthand grower guide",
+      "note": "125 g, rinse-only default or optional 8-hour soak, 15 lb, about four days weighted dark and one day loose blackout. Under lights, about one cup per check once or twice daily.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D32": {
+      "id": "D32",
+      "title": "On The Grow · broccoli cover and watering",
+      "url": "https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens",
+      "kind": "Firsthand grower guide",
+      "note": "Similar broccoli results with 0, 3 and 15 lb added. Uses an empty contact tray for 2–3 days, then about one day of loose blackout. Reports 1–2 US cups/day under lights in its 1020 system.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D33": {
+      "id": "D33",
+      "title": "On The Grow · pea shoots in 1020 trays",
+      "url": "https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide",
+      "kind": "Firsthand grower guide",
+      "note": "1020 section uses 200–260 g, 8–12 h soak, 7–15 lb for about three days, then about one day loose blackout. Tendril peas can tangle if left too long.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D34": {
+      "id": "D34",
+      "title": "Bootstrap Farmer · microgreen cheat sheet",
+      "url": "https://cdn.shopify.com/s/files/1/1338/7937/files/Bootstrap_Farmer_Ultimate_Microgreen_Cheatsheet_Printable_-min.pdf?v=1715959164",
+      "kind": "Supplier chart",
+      "note": "Pages 1–4 give crop-specific soak, cover and dark stages. Several methods differ from MGM. Peas, sunflower and wheatgrass in this chart include presprouting as a separate step.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D35": {
+      "id": "D35",
+      "title": "r/microgreens · water demand discussion",
+      "url": "https://www.reddit.com/r/microgreens/comments/uqvwd0/",
+      "kind": "Grower anecdote",
+      "note": "A grower reports roughly 1 cup/day as their ordinary under-light use and up to twice as much for sunflower, peas, wheatgrass and radish. Context for relative planning only.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D36": {
+      "id": "D36",
+      "title": "Bootstrap Farmer · post-emergence watering",
+      "url": "https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best",
+      "kind": "Supplier technique",
+      "note": "Check moisture after bottom watering. Its example is an application amount, not a crop-specific daily demand.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
     "V01": {
       "id": "V01",
       "title": "On The Grow · Red Acre cabbage seed-to-harvest",
@@ -6038,7 +9123,7 @@
     {
       "id": "coir",
       "name": "Coconut coir",
-      "depth": 0.8,
+      "depth": 0.75,
       "theta": 0.6,
       "capacityBasis": "Illustrative 60% v/v; particle size and compaction matter",
       "note": "Check wetting, salt/EC and buffering. Match nutrition separately; do not equate a coir water reserve with a fertilized mix."

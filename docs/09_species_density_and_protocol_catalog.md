@@ -69,15 +69,18 @@ Botanical identity: *Brassica oleracea var. italica*. Planting unit: single seed
 
 Initial count input: 281 units/g — **Extension approximate count; not this lot’s measurement**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 13 g / 200.00 in² | 12–13 | 2–4 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 22 g / 200.00 in² | 10–10 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 20 g / 200.00 in² | 12–13 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
-| USU · household coir | 28 g / 200.00 in² | 8–12 | 2–4 / stack | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) |
-| On The Grow · silicone | 20 g / 200.00 in² | 9–9 | 3–4 / stack | [V02](https://www.youtube.com/watch?v=JEVF77AHq2w) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 13 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 1 d | 12–13 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
+| MGM · 2024 farm snapshot | 22 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
+| MGM · 2025 seed & germination | 20 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 12–13 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
+| USU · household coir | 28 g / 200.00 in² | Direct sow | 2–4 d / stack, 3 lb | 0 d | 8–12 | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) · [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
+| On The Grow · silicone | 20 g / 200.00 in² | Direct sow | 3–4 d / stack, 0 lb | 1 d | 9–9 | [V02](https://www.youtube.com/watch?v=JEVF77AHq2w) · [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
+| On The Grow · coir and empty cover | 21 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 1 d | 7–10 | [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
+| Bootstrap Farmer · chart comparison | 17.5 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 0 d | 7–10 | [D34](https://cdn.shopify.com/s/files/1/1338/7937/files/Bootstrap_Farmer_Ultimate_Microgreen_Cheatsheet_Printable_-min.pdf?v=1715959164) · [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Scatter dry seed in a single even layer and avoid overlapping piles.
+Water planning default 2 mm/day at late growth. Lower starting scenario; grower reports 1–2 cups/day in its setup.
 
 ### Radish · Daikon
 
@@ -85,13 +88,14 @@ Botanical identity: *Raphanus sativus*. Planting unit: single seed. Use the name
 
 Initial count input: 90 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 22.5 g / 200.00 in² | 8–8 | 2–3 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 40 g / 200.00 in² | 8–8 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 40 g / 200.00 in² | 8–8 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 22.5 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 0 d | 8–8 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 2024 farm snapshot | 40 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 8–8 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 2025 seed & germination | 40 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 8–8 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread the larger radish seed evenly without overlap. The selected cultivar has its own dry seed rate.
+Water planning default 3.1 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Radish · Red Arrow
 
@@ -99,11 +103,12 @@ Botanical identity: *Raphanus sativus*. Planting unit: single seed. Use the name
 
 Initial count input: 90 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 24.5 g / 200.00 in² | 8–8 | 2–3 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 24.5 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 0 d | 8–8 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread the larger radish seed evenly without overlap. The selected cultivar has its own dry seed rate.
+Water planning default 3.1 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Radish · Hong Vit
 
@@ -111,11 +116,12 @@ Botanical identity: *Raphanus sativus*. Planting unit: single seed. Use the name
 
 Initial count input: 90 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 28.5 g / 200.00 in² | 9–10 | 2–3 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 28.5 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 0 d | 9–10 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread the larger radish seed evenly without overlap. The selected cultivar has its own dry seed rate.
+Water planning default 3.1 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Radish · Rambo / Triton
 
@@ -123,13 +129,14 @@ Botanical identity: *Raphanus sativus*. Planting unit: single seed. Creator tabl
 
 Initial count input: 90 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 40 g / 200.00 in² | 8–8 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 40 g / 200.00 in² | 8–8 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 40 g / 200.00 in² | 8–8 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 40 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 8–8 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 2024 farm snapshot | 40 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 8–8 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 2025 seed & germination | 40 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 8–8 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread the larger radish seed evenly without overlap. The selected cultivar has its own dry seed rate.
+Water planning default 3.1 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Red cabbage
 
@@ -137,14 +144,15 @@ Botanical identity: *Brassica oleracea var. capitata*. Planting unit: single see
 
 Initial count input: 280 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 10.5 g / 200.00 in² | 13–14 | 2–4 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 19 g / 200.00 in² | 10–10 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 18 g / 200.00 in² | 13–14 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
-| On The Grow · coir demo | 21 g / 200.00 in² | 13–13 | 3–3 / stack | [V01](https://www.youtube.com/watch?v=D3vnBEvYDZo) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 10.5 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 13–14 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 19 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 18 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 13–14 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| On The Grow · coir demo | 21 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 3 d | 13–13 | [V01](https://www.youtube.com/watch?v=D3vnBEvYDZo) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow evenly. Check the selected recipe for a separate dark stage; the Red Acre coir demonstration includes one.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Green cabbage
 
@@ -152,13 +160,14 @@ Botanical identity: *Brassica oleracea var. capitata*. Planting unit: single see
 
 Initial count input: 280 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 19 g / 200.00 in² | 10–10 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 19 g / 200.00 in² | 10–10 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 18 g / 200.00 in² | 10–10 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 19 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 19 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 18 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 10–10 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow evenly. Check the selected recipe for a separate dark stage; the Red Acre coir demonstration includes one.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Kale · Red Russian
 
@@ -166,13 +175,14 @@ Botanical identity: *Brassica napus (Red Russian type)*. Planting unit: single s
 
 Initial count input: 300 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 10 g / 200.00 in² | 13–14 | 2–4 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 22 g / 200.00 in² | 10–10 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 18 g / 200.00 in² | 13–14 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 10 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 13–14 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 22 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 18 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 13–14 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Keep the medium level and surface-sow. Record the kale type and lot before comparing stands.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Kale · curly / generic farm recipe
 
@@ -180,13 +190,14 @@ Botanical identity: *Brassica oleracea var. acephala*. Planting unit: single see
 
 Initial count input: 300 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 22 g / 200.00 in² | 10–10 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 22 g / 200.00 in² | 10–10 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 18 g / 200.00 in² | 10–10 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 22 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 22 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 18 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 10–10 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Keep the medium level and surface-sow. Record the kale type and lot before comparing stands.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Kohlrabi · Purple
 
@@ -194,13 +205,14 @@ Botanical identity: *Brassica oleracea var. gongylodes*. Planting unit: single s
 
 Initial count input: 300 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 9.5 g / 200.00 in² | 16–16 | 2–4 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 16 g / 200.00 in² | 10–10 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 16 g / 200.00 in² | 16–16 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 9.5 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 16–16 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 16 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 16 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 16–16 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow the purple kohlrabi seed evenly. Use its own harvest checkpoint and check cotyledon stage.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Cauliflower
 
@@ -208,12 +220,13 @@ Botanical identity: *Brassica oleracea var. botrytis*. Planting unit: single see
 
 Initial count input: 280 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 20 g / 200.00 in² | 10–10 | 2–4 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 20 g / 200.00 in² | 10–10 | 2–4 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 20 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 20 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Sow evenly on the surface. Check early for a uniformly rooted stand before removing the cover.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Pak choi · Red
 
@@ -221,12 +234,13 @@ Botanical identity: *Brassica rapa subsp. chinensis*. Planting unit: single seed
 
 Initial count input: 350 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 10.5 g / 200.00 in² | 13–13 | 2–4 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 12 g / 200.00 in² | 17–17 | 2–4 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 10.5 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 13–13 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 12 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread the small Brassica rapa seed in a thin surface layer. Keep the varieties separate when recording seed mass and harvest stage.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Mizuna
 
@@ -234,11 +248,12 @@ Botanical identity: *Brassica rapa var. japonica*. Planting unit: single seed. U
 
 Initial count input: 400 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 9.5 g / 200.00 in² | 12–12 | 2–4 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 9.5 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 12–12 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread the small Brassica rapa seed in a thin surface layer. Keep the varieties separate when recording seed mass and harvest stage.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Tatsoi
 
@@ -246,11 +261,12 @@ Botanical identity: *Brassica rapa subsp. narinosa*. Planting unit: single seed.
 
 Initial count input: 400 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 7.5 g / 200.00 in² | 13–14 | 2–4 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 7.5 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 13–14 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread the small Brassica rapa seed in a thin surface layer. Keep the varieties separate when recording seed mass and harvest stage.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Tokyo Bekana
 
@@ -258,11 +274,12 @@ Botanical identity: *Brassica rapa (pekinensis group)*. Planting unit: single se
 
 Initial count input: 350 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 14 g / 200.00 in² | 10–10 | 2–4 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 14 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 10–10 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread the small Brassica rapa seed in a thin surface layer. Keep the varieties separate when recording seed mass and harvest stage.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Mustard · Garnet Giant
 
@@ -270,13 +287,14 @@ Botanical identity: *Brassica juncea*. Planting unit: single seed. Use the named
 
 Initial count input: 530 units/g — **Extension approximate count; not this lot’s measurement**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 8 g / 200.00 in² | 12–13 | 2–4 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 10 g / 200.00 in² | 17–17 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 10 g / 200.00 in² | 12–13 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 8 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 12–13 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 10 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 10 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 12–13 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Direct-sow the fine mustard seed and mist gently so it does not gather in patches.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Mustard · Ruby Streaks
 
@@ -284,13 +302,14 @@ Botanical identity: *Brassica juncea*. Planting unit: single seed. Use the named
 
 Initial count input: 530 units/g — **Extension approximate count; not this lot’s measurement**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 9.5 g / 200.00 in² | 14–14 | 2–4 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 10 g / 200.00 in² | 17–17 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 10 g / 200.00 in² | 14–14 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 9.5 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 14–14 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 10 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 10 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 14–14 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Direct-sow the fine mustard seed and mist gently so it does not gather in patches.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Arugula / rocket
 
@@ -298,14 +317,15 @@ Botanical identity: *Eruca vesicaria subsp. sativa*. Planting unit: single seed.
 
 Initial count input: 500 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 10 g / 200.00 in² | 14–14 | 2–4 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 12 g / 200.00 in² | 10–10 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 12 g / 200.00 in² | 14–14 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
-| USU · household coir | 10 g / 200.00 in² | 6–8 | 1–2 / stack | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 10 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 14–14 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 12 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 12 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 14–14 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| USU · household coir | 10 g / 200.00 in² | Direct sow | 1–2 d / stack, 3 lb | 0 d | 6–8 | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Direct-sow the sticky seed thinly and keep it from clumping as it wets.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Garden cress · Cressida
 
@@ -313,11 +333,12 @@ Botanical identity: *Lepidium sativum*. Planting unit: single seed. Mucilaginous
 
 Initial count input: 450 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 10.5 g / 200.00 in² | 13–13 | 2–4 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 10.5 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 13–13 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Direct-sow in a single layer. Keep the mucilaginous seed from forming clumps.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Rutabaga
 
@@ -325,11 +346,12 @@ Botanical identity: *Brassica napus (napobrassica group)*. Planting unit: single
 
 Initial count input: 350 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 28 g / 200.00 in² | 8–12 | 1–2 / stack | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 28 g / 200.00 in² | Direct sow | 1–2 d / stack, 3 lb | 0 d | 8–12 | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow the dry seed and check emergence at the earlier end of the selected cover window.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Basil · Genovese
 
@@ -337,15 +359,16 @@ Botanical identity: *Ocimum basilicum*. Planting unit: single seed. Default uses
 
 Initial count input: 830 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 4 g / 200.00 in² | 24–24 | 5–7 / dome | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 4 g / 200.00 in² | 24–24 | 6–7 / dome | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 4 g / 200.00 in² | 24–24 | 6–7 / dome | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
-| Jonah · short-cycle light stack | 4 g / 200.00 in² | 10–14 | 4–6 / light-stack | [D21](https://www.microgreensconsulting.com/post/how-to-grow-basil-microgreens-like-a-pro-step-by-step-for-beginners) |
-| Johnny’s · Italian Large Leaf | 6.5 g / 200.00 in² | 19–19 | 4–7 / dome | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 4 g / 200.00 in² | Direct sow | 5–7 d / dome, 0 lb | 0 d | 24–24 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 4 g / 200.00 in² | Direct sow | 6–7 d / dome, 0 lb | 0 d | 24–24 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 4 g / 200.00 in² | Direct sow | 6–7 d / dome, 0 lb | 0 d | 24–24 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| Jonah · short-cycle light stack | 4 g / 200.00 in² | Direct sow | 4–6 d / light-stack, 0 lb | 0 d | 10–14 | [D21](https://www.microgreensconsulting.com/post/how-to-grow-basil-microgreens-like-a-pro-step-by-step-for-beginners) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| Johnny’s · Italian Large Leaf | 6.5 g / 200.00 in² | Direct sow | 4–7 d / dome, 0 lb | 0 d | 19–19 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow dry basil seed in one layer. Wet seed forms mucilage; use a fine mist and the selected dome or light-stack method.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Basil · Italian Large Leaf
 
@@ -353,11 +376,12 @@ Botanical identity: *Ocimum basilicum*. Planting unit: single seed. Use the name
 
 Initial count input: 830 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 6.5 g / 200.00 in² | 19–19 | 4–7 / dome | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 6.5 g / 200.00 in² | Direct sow | 4–7 d / dome, 0 lb | 0 d | 19–19 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow dry basil seed in one layer. Wet seed forms mucilage; use a fine mist and the selected dome or light-stack method.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Basil · Dark Opal
 
@@ -365,13 +389,14 @@ Botanical identity: *Ocimum basilicum*. Planting unit: single seed. Arthur’s D
 
 Initial count input: 833 units/g — **Different research seed lot; measured 100-seed weight in Arthur et al.**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 5 g / 200.00 in² | 25–26 | 4–7 / dome | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 4 g / 200.00 in² | 24–24 | 6–7 / dome | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 4 g / 200.00 in² | 25–26 | 6–7 / dome | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 5 g / 200.00 in² | Direct sow | 4–7 d / dome, 0 lb | 0 d | 25–26 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 4 g / 200.00 in² | Direct sow | 6–7 d / dome, 0 lb | 0 d | 24–24 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 4 g / 200.00 in² | Direct sow | 6–7 d / dome, 0 lb | 0 d | 25–26 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow dry basil seed in one layer. Wet seed forms mucilage; use a fine mist and the selected dome or light-stack method.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Basil · Red Rubin
 
@@ -379,13 +404,14 @@ Botanical identity: *Ocimum basilicum*. Planting unit: single seed. Use the name
 
 Initial count input: 830 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 6 g / 200.00 in² | 25–26 | 4–7 / dome | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 4 g / 200.00 in² | 24–24 | 6–7 / dome | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 4 g / 200.00 in² | 25–26 | 6–7 / dome | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 6 g / 200.00 in² | Direct sow | 4–7 d / dome, 0 lb | 0 d | 25–26 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 4 g / 200.00 in² | Direct sow | 6–7 d / dome, 0 lb | 0 d | 24–24 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 4 g / 200.00 in² | Direct sow | 6–7 d / dome, 0 lb | 0 d | 25–26 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow dry basil seed in one layer. Wet seed forms mucilage; use a fine mist and the selected dome or light-stack method.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Basil · Lemon
 
@@ -393,12 +419,13 @@ Botanical identity: *Ocimum × africanum / citriodorum trade types*. Planting un
 
 Initial count input: 800 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 4 g / 200.00 in² | 17–17 | 4–7 / dome | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 4 g / 200.00 in² | 17–17 | 4–7 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 4 g / 200.00 in² | Direct sow | 4–7 d / dome, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 4 g / 200.00 in² | Direct sow | 4–7 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow dry basil seed in one layer. Wet seed forms mucilage; use a fine mist and the selected dome or light-stack method.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Shiso · Britton
 
@@ -406,11 +433,13 @@ Botanical identity: *Perilla frutescens var. crispa*. Planting unit: single seed
 
 Initial count input: 227 units/g — **Different research seed lot; measured 100-seed weight in Arthur et al.**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 11.5 g / 200.00 in² | 16–16 | 4–7 / dome | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 11.5 g / 200.00 in² | Direct sow | 4–7 d / dome, 0 lb | 0 d | 16–16 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| Bootstrap Farmer · chart comparison | 12 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 5 d | 18–24 | [D34](https://cdn.shopify.com/s/files/1/1338/7937/files/Bootstrap_Farmer_Ultimate_Microgreen_Cheatsheet_Printable_-min.pdf?v=1715959164) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow evenly, verify the lot and monitor the seed surface through the longer emergence window.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Shiso · Green
 
@@ -418,12 +447,14 @@ Botanical identity: *Perilla frutescens var. crispa*. Planting unit: single seed
 
 Initial count input: 227 units/g — **Different research seed lot; measured 100-seed weight in Arthur et al.**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 12 g / 200.00 in² | 17–17 | 5–5 / dome | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 12 g / 200.00 in² | 17–17 | 5–5 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 12 g / 200.00 in² | Direct sow | 5–5 d / dome, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 12 g / 200.00 in² | Direct sow | 5–5 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| Bootstrap Farmer · chart comparison | 12 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 5 d | 18–24 | [D34](https://cdn.shopify.com/s/files/1/1338/7937/files/Bootstrap_Farmer_Ultimate_Microgreen_Cheatsheet_Printable_-min.pdf?v=1715959164) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow evenly, verify the lot and monitor the seed surface through the longer emergence window.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Shiso · Purple
 
@@ -431,12 +462,14 @@ Botanical identity: *Perilla frutescens var. crispa*. Planting unit: single seed
 
 Initial count input: 227 units/g — **Different research seed lot; measured 100-seed weight in Arthur et al.**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 8 g / 200.00 in² | 24–24 | 5–5 / dome | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 8 g / 200.00 in² | 24–24 | 5–5 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 8 g / 200.00 in² | Direct sow | 5–5 d / dome, 0 lb | 0 d | 24–24 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 8 g / 200.00 in² | Direct sow | 5–5 d / stack, 0 lb | 0 d | 24–24 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| Bootstrap Farmer · chart comparison | 12 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 5 d | 18–24 | [D34](https://cdn.shopify.com/s/files/1/1338/7937/files/Bootstrap_Farmer_Ultimate_Microgreen_Cheatsheet_Printable_-min.pdf?v=1715959164) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow evenly, verify the lot and monitor the seed surface through the longer emergence window.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Cilantro · whole fruit
 
@@ -444,13 +477,15 @@ Botanical identity: *Coriandrum sativum*. Planting unit: whole two-mericarp frui
 
 Initial count input: 90 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 40 g / 200.00 in² | 20–20 | 7–8 / stack | [D18](https://microgreenmanager.com/blog/growing-cilantro-microgreens) |
-| MGM · 2024 farm snapshot | 40 g / 200.00 in² | 17–17 | 7–7 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 40 g / 200.00 in² | 20–20 | 7–7 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 40 g / 200.00 in² | Direct sow | 7–8 d / stack, 0 lb | 0 d | 20–20 | [D18](https://microgreenmanager.com/blog/growing-cilantro-microgreens) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 40 g / 200.00 in² | Direct sow | 7–7 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 40 g / 200.00 in² | Direct sow | 7–7 d / stack, 0 lb | 0 d | 20–20 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| Bootstrap Farmer · chart comparison | 35 g / 200.00 in² | 2–4 h | 7–9 d / stack, 0 lb | 0 d | 15–20 | [D34](https://cdn.shopify.com/s/files/1/1338/7937/files/Bootstrap_Farmer_Ultimate_Microgreen_Cheatsheet_Printable_-min.pdf?v=1715959164) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread whole fruits evenly. Retain the thin top dress when the selected recipe calls for it.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Cilantro · split mericarps
 
@@ -458,14 +493,16 @@ Botanical identity: *Coriandrum sativum*. Planting unit: split mericarp. Jonah r
 
 Initial count input: 180 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 20 g / 200.00 in² | 15–18 | 6–7 / stack | [D22](https://www.microgreensconsulting.com/post/how-to-grow-cilantro-microgreens-like-a-pro) |
-| MGM · 2024 farm snapshot | 40 g / 200.00 in² | 17–17 | 7–7 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 40 g / 200.00 in² | 15–18 | 7–7 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
-| On The Grow · split cilantro | 10 g / 200.00 in² | 17–17 | 5–6 / stack | [V06](https://www.youtube.com/watch?v=r7nyPY3Saak) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 20 g / 200.00 in² | Direct sow | 6–7 d / stack, 0 lb | 0 d | 15–18 | [D22](https://www.microgreensconsulting.com/post/how-to-grow-cilantro-microgreens-like-a-pro) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 40 g / 200.00 in² | Direct sow | 7–7 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 40 g / 200.00 in² | Direct sow | 7–7 d / stack, 0 lb | 0 d | 15–18 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| On The Grow · split cilantro | 10 g / 200.00 in² | Direct sow | 5–6 d / stack, 0 lb | 0 d | 17–17 | [V06](https://www.youtube.com/watch?v=r7nyPY3Saak) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| Bootstrap Farmer · chart comparison | 30 g / 200.00 in² | 2–4 h | 7–9 d / stack, 0 lb | 0 d | 15–20 | [D34](https://cdn.shopify.com/s/files/1/1338/7937/files/Bootstrap_Farmer_Ultimate_Microgreen_Cheatsheet_Printable_-min.pdf?v=1715959164) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread split mericarps evenly and check any thin cover for dry spots.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Dill
 
@@ -473,13 +510,14 @@ Botanical identity: *Anethum graveolens*. Planting unit: single seed. Use the na
 
 Initial count input: 700 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 20 g / 200.00 in² | 17–17 | 6–6 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 20 g / 200.00 in² | 17–17 | 6–6 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 20 g / 200.00 in² | 17–17 | 6–6 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 20 g / 200.00 in² | Direct sow | 6–6 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 20 g / 200.00 in² | Direct sow | 6–6 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 20 g / 200.00 in² | Direct sow | 6–6 d / stack, 0 lb | 0 d | 17–17 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Direct-sow evenly and maintain surface moisture through slow emergence. Check for recognizably feathery leaves at harvest.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Fennel
 
@@ -487,13 +525,15 @@ Botanical identity: *Foeniculum vulgare*. Planting unit: single seed. Use the na
 
 Initial count input: 250 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 20 g / 200.00 in² | 17–17 | 6–6 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 20 g / 200.00 in² | 17–17 | 6–6 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 20 g / 200.00 in² | 17–17 | 6–6 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 20 g / 200.00 in² | Direct sow | 6–6 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 20 g / 200.00 in² | Direct sow | 6–6 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 20 g / 200.00 in² | Direct sow | 6–6 d / stack, 0 lb | 0 d | 17–17 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| Bootstrap Farmer · chart comparison | 25 g / 200.00 in² | Direct sow | 3–4 d / stack, 0 lb | 3 d | 16–20 | [D34](https://cdn.shopify.com/s/files/1/1338/7937/files/Bootstrap_Farmer_Ultimate_Microgreen_Cheatsheet_Printable_-min.pdf?v=1715959164) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Direct-sow the dry seed. The Bootstrap Farmer comparison includes a distinct loose dark stage.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Chervil
 
@@ -501,13 +541,14 @@ Botanical identity: *Anthriscus cerefolium*. Planting unit: single seed. Use the
 
 Initial count input: 450 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 20 g / 200.00 in² | 17–17 | 6–6 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 20 g / 200.00 in² | 17–17 | 6–6 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 20 g / 200.00 in² | 17–17 | 6–6 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 20 g / 200.00 in² | Direct sow | 6–6 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 20 g / 200.00 in² | Direct sow | 6–6 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 20 g / 200.00 in² | Direct sow | 6–6 d / stack, 0 lb | 0 d | 17–17 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Direct-sow in an even layer and check surface moisture through the longer cover phase.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Parsley
 
@@ -515,13 +556,14 @@ Botanical identity: *Petroselinum crispum*. Planting unit: single seed. Use the 
 
 Initial count input: 650 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 12 g / 200.00 in² | 24–24 | 10–10 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 12 g / 200.00 in² | 24–24 | 10–10 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 12 g / 200.00 in² | 24–24 | 10–10 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 12 g / 200.00 in² | Direct sow | 10–10 d / stack, 0 lb | 0 d | 24–24 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 12 g / 200.00 in² | Direct sow | 10–10 d / stack, 0 lb | 0 d | 24–24 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 12 g / 200.00 in² | Direct sow | 10–10 d / stack, 0 lb | 0 d | 24–24 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Direct-sow evenly. Its longer covered phase calls for repeated moisture checks without pooling.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Celery
 
@@ -529,13 +571,14 @@ Botanical identity: *Apium graveolens*. Planting unit: single seed. Species over
 
 Initial count input: 2000 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 4 g / 200.00 in² | 24–24 | 10–10 / dome | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 4 g / 200.00 in² | 24–24 | 10–10 / dome | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 4 g / 200.00 in² | 24–24 | 10–10 / dome | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 4 g / 200.00 in² | Direct sow | 10–10 d / dome, 0 lb | 0 d | 24–24 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 4 g / 200.00 in² | Direct sow | 10–10 d / dome, 0 lb | 0 d | 24–24 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 4 g / 200.00 in² | Direct sow | 10–10 d / dome, 0 lb | 0 d | 24–24 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Scatter the tiny seed over a level, moist surface. Use a vented dome when the selected recipe specifies it.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Beet · Bull’s Blood
 
@@ -543,13 +586,15 @@ Botanical identity: *Beta vulgaris (beet group)*. Planting unit: multigerm seed 
 
 Initial count input: 53 units/g — **Extension approximate count; not this lot’s measurement**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 23 g / 200.00 in² | 17–17 | 4–6 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 35 g / 200.00 in² | 15–15 | 5–5 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 40 g / 200.00 in² | 17–17 | 5–5 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 23 g / 200.00 in² | Direct sow | 4–6 d / stack, 0 lb | 0 d | 17–17 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 35 g / 200.00 in² | Direct sow | 5–5 d / stack, 0 lb | 0 d | 15–15 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 40 g / 200.00 in² | Direct sow | 5–5 d / stack, 0 lb | 0 d | 17–17 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| Bootstrap Farmer · chart comparison | 25 g / 200.00 in² | 4–8 h | 4–5 d / stack, 0 lb | 0 d | 10–14 | [D34](https://cdn.shopify.com/s/files/1/1338/7937/files/Bootstrap_Farmer_Ultimate_Microgreen_Cheatsheet_Printable_-min.pdf?v=1715959164) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Distribute seed clusters evenly. Several seedlings can emerge from one cluster, so avoid tightly packed seed piles.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Chard · Bright Lights
 
@@ -557,13 +602,15 @@ Botanical identity: *Beta vulgaris (cicla group)*. Planting unit: multigerm seed
 
 Initial count input: 50 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 31.5 g / 200.00 in² | 16–17 | 4–6 / stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 35 g / 200.00 in² | 15–15 | 5–5 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 40 g / 200.00 in² | 16–17 | 5–5 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 31.5 g / 200.00 in² | Direct sow | 4–6 d / stack, 0 lb | 0 d | 16–17 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 35 g / 200.00 in² | Direct sow | 5–5 d / stack, 0 lb | 0 d | 15–15 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 40 g / 200.00 in² | Direct sow | 5–5 d / stack, 0 lb | 0 d | 16–17 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| Bootstrap Farmer · chart comparison | 25 g / 200.00 in² | 4–8 h | 4–5 d / stack, 0 lb | 0 d | 10–14 | [D34](https://cdn.shopify.com/s/files/1/1338/7937/files/Bootstrap_Farmer_Ultimate_Microgreen_Cheatsheet_Printable_-min.pdf?v=1715959164) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Distribute the multigerm clusters in one layer. Keep any top dress thin so shoots can emerge.
+Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Amaranth · Garnet Red
 
@@ -571,13 +618,14 @@ Botanical identity: *Amaranthus tricolor / cruentus trade types*. Planting unit:
 
 Initial count input: 1200 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 7.5 g / 200.00 in² | 17–18 | 2–3 / light-stack | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 10 g / 200.00 in² | 13–13 | 2–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| Jonah · 4–6 g method | 5 g / 200.00 in² | 14–16 | 2–2 / light-stack | [D23](https://www.microgreensconsulting.com/post/how-to-grow-red-amaranth-microgreens-like-a-pro-beginners-growing-guide) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 7.5 g / 200.00 in² | Direct sow | 2–3 d / light-stack, 0 lb | 0 d | 17–18 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 10 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 0 d | 13–13 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| Jonah · 4–6 g method | 5 g / 200.00 in² | Direct sow | 2–2 d / light-stack, 0 lb | 0 d | 14–16 | [D23](https://www.microgreensconsulting.com/post/how-to-grow-red-amaranth-microgreens-like-a-pro-beginners-growing-guide) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Scatter the fine seed without piling. Use a gentle mist so seeds stay where they land.
+Water planning default 1.5 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Pea · field / basic
 
@@ -585,14 +633,16 @@ Botanical identity: *Pisum sativum*. Planting unit: single seed. USU’s lower s
 
 Initial count input: 6.6 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 150 g / 200.00 in² | 8–10 | 3–3 / stack | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) |
-| MGM · 2024 farm snapshot | 300 g / 200.00 in² | 9–9 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 300 g / 200.00 in² | 8–10 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
-| MGM · 300 g commercial | 300 g / 200.00 in² | 9–9 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 150 g / 200.00 in² | 6 h | 3–3 d / stack, 3 lb | 0 d | 8–10 | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 2024 farm snapshot | 300 g / 200.00 in² | 6–12 h | 3–3 d / stack, 10 lb | 0 d | 9–9 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D33](https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 2025 seed & germination | 300 g / 200.00 in² | 6–12 h | 3–3 d / stack, 10 lb | 0 d | 8–10 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D33](https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 300 g commercial | 300 g / 200.00 in² | 6–12 h | 3–3 d / stack, 10 lb | 0 d | 9–9 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D33](https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| On The Grow · 1020 coir | 230 g / 200.00 in² | 8–12 h | 3–3 d / stack, 10 lb | 1 d | 8–14 | [D33](https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread drained peas in one even layer, with room for swelling and rooting.
+Water planning default 3.7 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Pea · tendril
 
@@ -600,13 +650,15 @@ Botanical identity: *Pisum sativum*. Planting unit: single seed. MGM specifies o
 
 Initial count input: 5 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 300 g / 200.00 in² | 11–11 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 300 g / 200.00 in² | 11–11 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 300 g / 200.00 in² | 11–11 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 300 g / 200.00 in² | 6–12 h | 3–3 d / stack, 10 lb | 0 d | 11–11 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D33](https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 2024 farm snapshot | 300 g / 200.00 in² | 6–12 h | 3–3 d / stack, 10 lb | 0 d | 11–11 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D33](https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 2025 seed & germination | 300 g / 200.00 in² | 6–12 h | 3–3 d / stack, 10 lb | 0 d | 11–11 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D33](https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| On The Grow · 1020 coir | 230 g / 200.00 in² | 8–12 h | 3–3 d / stack, 10 lb | 1 d | 8–14 | [D33](https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread drained peas in one layer. Cut promptly once the shoots are tender and before tendrils tangle.
+Water planning default 3.7 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Sunflower · black oil
 
@@ -614,17 +666,20 @@ Botanical identity: *Helianthus annuus*. Planting unit: single seed. 120 g is th
 
 Initial count input: 16 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 120 g / 200.00 in² | 9–9 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 120 g / 200.00 in² | 9–9 | 3–3 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 130 g / 200.00 in² | 9–9 | 3–3 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
-| USU · 48 g household | 48 g / 200.00 in² | 9–10 | 3–3 / stack | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) |
-| Donny · 5 oz / 4 h soak | 141.748 g / 200.00 in² | 9–11 | 3–4 / stack | [V13](https://www.youtube.com/watch?v=RzCYKPnvOr4) |
-| Jonah · 130 g example | 130 g / 200.00 in² | 8–12 | 3–4 / stack | [V11](https://www.youtube.com/watch?v=1eYZwHDdeEk) |
-| On The Grow · 125 g demo | 125 g / 200.00 in² | 9–10 | 3–4 / stack | [V03](https://www.youtube.com/watch?v=kS_Zmu5E7VY) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Sunflower · overnight coir starter | 120 g / 200.00 in² | 6–12 h | 3–3 d / stack, 15 lb | 1 d | 9–9 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 2024 farm snapshot | 120 g / 200.00 in² | 6–12 h | 3–3 d / stack, 15 lb | 1 d | 9–9 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 2025 seed & germination | 130 g / 200.00 in² | 6–12 h | 3–3 d / stack, 15 lb | 1 d | 9–9 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| USU · 48 g household | 48 g / 200.00 in² | 12 h | 3–3 d / stack, 3 lb | 0 d | 9–10 | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| Donny · 5 oz / 4 h soak | 141.748 g / 200.00 in² | 4 h | 3–4 d / stack, 14 lb | 0 d | 9–11 | [V13](https://www.youtube.com/watch?v=RzCYKPnvOr4) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| Jonah · 130 g example | 130 g / 200.00 in² | 4–12 h | 3–4 d / stack, 15 lb | 0 d | 8–12 | [V11](https://www.youtube.com/watch?v=1eYZwHDdeEk) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| On The Grow · 125 g demo | 125 g / 200.00 in² | 6–12 h | 3–4 d / stack, 15 lb | 0 d | 9–10 | [V03](https://www.youtube.com/watch?v=kS_Zmu5E7VY) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| On The Grow · rinse, then sow | 125 g / 200.00 in² | Direct sow | 4–4 d / stack, 15 lb | 1 d | 8–10 | [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| On The Grow · 8 h soak option | 125 g / 200.00 in² | 8 h | 4–4 d / stack, 15 lb | 1 d | 8–10 | [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread black-oil seed in one layer, separate clumps and use a stable solid tray under the load.
+Water planning default 3.7 mm/day at late growth. High-use planning scenario; grower example is about one cup at a time, once or twice daily.
 
 ### Lettuce
 
@@ -632,13 +687,14 @@ Botanical identity: *Lactuca sativa*. Planting unit: single seed. Use the named 
 
 Initial count input: 1000 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 10 g / 200.00 in² | 17–17 | 5–5 / dome | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 10 g / 200.00 in² | 17–17 | 5–5 / dome | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 10 g / 200.00 in² | 17–17 | 5–5 / dome | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 10 g / 200.00 in² | Direct sow | 5–5 d / dome, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 10 g / 200.00 in² | Direct sow | 5–5 d / dome, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 10 g / 200.00 in² | Direct sow | 5–5 d / dome, 0 lb | 0 d | 17–17 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow and keep the seed surface lightly moist. The farm dome method uses a vented cover.
+Water planning default 1.7 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Bulb onion
 
@@ -646,13 +702,14 @@ Botanical identity: *Allium cepa*. Planting unit: single seed. Use the named sou
 
 Initial count input: 250 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 35 g / 200.00 in² | 17–17 | 6–6 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 35 g / 200.00 in² | 17–17 | 6–6 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 35 g / 200.00 in² | 17–17 | 6–6 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 35 g / 200.00 in² | Direct sow | 6–6 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 35 g / 200.00 in² | Direct sow | 6–6 d / stack, 0 lb | 0 d | 17–17 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 35 g / 200.00 in² | Direct sow | 6–6 d / stack, 0 lb | 0 d | 17–17 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Sow the dry seed evenly and check for anchored green loops before removing the cover.
+Water planning default 1.7 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Scallion · Evergreen Hardy White
 
@@ -660,11 +717,12 @@ Botanical identity: *Allium fistulosum*. Planting unit: single seed. 375 g/m² w
 
 Initial count input: 416.67 units/g — **Different research seed lot; measured 100-seed weight in Arthur et al.**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 375 g / 1550.00 in² | 16–18 | 5–10 / stack | [D07](https://doi.org/10.48130/tihort-0025-0032) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 375 g / 1550.00 in² | Direct sow | 5–10 d / stack, 0 lb | 0 d | 16–18 | [D07](https://doi.org/10.48130/tihort-0025-0032) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Sow the dry seed evenly and check for anchored green loops before removing the cover.
+Water planning default 1.7 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Common chives
 
@@ -672,11 +730,12 @@ Botanical identity: *Allium schoenoprasum*. Planting unit: single seed. 300 g/m�
 
 Initial count input: 769.23 units/g — **Different research seed lot; measured 100-seed weight in Arthur et al.**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 300 g / 1550.00 in² | 19–19 | 5–10 / stack | [D07](https://doi.org/10.48130/tihort-0025-0032) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 300 g / 1550.00 in² | Direct sow | 5–10 d / stack, 0 lb | 0 d | 19–19 | [D07](https://doi.org/10.48130/tihort-0025-0032) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Sow the dry seed evenly and check for anchored green loops before removing the cover.
+Water planning default 1.7 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Nasturtium
 
@@ -684,13 +743,15 @@ Botanical identity: *Tropaeolum majus*. Planting unit: single seed. Use the name
 
 Initial count input: 7 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 100 g / 200.00 in² | 10–10 | 5–5 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 100 g / 200.00 in² | 10–10 | 5–5 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 90 g / 200.00 in² | 10–10 | 5–5 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 100 g / 200.00 in² | Direct sow | 5–5 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 100 g / 200.00 in² | Direct sow | 5–5 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 90 g / 200.00 in² | Direct sow | 5–5 d / stack, 0 lb | 0 d | 10–10 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| Bootstrap Farmer · chart comparison | 100 g / 200.00 in² | 8–12 h | 7–9 d / stack, 0 lb | 0 d | 15–20 | [D34](https://cdn.shopify.com/s/files/1/1338/7937/files/Bootstrap_Farmer_Ultimate_Microgreen_Cheatsheet_Printable_-min.pdf?v=1715959164) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Sow in one layer with space between large seeds. Follow the selected recipe for soaking and top dress.
+Water planning default 2.3 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Sorrel · Red Veined
 
@@ -698,12 +759,13 @@ Botanical identity: *Rumex sanguineus*. Planting unit: single seed. Use the name
 
 Initial count input: 1000 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 3.5 g / 200.00 in² | 24–24 | 4–7 / dome | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
-| MGM · 2024 farm snapshot | 1 g / 200.00 in² | 31–31 | 4–7 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 3.5 g / 200.00 in² | Direct sow | 4–7 d / dome, 0 lb | 0 d | 24–24 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 1 g / 200.00 in² | Direct sow | 4–7 d / stack, 0 lb | 0 d | 31–31 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Surface-sow fine seed evenly. Keep the seed zone moist under the dome without saturating it.
+Water planning default 1.5 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Cantaloupe
 
@@ -711,13 +773,14 @@ Botanical identity: *Cucumis melo*. Planting unit: single seed. Use the named so
 
 Initial count input: 35 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 30 g / 200.00 in² | 10–10 | 4–4 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2024 farm snapshot | 30 g / 200.00 in² | 10–10 | 4–4 / stack | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) |
-| MGM · 2025 seed & germination | 30 g / 200.00 in² | 10–10 | 4–4 / stack | [D04](https://microgreenmanager.com/blog/germination-id-guides) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 30 g / 200.00 in² | Direct sow | 4–4 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2024 farm snapshot | 30 g / 200.00 in² | Direct sow | 4–4 d / stack, 0 lb | 0 d | 10–10 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
+| MGM · 2025 seed & germination | 30 g / 200.00 in² | Direct sow | 4–4 d / stack, 0 lb | 0 d | 10–10 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread the seeds in one layer for even contact. Keep the melon seeds moist and aerated.
+Water planning default 2.3 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Marigold · Gem
 
@@ -725,11 +788,12 @@ Botanical identity: *Tagetes tenuifolia*. Planting unit: single seed. Use the na
 
 Initial count input: 800 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 4 g / 200.00 in² | 18–20 | 3–5 / dome | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 4 g / 200.00 in² | Direct sow | 3–5 d / dome, 0 lb | 0 d | 18–20 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Use food-use Gem marigold seed and sow evenly. Check for sufficient true-leaf development before harvest.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Chia
 
@@ -737,11 +801,12 @@ Botanical identity: *Salvia hispanica*. Planting unit: single seed. 120 g/m² co
 
 Initial count input: 800 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 120 g / 1550.00 in² | 12–12 | 2–2 / dome | [D14](https://doi.org/10.3390/horticulturae12040439) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 120 g / 1550.00 in² | Direct sow | 2–2 d / dome, 0 lb | 0 d | 12–12 | [D14](https://doi.org/10.3390/horticulturae12040439) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Direct-sow the mucilaginous seed on moist medium. Use a fine mist if the surface dries.
+Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Fenugreek / methi
 
@@ -749,11 +814,12 @@ Botanical identity: *Trigonella foenum-graecum*. Planting unit: single seed. Pub
 
 Initial count input: 65 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 25 g / 200.00 in² | 10–12 | 2–4 / stack | [D12](https://doi.org/10.56093/ijas.v96i6.171592) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 25 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 10–12 | [D12](https://doi.org/10.56093/ijas.v96i6.171592) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Sow evenly and track the lot and tray dimensions. The selected density study has conflicting tray dimensions.
+Water planning default 2.3 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Mung bean · research pilot
 
@@ -761,11 +827,12 @@ Botanical identity: *Vigna radiata*. Planting unit: single seed. 3 sown seeds/cm
 
 Initial count input: 25 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 154.838 g / 200.00 in² | 7–9 | 2–4 / stack | [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 154.838 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 7–9 | [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread the counted planting units evenly for this research pilot. Record the genotype and actual units per gram.
+Water planning default 2.3 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Lentil · research pilot
 
@@ -773,11 +840,12 @@ Botanical identity: *Lens culinaris*. Planting unit: single seed. 3 sown seeds/c
 
 Initial count input: 36 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 107.527 g / 200.00 in² | 7–11 | 2–4 / stack | [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 107.527 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 7–11 | [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread the counted planting units evenly for this research pilot. Record the genotype and actual units per gram.
+Water planning default 2.3 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ### Wheatgrass
 
@@ -785,11 +853,12 @@ Botanical identity: *Triticum aestivum*. Planting unit: single seed. 275 g midpo
 
 Initial count input: 30 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-| Recipe | Original dry g / reference area | Harvest d | Covered d / method | Source |
-|---|---|---|---|---|
-| Research starting plan | 275 g / 200.00 in² | 10–12 | 2–3 / stack | [D13](https://commercial.sprouting.com/pages/growing-a-microgreen-business) |
+| Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
+|---|---|---|---|---|---|---|
+| Research starting plan | 275 g / 200.00 in² | 8–12 h | 2–3 d / stack, 0 lb | 0 d | 10–12 | [D13](https://commercial.sprouting.com/pages/growing-a-microgreen-business) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 
-Timing notes: D04 when matching crop table exists; otherwise functional-group editorial window. Named recipe when explicit; otherwise editorial window, not an optimum.
+Spread drained grain evenly in one layer. Follow the selected grass harvest stage and keep drainage clear.
+Water planning default 3.7 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 ## Source recovery
 

@@ -1,6 +1,6 @@
 # Coco coir: dry grams, rehydration water and shallow-tray fill
 
-*Added November 1, 2026; fill-height recommendations corrected November 2, 2026. Built around the supplied Back to the Roots 10 lb / 51 US quart brick notes and Bootstrap Farmer shallow 1020 trays.*
+*Added November 1, 2026; fill-height target updated November 4, 2026. Built around the supplied Back to the Roots 10 lb / 51 US quart brick notes and Bootstrap Farmer shallow 1020 trays.*
 
 [Open the coir calculator and visualizer](site/dist/coir.html) · [Detailed source notebook](source_docs/coir/research_resource_log_2026-11-01.txt)
 
@@ -8,16 +8,15 @@
 
 For a small sowing batch, separate and hydrate the portion you will sow. Keep the rest of the brick dry. This is a practical storage choice, not a demonstrated yield benefit. Whole-brick hydration makes sense when the material will be used promptly and there is adequate clean mixing/storage space. Wetting one edge can make separation easier, but that edge is no longer dry coir for weighing. [C0]
 
-The default is now the documented economical baseline: six expanded cups for all four crops. The original 6/8/6/8-cup split was an experimental assumption, not a standard, and has been removed as the default. The separate **Seed clearance trial** implements a higher bed for broccoli/radish and a lower bed for pea/sunflower; exact volumes in that adaptation are a practical trial.
+The starter plan targets **½ inch from the rim of the drainage tray to the leveled coir before sowing**. Working backward from the published 1¼-inch outside height and 19¾ × 9½-inch inside floor gives a 0.75-inch bed and about 9.75 US cups in a rectangular model. The preset uses **10 cups**, which gives roughly 0.48 inch of headspace in that model. The actual inside depth, taper, ridges and leveling can shift the result. [C3]
 
-| Crop | Family | Expanded US cups per tray | Exact label-derived dry coir | Practical weigh-out | Starting water |
-| --- | --- | ---: | ---: | ---: | ---: |
-| Broccoli Waltham | Brassicaceae | 6 | 133.4 g | 135 g | 540 mL |
-| Radish Daikon | Brassicaceae | 6 | 133.4 g | 135 g | 540 mL |
-| Speckled pea | Fabaceae | 6 | 133.4 g | 135 g | 540 mL |
-| Black-oil sunflower | Asteraceae | 6 | 133.4 g | 135 g | 540 mL |
+| Fill per tray | Estimated headspace | Exact dry coir | Practical weigh-out | Starting water |
+| --- | ---: | ---: | ---: | ---: |
+| 6 cups, grower comparison | 0.79 in | 133.4 g | 135 g | 540 mL |
+| 8 cups, extension comparison | 0.63 in | 177.9 g | 180 g | 720 mL |
+| 10 cups, ½-inch target | 0.48 in | 222.4 g | 225 g | 900 mL |
 
-The calculator rounds **up to the next 5 g per tray**, then calculates water from that actual weigh-out. You can select 1 g rounding or exact conversion. Expanded volume is a target; rounding introduces a small surplus. One of each crop at the six-cup baseline totals **540 g coir, 2,160 mL starting water, 24 cups / 6 US qt / 5.68 L expanded target, and about $2.38 coir cost** at the supplied $19.98 brick price. That price is an editable purchase-history input, not a promised current price. [C0, C5]
+The calculator rounds **up to the next 5 g per tray** and calculates water from that weigh-out. The default 10-cup plan for one of each crop totals **900 g dry coir, 3.60 L starting water and 40 cups / 10 US qt / 9.46 L expanded coir**, about $3.96 at the supplied $19.98 brick price. The price and weighing precision are editable. [C0, C5]
 
 Six cups follows On The Grow's current general shallow-tray guide. Its article lists the same external/bottom dimensions as these Bootstrap trays, but its stated six-cup medium capacity does not geometrically describe a full 1¼-inch bed. Treat it as a use amount, not a rim-height measurement. Eight cups for radish and sunflower in the original version was a moisture-buffering assumption with no demonstrated requirement; it should not have been the crop-specific default. The 4 mL/g starting-water factor remains a trial assumption until measured. [C0, C1, C3]
 
@@ -38,7 +37,7 @@ The distinction is **clearance and harvest access**, not a rule that larger seed
 
 There is no single crop-specific fill standard across these systems. Generic deeper-container instructions cannot all fit a 1¼-inch tray. Johnny's 1½–2-inch media guidance and Maryland Extension's 1–1½-inch guidance describe other depth choices; neither is a feasible automatic target for this entire shallow-tray range. [C25, C26]
 
-### Two useful ways to start
+### Comparison fills
 
 **Copy the coir specialist's economical use amount:** six cups per tray, about 135 g dry coir and 540 mL starting water. Use this common baseline to learn your brick and irrigation behavior.
 
@@ -90,7 +89,7 @@ Your tray manufacturer specifies 1¼-inch height, a 19¾ × 9½-inch interior bo
 
 The 13.5-cup conversion is slightly above 300 g, so rounding up to 5 g gives **305 g**. Earlier supplied text rounded it loosely to 300 g. The table deliberately uses one consistent rounding rule.
 
-Real walls taper; the base has ridges; coir compacts. These are calculated geometry examples, not measured layer heights. The diagram has one common vertical scale across crops. The 12-cup preset is a near-rim comparison, not a claim that more medium improves harvest. Check the real height with a ruler. [C0, C3]
+Real walls taper; the base has ridges; coir compacts. These are calculated geometry examples, not measured layer heights. The diagram has one common vertical scale across crops. The 12-cup preset is a near-rim comparison, not a claim that more medium improves harvest. Lay a straightedge across the planting tray rim and measure down to the leveled coir. Add or remove coir to leave the desired ½-inch gap, then record the cups actually used. [C0, C3]
 
 ## Separate, hydrate, fill and store
 
@@ -130,12 +129,12 @@ One sample has unknown repeatability. Repeat with a consistent moisture endpoint
 ## Equations and variable roles
 
 - Controlled recipe inputs: whole-number tray counts and expanded cups per tray.
-- Goal presets: source-baseline six cups, USU-style eight cups, uniform near-rim twelve cups and a clearly labeled 12/12/8/8-cup seed-clearance adaptation.
+- Goal presets: about ½ inch below the rim (10 cups by geometry), source-baseline six cups, USU-style eight cups, uniform near-rim twelve cups and a clearly labeled 12/12/8/8-cup seed-clearance adaptation.
 - Label inputs: brick dry grams and expanded US quarts; these jointly set estimated g/cup.
 - Locked starting ratio: 4 mL/g until replaced by an actual retained-water measurement.
 - Measured inputs: sample dry mass, expanded cups, moisture observation and optional retained water.
 - Derived results: dry grams, starting water, expanded liters/quarts, depth/headroom, fraction of brick and coir-only cost.
-- Stop states: invalid counts/quantities, over-four-tray batch, partial/invalid enabled calibration, dry or dripping calibration sample. A batch exceeding one brick gets an explicit shortfall message.
+- Stop states: invalid counts/quantities, partial/invalid enabled calibration, dry or dripping calibration sample. A batch exceeding one brick gets an explicit shortfall message.
 
 `g_per_cup = brick_g / (4 × brick_US_qt)`
 
@@ -149,6 +148,8 @@ One sample has unknown repeatability. Repeat with a consistent moisture endpoint
 
 `expanded_L = sum(count_i × cups_i) × 236.5882365 / 1000`
 
+`cups_at_target_gap = (1.25 − gap_in) × 19.75 × 9.5 × 16.387064 ÷ 236.5882365`
+
 `depth_in = cups × 236.5882365 / (19.75 × 9.5 × 16.387064)`
 
 `coir_cost = batch_dry_g / whole_brick_g × whole_brick_price`
@@ -159,11 +160,21 @@ The exact-conversion option skips weighing rounding. Change one input at a time:
 
 ## Creator demonstrations and source limits
 
-The pasted conversation mentions a November 2023 brick video, a seven-tray claim for a 1.4 lb brick and a 2019 seed-to-harvest demonstration. The preparation-video URL is missing from the export. Its date, dimensions and exact spoken quantities are **not independently verified here**. In particular, do not transfer a 7×14 kit's mass to a 1020 tray.
+The [On The Grow coir preparation video description](https://www.youtube.com/watch?v=-ZjiBdGCWKE) gives roughly six cups for a **7×14 tray**. Its separate written guide gives roughly six cups for most crops in its shallow **1020** method. They describe two setups. The description provides the smaller tray quantity, while the written 1020 guide provides the six-cup comparison in this calculator. [C1]
+
+The Reddit threads show two recurring approaches: a thinner bed to save coir and a fuller shallow tray for harvest access and more moisture reserve. The discussions include several different tray depths and leveling practices. These reports give a useful range of working setups and leave the actual rim gap to be measured on your tray.
+
+- One grower uses 4–8 cups of hydrated coir by crop, including 6–8 for radish or sunflower. [Dry coir per tray](https://www.reddit.com/r/microgreens/comments/g50nwm/)
+- The original poster fills a little past halfway. Replies include a grower using 6 cups of medium and another filling shallow trays to the top. [How much substrate do you use?](https://www.reddit.com/r/microgreens/comments/15ci7i2/)
+- One grower uses about 12 cups of coir to nearly fill a shallow 1020. [Thin-layer discussion](https://www.reddit.com/r/microgreens/comments/12a4a6o/)
+- One grower estimates a ¾-inch coir bed in a 1-inch tray for a brassica mix. Another reports going up to a ¾-inch bed in a troubleshooting thread. [Brassica harvest](https://www.reddit.com/r/microgreens/comments/mmx0xh/) · [Coir depth and uneven growth](https://www.reddit.com/r/microgreens/comments/1gz7t1m/)
+- A new grower describes leveling the coir about ½ inch below the lip. The post leaves the tray dimensions and cup count unspecified. [Half-inch rim gap](https://www.reddit.com/r/microgreens/comments/17lsx9y/)
+
+The written guides give useful comparisons. [Utah State University](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) uses 8 cups of pre-moistened coir per 1020. [On The Grow’s earlier general guide](https://onthegrow.net/blogs/microgreens/how-to-grow-microgreens-a-complete-guide-from-microgreen-experts-on-the-grow) gives 6–8 cups per 1020. [Its broccoli guide](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) calls for leveling coir just below the rim without assigning an exact gap.
 
 The existing archive has a targeted caption review of [OTG's cabbage seed-to-harvest recording](https://www.youtube.com/watch?v=D3vnBEvYDZo), including timestamped seed and harvest notes. The supplied 2:17 brick-preparation timestamp is retained as a user claim, not newly certified. [Read the existing creator review](08_creator_transcript_density_and_water_review.md). For accessible current instructions, use [OTG's official video library](https://onthegrow.net/pages/video-library) and the checked companion guides below. No new claim of full video/audio review is made. [C0, C12, C13]
 
-Natural Yield's checked broccoli instructions specify 28 g seed and even filling with coir or soil, but no numeric coir volume. PBS Utah supports the full-tray method through its indexed text; direct page retrieval returned 403. Jonah and Donny's local research documents describe other media systems; they do not establish a dry-coir conversion for this brick. Other supplied mentions—Sproutpeople, Seedmart, Microgreens Corner, RusticWise and anonymous Reddit anecdotes—lack original source URLs in the paste and are retained as unverified leads, not numerical model anchors. [C0, C10, C11, C13]
+Natural Yield's checked broccoli instructions specify 28 g seed and even filling with coir or soil, but no numeric coir volume. PBS Utah supports the full-tray method through its indexed text; direct page retrieval returned 403. Jonah and Donny's local research documents describe other media systems; they do not establish a dry-coir conversion for this brick. Other supplied mentions—Sproutpeople, Seedmart, Microgreens Corner, and RusticWise—lack original source URLs in the paste and are retained as unverified leads, not numerical model anchors. [C0, C10, C11, C13]
 
 ## Source ledger
 

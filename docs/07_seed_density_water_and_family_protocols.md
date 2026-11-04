@@ -111,6 +111,12 @@ Cowden et al. found that a 50% denser sowing gave about 37% more area biomass ov
 
 The database has **54 crop/cultivar profiles, 11 botanical families and 17 functional protocol groups**. Profiles are not 54 distinct species: broccoli, cabbage, kohlrabi and cauliflower include botanical varieties of the same species; basil and radish also include cultivar records. Trade-name ambiguities are retained where the exact identity is not established.
 
+The calendar includes timed presoak where the recipe calls for it, sowing and top dress, covered emergence with the selected load, loose unweighted blackout where specified, then lights and harvest. The selected seed recipe supplies the covered duration and growing details. A recipe with no separate loose blackout goes directly to light. Actual root anchoring, wicking and maturity determine when to proceed. [Calendar source notes](source_docs/calendar/protocol_source_notes_2026-11-04.md)
+
+For black-oil sunflower, the overnight starter combines Piedmont's soaked recipe and three-day cover with On The Grow's 15 lb weighted cover and one loose blackout day. The same source's rinse-only and eight-hour soak options are separate. Broccoli uses an inverted empty tray touching the seeds, then a day of loose blackout in the starter. Leave the 15 lb paver off. [Sunflower guide](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [Broccoli guide](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens)
+
+Water scenarios are crop or group defaults. Late estimates at 200 in² are about 2.02 cups/day for sunflower and 1.09 for broccoli. This is a planning comparison with an adjustable demand range, and refill decisions use actual tray moisture and drained weight. See the calendar source notes for the evidence limits.
+
 Botanical families help organize the crop library. Functional groups describe handling. Shared ancestry does not justify an identical seed rate or watering schedule. Amaranth and beet are both Amaranthaceae; fine-seed amaranth and beet fruit clusters need different sowing and cover behavior. Sunflower, lettuce and Gem marigold are all Asteraceae yet have different seed size, emergence and harvest endpoints.
 
 | Working group | Typical planning window after sowing | Practical shared protocol | Species override |
