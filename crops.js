@@ -43,7 +43,7 @@ function chooseCrop(id){
 }
 function filterCrops(){
  const family=$('family-filter').value,list=D.crops.filter(c=>family==='all'||c.family===family);
- $('crop').innerHTML=list.map(c=>`<option value="${esc(c.id)}">${esc(c.name)}</option>`).join('');
+ $('crop').innerHTML=list.map(c=>`<option value="${esc(c.id)}">${esc(c.name)}${c.includedPacket?' (includes '+esc(c.includedPacket)+')':''}</option>`).join('');
  chooseCrop(list.some(c=>c.id===crop.id)?crop.id:list[0].id);
 }
 function fillCurves(){
@@ -69,6 +69,8 @@ function renderSeed(s,d){
  $('count-controls').hidden=s.mode!=='count';
  $('species-line').textContent=crop.family+' / '+crop.species;
  $('crop-title').textContent=crop.name;
+ $('included-packet').hidden=!crop.includedPacket;
+ $('included-packet').textContent=crop.includedPacket?'Includes '+crop.includedPacket+'. Select its True Leaf recipe for packet-specific settings.':'';
  $('confidence').textContent=recipe.id==='tested'?'Tested rate · context applies':crop.confidence;
  $('source-context').innerHTML=sourceLink(recipe.source)+' · '+esc(recipe.note||crop.notes||'A published starting rate, scaled by usable surface area.')+' Source crop settings are restored where documented; depth, emergence assumptions and top load remain editable planning examples.';
  $('seed-size-basis').textContent=crop.seedSizeBasis+'. '+crop.seedForm+'. Count and weigh a representative sample; units/g = sample count ÷ dry grams.';
@@ -137,9 +139,10 @@ function renderSchedule(s,rows){
  $('cover-load-note').textContent=recipe.weightBasis||'Use a load appropriate to this recipe and tray.';
  $('calendar-source-basis').innerHTML=(recipe.calendarSources||crop.calendar.waterSources).map(id=>sourceLink(id)).join(' · ');
  $('demand-basis').textContent=crop.calendar.waterBasis+' Default '+fmt(crop.calendar.demand,1)+' mm/day. Change it using your own tray observations.';
- $('broccoli-cover-note').hidden=crop.id!=='broccoli';
+ const broccoli=crop.id==='broccoli';
+ $('broccoli-cover-note').hidden=!broccoli;
  const flags=[];
- if(crop.id==='broccoli'&&s.method!=='dome'&&s.weightLb===15)flags.push('You selected 15 lb. For your first broccoli tray, set Added top load to 0 lb and use the empty cover tray alone.');
+ if(broccoli&&s.method!=='dome'&&s.weightLb===15)flags.push('You selected 15 lb. For your first broccoli tray, set Added top load to 0 lb and use the empty cover tray alone.');
  if(s.soakHours>0&&['basil-genovese','basil-dark-opal','basil-italian','basil-red-rubin','basil-lemon','chia'].includes(crop.id))flags.push('Mucilaginous-seed override: this selected recipe direct-sows. A free-water presoak can create unspreadable clumps.');
  if(s.method==='dome'&&s.weightLb>0)flags.push('A humidity dome is not a contact stack. Remove the added load or select a supported contact-cover method.');
  if(s.method!==recipe.method)flags.push('Covered method differs from this source recipe; treat it as a separate method trial.');
@@ -228,7 +231,8 @@ $('export-plan').addEventListener('click',()=>download('grow-lab-'+crop.id+'-pla
 $('print-plan').addEventListener('click',()=>window.print());
 $('export-schedule').addEventListener('click',()=>{if(!lastPlan?.schedule)return;const header=['day','date','stage','check_action','illustrative_loss_ml_day','watering_method','morning_ml','night_ml','morning_us_cups','night_us_cups','daily_us_cups','estimate_basis','phase','local_time','low_daily_us_cups','high_daily_us_cups'];const lines=[header,...lastPlan.schedule.map(r=>[r.day,r.date,r.stage,r.action,r.waterScenarioMl===null?'':r.waterScenarioMl.toFixed(1),r.wateringMethod,...[r.amMl,r.pmMl,r.amCups,r.pmCups,r.dailyCups].map(v=>v===null?'':v.toFixed(4)),'Planning scenario; check moisture and roots before watering; initial wetting and soak water excluded',r.phase,r.time,...[r.lowCups,r.highCups].map(v=>v==null?'':v.toFixed(4))])];download('grow-lab-'+crop.id+'-schedule.csv',lines.map(r=>r.map(csvCell).join(',')).join('\n'),'text/csv');});
 $('trial-template').addEventListener('click',()=>download('grow-lab-'+crop.id+'-blank-trial.csv','crop_id,seed_g,saleable_g,area_in2,days,substrate,lot,stage\n','text/csv'));
-$('analyze-trials').addEventListener('click',()=>{const result=M.parseTrials($('trials').value,crop.id);if(result.error){$('trial-status').textContent=result.error;return;}localTrials=result;fillCurves();set('curve','local');render();$('trial-status').textContent=result.rows.length+' independent tray rows · '+result.points.length+' treatment means. '+result.warning;});
+function analyzeTrials(cropId){const result=M.parseTrials($('trials').value,cropId);if(result.error){$('trial-status').textContent=result.error;return;}localTrials=result;fillCurves();set('curve','local');render();$('trial-status').textContent=result.rows.length+' independent tray rows · '+result.points.length+' treatment means. '+result.warning;}
+$('analyze-trials').addEventListener('click',()=>analyzeTrials(crop.id));
 $('apply-optimum').addEventListener('click',()=>{
  if(!ranked||!activeCurve||activeCurve.crop!==crop.id)return;
  const p=ranked.best;extraRecipe={...recipe,id:'tested',label:activeCurve.kind==='local'?'Your best observed treatment':'Study treatment · local trial only',grams:p.seedGm2,area:1/M.IN2_M2,harvest:[Math.round(p.days),Math.round(p.days)],cover:recipe.cover,method:recipe.method,source:activeCurve.source,note:activeCurve.context+' Selected by '+$('objective').selectedOptions[0].textContent+'.'};
@@ -239,9 +243,10 @@ filterCrops();
 // Only explicit actions in My grow log create this one-time handoff.
 try{
  const raw=window.sessionStorage?.getItem('grow-lab:journal-transfer');
- if(raw){const transfer=JSON.parse(raw);if(D.crops.some(c=>c.id===transfer.cropId)){
-  set('family-filter','all');filterCrops();chooseCrop(transfer.cropId);
-  if(transfer.kind==='trials'&&typeof transfer.csv==='string'){set('trials',transfer.csv);$('analyze-trials').click();if(localTrials&&typeof transfer.context==='string'){localTrials.context+=' · Logged setup: '+transfer.context.slice(0,10000);render();}}
+ if(raw){const transfer=JSON.parse(raw),old=D.retiredCropIds?.[transfer.cropId],cropId=old?.cropId??transfer.cropId;if(D.crops.some(c=>c.id===cropId)){
+  set('family-filter','all');filterCrops();chooseCrop(cropId);
+  if(old){set('recipe',old.recipeId);applyRecipe();}
+  if(transfer.kind==='trials'&&typeof transfer.csv==='string'){set('trials',transfer.csv);analyzeTrials(transfer.cropId);if(localTrials&&typeof transfer.context==='string'){localTrials.context+=' · Logged setup: '+transfer.context.slice(0,10000);render();}}
   if(transfer.kind==='water'&&Number.isFinite(transfer.demand)&&transfer.demand>=.1&&transfer.demand<=6){
    if(transfer.length>=5&&transfer.length<=24&&transfer.width>=4&&transfer.width<=12){set('length',transfer.length);set('width',transfer.width);}
    set('demand',Math.round(transfer.demand*10)/10);loggedWaterNote='Apparent water loss imported from logged tray '+String(transfer.recordId).slice(0,120)+': '+fmt(transfer.demand,2)+' mm/day, rounded to the demand slider’s 0.1-mm step. Review stage, biomass growth and weighing convention before applying it to a new grow.';render();

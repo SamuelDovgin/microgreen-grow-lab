@@ -1,6 +1,6 @@
 # Species and cultivar density catalogue
 
-*November 1, 2026. [Open the seed/water planner](site/dist/crops.html). These are 54 crop/cultivar profiles, not 54 distinct species. Baseline source mass is scaled to a nominal 200-in² surface below; measured usable tray area belongs in the app.*
+*November 4, 2026. [Open the seed/water planner](site/dist/crops.html). These are 54 crop/cultivar profiles, not 54 distinct species. Baseline source mass is scaled to a nominal 200-in² surface below; measured usable tray area belongs in the app.*
 
 Some rows are varieties of one species. Seed-count examples are illustrative unless explicitly attributed; replace them with your lot. Covered emergence settings can be generalized editorial windows even when mass and harvest are directly sourced. Full per-field provenance and all alternative source recipes are in the [JSON database](data/crop-protocols.json).
 
@@ -69,6 +69,8 @@ Botanical identity: *Brassica oleracea var. italica*. Planting unit: single seed
 
 Initial count input: 281 units/g — **Extension approximate count; not this lot’s measurement**. This is not a seed-size guarantee.
 
+This profile includes Waltham 29. Its named True Leaf recipe appears below.
+
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
 | Research starting plan | 13 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 1 d | 12–13 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
@@ -77,6 +79,7 @@ Initial count input: 281 units/g — **Extension approximate count; not this lot
 | USU · household coir | 28 g / 200.00 in² | Direct sow | 2–4 d / stack, 3 lb | 0 d | 8–12 | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) · [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
 | On The Grow · silicone | 20 g / 200.00 in² | Direct sow | 3–4 d / stack, 0 lb | 1 d | 9–9 | [V02](https://www.youtube.com/watch?v=JEVF77AHq2w) · [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
 | On The Grow · coir and empty cover | 21 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 1 d | 7–10 | [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
+| True Leaf · Waltham 29 | 28.3495 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 1 d | 8–12 | [D38](https://trueleafmarket.com/products/broccoli-waltham-29-microgreens-seeds) · [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
 | Bootstrap Farmer · chart comparison | 17.5 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 0 d | 7–10 | [D34](https://cdn.shopify.com/s/files/1/1338/7937/files/Bootstrap_Farmer_Ultimate_Microgreen_Cheatsheet_Printable_-min.pdf?v=1715959164) · [D32](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens) |
 
 Scatter dry seed in a single even layer and avoid overlapping piles.
@@ -88,11 +91,14 @@ Botanical identity: *Raphanus sativus*. Planting unit: single seed. Use the name
 
 Initial count input: 90 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
+This profile includes Minowase (Organic). Its named True Leaf recipe appears below.
+
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
 | Research starting plan | 22.5 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 0 d | 8–8 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 | MGM · 2024 farm snapshot | 40 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 8–8 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 | MGM · 2025 seed & germination | 40 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 8–8 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| True Leaf · Minowase (Organic) | 28.3495 g / 200.00 in² | Direct sow | 2–2 d / stack, 0 lb | 0 d | 6–10 | [D39](https://trueleafmarket.com/products/radish-sprouting-daikon-organic-seeds?variant=38824751240) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 
 Spread the larger radish seed evenly without overlap. The selected cultivar has its own dry seed rate.
 Water planning default 3.1 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
@@ -633,6 +639,8 @@ Botanical identity: *Pisum sativum*. Planting unit: single seed. USU’s lower s
 
 Initial count input: 6.6 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
+This profile includes Speckled (Organic). Its named True Leaf recipe appears below.
+
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
 | Research starting plan | 150 g / 200.00 in² | 6 h | 3–3 d / stack, 3 lb | 0 d | 8–10 | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
@@ -640,6 +648,7 @@ Initial count input: 6.6 units/g — **Illustrative until this lot is counted an
 | MGM · 2025 seed & germination | 300 g / 200.00 in² | 6–12 h | 3–3 d / stack, 10 lb | 0 d | 8–10 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D33](https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 | MGM · 300 g commercial | 300 g / 200.00 in² | 6–12 h | 3–3 d / stack, 10 lb | 0 d | 9–9 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D33](https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 | On The Grow · 1020 coir | 230 g / 200.00 in² | 8–12 h | 3–3 d / stack, 10 lb | 1 d | 8–14 | [D33](https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| True Leaf · Speckled (Organic) | 184.272 g / 200.00 in² | 4–6 h | 2–3 d / dome, 0 lb | 0 d | 8–14 | [D37](https://trueleafmarket.com/products/pea-sprouting-speckled-organic) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 
 Spread drained peas in one even layer, with room for swelling and rooting.
 Water planning default 3.7 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
@@ -668,15 +677,15 @@ Initial count input: 16 units/g — **Illustrative until this lot is counted and
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
-| Sunflower · overnight coir starter | 120 g / 200.00 in² | 6–12 h | 3–3 d / stack, 15 lb | 1 d | 9–9 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
-| MGM · 2024 farm snapshot | 120 g / 200.00 in² | 6–12 h | 3–3 d / stack, 15 lb | 1 d | 9–9 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
-| MGM · 2025 seed & germination | 130 g / 200.00 in² | 6–12 h | 3–3 d / stack, 15 lb | 1 d | 9–9 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
-| USU · 48 g household | 48 g / 200.00 in² | 12 h | 3–3 d / stack, 3 lb | 0 d | 9–10 | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
-| Donny · 5 oz / 4 h soak | 141.748 g / 200.00 in² | 4 h | 3–4 d / stack, 14 lb | 0 d | 9–11 | [V13](https://www.youtube.com/watch?v=RzCYKPnvOr4) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
-| Jonah · 130 g example | 130 g / 200.00 in² | 4–12 h | 3–4 d / stack, 15 lb | 0 d | 8–12 | [V11](https://www.youtube.com/watch?v=1eYZwHDdeEk) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
-| On The Grow · 125 g demo | 125 g / 200.00 in² | 6–12 h | 3–4 d / stack, 15 lb | 0 d | 9–10 | [V03](https://www.youtube.com/watch?v=kS_Zmu5E7VY) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
-| On The Grow · rinse, then sow | 125 g / 200.00 in² | Direct sow | 4–4 d / stack, 15 lb | 1 d | 8–10 | [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
-| On The Grow · 8 h soak option | 125 g / 200.00 in² | 8 h | 4–4 d / stack, 15 lb | 1 d | 8–10 | [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| Sunflower · overnight coir starter | 120 g / 200.00 in² | 6–12 h | 3–3 d / stack, 15 lb | 1 d | 9–9 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D40](https://trueleafmarket.com/products/sunflower-black-oil-microgreens-seeds) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 2024 farm snapshot | 120 g / 200.00 in² | 6–12 h | 3–3 d / stack, 15 lb | 1 d | 9–9 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D40](https://trueleafmarket.com/products/sunflower-black-oil-microgreens-seeds) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| MGM · 2025 seed & germination | 130 g / 200.00 in² | 6–12 h | 3–3 d / stack, 15 lb | 1 d | 9–9 | [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D40](https://trueleafmarket.com/products/sunflower-black-oil-microgreens-seeds) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| USU · 48 g household | 48 g / 200.00 in² | 12 h | 3–3 d / stack, 3 lb | 0 d | 9–10 | [D03](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) · [D40](https://trueleafmarket.com/products/sunflower-black-oil-microgreens-seeds) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| Donny · 5 oz / 4 h soak | 141.748 g / 200.00 in² | 4 h | 3–4 d / stack, 14 lb | 0 d | 9–11 | [V13](https://www.youtube.com/watch?v=RzCYKPnvOr4) · [D40](https://trueleafmarket.com/products/sunflower-black-oil-microgreens-seeds) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| Jonah · 130 g example | 130 g / 200.00 in² | 4–12 h | 3–4 d / stack, 15 lb | 0 d | 8–12 | [V11](https://www.youtube.com/watch?v=1eYZwHDdeEk) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D40](https://trueleafmarket.com/products/sunflower-black-oil-microgreens-seeds) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| On The Grow · 125 g demo | 125 g / 200.00 in² | 6–12 h | 3–4 d / stack, 15 lb | 0 d | 9–10 | [V03](https://www.youtube.com/watch?v=kS_Zmu5E7VY) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D40](https://trueleafmarket.com/products/sunflower-black-oil-microgreens-seeds) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| On The Grow · rinse, then sow | 125 g / 200.00 in² | Direct sow | 4–4 d / stack, 15 lb | 1 d | 8–10 | [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D40](https://trueleafmarket.com/products/sunflower-black-oil-microgreens-seeds) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
+| On The Grow · 8 h soak option | 125 g / 200.00 in² | 8 h | 4–4 d / stack, 15 lb | 1 d | 8–10 | [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D40](https://trueleafmarket.com/products/sunflower-black-oil-microgreens-seeds) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) |
 
 Spread black-oil seed in one layer, separate clumps and use a stable solid tray under the load.
 Water planning default 3.7 mm/day at late growth. High-use planning scenario; grower example is about one cup at a time, once or twice daily.

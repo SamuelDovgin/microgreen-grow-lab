@@ -92,7 +92,7 @@ function schedule(s,c,recipe,densityResult){
  if(soakHours>0){
   const start=soakStart(s.sowDate,sowTime,soakHours);
   list.push({day:start.date===s.sowDate?0:-1,date:start.date,time:start.time,phase:'presoak',
-   stage:`Presoak · ${soakHours} h`,cue:'Weigh dry seed, then start soak',action:`Weigh ${seed}${sunflower?', rinse it and': ' and'} soak in clean water for ${soakHours} h. Drain and rinse before sowing at ${sowTime} on ${s.sowDate}.`,
+   stage:`Presoak · ${soakHours} h`,cue:'Weigh dry seed, then start soak',action:`Weigh ${seed}${sunflower?', rinse it and': ' and'} soak in ${recipe?.source==='D37'?'cold ':''}clean water for ${soakHours} h. Drain and rinse before sowing at ${sowTime} on ${s.sowDate}.`,
    wateringMethod:'prep',bottomStartDay:bottomStart,waterScenarioMl:null,amMl:null,pmMl:null,dailyCups:null,amCups:null,pmCups:null,lowCups:null,highCups:null});
  }
  const topdress=recipe?.topdress??c?.topdress;

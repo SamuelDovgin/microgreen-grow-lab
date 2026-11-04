@@ -6,7 +6,7 @@ let last;
 const fmt=(n,d=0)=>Number(n).toLocaleString('en-US',{maximumFractionDigits:d,minimumFractionDigits:d});
 const mass=(n,exact=false)=>fmt(n,exact?1:0)+' g';
 const water=n=>n>=1000?fmt(n/1000,2)+' L':fmt(n,0)+' mL';
-function read(){return Object.fromEntries([...ids.map(id=>[id,$(id).value]),['calibration',$('calibration').checked],['rows',M.crops.map(c=>({id:c.id,count:$(c.id+'-count').value,cups:$(c.id+'-cups').value}))]]);}
+function read(){return Object.fromEntries([...ids.map(id=>[id,$(id).value]),['fillDefaultVersion',1],['calibration',$('calibration').checked],['rows',M.crops.map(c=>({id:c.id,count:$(c.id+'-count').value,cups:$(c.id+'-cups').value}))]]);}
 function load(s){for(const id of ids)$(id).value=s[id]??M.defaults()[id];$('calibration').checked=!!s.calibration;M.crops.forEach((c,i)=>{const r=s.rows?.find(r=>r.id===c.id)||M.defaults().rows[i];$(c.id+'-count').value=r.count;$(c.id+'-cups').value=r.cups;syncFill(c.id);});}
 function syncFill(id){const v=$(id+'-cups').value;$(id+'-fill').value=['6','8',String(M.HALF_INCH_CUPS),'12','13.5'].includes(v)?v:'custom';}
 function tray(r){
@@ -18,7 +18,7 @@ function render(){
  M.crops.forEach((c,i)=>{const count=Number(s.rows[i].count);$(c.id+'-remove').disabled=!Number.isFinite(count)||count<=0;$(c.id+'-add').disabled=count>=M.MAX_TRAYS_PER_CROP;});
  const fills=s.rows.map(r=>Number(r.cups)).join('/');
  const isHalfInch=s.rows.every(r=>Number(r.cups)===M.HALF_INCH_CUPS);
- $('fill-mode').textContent=isHalfInch?'½-inch headspace target: about '+M.HALF_INCH_CUPS+' cups per tray by geometry. Check the gap on the leveled coir before sowing.':fills==='6/6/6/6'?'Source baseline: 6 cups for all four crops. This economical layer is not a near-rim fill.':fills==='12/12/8/8'?'Seed-clearance trial: broccoli/radish 12 cups; pea/sunflower 8 cups. The relative fill pattern follows grower practice; these exact quantities are an adaptation for your tray, not a validated optimum.':fills==='8/8/8/8'?'USU-style comparison: 2 US quarts / 8 cups per tray, without a crop-specific split.':fills==='6/8/6/8'?'Earlier saved trial: 6/8/6/8 cups. The extra radish/sunflower coir was an assumption, not a standard. Your saved plan is preserved; use Source baseline or Seed clearance trial to switch.':'Custom fill comparison. Confirm real seed clearance and weighted-tray contact; the selected quantities do not predict yield.';
+ $('fill-mode').textContent=isHalfInch?'½-inch headspace target: about '+M.HALF_INCH_CUPS+' cups per tray by geometry. Check the gap on the leveled coir before sowing.':fills==='6/6/6/6'?'Source baseline: 6 cups for all four crops. This economical layer is not a near-rim fill.':fills==='12/12/8/8'?'Seed-clearance trial: broccoli/radish 12 cups; pea/sunflower 8 cups. The relative fill pattern follows grower practice; these exact quantities are an adaptation for your tray, not a validated optimum.':fills==='8/8/8/8'?'USU-style comparison: 2 US quarts / 8 cups per tray, without a crop-specific split.':fills==='6/8/6/8'?'Earlier saved trial: 6/8/6/8 cups. The extra radish/sunflower coir was an assumption, not a standard. Your saved plan is preserved; use the ½″ fill button to restore the starter target.':'Custom fill comparison. Confirm real seed clearance and weighted-tray contact; the selected quantities do not predict yield.';
  M.crops.forEach(c=>{$(c.id+'-cups-out').textContent=fmt(Number($(c.id+'-cups').value),1)+' US cups';$(c.id+'-note').textContent=c.basis;});
  $('coir-results').hidden=!p.valid;$('export-coir').disabled=!p.valid||p.empty;
  $('coir-verdict').className='notice'+(!p.valid?' error':'');
@@ -57,6 +57,16 @@ for(const [id,cups] of [['fill-half-inch',M.HALF_INCH_CUPS],['fill-six',6],['fil
 $('fill-clearance').addEventListener('click',()=>{M.crops.forEach((c,i)=>{$(c.id+'-cups').value=i<2?12:8;syncFill(c.id);});render();});
 $('export-coir').addEventListener('click',exportPlan);$('print-coir').addEventListener('click',()=>window.print());
 $('seed-companions').innerHTML=M.crops.map(c=>`<tr><td>${c.name}<br><small>${c.family}</small></td><td>${c.seedG} g / tray</td><td>${c.treatment}</td><td>${c.basis}</td></tr>`).join('');
-try{const saved=JSON.parse(window.localStorage.getItem(key)||'null');load(saved&&M.calculate(saved).valid?saved:M.defaults());}catch(e){load(M.defaults());}
+try{
+ const saved=JSON.parse(window.localStorage.getItem(key)||'null');
+ if(saved&&M.calculate(saved).valid){
+  const fills=saved.rows.map(r=>Number(r.cups)).join('/');
+  if(saved.fillDefaultVersion!==1&&['6/6/6/6','6/8/6/8'].includes(fills)){
+   saved.rows.forEach(r=>r.cups=M.HALF_INCH_CUPS);
+   $('coir-export-status').textContent='Updated the saved starter fill to about ½″ below the rim. Your tray counts and brick measurements are retained.';
+  }
+  load(saved);
+ }else load(M.defaults());
+}catch(e){load(M.defaults());}
 render();window.CoirApp={snapshot:()=>last,selfTest:M.selfTest};
 })();

@@ -1,5 +1,19 @@
 {
   "version": "2026-11-04",
+  "retiredCropIds": {
+    "pea-speckled": {
+      "cropId": "pea-basic",
+      "recipeId": "speckled-organic"
+    },
+    "broccoli-waltham-29": {
+      "cropId": "broccoli",
+      "recipeId": "waltham-29"
+    },
+    "radish-daikon-minowase": {
+      "cropId": "radish-daikon",
+      "recipeId": "minowase-organic"
+    }
+  },
   "crops": [
     {
       "id": "broccoli",
@@ -223,6 +237,38 @@
           "lightHours": 16
         },
         {
+          "id": "waltham-29",
+          "label": "True Leaf · Waltham 29",
+          "grams": 28.349523125,
+          "area": 200,
+          "harvest": [
+            8,
+            12
+          ],
+          "cover": [
+            2,
+            3
+          ],
+          "method": "stack",
+          "source": "D38",
+          "note": "True Leaf’s dry rate with On The Grow’s empty contact tray and loose blackout.",
+          "soak": [
+            0,
+            0
+          ],
+          "packetName": "Waltham 29",
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 0,
+          "weightBasis": "Empty contact tray, 0 lb added; On The Grow saw similar results with 0, 3 and 15 lb.",
+          "calendarSources": [
+            "D38",
+            "D32"
+          ],
+          "substrateId": "coir"
+        },
+        {
           "id": "bootstrap",
           "label": "Bootstrap Farmer · chart comparison",
           "grams": 17.5,
@@ -253,6 +299,7 @@
           ]
         }
       ],
+      "includedPacket": "Waltham 29",
       "calendar": {
         "sow": "Scatter dry seed in a single even layer and avoid overlapping piles.",
         "exit": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock.",
@@ -407,8 +454,42 @@
           ],
           "substrateId": "peat",
           "lightHours": 16
+        },
+        {
+          "id": "minowase-organic",
+          "label": "True Leaf · Minowase (Organic)",
+          "grams": 28.349523125,
+          "area": 200,
+          "harvest": [
+            6,
+            10
+          ],
+          "cover": [
+            2,
+            2
+          ],
+          "method": "stack",
+          "source": "D39",
+          "note": "True Leaf’s direct-sow, two-dark-day method. A separate loose blackout is optional.",
+          "soak": [
+            0,
+            0
+          ],
+          "packetName": "Minowase (Organic)",
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D39",
+            "D16",
+            "D35"
+          ],
+          "substrateId": "coir"
         }
       ],
+      "includedPacket": "Minowase (Organic)",
       "calendar": {
         "sow": "Spread the larger radish seed evenly without overlap. The selected cultivar has its own dry seed rate.",
         "exit": "Even rooted emergence, before stems tangle beneath the cover.",
@@ -5943,8 +6024,42 @@
             "D35"
           ],
           "lightHours": 16
+        },
+        {
+          "id": "speckled-organic",
+          "label": "True Leaf · Speckled (Organic)",
+          "grams": 184.2719003125,
+          "area": 200,
+          "harvest": [
+            8,
+            14
+          ],
+          "cover": [
+            2,
+            3
+          ],
+          "method": "dome",
+          "source": "D37",
+          "note": "True Leaf’s 5–8 oz midpoint. This version sows after soaking and uses the supplier’s dome method.",
+          "soak": [
+            4,
+            6
+          ],
+          "packetName": "Speckled (Organic)",
+          "soakBasis": "True Leaf specifies 4–6 h in cold water. This calendar sows directly after soaking.",
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Vented humidity dome; 0 lb added.",
+          "calendarSources": [
+            "D37",
+            "D16",
+            "D35"
+          ],
+          "substrateId": "peat"
         }
       ],
+      "includedPacket": "Speckled (Organic)",
       "calendar": {
         "sow": "Spread drained peas in one even layer, with room for swelling and rooting.",
         "exit": "Strong anchored shoots lifting the contact cover; prevent unstable tall stacks.",
@@ -6225,6 +6340,7 @@
             "D05",
             "D31",
             "D04",
+            "D40",
             "D35"
           ],
           "substrateId": "coir",
@@ -6260,6 +6376,7 @@
             "D05",
             "D31",
             "D04",
+            "D40",
             "D35"
           ],
           "substrateId": "peat",
@@ -6294,6 +6411,7 @@
             "D04",
             "D31",
             "D05",
+            "D40",
             "D35"
           ],
           "substrateId": "peat",
@@ -6326,6 +6444,7 @@
           "weightBasis": "3 lb selected within USU’s general 2–5 lb example.",
           "calendarSources": [
             "D03",
+            "D40",
             "D31",
             "D35"
           ],
@@ -6359,6 +6478,7 @@
           "weightBasis": "14 lb paver reported in Donny’s walkthrough.",
           "calendarSources": [
             "V13",
+            "D40",
             "D31",
             "D35"
           ],
@@ -6392,6 +6512,7 @@
           "calendarSources": [
             "V11",
             "D31",
+            "D40",
             "D35"
           ],
           "substrateId": "peat"
@@ -6424,6 +6545,7 @@
           "calendarSources": [
             "V03",
             "D31",
+            "D40",
             "D35"
           ],
           "substrateId": "coir"
@@ -6456,6 +6578,7 @@
           "substrateId": "coir",
           "calendarSources": [
             "D31",
+            "D40",
             "D35"
           ],
           "lightHours": 16
@@ -6488,6 +6611,7 @@
           "substrateId": "coir",
           "calendarSources": [
             "D31",
+            "D40",
             "D35"
           ],
           "lightHours": 16
@@ -8712,6 +8836,42 @@
       "url": "https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best",
       "kind": "Supplier technique",
       "note": "Check moisture after bottom watering. Its example is an application amount, not a crop-specific daily demand.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D37": {
+      "id": "D37",
+      "title": "True Leaf Market · Organic Speckled Pea",
+      "url": "https://trueleafmarket.com/products/pea-sprouting-speckled-organic",
+      "kind": "Seed supplier",
+      "note": "Exact packet. Cold soak 4–6 h, 5–8 oz per 1020, sow directly after soaking or optionally presprout, 2–3 days under a dome after sowing in the written method.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D38": {
+      "id": "D38",
+      "title": "True Leaf Market · Waltham 29 broccoli",
+      "url": "https://trueleafmarket.com/products/broccoli-waltham-29-microgreens-seeds",
+      "kind": "Seed supplier",
+      "note": "Exact packet. No soak, 1 oz per 1020 and 8–12 days to harvest. The planner combines its rate with the empty contact tray and loose blackout from D32.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D39": {
+      "id": "D39",
+      "title": "True Leaf Market · Organic Daikon Minowase",
+      "url": "https://trueleafmarket.com/products/radish-sprouting-daikon-organic-seeds?variant=38824751240",
+      "kind": "Seed supplier",
+      "note": "Exact product. No soak, 1 oz per 1020, two dark days, optional lid flip before lighting and a 6–10 day harvest window.",
+      "accessed": "2026-11-04",
+      "local": null
+    },
+    "D40": {
+      "id": "D40",
+      "title": "True Leaf Market · Black Oil sunflower",
+      "url": "https://trueleafmarket.com/products/sunflower-black-oil-microgreens-seeds",
+      "kind": "Seed supplier",
+      "note": "Exact packet identity. Supplier describes its own short soak and gives a presoaked seed weight. The planner retains its dry-weight overnight starter and separate recipes.",
       "accessed": "2026-11-04",
       "local": null
     },
