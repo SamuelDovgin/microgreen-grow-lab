@@ -221,7 +221,8 @@ function render(){
  renderRateHistory(s);renderOwnedRates();
 }
 function publishedGrams(c){const r=c.alternatives[0];return c.sownCountCm2&&r.id==='baseline'?c.sownCountCm2*1290.32/c.seedsPerGram:r.grams*200/r.area;}
-function renderOwnedRates(){for(const p of D.ownedPackets||[]){const el=$('owned-'+p.cropId+'-rate'),c=D.crops.find(c=>c.id===p.cropId);if(el)el.textContent=fmt(rateStore?.latest(p.cropId)?.toGrams??publishedGrams(c),1)+' g';}}
+const quickStartCropIds=[...(D.ownedPackets||[]).map(p=>p.cropId),'mung'];
+function renderOwnedRates(){for(const cropId of quickStartCropIds){const el=$('owned-'+cropId+'-rate'),c=D.crops.find(c=>c.id===cropId);if(el)el.textContent=fmt(rateStore?.latest(cropId)?.toGrams??publishedGrams(c),1)+' g';}}
 function renderRateHistory(s){
  if(!$('rate-history-body'))return;
  const published=(D.seedRateHistory?.entries||[]).filter(e=>e.cropId===crop.id),personal=(rateStore?.read().entries||[]).filter(e=>e.cropId===crop.id);
@@ -260,7 +261,7 @@ $('all-sources').innerHTML=Object.values(D.sources).map(s=>`<li id="source-${esc
 $('family-filter').addEventListener('change',filterCrops);
 $('crop').addEventListener('change',()=>chooseCrop($('crop').value));
 $('recipe').addEventListener('change',applyRecipe);
-for(const p of D.ownedPackets||[])if($('start-'+p.cropId))$('start-'+p.cropId).addEventListener('click',()=>startFromNow(p.cropId));
+for(const cropId of quickStartCropIds)if($('start-'+cropId))$('start-'+cropId).addEventListener('click',()=>startFromNow(cropId));
 if($('rate-history-form'))$('rate-history-form').addEventListener('submit',saveTrialRate);
 if($('export-rate-history'))$('export-rate-history').addEventListener('click',()=>download('grow-lab-seed-rate-history.json',JSON.stringify({...rateStore?.read()||{schema:R?.SCHEMA,revision:0,entries:[]},exportedAt:new Date().toISOString(),publishedHistory:D.seedRateHistory},null,2),'application/json'));
 if($('import-rate-history'))$('import-rate-history').addEventListener('change',async()=>{const file=$('import-rate-history').files?.[0];if(!file)return;try{if(!rateStore||file.size>20*1024*1024){rateMessage='Rate history is unavailable or the backup exceeds 20 MB.';}else{const result=rateStore.import(await file.text());if(result.ok){chooseCrop(crop.id);rateMessage=result.added+' personal revision(s) imported. '+(result.error||'Existing revision IDs were preserved.');}else rateMessage=result.error;}}catch{rateMessage='Could not read this rate-history file; existing revisions were preserved.';}finally{set('import-rate-history','');render();}});

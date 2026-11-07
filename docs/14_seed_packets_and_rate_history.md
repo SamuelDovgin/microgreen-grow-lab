@@ -2,7 +2,7 @@
 
 *November 7, 2026. [Open the crop planner](site/dist/crops.html) · [My grow log](site/dist/grow-log.html) · [Published rate history](data/seed-rate-history.json) · [Source notebook](source_docs/research_resource_log_2026-11-07.txt).*
 
-The supplied photo identifies **True Leaf Market Waltham 29 broccoli (1 lb), organic Daikon Minowase radish (1 lb), Black Oil sunflower (5 lb), and organic Speckled pea (5 lb)**. These are packet identities, not measured seed-lot counts, germination or actual sown trays. The planner now exposes all four in a ready-to-plan section. [U01 — user photo and instructions]
+The supplied photo identifies **True Leaf Market Waltham 29 broccoli (1 lb), organic Daikon Minowase radish (1 lb), Black Oil sunflower (5 lb), and organic Speckled pea (5 lb)**. These are packet identities, not measured seed-lot counts, germination or actual sown trays. The planner exposes all four packets plus mung beans from your previous grow in a ready-to-plan section. The mung card uses your 180 g dry-seed trial rate and the existing 10 h selected presoak; its button plans preparation from now. No mung supplier or packet size is inferred. [U01 — user photo and instructions]
 
 ## Starting amounts ready in the planner
 

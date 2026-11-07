@@ -18,9 +18,9 @@
     "crop-research.html": "4d20d8ff4fb403e11a59fc65a46cb9fe470d82707117f60bdac27dca49ec2ebc",
     "crop-source-log.html": "92c5cf808acd6d5d882eb7060316aea8e8fec8d3820145542b793e62af9e2a2b",
     "crop-video-notes.html": "1696f6ec4a61a03e59802f7cf62db52fc0f84b36176f8571576e8ba90a147002",
-    "crops.css": "f6e893f468fc12bec9fa479a10fb4a56b9dea5ca2462bea61a824dc977a9b9f4",
-    "crops.html": "3c9021f1c73b599ea3130c367b2ebcd2564e4616124c53b19cb23b5b3b0c95c6",
-    "crops.js": "47fcb35d190736bc0a25382e21a01bf1c1a81cf97465dcfeed5ac26405e1a60e",
+    "crops.css": "cfb55d85263e9b2e62b9cf6f733e223cedcda969f7b81fd2a6b723275e6d40ec",
+    "crops.html": "b7d0114b10e8ab174cdc4f904b40095e6990ec125fd6f7290141a00430903cd5",
+    "crops.js": "d144b0e53b1d4787162ae9254d69ecb1b38c1b34ac43563ff60d5a125b555842",
     "data/crop-protocols.json": "d44e998b90319340a6290261bfaa1ee0df727906051f9c05f2ea130e34724b14",
     "data/crop-qa-report.json": "9378aa295002407eae29bc82cf7c30cbd97a7172c691880f137fb8b9e1f72dcc",
     "data/crop-starting-rates.csv": "ecdba4a0dc7325f600ef25da7c922d1a5103c226772200a6639331ecae887ea1",
@@ -39,7 +39,7 @@
     "docs/11_grow_log_and_protocol_calibration.md": "90caaf51485b01a4dc76fcbabea76384e0ad20431e9f21cb035a4a6fad3100c0",
     "docs/12_coco_coir_preparation_and_calculator.md": "f5339b9b3ed26caf5b13b291d853744b2b8f4a934eed85a2739f839a702f1ba3",
     "docs/13_mung_and_soybean_1020_protocols.md": "4c4e710a9c39780279f3bce87107f658ebe5e9bfbdce52451899bcef431f3f34",
-    "docs/14_seed_packets_and_rate_history.md": "6e718e7b2df94fa1412a8364031b8223943105bafb2bf86a2c556a41db059cab",
+    "docs/14_seed_packets_and_rate_history.md": "01fe57f399f9d9c078f320e953910653cb60422b3a96d8c2304e95dcc3954189",
     "docs/coir_research_resource_log_2026-11-01.txt": "80b874cce1f3faab2c0cf7437a107093317afab6597316084a8cb309afaddbba",
     "docs/coir_research_resource_log_2026-11-02.txt": "eddbb1277aa3821b4c32d26fa48524fb268c68aeead1a0ba2577632e3ca98fd0",
     "docs/protocol_source_notes_2026-11-04.md": "4acdb5bb4103fb873e85345ec681c397dfb48b6bd0162a9f423f636de3f1f6f8",
@@ -67,7 +67,7 @@
     "rack.html": "3cc9d4ad081cdbdf483ee1799e51df216fdc3064210404dc8044bd219544b3bb",
     "rack.js": "741d481c93c1e4f3d56371809c1e5b7db92a9f1603d7ad02a2dfa8cf9b9b309a",
     "research-log.html": "8c79a2bebea7f5bddf2a246867777be7ced503a0d49c6dac569197b1add92d66",
-    "seed-rate-notes.html": "96adf349d342b67842125fe1e3d3e7ca78d4ddc8387f55f2c1f031e6f5dd224b",
+    "seed-rate-notes.html": "ffd964895163dd55bf5c0d9939afb5bb260f77993ecd323a7f7318e068b4031c",
     "seed-rate-source-log.html": "b229350edb93722c66ab61ab1c0e8cc06b6b2e0cf81089d56455de1a790f0039",
     "seed-rates.js": "cb53d2a3c0bd033939bc7b06d71825dab4be5bdf6063480408a19653c133ab4a",
     "setup-assessment.html": "b553665b1cf4522425bd3ae20bb8ccd65b6032e59e4a6c243b5e3e41a023f3fa",
@@ -88,5 +88,5 @@
     "style.css": "745f7f22dd404d93a58c210f34ed68a4b93df47b2864d8260dfd2bd1b98bdf40"
   },
   "publisher": "grow-lab",
-  "source_commit": "9e75c700c21d4e63b492131466b41726c1c649e4"
+  "source_commit": "de7529b1ba0790e8f3cc22527d91d50edcb09c0e"
 }
