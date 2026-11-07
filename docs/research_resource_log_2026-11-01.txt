@@ -1,6 +1,6 @@
 SEED DENSITY, WATER AND PROTOCOL RESEARCH — November 1, 2026
 
-Scope: original research and the November 4 calendar and seed-rate updates. 54 crop/cultivar profiles, 11 botanical families, 17 functional groups and 8 experimental response curves. Source IDs D01–D61, P01 and V01–V17.
+Scope: original research, November 4 calendar/rate updates and November 6 mung/soybean additions. 55 crop/cultivar profiles, 11 botanical families, 17 functional groups and 8 experimental response curves. Source IDs D01–D66, P01–P02 and V01–V17. November 6 source-by-source review: source_docs/research_resource_log_2026-11-06.txt.
 
 Access method: primary web search/open plus direct public page requests, existing lawful PDFs/XML, creator metadata catalogs, and public English captions via yt-dlp. Browser UI observation was unavailable (Work browser use disabled). Caption research working copies remained temporary; only original paraphrases, metadata, timestamps and SHA-256 track checksums are distributed. Full caption retrieval is not full audiovisual review.
 
@@ -623,6 +623,67 @@ Used in: research synthesis; species catalogue; calculator evidence; model notes
 Supports / key record: Lists nominal 1020 dry weight ranges and cites CropKing. Its rows are retained as supplied inputs, not independent grower measurements.
 Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
 Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D62] On The Grow · mung bean presoak FAQ
+URL: https://onthegrow.net/pages/faq
+Accessed: 2026-11-06
+Class: Firsthand grower guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Names mung beans among seeds benefiting from an 8–12 h presoak. Does not supply the planner’s 150 g rate.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D63] Truzzi et al. 2021 · soybean microgreen cultivation
+URL: https://doi.org/10.3390/foods10081690
+Accessed: 2026-11-06
+Class: Controlled study
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: 25 soybean seeds per 8-cm-diameter pot, 24 h presoak, peat/clay 80:20, 18°C, final day-10 harvest. About 0.497 seeds/cm²; density was not varied and seed mass was not reported. Not a commercial 1020 rate.
+Local preservation: site/dist/sources/Truzzi-2021-soybean-microgreens-light.pdf; CC BY 4.0 publisher copy captured 2026-11-06.
+SHA-256: 4ea7048be350f505e82413224872f1e0f6348ad10bac2961448a5af816edf37e
+Status: CC BY 4.0 publisher PDF retrieved 2026-11-06 and methods extracted locally. DOI confirmed from front page.
+Limits: crop/cultivar, medium, stage, environment and study design apply. No cross-species optimum, safety or saleable-yield validation is inferred.
+
+[D64] NutriPony · soybean seed growing instructions
+URL: https://www.nutripony.com/SoybeanSeeds
+Accessed: 2026-11-06
+Class: Seed supplier
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Indexed supplier instructions: 8 h soak, 100 g per seedling tray, four dark days, 7–9 d harvest. Tray dimensions absent; 100 g is not verified for a 1020. Live recheck returned 410 after indexed retrieval.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Indexed supplier text retrieved 2026-11-06; later live recheck returned HTTP 410. Tray dimensions were absent.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D65] Fothergill’s · Sprouting Soybean, SKU 3042
+URL: https://www.mrfothergills.com.au/products/sprouting-soybean-seeds
+Accessed: 2026-11-06
+Class: Seed supplier
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Glycine max; overnight soak in the sprouting method. Separate microgreen tray instructions say sow thinly and cut above seed at 7–14 d. The 50 g packet is a pack size, not a tray sowing rate.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[D66] Vitality Farms · Mung Bean grow notes, p. 40
+URL: https://vitalityfarmscompany.com/wp-content/uploads/2022/04/micro-grow-notes.pdf
+Accessed: 2026-11-06
+Class: Grower notes compilation
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: 450 g per 1020 and 8–12 h soak. Much denser than the count-based study; notes mix contributed advice and contain conflicting light/harvest timing. Not averaged into the default or presented as an independently replicated optimum.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live grower PDF inspected, mung entry printed p. 40. Collection of grower advice; not a replicated density optimization.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[P02] Mung bean and soybean · 1020 starting trials
+URL: bean-crop-notes.html
+Accessed: 2026-11-06
+Class: Editorial synthesis of primary sources
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Mung 150 g/200 in² and 8–12 h soak; soybean 100 g/200 in² and 8 h soak. Pilot mass rates, not pooled averages. Source-specific counts, soak differences, seed-size calibration and missing soybean tray dimensions are documented.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Original November 6 editorial synthesis; local rendered guide and dated bean notebook preserve the assumptions.
 Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
 
 [P01] Seed rate comparison and source audit

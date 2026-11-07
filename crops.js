@@ -71,7 +71,7 @@ function renderSeed(s,d){
  $('crop-title').textContent=crop.name;
  $('included-packet').hidden=!crop.includedPacket;
  $('included-packet').textContent=crop.includedPacket?'Includes '+crop.includedPacket+'. Select its True Leaf recipe for packet-specific settings.':'';
- $('confidence').textContent=recipe.id==='tested'?'Tested rate · context applies':recipe.id==='comparison'?'Starting rate from seed comparison':crop.confidence;
+ $('confidence').textContent=recipe.id==='tested'?'Tested rate · context applies':recipe.id==='comparison'?'Starting rate from seed comparison':recipe.confidence||crop.confidence;
  $('source-context').innerHTML=sourceLink(recipe.source)+' · '+esc(recipe.note||crop.notes||'A published starting rate, scaled by usable surface area.')+' Source crop settings are restored where documented; depth, emergence assumptions and top load remain editable planning examples.';
  $('seed-size-basis').textContent=crop.seedSizeBasis+'. '+crop.seedForm+'. Count and weigh a representative sample; units/g = sample count ÷ dry grams.';
  $('mode-explanation').textContent=s.mode==='count'?'Compensates for measured germination and establishment to reach your selected emerged-shoot target. The target itself needs local validation.':'Area-scales the source’s dry seed rate. Germination changes the expected stand; it does not automatically inflate an already empirical mass recipe.';
@@ -88,6 +88,7 @@ function renderSeed(s,d){
   if(s.multiplier!==1)notes.push(notice('You are testing '+fmt(s.multiplier*100,0)+'% of the selected source rate. This trial change has no validated yield forecast.'));
  }
  if(['mung','lentil'].includes(crop.id))notes.push(notice('Research pilot: agronomic density evidence exists, but raw-food safety remains unresolved in the archive. This growing plan does not establish a safe serving stage.'));
+ if(crop.id==='soybean')notes.push(notice('100 g is a pilot amount, not a verified commercial 1020 recipe. The study supports about 642 seeds per nominal 1020 but gives no seed mass. Count and weigh your lot; soaking duration does not establish a safe raw serving stage.'));
  if(crop.id==='fenugreek'&&recipe.id==='baseline')notes.push(notice('The fenugreek paper’s tray dimensions conflict. Treat 25 g as a nominal-tray test, without an area-yield forecast.'));
  $('seed-notices').innerHTML=notes.join('');
  $('harvest-result').textContent='Day '+fmt(s.harvestDay,0);$('cover-result').textContent=fmt(s.coverDays,0)+' d emergence + '+fmt(s.blackoutDays,0)+' d loose blackout';

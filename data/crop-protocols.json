@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-04",
+  "version": "2026-11-06",
   "retiredCropIds": {
     "pea-speckled": {
       "cropId": "pea-basic",
@@ -9926,24 +9926,24 @@
     },
     {
       "id": "mung",
-      "name": "Mung bean · research pilot",
+      "name": "Mung bean",
       "species": "Vigna radiata",
       "family": "Fabaceae",
       "group": "legume",
-      "defaultGrams": 154.8384,
+      "defaultGrams": 150,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Study target: 3 seeds sown/cm²; actual lot size required",
+      "referenceAreaBasis": "Editorial 150 g trial per nominal 200 in²; study count benchmark retained separately",
       "harvestDays": [
         7,
-        9
+        10
       ],
       "coverDays": [
-        2,
+        3,
         4
       ],
       "soakHours": [
-        0,
-        0
+        8,
+        12
       ],
       "method": "stack",
       "topdress": false,
@@ -9951,13 +9951,49 @@
       "seedsPerGram": 25,
       "seedSizeBasis": "Illustrative until this lot is counted and weighed",
       "seedSizeSource": null,
-      "source": "D11",
-      "confidence": "Count-based experimental rate",
-      "notes": "3 sown seeds/cm² converted with illustrative 25 seeds/g. Actual study genotype seed mass varied greatly. Agronomic pilot; raw-food safety remains unresolved.",
+      "source": "P02",
+      "confidence": "Pilot starting rate · study-anchored",
+      "notes": "Starter uses 150 g dry seed/200 in² and an 8–12 h soak. Separate study benchmark targets 3 seeds sown/cm² and changes grams with measured lot size. Combined-source coir pilot, not a proven optimum or raw-food safety validation.",
       "alternatives": [
         {
+          "id": "starter",
+          "label": "Mung bean · 150 g starting trial",
+          "grams": 150,
+          "area": 200,
+          "harvest": [
+            7,
+            10
+          ],
+          "cover": [
+            3,
+            4
+          ],
+          "method": "stack",
+          "source": "P02",
+          "note": "150 g dry seed per 200 in² is an editorial starting trial within the study’s approximately 116–209 g seed-size-dependent equivalent. Presoak 8–12 h from On The Grow; this combines sources, rather than reproducing the study. Coir and empty cover are local planning adaptations. Uncover by rooted, upright emergence, not the date alone.",
+          "soak": [
+            8,
+            12
+          ],
+          "soakBasis": "On The Grow explicitly recommends 8–12 h for mung beans; 10 h is the selected midpoint.",
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty contact cover, 0 lb added: editorial pilot setting; no numeric bean-specific load verified.",
+          "calendarSources": [
+            "P02",
+            "D16",
+            "D36",
+            "D41",
+            "D11",
+            "D62"
+          ],
+          "confidence": "Pilot starting rate · study-anchored",
+          "substrateId": "coir"
+        },
+        {
           "id": "baseline",
-          "label": "Research starting plan",
+          "label": "Priti · 3 sown seeds/cm² benchmark",
           "grams": 154.8384,
           "area": 200,
           "harvest": [
@@ -9970,12 +10006,13 @@
           ],
           "method": "stack",
           "source": "D11",
-          "note": "3 sown seeds/cm² converted with illustrative 25 seeds/g. Actual study genotype seed mass varied greatly. Agronomic pilot; raw-food safety remains unresolved.",
-          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "note": "Study count benchmark: 3 seeds sown/cm², not emerged plants. Presoak was not specified in this paper; 0 h here means no documented soak. Cover window is editorial, not an exact study method.",
+          "confidence": "Count-based experimental rate",
           "soak": [
             0,
             0
           ],
+          "soakBasis": "Selected source recipe; see its notes for scope.",
           "topdress": false,
           "blackoutDays": 0,
           "weightLb": 0,
@@ -9990,10 +10027,10 @@
       ],
       "sownCountCm2": 3,
       "calendar": {
-        "sow": "Spread the counted planting units evenly for this research pilot. Record the genotype and actual units per gram.",
+        "sow": "Weigh dry seed before soaking. For the starter, soak 8–12 h in clean water, rinse, drain thoroughly and spread evenly without heaps. Record the lot and units per gram.",
         "exit": "Anchored, even emergence; monitor seed decay independently of crop size.",
         "water": "Follow the named study/seed-lot protocol; soaking is optional unless explicitly part of that recipe. Drain soaked seed and inspect dense roots closely.",
-        "harvest": "Use a species-specific endpoint and count units.",
+        "harvest": "Check for expanded, tender green seed leaves around day 7–10; cut above the medium, leaving roots behind.",
         "lightReadiness": {
           "heightIn": [
             0.5,
@@ -10014,16 +10051,122 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "D11",
-        "harvest": "D11; fractional source days rounded to adjacent integer checkpoints where needed",
-        "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
-        "method": "Functional-group editorial default unless a named creator override is selected",
+        "density": "P02: editorial pilot mass; primary count evidence documented separately",
+        "harvest": "P02; fractional source days rounded to adjacent integer checkpoints where needed",
+        "coveredStage": "Editorial emergence check window; soybean supplier reports four dark days",
+        "method": "Editorial coir/empty-cover adaptation; no added numeric weight verified",
         "seedSize": "Illustrative assumption: replace with measured lot count",
         "waterCapacity": "Illustrative substrate scenario: calibrate by weighing",
         "waterDemand": "User-entered scenario or measured loss; no species ET coefficients",
         "germination": "95% example, replace with lot test",
         "establishment": "90% conditional example, replace with tray emergence",
-        "soak": "Named recipe when explicit; otherwise editorial window, not an optimum"
+        "soak": "On The Grow explicitly recommends 8–12 h for mung beans; 10 h is the selected midpoint."
+      }
+    },
+    {
+      "id": "soybean",
+      "name": "Soybean · pilot",
+      "species": "Glycine max",
+      "family": "Fabaceae",
+      "group": "legume",
+      "defaultGrams": 100,
+      "referenceAreaIn2": 200,
+      "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
+      "harvestDays": [
+        7,
+        14
+      ],
+      "coverDays": [
+        4,
+        4
+      ],
+      "soakHours": [
+        8,
+        8
+      ],
+      "method": "stack",
+      "topdress": false,
+      "seedForm": "single seed",
+      "seedsPerGram": 6.4,
+      "seedSizeBasis": "Illustrative until this lot is counted and weighed",
+      "seedSizeSource": null,
+      "source": "P02",
+      "confidence": "Pilot starting rate · limited tray evidence",
+      "notes": "100 g dry seed per nominal 200 in² is an editorial pilot, not a verified commercial 1020 rate. Supplier gives 8 h soak and 100 g per unspecified tray; a separate study used 25 seeds/8-cm pot (about 642 seeds/1020), without reporting seed mass. Count your lot. Do not confuse soybean with mung bean.",
+      "alternatives": [
+        {
+          "id": "baseline",
+          "label": "Research starting plan",
+          "grams": 100,
+          "area": 200,
+          "harvest": [
+            7,
+            14
+          ],
+          "cover": [
+            4,
+            4
+          ],
+          "method": "stack",
+          "source": "P02",
+          "note": "100 g dry seed per nominal 200 in² is an editorial pilot, not a verified commercial 1020 rate. Supplier gives 8 h soak and 100 g per unspecified tray; a separate study used 25 seeds/8-cm pot (about 642 seeds/1020), without reporting seed mass. Count your lot. Do not confuse soybean with mung bean. Coir and empty cover are local planning adaptations. Uncover by rooted, upright emergence, not the date alone.",
+          "soakBasis": "8 h from indexed soybean supplier instructions; Fothergill’s says overnight for sprouts. The small-pot study used 24 h, a different protocol.",
+          "soak": [
+            8,
+            8
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty contact cover, 0 lb added: editorial pilot setting; no numeric bean-specific load verified.",
+          "calendarSources": [
+            "P02",
+            "D16",
+            "D36",
+            "D41",
+            "D63",
+            "D64",
+            "D65"
+          ],
+          "confidence": "Pilot starting rate · limited tray evidence",
+          "substrateId": "coir"
+        }
+      ],
+      "calendar": {
+        "sow": "Use untreated, food-use Glycine max seed. Weigh dry, soak 8 h in clean water, rinse, drain and spread evenly. Trial 100 g per nominal 1020; keep mung bean and soybean lots distinct.",
+        "exit": "Anchored, even emergence; monitor seed decay independently of crop size.",
+        "water": "Follow the named study/seed-lot protocol; soaking is optional unless explicitly part of that recipe. Drain soaked seed and inspect dense roots closely.",
+        "harvest": "Inspect from day 7; use the supplier’s 7–14 d microgreen window and cut above seed/medium, leaving roots behind. This is a leafy microgreen pilot, not a dark-grown bean-sprout recipe.",
+        "lightReadiness": {
+          "heightIn": [
+            0.5,
+            1
+          ],
+          "basis": "Editorial group estimate; no crop-specific light-transition height verified.",
+          "sources": [
+            "D41"
+          ],
+          "check": "Anchored, even emergence; monitor seed decay independently of crop size."
+        },
+        "litCare": "",
+        "demand": 2.3,
+        "waterSources": [
+          "D16",
+          "D36"
+        ],
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+      },
+      "provenance": {
+        "density": "P02: editorial pilot mass; primary count evidence documented separately",
+        "harvest": "P02; fractional source days rounded to adjacent integer checkpoints where needed",
+        "coveredStage": "Editorial emergence check window; soybean supplier reports four dark days",
+        "method": "Editorial coir/empty-cover adaptation; no added numeric weight verified",
+        "seedSize": "Illustrative assumption: replace with measured lot count",
+        "waterCapacity": "Illustrative substrate scenario: calibrate by weighing",
+        "waterDemand": "User-entered scenario or measured loss; no species ET coefficients",
+        "germination": "95% example, replace with lot test",
+        "establishment": "90% conditional example, replace with tray emergence",
+        "soak": "8 h from indexed soybean supplier instructions; Fothergill’s says overnight for sprouts. The small-pot study used 24 h, a different protocol."
       }
     },
     {
@@ -11179,6 +11322,61 @@
       "kind": "Secondary compilation",
       "note": "Lists nominal 1020 dry weight ranges and cites CropKing. Its rows are retained as supplied inputs, not independent grower measurements.",
       "accessed": "2026-11-04",
+      "local": null
+    },
+    "D62": {
+      "id": "D62",
+      "title": "On The Grow · mung bean presoak FAQ",
+      "url": "https://onthegrow.net/pages/faq",
+      "kind": "Firsthand grower guide",
+      "note": "Names mung beans among seeds benefiting from an 8–12 h presoak. Does not supply the planner’s 150 g rate.",
+      "accessed": "2026-11-06",
+      "local": null
+    },
+    "D63": {
+      "id": "D63",
+      "title": "Truzzi et al. 2021 · soybean microgreen cultivation",
+      "url": "https://doi.org/10.3390/foods10081690",
+      "kind": "Controlled study",
+      "note": "25 soybean seeds per 8-cm-diameter pot, 24 h presoak, peat/clay 80:20, 18°C, final day-10 harvest. About 0.497 seeds/cm²; density was not varied and seed mass was not reported. Not a commercial 1020 rate.",
+      "accessed": "2026-11-06",
+      "local": "Truzzi-2021-soybean-microgreens-light.pdf",
+      "sha256": "4ea7048be350f505e82413224872f1e0f6348ad10bac2961448a5af816edf37e"
+    },
+    "D64": {
+      "id": "D64",
+      "title": "NutriPony · soybean seed growing instructions",
+      "url": "https://www.nutripony.com/SoybeanSeeds",
+      "kind": "Seed supplier",
+      "note": "Indexed supplier instructions: 8 h soak, 100 g per seedling tray, four dark days, 7–9 d harvest. Tray dimensions absent; 100 g is not verified for a 1020. Live recheck returned 410 after indexed retrieval.",
+      "accessed": "2026-11-06",
+      "local": null
+    },
+    "D65": {
+      "id": "D65",
+      "title": "Fothergill’s · Sprouting Soybean, SKU 3042",
+      "url": "https://www.mrfothergills.com.au/products/sprouting-soybean-seeds",
+      "kind": "Seed supplier",
+      "note": "Glycine max; overnight soak in the sprouting method. Separate microgreen tray instructions say sow thinly and cut above seed at 7–14 d. The 50 g packet is a pack size, not a tray sowing rate.",
+      "accessed": "2026-11-06",
+      "local": null
+    },
+    "D66": {
+      "id": "D66",
+      "title": "Vitality Farms · Mung Bean grow notes, p. 40",
+      "url": "https://vitalityfarmscompany.com/wp-content/uploads/2022/04/micro-grow-notes.pdf",
+      "kind": "Grower notes compilation",
+      "note": "450 g per 1020 and 8–12 h soak. Much denser than the count-based study; notes mix contributed advice and contain conflicting light/harvest timing. Not averaged into the default or presented as an independently replicated optimum.",
+      "accessed": "2026-11-06",
+      "local": null
+    },
+    "P02": {
+      "id": "P02",
+      "title": "Mung bean and soybean · 1020 starting trials",
+      "url": "bean-crop-notes.html",
+      "kind": "Editorial synthesis of primary sources",
+      "note": "Mung 150 g/200 in² and 8–12 h soak; soybean 100 g/200 in² and 8 h soak. Pilot mass rates, not pooled averages. Source-specific counts, soak differences, seed-size calibration and missing soybean tray dimensions are documented.",
+      "accessed": "2026-11-06",
       "local": null
     },
     "P01": {
