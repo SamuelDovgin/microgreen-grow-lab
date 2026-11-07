@@ -8,9 +8,15 @@ const fmt=(n,d=0)=>Number(n).toLocaleString('en-US',{maximumFractionDigits:d,min
 const mass=(n,exact=false)=>fmt(n,exact?1:0)+' g';
 const water=n=>n>=1000?fmt(n/1000,2)+' L':fmt(n,0)+' mL';
 const trialWeighG=Math.ceil(trial.dryTrayG);
-$('trial-dry').textContent=mass(trialWeighG);
-$('trial-water').textContent=water(trialWeighG*trial.waterRatio);
-$('trial-volume').textContent=`≈ ${fmt(trial.estimatedVolumeL,1)} L / ${trial.estimatedCups} US cups`;
+function renderQuickBatch(count){
+ $('tray-trial-title').textContent=count===1?'What one full shallow 1020 used':`Prepare ${count} full shallow 1020 trays`;
+ $('trial-dry').textContent=mass(trialWeighG*count);
+ $('trial-water').textContent=fmt(trialWeighG*trial.waterRatio*count)+' mL';
+ $('trial-volume').textContent=`≈ ${fmt(trial.estimatedVolumeL*count,1)} L / ${trial.estimatedCups*count} US cups`;
+ for(let n=1;n<=4;n++)$('trial-batch-'+n).setAttribute('aria-pressed',String(n===count));
+}
+for(let n=1;n<=4;n++)$('trial-batch-'+n).addEventListener('click',()=>renderQuickBatch(n));
+renderQuickBatch(1);
 function read(){return Object.fromEntries([...ids.map(id=>[id,$(id).value]),['fillDefaultVersion',2],['calibration',$('calibration').checked],['rows',M.crops.map(c=>({id:c.id,count:$(c.id+'-count').value,cups:$(c.id+'-cups').value,fill:$(c.id+'-fill').value==='trial'?'trial':'volume'}))]]);}
 function load(s){for(const id of ids)$(id).value=s[id]??M.defaults()[id];$('calibration').checked=!!s.calibration;M.crops.forEach((c,i)=>{const r=s.rows?.find(r=>r.id===c.id)||M.defaults().rows[i];$(c.id+'-count').value=r.count;setFill(c.id,r.cups,r.fill);});}
 function syncFill(id){const v=$(id+'-cups').value;$(id+'-fill').value=['6','8',String(M.HALF_INCH_CUPS),'12','13.5'].includes(v)?v:'custom';}

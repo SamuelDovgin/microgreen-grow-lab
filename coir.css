@@ -10,3 +10,5 @@
 
 .coir-trial-card{margin-bottom:20px}.coir-trial-card h2{margin:0}.coir-trial-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:12px;margin:16px 0}.coir-trial-facts div{background:var(--soft);border-radius:6px;padding:12px}.coir-trial-facts dt{font-size:12px;color:var(--muted)}.coir-trial-facts dd{margin:4px 0 0;font-size:clamp(19px,3vw,25px);font-weight:700}.coir-trial-card .section-top{flex-wrap:wrap}
 @media print{#use-tray-trial{display:none}}
+
+.coir-trial-presets{margin-bottom:12px}.coir-trial-presets button{min-height:44px;min-width:72px;font-size:14px}.coir-trial-presets button[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:white}.coir-trial-presets button:focus-visible{outline:2px solid var(--green);outline-offset:3px}

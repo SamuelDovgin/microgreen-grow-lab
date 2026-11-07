@@ -6,9 +6,9 @@
     "coir-guide.html": "dd9235c91854aa986d40950876cc8fc27a7489ab2570ae72bc1dd66b111134f2",
     "coir-model.js": "f41b38e2e2b199d9d66d90284e598dcca51e1921b3b975e701dc1fd57d081c3a",
     "coir-source-log.html": "9f2cf8d3c3b9da6f47d016d94c7ab95a820d3d97d868703760af630a2178aa7a",
-    "coir.css": "69e35ae34af74c265455bb8de2dcbfbbf7e26fd43067867a732eadd73d79bf7f",
-    "coir.html": "8610b11f6ae73acac76d414e57a8eeb0f77d1b726b86c15839836119dba01f60",
-    "coir.js": "78adcbeeb10dfdc34c35152d40c32c709eb1ab681f2a0e2ce3c218973578396d",
+    "coir.css": "8947ba39a6061c6ee32421a7898c1bfe83a59ec1dbedbd1d347aeffe9e34442c",
+    "coir.html": "0e1c97adf90dbc8933bfcbb9e671436c1f47b32b08ea227b5de169b5be85b0e7",
+    "coir.js": "bfeca58561baec4c8a50ef28c69260e0f4f9602b6fb7936bcf1261d3c8728207",
     "creator-notes.html": "f5ad008e276073c2e776b24b53882c365ce6ecf6600a7824014f557d27a13e82",
     "crop-calendar-sources.html": "19fcddca800fd8058140399d4712cf5f59bde79b5c2c2e2e6b852382bae9f8ff",
     "crop-catalog.html": "419c0f19aff5526f432f2c0c11fc35a277d06b60445b8bca497b236f331a9904",
@@ -88,5 +88,5 @@
     "style.css": "745f7f22dd404d93a58c210f34ed68a4b93df47b2864d8260dfd2bd1b98bdf40"
   },
   "publisher": "grow-lab",
-  "source_commit": "827d2ed5b1d3317cf23b8e62462f4ed50413c700"
+  "source_commit": "9e75c700c21d4e63b492131466b41726c1c649e4"
 }
