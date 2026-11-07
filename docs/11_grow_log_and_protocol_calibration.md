@@ -59,6 +59,10 @@ The estimate assumes water density near 1 g/mL, consistent complete-tray content
 
 The page displays the elapsed-time-weighted average of the latest three complete under-light intervals. It can transfer this input to the planner only with a verified setup, a recorded weighing convention and demand inside the planner’s 0.1–6 mm/day range. The slider rounds to 0.1 mm/day, and the planner displays the source tray and uncertainty note. This replaces an illustrative loss input; it does not validate a refill threshold, extrapolate demand to a different stage/environment, or establish crop safety.
 
+## Dated seed-rate revisions — November 7, 2026
+
+The planner now shows [published rate history and personal trial revisions](14_seed_packets_and_rate_history.md). Its saved next-trial rates keep the previous amount, date, reason, seed lot and optional references to yield notes. Personal rate backups and full grow-log backups are separate. The original planner snapshot and its rate-revision reference remain attached to each tray; a later default does not rewrite its actual seed mass or harvest result.
+
 ## How a protocol refinement should be made
 
 Keep the best-supported starting recipe while accumulating tray evidence. A first local density comparison can use 75%, 100% and 125% of that rate with independent tray repeats, randomized/blocked positions and multiple sowing cycles. Hold other conditions and the intended harvest stage constant. Test substrate or irrigation changes in a separate comparison unless the experiment is designed for multiple factors.
@@ -69,7 +73,7 @@ After reviewing a shared backup, a proposed refinement should identify the crop/
 
 The browser log is implemented by `site/dist/grow-log-model.js` and `site/dist/grow-log.js`, with a small planner handoff script. It stores plain JSON with a versioned schema and validates backups before merging. Tests cover persistence/reload, duplicate/conflicting imports, zero-saleable failures, invalid harvest mass, missing context, conservative grouping, repeated-cycle checks, water bookkeeping, storage quota/availability/corruption, stale tabs and actual UI event handlers.
 
-Run `node site/test-grow-log.cjs`, `node site/test-grow-log-interactions.cjs` and `node site/test-grow-log-planner.cjs`, then the crop interaction regression and shared link audit. Browser visual rendering remains a separate verification step; browser control is disabled in this environment. The self-contained portable ZIP includes the journal alongside the existing tools.
+Run `node site/test-grow-log.cjs`, `node site/test-grow-log-interactions.cjs` and `node site/test-grow-log-planner.cjs`, then the crop interaction regression and shared link audit. Browser visual rendering is a separate verification step. It was unavailable in the original November 1 pass; November 7 local desktop/mobile checks cover the newly added packet cards and rate history. The self-contained portable ZIP includes the journal alongside the existing tools.
 
 ## Sources
 

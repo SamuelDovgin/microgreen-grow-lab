@@ -1,6 +1,6 @@
 # Species and cultivar density catalogue
 
-*November 6, 2026. [Open the seed/water planner](site/dist/crops.html). These are 55 crop/cultivar profiles; some share a species. The selected starting recipe is scaled to a nominal 200-in² surface below; measured usable tray area belongs in the app.*
+*November 7, 2026. [Open the seed/water planner](site/dist/crops.html). These are 55 crop/cultivar profiles; some share a species. The selected starting recipe is scaled to a nominal 200-in² surface below; measured usable tray area belongs in the app.*
 
 Some rows are varieties of one species. Seed-count examples are illustrative unless explicitly attributed; replace them with your lot. Covered emergence settings can be generalized editorial windows even when mass and harvest are directly sourced. Full per-field provenance and all alternative source recipes are in the [JSON database](data/crop-protocols.json).
 
@@ -57,7 +57,7 @@ Some rows are varieties of one species. Seed-count examples are illustrative unl
 | Marigold · Gem | *Tagetes tenuifolia* | Asteraceae | 4.0 | 18–20 | Gem marigold specialty | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · Published starting rate |
 | Chia | *Salvia hispanica* | Lamiaceae | 15.5 | 12–12 | Sticky seed: basil & chia | [P01](#seed-rate-comparison) · Starting amount from supplied comparison |
 | Fenugreek / methi | *Trigonella foenum-graecum* | Fabaceae | 25.0 | 10–12 | Other legumes: individual pilots | [P01](#seed-rate-comparison) · Starting amount from supplied comparison |
-| Mung bean | *Vigna radiata* | Fabaceae | 215.0 | 7–10 | Other legumes: individual pilots | [P02](bean-crop-notes.html) · Supplier tray rate · local calendar adaptation |
+| Mung bean | *Vigna radiata* | Fabaceae | 180.0 | 7–10 | Other legumes: individual pilots | [U01](seed-rate-notes.html) · Your chosen trial · yield pending |
 | Soybean · pilot | *Glycine max* | Fabaceae | 150.0 | 7–14 | Other legumes: individual pilots | [P02](bean-crop-notes.html) · Pilot starting rate · supplier range |
 | Lentil · research pilot | *Lens culinaris* | Fabaceae | 107.5 (count-derived) | 7–11 | Other legumes: individual pilots | [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · Count-based experimental rate |
 | Wheatgrass | *Triticum aestivum* | Poaceae | 300.0 | 10–12 | Cereal juice grass | [P01](#seed-rate-comparison) · Starting amount from supplied comparison |
@@ -124,7 +124,7 @@ OTG = On The Grow, BF = Bootstrap Farmer, J = Johnny’s, USU = Utah State Exten
 | Alfalfa | MS 17.5 · DS 15 | 16.3 | — | — | Comparison only. |
 | Flax | MS 17.5 · REV 26 | 21.8 | — | — | Comparison only. |
 
-[Mung bean and soybean: 1020 seed rates, soaking and evidence limits](13_mung_and_soybean_1020_protocols.md). These new starters are labeled pilot rates.
+[Your seed packets, dated rate history and yield refinement](14_seed_packets_and_rate_history.md). Your mung choice is now 180 g; source alternatives remain available. [Mung/soybean source comparisons](13_mung_and_soybean_1020_protocols.md).
 
 ## Per-crop notes and alternative recipes
 
@@ -850,6 +850,8 @@ Botanical identity: *Helianthus annuus*. Planting unit: single seed. 120 g is th
 
 Initial count input: 16 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
+This profile includes Black Oil · True Leaf Market. Its named True Leaf recipe appears below.
+
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
 | Seed rate comparison · starting plan | 130 g / 200.00 in² | 6–12 h | 3–3 d / stack, 15 lb | 1 d | 9–9 | [P01](#seed-rate-comparison) · [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D31](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [D04](https://microgreenmanager.com/blog/germination-id-guides) · [D40](https://trueleafmarket.com/products/sunflower-black-oil-microgreens-seeds) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D45](https://windrivergreens.com/blogs/guides/how-to-grow-sunflower-microgreens-step-by-step-complete-beginner-s-guide) |
@@ -1036,13 +1038,14 @@ Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above th
 
 ### Mung bean
 
-Botanical identity: *Vigna radiata*. Planting unit: single seed. Starter uses MP Seeds’ 215 g dry seed/200 in² and On The Grow’s 8–12 h soak. Separate study benchmark targets 3 seeds sown/cm² and changes grams with measured lot size. Coir/calendar are adaptations, not a proven optimum or raw-food safety validation.
+Botanical identity: *Vigna radiata*. Planting unit: single seed. You reported starting with 180 g dry mung seed. Recorded November 7, 2026; actual sowing date and harvest yield are still unknown. This is your trial choice, not a measured optimum. Keep the weighed 180 g in the tray log even if you later refine the area.
 
 Initial count input: 10 units/g — **MP Seeds approximate 10 seeds/g; replace with your actual lot**. This is not a seed-size guarantee.
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
-| Mung bean · 215 g supplier rate | 215 g / 200.00 in² | 8–12 h | 3–4 d / stack, 0 lb | 0 d | 7–10 | [P02](bean-crop-notes.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · [D62](https://onthegrow.net/pages/faq) · [D67](https://mpseeds.eu/mung-bean-microgreens-seeds) · [D70](https://www.fda.gov/media/102430/download) |
+| Your first mung trial · 180 g | 180 g / 200.00 in² | 8–12 h | 3–4 d / stack, 0 lb | 0 d | 7–10 | [U01](seed-rate-notes.html) · [P02](bean-crop-notes.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · [D62](https://onthegrow.net/pages/faq) · [D67](https://mpseeds.eu/mung-bean-microgreens-seeds) · [D70](https://www.fda.gov/media/102430/download) |
+| MP Seeds · 215 g supplier starting plan | 215 g / 200.00 in² | 8–12 h | 3–4 d / stack, 0 lb | 0 d | 7–10 | [P02](bean-crop-notes.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · [D62](https://onthegrow.net/pages/faq) · [D67](https://mpseeds.eu/mung-bean-microgreens-seeds) · [D70](https://www.fda.gov/media/102430/download) |
 | Priti · 3 sown seeds/cm² benchmark | 3 seeds/cm²; 387.1 g/200 in² at current count input | Direct sow | 2–4 d / stack, 0 lb | 0 d | 7–9 | [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |
 | Vitality Farms · 450 g grower recipe | 450 g / 200.00 in² | 8–12 h | 3–4 d / stack, 0 lb | 0 d | 7–10 | [D66](https://vitalityfarmscompany.com/wp-content/uploads/2022/04/micro-grow-notes.pdf) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |
 

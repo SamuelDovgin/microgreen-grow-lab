@@ -50,7 +50,7 @@ cantaloupe,Cantaloupe,Cucumis melo,Cucurbitaceae,cantaloupe,30,200,10–10,D05,P
 marigold,Marigold · Gem,Tagetes tenuifolia,Asteraceae,marigold,4,200,18–20,D02,Published starting rate
 chia,Chia,Salvia hispanica,Lamiaceae,mucilage,15.5,200,12–12,P01,Starting amount from supplied comparison
 fenugreek,Fenugreek / methi,Trigonella foenum-graecum,Fabaceae,legume,25.0,200,10–12,P01,Starting amount from supplied comparison
-mung,Mung bean,Vigna radiata,Fabaceae,legume,215,200,7–10,P02,Supplier tray rate · local calendar adaptation
+mung,Mung bean,Vigna radiata,Fabaceae,legume,180,200,7–10,U01,Your chosen trial · yield pending
 soybean,Soybean · pilot,Glycine max,Fabaceae,legume,150,200,7–14,P02,Pilot starting rate · supplier range
 lentil,Lentil · research pilot,Lens culinaris,Fabaceae,legume,107.526667,200,7–11,D11,Count-based experimental rate
 wheat,Wheatgrass,Triticum aestivum,Poaceae,cereal,300.0,200,10–12,P01,Starting amount from supplied comparison

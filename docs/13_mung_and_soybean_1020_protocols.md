@@ -1,12 +1,12 @@
 # Mung bean and soybean: seed rates and soaking for 1020 trays
 
-*Updated November 6, 2026 after the seed-rate recheck. [Open the planner](site/dist/crops.html) · [Full source notebook](source_docs/research_resource_log_2026-11-06.txt).*
+*Updated November 7, 2026 after your first mung trial choice. [Open the planner](site/dist/crops.html) · [Full source notebook](source_docs/research_resource_log_2026-11-06.txt).*
 
-The selected defaults are now **215 g dry mung beans** and **150 g dry soybeans** per nominal **10 × 20 inch / 200 in²** planted surface. Weigh before soaking. Mung uses an explicit supplier tray rate; soybean is a starting trial within an area-scaled supplier range. These replace the earlier 150 g mung / 100 g soybean pilot defaults.
+The selected defaults are now **180 g dry mung beans**, your reported first trial, and **150 g dry soybeans** per nominal **10 × 20 inch / 200 in²** reference. Weigh before soaking. The earlier **215 g mung supplier rate** remains selectable. Your 180 g choice has no harvest result yet; its actual sowing date and planted area are unknown. See [the dated rate history and refinement controls](14_seed_packets_and_rate_history.md).
 
 | Crop | Dry seed / nominal 1020 | Density | Presoak | Selected calendar soak |
 |---|---:|---:|---|---:|
-| Mung bean — *Vigna radiata* | **215 g** | 1.075 g/in²; 1,666 g/m² | **8–12 h** | 10 h |
+| Mung bean — *Vigna radiata* | **180 g user trial** | 0.900 g/in²; 1,395 g/m² | **8–12 h** | 10 h |
 | Soybean — *Glycine max* | **150 g starting trial** | 0.750 g/in²; 1,162 g/m² | **8 h** within a supplier’s 8–12 h window | 8 h |
 
 The starter calendars retain their coir/empty-cover adaptations and harvest checks around day 7–10 for mung and day 7–14 for soybean. Whole source recipes remain distinct. An established stand and desired leaf stage determine readiness; the date alone does not.
@@ -41,7 +41,7 @@ Fothergill’s separately gives thin-sown soybean microgreen instructions and **
 |---|---:|---|
 | Basic pea shoots | 225 g | Existing source-reviewed starter |
 | Black-oil sunflower | 130 g | Existing source-reviewed starter |
-| Mung bean | 215 g | Explicit MP Seeds tray rate |
+| Mung bean | 180 g | User-selected first trial; yield pending |
 | Soybean | 150 g trial | Within Pestuj’s 133–178 g area-scaled range |
 
 These are independent crop recipes, not rates inferred from seed size alone. Seed count, cultivar, intended canopy density, growing medium and harvest stage affect the amount. The [catalogue](09_species_density_and_protocol_catalog.md) preserves each recipe and source trail.
@@ -54,7 +54,7 @@ In practice, a defined seed treatment specifies a product suitable for the inten
 
 ## Applying these to your shallow tray
 
-For a measured **19.75 × 9.5 inch = 187.625 in²** planted surface, the selected reference densities become **201.7 g mung** and **140.7 g soybean**. The planner scales with the entered area. Measure at the coir fill line; the tray floor and nominal trade size are different reference choices. [D59 — tray dimensions](https://www.bootstrapfarmer.com/products/microgreen-trays)
+For a measured **19.75 × 9.5 inch = 187.625 in²** planted surface, the selected reference densities become **168.9 g mung** and **140.7 g soybean**. The planner scales reference density with the entered area. Preserve your actual weighed 180 g in the grow log; changing the area must not rewrite what you sowed. Measure at the coir fill line; the tray floor and nominal trade size are different reference choices. [D59 — tray dimensions](https://www.bootstrapfarmer.com/products/microgreen-trays)
 
 Drain soaked seed and spread evenly without heaps. The starter uses an empty contact cover, with no added paver load. Its approximate **0.5–1 inch above-medium** light-transition cue is an editorial group estimate, checked alongside rooted, upright emergence. If not ready, retain a loose unweighted dark cover and recheck; stop extending darkness if stems lean or tangle. [D41 — grower transition criteria](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
