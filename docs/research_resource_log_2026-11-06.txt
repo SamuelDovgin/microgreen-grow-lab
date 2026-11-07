@@ -1,3 +1,6 @@
+CURRENT DEFAULT CORRECTION — 2026-11-06
+The initial 150 g mung / 100 g soybean decisions below are historical and superseded. Current defaults: mung 215 g per 200 in² from D67; soybean 150 g per 200 in² selected within D68’s converted 133–178 g range. See the appended correction records D67–D70.
+
 MUNG BEAN AND SOYBEAN — RESEARCH RESOURCE LOG — 2026-11-06
 
 Used in: 13_mung_and_soybean_1020_protocols.md, seed/water planner, generated catalogue and CSV.
@@ -195,3 +198,66 @@ Accessed: 2026-11-06. Class: local archive. Preserved at original paths; not ind
 
 CHANGE NOTE — 2026-11-06
 Existing mung ID is preserved; a 150 g starter is selected first and the count benchmark remains selectable. Added soybean ID, eight-hour presoak, explicit pilot evidence badge, source trail and leafy-harvest notes. Neither bean inherits a 15 lb paver. Shared light-transition readiness checks remain active. Final checks and visual-access limitations are reported in the delivery notes.
+
+
+DEFAULT RECHECK AND SANITIZE QUESTION — 2026-11-06
+
+[D67] MP Seeds — Mung Bean Microgreens Seeds; product MUNG-BEAN
+URL: https://mpseeds.eu/mung-bean-microgreens-seeds
+Accessed: 2026-11-06; live official supplier page.
+Class: seed supplier.
+Used in: selected mung starter mass and approximate seed-count input; bean guide and generated catalogue.
+Supports: explicit 215 g per 10×20 tray; about 10 seeds/g, 3–4 dark days and 8–9 total days.
+Limits: supplier recommendation, not replicated density optimization. Table gives up to 8 h soak; microgreen prose gives 12 h. Starter therefore retains On The Grow 8–12 h and identifies combined-source coir/calendar adaptation. Do not average this seed-size estimate with Priti’s genotypes.
+Local preservation: URL-only — no full copyrighted page retained; original support notes and structured source record preserved.
+
+[D68] Pestuj / Ventani — Soybeans; Glycine max; PS093-100
+URL: https://www.pestuj.sk/en/p/soybeans
+Accessed: 2026-11-06; live official supplier page.
+Class: seed supplier.
+Used in: soybean default mass range, approximate count input, separate full supplier recipe, bean guide and catalogue.
+Supports: 162–216 g per 56×28 cm tray, equivalent by area to 133.311–177.748 g per 200 in²; about 5 seeds/g; 8–12 h soak. Supplier method uses peat-based medium, 6–8 dark days and 12–16 total days.
+Decision: 150 g starter is an editorial selection inside the converted range, not an exact midpoint or optimum. Retain 8 h within the published soak range. Full supplier method uses 189 g at original 1,568 cm² area and the source’s own cover/harvest windows.
+Limits: supplier rate, not a controlled optimization. 100 g at the top of the product page is the pack size. Small-container 15–20 g / 14.5×10 cm row differs slightly from the larger-tray arithmetic. No chemical sanitation, hormone or health claims adopted.
+Local preservation: URL-only — no full copyrighted page retained; original support notes and structured record preserved.
+
+[D69] Castellaneta et al. 2024 — Exploration of the lipid profile of edible oleaginous microgreens by mass spectrometry-based lipidomics
+DOI: 10.1021/acs.jafc.3c09347
+URL: https://doi.org/10.1021/acs.jafc.3c09347
+Author manuscript: https://ricerca.uniba.it/bitstream/11586/475824/3/Losito_JAFC%202024_pre%20print%20lipidomica%20microortaggi.pdf
+Accessed: 2026-11-06; institutional author-manuscript PDF read in web reader; §2.2, printed pp. 8–9.
+Class: primary composition study; fixed-density cultivation methods.
+Used in: soybean density comparison and correction of the implication that only a sparse soybean method was available.
+Supports: five oleaginous species; 150 cm² peat trays; soybean 2 seeds/cm² versus sunflower 1 seed/cm²; three dark days at 20°C/80% RH, then 60% RH and 16 h light around 40 µmol/m²/s, nutrient solution and day-10 cut.
+Key conversion: soybean 2 seeds/cm² × 1,290.32 cm² = 2,580.64 seeds per nominal 1020. At a hypothetical lot count of 5 seeds/g only, this is 516.128 g. This combines a different supplier’s size estimate solely as an illustration.
+Limits: density was not varied or optimized; not a tested 516-g 1020 recipe, local yield prediction, or raw-food safety validation. No seed mass or soak adopted.
+Local preservation: URL-only — author manuscript remains linked; no republication license established for a portable full copy. Bibliographic and original methods notes retained.
+
+[D70] US FDA — Standards for the Growing, Harvesting, Packing, and Holding of Sprouts for Human Consumption, September 2023
+URL: https://www.fda.gov/media/102430/download
+Accessed: 2026-11-06; live official 103-page guidance, seed-treatment section.
+Class: primary regulatory guidance.
+Used in: answer and site explanation of the grower chart’s Sanitize: Yes field.
+Supports: seed treatment is separate from normal hydration; selection of an appropriate treatment and adherence to applicable product instructions matter. Surviving pathogens can multiply during germination; treatment is not proof of pathogen-free output.
+Limits: guidance concerns sprouts; not a universal microgreen chemical dose. The supplied mung row gives no agent, concentration, temperature, solution ratio, contact time or rinse specification. No bleach/peroxide recipe inferred, no commercial treatment described as a requirement for this home microgreen setup.
+Local preservation: URL-only for this pass; original paraphrase and link retained. Existing archive separately contains FDA guidance PDFs.
+
+[D66 follow-up] Supplied Vitality Farms mung page and sanitation wording
+URL: https://vitalityfarmscompany.com/wp-content/uploads/2022/04/micro-grow-notes.pdf
+Accessed: 2026-11-06; live grower PDF; mung printed p. 40, sunflower printed p. 46 and corn printed p. 29.
+Class: grower notes compilation; also user-pasted excerpt.
+Used in: 450 g selectable mung alternative and explanation of missing sanitation instructions.
+Supports: mung 450 g/1020, 8–12 h soak and 3–4 day stack with unspecified added load. Sunflower says to sanitize by a preferred method and rinse; corn similarly leaves the method unspecified.
+Limits: Sanitize: Yes is not a dose or validated pathogen-control procedure. No unspecified peroxide stock concentration or unrelated foliar-spray dilution copied into seed treatment. The day-7–10 harvest versus later light-duration conflict remains exposed.
+Local preservation: URL-only plus user-provided excerpt and original support notes; no full copyrighted guide redistributed.
+
+[G14] Microgreens Guru — mung bean shoots and seeding chart
+URLs: https://microgreensguru.com/microgreen-types/mung-bean-shoots/ ; https://microgreensguru.com/blog/microgreen-seeding-rate-chart/
+Accessed: 2026-11-06; indexed discovery text.
+Class: secondary compilation; discovery only.
+Used in: locating the direct MP Seeds recommendation, which was independently opened and supplies D67. No default treated as validated by this secondary page.
+Limits: not an independent trial or grower replication.
+Local preservation: URL-only — no full page retained.
+
+FOLLOW-UP IMPLEMENTATION
+Changed selected masses to 215 g mung / 150 g soybean, updated approximate supplier seed counts to 10/g and 5/g, retained the count-derived mung alternative, added Vitality’s 450 g recipe and Pestuj’s full method separately, and documented the sanitation gap without inventing a dose. Pea and sunflower defaults are unchanged. Source weights are dry, before hydration.

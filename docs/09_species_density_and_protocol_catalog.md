@@ -57,8 +57,8 @@ Some rows are varieties of one species. Seed-count examples are illustrative unl
 | Marigold · Gem | *Tagetes tenuifolia* | Asteraceae | 4.0 | 18–20 | Gem marigold specialty | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · Published starting rate |
 | Chia | *Salvia hispanica* | Lamiaceae | 15.5 | 12–12 | Sticky seed: basil & chia | [P01](#seed-rate-comparison) · Starting amount from supplied comparison |
 | Fenugreek / methi | *Trigonella foenum-graecum* | Fabaceae | 25.0 | 10–12 | Other legumes: individual pilots | [P01](#seed-rate-comparison) · Starting amount from supplied comparison |
-| Mung bean | *Vigna radiata* | Fabaceae | 150.0 | 7–10 | Other legumes: individual pilots | [P02](bean-crop-notes.html) · Pilot starting rate · study-anchored |
-| Soybean · pilot | *Glycine max* | Fabaceae | 100.0 | 7–14 | Other legumes: individual pilots | [P02](bean-crop-notes.html) · Pilot starting rate · limited tray evidence |
+| Mung bean | *Vigna radiata* | Fabaceae | 215.0 | 7–10 | Other legumes: individual pilots | [P02](bean-crop-notes.html) · Supplier tray rate · local calendar adaptation |
+| Soybean · pilot | *Glycine max* | Fabaceae | 150.0 | 7–14 | Other legumes: individual pilots | [P02](bean-crop-notes.html) · Pilot starting rate · supplier range |
 | Lentil · research pilot | *Lens culinaris* | Fabaceae | 107.5 (count-derived) | 7–11 | Other legumes: individual pilots | [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · Count-based experimental rate |
 | Wheatgrass | *Triticum aestivum* | Poaceae | 300.0 | 10–12 | Cereal juice grass | [P01](#seed-rate-comparison) · Starting amount from supplied comparison |
 
@@ -1036,14 +1036,15 @@ Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above th
 
 ### Mung bean
 
-Botanical identity: *Vigna radiata*. Planting unit: single seed. Starter uses 150 g dry seed/200 in² and an 8–12 h soak. Separate study benchmark targets 3 seeds sown/cm² and changes grams with measured lot size. Combined-source coir pilot, not a proven optimum or raw-food safety validation.
+Botanical identity: *Vigna radiata*. Planting unit: single seed. Starter uses MP Seeds’ 215 g dry seed/200 in² and On The Grow’s 8–12 h soak. Separate study benchmark targets 3 seeds sown/cm² and changes grams with measured lot size. Coir/calendar are adaptations, not a proven optimum or raw-food safety validation.
 
-Initial count input: 25 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
+Initial count input: 10 units/g — **MP Seeds approximate 10 seeds/g; replace with your actual lot**. This is not a seed-size guarantee.
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
-| Mung bean · 150 g starting trial | 150 g / 200.00 in² | 8–12 h | 3–4 d / stack, 0 lb | 0 d | 7–10 | [P02](bean-crop-notes.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · [D62](https://onthegrow.net/pages/faq) |
-| Priti · 3 sown seeds/cm² benchmark | 154.838 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 7–9 | [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |
+| Mung bean · 215 g supplier rate | 215 g / 200.00 in² | 8–12 h | 3–4 d / stack, 0 lb | 0 d | 7–10 | [P02](bean-crop-notes.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · [D62](https://onthegrow.net/pages/faq) · [D67](https://mpseeds.eu/mung-bean-microgreens-seeds) · [D70](https://www.fda.gov/media/102430/download) |
+| Priti · 3 sown seeds/cm² benchmark | 3 seeds/cm²; 387.1 g/200 in² at current count input | Direct sow | 2–4 d / stack, 0 lb | 0 d | 7–9 | [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |
+| Vitality Farms · 450 g grower recipe | 450 g / 200.00 in² | 8–12 h | 3–4 d / stack, 0 lb | 0 d | 7–10 | [D66](https://vitalityfarmscompany.com/wp-content/uploads/2022/04/micro-grow-notes.pdf) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |
 
 Weigh dry seed before soaking. For the starter, soak 8–12 h in clean water, rinse, drain thoroughly and spread evenly without heaps. Record the lot and units per gram.
 Water planning default 2.3 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
@@ -1052,15 +1053,16 @@ Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above th
 
 ### Soybean · pilot
 
-Botanical identity: *Glycine max*. Planting unit: single seed. 100 g dry seed per nominal 200 in² is an editorial pilot, not a verified commercial 1020 rate. Supplier gives 8 h soak and 100 g per unspecified tray; a separate study used 25 seeds/8-cm pot (about 642 seeds/1020), without reporting seed mass. Count your lot. Do not confuse soybean with mung bean.
+Botanical identity: *Glycine max*. Planting unit: single seed. 150 g dry seed per nominal 200 in² is a starting trial within Pestuj’s area-scaled 133–178 g range. Its 56×28 cm tray uses 162–216 g. A separate dense study used 2 seeds/cm²; do not average unlike methods or infer mass without the lot count. Coir and the four-day cover are local adaptations.
 
-Initial count input: 6.4 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
+Initial count input: 5 units/g — **Pestuj approximate 5 seeds/g; replace with your actual lot**. This is not a seed-size guarantee.
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
-| Research starting plan | 100 g / 200.00 in² | 8 h | 4–4 d / stack, 0 lb | 0 d | 7–14 | [P02](bean-crop-notes.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D63](https://doi.org/10.3390/foods10081690) · [D64](https://www.nutripony.com/SoybeanSeeds) · [D65](https://www.mrfothergills.com.au/products/sprouting-soybean-seeds) |
+| Research starting plan | 150 g / 200.00 in² | 8 h | 4–4 d / stack, 0 lb | 0 d | 7–14 | [P02](bean-crop-notes.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D63](https://doi.org/10.3390/foods10081690) · [D65](https://www.mrfothergills.com.au/products/sprouting-soybean-seeds) · [D68](https://www.pestuj.sk/en/p/soybeans) · [D69](https://doi.org/10.1021/acs.jafc.3c09347) |
+| Pestuj · full supplier method | 189 g / 243.04 in² | 8–12 h | 6–8 d / stack, 0 lb | 0 d | 12–16 | [D68](https://www.pestuj.sk/en/p/soybeans) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |
 
-Use untreated, food-use Glycine max seed. Weigh dry, soak 8 h in clean water, rinse, drain and spread evenly. Trial 100 g per nominal 1020; keep mung bean and soybean lots distinct.
+Use untreated, food-use Glycine max seed. Weigh dry, follow the selected presoak, rinse, drain and spread evenly. The starter trials 150 g per nominal 1020; the full supplier method has its own cover and harvest windows.
 Water planning default 2.3 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
@@ -1073,7 +1075,7 @@ Initial count input: 36 units/g — **Illustrative until this lot is counted and
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
-| Research starting plan | 107.527 g / 200.00 in² | Direct sow | 2–4 d / stack, 0 lb | 0 d | 7–11 | [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |
+| Research starting plan | 3 seeds/cm²; 107.5 g/200 in² at current count input | Direct sow | 2–4 d / stack, 0 lb | 0 d | 7–11 | [D11](https://pmc.ncbi.nlm.nih.gov/articles/PMC9128967/) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D36](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |
 
 Spread the counted planting units evenly for this research pilot. Record the genotype and actual units per gram.
 Water planning default 2.3 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.

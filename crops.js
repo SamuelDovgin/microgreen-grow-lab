@@ -83,12 +83,12 @@ function renderSeed(s,d){
   $('seed-equation').textContent=d.formula+' = '+fmt(d.grams,2)+' g dry seed. Expected stand = '+fmt(d.grams,2)+' × '+fmt(s.seedsPerGram,2)+' × '+fmt(s.germination/100,2)+' × '+fmt(s.establishment/100,2)+' × '+fmt(s.shootsPerUnit,1)+'.';
   if(s.mode==='count')notes.push(notice('Count mode maintains the chosen emerged population. Extra nonemerging seed can still create crowding and decay; investigate low lot performance before compensating with more seed.'));
   else notes.push(notice('Default = source-anchored calculation, not a universal biological optimum. Other media, cultivars, harvest stages and local results may justify a different tested rate.'));
-  if(crop.sownCountCm2&&recipe.id==='baseline')notes.push(notice('Study target is 3 seeds SOWN/cm². Mass changes with units/g; germination is not divided into this sown-count target. Seed size is illustrative until your lot is measured.'));
+  if(crop.sownCountCm2&&recipe.id==='baseline')notes.push(notice('Study target is 3 seeds SOWN/cm². Mass changes with units/g; germination is not divided into this sown-count target. Seed size remains an estimate until your lot is measured.'));
   if(crop.seedForm!=='single seed')notes.push(notice('Count-unit exception: '+crop.seedForm+'. A gram-to-unit conversion is not automatically a gram-to-plant conversion. Measure shoots per viable unit.'));
   if(s.multiplier!==1)notes.push(notice('You are testing '+fmt(s.multiplier*100,0)+'% of the selected source rate. This trial change has no validated yield forecast.'));
  }
  if(['mung','lentil'].includes(crop.id))notes.push(notice('Research pilot: agronomic density evidence exists, but raw-food safety remains unresolved in the archive. This growing plan does not establish a safe serving stage.'));
- if(crop.id==='soybean')notes.push(notice('100 g is a pilot amount, not a verified commercial 1020 recipe. The study supports about 642 seeds per nominal 1020 but gives no seed mass. Count and weigh your lot; soaking duration does not establish a safe raw serving stage.'));
+ if(crop.id==='soybean')notes.push(notice('150 g is a starting trial within a supplier range equivalent to 133–178 g per nominal 1020, not a verified optimum. Separate studies use about 0.5 and 2 seeds/cm²; do not average those methods. Count and weigh your lot; soaking does not establish a safe raw serving stage.'));
  if(crop.id==='fenugreek'&&recipe.id==='baseline')notes.push(notice('The fenugreek paper’s tray dimensions conflict. Treat 25 g as a nominal-tray test, without an area-yield forecast.'));
  $('seed-notices').innerHTML=notes.join('');
  $('harvest-result').textContent='Day '+fmt(s.harvestDay,0);$('cover-result').textContent=fmt(s.coverDays,0)+' d emergence + '+fmt(s.blackoutDays,0)+' d loose blackout';

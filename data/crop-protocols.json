@@ -9930,9 +9930,9 @@
       "species": "Vigna radiata",
       "family": "Fabaceae",
       "group": "legume",
-      "defaultGrams": 150,
+      "defaultGrams": 215,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Editorial 150 g trial per nominal 200 in²; study count benchmark retained separately",
+      "referenceAreaBasis": "MP Seeds 215 g per nominal 10×20 tray; study count benchmark retained separately",
       "harvestDays": [
         7,
         10
@@ -9948,17 +9948,17 @@
       "method": "stack",
       "topdress": false,
       "seedForm": "single seed",
-      "seedsPerGram": 25,
-      "seedSizeBasis": "Illustrative until this lot is counted and weighed",
-      "seedSizeSource": null,
+      "seedsPerGram": 10,
+      "seedSizeBasis": "MP Seeds approximate 10 seeds/g; replace with your actual lot",
+      "seedSizeSource": "D67",
       "source": "P02",
-      "confidence": "Pilot starting rate · study-anchored",
-      "notes": "Starter uses 150 g dry seed/200 in² and an 8–12 h soak. Separate study benchmark targets 3 seeds sown/cm² and changes grams with measured lot size. Combined-source coir pilot, not a proven optimum or raw-food safety validation.",
+      "confidence": "Supplier tray rate · local calendar adaptation",
+      "notes": "Starter uses MP Seeds’ 215 g dry seed/200 in² and On The Grow’s 8–12 h soak. Separate study benchmark targets 3 seeds sown/cm² and changes grams with measured lot size. Coir/calendar are adaptations, not a proven optimum or raw-food safety validation.",
       "alternatives": [
         {
           "id": "starter",
-          "label": "Mung bean · 150 g starting trial",
-          "grams": 150,
+          "label": "Mung bean · 215 g supplier rate",
+          "grams": 215,
           "area": 200,
           "harvest": [
             7,
@@ -9970,12 +9970,12 @@
           ],
           "method": "stack",
           "source": "P02",
-          "note": "150 g dry seed per 200 in² is an editorial starting trial within the study’s approximately 116–209 g seed-size-dependent equivalent. Presoak 8–12 h from On The Grow; this combines sources, rather than reproducing the study. Coir and empty cover are local planning adaptations. Uncover by rooted, upright emergence, not the date alone.",
+          "note": "215 g dry seed per 10×20 tray from MP Seeds. Presoak 8–12 h from On The Grow because MP Seeds gives conflicting soak instructions. Seed mass and the local coir calendar come from different sources. Coir and empty cover are local planning adaptations. Uncover by rooted, upright emergence, not the date alone.",
           "soak": [
             8,
             12
           ],
-          "soakBasis": "On The Grow explicitly recommends 8–12 h for mung beans; 10 h is the selected midpoint.",
+          "soakBasis": "On The Grow recommends 8–12 h for mung; 10 h is selected. MP Seeds’ table and prose disagree on soak duration.",
           "topdress": false,
           "blackoutDays": 0,
           "weightLb": 0,
@@ -9986,9 +9986,11 @@
             "D36",
             "D41",
             "D11",
-            "D62"
+            "D62",
+            "D67",
+            "D70"
           ],
-          "confidence": "Pilot starting rate · study-anchored",
+          "confidence": "Supplier tray rate · local calendar adaptation",
           "substrateId": "coir"
         },
         {
@@ -10023,6 +10025,39 @@
             "D36",
             "D41"
           ]
+        },
+        {
+          "id": "vitality450",
+          "label": "Vitality Farms · 450 g grower recipe",
+          "grams": 450,
+          "area": 200,
+          "harvest": [
+            7,
+            10
+          ],
+          "cover": [
+            3,
+            4
+          ],
+          "method": "stack",
+          "source": "D66",
+          "note": "Grower notes list 450 g per 1020 and 8–12 h soak. Much denser than the starter. Harvest timing conflicts with the later light-duration wording. Added weight is mentioned without a numeric load; 0 lb is the planner placeholder. Sanitize: Yes gives no treatment recipe or dose.",
+          "soak": [
+            8,
+            12
+          ],
+          "confidence": "Grower recipe · timing and treatment gaps",
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D66",
+            "D16",
+            "D36",
+            "D41"
+          ]
         }
       ],
       "sownCountCm2": 3,
@@ -10051,16 +10086,16 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "P02: editorial pilot mass; primary count evidence documented separately",
+        "density": "D67: explicit 215 g/10×20 rate",
         "harvest": "P02; fractional source days rounded to adjacent integer checkpoints where needed",
-        "coveredStage": "Editorial emergence check window; soybean supplier reports four dark days",
+        "coveredStage": "Editorial emergence check window; full soybean supplier method retained separately",
         "method": "Editorial coir/empty-cover adaptation; no added numeric weight verified",
-        "seedSize": "Illustrative assumption: replace with measured lot count",
+        "seedSize": "D67",
         "waterCapacity": "Illustrative substrate scenario: calibrate by weighing",
         "waterDemand": "User-entered scenario or measured loss; no species ET coefficients",
         "germination": "95% example, replace with lot test",
         "establishment": "90% conditional example, replace with tray emergence",
-        "soak": "On The Grow explicitly recommends 8–12 h for mung beans; 10 h is the selected midpoint."
+        "soak": "On The Grow recommends 8–12 h for mung; 10 h is selected. MP Seeds’ table and prose disagree on soak duration."
       }
     },
     {
@@ -10069,7 +10104,7 @@
       "species": "Glycine max",
       "family": "Fabaceae",
       "group": "legume",
-      "defaultGrams": 100,
+      "defaultGrams": 150,
       "referenceAreaIn2": 200,
       "referenceAreaBasis": "Nominal 10×20; original usable surface not independently measured",
       "harvestDays": [
@@ -10087,17 +10122,17 @@
       "method": "stack",
       "topdress": false,
       "seedForm": "single seed",
-      "seedsPerGram": 6.4,
-      "seedSizeBasis": "Illustrative until this lot is counted and weighed",
-      "seedSizeSource": null,
+      "seedsPerGram": 5,
+      "seedSizeBasis": "Pestuj approximate 5 seeds/g; replace with your actual lot",
+      "seedSizeSource": "D68",
       "source": "P02",
-      "confidence": "Pilot starting rate · limited tray evidence",
-      "notes": "100 g dry seed per nominal 200 in² is an editorial pilot, not a verified commercial 1020 rate. Supplier gives 8 h soak and 100 g per unspecified tray; a separate study used 25 seeds/8-cm pot (about 642 seeds/1020), without reporting seed mass. Count your lot. Do not confuse soybean with mung bean.",
+      "confidence": "Pilot starting rate · supplier range",
+      "notes": "150 g dry seed per nominal 200 in² is a starting trial within Pestuj’s area-scaled 133–178 g range. Its 56×28 cm tray uses 162–216 g. A separate dense study used 2 seeds/cm²; do not average unlike methods or infer mass without the lot count. Coir and the four-day cover are local adaptations.",
       "alternatives": [
         {
           "id": "baseline",
           "label": "Research starting plan",
-          "grams": 100,
+          "grams": 150,
           "area": 200,
           "harvest": [
             7,
@@ -10109,8 +10144,8 @@
           ],
           "method": "stack",
           "source": "P02",
-          "note": "100 g dry seed per nominal 200 in² is an editorial pilot, not a verified commercial 1020 rate. Supplier gives 8 h soak and 100 g per unspecified tray; a separate study used 25 seeds/8-cm pot (about 642 seeds/1020), without reporting seed mass. Count your lot. Do not confuse soybean with mung bean. Coir and empty cover are local planning adaptations. Uncover by rooted, upright emergence, not the date alone.",
-          "soakBasis": "8 h from indexed soybean supplier instructions; Fothergill’s says overnight for sprouts. The small-pot study used 24 h, a different protocol.",
+          "note": "150 g dry seed per nominal 200 in² is a starting trial within Pestuj’s area-scaled 133–178 g range. Its 56×28 cm tray uses 162–216 g. A separate dense study used 2 seeds/cm²; do not average unlike methods or infer mass without the lot count. Coir and the four-day cover are local adaptations. Coir and empty cover are local planning adaptations. Uncover by rooted, upright emergence, not the date alone.",
+          "soakBasis": "8 h selected within Pestuj’s 8–12 h window. The earlier small-pot study used 24 h, a separate protocol.",
           "soak": [
             8,
             8
@@ -10125,15 +10160,49 @@
             "D36",
             "D41",
             "D63",
-            "D64",
-            "D65"
+            "D65",
+            "D68",
+            "D69"
           ],
-          "confidence": "Pilot starting rate · limited tray evidence",
+          "confidence": "Pilot starting rate · supplier range",
           "substrateId": "coir"
+        },
+        {
+          "id": "pestuj",
+          "label": "Pestuj · full supplier method",
+          "grams": 189,
+          "area": 243.04048608097216,
+          "harvest": [
+            12,
+            16
+          ],
+          "cover": [
+            6,
+            8
+          ],
+          "method": "stack",
+          "source": "D68",
+          "note": "189 g is the midpoint of 162–216 g for 56×28 cm, not an optimized rate. Source specifies peat-based medium, 6–8 dark days and 12–16 total days; unweighted contact cover is a planner interpretation.",
+          "soak": [
+            8,
+            12
+          ],
+          "substrateId": "peat",
+          "soakBasis": "Selected source recipe; see its notes for scope.",
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "D68",
+            "D16",
+            "D36",
+            "D41"
+          ]
         }
       ],
       "calendar": {
-        "sow": "Use untreated, food-use Glycine max seed. Weigh dry, soak 8 h in clean water, rinse, drain and spread evenly. Trial 100 g per nominal 1020; keep mung bean and soybean lots distinct.",
+        "sow": "Use untreated, food-use Glycine max seed. Weigh dry, follow the selected presoak, rinse, drain and spread evenly. The starter trials 150 g per nominal 1020; the full supplier method has its own cover and harvest windows.",
         "exit": "Anchored, even emergence; monitor seed decay independently of crop size.",
         "water": "Follow the named study/seed-lot protocol; soaking is optional unless explicitly part of that recipe. Drain soaked seed and inspect dense roots closely.",
         "harvest": "Inspect from day 7; use the supplier’s 7–14 d microgreen window and cut above seed/medium, leaving roots behind. This is a leafy microgreen pilot, not a dark-grown bean-sprout recipe.",
@@ -10157,16 +10226,16 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "P02: editorial pilot mass; primary count evidence documented separately",
+        "density": "D68: 150 g trial within area-scaled 133–178 g supplier range",
         "harvest": "P02; fractional source days rounded to adjacent integer checkpoints where needed",
-        "coveredStage": "Editorial emergence check window; soybean supplier reports four dark days",
+        "coveredStage": "Editorial emergence check window; full soybean supplier method retained separately",
         "method": "Editorial coir/empty-cover adaptation; no added numeric weight verified",
-        "seedSize": "Illustrative assumption: replace with measured lot count",
+        "seedSize": "D68",
         "waterCapacity": "Illustrative substrate scenario: calibrate by weighing",
         "waterDemand": "User-entered scenario or measured loss; no species ET coefficients",
         "germination": "95% example, replace with lot test",
         "establishment": "90% conditional example, replace with tray emergence",
-        "soak": "8 h from indexed soybean supplier instructions; Fothergill’s says overnight for sprouts. The small-pot study used 24 h, a different protocol."
+        "soak": "8 h selected within Pestuj’s 8–12 h window. The earlier small-pot study used 24 h, a separate protocol."
       }
     },
     {
@@ -11329,7 +11398,7 @@
       "title": "On The Grow · mung bean presoak FAQ",
       "url": "https://onthegrow.net/pages/faq",
       "kind": "Firsthand grower guide",
-      "note": "Names mung beans among seeds benefiting from an 8–12 h presoak. Does not supply the planner’s 150 g rate.",
+      "note": "Names mung beans among seeds benefiting from an 8–12 h presoak. Does not supply the planner’s seed mass rate.",
       "accessed": "2026-11-06",
       "local": null
     },
@@ -11370,12 +11439,48 @@
       "accessed": "2026-11-06",
       "local": null
     },
+    "D67": {
+      "id": "D67",
+      "title": "MP Seeds · mung bean 10×20 rate",
+      "url": "https://mpseeds.eu/mung-bean-microgreens-seeds",
+      "kind": "Seed supplier",
+      "note": "Explicit 215 g per 10×20 tray and approximately 10 seeds/g. Soak conflicts internally: table up to 8 h, microgreen prose 12 h. Mass anchors the default; its soak remains the separately sourced 8–12 h window.",
+      "accessed": "2026-11-06",
+      "local": null
+    },
+    "D68": {
+      "id": "D68",
+      "title": "Pestuj · soybean tray rates",
+      "url": "https://www.pestuj.sk/en/p/soybeans",
+      "kind": "Seed supplier",
+      "note": "Glycine max; 162–216 g per 56×28 cm, equivalent to 133.3–177.7 g per nominal 1020. About 5 seeds/g, 8–12 h soak. The planner selects 150 g as a trial, not an optimum. Supplier’s full method uses 6–8 dark days and 12–16 total days; the coir starter retains its separately sourced calendar.",
+      "accessed": "2026-11-06",
+      "local": null
+    },
+    "D69": {
+      "id": "D69",
+      "title": "Castellaneta et al. 2024 · oleaginous microgreen production",
+      "url": "https://doi.org/10.1021/acs.jafc.3c09347",
+      "kind": "Controlled study",
+      "note": "Author manuscript methods: soybean at 2 seeds/cm², sunflower at 1 seed/cm² in 150 cm² peat trays, day-10 cut. Density was fixed, not optimized. Soybean equals 2,581 seeds/1020; 516 g only if the lot contains 5 seeds/g. Not a tested 516-g commercial tray recommendation.",
+      "accessed": "2026-11-06",
+      "local": null
+    },
+    "D70": {
+      "id": "D70",
+      "title": "FDA · seed treatment for sprouts, 2023",
+      "url": "https://www.fda.gov/media/102430/download",
+      "kind": "Regulatory guidance",
+      "note": "Seed treatment is distinct from hydration and equipment sanitation. Appropriate treatments and chemical-label instructions matter; surviving pathogens can multiply during sprouting. A grower chart’s Sanitize: Yes supplies no product, concentration, temperature or contact time. Sprout guidance is not a validated treatment recipe for every microgreen crop.",
+      "accessed": "2026-11-06",
+      "local": null
+    },
     "P02": {
       "id": "P02",
       "title": "Mung bean and soybean · 1020 starting trials",
       "url": "bean-crop-notes.html",
       "kind": "Editorial synthesis of primary sources",
-      "note": "Mung 150 g/200 in² and 8–12 h soak; soybean 100 g/200 in² and 8 h soak. Pilot mass rates, not pooled averages. Source-specific counts, soak differences, seed-size calibration and missing soybean tray dimensions are documented.",
+      "note": "Updated: mung 215 g/200 in² from an explicit supplier tray rate, 8–12 h soak; soybean 150 g/200 in² selected within the supplier’s area-scaled range, 8 h soak. Separate dense-study evidence is not pooled into an average. Coir/calendar remain planning adaptations.",
       "accessed": "2026-11-06",
       "local": null
     },
