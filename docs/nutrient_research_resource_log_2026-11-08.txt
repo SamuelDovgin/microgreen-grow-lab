@@ -1,0 +1,92 @@
+Nutrient research recovery notebook — November 8, 2026 (America/Chicago)
+
+Decision: simple mass-based MaxiGro trial feed for unfertilized coir after germination.
+Used in: 15_maxigro_dilution_and_coco_nutrients.md; nutrients.html; nutrient-model.js; hub card.
+Default 0.50 g/L is a project adaptation, not a validated brand-specific optimum.
+
+[N01] General Hydroponics MaxiGro 10-5-14 current product/usage page
+URL: https://generalhydroponics.com/products/gh-maxigro
+Accessed: 2026-11-08
+Class: official product
+Used in: nutrient guide / ratios / calculator
+Supports/key record: 10% N; 6% Ca; 2% Mg; single-part dry feed. Dissolve before use; common hydro/soilless pH 5.5–6.5. Supports N conversion and preparation, not a microgreen-specific optimum.
+Limits: No demonstrated universal optimum, crop guarantee or brand market-share inference.
+Local preservation/status: Live; URL-only — no lawful local copy available.
+
+[N02] Penn State Extension: Growing Microgreens
+URL: https://extension.psu.edu/growing-microgreens
+Accessed: 2026-11-08
+Class: extension primary practice guidance
+Used in: nutrient guide / ratios / calculator
+Supports/key record: 50–100 mg/L N is generally sufficient when fertilizing; clear-water crops also described. Supports modest trial; not a MaxiGro trial.
+Limits: No demonstrated universal optimum, crop guarantee or brand market-share inference.
+Local preservation/status: Search-index content available; direct page returned 403. URL-only — no lawful local copy available.
+
+[N03] Virginia Tech SPES-756NP: Introduction to Microgreen Production in Indoor Vertical Farms and Greenhouses
+URL: https://www.pubs.ext.vt.edu/SPES/spes-756.html
+Accessed: 2026-11-08
+Class: extension synthesis
+Used in: nutrient guide / ratios / calculator
+Supports/key record: Crop/system-dependent fertility context; no universal brand or EC optimum. Nutrient guidance is synthesis, not an independent MaxiGro/OceanSolution trial.
+Limits: No demonstrated universal optimum, crop guarantee or brand market-share inference.
+Local preservation/status: Live; existing extension PDF reused: site/dist/sources/virginia-tech-microgreen-production-SPES-756.pdf; sha256 8f68282ed08af4b6166b53adb54fab4e0539fe44a1c48794913926e23562f18d. Original capture in research_project/source_docs/extension/; reused 2026-11-08.
+
+[N04] On The Grow: Best Fertilizers and Nutrients for Microgreens
+URL: https://onthegrow.net/blogs/microgreens/best-nutrients-fertilizers-for-growing-microgreens
+Accessed: 2026-11-08
+Class: firsthand grower / marketing/consumer
+Used in: nutrient guide / ratios / calculator
+Supports/key record: MaxiGro one tsp/US gal; OceanSolution half liquid oz/US gal; feed begins under lights with bottom-watering, after germination. Affiliate experience, not independent crop-wide optimization. Powder tsp mass and liquid density not established.
+Limits: No demonstrated universal optimum, crop guarantee or brand market-share inference.
+Local preservation/status: Live; URL-only — no lawful local copy available. Support notes only.
+
+[N05] Historical General Hydroponics MaxiGro label, 10-5-14
+URL: https://generalhydroponics.com/wp-content/uploads/General-Hydroponics_label_maxigro.pdf
+Accessed: 2026-11-08
+Class: official product historical indexed label
+Used in: nutrient guide / ratios / calculator
+Supports/key record: Indexed low end is 5 g/4 L, used only as historical reference (1.25 g/L); not assumed identical to tsp/US gallon. Check actual bag.
+Limits: No demonstrated universal optimum, crop guarantee or brand market-share inference.
+Local preservation/status: Search-index text available; live URL returned 404 in web and curl. No local PDF. URL-only — no lawful local copy available.
+
+[N06] OceanSolution 2-0-3 manufacturer product page
+URL: https://oceansolution.com/product/oceansolution-203/
+Accessed: 2026-11-08
+Class: official product
+Used in: nutrient guide / ratios / calculator
+Supports/key record: Formulated liquid with N and K additions; general direction one ounce/gal. Distinguish creator microgreen half-ounce method, PURE and raw seawater. No density or controlled brand superiority established.
+Limits: No demonstrated universal optimum, crop guarantee or brand market-share inference.
+Local preservation/status: Live canonical URL reached from homepage; guessed /product/oceansolution-2-0-3/ inaccessible. Homepage also consulted. URL-only — no lawful local copy available.
+
+[N07] User-supplied Amazon listing: selected MaxiGro 2.2 lb
+URL: User attachment, supplied November 8, 2026
+Accessed: 2026-11-08
+Class: marketing/consumer / user context
+Used in: nutrient guide / ratios / calculator
+Supports/key record: Identifies purchased product; prices, reviews and algorithmic summaries not used as agronomic evidence. Full text includes account/address; never exported publicly.
+Limits: No demonstrated universal optimum, crop guarantee or brand market-share inference.
+Local preservation/status: Privately preserved: source_docs/nutrients/user_supplied_listing_2026-11-08.txt; sha256 0833cbd0b1e28793ca63092c8d847aeb920c362cf4b04d146ae82036c0e6650a. Public notebook excludes account/address.
+
+[N08] Existing archive nutrient strategy and coir preparation
+URL: Local archive: 03_media_water_nutrients/05_nutrient_solution_formulation_and_fertilizer_strategy.md; 17_visualizers/12_coco_coir_preparation_and_calculator.md
+Accessed: 2026-11-08
+Class: local archive
+Used in: nutrient guide / ratios / calculator
+Supports/key record: Reused crop-dependent fertility framing, N arithmetic and preparation/feed separation. No universal EC or crop response predicted.
+Limits: No demonstrated universal optimum, crop guarantee or brand market-share inference.
+Local preservation/status: Local documents read 2026-11-08; underlying primary sources retained in their existing archive paths.
+
+[N09] Other access attempts and context pages
+URL: https://generalhydroponics.com/wp-content/uploads/MaxiSeries-Performance-Feed-Charts.pdf ; https://edge.generalhydroponics.com/www/uploads/20210121184322/MaxiSeries-Performance-Feed-Charts.pdf ; https://extension.psu.edu/microgreens ; https://oceansolution.com/
+Accessed: 2026-11-08
+Class: access record
+Used in: nutrient guide / ratios / calculator
+Supports/key record: No numeric feed-chart rate used. Old GH charts inaccessible/404; old Penn State path 403. OceanSolution homepage linked canonical product. Search result FAQ corroborated OTG ratio; no extra outcome inference.
+Limits: No demonstrated universal optimum, crop guarantee or brand market-share inference.
+Local preservation/status: URL-only — no lawful local copy available. OTG FAQ: https://onthegrow.net/pages/faq ; GH hub search result: https://generalhydroponics.com/pages/feedcharts/feed-charts-hub . Other marketplace/reddit search hits not relied upon.
+
+MODEL LEDGER
+Fresh water 1 g/mL approximation; 10% N label analysis. Exact US gallon 3.785411784 L; US fl oz 29.5735295625 mL. Fluid ratio implies 3.90625 mL/L; no density conversion to grams.
+0.50 and 1.00 g/L: extension-derived trial rates; 1.25: historical metric low-end reference.
+Water-only gate for germination or fertilized mix. No pH/EC prediction; EC entry ceiling is only input sanity. Rounding warning >10% is project weighing advice.
+User attachment remains private. Guide and notebook are public; no account/address text or complete proprietary articles included.
