@@ -90,3 +90,40 @@ Fresh water 1 g/mL approximation; 10% N label analysis. Exact US gallon 3.785411
 0.50 and 1.00 g/L: extension-derived trial rates; 1.25: historical metric low-end reference.
 Water-only gate for germination or fertilized mix. No pH/EC prediction; EC entry ceiling is only input sanity. Rounding warning >10% is project weighing advice.
 User attachment remains private. Guide and notebook are public; no account/address text or complete proprietary articles included.
+
+FOLLOW-UP — OceanSolution-inspired default (same date)
+Decision change: user requested closer imitation of OTG’s OceanSolution regimen. Default changed from 0.50 to 0.80 g/L; 0.50 retained as conservative option; 0.90 added as a stronger comparison.
+Earlier “no density assumption” and 0.50-default entries describe the initial release, not the updated comparison.
+
+[N10] OceanSolution 2-0-3 guaranteed-analysis PDF — OceanGrown Canada
+URL: https://oceangrowncanada.com/assets/files/OceanSolution%202-0-3.pdf
+Accessed: 2026-11-08; live official PDF (one page).
+Class: official product label; source producer/distributor.
+Used in: guide formula, comparison table, source download.
+Supports/key record: 2% total N, listed as nitrate N; 3% soluble potash K2O. Hydroponic volume direction 0.5–0.75 oz/US gal. No density supplied; no comparable guaranteed P/Ca/Mg/S figures.
+Limits: Different chemistry from MaxiGro. General hydroponic EC advice is not transferred to MaxiGro or treated as a universal microgreen target.
+Local preservation: source_docs/nutrients/OceanSolution-2-0-3-label.pdf; public copy site/dist/sources/OceanSolution-2-0-3-label.pdf; sha256 da6f521ae7823fe954573e6fc381958fbf96b018de149ed8891c488fb0397a79.
+
+[N11] User-supplied OceanSolution-matching analysis and bucket-storage follow-up
+URL: user attachment, 2026-11-08.
+Accessed: 2026-11-08. Class: user-supplied analysis / secondary model proposal.
+Used in: user’s revised goal and proposed 0.80 g/L default.
+Supports: intent to match N/K2O more closely; not independent verification.
+Finding: 0.80 g/L is a practical partial match under assumed density 1.00 g/mL. Recalculated from label values and exact volume conversion.
+Limits: density, crop outcome and temperature-dependent storage days not verified. Feed-chart claim not used as corroborating evidence. Do not treat the storage table as validated shelf life.
+Local preservation: source_docs/nutrients/user_supplied_ocean_match_notes_2026-11-08.txt; sha256 71b1fb4638142b4a4952102c6faba56a0d96e6de3212895ce9905abb360b981e; full user attachment excluded from public build.
+
+[N12] Rechecked sources N01, N04 and N06; OceanGrown Canada homepage
+URLs: https://generalhydroponics.com/products/gh-maxigro ; https://onthegrow.net/blogs/microgreens/best-nutrients-fertilizers-for-growing-microgreens ; https://oceansolution.com/product/oceansolution-203/ ; https://oceangrowncanada.com/
+Accessed: 2026-11-08. Live. Official product / firsthand grower.
+Used in: analysis, OTG volume dose, pH comparison and producer identity.
+Supports: MaxiGro 10% N / 14% K2O, OTG half-fluid-ounce/US gallon method and 5.5–6.0 pH target; manufacturer product identity. Homepage used to discover official label. No density established.
+Local preservation: URL-only — no lawful local copy available; original support notes above. Unrelated marketplace and generic water-density search results were discovery only and not used for product density.
+
+UPDATED MODEL LEDGER
+OceanSolution assumed density = 1.00 g/mL, a fixed illustrative scenario, not a measured input. Interpret product analysis percentages as mass fractions.
+Ocean N=3.90625*density*0.02*1000; K2O=3.90625*density*0.03*1000 mg/L.
+At density 1: N 78.125, K2O 117.1875. MaxiGro at 0.80 g/L: N 80, K2O 112; differences +2.4% and -4.4267%.
+N-matching MaxiGro=0.78125*density g/L; K2O-matching=0.8370535714*density. Neither is exact full-chemistry equivalence. Sensitivity-table midpoint is arithmetic mean of those two rates, not an optimized crop recommendation.
+0.80 and 0.90 presets use OTG-inspired pH target 5.5–6.0; others retain GH common 5.5–6.5. Measurement warnings use selected bounds; water-only and stop gates remain.
+No timed-storage calculator or validated expiry is added.
