@@ -140,3 +140,7 @@ Validation: all existing Node calculator/interaction suites and publisher regres
 ## November 9, 2026 — shopping identity and card priorities
 
 Added the exact Clorox Disinfecting Bleach Unscented / Regular liquid 121 fl oz bottle (UPC 044600324166), verified through Clorox’s product page and its linked SmartLabel record. Kept bottle-specific food-contact directions and avoided inferring a stock percentage. Reordered the hub and shared navigation to seed amounts/schedules, coir, sanitation, then the remaining cards; seed card copy now emphasizes grams and growing dates.
+
+## November 9, 2026 — Dollar Tree and store-brand bleach
+
+Added a label-first selection checklist and a specific Dollar Tree catalog listing for 11 fl oz Clorox Disinfecting Bleach Regular. Clarified that the earlier brand/121 fl oz reference is optional, that EPA Est. is not EPA Reg., and that stock percentage alone does not authorize a food-contact use. LA’s Totally Awesome Fresh Scent was identified as fragranced without assigning an unverified concentration or judging every variant. Kept product-specific dilution/contact/rinse directions intact.

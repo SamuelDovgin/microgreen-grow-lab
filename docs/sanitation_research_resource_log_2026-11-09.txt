@@ -199,3 +199,64 @@ Local preservation: URL-only — concise original support note retained; no full
 Status/recheck: Live. Confirm product identity and food-contact directions on actual container.
 
 Change impact: Guide now gives a concrete purchase instead of leaving brand/type implicit. Hub and shared navigation lead with crops, coir and sanitation. Seed card explicitly leads with grams and schedules, without changing saved crop plans or sowing-rate data.
+
+FOLLOW-UP — DOLLAR TREE AND MINIMUM LABEL REQUIREMENTS (2026-11-09)
+Question: Is inexpensive Dollar Tree bleach acceptable and what is actually necessary?
+Decision: Store/brand/bottle size are not the qualification. Select regular unscented liquid sodium-hypochlorite bleach with a readable active percentage, EPA registration and complete matching food-contact sanitizing directions. Do not transfer Clorox's dose to an unidentified product. 5–9% CDC household-disinfection guidance is not a universal food-contact threshold.
+
+[T19] Dollar Tree same-day catalog — Clorox Disinfecting Bleach, Concentrated Formula, Regular, 11 fl oz
+URL: https://sameday.dollartree.com/store/dollar-tree/products/20971706-clorox-disinfecting-bleach-concentrated-formula-regular-11-fl-oz
+Accessed: 2026-11-09, America/Chicago
+Class: official retailer catalog
+Used in: Dollar Tree shopping option; bottle-size clarification
+Supports: Catalog lists this named 11 fl oz item. Dated price shown was $1.50, but price is not reproduced as a purchase guarantee and local stock is unknown.
+Key record: Three linked images opened and visually inspected: front/side, promotional tile, back. The back image shows a food-contact section but is too small to reconstruct every instruction reliably. No stock percentage or exact recipe was inferred from tiny text; T01 remains the Clorox food-contact instruction source, conditional on actual matching bottle label.
+Image URLs: https://www.instacart.com/assets/domains/product-image/file/large_c8ccb91a-aae7-4836-92f8-737446fbe43e.jpg ; https://www.instacart.com/assets/domains/product-image/file/large_9d8603dc-047b-46a4-8d44-df6cf5956755.jpg ; https://www.instacart.com/assets/domains/product-image/file/large_f1f1d357-5db9-4b49-b2d3-bbf06d6f2bb6.jpg
+Limits: Retailer listing and dated images do not establish actual shelf stock, current formulation or the complete use directions. Small bottle is a candidate to verify, not blanket approval for every item sold by Dollar Tree.
+Local preservation: source_docs/sanitation/Dollar-Tree-Clorox-11oz-front-2026-11-09.jpg; JPEG product label image; captured 2026-11-09; sha256 343fb52821a056dac5ed6f281d03f2256088d6f92bd270aa2c89a4499b8dc8b7
+Local preservation: source_docs/sanitation/Dollar-Tree-Clorox-11oz-back-2026-11-09.jpg; JPEG product label image; captured 2026-11-09; sha256 349ec23be5a6b88e33d5a5356bbd7cc1ad443e080fc8fb0b965853e9698cbe89
+Promotional image was inspected but not preserved or republished. Catalog text remains URL-only with original notes.
+Status: Live catalog retrieval; confirm actual store stock and container.
+
+[T20] LA's Totally Awesome — Bleach Fresh Scent
+URL: https://www.lastotallyawesome.com/shop/laundry/bleach-fresh-scent/
+Accessed: 2026-11-09
+Class: official manufacturer product page
+Used in: Variant-specific limits
+Supports: Manufacturer explicitly describes fresh floral scent and categorizes product under laundry.
+Limits: Not evidence of an unscented variant's food-contact authorization, stock strength or EPA registration. No complete matching unscented food-contact label was established; no blanket brand rejection or lower-strength claim made.
+Local preservation: URL-only — concise original support note; no full copyrighted text retained.
+Status: Live.
+
+[T21] EPA — Pesticide Labeling Questions & Answers
+URL: https://www.epa.gov/pesticide-labels/pesticide-labeling-questions-answers
+Accessed: 2026-11-09
+Class: primary regulatory guidance
+Used in: EPA Reg. No. versus EPA Est. No.; exact use label
+Supports: LC11-0423 explains establishment numbers can appear on unregistered products and do not alone establish pesticidal effect. LC11-401 describes registration and registration-number labeling for disinfectant claims.
+Limits: Does not establish suitability of any unreviewed Dollar Tree bottle. A registration number alone does not establish food-contact authorization; exact use directions still required.
+Local preservation: URL-only — concise original support note.
+Status: Live.
+
+[T22] EPA — Six Steps for Safe & Effective Disinfectant Use
+URLs: https://www.epa.gov/coronavirus-and-disinfectants/six-steps-safe-effective-disinfectant-use ; https://www.epa.gov/sites/default/files/2020-04/documents/disinfectants-onepager.pdf
+Accessed: 2026-11-09
+Class: primary public-health / product-use guidance
+Used in: Match use sites and surface types; preclean; complete wet contact; protection/storage
+Supports: Instructions emphasize label use sites, surface types and maintaining wetness for the entire contact time.
+Limits: COVID-era infographic; its List N step is not imported as a qualification for routine food-contact tray sanitation. No product-specific dose or rinse instruction supplied.
+Local preservation: URL-only — brief factual note retained; no new copy needed for this narrow update.
+Status: Live; page redirected from /pesticide-registration/ to /coronavirus-and-disinfectants/.
+
+[T23] EPA — EPA orders Amazon to halt illegal pesticides sales
+URL: https://www.epa.gov/newsreleases/epa-orders-amazon-halt-illegal-pesticides-sales
+Accessed: 2026-11-09
+Class: primary regulatory news release
+Used in: Corroborating source check only
+Supports: Distinguishes registration and establishment numbers; inspected while selecting T21.
+Limits: Not a product-selection or tray-use authorization. T21 is the operative source for the checklist.
+Local preservation: URL-only — factual note retained.
+Status: Live.
+
+T02 CDC bleach guidance rechecked during this follow-up. Search results containing forum concentration estimates were not used to assign strengths to Dollar Tree brands.
+Change impact: Guide now leads with the retailer-neutral label checklist, a specific small-bottle Dollar Tree catalog option, clear rinse rules and the limits of the LA's Totally Awesome variant checked. The earlier 121 fl oz Clorox recommendation is explicitly a shopping example, not a required brand or size.
