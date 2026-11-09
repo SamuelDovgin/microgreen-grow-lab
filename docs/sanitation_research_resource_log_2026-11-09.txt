@@ -1,0 +1,175 @@
+TRAY SANITATION — RESEARCH RESOURCE LOG
+Checked: 2026-11-09, America/Chicago
+Scope: Add a hub card and practical empty-tray cleaning guide; bleach use, rinse decision, alternative methods, between-crop frequency and grower advice.
+Evidence order: exact product/use label and material compatibility, extension procedures, then creator workflow. No crop/seed chemical treatments or adjustable dosing calculator.
+Public preservation: official label PDFs only. Other web pages are canonical links with concise original support notes; no full copyrighted grower articles redistributed.
+All web pages above were readable through web retrieval unless noted; search leads T15 were not adopted as operative labels. Search discovery included other results not opened or used.
+
+[T01] Clorox — How to Wash and Sanitize Dishes
+URL: https://www.clorox.com/learn/how-to-sanitize-dishes-with-bleach/
+Accessed: 2026-11-09
+Class: official manufacturer instructions
+Used in: Bleach section, rinse decision, method table
+Supports / key record: Named Clorox Disinfecting Bleach example: 2 US tsp per US gallon cool potable water; 2 minutes submerged; drain/air-dry; no post-sanitizing rinse. Separate wash/rinse first.
+Limits / contradictions: The user’s exact bottle/strength is unknown. No universal bleach concentration or tray compatibility established. Not a crop/seed treatment.
+Local preservation: URL-only — no redistributable local full-text copy retained; concise support note above.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T02] CDC — Cleaning and Disinfecting with Bleach; April 24, 2024
+URL: https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html
+Accessed: 2026-11-09
+Class: primary public-health guidance
+Used in: Bleach precautions and solution freshness
+Supports / key record: Preclean; ventilate; follow protection/label directions; never mix with other cleaners/disinfectants; prepare diluted solution daily (over 24 hours loses effectiveness).
+Limits / contradictions: General household disinfection, not the no-rinse food-contact recipe. Its stronger generic dilution was deliberately not imported.
+Local preservation: URL-only — no redistributable local full-text copy retained; concise support note above.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T03] Bootstrap Farmer — 1020 trays and flats; cleaning FAQ
+URL: https://www.bootstrapfarmer.com/collections/1020-trays-and-flats
+Accessed: 2026-11-09
+Class: official product / firsthand supplier
+Used in: Workflow, material compatibility, grower comparison
+Supports / key record: Remove debris, wash in hot soapy water or dishwasher with heated drying off, rinse and air-dry; mentions mild bleach/peroxide.
+Limits / contradictions: No exact antimicrobial concentration/contact time. Dishwasher washing permission does not validate a heat-sanitizing cycle. Seller uses sterilization colloquially.
+Local preservation: URL-only — no redistributable local full-text copy retained; concise support note above.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T04] On The Grow — How to Clean and Sanitize Microgreen Trays and Reusable Grow Mediums; January 27, 2026
+URL: https://onthegrow.net/blogs/microgreens/how-to-clean-sanitize-microgreen-trays-reusable-mediums
+Accessed: 2026-11-09
+Class: firsthand grower / commercial education
+Used in: Frequency, peroxide boundary, conflicting instructions, grower table
+Supports / key record: Recommends between-harvest sanitation and drying. Describes 3% peroxide for 10–20 minutes. Lists tablespoon/gallon and 1:9 bleach mixtures as alternatives and says bleach always requires rinsing.
+Limits / contradictions: Recipes are not equivalent: 5% stock diluted 1:9 becomes roughly 0.5% / 5,000 ppm NaOCl, not a typical low-strength food-contact sanitizer. Label overrides generic rinse/time claims. Article and current FAQ conflict on silicone bleach/dishwasher care. No blanket pharmacy-peroxide no-rinse instruction adopted.
+Local preservation: URL-only — no redistributable local full-text copy retained; concise support note above.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T05] On The Grow — current FAQ, reusable-medium care
+URL: https://onthegrow.net/pages/faq
+Accessed: 2026-11-09
+Class: official product care / firsthand grower
+Used in: Frequency and heat/material boundary
+Supports / key record: Between-grow sanitation. Current medium instructions prohibit bleach and dishwashers and specify different care for their silicone/fiberglass product.
+Limits / contradictions: Item-specific medium instructions cannot be transferred to plastic trays. Conflicts with older cleaning article; no claim that every grower method is independently validated.
+Local preservation: URL-only — no redistributable local full-text copy retained; concise support note above.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T06] Virginia Cooperative Extension — Hydroponic Production of Edible Crops: Food Safety Considerations; SPES-467
+URL: https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-467/spes-467.html
+Accessed: 2026-11-09
+Class: university extension
+Used in: Frequency, clean storage, water/system context
+Supports / key record: Clean and sanitize growing containers/channels between rotations; store cleaned equipment properly and monitor water systems.
+Limits / contradictions: Broader hydroponics guidance, not a challenge study of this user’s 1020 trays. Sequence is operational adaptation.
+Local preservation: URL-only — no redistributable local full-text copy retained; concise support note above.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T07] BioSafe Systems — SaniDate 5.0 specimen label V22.2; EPA Reg. 70299-19
+URL: https://biosafesystems.com/wp-content/uploads/2020/08/2003-SaniDate-5.0-V22.2-49st-Specimen.pdf
+Accessed: 2026-11-09
+Class: official product label
+Used in: Method table and rinse decision
+Supports / key record: PDF page 3 food-contact section includes trays: 1.6–5.4 US fl oz/5 US gal potable water, 147–500 ppm PAA; 1 minute visibly wet; thorough draining, no rinse. Disinfecting sections require potable rinse on food-contact surfaces.
+Limits / contradictions: Follow actual container and state-approved label. Other products/formulations and plant/water applications are different. Concentrate needs specified PPE. No dose selected as a universal optimum.
+Local preservation: source_docs/sanitation/SaniDate-5.0-V22.2-label.pdf; PDF; captured 2026-11-09; sha256 e7771ae2f87cb8f00c5aae6803de7076b8627a47bb8f25424d956eaf40ceeaa9
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T08] EPA — Steramine 1-G Tablets label; 1561-11; accepted June 12, 2014
+URL: https://www3.epa.gov/pesticides/chem_search/ppls/001561-00011-20140612.pdf
+Accessed: 2026-11-09
+Class: primary regulatory label
+Used in: Quat method
+Supports / key record: PDF page 5: 1 or 2 tablets (1.5 g each)/US gal warm water, 200–400 ppm; dissolve completely; at least 1 minute or local code; spray surface directions drain/air-dry without rinse/wipe. Daily replacement or sooner if soiled/diluted. Guide uses 1 tablet example, 200 ppm.
+Limits / contradictions: Archived label; exact current package and water-condition restrictions must be checked. 1-QT is a different tablet/formulation option. Generic blue color is not concentration verification.
+Local preservation: source_docs/sanitation/EPA-Steramine-1-G-1561-11-20140612.pdf; PDF; captured 2026-11-09; sha256 0f2d370496088ea64504f4297a47d4f8110c99d13766c3c10ba41be4b6e65201
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T09] Edwards-Councilor — Steramine manufacturer products and documents
+URL: https://www.sanitize.com/products/ ; https://www.sanitize.com/documents/
+Accessed: 2026-11-09
+Class: official product
+Used in: Quat identity and current availability of directions
+Supports / key record: Live products page lists Steramine 1-G at one tablet/gallon. Documents page identifies 1-G label/SDS.
+Limits / contradictions: Web extraction did not expose download hyperlinks; direct Python fetch of documents page returned HTTP 403. No new current label inferred; archived EPA label date remains prominent.
+Local preservation: URL-only — no redistributable local full-text copy retained; concise support note above.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T10] University of Nevada, Reno — Microgreens and Produce Safety; June 2020
+URL: https://extension.unr.edu/4h/pub.aspx?PubID=3468
+Accessed: 2026-11-09
+Class: university extension
+Used in: Food-contact tool controls and limits
+Supports / key record: Microgreen seed, water and handling controls; clean/sanitize food-contact equipment. Hard nonporous harvest tools are easier to clean.
+Limits / contradictions: Historical outbreak counts are not used as a current assertion. Does not validate a home kill step.
+Local preservation: URL-only — no redistributable local full-text copy retained; concise support note above.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T11] Local archive — Donny Greens harvest/cleaning review
+URL: research_project/16_donny_greens/05_harvest_pack_clean_and_deliver.md ; https://www.youtube.com/watch?v=OBrxbsYF004
+Accessed: 2026-11-09
+Class: local archive / creator context
+Used in: Grower comparison
+Supports / key record: Prior review records tray-cleaning video chapters and ZeroTol-related link; description did not establish exact product formulation, dilution, time or rinse.
+Limits / contradictions: No new video/caption review performed. No chemical recipe reconstructed from affiliate links.
+Local preservation: existing Markdown at path above; retained in private archive, no book exports.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T12] Local archive — Growing With Jonah harvest/cleaning review
+URL: research_project/15_growing_with_jonah/05_harvest_pack_clean_and_deliver.md
+Accessed: 2026-11-09
+Class: local archive / creator context
+Used in: Grower comparison
+Supports / key record: Prior review separates harvest-quality priorities from adapted clean/dirty workflow.
+Limits / contradictions: No verified sanitation recipe or new creator review. Public renderer links original creator website rather than exporting private creator books.
+Local preservation: existing Markdown at path above; retained in private archive, no book exports.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T13] EPA — bleach label 5813-111 accepted December 8, 2017
+URL: https://www3.epa.gov/pesticides/chem_search/ppls/005813-00111-20171208.pdf
+Accessed: 2026-11-09
+Class: primary regulatory label
+Used in: Supporting archived food-contact check
+Supports / key record: Search-extracted food-contact table supports wash/rinse, 2 tsp/gallon, 2-minute soak and air-dry for this registered product.
+Limits / contradictions: Historical corroboration only. Reader-facing current named recipe rests on T01 and actual bottle label, not on assuming every brand matches.
+Local preservation: source_docs/sanitation/EPA-bleach-5813-111-20171208.pdf; PDF; captured 2026-11-09; sha256 f895afee9a8e69a2731f592b61c93b631e5bc409be5a14b48d98888cbe9f3130
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T14] BioSafe Systems — SaniDate 5.0 product page
+URL: https://biosafesystems.com/product/sanidate-5/
+Accessed: 2026-11-09
+Class: official product
+Used in: Source recovery and current label link
+Supports / key record: Identifies peroxide/PAA sanitizer/disinfectant and links the currently served V22.2 specimen label.
+Limits / contradictions: Marketing claims are not used to broaden allowed label uses; state restrictions remain.
+Local preservation: URL-only — no redistributable local full-text copy retained; concise support note above.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T15] EPA — SaniDate 5.0 labels March 25 / July 7, 2020
+URL: https://www3.epa.gov/pesticides/chem_search/ppls/070299-00019-20200325.pdf ; https://www3.epa.gov/pesticides/chem_search/ppls/070299-00019-20200707.pdf
+Accessed: 2026-11-09
+Class: primary regulatory search leads
+Used in: Source selection
+Supports / key record: Search results exposed historical PAA sanitizing directions.
+Limits / contradictions: Not used as the operative source after retrieving the manufacturer-linked V22.2 label; no additional preserved full text.
+Local preservation: URL-only — no redistributable local full-text copy retained; concise support note above.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+[T16] Local archive — food safety and Microgreen Manager cleaning review
+URL: research_project/06_food_safety/01_food_safety_regulatory_guide.md ; research_project/14_microgreen_manager/05_harvest_pack_clean_and_deliver.md
+Accessed: 2026-11-09
+Class: local archive
+Used in: Prior research inventory
+Supports / key record: Existing clean-then-sanitize and exact-label rules; existing MGM review does not supply a defensible chemical recipe.
+Limits / contradictions: Context, not a replacement for live labels. Existing broader safety conclusions were not reopened.
+Local preservation: existing Markdown at path above; retained in private archive, no book exports.
+Status/recheck: Live retrieval unless noted; check actual container label and item-care directions before next use.
+
+SECTION RECOVERY MAP
+Frequency/sequence: T03–T06, T10 plus editorial adaptation.
+Bleach/no-rinse: T01; precautions T02; historical corroboration T13.
+Alternatives: T07 (SaniDate), T08–T09 (Steramine); peroxide/heat limits T03–T05.
+Creator differences: T03–T05, T11–T12, T16.
+Change: Added a complete label-led guide where the archive previously supplied general rules and incomplete creator chemical settings. Flagged OTG incompatible bleach ratios and product-care conflicts instead of carrying them forward.
+Open: User bleach bottle, exact label/stock strength, tray condition, water quality and actual sanitizer strip readings. No independent tray-specific microbial challenge trial or validated heat process.
+Build/publication: build-sanitation-pages.py emits guide + notebook, copies the two linked label PDFs; source notebook keeps the third historical bleach label private to research. All research remains navigable from hub and topic README.
