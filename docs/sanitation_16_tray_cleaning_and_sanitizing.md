@@ -6,7 +6,23 @@
 
 Start with the workflow below, then choose one method. **Bleach is an option. Whether you rinse afterward depends on the exact product and the labeled use.** Use the food-contact sanitizing directions for routine empty-tray sanitation, and check that the product and tray manufacturer allow the application. [T01,T02,T03]
 
-[Jump to bleach](#bleach-step-by-step) · [Compare methods](#choose-your-method) · [Rinse decision](#do-i-rinse-afterward) · [Grower advice](#what-other-growers-add) · [Source notebook](source_docs/sanitation/research_resource_log_2026-11-09.txt)
+[Which bleach to buy](#exact-bleach-to-buy) · [Bleach steps](#bleach-step-by-step) · [Compare methods](#choose-your-method) · [Rinse decision](#do-i-rinse-afterward) · [Grower advice](#what-other-growers-add) · [Source notebook](source_docs/sanitation/research_resource_log_2026-11-09.txt)
+
+## Exact bleach to buy
+
+**Get [Clorox Disinfecting Bleach — Unscented](https://www.clorox.com/products/clorox-disinfecting-bleach/), the regular liquid version, in the 121 fl oz bottle.** Clorox's own product page links to the [manufacturer's SmartLabel record](https://smartlabel.labelinsight.com/product/6190840/ingredients) for this exact bottle. [T17,T18]
+
+| Shopping detail | What to look for |
+| --- | --- |
+| Brand / product | **Clorox Disinfecting Bleach** |
+| Type | **Unscented, regular liquid**; SmartLabel calls the variant **Regular** |
+| Specific bottle | **121 US fl oz** |
+| Barcode / UPC | **044600324166** |
+| Active ingredient | Sodium hypochlorite; check the concentration and food-contact directions printed on the bottle |
+
+Packaging can change. Use the product name, variant and barcode to identify it. Choose this regular liquid rather than No-Splash / Splash-Less, Scentiva scented bleach, outdoor bleach, gel, powder or laundry packs. Those are different formulations. The manufacturer lists several bottle sizes; the 121 fl oz UPC above gives you one specific item to search for. [T17,T18]
+
+**How you will use it:** wash and rinse the empty trays first, then use the matching food-contact sanitizing directions in the bleach section below: **2 US teaspoons per US gallon of cool potable water, 2 minutes submerged, then drain and air-dry without a final rinse**. Confirm those directions on the bottle you buy. General surface disinfection has different dilution, contact-time and rinse instructions, even for the same brand. [T01,T17,T18]
 
 ## Every crop cycle: the six steps
 
@@ -100,6 +116,7 @@ No-rinse permission applies to a specified product, dilution, surface and use. I
 The decision order is: **exact chemical label + material compatibility → extension food-safety practice → grower workflow tips**. This page gives practical examples, not evidence that home tray sanitation is a validated kill step for the crop. The user's bleach bottle and strength have not been identified; compare its food-contact directions before using the example. Commercial growers also need a procedure suited to their operation and applicable local requirements.
 
 - **T01:** [Clorox: how to wash and sanitize dishes](https://www.clorox.com/learn/how-to-sanitize-dishes-with-bleach/), named-product example, checked November 9, 2026.
+- **T17–T18:** [Clorox Disinfecting Bleach — Unscented, official product page](https://www.clorox.com/products/clorox-disinfecting-bleach/) and its linked [121 fl oz Regular bottle, UPC 044600324166](https://smartlabel.labelinsight.com/product/6190840/ingredients), exact shopping identity checked November 9, 2026.
 - **T02:** [CDC: cleaning and disinfecting with bleach](https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html), mixing precautions and fresh daily solution. Its general household disinfecting recipe is a different use and is not the no-rinse recipe here.
 - **T03:** [Bootstrap Farmer: 1020 tray cleaning FAQ](https://www.bootstrapfarmer.com/collections/1020-trays-and-flats).
 - **T04:** [On The Grow: cleaning trays and reusable mediums](https://onthegrow.net/blogs/microgreens/how-to-clean-sanitize-microgreen-trays-reusable-mediums).

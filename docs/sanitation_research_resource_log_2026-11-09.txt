@@ -173,3 +173,29 @@ Creator differences: T03–T05, T11–T12, T16.
 Change: Added a complete label-led guide where the archive previously supplied general rules and incomplete creator chemical settings. Flagged OTG incompatible bleach ratios and product-care conflicts instead of carrying them forward.
 Open: User bleach bottle, exact label/stock strength, tray condition, water quality and actual sanitizer strip readings. No independent tray-specific microbial challenge trial or validated heat process.
 Build/publication: build-sanitation-pages.py emits guide + notebook, copies the two linked label PDFs; source notebook keeps the third historical bleach label private to research. All research remains navigable from hub and topic README.
+
+FOLLOW-UP — EXACT SHOPPING IDENTITY AND CARD PRIORITY (2026-11-09)
+User requested the specific bleach to buy and hub order: seed grams/schedules, coir, sanitation, then remaining cards. Recommended the plain Clorox Disinfecting Bleach Unscented liquid; the 121 fl oz UPC identifies a specific bottle. No concentration percentage inferred from the product name or an old SDS.
+
+[T17] Clorox — Disinfecting Bleach, Unscented — current manufacturer product page
+URL: https://www.clorox.com/products/clorox-disinfecting-bleach/
+Accessed: 2026-11-09, America/Chicago
+Class: official product
+Used in: Exact bleach to buy, hub sanitation card
+Supports / key record: Current product name and Unscented variant; 121 oz among offered sizes; manufacturer links its SmartLabel record T18. Distinguishes regular liquid from thickened No-Splash, scented, outdoor and dry formats. General disinfection directions use a different application than food-contact sanitation.
+Limits: No exact active percentage established by the extracted page. Actual container label governs use. Initial web fetch timed out; retry succeeded. No price or local stock claim.
+Local preservation: URL-only — concise original support note retained; no full copyrighted product page redistributed.
+Status/recheck: Live. Recheck actual bottle before use.
+
+[T18] Clorox SmartLabel — Disinfecting Bleach, Regular, 121 fl oz — UPC 044600324166
+URLs: https://smartlabel.labelinsight.com/product/6190840/ingredients ; https://smartlabel.labelinsight.com/product/6190840/usage ; https://smartlabel.labelinsight.com/product/6190840/advisories
+Additional ingredient subpages consulted: https://smartlabel.labelinsight.com/product/6190840/ingredients/water-(agua) ; https://smartlabel.labelinsight.com/product/6190840/ingredients/sodium-hypochlorite-(hipoclorito-de-sodio)
+Accessed: 2026-11-09, America/Chicago
+Class: official manufacturer ingredient/product disclosure
+Used in: Exact bottle size, barcode, Regular variant and active ingredient identity
+Supports / key record: Product title, 121 fl oz size, UPC 044600324166, sodium hypochlorite ingredient; information updated by Clorox 2024-10-30. Official Clorox product page links directly to this record. Usage tab describes general surface disinfection, not a complete food-contact sanitizing protocol; T01 remains the named food-contact instruction source.
+Limits: Packaging may vary. No exact sodium-hypochlorite percentage established from the retrieved ingredient record. Ingredient education subpages add no dose evidence. Advisories page extraction exposed headings only.
+Local preservation: URL-only — concise original support note retained; no full copyrighted product record redistributed.
+Status/recheck: Live. Confirm product identity and food-contact directions on actual container.
+
+Change impact: Guide now gives a concrete purchase instead of leaving brand/type implicit. Hub and shared navigation lead with crops, coir and sanitation. Seed card explicitly leads with grams and schedules, without changing saved crop plans or sowing-rate data.
