@@ -63,7 +63,7 @@
     "grow-log.html": "de9ac397ae26d5e96948c759d9917eaaae628559575d71b70aa587b31c68e263",
     "grow-log.js": "8b77accc752a7b183c5bf79fb3c52db4dd469556291e924446fa803d62bc1435",
     "guide.html": "1802cf08661448215ead5e05557dabedfe4e31356c1b8af3f3a4fdfe04b1c4a5",
-    "index.html": "797b69ba813fb874f561aac50e5a0be32b86657a96784fc9af74190e46a68075",
+    "index.html": "adfd372091a4cd35bc341d61f35772dc1c3a740e15dcea401511fedffa135995",
     "lighting.html": "0e2249dfdf4babdd9aa8f30dc62750623ab87702922c78a3c47cfcf5175c708b",
     "lighting.js": "6cc6e7bbcba072852b5ea70f0ff27f6c2a6c1cfff1b111eed4b05956fd4b56e2",
     "model-notes.html": "9cc9ebfa6cc9015ad809f8bcefecb16cda425841a1e5eec7d16629573407d645",
@@ -82,9 +82,9 @@
     "references/EPA-Steramine-1-G-1561-11-20140612.pdf": "0f2d370496088ea64504f4297a47d4f8110c99d13766c3c10ba41be4b6e65201",
     "references/SaniDate-5.0-V22.2-label.pdf": "e7771ae2f87cb8f00c5aae6803de7076b8627a47bb8f25424d956eaf40ceeaa9",
     "research-log.html": "a1026a5f4b9e17c54341a9788ed3a14c5dbad21e5ab4187c474fcbcb039a12cc",
-    "sanitation-source-log.html": "6bffa7770b75fe49cbff34b47a966eb043ea4457f3f985b8d200c3275c06ff18",
-    "sanitation.css": "ead647a6b024d265a4888543ff702146b338c3dca61624d7d4bce5f79932c132",
-    "sanitation.html": "93f232ca18c8b154024f8c103c0301a9e022aa79a00266090b7d80465ab47a29",
+    "sanitation-source-log.html": "5844b9d19c0620a7724f4fab1ce5fa212828b1701ad1ac4595a19b89e1bf298e",
+    "sanitation.css": "c0fc6c8b745c512aaa2b0a9b03448ab4e41e566d0fde976729386cfc812ba4a0",
+    "sanitation.html": "cdcb950beee3cefc608a004387a62d28384dd01f7a7078f0e2fe92bd4ef6041d",
     "seed-rate-notes.html": "03f75bafe7be712983b0da98791e87df83e5dafe0732088b7d7d22c151db48a8",
     "seed-rate-source-log.html": "31ee7f7e77ce6fa86da668034c2b396ccfd09a2798d4fc37247dc028a284830b",
     "seed-rates.js": "cb53d2a3c0bd033939bc7b06d71825dab4be5bdf6063480408a19653c133ab4a",
@@ -107,5 +107,5 @@
     "style.css": "745f7f22dd404d93a58c210f34ed68a4b93df47b2864d8260dfd2bd1b98bdf40"
   },
   "publisher": "grow-lab",
-  "source_commit": "87543eb2dc348c185e9d2b6dfa7fb9321d255573"
+  "source_commit": "e93c0593e8d2962d794cac79485fdd84934279d0"
 }
