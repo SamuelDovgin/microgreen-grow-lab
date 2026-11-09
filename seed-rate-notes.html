@@ -1,5 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Your seed packets &amp; rate history · Grow Lab</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">↟</span>Microgreen Guide <small>Grow Lab</small></a><nav aria-label="Main"><a href="index.html">All tools</a><a href="coir.html">Coco coir</a><a href="nutrients.html">MaxiGro mix</a><a href="crops.html">Seed &amp; water</a><a href="lighting.html">Lighting</a><a href="rack.html">Rack model</a><a href="grow-log.html">My grow log</a></nav></header><main class="doc" id="main"><a class="back" href="crops.html">← Back to the seed & water planner</a><p class="eyebrow">Research notes · November 7, 2026</p><div class="rendered"><h1 id="your-seed-packets-rate-history-and-next-harvest">Your seed packets, rate history and next harvest</h1>
-<p><em>November 7, 2026. <a href="crops.html">Open the crop planner</a> · <a href="grow-log.html">My grow log</a> · <a href="data/seed-rate-history.json">Published rate history</a> · <a href="seed-rate-source-log.html">Source notebook</a>.</em></p>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Your seed packets &amp; rate history · Grow Lab</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">↟</span>Microgreen Guide <small>Grow Lab</small></a><nav aria-label="Main"><a href="index.html">All tools</a><a href="coir.html">Coco coir</a><a href="nutrients.html">MaxiGro mix</a><a href="crops.html">Seed &amp; water</a><a href="lighting.html">Lighting</a><a href="rack.html">Rack model</a><a href="grow-log.html">My grow log</a></nav></header><main class="doc" id="main"><a class="back" href="crops.html">← Back to the seed & water planner</a><p class="eyebrow">Research notes · November 9, 2026</p><div class="rendered"><h1 id="your-seed-packets-rate-history-and-next-harvest">Your seed packets, rate history and next harvest</h1>
+<p><em>Updated November 9, 2026. <a href="crops.html">Open the crop planner</a> · <a href="grow-log.html">My grow log</a> · <a href="data/seed-rate-history.json">Published rate history</a> · <a href="seed-rate-source-log.html">Source notebook</a>.</em></p>
 <p>The supplied photo identifies <strong>True Leaf Market Waltham 29 broccoli (1 lb), organic Daikon Minowase radish (1 lb), Black Oil sunflower (5 lb), and organic Speckled pea (5 lb)</strong>. These are packet identities, not measured seed-lot counts, germination or actual sown trays. The planner exposes all four packets plus mung beans from your previous grow in a ready-to-plan section. The mung card uses your 180 g dry-seed trial rate and the existing 10 h selected presoak; its button plans preparation from now. No mung supplier or packet size is inferred. [U01 — user photo and instructions]</p>
 <h2 id="starting-amounts-ready-in-the-planner">Starting amounts ready in the planner</h2>
 <div class="table-wrap"><table>
@@ -61,9 +61,123 @@
 <p>For the next refinement, record actual dry seed grams, lot/cultivar, planted area, sow and harvest dates, growing conditions, gross/rejected/saleable harvest mass, and useful quality notes. Leave missing yield unknown. Keep failures as zero saleable output. Compare the same lot, medium and harvest stage over repeated trays; a larger harvest from more seed does not automatically mean better seed efficiency or quality. No automatic optimum is inferred from an unmeasured trial.</p>
 <h2 id="verification">Verification</h2>
 <p>The rate model and actual UI tests cover history persistence/reload, area normalization, date/soak rollover, nonoverwriting imports, stale tabs, storage errors and protected unreadable data. Existing crop, grow-log, coir and lighting checks remain in place. Local browser verification on November 7 checked the desktop packet cards and the 390×844 phone layout, confirmed no page-level horizontal overflow, exercised sunflower/radish start timing, and inspected the dated mung history. A timezone ordering issue in date-only history entries was found and corrected. Automated checks separately cover persistence and error cases.</p>
+<h2 id="approximate-growing-phases-from-other-growers">Approximate growing phases from other growers</h2>
+<p><em>Reviewed November 9, 2026.</em> These are practical ranges synthesized from multiple growers, not a statistical average. <strong>Germination</strong> below means the covered establishment period after sowing, not the first visible root. <strong>Blackout</strong> means extra loose-cover darkness after that period. <strong>Light</strong> means elapsed growing days under a normal daily light cycle, not 24-hour illumination. Soaking comes before these phases.</p>
+<p>&lt;!-- BEGIN GROWER PHASE TABLE --&gt;</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Crop</th>
+<th>Covered germination</th>
+<th>Extra blackout</th>
+<th>Under lights</th>
+<th>Height at light transition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Black Oil sunflower</td>
+<td>≈3–4 days</td>
+<td>≈0–3 days</td>
+<td>≈3–7 days</td>
+<td>1–2 in. Approximate light-transition cue; check roots and hull release.</td>
+</tr>
+<tr>
+<td>Daikon Minowase radish</td>
+<td>≈2–4 days</td>
+<td>≈0–2 days</td>
+<td>≈3–5 days</td>
+<td>1–2 in with stretch blackout. Earlier light is also used; do not chase height if stems lean.</td>
+</tr>
+<tr>
+<td>Waltham 29 broccoli</td>
+<td>≈2–3 days</td>
+<td>≈0–2 days</td>
+<td>≈3–7 days</td>
+<td>1–2 in with stretch blackout. Early-light methods uncover around ½–1 in; 2 in is not required.</td>
+</tr>
+<tr>
+<td>Speckled pea</td>
+<td>≈2–5 days</td>
+<td>≈0–3 days</td>
+<td>≈4–8 days</td>
+<td>¾–1¼ in for early light. Longer stretch methods vary; move before shoots tangle.</td>
+</tr>
+<tr>
+<td>Mung beans</td>
+<td>≈3–4 days</td>
+<td>≈0 days</td>
+<td>≈3–7 days</td>
+<td>½–1 in · rough observation cue. No grower-verified inch threshold found; use rooted, upright emergence. Timing evidence is limited.</td>
+</tr>
+<tr>
+<td>&lt;!-- END GROWER PHASE TABLE --&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>The ranges vary together: do not add every minimum or maximum to predict harvest. A short blackout often means more days under lights. For example, 3 covered days + 1 blackout day + 5 lit days is a 9-day crop. The plan buttons continue to load their selected starter recipe; these cards summarize the wider grower practice. Use rooted emergence and upright growth to decide when to uncover, and measure height above the medium. Remove contact trays and loads before shoots bend beneath them.</p>
+<h3 id="what-the-growers-actually-do">What the growers actually do</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Crop</th>
+<th>Grower comparisons</th>
+<th>What this means for the card</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sunflower</td>
+<td>Piedmont lists 3 covered days and a 9-day crop [G01,G02]. On The Grow uses about 4 + 1 dark days [G07]. Bootstrap uses 2–3 stacked + 2–3 blackout [G06]. Wind River introduces light at 1–2 inches [G08].</td>
+<td>Allow 0–3 extra dark days across methods; shorter darkness shifts growth into the light phase.</td>
+</tr>
+<tr>
+<td>Broccoli</td>
+<td>Piedmont: 3 covered days [G01]. On The Grow: 2–3 + 1 [G04]. Bootstrap: 2–3 + 0 [G06]. Yardibles: about 3 + 1–2, then 2–3 lit days at a 1–2-inch transition [G05].</td>
+<td>A 2-inch target belongs to a stretch method; earlier light also works. The typical 3–7 lit-day band does not capture every early harvest.</td>
+</tr>
+<tr>
+<td>Daikon radish</td>
+<td>Piedmont: 3 covered days, 8 total [G01,G02]. Bootstrap: 2–3 + 0 [G06]. On The Grow: roughly 4 + 1 + 3–4 [G09]. True Leaf: 2–4 + 1–2, with taller stems [G10].</td>
+<td>Separate short/no-blackout recipes from the optional stretch; the old ½–1-inch universal note was too narrow.</td>
+</tr>
+<tr>
+<td>Speckled pea</td>
+<td>Piedmont: 3 covered days, 9 total [G01,G02]. On The Grow’s 1020 method: 3 + 1, harvest 8–14 [G11]. Bootstrap: 2–3 + 1–3 [G06]. LaNiTex: light around 0.8–1.2 inches, later tendril harvest [G12].</td>
+<td>A wide range reflects tray and harvest differences. The height cue is for early light, not a required stretch target.</td>
+</tr>
+<tr>
+<td>Mung</td>
+<td>MP Seeds: 3–4 covered days + about 3 lit [G13]. Vitality: 3–4 covered + about 7 lit, although its total-time heading conflicts [G14].</td>
+<td>Evidence is thinner. Show 0 extra blackout and 3–7 lit days; retain an explicitly rough height cue rather than invent a verified cutoff.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Light durations are directly reported where available (Yardibles, Vitality, MP Seeds) and otherwise inferred from a source’s light-start and harvest timing. Piedmont’s two table vintages are context, not a single matched experiment. Generic crop methods are not measurements of your exact cultivar or seed lot. See the <a href="quick-start-source-log.html">complete review notebook</a> and <a href="data/quick-start-growing-guidance.json">machine-readable card guidance</a>.</p>
+<h3 id="grower-sources-for-these-estimates">Grower sources for these estimates</h3>
+<ul>
+<li><strong>G01 — <a href="https://microgreenmanager.com/blog/germination-id-guides">Microgreen Manager / Piedmont — germination table</a></strong>. Broccoli, Daikon, basic pea and sunflower each have a three-day stacked germination period. Published 2025; this is covered emergence, not time to first root.</li>
+<li><strong>G02 — <a href="https://microgreenmanager.com/blog/microgreens-yield-cheatsheet">Microgreen Manager / Piedmont — yield table</a></strong>. Published 2024: broccoli 10 days, Daikon 8, basic pea 9 and sunflower 9 to harvest. Different vintage from G01; light durations inferred across these tables are approximate.</li>
+<li><strong>G03 — <a href="https://microgreenmanager.com/blog/blackout-step-for-microgreens">Microgreen Manager — separate blackout</a></strong>. Defines blackout as an optional post-germination stretch. Says most crops do not need it; harvesting equipment and stem length affect the choice.</li>
+<li><strong>G04 — <a href="https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens">On The Grow — broccoli</a></strong>. Two to three days with an empty contact tray, then about one day under a loose dark cover. Light cue includes lifting the tray roughly half an inch; tray lift is not an absolute plant-height measurement.</li>
+<li><strong>G05 — <a href="https://www.yardibles.com/how-to-grow-broccoli-microgreens-benefits-nutrients/">Yardibles — broccoli walkthrough</a></strong>. About three days germination, one to two extra dark days, light at one to two inches, then two to three lit days. This is a longer-stem method, not proof that earlier light fails.</li>
+<li><strong>G06 — <a href="https://www.bootstrapfarmer.com/pages/ultimate-microgreen-growing-resource">Bootstrap Farmer — crop chart</a></strong>. Broccoli and radish: stack two to three days, no separate blackout. Peas: stack two to three plus one to three blackout days. Sunflower: stack two to three plus two to three blackout days. Harvest: 7–10, 7–10, 8–12 and 9–12 days respectively.</li>
+<li><strong>G07 — <a href="https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens">On The Grow — black-oil sunflower</a></strong>. About four weighted dark days, then one loose blackout day, sometimes another for hulls. Reports eight to ten days overall; roughly three to five lit days is subtraction, not a separately reported duration.</li>
+<li><strong>G08 — <a href="https://windrivergreens.com/blogs/guides/how-to-grow-sunflower-microgreens-step-by-step-complete-beginner-s-guide">Wind River Greens — sunflower</a></strong>. Moves sunflower to light around one to two inches after three to four dark days. Seven to twelve days total. Uses blackout to include covered germination; no additional stretch period is specified.</li>
+<li><strong>G09 — <a href="https://onthegrow.net/blogs/microgreens/how-to-grow-radish-microgreens">On The Grow — radish</a></strong>. Detailed method keeps contact cover until around day four, adds one blackout day, lights around day five and harvests around day eight or nine. Light phase is therefore about three to four days.</li>
+<li><strong>G10 — <a href="https://trueleafmarket.com/pages/how-to-grow-radish-microgreens-guide">True Leaf Market — radish grow guide</a></strong>. Two to four covered germination days plus one to two extra blackout days; stretch stems no taller than about two to two-and-a-half inches. Overall harvest eight to ten days. Generic radish guidance, not a Minowase-specific trial.</li>
+<li><strong>G11 — <a href="https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide">On The Grow — peas on different trays</a></strong>. 1020 method: about three days contact cover plus one loose blackout day. General summary allows three to five germination days and one to two extra blackout days. Harvest eight to fourteen days; includes Speckled among preferred peas.</li>
+<li><strong>G12 — <a href="https://lanitexhydrogarden.com.au/blogs/microgreen-blog/how-to-grow-pea-microgreens-australia">LaNiTex — pea shoots</a></strong>. Two to three dark days, light at two to three centimetres (about 0.8–1.2 inches), ten to sixteen days to a later tendril harvest. Different harvest target from a young Speckled crop.</li>
+<li><strong>G13 — <a href="https://mpseeds.eu/mung-bean-microgreens-seeds">MP Seeds — mung bean microgreens</a></strong>. Microgreen prose: three to four days germination and another three in light. Product table says three to four blackout days and eight to nine total. These are overlapping dark-stage labels, not two sequential dark periods; timing is internally inconsistent.</li>
+<li><strong>G14 — <a href="https://vitalityfarmscompany.com/wp-content/uploads/2022/04/micro-grow-notes.pdf">Vitality Farms — Growing Micros, mung p. 40 and radish p. 42</a></strong>. Mung: three to four stacked days then about seven lit days, conflicting with its seven-to-ten-day harvest heading. Radish: two to four stacked days then three to four lit days. Contributed recipes are not independently replicated trials.</li>
+</ul>
 </div><details><summary>Read raw source</summary><pre># Your seed packets, rate history and next harvest
 
-*November 7, 2026. [Open the crop planner](site/dist/crops.html) · [My grow log](site/dist/grow-log.html) · [Published rate history](data/seed-rate-history.json) · [Source notebook](source_docs/research_resource_log_2026-11-07.txt).*
+*Updated November 9, 2026. [Open the crop planner](site/dist/crops.html) · [My grow log](site/dist/grow-log.html) · [Published rate history](data/seed-rate-history.json) · [Source notebook](source_docs/research_resource_log_2026-11-07.txt).*
 
 The supplied photo identifies **True Leaf Market Waltham 29 broccoli (1 lb), organic Daikon Minowase radish (1 lb), Black Oil sunflower (5 lb), and organic Speckled pea (5 lb)**. These are packet identities, not measured seed-lot counts, germination or actual sown trays. The planner exposes all four packets plus mung beans from your previous grow in a ready-to-plan section. The mung card uses your 180 g dry-seed trial rate and the existing 10 h selected presoak; its button plans preparation from now. No mung supplier or packet size is inferred. [U01 — user photo and instructions]
 
@@ -110,4 +224,50 @@ For the next refinement, record actual dry seed grams, lot/cultivar, planted are
 ## Verification
 
 The rate model and actual UI tests cover history persistence/reload, area normalization, date/soak rollover, nonoverwriting imports, stale tabs, storage errors and protected unreadable data. Existing crop, grow-log, coir and lighting checks remain in place. Local browser verification on November 7 checked the desktop packet cards and the 390×844 phone layout, confirmed no page-level horizontal overflow, exercised sunflower/radish start timing, and inspected the dated mung history. A timezone ordering issue in date-only history entries was found and corrected. Automated checks separately cover persistence and error cases.
+
+
+## Approximate growing phases from other growers
+
+*Reviewed November 9, 2026.* These are practical ranges synthesized from multiple growers, not a statistical average. **Germination** below means the covered establishment period after sowing, not the first visible root. **Blackout** means extra loose-cover darkness after that period. **Light** means elapsed growing days under a normal daily light cycle, not 24-hour illumination. Soaking comes before these phases.
+
+&lt;!-- BEGIN GROWER PHASE TABLE --&gt;
+| Crop | Covered germination | Extra blackout | Under lights | Height at light transition |
+|---|---|---|---|---|
+| Black Oil sunflower | ≈3–4 days | ≈0–3 days | ≈3–7 days | 1–2 in. Approximate light-transition cue; check roots and hull release. |
+| Daikon Minowase radish | ≈2–4 days | ≈0–2 days | ≈3–5 days | 1–2 in with stretch blackout. Earlier light is also used; do not chase height if stems lean. |
+| Waltham 29 broccoli | ≈2–3 days | ≈0–2 days | ≈3–7 days | 1–2 in with stretch blackout. Early-light methods uncover around ½–1 in; 2 in is not required. |
+| Speckled pea | ≈2–5 days | ≈0–3 days | ≈4–8 days | ¾–1¼ in for early light. Longer stretch methods vary; move before shoots tangle. |
+| Mung beans | ≈3–4 days | ≈0 days | ≈3–7 days | ½–1 in · rough observation cue. No grower-verified inch threshold found; use rooted, upright emergence. Timing evidence is limited. |
+&lt;!-- END GROWER PHASE TABLE --&gt;
+
+The ranges vary together: do not add every minimum or maximum to predict harvest. A short blackout often means more days under lights. For example, 3 covered days + 1 blackout day + 5 lit days is a 9-day crop. The plan buttons continue to load their selected starter recipe; these cards summarize the wider grower practice. Use rooted emergence and upright growth to decide when to uncover, and measure height above the medium. Remove contact trays and loads before shoots bend beneath them.
+
+### What the growers actually do
+
+| Crop | Grower comparisons | What this means for the card |
+|---|---|---|
+| Sunflower | Piedmont lists 3 covered days and a 9-day crop [G01,G02]. On The Grow uses about 4 + 1 dark days [G07]. Bootstrap uses 2–3 stacked + 2–3 blackout [G06]. Wind River introduces light at 1–2 inches [G08]. | Allow 0–3 extra dark days across methods; shorter darkness shifts growth into the light phase. |
+| Broccoli | Piedmont: 3 covered days [G01]. On The Grow: 2–3 + 1 [G04]. Bootstrap: 2–3 + 0 [G06]. Yardibles: about 3 + 1–2, then 2–3 lit days at a 1–2-inch transition [G05]. | A 2-inch target belongs to a stretch method; earlier light also works. The typical 3–7 lit-day band does not capture every early harvest. |
+| Daikon radish | Piedmont: 3 covered days, 8 total [G01,G02]. Bootstrap: 2–3 + 0 [G06]. On The Grow: roughly 4 + 1 + 3–4 [G09]. True Leaf: 2–4 + 1–2, with taller stems [G10]. | Separate short/no-blackout recipes from the optional stretch; the old ½–1-inch universal note was too narrow. |
+| Speckled pea | Piedmont: 3 covered days, 9 total [G01,G02]. On The Grow’s 1020 method: 3 + 1, harvest 8–14 [G11]. Bootstrap: 2–3 + 1–3 [G06]. LaNiTex: light around 0.8–1.2 inches, later tendril harvest [G12]. | A wide range reflects tray and harvest differences. The height cue is for early light, not a required stretch target. |
+| Mung | MP Seeds: 3–4 covered days + about 3 lit [G13]. Vitality: 3–4 covered + about 7 lit, although its total-time heading conflicts [G14]. | Evidence is thinner. Show 0 extra blackout and 3–7 lit days; retain an explicitly rough height cue rather than invent a verified cutoff. |
+
+Light durations are directly reported where available (Yardibles, Vitality, MP Seeds) and otherwise inferred from a source’s light-start and harvest timing. Piedmont’s two table vintages are context, not a single matched experiment. Generic crop methods are not measurements of your exact cultivar or seed lot. See the [complete review notebook](source_docs/research_resource_log_2026-11-09.txt) and [machine-readable card guidance](data/quick-start-growing-guidance.json).
+
+### Grower sources for these estimates
+
+- **G01 — [Microgreen Manager / Piedmont — germination table](https://microgreenmanager.com/blog/germination-id-guides)**. Broccoli, Daikon, basic pea and sunflower each have a three-day stacked germination period. Published 2025; this is covered emergence, not time to first root.
+- **G02 — [Microgreen Manager / Piedmont — yield table](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet)**. Published 2024: broccoli 10 days, Daikon 8, basic pea 9 and sunflower 9 to harvest. Different vintage from G01; light durations inferred across these tables are approximate.
+- **G03 — [Microgreen Manager — separate blackout](https://microgreenmanager.com/blog/blackout-step-for-microgreens)**. Defines blackout as an optional post-germination stretch. Says most crops do not need it; harvesting equipment and stem length affect the choice.
+- **G04 — [On The Grow — broccoli](https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens)**. Two to three days with an empty contact tray, then about one day under a loose dark cover. Light cue includes lifting the tray roughly half an inch; tray lift is not an absolute plant-height measurement.
+- **G05 — [Yardibles — broccoli walkthrough](https://www.yardibles.com/how-to-grow-broccoli-microgreens-benefits-nutrients/)**. About three days germination, one to two extra dark days, light at one to two inches, then two to three lit days. This is a longer-stem method, not proof that earlier light fails.
+- **G06 — [Bootstrap Farmer — crop chart](https://www.bootstrapfarmer.com/pages/ultimate-microgreen-growing-resource)**. Broccoli and radish: stack two to three days, no separate blackout. Peas: stack two to three plus one to three blackout days. Sunflower: stack two to three plus two to three blackout days. Harvest: 7–10, 7–10, 8–12 and 9–12 days respectively.
+- **G07 — [On The Grow — black-oil sunflower](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens)**. About four weighted dark days, then one loose blackout day, sometimes another for hulls. Reports eight to ten days overall; roughly three to five lit days is subtraction, not a separately reported duration.
+- **G08 — [Wind River Greens — sunflower](https://windrivergreens.com/blogs/guides/how-to-grow-sunflower-microgreens-step-by-step-complete-beginner-s-guide)**. Moves sunflower to light around one to two inches after three to four dark days. Seven to twelve days total. Uses blackout to include covered germination; no additional stretch period is specified.
+- **G09 — [On The Grow — radish](https://onthegrow.net/blogs/microgreens/how-to-grow-radish-microgreens)**. Detailed method keeps contact cover until around day four, adds one blackout day, lights around day five and harvests around day eight or nine. Light phase is therefore about three to four days.
+- **G10 — [True Leaf Market — radish grow guide](https://trueleafmarket.com/pages/how-to-grow-radish-microgreens-guide)**. Two to four covered germination days plus one to two extra blackout days; stretch stems no taller than about two to two-and-a-half inches. Overall harvest eight to ten days. Generic radish guidance, not a Minowase-specific trial.
+- **G11 — [On The Grow — peas on different trays](https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide)**. 1020 method: about three days contact cover plus one loose blackout day. General summary allows three to five germination days and one to two extra blackout days. Harvest eight to fourteen days; includes Speckled among preferred peas.
+- **G12 — [LaNiTex — pea shoots](https://lanitexhydrogarden.com.au/blogs/microgreen-blog/how-to-grow-pea-microgreens-australia)**. Two to three dark days, light at two to three centimetres (about 0.8–1.2 inches), ten to sixteen days to a later tendril harvest. Different harvest target from a young Speckled crop.
+- **G13 — [MP Seeds — mung bean microgreens](https://mpseeds.eu/mung-bean-microgreens-seeds)**. Microgreen prose: three to four days germination and another three in light. Product table says three to four blackout days and eight to nine total. These are overlapping dark-stage labels, not two sequential dark periods; timing is internally inconsistent.
+- **G14 — [Vitality Farms — Growing Micros, mung p. 40 and radish p. 42](https://vitalityfarmscompany.com/wp-content/uploads/2022/04/micro-grow-notes.pdf)**. Mung: three to four stacked days then about seven lit days, conflicting with its seven-to-ten-day harvest heading. Radish: two to four stacked days then three to four lit days. Contributed recipes are not independently replicated trials.
 </pre></details><p><a href="docs/14_seed_packets_and_rate_history.md" download>Download original source</a></p></main><footer><span>Microgreen Guide / Grow Lab</span><span>Sources, units, assumptions and limits stay visible.</span></footer></body></html>

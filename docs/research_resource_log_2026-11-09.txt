@@ -1,0 +1,126 @@
+GROWER PHASE COMPARISON — 2026-11-09
+Used in: quick-start seed cards; 14_seed_packets_and_rate_history.md; data/quick-start-growing-guidance.json.
+Scope: five owned/previous crops. Source ranges are method-dependent, not controlled comparisons. Existing named planner recipes remain distinct.
+
+[G01] Microgreen Manager / Piedmont — germination table
+URL: https://microgreenmanager.com/blog/germination-id-guides
+Accessed: 2026-11-09; live in web reader.
+Class: Firsthand farm table
+Supports / key record: Broccoli, Daikon, basic pea and sunflower each have a three-day stacked germination period. Published 2025; this is covered emergence, not time to first root.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G02] Microgreen Manager / Piedmont — yield table
+URL: https://microgreenmanager.com/blog/microgreens-yield-cheatsheet
+Accessed: 2026-11-09; live in web reader.
+Class: Firsthand farm table
+Supports / key record: Published 2024: broccoli 10 days, Daikon 8, basic pea 9 and sunflower 9 to harvest. Different vintage from G01; light durations inferred across these tables are approximate.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G03] Microgreen Manager — separate blackout
+URL: https://microgreenmanager.com/blog/blackout-step-for-microgreens
+Accessed: 2026-11-09; live in web reader.
+Class: Firsthand grower guide
+Supports / key record: Defines blackout as an optional post-germination stretch. Says most crops do not need it; harvesting equipment and stem length affect the choice.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G04] On The Grow — broccoli
+URL: https://onthegrow.net/blogs/microgreens/how-to-grow-broccoli-microgreens
+Accessed: 2026-11-09; live in web reader.
+Class: Firsthand grower guide
+Supports / key record: Two to three days with an empty contact tray, then about one day under a loose dark cover. Light cue includes lifting the tray roughly half an inch; tray lift is not an absolute plant-height measurement.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G05] Yardibles — broccoli walkthrough
+URL: https://www.yardibles.com/how-to-grow-broccoli-microgreens-benefits-nutrients/
+Accessed: 2026-11-09; live in web reader.
+Class: Firsthand grower walkthrough
+Supports / key record: About three days germination, one to two extra dark days, light at one to two inches, then two to three lit days. This is a longer-stem method, not proof that earlier light fails.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G06] Bootstrap Farmer — crop chart
+URL: https://www.bootstrapfarmer.com/pages/ultimate-microgreen-growing-resource
+Accessed: 2026-11-09; live in web reader.
+Class: Supplier / grower chart
+Supports / key record: Broccoli and radish: stack two to three days, no separate blackout. Peas: stack two to three plus one to three blackout days. Sunflower: stack two to three plus two to three blackout days. Harvest: 7–10, 7–10, 8–12 and 9–12 days respectively.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G07] On The Grow — black-oil sunflower
+URL: https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens
+Accessed: 2026-11-09; live in web reader.
+Class: Firsthand grower guide
+Supports / key record: About four weighted dark days, then one loose blackout day, sometimes another for hulls. Reports eight to ten days overall; roughly three to five lit days is subtraction, not a separately reported duration.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G08] Wind River Greens — sunflower
+URL: https://windrivergreens.com/blogs/guides/how-to-grow-sunflower-microgreens-step-by-step-complete-beginner-s-guide
+Accessed: 2026-11-09; live in web reader.
+Class: Firsthand grower guide
+Supports / key record: Moves sunflower to light around one to two inches after three to four dark days. Seven to twelve days total. Uses blackout to include covered germination; no additional stretch period is specified.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G09] On The Grow — radish
+URL: https://onthegrow.net/blogs/microgreens/how-to-grow-radish-microgreens
+Accessed: 2026-11-09; live in web reader.
+Class: Firsthand grower guide
+Supports / key record: Detailed method keeps contact cover until around day four, adds one blackout day, lights around day five and harvests around day eight or nine. Light phase is therefore about three to four days.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G10] True Leaf Market — radish grow guide
+URL: https://trueleafmarket.com/pages/how-to-grow-radish-microgreens-guide
+Accessed: 2026-11-09; live in web reader.
+Class: Supplier growing guide
+Supports / key record: Two to four covered germination days plus one to two extra blackout days; stretch stems no taller than about two to two-and-a-half inches. Overall harvest eight to ten days. Generic radish guidance, not a Minowase-specific trial.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G11] On The Grow — peas on different trays
+URL: https://onthegrow.net/blogs/microgreens/how-to-grow-pea-microgreens-on-various-trays-quick-and-easy-guide
+Accessed: 2026-11-09; live in web reader.
+Class: Firsthand grower guide
+Supports / key record: 1020 method: about three days contact cover plus one loose blackout day. General summary allows three to five germination days and one to two extra blackout days. Harvest eight to fourteen days; includes Speckled among preferred peas.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G12] LaNiTex — pea shoots
+URL: https://lanitexhydrogarden.com.au/blogs/microgreen-blog/how-to-grow-pea-microgreens-australia
+Accessed: 2026-11-09; live in web reader.
+Class: Supplier growing guide
+Supports / key record: Two to three dark days, light at two to three centimetres (about 0.8–1.2 inches), ten to sixteen days to a later tendril harvest. Different harvest target from a young Speckled crop.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G13] MP Seeds — mung bean microgreens
+URL: https://mpseeds.eu/mung-bean-microgreens-seeds
+Accessed: 2026-11-09; live in web reader.
+Class: Supplier growing guide
+Supports / key record: Microgreen prose: three to four days germination and another three in light. Product table says three to four blackout days and eight to nine total. These are overlapping dark-stage labels, not two sequential dark periods; timing is internally inconsistent.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[G14] Vitality Farms — Growing Micros, mung p. 40 and radish p. 42
+URL: https://vitalityfarmscompany.com/wp-content/uploads/2022/04/micro-grow-notes.pdf
+Accessed: 2026-11-09; live in web reader.
+Class: Grower collaboration / notes compilation
+Supports / key record: Mung: three to four stacked days then about seven lit days, conflicting with its seven-to-ten-day harvest heading. Radish: two to four stacked days then three to four lit days. Contributed recipes are not independently replicated trials.
+Limits: grower/supplier observation; not a validated optimum or a trial of this user’s seed lot. Durations inferred by subtraction are labeled.
+Local preservation: URL-only — original support notes preserved; full copyrighted pages not redistributed.
+
+[L01] Existing local crop-protocols.json, seed-packet guide and prior calendar/source notes
+Class: local archive. Accessed: 2026-11-09. Used to retain packet identities, dry seed masses, existing recipe alternatives and approximate earlier height cues.
+No new local grow observations or yields were available. Mung inch cue remains editorial; no checked grower source established it.
+
+DISCOVERY ONLY
+Broad web searches surfaced Reddit, aggregators, supplier listings and a greengram cultivation PDF. No additional numerical defaults were taken from search snippets; the 14 sources above were opened and reviewed directly.
+
+DECISION
+Cards show a deliberately broad grower envelope: sunflower 3–4 / 0–3 / 3–7 days; radish 2–4 / 0–2 / 3–5; broccoli 2–3 / 0–2 / 3–7; peas 2–5 / 0–3 / 4–8; mung 3–4 / 0 / 3–7. Order is covered germination / additional blackout / light. These are not exhaustive source extrema. Earlier/later harvest targets and alternate methods explain outliers.
+Broccoli card now distinguishes optional one-to-two-inch stretch from earlier light; radish likewise distinguishes an optional stretch. No extra blackout is added to mung’s existing covered establishment.
