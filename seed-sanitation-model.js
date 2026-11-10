@@ -23,5 +23,17 @@
   const unspecified={status:'No dose specified here',concentration:'Use crop-specific label',time:'Use crop-specific label',note:'This guide does not select a chemical protocol for this crop.',source:data.sources.grower};
   return {label:crop.name,recommended:crop.status==='Recommended',answer:crop.status==='Recommended'?'Yes — recommended':crop.status==='Consider'?'Consider treatment':crop.status==='Avoid routine bath'?'No — avoid routine bath':'No — not routinely',why:crop.note,hocl:{...unspecified},peroxide:{...unspecified},spray:{hocl:'No — not recommended',peroxide:'No — not recommended',concentration:'No concentration recommended',note:'Use potable water when needed; no crop-specific daily spray is selected here.'}};
  }
- return {dilution,plan,quickProfile};
+ function comparison(chemical,concentration,cropId,data){
+  const c=Number(concentration),settings=data.chemicalComparisons?.[chemical];
+  if(!settings||!settings.options.includes(c)||!data.crops[cropId])return null;
+  if(chemical==='peroxide'){
+   const ref=c===3&&cropId==='broccoli'?settings.broccoli3:settings.references[String(c)];
+   return {...ref,chemical,selected:c,concentration:c+'% H₂O₂*',confirmed:false,kind:c===3&&cropId!=='broccoli'?'grower-reference':'study-reference',sensitivity:null};
+  }
+  const ratio=settings.referenceConcentration/c,minutes=settings.referenceMinutes*ratio,anchor=c===settings.referenceConcentration;
+  const sensitivity={low:settings.referenceMinutes*Math.pow(ratio,.5),high:settings.referenceMinutes*Math.pow(ratio,2)};
+  const note=anchor?'800 ppm × 15 minutes is the broccoli reference. This is not a validated treatment for your seed lot.':'15 × (800 ÷ '+c+') = '+minutes+' min assumes constant concentration × time. This exceeds the studied 1–15 minute window; effectiveness and germination at this duration were not established.';
+  return {chemical,selected:c,minutes,concentration:c+' ppm*',time:minutes+' min*',status:anchor?'Broccoli study reference*':'Unconfirmed time extrapolation*',footnote:anchor?'* Broccoli study reference; not a confirmed protocol for your seed lot.':settings.footnote,note,source:settings.source,confirmed:false,kind:anchor?'study-reference':'hypothetical-extrapolation',sensitivity};
+ }
+ return {dilution,plan,quickProfile,comparison};
 });
