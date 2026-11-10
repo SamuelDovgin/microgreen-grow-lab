@@ -1,0 +1,83 @@
+{
+  "recorded_date": "2026-11-10",
+  "measurement_source": "User report in this chat; not independently replicated",
+  "tray": "1020",
+  "spray_measurement": {
+    "trigger_pulls": 10,
+    "liquid_mass_g": 1.66,
+    "assumed_density_g_per_ml": 1.0,
+    "estimated_volume_ml": 1.66,
+    "replicate_range": null
+  },
+  "generator_feed": {
+    "water_ml": 250,
+    "nacl_g": 1.5,
+    "vinegar_ml": 0.63,
+    "vinegar_acidity": null,
+    "approximate_nacl_feed_g_per_l": 6.0,
+    "electrolysis_minutes_planned": 30,
+    "fac_ppm_target": 300,
+    "ph_target": 4.5,
+    "fac_ppm_measured": null,
+    "ph_measured": null,
+    "manufacturer_compatibility_verified": false
+  },
+  "application_context": {
+    "stage": "germination only",
+    "initial_applications_per_day": 2,
+    "initial_days": 3,
+    "upper_application_count": 10
+  },
+  "calculation": {
+    "basis": "Starting NaCl feed equivalent, not measured unchanged NaCl after electrolysis",
+    "salt_equivalent_mg_per_application": 9.96,
+    "six_application_total_mg": 59.76,
+    "ten_application_liquid_ml": 16.6,
+    "ten_application_total_salt_equivalent_mg": 99.6,
+    "water_currently_retained_scenarios": [
+      {
+        "water_ml": 250,
+        "g_per_l": 0.3984,
+        "nacl_equivalent_mm": 6.817
+      },
+      {
+        "water_ml": 500,
+        "g_per_l": 0.1992,
+        "nacl_equivalent_mm": 3.408
+      },
+      {
+        "water_ml": 1000,
+        "g_per_l": 0.0996,
+        "nacl_equivalent_mm": 1.704
+      }
+    ],
+    "assumptions": [
+      "Dilute-water density approximation",
+      "Small volume change from additives neglected",
+      "Homogeneous generator output without salt separation",
+      "All applied salt-equivalent retained",
+      "Even mixing within each retained-water scenario",
+      "Background coir/water/nutrient salts excluded"
+    ]
+  },
+  "assessment": {
+    "conclusion": "Salt accumulation likely a minor practical concern at measured output and up to ten germination-only applications in adequately moist, low-salt coir",
+    "confidence": "moderate qualitative inference",
+    "direct_growing_trial_completed": false,
+    "crop_outcome_reported": null,
+    "limits": [
+      "Actual retained water and local exposure unmeasured",
+      "Drying and uneven deposits can concentrate salts",
+      "Does not establish tolerance to 300 ppm FAC or pH4.50",
+      "Does not validate sanitation efficacy, food-use suitability or routine spraying"
+    ]
+  },
+  "evidence_ids": [
+    "S55",
+    "S56",
+    "S57",
+    "S58",
+    "S59"
+  ],
+  "research_guide": "17_seed_sanitation_research_and_timing.md#11-measured-spray-salt-load"
+}

@@ -2,6 +2,7 @@
 <p><em>Compiled November 10, 2026. Scope: the sanitation-planner research and corrections in this project. Evidence labels: experimental result, grower guidance, editorial handling judgment, or hypothetical calculation. None is a product-specific food-safety validation.</em></p>
 <p><a href="seed-sanitation.html">Open the planner</a> · <a href="seed-sanitation-source-log.html">Source-preservation notebook</a></p>
 <h2 id="latest-evidence-review">Latest evidence review</h2>
+<p><strong>Recorded spray observation, November 10:</strong> 10 trigger pulls delivered <strong>1.66 g of liquid</strong>. At up to 10 applications, the generator recipe contributes approximately <strong>0.10 g salt-equivalent per 1020 tray</strong>. Assessment: <strong>likely a minor salinity concern in adequately moist, low-salt coir; moderate confidence</strong>, separate from chlorine tolerance or mold-control efficacy. Full calculation and evidence are recorded in section 11 below.</p>
 <p><a href="seed-sanitation-tissue-culture.html">Tissue-culture seed preparation and lessons for microgreens</a> adds laboratory workflow, seed-lot effects, culture-versus-pathogen endpoints and a five-crop comparison. It does not validate the calculated badge times.</p>
 <p><a href="seed-sanitation-evidence.html">HOCl measured studies, log-reduction targets and grower agreement</a> adds direct sunflower Salmonella evidence, FDA’s explicit sprout target, and a firsthand grower comparison. HOCl has positive measured results; the unconfirmed gap concerns particular extrapolated times and transfer to your crop/process. The timing math below is not a validated kill model.</p>
 <h2 id="1-why-12-appeared-to-need-longer-than-3">1. Why 12% appeared to need longer than 3%</h2>
@@ -242,6 +243,82 @@ water mass = final mass − stock mass
 </ul>
 <h3 id="source-identifiers">Source identifiers</h3>
 <p>S01 Gilbert et al. (2023), <em>Foods</em> 12(4):747, DOI 10.3390/foods12040747, PMCID PMC9955435. S02 Bootstrap Farmer seed disinfection. S03 Bootstrap Farmer soaking guidance. S04 Ocho Bernal et al. (2023), DOI 10.3389/fsufs.2023.1264472. S05 Eicher-Sodo research and associated HortTechnology 2019 paper. S06 Food Control 2016, DOI 10.1016/j.foodcont.2016.02.045. S07 USU. S08 UF/IFAS. S09 National Capital Poison Center. S10 CDC efficacy factors. S11 EPA C–t project summary. S12 dynamic-disinfection modeling paper, PMCID PMC7780086. S13 EFSA/ECHA water-treatment guidance, PMCID PMC10461463. S14 Penn State. S15 FDA sprout guidance. S16 USDA NOP 5029. S17 supplied planner/discussion. S18 local archive and implementation. S19 discovery-only leads. Full links and access records are in the notebook.</p>
+<h2 id="11-measured-spray-salt-load">11. Measured spray salt load</h2>
+<p><em>Recorded November 10, 2026. This is a user-reported measurement and a research assessment, not a completed growing trial.</em></p>
+<h3 id="observation-and-recipe-context">Observation and recipe context</h3>
+<ul>
+<li><strong>Measured spray output:</strong> 10 trigger pulls weighed <strong>1.66 g of liquid</strong>, approximately <strong>1.66 mL</strong> using a dilute-water density approximation of 1 g/mL. This is one reported observation, without a replicate range or independent verification. [S55]</li>
+<li><strong>Generator feed supplied by the user:</strong> 250 mL purified/distilled water, 1.50 g NaCl and 0.63 mL vinegar of unspecified acidity. Approximate starting salt rate: <strong>6.00 g/L = 6 mg/mL</strong>. Small final-volume changes are neglected.</li>
+<li><strong>Process plan supplied by the user:</strong> 30-minute electrolysis, target FAC 300 ppm and target final pH 4.50. These are recipe/process targets and a reported timing reference, <strong>not recorded fresh FAC/pH measurements for this batch</strong>. Generator/manual compatibility was not verified in this salt assessment.</li>
+<li><strong>Application plan:</strong> mist during germination only; <strong>up to 10 applications</strong> for the upper-load estimate. The earlier twice-daily, three-day schedule would be six applications, so it is a separate, lower-load scenario.</li>
+</ul>
+<h3 id="salt-equivalent-calculation">Salt-equivalent calculation</h3>
+<pre><code class="language-text">per application = 1.66 mL × 6 mg/mL = 9.96 mg salt-equivalent
+6 applications  = 9.96 × 6 = 59.76 mg ≈ 0.060 g per tray
+10 applications = 9.96 × 10 = 99.6 mg ≈ 0.100 g per tray
+</code></pre>
+<p>“Salt-equivalent” tracks the NaCl introduced in the generator feed. It is <strong>not an assay of unchanged NaCl remaining after electrolysis</strong>, final EC, chlorine residue, plant uptake or the amount retained on each seed. The estimate assumes a homogeneous single-bottle output and no salt separation. Sodium-containing dissolved material remains relevant even as some chloride changes chemical form. [S55; S59]</p>
+<p>Assuming all of the upper-load estimate remains and mixes evenly with the <strong>water currently retained in the tray</strong>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align:right">Retained water, including any spray water</th>
+<th style="text-align:right">Added salt-equivalent</th>
+<th style="text-align:right">Approximate NaCl-equivalent concentration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">250 mL</td>
+<td style="text-align:right">0.398 g/L</td>
+<td style="text-align:right">6.8 mM</td>
+</tr>
+<tr>
+<td style="text-align:right">500 mL</td>
+<td style="text-align:right">0.199 g/L</td>
+<td style="text-align:right">3.4 mM</td>
+</tr>
+<tr>
+<td style="text-align:right">1,000 mL</td>
+<td style="text-align:right">0.100 g/L</td>
+<td style="text-align:right">1.7 mM</td>
+</tr>
+</tbody>
+</table></div>
+<p>Equation: <code>mM = (salt-equivalent g / retained-water L) ÷ 58.4428 × 1,000</code>. These water quantities are <strong>sensitivity scenarios, not measurements of this tray</strong>, and exclude background salinity from coir, water and nutrients. The calculation assumes complete retention but uniform mixing; actual local exposure can be higher or lower. [S55]</p>
+<h3 id="evidence-informing-the-assessment">Evidence informing the assessment</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Relevant finding</th>
+<th>Transfer limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plocek et al., broccoli microgreens</strong></td>
+<td>Irrigation solutions contained 0.32, 0.64 and 0.96 g/L NaCl. Two 14-day trials showed no consistent yield penalty; fresh yield increased in one treatment in the second trial.</td>
+<td>Germination used plain water for the first four days. Growing pads and repeated irrigation differ from brief coir misting; physiology changed despite no consistent yield loss. <a href="https://doi.org/10.48130/TIH-2023-0004">S56</a></td>
+</tr>
+<tr>
+<td><strong>Masepan et al., Chinese white radish</strong></td>
+<td>10–20 mM NaCl did not impair the listed growth parameters in four-day seedlings and increased cotyledon fresh weight.</td>
+<td>Species/cultivar-specific; some physiological and mineral endpoints changed. The paper's descriptions of higher 50–100 mM effects are mixed, so the reassurance here uses the lower treatments only. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12157832/">S57</a></td>
+</tr>
+<tr>
+<td><strong>Wu et al., sunflower</strong></td>
+<td>Continuous exposure at 10 mM and above slowed germination; higher exposures also affected growth.</td>
+<td>A useful counterexample to a universal 25-mM no-effect claim. This was a Petri-dish germination experiment; the separate growth experiment used older seedlings. <a href="https://doi.org/10.17221/22/2015-PSE">S58</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>Preserved sources: <a download="" href="references/Plocek-2023-broccoli-salinity.pdf">broccoli PDF</a>, <a download="" href="references/Masepan-2025-radish-PMC12157832.xml">radish XML</a>, <a download="" href="references/Wu-2015-sunflower-salinity.pdf">sunflower PDF</a>, <a download="" href="references/salt-load-capture-manifest.json">capture manifest</a>. The earlier mung/pea comparisons identify effects at particular studied doses, not minimum harmful doses; they are not used to declare a universal safe threshold here.</p>
+<h3 id="recorded-assessment-and-limits">Recorded assessment and limits</h3>
+<p><strong>Salt accumulation is likely a minor practical concern at the measured output and a cap of 10 applications on a well-moistened 1020 tray. Confidence: moderate.</strong> This is an inference from the approximately 100-mg total load, plausible dilution and the studies above—not a direct test of this recipe.</p>
+<p>Conditions supporting that assessment: reasonably low-salt starting coir/water, adequate moisture, reasonably even coverage and germination-only use. Fresh spray droplets still begin near the 6-g/L feed-salt equivalent (approximately 103 mM), before dilution; drying or uneven deposits can create greater local exposure. No water-loss/distribution measurements were collected, and a small germination delay cannot be ruled out.</p>
+<p><strong>Scope boundary:</strong> this conclusion concerns salt loading only. It does not establish tolerance to 300 ppm active chlorine at pH 4.50, microbial/log reduction, mold-prevention benefit, food-use suitability or a recommended daily spray program. No successful crop outcome was reported. A same-lot plain-water comparison against the complete spray would assess the whole formulation, without isolating salt from chlorine effects.</p>
+<p><a href="data/spray-salt-observation-2026-11-10.json">Structured observation and calculation record</a> · <a href="seed-sanitation-source-log.html">Source notebook, S55–S59</a>.</p>
 <details><summary>Read raw source</summary><pre># Seed sanitation: chemicals, timing, crop priorities and evidence
 
 *Compiled November 10, 2026. Scope: the sanitation-planner research and corrections in this project. Evidence labels: experimental result, grower guidance, editorial handling judgment, or hypothetical calculation. None is a product-specific food-safety validation.*
@@ -249,6 +326,8 @@ water mass = final mass − stock mass
 [Open the planner](site/dist/seed-sanitation.html) · [Source-preservation notebook](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt)
 
 ## Latest evidence review
+
+**Recorded spray observation, November 10:** 10 trigger pulls delivered **1.66 g of liquid**. At up to 10 applications, the generator recipe contributes approximately **0.10 g salt-equivalent per 1020 tray**. Assessment: **likely a minor salinity concern in adequately moist, low-salt coir; moderate confidence**, separate from chlorine tolerance or mold-control efficacy. Full calculation and evidence are recorded in section 11 below.
 
 [Tissue-culture seed preparation and lessons for microgreens](19_tissue_culture_seed_disinfection_and_microgreen_protocols.md) adds laboratory workflow, seed-lot effects, culture-versus-pathogen endpoints and a five-crop comparison. It does not validate the calculated badge times.
 
@@ -408,4 +487,55 @@ A labeled-treatment comparison against a plain-water control can inform local ge
 ### Source identifiers
 
 S01 Gilbert et al. (2023), *Foods* 12(4):747, DOI 10.3390/foods12040747, PMCID PMC9955435. S02 Bootstrap Farmer seed disinfection. S03 Bootstrap Farmer soaking guidance. S04 Ocho Bernal et al. (2023), DOI 10.3389/fsufs.2023.1264472. S05 Eicher-Sodo research and associated HortTechnology 2019 paper. S06 Food Control 2016, DOI 10.1016/j.foodcont.2016.02.045. S07 USU. S08 UF/IFAS. S09 National Capital Poison Center. S10 CDC efficacy factors. S11 EPA C–t project summary. S12 dynamic-disinfection modeling paper, PMCID PMC7780086. S13 EFSA/ECHA water-treatment guidance, PMCID PMC10461463. S14 Penn State. S15 FDA sprout guidance. S16 USDA NOP 5029. S17 supplied planner/discussion. S18 local archive and implementation. S19 discovery-only leads. Full links and access records are in the notebook.
+
+## 11. Measured spray salt load
+
+*Recorded November 10, 2026. This is a user-reported measurement and a research assessment, not a completed growing trial.*
+
+### Observation and recipe context
+
+- **Measured spray output:** 10 trigger pulls weighed **1.66 g of liquid**, approximately **1.66 mL** using a dilute-water density approximation of 1 g/mL. This is one reported observation, without a replicate range or independent verification. [S55]
+- **Generator feed supplied by the user:** 250 mL purified/distilled water, 1.50 g NaCl and 0.63 mL vinegar of unspecified acidity. Approximate starting salt rate: **6.00 g/L = 6 mg/mL**. Small final-volume changes are neglected.
+- **Process plan supplied by the user:** 30-minute electrolysis, target FAC 300 ppm and target final pH 4.50. These are recipe/process targets and a reported timing reference, **not recorded fresh FAC/pH measurements for this batch**. Generator/manual compatibility was not verified in this salt assessment.
+- **Application plan:** mist during germination only; **up to 10 applications** for the upper-load estimate. The earlier twice-daily, three-day schedule would be six applications, so it is a separate, lower-load scenario.
+
+### Salt-equivalent calculation
+
+```text
+per application = 1.66 mL × 6 mg/mL = 9.96 mg salt-equivalent
+6 applications  = 9.96 × 6 = 59.76 mg ≈ 0.060 g per tray
+10 applications = 9.96 × 10 = 99.6 mg ≈ 0.100 g per tray
+```
+
+“Salt-equivalent” tracks the NaCl introduced in the generator feed. It is **not an assay of unchanged NaCl remaining after electrolysis**, final EC, chlorine residue, plant uptake or the amount retained on each seed. The estimate assumes a homogeneous single-bottle output and no salt separation. Sodium-containing dissolved material remains relevant even as some chloride changes chemical form. [S55; S59]
+
+Assuming all of the upper-load estimate remains and mixes evenly with the **water currently retained in the tray**:
+
+| Retained water, including any spray water | Added salt-equivalent | Approximate NaCl-equivalent concentration |
+|---:|---:|---:|
+| 250 mL | 0.398 g/L | 6.8 mM |
+| 500 mL | 0.199 g/L | 3.4 mM |
+| 1,000 mL | 0.100 g/L | 1.7 mM |
+
+Equation: `mM = (salt-equivalent g / retained-water L) ÷ 58.4428 × 1,000`. These water quantities are **sensitivity scenarios, not measurements of this tray**, and exclude background salinity from coir, water and nutrients. The calculation assumes complete retention but uniform mixing; actual local exposure can be higher or lower. [S55]
+
+### Evidence informing the assessment
+
+| Source | Relevant finding | Transfer limit |
+|---|---|---|
+| **Plocek et al., broccoli microgreens** | Irrigation solutions contained 0.32, 0.64 and 0.96 g/L NaCl. Two 14-day trials showed no consistent yield penalty; fresh yield increased in one treatment in the second trial. | Germination used plain water for the first four days. Growing pads and repeated irrigation differ from brief coir misting; physiology changed despite no consistent yield loss. [S56](https://doi.org/10.48130/TIH-2023-0004) |
+| **Masepan et al., Chinese white radish** | 10–20 mM NaCl did not impair the listed growth parameters in four-day seedlings and increased cotyledon fresh weight. | Species/cultivar-specific; some physiological and mineral endpoints changed. The paper&#x27;s descriptions of higher 50–100 mM effects are mixed, so the reassurance here uses the lower treatments only. [S57](https://pmc.ncbi.nlm.nih.gov/articles/PMC12157832/) |
+| **Wu et al., sunflower** | Continuous exposure at 10 mM and above slowed germination; higher exposures also affected growth. | A useful counterexample to a universal 25-mM no-effect claim. This was a Petri-dish germination experiment; the separate growth experiment used older seedlings. [S58](https://doi.org/10.17221/22/2015-PSE) |
+
+Preserved sources: [broccoli PDF](source_docs/seed_sanitation/salt_load/Plocek-2023-broccoli-salinity.pdf), [radish XML](source_docs/seed_sanitation/salt_load/Masepan-2025-radish-PMC12157832.xml), [sunflower PDF](source_docs/seed_sanitation/salt_load/Wu-2015-sunflower-salinity.pdf), [capture manifest](source_docs/seed_sanitation/salt_load/salt-load-capture-manifest.json). The earlier mung/pea comparisons identify effects at particular studied doses, not minimum harmful doses; they are not used to declare a universal safe threshold here.
+
+### Recorded assessment and limits
+
+**Salt accumulation is likely a minor practical concern at the measured output and a cap of 10 applications on a well-moistened 1020 tray. Confidence: moderate.** This is an inference from the approximately 100-mg total load, plausible dilution and the studies above—not a direct test of this recipe.
+
+Conditions supporting that assessment: reasonably low-salt starting coir/water, adequate moisture, reasonably even coverage and germination-only use. Fresh spray droplets still begin near the 6-g/L feed-salt equivalent (approximately 103 mM), before dilution; drying or uneven deposits can create greater local exposure. No water-loss/distribution measurements were collected, and a small germination delay cannot be ruled out.
+
+**Scope boundary:** this conclusion concerns salt loading only. It does not establish tolerance to 300 ppm active chlorine at pH 4.50, microbial/log reduction, mold-prevention benefit, food-use suitability or a recommended daily spray program. No successful crop outcome was reported. A same-lot plain-water comparison against the complete spray would assess the whole formulation, without isolating salt from chlorine effects.
+
+[Structured observation and calculation record](data/spray-salt-observation-2026-11-10.json) · [Source notebook, S55–S59](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt).
 </pre></details><p><a href="docs/sanitation_17_seed_sanitation_research_and_timing.md" download>Download original source</a></p></main><footer><span>Microgreen Guide / Grow Lab</span><span>Evidence, units and assumptions.</span></footer></body></html>

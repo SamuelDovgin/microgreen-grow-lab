@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-10",
+  "captures": [
+    {
+      "file": "Plocek-2023-broccoli-salinity.pdf",
+      "url": "https://www.maxapress.com/data/article/tihort/preview/pdf/TIH-2023-0004.pdf",
+      "doi": "10.48130/TIH-2023-0004",
+      "accessed": "2026-11-10",
+      "bytes": 406085,
+      "sha256": "2c6498e935f4a8265a12384832af351ef0c0bbec875f1688f322ddb4efebcbe0",
+      "status": "Unaltered official open-access source; original authorship and license retained"
+    },
+    {
+      "file": "Wu-2015-sunflower-salinity.pdf",
+      "url": "https://www.agriculturejournals.cz/pdfs/pse/2015/05/06.pdf",
+      "doi": "10.17221/22/2015-PSE",
+      "accessed": "2026-11-10",
+      "bytes": 958362,
+      "sha256": "96eee2b16cec87eac0ce0193d22d3ca394913cf1877fe7e1a6e4d876b45b3b9d",
+      "status": "Unaltered official open-access source; original authorship and license retained"
+    },
+    {
+      "file": "Masepan-2025-radish-PMC12157832.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12157832/fullTextXML",
+      "doi": "10.3390/plants14111616",
+      "accessed": "2026-11-10",
+      "bytes": 129935,
+      "sha256": "48f90f32ebbe761ee09756f9d64b9340991edd8cd6cce03dba7711057527e5bf",
+      "status": "Unaltered official open-access source; original authorship and license retained"
+    }
+  ]
+}
