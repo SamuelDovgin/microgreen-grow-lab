@@ -10,7 +10,7 @@
 
 **Yes. Specific chlorine concentration–time conditions have produced substantial microbial reductions on seeds and sprouts.** The gap is not whether HOCl has antimicrobial activity. The gap is whether an exact treatment reliably achieves a specified outcome for a particular crop, lot, organism, formulation and production system.
 
-The planner’s **400 ppm / 30 min** and **12% peroxide / 1.25 min** remain arithmetic extrapolations. They are not published microbial-kill results. Asterisks must identify that gap without implying that no HOCl treatment has ever been tested.
+The planner now opens at **200 ppm / 60 min*** for HOCl. This pairing, the selectable **400 ppm / 30 min**, and **12% peroxide / 1.25 min** are arithmetic extrapolations. They are not published microbial-kill results. Asterisks identify that gap without implying that no HOCl treatment has ever been tested.
 
 The most relevant new evidence found in this pass is a **sunflower-seed Salmonella challenge study**, not just another study of broccoli. It tested acidic electrolyzed water at **48 mg/L available chlorine, pH 2.76, for 15 minutes**, reporting **2.39-log Salmonella reduction**. This is a real seed result, but not evidence that a different-pH homemade solution achieves the same result. [S22](https://pubmed.ncbi.nlm.nih.gov/35410797/)
 

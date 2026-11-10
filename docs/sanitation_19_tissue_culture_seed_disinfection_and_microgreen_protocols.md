@@ -10,7 +10,7 @@
 
 For our planner, this means:
 
-- Keep measured seed experiments separate from the **400 ppm / 30 min HOCl** and **12% / 75 sec peroxide** arithmetic. Tissue-culture papers do not validate either calculated pairing.
+- Keep measured seed experiments separate from the default **200 ppm / 60 min HOCl** and **12% / 75 sec peroxide** arithmetic. Tissue-culture papers do not validate either calculated pairing.
 - Give chlorine-based treatments serious consideration in the evidence comparison; bleach is a routine laboratory seed disinfectant. That supports investigating this chemical family, not assuming equal performance from every chlorine formulation.
 - Track **visible mold, germination, usable harvest and laboratory microbial results separately**. A clean-looking culture cannot supply an unmeasured Salmonella reduction.
 - If a seed lot repeatedly performs badly, compare another lot before continually increasing the chemical exposure.

@@ -1,7 +1,8 @@
 (function(){'use strict';
  const $=id=>document.getElementById(id),D=window.SeedSanitationData,M=window.SeedSanitationModel;
  const fmt=n=>new Intl.NumberFormat(undefined,{maximumFractionDigits:3}).format(n);
- const defaults={peroxide:{stock:12,target:3},hocl:{stock:200,target:200},bleach:{stock:6,target:.6}};
+ const defaultBath=D.chemicalComparisons.hocl.default;
+ const defaults={peroxide:{stock:12,target:3},hocl:{stock:defaultBath,target:defaultBath},bleach:{stock:6,target:.6}};
  let current;
  const strengths={hocl:D.chemicalComparisons.hocl.default,peroxide:D.chemicalComparisons.peroxide.default};
  const comparisonState=()=>Object.fromEntries(['hocl','peroxide'].map(chem=>[chem,M.comparison(chem,strengths[chem],$('san-crop').value,D)]));
@@ -37,7 +38,7 @@
  $('san-form').addEventListener('submit',e=>e.preventDefault());
  $('san-form').addEventListener('input',e=>{if(e.target.id!=='san-label-ok')$('san-label-ok').checked=false;render();});
  $('san-chemical').addEventListener('change',chemicalChanged);
- $('san-form').addEventListener('reset',()=>{setTimeout(()=>{$('san-chemical').value='peroxide';$('san-batch').value=1000;chemicalChanged();},0);});
+ $('san-form').addEventListener('reset',()=>{setTimeout(()=>{$('san-chemical').value='hocl';$('san-batch').value=1000;chemicalChanged();},0);});
  $('san-crop').addEventListener('change',()=>selectCrop($('san-crop').value));
  for(const id of badgeCrops)$('seed-badge-'+id).addEventListener('click',()=>selectCrop(id));
  for(const chem of ['hocl','peroxide'])for(const strength of D.chemicalComparisons[chem].options)$(chem+'-badge-'+strength).addEventListener('click',()=>{strengths[chem]=strength;renderComparisons();});

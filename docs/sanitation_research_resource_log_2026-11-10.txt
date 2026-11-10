@@ -666,3 +666,11 @@ Discovery-only: unrelated search hits and a2023FreshPlaza preliminary project in
 
 DATED CHANGE NOTE —2026-11-10:
 S60's initial “2025 seedling claim unverified” remains a historical implementation note; S64 now identifies and appraises the paper at abstract/highlight level. Guide17 sections Latest review/12/13 and planner source navigation now distinguish this update. The broad no-growth-penalty statement from S62 is corrected using S63.50ppm remains an experimental/arithmetic target; daily-spray decisions and the300ppm stock/500mL final defaults are unchanged. Model source and tests did not change.
+
+[S71] User's tentative 200 mg/L batch estimate and requested defaults —2026-11-10
+Source: three user-supplied strip photos and the user's accompanying batch comparison. Private inputs; no photos copied to the repository or public site.
+Class/access: user observation and interface preference, reviewed from supplied images/text. Not a calibrated FAC measurement.
+Used in: guide17 sections4/12/13, HOCl dilution and soak comparison defaults.
+Key record: user identifies the top strip as tap water and the two vertical pH strips as generated solution. User estimates approximately200mg/L chlorine; pasted interpretation suggests pH4.0–4.5 for generated solution. The chlorine reference lacks a200mg/L marking; color match, free versus total chlorine, test timing and pre-test dilution were not verified. Prior300ppm was a recipe target. No confirmation of actual recipe quantities or final chemistry from the photos.
+Implementation: supersedes S60/S61's300ppm prefill. Compact dilution stock starts/resets at200ppm, target50ppm and final volume500mL; amounts125mL stock/375mL water. Feed-salt estimates are conditional on the previously recorded6g/L feed, not an assay of this batch. Keep the historical300ppm arithmetic separate. Shared soak comparison starts at200ppm for all crops. The 60-minute value is arithmetic outside the measured window, not a protocol. The custom mix form starts/resets to HOCl200ppm with blank product-label time. No changes to ordinary hydration soaks, crop priorities, published experiments or daily-spray advice.
+Local preservation: authored record only; raw photos and quoted discussion stay private.

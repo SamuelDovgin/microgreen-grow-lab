@@ -66,7 +66,7 @@ Neither `n = 1` nor the sensitivity values `n = 0.5–2` were fitted to seed-dis
 
 ### HOCl: unchanged illustrative anchor
 
-Anchor: approximately 800 ppm available chlorine and 15 minutes from the broccoli experiment. [S01]
+Anchor: approximately 800 ppm available chlorine and 15 minutes from the broccoli experiment. [S01] The selector now opens at **200 ppm** for every crop. Its **60 min*** result is an unconfirmed arithmetic comparison outside the studied time range. Actual soak time comes from suitable product directions; the mixing form leaves it blank.
 
 | Selected available chlorine | Linear arithmetic* | Sensitivity with illustrative n = 0.5–2* |
 |---|---:|---:|
@@ -222,7 +222,9 @@ Conditions supporting that assessment: reasonably low-salt starting coir/water, 
 
 ## 12. HOCl dilution card
 
-[Open the dilution card](site/dist/seed-sanitation.html#hocl-dilution). It sits after the three quick-help cards and uses an **entered free available chlorine (FAC) measurement**, not generator time or the research strength badges. Stock FAC now starts at **300 ppm**, an editable starting value requested by the user; replace it with a fresh measurement. **Final solution volume defaults to 500 mL**; the 50-ppm target is an arithmetic example, not a crop recommendation. Presets30/50/70/100/200/300ppm and custom positive targets are available.
+[Open the dilution card](site/dist/seed-sanitation.html#hocl-dilution). It sits after the three quick-help cards. Stock FAC now starts at **200 ppm** based on the user's tentative estimate; replace it with a verified, in-range free available chlorine (FAC) reading. **Final solution volume defaults to 500 mL**; the 50-ppm target is an arithmetic example, not a crop recommendation. Presets 30/50/70/100/200/300 ppm and custom positive targets are available.
+
+**Batch note [S71]:** The user identified the top pH strip as tap water and the two vertical strips as generated solution. Their tentative chlorine estimate was about **200 mg/L**; the pasted comparison estimated a solution pH of roughly **4.0–4.5**. The photo does not confirm a 200 mg/L FAC reading, whether the strip measures free or total chlorine, or whether the sample was diluted before testing. The earlier 300-ppm figure was a target in the working recipe. Neither photo nor target establishes which recipe amounts were actually used. The new prefill is a planning assumption.
 
 | Input or output | Basis |
 |---|---|
@@ -247,7 +249,7 @@ Batch salt-equivalent mg = 6 × stock mL
 Tray salt-equivalent mg = diluted mg/mL × 0.166 × sprays/application × applications
 ```
 
-**Example only:** an actual300-ppm stock reading,50-ppm calculation target and500mL final batch give approximately **83.33mL stock +416.67mL water**, or1part stock+5parts water. Add water to the final-volume mark; these assume approximately additive volumes and negligible FAC in the diluent. The estimated feed-salt equivalent is1mg/mL,500mg in the batch and16.6mg for10sprays×10applications. Batch size is not the amount to apply to one tray.
+**Current example:** if the stock is verified at **200 ppm FAC**, a 50-ppm target and 500 mL final batch give **125 mL stock + 375 mL water**, or 1 part stock to 3 parts water. Add water to the final-volume mark; the calculation assumes approximately additive volumes and negligible FAC in the diluent. Using the recorded 6 g/L feed assumption, the estimate is **1.5 mg/mL**, **750 mg per batch** and **24.9 mg per tray** for 10 sprays × 10 applications. The feed assumption has not been verified for the photographed batch. Batch size is not the amount to apply to one tray.
 
 Recheck FAC and pH after mixing. Water demand, chlorine decay and measurement resolution can change the achieved concentration. Use only water for dilution and follow product directions; the tool does not adjust generator salt, acid, electrolysis time or pH. Final measurements and dilution arithmetic do not validate crop tolerance, contact time, mold prevention or food-safety performance. The existing daily-spray guidance is unchanged.
 
@@ -290,6 +292,6 @@ A useful crop comparison would use the same seed lot, coir, seed density and tot
 
 ### Recorded dilution and salt arithmetic
 
-If stock is **measured at 300 ppm**, the existing **500 mL final batch at 50 ppm** requires approximately **83.33 mL stock + 416.67 mL water**. The recorded 6-g/L generator-salt feed becomes approximately **1 g/L feed-salt equivalent** after this sixfold dilution. At 0.166 mL per trigger, 10 sprays × 10 applications contribute approximately **16.6 mg per tray**. These are mass-balance calculations using the user's measured spray output, not measured residual salt or biological validation. Final pH is not predicted by the dilution ratio. [Sections 11–12](#11-measured-spray-salt-load).
+The original 300-ppm scenario gives approximately **83.33 mL stock + 416.67 mL water** for 500 mL at 50 ppm. Under the same recorded salt and spray assumptions, that scenario gives **16.6 mg per tray** for 10 sprays × 10 applications; the current 200-ppm scenario gives **24.9 mg** because it uses more stock to reach 50 ppm. Both are mass-balance estimates. Final pH is not predicted by the dilution ratio. [Current dilution example](#12-hocl-dilution-card) · [Measured spray output](#11-measured-spray-salt-load).
 
 **Finding:** the attached proposal has a credible research basis as an experimental hypothesis, strongest for radish/pea sprout production. Its blanket growth-tolerance claim needs correction, and the exact five-crop germination-only misting schedule remains unconfirmed.
