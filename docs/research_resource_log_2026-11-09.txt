@@ -124,3 +124,17 @@ Broad web searches surfaced Reddit, aggregators, supplier listings and a greengr
 DECISION
 Cards show a deliberately broad grower envelope: sunflower 3–4 / 0–3 / 3–7 days; radish 2–4 / 0–2 / 3–5; broccoli 2–3 / 0–2 / 3–7; peas 2–5 / 0–3 / 4–8; mung 3–4 / 0 / 3–7. Order is covered germination / additional blackout / light. These are not exhaustive source extrema. Earlier/later harvest targets and alternate methods explain outliers.
 Broccoli card now distinguishes optional one-to-two-inch stretch from earlier light; radish likewise distinguishes an optional stretch. No extra blackout is added to mung’s existing covered establishment.
+
+[G15] On The Grow — Microgreens Weight vs Blackout: When to Switch and Why
+URL: https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout
+Accessed: 2026-11-09; live in web reader.
+Class: Firsthand grower guide
+Used in: quick-start card transition cues; 14_seed_packets_and_rate_history.md; data/quick-start-growing-guidance.json.
+Supports: remove contact pressure when pale seedling growth predominates over dark hulls and stems start bending beneath the contact tray; use an inverted dark cover without pressure for optional stretch; end while stems remain self-supporting.
+Key record: qualitative tray-wide observation, not a universal numerical shoot height or germination percentage. Recommends short optional blackout and notes sunflower and peas can skip it.
+Limits: grower practice, not controlled validation. Root anchoring, pea and mung wording are editorial observation cues carried forward from existing planner readiness guidance. Pale-versus-dark contrast varies by crop; not applied to pea or mung. No universal start-blackout inch target was found. Older crop-specific guides allow longer blackout than this general page; existing method-dependent timing bands and starter recipes remain distinct.
+Local preservation: URL-only — support notes preserved; full copyrighted page not redistributed.
+Status/recheck: live.
+
+Transition-cue follow-up — 2026-11-09
+Rechecked G03, G07 and G11 live in web reader alongside G15. G03 supports optional post-germination stretch; G07 supports contact-tray removal followed by a loose dome for sunflower; G11 supports pea shoot emergence then optional loose blackout. No change to numeric ranges or selected starter recipes. Cards now distinguish the start of loose blackout from the existing height-for-light estimate; small SVGs are schematic, not photographs or measured plant sizes.
