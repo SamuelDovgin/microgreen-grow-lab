@@ -220,7 +220,7 @@ Conditions supporting that assessment: reasonably low-salt starting coir/water, 
 
 ## 12. HOCl dilution card
 
-[Open the dilution card](site/dist/seed-sanitation.html#hocl-dilution). It sits after the three quick-help cards and uses an **entered free available chlorine (FAC) measurement**, not generator time or the research strength badges. Measured stock FAC starts blank. **Final solution volume defaults to 500 mL**; the 50-ppm target is an arithmetic example, not a crop recommendation. Presets30/50/70/100/200/300ppm and custom positive targets are available.
+[Open the dilution card](site/dist/seed-sanitation.html#hocl-dilution). It sits after the three quick-help cards and uses an **entered free available chlorine (FAC) measurement**, not generator time or the research strength badges. Stock FAC now starts at **300 ppm**, an editable starting value requested by the user; replace it with a fresh measurement. **Final solution volume defaults to 500 mL**; the 50-ppm target is an arithmetic example, not a crop recommendation. Presets30/50/70/100/200/300ppm and custom positive targets are available.
 
 | Input or output | Basis |
 |---|---|

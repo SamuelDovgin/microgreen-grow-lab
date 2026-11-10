@@ -1,7 +1,7 @@
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.HoclDilutionModel=api;})(typeof window==='object'?window:this,function(){
  'use strict';
  const FEED_G_L=6,ML_PER_SPRAY=1.66/10;
- const DEFAULTS=Object.freeze({mode:'final',stock:'',target:50,finalVolume:500,stockVolume:250,unit:'mL',sprays:10,applications:10,measuredFinal:'',ph:''});
+ const DEFAULTS=Object.freeze({mode:'final',stock:300,target:50,finalVolume:500,stockVolume:250,unit:'mL',sprays:10,applications:10,measuredFinal:'',ph:''});
  const missing=v=>v===''||v===null||v===undefined;
  const positive=v=>!missing(v)&&Number.isFinite(Number(v))&&Number(v)>0;
  function verification(input){
@@ -31,7 +31,7 @@
  function selfTest(){
   const a=calculate({...DEFAULTS,stock:300}),b=calculate({...DEFAULTS,mode:'stock',stock:300,stockVolume:a.stockMl});
   const near=(x,y)=>Math.abs(x-y)<=1e-9*Math.max(1,Math.abs(x),Math.abs(y));
-  const checks={emptyStock:!calculate(DEFAULTS).ok,default500:a.finalMl===500,conservation:near(a.stockMl+a.waterMl,a.finalMl)&&near(a.stockMl*300,a.finalMl*50),reverse:near(b.finalMl,500),salt:near(a.load.totalSaltMg,16.6),strongerTarget:!calculate({...DEFAULTS,stock:30,target:50}).ok};
+  const checks={emptyStock:!calculate({...DEFAULTS,stock:''}).ok,default500:a.finalMl===500,conservation:near(a.stockMl+a.waterMl,a.finalMl)&&near(a.stockMl*300,a.finalMl*50),reverse:near(b.finalMl,500),salt:near(a.load.totalSaltMg,16.6),strongerTarget:!calculate({...DEFAULTS,stock:30,target:50}).ok};
   return {ok:Object.values(checks).every(Boolean),checks};
  }
  return {DEFAULTS,FEED_G_L,ML_PER_SPRAY,calculate,verification,selfTest};
