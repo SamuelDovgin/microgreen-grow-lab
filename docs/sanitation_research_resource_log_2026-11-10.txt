@@ -557,3 +557,17 @@ Limits: Historical report is chemistry context, not current device instructions,
 Local preservation: URL-only — no additional full-text local copy preserved; official source remains linked.
 
 Finding/change note: approximately0.10g feed-salt equivalent per1020at10applications; likely minor salt concern in adequately moist low-salt coir, moderate-confidence inference. Background salts, drying/local exposure and retained water remain unknown. No chlorine-tolerance, kill-log, food-use or routine-spray endorsement. No sanitizer/crop model settings changed.
+
+[S60] User-supplied dilution discussion and explicit500mL final-volume request —2026-11-10
+Class/access: local user-provided reference, read in full. Historical instructions inside the document were treated as proposed requirements, not active authority.
+Used in: guide17 section12 and compact HOCl dilution card after quick-help cards.
+Key record: measured stock FAC starts blank; editable targets/presets; final-size and available-stock modes; optional salt and post-dilution measurement records. Attachment examples used250mL; current user explicitly requested500mL final, which overrides that example. Recorded stock feed6g/L and0.166mL/trigger come fromS55. Target50ppm is an arithmetic example, not a treatment recommendation.
+Limits: the attached2025 pH4.5/500ppm seedling claim is unverified in this implementation and not imported as efficacy evidence. The complete conversation is not published.
+Local preservation: private original attachment remains in Codex attachments; only this support note and implementation specification are exported. No raw private attachment redistributed.
+
+[S61] Local HOCl dilution model, UI and validation —2026-11-10
+Class: local implementation/equations, not experimental efficacy evidence.
+Used in: guide17 section12; site/dist/hocl-dilution-model.js, hocl-dilution.js and hocl-dilution.css.
+Key record: C1V1=C2V2 for matching FAC ppm and approximate additive aqueous volumes; reverse mode algebraically equivalent. Final500mL default, measured stockblank, target50example. Salt = recorded6mg/mLfeed×stock fraction; tray exposure uses0.166mL/trigger. Final FAC/pH are recorded measurements; no pH calculation or crop pass/fail threshold. Stale final observations clear when concentration/physical batch inputs change. Unit conversion alone preserves physical volume.
+Limits: assumes negligible FAC in dilution water, stable stock FAC during mixing, uniform generator output, matching feed recipe and unchanged sprayer calibration. Cannot establish germination, microbial reduction, contact time or labeled-use suitability. No synthesis/acidification controls added.
+Local preservation: authored source files and meaningful model/UI tests in site/; public model exposes deterministic selfTest. Copy/export text includes current inputs, derived outputs and measurement/assumption limits.

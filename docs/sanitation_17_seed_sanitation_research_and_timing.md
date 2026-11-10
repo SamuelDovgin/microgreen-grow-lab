@@ -217,3 +217,36 @@ Conditions supporting that assessment: reasonably low-salt starting coir/water, 
 **Scope boundary:** this conclusion concerns salt loading only. It does not establish tolerance to 300 ppm active chlorine at pH 4.50, microbial/log reduction, mold-prevention benefit, food-use suitability or a recommended daily spray program. No successful crop outcome was reported. A same-lot plain-water comparison against the complete spray would assess the whole formulation, without isolating salt from chlorine effects.
 
 [Structured observation and calculation record](data/spray-salt-observation-2026-11-10.json) · [Source notebook, S55–S59](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt).
+
+## 12. HOCl dilution card
+
+[Open the dilution card](site/dist/seed-sanitation.html#hocl-dilution). It sits after the three quick-help cards and uses an **entered free available chlorine (FAC) measurement**, not generator time or the research strength badges. Measured stock FAC starts blank. **Final solution volume defaults to 500 mL**; the 50-ppm target is an arithmetic example, not a crop recommendation. Presets30/50/70/100/200/300ppm and custom positive targets are available.
+
+| Input or output | Basis |
+|---|---|
+| Measured stock FAC | User-entered ppm; use a suitable-range free-chlorine measurement. A target or off-scale strip reading is not a stock measurement. |
+| Target FAC | Calculation input; must be positive and no higher than stock. No crop-specific efficacy or safety score. |
+| Final batch | Default500mL **total**, including stock and water. Changing to liters converts the entered amounts. |
+| Available-stock mode | Enter existing stock volume; calculate the larger final volume and water addition. Separate from choosing a final batch. |
+| Salt estimates | Recorded6g/L feed and0.166mL per trigger pull; optional spray/application counts default10/10. Feed-salt equivalents, not measured residual NaCl or plant uptake. |
+| Final measured FAC and pH | Optional observation fields; FAC difference from target is shown without an invented pass/fail band. pH is recorded, never predicted. Changing batch inputs clears stale post-mix measurements. |
+
+```text
+Final-volume mode:
+stock mL = final mL × target ppm / measured stock ppm
+water mL = final mL − stock mL
+
+Available-stock mode:
+final mL = available stock mL × measured stock ppm / target ppm
+water mL = final mL − available stock mL
+
+Diluted feed-salt equivalent mg/mL = 6 × target ppm / measured stock ppm
+Batch salt-equivalent mg = 6 × stock mL
+Tray salt-equivalent mg = diluted mg/mL × 0.166 × sprays/application × applications
+```
+
+**Example only:** an actual300-ppm stock reading,50-ppm calculation target and500mL final batch give approximately **83.33mL stock +416.67mL water**, or1part stock+5parts water. Add water to the final-volume mark; these assume approximately additive volumes and negligible FAC in the diluent. The estimated feed-salt equivalent is1mg/mL,500mg in the batch and16.6mg for10sprays×10applications. Batch size is not the amount to apply to one tray.
+
+Recheck FAC and pH after mixing. Water demand, chlorine decay and measurement resolution can change the achieved concentration. Use only water for dilution and follow product directions; the tool does not adjust generator salt, acid, electrolysis time or pH. Final measurements and dilution arithmetic do not validate crop tolerance, contact time, mold prevention or food-safety performance. The existing daily-spray guidance is unchanged.
+
+**Provenance:** user requested a compact functional card with500mL final volume; the attached earlier proposal used250mL, so the live request takes precedence. The attachment's additional2025 seedling-research claim was not independently appraised or incorporated as new efficacy evidence. The previous measured spray record (section11/S55) supplies the salt/spray assumptions. Copy notes reproduce current quantities, salt assumptions and any recorded post-dilution observations. The browser exposes `HoclDilutionApp.selfTest()` for deterministic arithmetic checks. [S60–S61 in the source notebook](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt)
