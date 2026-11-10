@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-10",
+  "captures": [
+    {
+      "file": "spray-studies-metadata.json",
+      "source": "Public Crossref REST API; exact record URLs retained in file",
+      "format": "JSON; selected bibliographic fields, not full-text articles",
+      "bytes": 25922,
+      "sha256": "7f9419d5fe0b9460ac407d8ba825bd01b46d80f58c1bb2e035e0019db084e82a",
+      "rights": "Public bibliographic metadata; article licenses listed as metadata do not imply full-text capture."
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 <p><em>Compiled November 10, 2026. Scope: the sanitation-planner research and corrections in this project. Evidence labels: experimental result, grower guidance, editorial handling judgment, or hypothetical calculation. None is a product-specific food-safety validation.</em></p>
 <p><a href="seed-sanitation.html">Open the planner</a> · <a href="seed-sanitation-source-log.html">Source-preservation notebook</a></p>
 <h2 id="latest-evidence-review">Latest evidence review</h2>
+<p><strong>50-ppm spray proposal reviewed, November 10:</strong> section 13 compares six primary studies behind the attached assessment. Radish and pea provide relevant sprout-production evidence; broccoli evidence includes a fresh-weight penalty. <strong>50 ppm is a plausible experimental comparison, not a validated twice-daily germination spray for the five coir-grown crops.</strong></p>
 <p><strong>Recorded spray observation, November 10:</strong> 10 trigger pulls delivered <strong>1.66 g of liquid</strong>. At up to 10 applications, the generator recipe contributes approximately <strong>0.10 g salt-equivalent per 1020 tray</strong>. Assessment: <strong>likely a minor salinity concern in adequately moist, low-salt coir; moderate confidence</strong>, separate from chlorine tolerance or mold-control efficacy. Full calculation and evidence are recorded in section 11 below.</p>
 <p><a href="seed-sanitation-tissue-culture.html">Tissue-culture seed preparation and lessons for microgreens</a> adds laboratory workflow, seed-lot effects, culture-versus-pathogen endpoints and a five-crop comparison. It does not validate the calculated badge times.</p>
 <p><a href="seed-sanitation-evidence.html">HOCl measured studies, log-reduction targets and grower agreement</a> adds direct sunflower Salmonella evidence, FDA’s explicit sprout target, and a firsthand grower comparison. HOCl has positive measured results; the unconfirmed gap concerns particular extrapolated times and transfer to your crop/process. The timing math below is not a validated kill model.</p>
@@ -369,7 +370,67 @@ Tray salt-equivalent mg = diluted mg/mL × 0.166 × sprays/application × applic
 </code></pre>
 <p><strong>Example only:</strong> an actual300-ppm stock reading,50-ppm calculation target and500mL final batch give approximately <strong>83.33mL stock +416.67mL water</strong>, or1part stock+5parts water. Add water to the final-volume mark; these assume approximately additive volumes and negligible FAC in the diluent. The estimated feed-salt equivalent is1mg/mL,500mg in the batch and16.6mg for10sprays×10applications. Batch size is not the amount to apply to one tray.</p>
 <p>Recheck FAC and pH after mixing. Water demand, chlorine decay and measurement resolution can change the achieved concentration. Use only water for dilution and follow product directions; the tool does not adjust generator salt, acid, electrolysis time or pH. Final measurements and dilution arithmetic do not validate crop tolerance, contact time, mold prevention or food-safety performance. The existing daily-spray guidance is unchanged.</p>
-<p><strong>Provenance:</strong> user requested a compact functional card with500mL final volume; the attached earlier proposal used250mL, so the live request takes precedence. The attachment's additional2025 seedling-research claim was not independently appraised or incorporated as new efficacy evidence. The previous measured spray record (section11/S55) supplies the salt/spray assumptions. Copy notes reproduce current quantities, salt assumptions and any recorded post-dilution observations. Spray estimates (including all salt figures) and mixed-batch measurement fields each start collapsed and can be expanded independently; primary stock/water amounts stay visible. The browser exposes <code>HoclDilutionApp.selfTest()</code> for deterministic arithmetic checks. <a href="seed-sanitation-source-log.html">S60–S61 in the source notebook</a></p>
+<p><strong>Provenance:</strong> user requested a compact functional card with500mL final volume; the attached earlier proposal used250mL, so the live request takes precedence. Its additional2025 seedling-research claim was initially unverified; it is now appraised separately in section 13. The previous measured spray record (section11/S55) supplies the salt/spray assumptions. Copy notes reproduce current quantities, salt assumptions and any recorded post-dilution observations. Spray estimates (including all salt figures) and mixed-batch measurement fields each start collapsed and can be expanded independently; primary stock/water amounts stay visible. The browser exposes <code>HoclDilutionApp.selfTest()</code> for deterministic arithmetic checks. <a href="seed-sanitation-source-log.html">S60–S61 in the source notebook</a></p>
+<h2 id="13-evidence-behind-the-50-ppm-spray-proposal">13. Evidence behind the 50 ppm spray proposal</h2>
+<p><strong>Assessment: 50 ppm free available chlorine (FAC) is a scientifically plausible concentration to investigate, especially given radish and pea sprout experiments. The evidence does not establish a routine twice-daily spray during three days of germination on coir.</strong> This is an editorial synthesis of the studies below, not a tested protocol or a community consensus. The attached discussion is recorded as a research lead [S62]; its claims were checked against primary records rather than accepted as instructions.</p>
+<p>For these dilute aqueous comparisons, 50 ppm FAC is approximately 50 mg/L available chlorine expressed as chlorine equivalent. It is not a 50-ppm salt concentration. Papers use different electrolyzed-water formulations, pH, application methods and endpoints; matching the nominal FAC alone does not reproduce their treatment.</p>
+<h3 id="what-the-six-studies-actually-support">What the six studies actually support</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Study</th>
+<th>Exposure and result</th>
+<th>Relevance and limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doi.org/10.1016/j.foodcont.2016.02.045">S25 — Zhang et al., radish, Food Control 2016</a></td>
+<td>Sprout-spray arms used 30 and 50 mg/L available chlorine. The abstract reports 1.39/1.58-log reductions covering aerobic bacteria and yeast/mold, with improved sprout growth.</td>
+<td>Direct sprout-spray evidence. The abstract's wording does not securely map each reduction to a particular dose and organism; no one-to-one mapping is asserted here without the tables. Separate 12-hour seed-soaking arms had different concentrations and some germination effects.</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1016/j.foodcont.2019.04.029">S24 — Zhang et al., pea, Food Control 2019</a></td>
+<td>35/70 mg/L SAEW replaced production water for seed soaking and sprout spraying. Natural microbial counts fell by up to 1.6 log; reported growth/nutritional outcomes were maintained or enhanced.</td>
+<td>Relevant repeated-production exposure at concentrations bracketing 50 ppm. This was not an exact 50-ppm test, a pathogen challenge or a coir-tray experiment. The available summary does not establish the user's proposed application volume or frequency.</td>
+</tr>
+<tr>
+<td><a href="https://pubmed.ncbi.nlm.nih.gov/29433193/">S63 — Li et al., broccoli, Food Research International 2018</a> · <a href="https://www.jircas.go.jp/sites/default/files/publication/annual_report/annual_report-2017_-.pdf">S67 — author-institution report</a></td>
+<td>10–50 ppm solutions; a 3-hour soak followed by cultivation over solution on sterile cheesecloth, renewed every 24 hours, with harvest after 8 days. At 50 mg/L, microbial counts were 1.71 log CFU/g below tap-water treatment.</td>
+<td><strong>Growth was inhibited: fresh weight decreased as ACC increased, although dry weight did not change.</strong> This corrects the attachment's broad claim of no significant growth penalties. Repeated solution exposure is not equivalent to a brief mist.</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1016/j.nexus.2025.100566">S64 — Blasco et al., Energy Nexus 2025</a></td>
+<td>Eleven pH-4.5 EW formulations, five with zeolite; 50–500 ppm FAC. Controlled seedling tests at 100 ppm reported approximately 70% reductions in incidence/severity of the studied Alternaria diseases. Greenhouse results at 50 ppm were limited.</td>
+<td>Direct plant-fungal-disease evidence, but on older broccoli/tomato seedlings and selected pathogens. The authors report no phytotoxicity up to 500 ppm in tested plants; that is not a germinating-seed tolerance limit. Disease percentages are not microbial log reductions.</td>
+</tr>
+<tr>
+<td><a href="https://pubmed.ncbi.nlm.nih.gov/32912583/">S65 — Ogunniyi et al., Food Microbiology 2021</a></td>
+<td>Living lettuce/spinach leaves were challenged with bacteria. EOW at 50 mg/L free chlorine reduced counts by at least 1.5 log without visible leaf injury; matched-FAC NaOCl caused discoloration/necrosis in that experiment.</td>
+<td>Supporting evidence on living leaves; repeated germination spraying was not established. The project report describes single-application tolerance, but that report is currently only search-index accessible [S69]. It does not show that all EOW products outperform all hypochlorite products at the same FAC.</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1016/j.lwt.2019.03.021">S66 — Liang et al., buckwheat, LWT 2019</a></td>
+<td>Approximately 10/28/92 mg/L SAEW, pH around 6, evaluated across dipping, germination and washing. Higher ACC improved microbial reduction, but approximately 92 mg/L adversely affected sprout length; authors favored 10–28 mg/L for the balance of endpoints.</td>
+<td>A useful counterexample to a universal 50-ppm optimum. Buckwheat is outside the five selected crops; results from different production stages cannot be combined into one spray-dose response.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Access limits:</strong> publisher-indexed abstracts/highlights, PubMed records and institutional reports were reviewed. Full experimental tables and replicate counts were not available for all six studies; no pooled effect, dose-response fit or statistical safety margin was calculated. The 2025 paper is openly licensed, but direct full-text retrieval was blocked; its summary-level findings are identified accordingly. <a download="" href="references/spray-studies-metadata.json">Bibliographic metadata capture and access record</a> · <a download="" href="references/spray-studies-capture-manifest.json">Capture manifest</a> · <a href="seed-sanitation-source-log.html">Source notebook S62–S70</a>.</p>
+<h3 id="how-much-confidence-transfers-to-the-five-crops">How much confidence transfers to the five crops?</h3>
+<p>These are <strong>editorial confidence judgments about relevance</strong>, not probabilities of safety or efficacy:</p>
+<ul>
+<li><strong>Radish and pea:</strong> moderate support for investigating low-concentration EW during sprout production; limited support for the exact covered-coir spray schedule.</li>
+<li><strong>Broccoli:</strong> mixed evidence. Microbial reduction is real, but the repeated-exposure sprout study also found a fresh-weight penalty. Later seedling tolerance does not resolve this.</li>
+<li><strong>Sunflower and mung bean:</strong> low confidence in this exact 50-ppm spray schedule. Existing seed-bath/pathogen studies in the companion HOCl review answer different questions; their positive results do not fill the spray gap.</li>
+</ul>
+<p>Here, “moderate” describes relevance of the published production systems, not confirmation of visible-mold prevention. A 1.6-log reduction is approximately a 97.5% reduction in the measured count; it can still leave survivors. Natural aerobic or yeast/mold counts cannot be substituted for the relevant-pathogen reductions discussed in the <a href="seed-sanitation-evidence.html">log-target review</a>.</p>
+<h3 id="what-this-means-for-the-planner-and-a-comparison">What this means for the planner and a comparison</h3>
+<p>Keep <strong>50 ppm as a calculation/example target</strong>, with the research accessible on scroll. The evidence supports calling it a candidate for investigation; it does not justify changing the five crops to “daily spray recommended.” No new chemical contact time is inferred from these studies, and no grower consensus for 50 ppm twice daily was established.</p>
+<p>A useful crop comparison would use the same seed lot, coir, seed density and total water, with water-only controls and independent replicate trays. Record actual FAC/pH, delivered volume, frequency, germination percentage, growth/fresh yield and visible mold separately. A comparison of the complete spray assesses the formulation as a whole; it does not isolate chlorine from salt/pH effects. Visual observations cannot establish a pathogen kill step. This describes how to evaluate the hypothesis; it is not an instruction to challenge crops with pathogens or treat an unsuitable product as crop-authorized.</p>
+<h3 id="recorded-dilution-and-salt-arithmetic">Recorded dilution and salt arithmetic</h3>
+<p>If stock is <strong>measured at 300 ppm</strong>, the existing <strong>500 mL final batch at 50 ppm</strong> requires approximately <strong>83.33 mL stock + 416.67 mL water</strong>. The recorded 6-g/L generator-salt feed becomes approximately <strong>1 g/L feed-salt equivalent</strong> after this sixfold dilution. At 0.166 mL per trigger, 10 sprays × 10 applications contribute approximately <strong>16.6 mg per tray</strong>. These are mass-balance calculations using the user's measured spray output, not measured residual salt or biological validation. Final pH is not predicted by the dilution ratio. <a href="#11-measured-spray-salt-load">Sections 11–12</a>.</p>
+<p><strong>Finding:</strong> the attached proposal has a credible research basis as an experimental hypothesis, strongest for radish/pea sprout production. Its blanket growth-tolerance claim needs correction, and the exact five-crop germination-only misting schedule remains unconfirmed.</p>
 <details><summary>Read raw source</summary><pre># Seed sanitation: chemicals, timing, crop priorities and evidence
 
 *Compiled November 10, 2026. Scope: the sanitation-planner research and corrections in this project. Evidence labels: experimental result, grower guidance, editorial handling judgment, or hypothetical calculation. None is a product-specific food-safety validation.*
@@ -377,6 +438,8 @@ Tray salt-equivalent mg = diluted mg/mL × 0.166 × sprays/application × applic
 [Open the planner](site/dist/seed-sanitation.html) · [Source-preservation notebook](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt)
 
 ## Latest evidence review
+
+**50-ppm spray proposal reviewed, November 10:** section 13 compares six primary studies behind the attached assessment. Radish and pea provide relevant sprout-production evidence; broccoli evidence includes a fresh-weight penalty. **50 ppm is a plausible experimental comparison, not a validated twice-daily germination spray for the five coir-grown crops.**
 
 **Recorded spray observation, November 10:** 10 trigger pulls delivered **1.66 g of liquid**. At up to 10 applications, the generator recipe contributes approximately **0.10 g salt-equivalent per 1020 tray**. Assessment: **likely a minor salinity concern in adequately moist, low-salt coir; moderate confidence**, separate from chlorine tolerance or mold-control efficacy. Full calculation and evidence are recorded in section 11 below.
 
@@ -621,5 +684,46 @@ Tray salt-equivalent mg = diluted mg/mL × 0.166 × sprays/application × applic
 
 Recheck FAC and pH after mixing. Water demand, chlorine decay and measurement resolution can change the achieved concentration. Use only water for dilution and follow product directions; the tool does not adjust generator salt, acid, electrolysis time or pH. Final measurements and dilution arithmetic do not validate crop tolerance, contact time, mold prevention or food-safety performance. The existing daily-spray guidance is unchanged.
 
-**Provenance:** user requested a compact functional card with500mL final volume; the attached earlier proposal used250mL, so the live request takes precedence. The attachment&#x27;s additional2025 seedling-research claim was not independently appraised or incorporated as new efficacy evidence. The previous measured spray record (section11/S55) supplies the salt/spray assumptions. Copy notes reproduce current quantities, salt assumptions and any recorded post-dilution observations. Spray estimates (including all salt figures) and mixed-batch measurement fields each start collapsed and can be expanded independently; primary stock/water amounts stay visible. The browser exposes `HoclDilutionApp.selfTest()` for deterministic arithmetic checks. [S60–S61 in the source notebook](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt)
+**Provenance:** user requested a compact functional card with500mL final volume; the attached earlier proposal used250mL, so the live request takes precedence. Its additional2025 seedling-research claim was initially unverified; it is now appraised separately in section 13. The previous measured spray record (section11/S55) supplies the salt/spray assumptions. Copy notes reproduce current quantities, salt assumptions and any recorded post-dilution observations. Spray estimates (including all salt figures) and mixed-batch measurement fields each start collapsed and can be expanded independently; primary stock/water amounts stay visible. The browser exposes `HoclDilutionApp.selfTest()` for deterministic arithmetic checks. [S60–S61 in the source notebook](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt)
+
+## 13. Evidence behind the 50 ppm spray proposal
+
+**Assessment: 50 ppm free available chlorine (FAC) is a scientifically plausible concentration to investigate, especially given radish and pea sprout experiments. The evidence does not establish a routine twice-daily spray during three days of germination on coir.** This is an editorial synthesis of the studies below, not a tested protocol or a community consensus. The attached discussion is recorded as a research lead [S62]; its claims were checked against primary records rather than accepted as instructions.
+
+For these dilute aqueous comparisons, 50 ppm FAC is approximately 50 mg/L available chlorine expressed as chlorine equivalent. It is not a 50-ppm salt concentration. Papers use different electrolyzed-water formulations, pH, application methods and endpoints; matching the nominal FAC alone does not reproduce their treatment.
+
+### What the six studies actually support
+
+| Study | Exposure and result | Relevance and limitation |
+|---|---|---|
+| [S25 — Zhang et al., radish, Food Control 2016](https://doi.org/10.1016/j.foodcont.2016.02.045) | Sprout-spray arms used 30 and 50 mg/L available chlorine. The abstract reports 1.39/1.58-log reductions covering aerobic bacteria and yeast/mold, with improved sprout growth. | Direct sprout-spray evidence. The abstract&#x27;s wording does not securely map each reduction to a particular dose and organism; no one-to-one mapping is asserted here without the tables. Separate 12-hour seed-soaking arms had different concentrations and some germination effects. |
+| [S24 — Zhang et al., pea, Food Control 2019](https://doi.org/10.1016/j.foodcont.2019.04.029) | 35/70 mg/L SAEW replaced production water for seed soaking and sprout spraying. Natural microbial counts fell by up to 1.6 log; reported growth/nutritional outcomes were maintained or enhanced. | Relevant repeated-production exposure at concentrations bracketing 50 ppm. This was not an exact 50-ppm test, a pathogen challenge or a coir-tray experiment. The available summary does not establish the user&#x27;s proposed application volume or frequency. |
+| [S63 — Li et al., broccoli, Food Research International 2018](https://pubmed.ncbi.nlm.nih.gov/29433193/) · [S67 — author-institution report](https://www.jircas.go.jp/sites/default/files/publication/annual_report/annual_report-2017_-.pdf) | 10–50 ppm solutions; a 3-hour soak followed by cultivation over solution on sterile cheesecloth, renewed every 24 hours, with harvest after 8 days. At 50 mg/L, microbial counts were 1.71 log CFU/g below tap-water treatment. | **Growth was inhibited: fresh weight decreased as ACC increased, although dry weight did not change.** This corrects the attachment&#x27;s broad claim of no significant growth penalties. Repeated solution exposure is not equivalent to a brief mist. |
+| [S64 — Blasco et al., Energy Nexus 2025](https://doi.org/10.1016/j.nexus.2025.100566) | Eleven pH-4.5 EW formulations, five with zeolite; 50–500 ppm FAC. Controlled seedling tests at 100 ppm reported approximately 70% reductions in incidence/severity of the studied Alternaria diseases. Greenhouse results at 50 ppm were limited. | Direct plant-fungal-disease evidence, but on older broccoli/tomato seedlings and selected pathogens. The authors report no phytotoxicity up to 500 ppm in tested plants; that is not a germinating-seed tolerance limit. Disease percentages are not microbial log reductions. |
+| [S65 — Ogunniyi et al., Food Microbiology 2021](https://pubmed.ncbi.nlm.nih.gov/32912583/) | Living lettuce/spinach leaves were challenged with bacteria. EOW at 50 mg/L free chlorine reduced counts by at least 1.5 log without visible leaf injury; matched-FAC NaOCl caused discoloration/necrosis in that experiment. | Supporting evidence on living leaves; repeated germination spraying was not established. The project report describes single-application tolerance, but that report is currently only search-index accessible [S69]. It does not show that all EOW products outperform all hypochlorite products at the same FAC. |
+| [S66 — Liang et al., buckwheat, LWT 2019](https://doi.org/10.1016/j.lwt.2019.03.021) | Approximately 10/28/92 mg/L SAEW, pH around 6, evaluated across dipping, germination and washing. Higher ACC improved microbial reduction, but approximately 92 mg/L adversely affected sprout length; authors favored 10–28 mg/L for the balance of endpoints. | A useful counterexample to a universal 50-ppm optimum. Buckwheat is outside the five selected crops; results from different production stages cannot be combined into one spray-dose response. |
+
+**Access limits:** publisher-indexed abstracts/highlights, PubMed records and institutional reports were reviewed. Full experimental tables and replicate counts were not available for all six studies; no pooled effect, dose-response fit or statistical safety margin was calculated. The 2025 paper is openly licensed, but direct full-text retrieval was blocked; its summary-level findings are identified accordingly. [Bibliographic metadata capture and access record](source_docs/seed_sanitation/spray_50ppm/spray-studies-metadata.json) · [Capture manifest](source_docs/seed_sanitation/spray_50ppm/spray-studies-capture-manifest.json) · [Source notebook S62–S70](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt).
+
+### How much confidence transfers to the five crops?
+
+These are **editorial confidence judgments about relevance**, not probabilities of safety or efficacy:
+
+- **Radish and pea:** moderate support for investigating low-concentration EW during sprout production; limited support for the exact covered-coir spray schedule.
+- **Broccoli:** mixed evidence. Microbial reduction is real, but the repeated-exposure sprout study also found a fresh-weight penalty. Later seedling tolerance does not resolve this.
+- **Sunflower and mung bean:** low confidence in this exact 50-ppm spray schedule. Existing seed-bath/pathogen studies in the companion HOCl review answer different questions; their positive results do not fill the spray gap.
+
+Here, “moderate” describes relevance of the published production systems, not confirmation of visible-mold prevention. A 1.6-log reduction is approximately a 97.5% reduction in the measured count; it can still leave survivors. Natural aerobic or yeast/mold counts cannot be substituted for the relevant-pathogen reductions discussed in the [log-target review](18_hocl_log_reduction_and_grower_consensus.md).
+
+### What this means for the planner and a comparison
+
+Keep **50 ppm as a calculation/example target**, with the research accessible on scroll. The evidence supports calling it a candidate for investigation; it does not justify changing the five crops to “daily spray recommended.” No new chemical contact time is inferred from these studies, and no grower consensus for 50 ppm twice daily was established.
+
+A useful crop comparison would use the same seed lot, coir, seed density and total water, with water-only controls and independent replicate trays. Record actual FAC/pH, delivered volume, frequency, germination percentage, growth/fresh yield and visible mold separately. A comparison of the complete spray assesses the formulation as a whole; it does not isolate chlorine from salt/pH effects. Visual observations cannot establish a pathogen kill step. This describes how to evaluate the hypothesis; it is not an instruction to challenge crops with pathogens or treat an unsuitable product as crop-authorized.
+
+### Recorded dilution and salt arithmetic
+
+If stock is **measured at 300 ppm**, the existing **500 mL final batch at 50 ppm** requires approximately **83.33 mL stock + 416.67 mL water**. The recorded 6-g/L generator-salt feed becomes approximately **1 g/L feed-salt equivalent** after this sixfold dilution. At 0.166 mL per trigger, 10 sprays × 10 applications contribute approximately **16.6 mg per tray**. These are mass-balance calculations using the user&#x27;s measured spray output, not measured residual salt or biological validation. Final pH is not predicted by the dilution ratio. [Sections 11–12](#11-measured-spray-salt-load).
+
+**Finding:** the attached proposal has a credible research basis as an experimental hypothesis, strongest for radish/pea sprout production. Its blanket growth-tolerance claim needs correction, and the exact five-crop germination-only misting schedule remains unconfirmed.
 </pre></details><p><a href="docs/sanitation_17_seed_sanitation_research_and_timing.md" download>Download original source</a></p></main><footer><span>Microgreen Guide / Grow Lab</span><span>Evidence, units and assumptions.</span></footer></body></html>

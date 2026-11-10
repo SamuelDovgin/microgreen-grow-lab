@@ -1,0 +1,951 @@
+{
+  "capture_date": "2026-11-10",
+  "kind": "Selected public Crossref bibliographic metadata; not article full text or experimental data",
+  "selection_note": "Selected fields retain source values; abstracts and cited-reference lists omitted. Findings and access limitations are in the research notebook.",
+  "records": [
+    {
+      "source_url": "https://api.crossref.org/works/10.1016/j.foodcont.2016.02.045",
+      "accessed": "2026-11-10",
+      "metadata": {
+        "DOI": "10.1016/j.foodcont.2016.02.045",
+        "title": [
+          "Application of electrolyzed oxidizing water in production of radish sprouts to reduce natural microbiota"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-5344-0227",
+            "authenticated-orcid": false,
+            "given": "Chunling",
+            "family": "Zhang",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Wei",
+            "family": "Cao",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Yen-Con",
+            "family": "Hung",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Baoming",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "publisher": "Elsevier BV",
+        "container-title": [
+          "Food Control"
+        ],
+        "volume": "67",
+        "page": "177-182",
+        "published": {
+          "date-parts": [
+            [
+              2016,
+              9
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/j.foodcont.2016.02.045",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2016,
+                  9,
+                  1
+                ]
+              ],
+              "date-time": "2016-09-01T00:00:00Z",
+              "timestamp": 1472688000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          }
+        ],
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0956713516300913?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0956713516300913?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ]
+      }
+    },
+    {
+      "source_url": "https://api.crossref.org/works/10.1016/j.foodcont.2019.04.029",
+      "accessed": "2026-11-10",
+      "metadata": {
+        "DOI": "10.1016/j.foodcont.2019.04.029",
+        "title": [
+          "The application of slightly acidic electrolyzed water in pea sprout production to ensure food safety, biological and nutritional quality of the sprout"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-5344-0227",
+            "authenticated-orcid": false,
+            "given": "Chunling",
+            "family": "Zhang",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yuyu",
+            "family": "Zhang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Zhiyi",
+            "family": "Zhao",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Wenfei",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yiqing",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gaoji",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Xiaodong",
+            "family": "Xia",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yanfei",
+            "family": "Cao",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "publisher": "Elsevier BV",
+        "container-title": [
+          "Food Control"
+        ],
+        "volume": "104",
+        "page": "83-90",
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              10
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/j.foodcont.2019.04.029",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2019,
+                  10,
+                  1
+                ]
+              ],
+              "date-time": "2019-10-01T00:00:00Z",
+              "timestamp": 1569888000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2019,
+                  10,
+                  1
+                ]
+              ],
+              "date-time": "2019-10-01T00:00:00Z",
+              "timestamp": 1569888000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/legal/tdmrep-license"
+          }
+        ],
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0956713519301902?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0956713519301902?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ]
+      }
+    },
+    {
+      "source_url": "https://api.crossref.org/works/10.1016/j.foodres.2017.10.052",
+      "accessed": "2026-11-10",
+      "metadata": {
+        "DOI": "10.1016/j.foodres.2017.10.052",
+        "title": [
+          "Effect of slightly acidic electrolyzed water on bioactive compounds and morphology of broccoli sprouts"
+        ],
+        "author": [
+          {
+            "given": "Lizhen",
+            "family": "Li",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jianxiong",
+            "family": "Hao",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Shuhui",
+            "family": "Song",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Satoru",
+            "family": "Nirasawa",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Zhengqiang",
+            "family": "Jiang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Haijie",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "publisher": "Elsevier BV",
+        "container-title": [
+          "Food Research International"
+        ],
+        "volume": "105",
+        "page": "102-109",
+        "published": {
+          "date-parts": [
+            [
+              2018,
+              3
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/j.foodres.2017.10.052",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2018,
+                  3,
+                  1
+                ]
+              ],
+              "date-time": "2018-03-01T00:00:00Z",
+              "timestamp": 1519862400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          }
+        ],
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0963996917307329?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0963996917307329?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ]
+      }
+    },
+    {
+      "source_url": "https://api.crossref.org/works/10.1016/j.nexus.2025.100566",
+      "accessed": "2026-11-10",
+      "metadata": {
+        "DOI": "10.1016/j.nexus.2025.100566",
+        "title": [
+          "Evaluation of electrolysed water based solutions as a sustainable approach to control phytopathogenic fungi"
+        ],
+        "author": [
+          {
+            "given": "Adolfo",
+            "family": "Blasco",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Mónica",
+            "family": "Berbegal",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Pedro",
+            "family": "Amorós",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Lorenzo",
+            "family": "Chiapparoli",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Sunday Dele",
+            "family": "Ojo",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Josep",
+            "family": "Armengol",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "José Vicente",
+            "family": "Ros-Lis",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "publisher": "Elsevier BV",
+        "container-title": [
+          "Energy Nexus"
+        ],
+        "volume": "20",
+        "page": "100566",
+        "article-number": "100566",
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              12
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/j.nexus.2025.100566",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  12,
+                  1
+                ]
+              ],
+              "date-time": "2025-12-01T00:00:00Z",
+              "timestamp": 1764547200000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  12,
+                  1
+                ]
+              ],
+              "date-time": "2025-12-01T00:00:00Z",
+              "timestamp": 1764547200000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/legal/tdmrep-license"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2025,
+                  10,
+                  16
+                ]
+              ],
+              "date-time": "2025-10-16T00:00:00Z",
+              "timestamp": 1760572800000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+          }
+        ],
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S2772427125002062?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S2772427125002062?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ]
+      }
+    },
+    {
+      "source_url": "https://api.crossref.org/works/10.1016/j.fm.2020.103610",
+      "accessed": "2026-11-10",
+      "metadata": {
+        "DOI": "10.1016/j.fm.2020.103610",
+        "title": [
+          "Neutral electrolyzed oxidizing water is effective for pre-harvest decontamination of fresh produce"
+        ],
+        "author": [
+          {
+            "given": "Abiodun D.",
+            "family": "Ogunniyi",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Catherine E.",
+            "family": "Dandie",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gianluca",
+            "family": "Brunetti",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Barbara",
+            "family": "Drigo",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Samuel",
+            "family": "Aleer",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Barbara",
+            "family": "Hall",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Sergio",
+            "family": "Ferro",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Permal",
+            "family": "Deo",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Henrietta",
+            "family": "Venter",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Baden",
+            "family": "Myers",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Erica",
+            "family": "Donner",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Enzo",
+            "family": "Lombi",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "publisher": "Elsevier BV",
+        "container-title": [
+          "Food Microbiology"
+        ],
+        "volume": "93",
+        "page": "103610",
+        "article-number": "103610",
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              2
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/j.fm.2020.103610",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2021,
+                  2,
+                  1
+                ]
+              ],
+              "date-time": "2021-02-01T00:00:00Z",
+              "timestamp": 1612137600000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2021,
+                  2,
+                  1
+                ]
+              ],
+              "date-time": "2021-02-01T00:00:00Z",
+              "timestamp": 1612137600000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/legal/tdmrep-license"
+          }
+        ],
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0740002020301994?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0740002020301994?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ]
+      }
+    },
+    {
+      "source_url": "https://api.crossref.org/works/10.1016/j.lwt.2019.03.021",
+      "accessed": "2026-11-10",
+      "metadata": {
+        "DOI": "10.1016/j.lwt.2019.03.021",
+        "title": [
+          "Systematic application of slightly acidic electrolyzed water (SAEW) for natural microbial reduction of buckwheat sprouts"
+        ],
+        "author": [
+          {
+            "given": "Duo",
+            "family": "Liang",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Qingfa",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Dandan",
+            "family": "Zhao",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Xue",
+            "family": "Han",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Jianxiong",
+            "family": "Hao",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "publisher": "Elsevier BV",
+        "container-title": [
+          "LWT"
+        ],
+        "volume": "108",
+        "page": "14-20",
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              7
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1016/j.lwt.2019.03.021",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2019,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2019-07-01T00:00:00Z",
+              "timestamp": 1561939200000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2019,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2019-07-01T00:00:00Z",
+              "timestamp": 1561939200000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/legal/tdmrep-license"
+          }
+        ],
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0023643819302026?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0023643819302026?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ]
+      }
+    }
+  ]
+}
