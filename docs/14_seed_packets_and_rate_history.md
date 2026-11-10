@@ -67,7 +67,7 @@ The ranges vary together: do not add every minimum or maximum to predict harvest
 
 ### What to look for before switching stages
 
-There is **no verified fixed height for starting loose blackout**. The card illustrations show rooted emergence and upright growth, not a scale drawing or an automatic readiness score. Look across the tray rather than at the first sprout. For brassicas and sunflower, pale growth replacing the dark hull layer and shoots lifting the contact tray help signal the end of covered establishment. Remove pressure as stems start to bend beneath it. Extra blackout is an optional stem-length choice for these crops; when used, invert or raise the dark cover so shoots have space, with no added load. Finish while stems still stand on their own. [G03,G15]
+There is **no verified fixed height for starting loose blackout**. The short card prompts describe rooted emergence and upright growth; expand “Stage cues & details” for the full checks and method limits. Look across the tray rather than at the first sprout. For brassicas and sunflower, pale growth replacing the dark hull layer and shoots lifting the contact tray help signal the end of covered establishment. Remove pressure as stems start to bend beneath it. Extra blackout is an optional stem-length choice for these crops; when used, invert or raise the dark cover so shoots have space, with no added load. Finish while stems still stand on their own. [G03,G15]
 
 <!-- BEGIN TRANSITION CUES -->
 - **Black Oil sunflower:** Rooted shoots are lifting the contact tray; pale growth is replacing the blanket of black hulls. Remove the load and contact tray. Use a loose dark dome for the chosen stretch method; extra blackout is optional.
