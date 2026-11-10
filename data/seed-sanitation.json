@@ -569,7 +569,7 @@
         3
       ],
       "default": 12,
-      "references": {
+      "historicalReferences": {
         "12": {
           "minutes": 15,
           "time": "15 min*",
@@ -585,16 +585,25 @@
           "source": "https://www.bootstrapfarmer.com/blogs/microgreens/how-to-disinfect-seeds-before-planting-and-sprouting",
           "footnote": "* Grower practice, not a confirmed pathogen kill step. Use only with suitable edible-seed directions.",
           "note": "3% for 3\u20135 minutes is grower guidance, followed by thorough rinsing. It is not a validated crop-specific mold or pathogen-control process."
+        },
+        "broccoli3": {
+          "minutes": 15,
+          "time": "15 min*",
+          "status": "Broccoli study \u00b7 poor mold result*",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/",
+          "footnote": "* Tested comparison; not recommended for broccoli mold prevention.",
+          "note": "The broccoli head-to-head experiment used 3% for 15 minutes and did not find effective mold control. This is a comparison value, not a recommendation."
         }
       },
-      "broccoli3": {
-        "minutes": 15,
-        "time": "15 min*",
-        "status": "Broccoli study \u00b7 poor mold result*",
-        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/",
-        "footnote": "* Tested comparison; not recommended for broccoli mold prevention.",
-        "note": "The broccoli head-to-head experiment used 3% for 15 minutes and did not find effective mold control. This is a comparison value, not a recommendation."
-      }
+      "referenceConcentration": 3,
+      "referenceMinutes": 5,
+      "referenceRangeMinutes": [
+        3,
+        5
+      ],
+      "source": "https://www.bootstrapfarmer.com/blogs/microgreens/how-to-disinfect-seeds-before-planting-and-sprouting",
+      "model": "t = 5 \u00d7 (3 / selected %), assuming constant concentration \u00d7 time. The 5-minute anchor is the upper end of grower guidance, not a validated microbial-reduction result.",
+      "footnote": "* Unconfirmed arithmetic comparison, not soaking instructions. Shorter time does not establish equal disinfection or make a 12% home seed bath advisable."
     }
   }
 }

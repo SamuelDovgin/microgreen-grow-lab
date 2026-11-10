@@ -27,8 +27,9 @@
   const c=Number(concentration),settings=data.chemicalComparisons?.[chemical];
   if(!settings||!settings.options.includes(c)||!data.crops[cropId])return null;
   if(chemical==='peroxide'){
-   const ref=c===3&&cropId==='broccoli'?settings.broccoli3:settings.references[String(c)];
-   return {...ref,chemical,selected:c,concentration:c+'% H₂O₂*',confirmed:false,kind:c===3&&cropId!=='broccoli'?'grower-reference':'study-reference',sensitivity:null};
+   const ratio=settings.referenceConcentration/c,minutes=settings.referenceMinutes*ratio,anchor=c===settings.referenceConcentration;
+   const alternatives=[settings.referenceMinutes*Math.pow(ratio,.5),settings.referenceMinutes*Math.pow(ratio,2)];
+   return {chemical,selected:c,minutes,concentration:c+'% H₂O₂*',time:minutes+' min*',status:anchor?'Grower anchor · 5-minute assumption*':'Unconfirmed time extrapolation*',confirmed:false,kind:anchor?'grower-anchor':'hypothetical-extrapolation',sensitivity:{low:Math.min(...alternatives),high:Math.max(...alternatives)},source:settings.source,footnote:settings.footnote,note:anchor?'The model chooses 5 minutes, the upper end of the grower’s 3–5 minute guidance, as a common 3% anchor. This does not establish a crop-specific kill step.':'5 × (3 ÷ '+c+') = '+minutes+' min assumes constant concentration × time. At 12%, that is 75 seconds, an untested extrapolation. It does not predict germination or microbial reduction. The separate 12% × 15-minute broccoli bacterial experiment is documented in the research note; it is not the timing-model anchor.'};
   }
   const ratio=settings.referenceConcentration/c,minutes=settings.referenceMinutes*ratio,anchor=c===settings.referenceConcentration;
   const sensitivity={low:settings.referenceMinutes*Math.pow(ratio,.5),high:settings.referenceMinutes*Math.pow(ratio,2)};

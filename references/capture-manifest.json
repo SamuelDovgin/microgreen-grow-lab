@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-10",
+  "captures": [
+    {
+      "file": "Gilbert-2023-Foods-PMC9955435.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9955435/fullTextXML",
+      "bytes": 119376,
+      "sha256": "18aae204fa7bb65e63039c2c37fbc3e749d7914a6cae071cb70efe930571ea8d",
+      "status": "preserved official/OA source"
+    },
+    {
+      "file": "USDA-NOP-5029-seeds.pdf",
+      "url": "https://www.ams.usda.gov/sites/default/files/media/5029.pdf",
+      "bytes": 229404,
+      "sha256": "dd411b29515cb96c1d24e02d3dfd4de7cadc609558209df8974fe4b0aff8c6df",
+      "status": "preserved official/OA source"
+    }
+  ]
+}

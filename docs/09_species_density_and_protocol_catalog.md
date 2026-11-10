@@ -129,7 +129,7 @@ OTG = On The Grow, BF = Bootstrap Farmer, J = Johnny’s, USU = Utah State Exten
 ## Per-crop notes and alternative recipes
 
 
-Seed sanitation: **Recommended** = prioritize a suitable labeled treatment; **Consider** = handling judgment; **Optional** = no routine bath recommended here; **Avoid routine bath** = gel-forming seed. These are not pathogen-risk rankings. [Chemical options, contact times and evidence](seed-sanitation.html).
+Seed sanitation: **Recommended** = prioritize a suitable labeled treatment; **Consider** = handling judgment; **Optional** = no routine bath recommended here; **Avoid routine bath** = gel-forming seed. These are not pathogen-risk rankings. [Chemical options, contact times and evidence](site/dist/seed-sanitation.html).
 
 ### Broccoli
 
@@ -137,7 +137,7 @@ Botanical identity: *Brassica oleracea var. italica*. Planting unit: single seed
 
 Initial count input: 281 units/g — **Extension approximate count; not this lot’s measurement**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=broccoli).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=broccoli).
 
 This profile includes Waltham 29. Its named True Leaf recipe appears below.
 
@@ -164,7 +164,7 @@ Botanical identity: *Raphanus sativus*. Planting unit: single seed. Use the name
 
 Initial count input: 90 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=radish-daikon).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=radish-daikon).
 
 This profile includes Minowase (Organic). Its named True Leaf recipe appears below.
 
@@ -187,7 +187,7 @@ Botanical identity: *Raphanus sativus*. Planting unit: single seed. Use the name
 
 Initial count input: 90 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=radish-red-arrow).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=radish-red-arrow).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -204,7 +204,7 @@ Botanical identity: *Raphanus sativus*. Planting unit: single seed. Use the name
 
 Initial count input: 90 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=radish-hong-vit).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=radish-hong-vit).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -221,7 +221,7 @@ Botanical identity: *Raphanus sativus*. Planting unit: single seed. Creator tabl
 
 Initial count input: 90 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=radish-rambo).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=radish-rambo).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -240,7 +240,7 @@ Botanical identity: *Brassica oleracea var. capitata*. Planting unit: single see
 
 Initial count input: 280 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=red-cabbage).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=red-cabbage).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -261,7 +261,7 @@ Botanical identity: *Brassica oleracea var. capitata*. Planting unit: single see
 
 Initial count input: 280 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=green-cabbage).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=green-cabbage).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -280,7 +280,7 @@ Botanical identity: *Brassica napus (Red Russian type)*. Planting unit: single s
 
 Initial count input: 300 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=kale-red-russian).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=kale-red-russian).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -300,7 +300,7 @@ Botanical identity: *Brassica oleracea var. acephala*. Planting unit: single see
 
 Initial count input: 300 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=kale-curly).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=kale-curly).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -320,7 +320,7 @@ Botanical identity: *Brassica oleracea var. gongylodes*. Planting unit: single s
 
 Initial count input: 300 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=kohlrabi).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=kohlrabi).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -340,7 +340,7 @@ Botanical identity: *Brassica oleracea var. botrytis*. Planting unit: single see
 
 Initial count input: 280 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=cauliflower).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=cauliflower).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -359,7 +359,7 @@ Botanical identity: *Brassica rapa subsp. chinensis*. Planting unit: single seed
 
 Initial count input: 350 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=pak-choi).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=pak-choi).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -378,7 +378,7 @@ Botanical identity: *Brassica rapa var. japonica*. Planting unit: single seed. U
 
 Initial count input: 400 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=mizuna).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=mizuna).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -396,7 +396,7 @@ Botanical identity: *Brassica rapa subsp. narinosa*. Planting unit: single seed.
 
 Initial count input: 400 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=tatsoi).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=tatsoi).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -414,7 +414,7 @@ Botanical identity: *Brassica rapa (pekinensis group)*. Planting unit: single se
 
 Initial count input: 350 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=tokyo-bekana).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=tokyo-bekana).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -431,7 +431,7 @@ Botanical identity: *Brassica juncea*. Planting unit: single seed. Use the named
 
 Initial count input: 530 units/g — **Extension approximate count; not this lot’s measurement**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=mustard-garnet).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=mustard-garnet).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -451,7 +451,7 @@ Botanical identity: *Brassica juncea*. Planting unit: single seed. Use the named
 
 Initial count input: 530 units/g — **Extension approximate count; not this lot’s measurement**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=mustard-ruby).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=mustard-ruby).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -471,7 +471,7 @@ Botanical identity: *Eruca vesicaria subsp. sativa*. Planting unit: single seed.
 
 Initial count input: 500 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=arugula).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=arugula).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -492,7 +492,7 @@ Botanical identity: *Lepidium sativum*. Planting unit: single seed. Mucilaginous
 
 Initial count input: 450 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](seed-sanitation.html?crop=cress).
+**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=cress).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -510,7 +510,7 @@ Botanical identity: *Brassica napus (napobrassica group)*. Planting unit: single
 
 Initial count input: 350 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=rutabaga).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=rutabaga).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -527,7 +527,7 @@ Botanical identity: *Ocimum basilicum*. Planting unit: single seed. Default uses
 
 Initial count input: 830 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](seed-sanitation.html?crop=basil-genovese).
+**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=basil-genovese).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -549,7 +549,7 @@ Botanical identity: *Ocimum basilicum*. Planting unit: single seed. Use the name
 
 Initial count input: 830 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](seed-sanitation.html?crop=basil-italian).
+**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=basil-italian).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -567,7 +567,7 @@ Botanical identity: *Ocimum basilicum*. Planting unit: single seed. Arthur’s D
 
 Initial count input: 833 units/g — **Different research seed lot; measured 100-seed weight in Arthur et al.**. This is not a seed-size guarantee.
 
-**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](seed-sanitation.html?crop=basil-dark-opal).
+**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=basil-dark-opal).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -586,7 +586,7 @@ Botanical identity: *Ocimum basilicum*. Planting unit: single seed. Use the name
 
 Initial count input: 830 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](seed-sanitation.html?crop=basil-red-rubin).
+**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=basil-red-rubin).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -605,7 +605,7 @@ Botanical identity: *Ocimum × africanum / citriodorum trade types*. Planting un
 
 Initial count input: 800 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](seed-sanitation.html?crop=basil-lemon).
+**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=basil-lemon).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -623,7 +623,7 @@ Botanical identity: *Perilla frutescens var. crispa*. Planting unit: single seed
 
 Initial count input: 227 units/g — **Different research seed lot; measured 100-seed weight in Arthur et al.**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=shiso-britton).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=shiso-britton).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -642,7 +642,7 @@ Botanical identity: *Perilla frutescens var. crispa*. Planting unit: single seed
 
 Initial count input: 227 units/g — **Different research seed lot; measured 100-seed weight in Arthur et al.**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=shiso-green).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=shiso-green).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -662,7 +662,7 @@ Botanical identity: *Perilla frutescens var. crispa*. Planting unit: single seed
 
 Initial count input: 227 units/g — **Different research seed lot; measured 100-seed weight in Arthur et al.**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=shiso-purple).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=shiso-purple).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -682,7 +682,7 @@ Botanical identity: *Coriandrum sativum*. Planting unit: whole two-mericarp frui
 
 Initial count input: 90 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Recommended.** Consider a labeled seed treatment before sowing; keep it separate from the normal water soak. Basis: grower. [Options and limits](seed-sanitation.html?crop=cilantro-whole).
+**Seed sanitation: Recommended.** Consider a labeled seed treatment before sowing; keep it separate from the normal water soak. Basis: grower. [Options and limits](site/dist/seed-sanitation.html?crop=cilantro-whole).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -703,7 +703,7 @@ Botanical identity: *Coriandrum sativum*. Planting unit: split mericarp. Jonah r
 
 Initial count input: 180 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Consider.** Consider a labeled treatment when presoaking or investigating recurring lot problems; no crop-specific protocol is established here. Basis: editorial. [Options and limits](seed-sanitation.html?crop=cilantro-split).
+**Seed sanitation: Consider.** Consider a labeled treatment when presoaking or investigating recurring lot problems; no crop-specific protocol is established here. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=cilantro-split).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -725,7 +725,7 @@ Botanical identity: *Anethum graveolens*. Planting unit: single seed. Use the na
 
 Initial count input: 700 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=dill).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=dill).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -745,7 +745,7 @@ Botanical identity: *Foeniculum vulgare*. Planting unit: single seed. Use the na
 
 Initial count input: 250 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=fennel).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=fennel).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -766,7 +766,7 @@ Botanical identity: *Anthriscus cerefolium*. Planting unit: single seed. Use the
 
 Initial count input: 450 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=chervil).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=chervil).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -786,7 +786,7 @@ Botanical identity: *Petroselinum crispum*. Planting unit: single seed. Use the 
 
 Initial count input: 650 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=parsley).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=parsley).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -806,7 +806,7 @@ Botanical identity: *Apium graveolens*. Planting unit: single seed. Species over
 
 Initial count input: 2000 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=celery).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=celery).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -826,7 +826,7 @@ Botanical identity: *Beta vulgaris (beet group)*. Planting unit: multigerm seed 
 
 Initial count input: 53 units/g — **Extension approximate count; not this lot’s measurement**. This is not a seed-size guarantee.
 
-**Seed sanitation: Recommended.** Consider a labeled seed treatment before sowing; keep it separate from the normal water soak. Basis: grower. [Options and limits](seed-sanitation.html?crop=beet).
+**Seed sanitation: Recommended.** Consider a labeled seed treatment before sowing; keep it separate from the normal water soak. Basis: grower. [Options and limits](site/dist/seed-sanitation.html?crop=beet).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -847,7 +847,7 @@ Botanical identity: *Beta vulgaris (cicla group)*. Planting unit: multigerm seed
 
 Initial count input: 50 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Recommended.** Consider a labeled seed treatment before sowing; keep it separate from the normal water soak. Basis: grower. [Options and limits](seed-sanitation.html?crop=chard).
+**Seed sanitation: Recommended.** Consider a labeled seed treatment before sowing; keep it separate from the normal water soak. Basis: grower. [Options and limits](site/dist/seed-sanitation.html?crop=chard).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -868,7 +868,7 @@ Botanical identity: *Amaranthus tricolor / cruentus trade types*. Planting unit:
 
 Initial count input: 1200 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=amaranth).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=amaranth).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -888,7 +888,7 @@ Botanical identity: *Pisum sativum*. Planting unit: single seed. USU’s lower s
 
 Initial count input: 6.6 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Recommended.** Seed sanitation is recommended in grower practice for presoaked peas; drain fully before sowing. Basis: grower. [Options and limits](seed-sanitation.html?crop=pea-basic).
+**Seed sanitation: Recommended.** Seed sanitation is recommended in grower practice for presoaked peas; drain fully before sowing. Basis: grower. [Options and limits](site/dist/seed-sanitation.html?crop=pea-basic).
 
 This profile includes Speckled (Organic). Its named True Leaf recipe appears below.
 
@@ -913,7 +913,7 @@ Botanical identity: *Pisum sativum*. Planting unit: single seed. MGM specifies o
 
 Initial count input: 5 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Recommended.** Seed sanitation is recommended in grower practice for presoaked peas; drain fully before sowing. Basis: grower. [Options and limits](seed-sanitation.html?crop=pea-tendril).
+**Seed sanitation: Recommended.** Seed sanitation is recommended in grower practice for presoaked peas; drain fully before sowing. Basis: grower. [Options and limits](site/dist/seed-sanitation.html?crop=pea-tendril).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -933,7 +933,7 @@ Botanical identity: *Helianthus annuus*. Planting unit: single seed. 120 g is th
 
 Initial count input: 16 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Recommended.** Prioritize seed sanitation, especially after hull mold. Check the seed lot, drainage and density too. Basis: grower. [Options and limits](seed-sanitation.html?crop=sunflower).
+**Seed sanitation: Recommended.** Prioritize seed sanitation, especially after hull mold. Check the seed lot, drainage and density too. Basis: grower. [Options and limits](site/dist/seed-sanitation.html?crop=sunflower).
 
 This profile includes Black Oil · True Leaf Market. Its named True Leaf recipe appears below.
 
@@ -961,7 +961,7 @@ Botanical identity: *Lactuca sativa*. Planting unit: single seed. Use the named 
 
 Initial count input: 1000 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=lettuce).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=lettuce).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -981,7 +981,7 @@ Botanical identity: *Allium cepa*. Planting unit: single seed. Use the named sou
 
 Initial count input: 250 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=onion).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=onion).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -1001,7 +1001,7 @@ Botanical identity: *Allium fistulosum*. Planting unit: single seed. 375 g/m² w
 
 Initial count input: 416.67 units/g — **Different research seed lot; measured 100-seed weight in Arthur et al.**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=scallion).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=scallion).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -1018,7 +1018,7 @@ Botanical identity: *Allium schoenoprasum*. Planting unit: single seed. 300 g/m�
 
 Initial count input: 769.23 units/g — **Different research seed lot; measured 100-seed weight in Arthur et al.**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=chives).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=chives).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -1035,7 +1035,7 @@ Botanical identity: *Tropaeolum majus*. Planting unit: single seed. Use the name
 
 Initial count input: 7 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Recommended.** Consider a labeled seed treatment before sowing; keep it separate from the normal water soak. Basis: grower. [Options and limits](seed-sanitation.html?crop=nasturtium).
+**Seed sanitation: Recommended.** Consider a labeled seed treatment before sowing; keep it separate from the normal water soak. Basis: grower. [Options and limits](site/dist/seed-sanitation.html?crop=nasturtium).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -1056,7 +1056,7 @@ Botanical identity: *Rumex sanguineus*. Planting unit: single seed. Use the name
 
 Initial count input: 1000 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=sorrel).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=sorrel).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -1075,7 +1075,7 @@ Botanical identity: *Cucumis melo*. Planting unit: single seed. Use the named so
 
 Initial count input: 35 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=cantaloupe).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=cantaloupe).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -1094,7 +1094,7 @@ Botanical identity: *Tagetes tenuifolia*. Planting unit: single seed. Use the na
 
 Initial count input: 800 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](seed-sanitation.html?crop=marigold).
+**Seed sanitation: Optional.** No routine chemical bath recommended here for clean direct-sown seed. Use a labeled crop-specific process if treatment is needed. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=marigold).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -1111,7 +1111,7 @@ Botanical identity: *Salvia hispanica*. Planting unit: single seed. 120 g/m² co
 
 Initial count input: 800 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](seed-sanitation.html?crop=chia).
+**Seed sanitation: Avoid routine bath.** Gel-forming seed: direct sow. Do not add a sanitizer bath without explicit crop-specific directions. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=chia).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -1129,7 +1129,7 @@ Botanical identity: *Trigonella foenum-graecum*. Planting unit: single seed. Pub
 
 Initial count input: 65 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Recommended.** Consider a labeled seed treatment before sowing; keep it separate from the normal water soak. Basis: grower. [Options and limits](seed-sanitation.html?crop=fenugreek).
+**Seed sanitation: Recommended.** Consider a labeled seed treatment before sowing; keep it separate from the normal water soak. Basis: grower. [Options and limits](site/dist/seed-sanitation.html?crop=fenugreek).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -1147,7 +1147,7 @@ Botanical identity: *Vigna radiata*. Planting unit: single seed. You reported st
 
 Initial count input: 10 units/g — **MP Seeds approximate 10 seeds/g; replace with your actual lot**. This is not a seed-size guarantee.
 
-**Seed sanitation: Recommended.** Consider a labeled seed treatment before sowing; keep it separate from the normal water soak. Basis: grower. [Options and limits](seed-sanitation.html?crop=mung).
+**Seed sanitation: Recommended.** Consider a labeled seed treatment before sowing; keep it separate from the normal water soak. Basis: grower. [Options and limits](site/dist/seed-sanitation.html?crop=mung).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -1167,7 +1167,7 @@ Botanical identity: *Glycine max*. Planting unit: single seed. 150 g dry seed pe
 
 Initial count input: 5 units/g — **Pestuj approximate 5 seeds/g; replace with your actual lot**. This is not a seed-size guarantee.
 
-**Seed sanitation: Recommended.** Consider seed sanitation for this soaked-bean pilot; this is a handling inference, not a soybean-specific treatment validation. Basis: editorial. [Options and limits](seed-sanitation.html?crop=soybean).
+**Seed sanitation: Recommended.** Consider seed sanitation for this soaked-bean pilot; this is a handling inference, not a soybean-specific treatment validation. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=soybean).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -1185,7 +1185,7 @@ Botanical identity: *Lens culinaris*. Planting unit: single seed. 3 sown seeds/c
 
 Initial count input: 36 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Consider.** Consider a labeled treatment when presoaking or investigating recurring lot problems; no crop-specific protocol is established here. Basis: editorial. [Options and limits](seed-sanitation.html?crop=lentil).
+**Seed sanitation: Consider.** Consider a labeled treatment when presoaking or investigating recurring lot problems; no crop-specific protocol is established here. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=lentil).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
@@ -1202,7 +1202,7 @@ Botanical identity: *Triticum aestivum*. Planting unit: single seed. 275 g midpo
 
 Initial count input: 30 units/g — **Illustrative until this lot is counted and weighed**. This is not a seed-size guarantee.
 
-**Seed sanitation: Consider.** Consider a labeled treatment when presoaking or investigating recurring lot problems; no crop-specific protocol is established here. Basis: editorial. [Options and limits](seed-sanitation.html?crop=wheat).
+**Seed sanitation: Consider.** Consider a labeled treatment when presoaking or investigating recurring lot problems; no crop-specific protocol is established here. Basis: editorial. [Options and limits](site/dist/seed-sanitation.html?crop=wheat).
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|

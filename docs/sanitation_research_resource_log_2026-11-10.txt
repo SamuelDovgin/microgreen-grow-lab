@@ -1,0 +1,179 @@
+SEED SANITATION RESEARCH / RECOVERY NOTEBOOK — November 10, 2026
+Scope: planner research across this conversation and the peroxide timing correction. This is an audit log, not an application protocol.
+Section map: mismatch S01/S02; priorities S02/S03/S07; sprays S05/S06; model S10/S11/S12; chemistry S13; handling S09/S14; regulation S15/S16; provenance S17/S18; discovery gaps S19.
+
+[S01] Gilbert, Diaz & Bregoff (2023), Foods 12(4):747; DOI 10.3390/foods12040747; PMC9955435
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/
+Accessed/rechecked: 2026-11-10
+Class: peer-reviewed seed experiments
+Used in: Peroxide mismatch; experimental evidence; HOCl anchor
+Key record / finding: Broccoli factorial concentrations and 1/5/10/15-minute contact times; bacterial selection used 12%/15 min; fungal comparison used 3%. Endpoints must not be merged.
+Limits: Broccoli and culturable contamination are not all crops or a pathogen-kill validation. No seed-specific kinetic fit was made.
+Access and preservation: PMC returned a browser check on recheck; official Europe PMC OA XML successfully preserved as Gilbert-2023-Foods-PMC9955435.xml.
+Local SHA-256: 18aae204fa7bb65e63039c2c37fbc3e749d7914a6cae071cb70efe930571ea8d
+
+[S02] Bootstrap Farmer — How to Disinfect Seeds Before Planting and Sprouting
+URL: https://www.bootstrapfarmer.com/blogs/microgreens/how-to-disinfect-seeds-before-planting-and-sprouting
+Accessed/rechecked: 2026-11-10
+Class: commercial grower guidance
+Used in: Peroxide grower anchor; handling; chemical label boundaries
+Key record / finding: Describes 3% peroxide for 3–5 min followed by rinsing; warns about stronger/longer exposures. Model chooses the upper bound, 5 min, explicitly as an assumption.
+Limits: Grower practice, not a validated crop-specific microbial kill step. No support for a 12%/75-second recommendation.
+Access and preservation: Live official article; URL-only — no full-text local copy preserved.
+
+[S03] Bootstrap Farmer — Microgreens & Soaking Seeds: When & Why
+URL: https://www.bootstrapfarmer.com/blogs/microgreens/microgreens-soaking-seeds-when-why
+Accessed/rechecked: 2026-11-10
+Class: commercial grower guidance
+Used in: Five seed priorities and gel-seed caution
+Key record / finding: Discusses large seeds including sunflower, pea and mung; distinguishes seed hydration from treatment.
+Limits: Soaking lists do not establish pathogen prevalence or validate every treatment for each crop.
+Access and preservation: Live official article; URL-only — no full-text local copy preserved.
+
+[S04] Microbiological quality of microgreen seeds purchased from online vendors and evaluating seed decontamination techniques available online; DOI 10.3389/fsufs.2023.1264472
+URL: https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1264472/full
+Accessed/rechecked: 2026-11-10
+Class: peer-reviewed seed experiments
+Used in: Other peroxide contexts; research limits
+Key record / finding: Includes 3% peroxide and 10-minute soaking; treatment arms and heat combinations must remain distinct.
+Limits: Does not establish a 12%-to-3% conversion rule. No mixture recipe adopted here.
+Access and preservation: Official full text opened; a later find request timed out. URL-only — no local full-text copy preserved.
+
+[S05] Eicher-Sodo — Hydrogen peroxide: A grower’s best friend?; associated HortTechnology 29(3):283–289 (2019)
+URL: https://scholars.wlu.ca/etd/2215/ ; https://gwf-uwaterloo.github.io/gwf-publications/G19-54001/
+Accessed/rechecked: 2026-11-10
+Class: primary thesis / experimental plant-tolerance research
+Used in: Daily-spray evidence
+Key record / finding: Daily 0–200 mg/L foliar peroxide on sunflower, radish and arugula; tissue damage/growth endpoints.
+Limits: Tolerance does not demonstrate antifungal efficacy; not peas, broccoli or mung.
+Access and preservation: University abstract live; associated publication record consulted in prior turn. URL-only — no local full-text copy preserved.
+
+[S06] Application of electrolyzed oxidizing water in production of radish sprouts to reduce natural microbiota; DOI 10.1016/j.foodcont.2016.02.045
+URL: https://www.sciencedirect.com/science/article/abs/pii/S0956713516300913
+Accessed/rechecked: 2026-11-10
+Class: peer-reviewed sprout experiment / publisher abstract
+Used in: Daily-spray context
+Key record / finding: Publisher abstract describes 30/50 mg/L available chlorine during radish sprouting; other seed-soak arms differ.
+Limits: Aqueous sprouts are not covered coir trays. No universal daily spray selected.
+Access and preservation: Abstract/search record accessible; direct page open returned 403 in prior turn. URL-only — no local full text available.
+
+[S07] Utah State Extension — Grow Your Own Microgreens; Stephen Beck, 2025-02-20
+URL: https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens
+Accessed/rechecked: 2026-11-10
+Class: university extension
+Used in: Growing, drainage, crop-specific soaking
+Key record / finding: Crop table and coir/drainage guidance; small-seed direct-sowing context.
+Limits: Not a concentration–time or seed-disinfection validation.
+Access and preservation: Live official page; URL-only — no full-text local copy preserved.
+
+[S08] UF/IFAS Gardening Solutions — Microgreens
+URL: https://gardeningsolutions.ifas.ufl.edu/plants/edibles/vegetables/microgreens/
+Accessed/rechecked: 2026-11-10
+Class: university extension
+Used in: Growing-system distinction and hygiene context
+Key record / finding: Describes microgreens, growing media, containers and drainage; distinguishes microgreens from sprouts.
+Limits: Not evidence for a particular sanitizer dose.
+Access and preservation: Live official page; URL-only — no full-text local copy preserved.
+
+[S09] National Capital Poison Center — Is hydrogen peroxide safe?
+URL: https://www.poison.org/articles/hydrogen-peroxide
+Accessed/rechecked: 2026-11-10
+Class: toxicology / poison-control guidance
+Used in: Concentrated peroxide handling
+Key record / finding: Concentration materially changes hazard; food-grade terminology is not a general safety clearance.
+Limits: No seed-bath efficacy recommendation inferred.
+Access and preservation: Live official page; URL-only — no full-text local copy preserved.
+
+[S10] CDC — Factors Affecting the Efficacy of Disinfection and Sterilization
+URL: https://www.cdc.gov/infection-control/hcp/disinfection-sterilization/efficacy-factors.html
+Accessed/rechecked: 2026-11-10
+Class: official technical guidance; healthcare context
+Used in: Model assumptions
+Key record / finding: Concentration, contact time, organic load and agent-specific concentration exponents affect disinfection.
+Limits: Healthcare context is not seed-specific validation; does not fit n for these crops.
+Access and preservation: Official search record consulted; URL-only — no full-text local copy preserved.
+
+[S11] EPA project summary concerning C–t disinfection and microbial resistance; NEPIS record 2000TL73
+URL: https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=2000TL73.TXT
+Accessed/rechecked: 2026-11-10
+Class: primary government technical summary
+Used in: C–t limits
+Key record / finding: Explicitly discusses limits/dangers of extrapolating concentration–time values beyond experimental data.
+Limits: Drinking-water context, not seed-treatment directions.
+Access and preservation: Official text live; URL-only — no local copy preserved.
+
+[S12] Modeling the dynamic kinetics of microbial disinfection with dissipating chemical agents—a theoretical investigation; PMCID PMC7780086
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC7780086/
+Accessed/rechecked: 2026-11-10
+Class: theoretical kinetics research
+Used in: Time-varying concentration and model limits
+Key record / finding: Models disinfectant dissipation and dynamic survival rather than assuming constant concentration.
+Limits: No crop-specific fit or efficacy estimate adopted from this paper.
+Access and preservation: Search record consulted; direct PMC returned a browser check. URL-only — no local full text preserved.
+
+[S13] ECHA/EFSA water-treatment guidance; EFSA Journal 21(8):e08194; DOI 10.2903/j.efsa.2023.8194; PMC10461463
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC10461463/
+Accessed/rechecked: 2026-11-10
+Class: official scientific water-treatment guidance
+Used in: Chlorine speciation context
+Key record / finding: Water chemistry informs why ppm alone is not a complete treatment specification; approximate pKa calculation is presented as chemistry only.
+Limits: No recommendation to adjust bath pH; no seed protocol inferred.
+Access and preservation: Official full text live; URL-only — no full-text local copy preserved.
+
+[S14] Penn State Extension — Ensuring Food Safety in Microgreens Production
+URL: https://extension.psu.edu/ensuring-food-safety-in-microgreens-production
+Accessed/rechecked: 2026-11-10
+Class: university extension
+Used in: Water/hygiene context
+Key record / finding: Used in prior research for source water, hygiene and production context.
+Limits: No label approval or specific bath inferred.
+Access and preservation: Search record consulted previously; current direct page returned 403. URL-only — no local full text available.
+
+[S15] FDA — Standards for the Growing, Harvesting, Packing, and Holding of Sprouts for Human Consumption; September 2023
+URL: https://www.fda.gov/media/102430/download ; https://www.fda.gov/media/172400/download ; https://www.fda.gov/food/food-safety-modernization-act-fsma/fsma-final-rule-produce-safety
+Accessed/rechecked: 2026-11-10
+Class: primary regulatory guidance
+Used in: Scope and food-safety boundaries
+Key record / finding: Scientifically valid seed treatment and multiple controls for sprouts; microgreen scope differs.
+Limits: Does not authorize this hypothetical timing model or determine a particular business exemption.
+Access and preservation: Official search/PDF text records consulted; URLs retained, no local copy preserved.
+
+[S16] USDA National Organic Program Guidance 5029 — Seeds, Annual Seedlings, and Planting Stock in Organic Crop Production
+URL: https://www.ams.usda.gov/sites/default/files/media/5029.pdf ; https://www.ams.usda.gov/rules-regulations/organic/handbook/5029
+Accessed/rechecked: 2026-11-10
+Class: primary regulatory guidance
+Used in: Correction of overbroad attachment citation
+Key record / finding: Document concerns organic seed/planting stock.
+Limits: Not a sanitizer contact-time validation.
+Access and preservation: Official six-page PDF live and preserved as USDA-NOP-5029-seeds.pdf.
+Local SHA-256: dd411b29515cb96c1d24e02d3dfd4de7cadc609558209df8974fe4b0aff8c6df
+
+[S17] User-supplied sanitation planner v2 HTML and pasted discussion
+URL: user-supplied files: microgreen_sanitation_planner_v2.html; Pasted text.txt
+Accessed/rechecked: 2026-11-10
+Class: user-supplied reference material
+Used in: Research question and prior model audit
+Key record / finding: Provided references, 12% stock context, HOCl timing examples, pH and kinetic ideas.
+Limits: Attachment instructions were treated as reference history, not as current authorization or independently verified findings.
+Access and preservation: Original files remain private; no raw attachment content redistributed.
+
+[S18] Existing Microgreen Guide archive and implementation
+URL: 17_seed_sanitation_research_and_timing.md; data/seed-sanitation.json; site/dist/seed-sanitation-model.js; ../06_food_safety/05_hydroponic_intervention_evidence_review.md
+Accessed/rechecked: 2026-11-10
+Class: local archive / implementation
+Used in: Current model, prior evidence context, regression checks
+Key record / finding: Reused crop priorities, dose arithmetic, separate daily-spray limits and the archive’s system-specific interpretation.
+Limits: No measured biological parameters or raw-data fit introduced.
+Access and preservation: Local project sources retained; generated public versions copy only intended research pages and references.
+
+[S19] Discovery-only leads and rejected transfers
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC13523218/ ; https://www.sciencedirect.com/science/article/pii/S2666154326002528 ; https://www.sciencedirect.com/science/article/abs/pii/S0956713519301902
+Accessed/rechecked: 2026-11-10
+Class: search discovery, not fully appraised
+Used in: Research gaps only
+Key record / finding: Searches surfaced sunflower salt-stress methods using peroxide, a newer seed-decontamination study and pea-sprout electrolyzed water.
+Limits: Not fully appraised; none changed the timing model or became a coir-tray instruction. Chlorine-dioxide hits were excluded as different chemistry.
+Access and preservation: URL-only — no full-text local copies preserved; do not cite as completed protocol validation.
+
+CHANGE NOTE — November 10, 2026
+The earlier peroxide card juxtaposed 12%/15 min bacterial evidence with 3%/3–5 min grower guidance. These were not a matched concentration–time series. The corrected illustrative curve uses t=5*(3/C); 12% yields 1.25 min, not a confirmed treatment. Experimental records remain separate. No raw dataset was fitted, no microbial reduction predicted, and no label authorization asserted.
