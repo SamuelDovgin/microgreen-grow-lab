@@ -573,6 +573,8 @@ Limits: assumes negligible FAC in dilution water, stable stock FAC during mixing
 Local preservation: authored source files and meaningful model/UI tests in site/; public model exposes deterministic selfTest. Copy/export text includes current inputs, derived outputs and measurement/assumption limits.
 
 UPDATE TO S60/S61 —2026-11-10: User explicitly requested300ppm autofilled in the dilution component. Current stock default and reset now use300ppm; final volume remains500mL and target50ppm remains an arithmetic example. Field help distinguishes the prefill from a fresh measured reading, and copied notes say stock FAC used rather than asserting the prefill was measured. Earlier blank-default notes above describe the original implementation.
+
+UI PREFERENCE UPDATE —2026-11-10: User requested Spray estimate and Check the mixed batch be collapsed because they are secondary. Both now use independently expandable sections, closed initially; all salt estimates sit inside Spray estimate. Primary concentration/volume controls and stock/water amounts remain visible. This explicitly supersedes the earlier all-visible layout for these two card sections only; arithmetic and defaults are unchanged.
 </pre><details><summary>Read raw source</summary><pre>SEED SANITATION RESEARCH / RECOVERY NOTEBOOK — November 10, 2026
 Scope: planner research across this conversation and the peroxide timing correction. This is an audit log, not an application protocol.
 Section map: mismatch S01/S02; priorities S02/S03/S07; sprays S05/S06; model S10/S11/S12; chemistry S13; handling S09/S14; regulation S15/S16; provenance S17/S18; discovery gaps S19.
@@ -1148,4 +1150,6 @@ Limits: assumes negligible FAC in dilution water, stable stock FAC during mixing
 Local preservation: authored source files and meaningful model/UI tests in site/; public model exposes deterministic selfTest. Copy/export text includes current inputs, derived outputs and measurement/assumption limits.
 
 UPDATE TO S60/S61 —2026-11-10: User explicitly requested300ppm autofilled in the dilution component. Current stock default and reset now use300ppm; final volume remains500mL and target50ppm remains an arithmetic example. Field help distinguishes the prefill from a fresh measured reading, and copied notes say stock FAC used rather than asserting the prefill was measured. Earlier blank-default notes above describe the original implementation.
+
+UI PREFERENCE UPDATE —2026-11-10: User requested Spray estimate and Check the mixed batch be collapsed because they are secondary. Both now use independently expandable sections, closed initially; all salt estimates sit inside Spray estimate. Primary concentration/volume controls and stock/water amounts remain visible. This explicitly supersedes the earlier all-visible layout for these two card sections only; arithmetic and defaults are unchanged.
 </pre></details><p><a href="docs/sanitation_research_resource_log_2026-11-10.txt" download>Download original source</a></p></main><footer><span>Microgreen Guide / Grow Lab</span><span>Evidence, units and assumptions.</span></footer></body></html>

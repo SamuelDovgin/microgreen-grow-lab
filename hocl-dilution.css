@@ -2,3 +2,5 @@
 .hcd-volume-control{margin-top:12px}
 
 @media(max-width:640px){.hocl-dilution input,.hocl-dilution select{font-size:16px}}
+
+.hcd-extras{border-top:1px solid var(--line);padding-top:12px;margin-top:16px;gap:10px}.hcd-extras details{min-width:0;border:1px solid var(--line);border-radius:7px;padding:0 12px}.hcd-extras summary{cursor:pointer;padding:10px 0;font-size:12px;font-weight:600;color:var(--green)}.hcd-extras details[open]{padding-bottom:12px}.hcd-extras .hcd-salt{margin-top:0;padding-top:10px;border-top:0}.hcd-extras details>summary:focus-visible{outline-offset:0}
