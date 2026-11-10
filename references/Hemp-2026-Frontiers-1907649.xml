@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.3 20210610//EN" "JATS-journalpublishing1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="1.3" xml:lang="EN">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">Front. Plant Sci.</journal-id>
+<journal-title-group>
+<journal-title>Frontiers in Plant Science</journal-title>
+<abbrev-journal-title abbrev-type="pubmed">Front. Plant Sci.</abbrev-journal-title>
+</journal-title-group>
+<issn pub-type="epub">1664-462X</issn>
+<publisher>
+<publisher-name>Frontiers Media S.A.</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.3389/fpls.2026.1907649</article-id>
+<article-version article-version-type="Version of Record" vocab="NISO-RP-8-2008"/>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Original Research</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>The viability gambit: an optimized disinfection protocol for industrial hemp (<italic>Cannabis sativa</italic> L.) seeds</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Gowlikar</surname><given-names>Rachna</given-names></name>
+<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+<uri xlink:href="https://loop.frontiersin.org/people/3281081/overview"/>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x2013; original draft</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Pender</surname><given-names>Grace</given-names></name>
+<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+<uri xlink:href="https://loop.frontiersin.org/people/3683469/overview"/>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kacprzyk</surname><given-names>Joanna</given-names></name>
+<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+<uri xlink:href="https://loop.frontiersin.org/people/347424/overview"/>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Destailleur</surname><given-names>Alice</given-names></name>
+<xref ref-type="aff" rid="aff2"><sup>2</sup></xref>
+<uri xlink:href="https://loop.frontiersin.org/people/3726344/overview"/>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Nayak</surname><given-names>Aditya</given-names></name>
+<xref ref-type="aff" rid="aff2"><sup>2</sup></xref>
+<uri xlink:href="https://loop.frontiersin.org/people3726386/overview"/>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Melzer</surname><given-names>Rainer</given-names></name>
+<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="c001"><sup>*</sup></xref>
+<uri xlink:href="https://loop.frontiersin.org/people/184000/overview"/>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Project-administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project administration</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>Schilling</surname><given-names>Susanne</given-names></name>
+<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="c001"><sup>*</sup></xref>
+<uri xlink:href="https://loop.frontiersin.org/people/1943441/overview"/>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Data curation" vocab-term-identifier="https://credit.niso.org/contributor-roles/data-curation/">Data curation</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x2013; original draft</role>
+<role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role>
+</contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><institution>School of Biology and Environmental Science and UCD Earth Institute, University College</institution>, <city>Dublin</city>,&#xa0;<country country="ie">Ireland</country></aff>
+<aff id="aff2"><label>2</label><institution>Plantik Biosciences</institution>, <city>Paris</city>,&#xa0;<country country="fr">France</country></aff>
+<author-notes>
+<corresp id="c001"><label>*</label>Correspondence: Susanne Schilling, <email xlink:href="mailto:susanne.schilling@ucd.ie">susanne.schilling@ucd.ie</email>; Rainer Melzer, <email xlink:href="mailto:rainer.melzer@ucd.ie">rainer.melzer@ucd.ie</email></corresp>
+</author-notes>
+<pub-date publication-format="electronic" date-type="pub" iso-8601-date="2026-10-13">
+<day>13</day>
+<month>10</month>
+<year>2026</year>
+</pub-date>
+<pub-date publication-format="electronic" date-type="collection">
+<year>2026</year>
+</pub-date>
+<volume>17</volume>
+<elocation-id>1907649</elocation-id>
+<history>
+<date date-type="received">
+<day>12</day>
+<month>06</month>
+<year>2026</year>
+</date>
+<date date-type="rev-recd">
+<day>11</day>
+<month>09</month>
+<year>2026</year>
+</date>
+<date date-type="accepted">
+<day>23</day>
+<month>09</month>
+<year>2026</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>Copyright &#xa9; 2026 Gowlikar, Pender, Kacprzyk, Destailleur, Nayak, Melzer and Schilling.</copyright-statement>
+<copyright-year>2026</copyright-year>
+<copyright-holder>Gowlikar, Pender, Kacprzyk, Destailleur, Nayak, Melzer and Schilling</copyright-holder>
+<license>
+<ali:license_ref start_date="2026-10-13">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+<license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License (CC BY)</ext-link>. The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+</license>
+</permissions>
+<abstract>
+<p>Hemp (<italic>Cannabis sativa</italic> L.) is an increasingly important crop with applications spanning fiber, seed oil and bioactive cannabinoid production, yet the development of reliable tissue culture systems for this species remains a significant challenge. The establishment of axenic seedling cultures is a prerequisite for hypocotyl-based regeneration and future genetic transformation pipelines, but hemp seeds can harbor diverse microbial communities which can make seed disinfection challenging. Here, we evaluate several disinfection strategies across seven industrial hemp cultivars including treatment with hydrogen peroxide and sodium hypochlorite as well as the Prochloraz-based fungicide Octave and Plant Preservative Mixture (PPM&#x2122;) on both, in-house produced and commercially sourced seed material. Across all treatments and accessions, in-house glasshouse-harvested seeds achieved higher disinfection rates than commercially sourced material regardless of the protocol applied (n=3681 and 1886, respectively). Among the disinfection treatments evaluated, a baseline of 75% ethanol combined with sequential hydrogen peroxide or sodium hypochlorite incubation performed well for certain seed batches, though variation in viable seedling rate remained high (~30% to ~80% viable seedlings). Supplementation with PPM&#x2122; increased the rates of viable seedlings to ~60% in some cases. Beyond their effect on contamination, disinfection treatments appeared to influence the morphogenic fate of hypocotyl explants independently of disinfection outcomes. Here, seedling treatment with Octave was associated with shoot and root co-regeneration in the absence of exogenous plant growth regulators. Together, these findings provide a practical framework for axenic hemp seed culture that can be used as starting point requiring local adaptation based on seed source, batch history and the intended downstream application.</p>
+</abstract>
+<kwd-group>
+<kwd><italic>Cannabis sativa</italic> L.</kwd>
+<kwd>hemp</kwd>
+<kwd>hydrogen peroxide</kwd>
+<kwd>hypocotyl regeneration</kwd>
+<kwd>octave</kwd>
+<kwd>seed disinfection</kwd>
+<kwd>sodium hypochlorite</kwd>
+<kwd>tissue culture</kwd>
+</kwd-group>
+<funding-group>
+<funding-statement>The author(s) declared that financial support was received for this work and/or its publication. This publication has emanated from research conducted with the financial support of Research Ireland under the Government of Ireland Postgraduate Program Enterprise Partnership Scheme (Grant No. EPSPG/2023/1652). The authors gratefully acknowledge the support of enterprise partner Plantik Biosciences, France.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="5"/>
+<table-count count="0"/>
+<equation-count count="0"/>
+<ref-count count="32"/>
+<page-count count="9"/>
+<word-count count="4631"/>
+</counts>
+<custom-meta-group>
+<custom-meta>
+<meta-name>section-at-acceptance</meta-name>
+<meta-value>Plant Biotechnology</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="s1" sec-type="intro">
+<title>Introduction</title>
+<p>Hemp (<italic>Cannabis sativa</italic> L.) is a highly versatile crop with a broad range of industrial, agricultural and pharmacological applications, including the production of fiber, seed oil and bioactive cannabinoids such as cannabidiol (CBD) (<xref ref-type="bibr" rid="B22">Small, 2015</xref>; <xref ref-type="bibr" rid="B3">Andre et&#xa0;al., 2016</xref>; <xref ref-type="bibr" rid="B20">Schilling et&#xa0;al., 2023</xref>). Following decades of regulatory restriction, hemp cultivation has undergone a global resurgence and is now practiced across more than 30 countries. This expansion has created a growing demand for scalable, genetically consistent planting material and has renewed interest in developing robust tissue culture systems for this species (<xref ref-type="bibr" rid="B4">Chandra et&#xa0;al., 2017</xref>).</p>
+<p>Tissue culture and plant regeneration are foundational tools in modern crop research and breeding. The ability to regenerate whole plants from isolated explants is a prerequisite for genetic transformation, enabling the stable introduction of defined traits and the functional characterization of genes of interest. In many crop species, efficient transformation and regeneration pipelines have accelerated both basic research and the development of improved varieties (<xref ref-type="bibr" rid="B12">Hesami et&#xa0;al., 2021</xref>). In hemp, however, these tools remain relatively poorly developed, representing a significant bottleneck for both fundamental research and applied breeding programs. High levels of recalcitrance are reported for <italic>in vitro</italic> shoot regeneration of hemp (<xref ref-type="bibr" rid="B31">Wielgus et&#xa0;al., 2008</xref>; <xref ref-type="bibr" rid="B23">Sm&#xfd;kalov&#xe1; et&#xa0;al., 2019</xref>; <xref ref-type="bibr" rid="B1">Adhikary et&#xa0;al., 2021</xref>), making transformation based on tissue culture challenging. In recent years, hypocotyl explants are among the most promising target tissues for hemp tissue culture and transformation, as they consist of rapidly dividing cells with broad developmental plasticity and have been shown to undergo organogenesis under hormone-free conditions in some accessions (<xref ref-type="bibr" rid="B6">Gal&#xe1;n-&#xc1;vila et&#xa0;al., 2020</xref>; <xref ref-type="bibr" rid="B12">Hesami et&#xa0;al., 2021</xref>). However, the utility of hypocotyl-based regeneration systems depends entirely on the successful axenic establishment of seedlings from surface-sterilized seeds. This upstream step is non-trivial in hemp. Seeds harbor a taxonomically diverse endophytic microbiome, including bacterial genera such as <italic>Pseudomonas</italic>, <italic>Pantoea</italic> and <italic>Bacillus</italic>, and fungal endophytes from genera including <italic>Alternaria</italic>, <italic>Cladosporium</italic> and <italic>Aureobasidium</italic>, which are deeply embedded within seed tissues and resistant to standard surface disinfection (<xref ref-type="bibr" rid="B18">Punja et&#xa0;al., 2018</xref>). <italic>In vitro</italic> cultures are additionally susceptible to fast-growing opportunistic pathogens common in hemp production environments, including <italic>Botrytis cinerea</italic> and <italic>Penicillium</italic> spp (<xref ref-type="bibr" rid="B17">Punja et&#xa0;al., 2019</xref>). Previous studies have established hemp seed disinfection with hydrogen peroxide (<xref ref-type="bibr" rid="B24">Sorokin et&#xa0;al., 2021</xref>) as well as ethanol in combination with sodium hypochlorite (<xref ref-type="bibr" rid="B6">Gal&#xe1;n-&#xc1;vila et&#xa0;al., 2020</xref>; <xref ref-type="bibr" rid="B12">Hesami et&#xa0;al., 2021</xref>). However, systematic comparisons of the different disinfection protocols remain scarce. A further complication is the substantial genetic and phenotypic diversity among industrial hemp cultivars (<xref ref-type="bibr" rid="B28">Vergara et&#xa0;al., 2017</xref>; <xref ref-type="bibr" rid="B14">Kavanagh et&#xa0;al., 2025</xref>; <xref ref-type="bibr" rid="B27">Trubanov&#xe1; et&#xa0;al., 2026</xref>). Seed provenance adds another layer of variability: field-harvested commercial seeds are exposed to diverse soil and airborne microbial communities during development, harvest and storage, whereas seeds produced under controlled glasshouse conditions carry a lower and more predictable contamination burden. These sources of variation are rarely accounted for systematically in published disinfection protocols, which are typically reported for a single cultivar and seed source without broader validation.</p>
+<p>Here, we present a comparative analysis of seed surface disinfection protocols across seven industrial hemp accessions, evaluating standalone chemical treatments including H<sub>2</sub>O<sub>2</sub> and NaOCl at varying concentrations alongside combinatorial protocols using a standard ethanol and sodium hypochlorite baseline supplemented with the Prochloraz-based fungicide Octave and Plant Preservative Mixture&#x2122; (PPM&#x2122;). We further assess the regeneration competence of hypocotyl explants in hormone-free culture. Our results illustrate the batch- and context-dependent nature of disinfection outcomes and support the development of more robust regeneration systems for this increasingly important crop.</p>
+</sec>
+<sec id="s2" sec-type="materials|methods">
+<title>Materials and methods</title>
+<sec id="s2_1">
+<title>Plant material and cultivation</title>
+<p>Hemp seeds from seven cultivars (&#x2018;Felina 32&#x2019;, &#x2018;Ferimon&#x2019;, &#x2018;Santhica 27&#x2019;, &#x2018;Kompolti&#x2019;, &#x2018;USO31&#x2019;, &#x2018;Futura 75&#x2019; and &#x2018;Fedora 17&#x2019;) were obtained from two sources: commercially certified field-harvested seed lots (HEMPOINT, Czech Republic) and in-house produced seed stocks (<xref ref-type="supplementary-material" rid="ST1"><bold>Supplementary Table S1</bold></xref>). In-house seeds of were generated from plants cultivated under controlled glasshouse conditions at University College Dublin, maintained under glasshouse conditions following (<xref ref-type="bibr" rid="B20">Schilling et&#xa0;al., 2023</xref>). All seeds were stored at 4&#xa0;&#xb0;C in silica gel in darkness until use. Hemp explants on were grown on &#xbd; MS medium in a plant cultivation room under red&#x2013;blue LEDs, light intensity approximately 500 &#x3bc;mol sec&#x2212;1 at approximately 15&#xa0;cm distance from the light source; HORTILED MULTI, 44 W; HORTILUX, <ext-link ext-link-type="uri" xlink:href="https://www.hortilux.com">https://www.hortilux.com</ext-link> lights at a constant temperature of 25&#xa0;&#xb0;C under a 16-hour photoperiod.</p>
+</sec>
+<sec id="s2_2">
+<title>Surface disinfection</title>
+<p>All disinfection treatments were preceded by an ethanol incubation in which approximately 30 seeds were agitated at 72 rpm in 40&#xa0;ml 75% ethanol for three minutes. All disinfection treatments were followed by three to four washing steps. For washing, all liquid was removed completely, and seeds were rinsed with 40&#xa0;ml sterile distilled water for 20 minutes at 72 rpm each time. In case any lathering was still present washing continued until the discarded liquid was free of any traces of foam formation.</p>
+<p>For water, vinegar (1%) and sodium chloride (1%) treatment, 20 seeds were agitated in 30&#xa0;ml of the respective solution for 15 minutes only adapted the use of vinegar and sodium chloride similar to what has been previously described (<xref ref-type="bibr" rid="B16">Nakaune et&#xa0;al., 2012</xref>; <xref ref-type="bibr" rid="B9">Gilbert et&#xa0;al., 2023</xref>). For sodium hypochlorite treatments approximately 30 seeds were agitated in 40&#xa0;ml 20% or 50% commercial bleach (approximately 1% and 3% NaOCl) at 72 rpm for 20 minutes for the hydrogen peroxide treatment, 30 seeds were soaked in 40&#xa0;ml 1% or 3% H<sub>2</sub>O<sub>2</sub> in darkness at 25&#xa0;&#xb0;C in sequential incubations of 24, 48, 24 hours, similar to what has been described previously (<xref ref-type="bibr" rid="B24">Sorokin et&#xa0;al., 2021</xref>). Between each H<sub>2</sub>O<sub>2</sub> incubation three wash steps with sterile deionized water were conducted. For the Octave treatment, approximately 30 seeds were agitated in a Prochloraz-based fungicide solution (0.8&#xa0;g Octave (Bayer CropScience) dissolved in 40&#xa0;ml deionized and autoclaved water) at 180 rpm for two hours, rinsed four to five times with sterile deionized water, then incubated in sterile water in darkness for 48 hours before transfer to growth medium.</p>
+<p>Plant Preservative Mixture&#x2122; (PPM&#x2122;, Plant Cell Technology), a broad-spectrum biocide for plant tissue culture, was not applied as a seed treatment but incorporated directly into &#xbd; Murashige and Skoog (MS) basal salt growth medium at the manufacturer&#x2019;s recommended concentration (0.1%). These treatments were applied individually and in combination in replicates (see <xref ref-type="supplementary-material" rid="ST1"><bold>Supplementary Table S1</bold></xref>).</p>
+<p>Following surface disinfection, seeds were cultured at a density of 10 seeds per plate in 9&#xa0;cm diameter Petri dishes containing &#xbd; MS medium and 0.5% agar. The total number of seeds per experiment varied between 20 and 200 (<xref ref-type="supplementary-material" rid="ST1"><bold>Supplementary Table S1</bold></xref>). Seeds were scored as germinated after 14 days if the seedling was free from visible contamination and had produced at least one true leaf pair. In case of contamination or if the seedling failed to develop true leaves, seedlings were scored as non-viable.</p>
+</sec>
+<sec id="s2_3">
+<title><italic>In vitro</italic> regeneration from hemp hypocotyl explants</title>
+<p>Hypocotyl explants were excised from sterile seedlings 7&#x2013;14 days after germination and transferred to hormone-free &#xbd; MS medium (<xref ref-type="bibr" rid="B7">Gal&#xe1;n-&#xc1;vila et&#xa0;al., 2021</xref>). Shoot regeneration was counted as small new leaves emerging; root regeneration was counted as small roots with root hairs emerging. Regeneration was scored after 25 days as &#x201c;shoot only&#x201d; if new leaves emerged from the hypocotyl explant, &#x201c;root only&#x201d; if regeneration of roots was observed and &#x201c;shoot and root&#x201d; if both, roots and shoots developed from the explant. Explants with neither shoot nor root development were scored as &#x201c;no regeneration&#x201d;. Explants were transferred to new MS medium every ten to 14 days for approximately five weeks. Some of the explants were transferred to soil after that time and cultivated until flowering (approximately 115 days in total) (<xref ref-type="bibr" rid="B6">Gal&#xe1;n-&#xc1;vila et&#xa0;al., 2020</xref>).</p>
+</sec>
+<sec id="s2_4">
+<title>Statistical analysis and data visualization</title>
+<p>All statistical analyses and figures were generated in R (version 2026.04.0; <xref ref-type="bibr" rid="B19">R Core Team, 2026</xref>). Two complementary approaches were used depending on the data structure. Seedling disinfection yield was analyzed using binomial generalized linear models (GLM), with pairwise comparisons performed using Tukey&#x2019;s HSD <italic>post-hoc</italic> test implemented in the R emmeans package (cran.r-project.org/package=emmeans).</p>
+<p>Pairwise differences in regeneration outcome were assessed using Fisher&#x2019;s exact test, which does not rely on large-sample approximations. <italic>Post hoc</italic> tests were conducted using Fisher&#x2019;s exact. Differences in morphogenic outcome distribution across accessions were assessed using a Chi-squared test of independence with simulated p-values. The overall effect of seed provenance on disinfection rate was tested using a two-sample t-test. Figures were generated using the ggplot2 package (<xref ref-type="bibr" rid="B30">Wickham, 2016</xref>).</p>
+</sec>
+</sec>
+<sec id="s3" sec-type="results">
+<title>Results</title>
+<sec id="s3_1">
+<title>Ethanol combined with hydrogen peroxide or sodium hypochlorite are effective for sterilizing hemp seeds</title>
+<p>To establish protocols suitable for routine axenic tissue culture for hemp, seeds of different hemp cultivars were subjected to a variety of treatments with different degrees of stringency and were subsequently germinated on MS agar plates and categorized into viable (not contaminated, developing true leaves) and non-viable (visibly contaminated, no growth of cotyledons or true leaves) (<xref ref-type="fig" rid="f1"><bold>Figures&#xa0;1a-c</bold></xref>). Water-only controls and sodium chloride- or vinegar-supplemented seed treatments produced near-universal contamination which resulted in germination failure across all accessions, confirming that more stringent seed treatment is a prerequisite for successful establishment tissue cultures (<xref ref-type="supplementary-material" rid="SF1"><bold>Supplementary Figure S1</bold></xref>). Further, treatment using 75% ethanol combined with 1% H<sub>2</sub>O<sub>2</sub> produced viable disinfected seeds at a ratio of 25 &#x2013; 75% (<xref ref-type="fig" rid="f1"><bold>Figure&#xa0;1d</bold></xref>; <xref ref-type="supplementary-material" rid="SF1"><bold>Supplementary Figure S1</bold></xref>), which is lower than the germination rate we observed on soil (42 &#x2013; 80%; <xref ref-type="supplementary-material" rid="ST1"><bold>Supplementary Table S1</bold></xref>).</p>
+<fig id="f1" position="float">
+<label>Figure&#xa0;1</label>
+<caption>
+<p>Effect of varying seed disinfection protocols on C<italic>annabis sativa.</italic> L seedling decontamination. Hemp seeds (<bold>a</bold>, untreated hemp seeds) were treated with different disinfection protocols and were scored if they were contaminated <bold>(b)</bold> or disinfected <bold>(c)</bold> after incubation. The mean percentage of disinfected seedlings varied depending on the disinfection protocol used <bold>(d)</bold>, with significant differences between water (n=20), NaCl (sodium chloride) (n=20) or vinegar (n=20) treated plants and all other disinfection methods, including 1% H<sub>2</sub>O<sub>2</sub> (n=289), 1% NaOCl (n=90), 1% NaOCl combined with Octave (n=90), 1% NaOCl combined with PPM&#x2122; (n=90) and 1% NaOCl combined with Octave and PPM&#x2122; (n=90) (Tukey&#x2019;s HSD, ***, p&lt;0.001). Overall, seedlings derived from seeds that were grown in-house (n=3681) showed significantly higher disinfection rates as compared to commercially sourced seeds (&#x2018;industry&#x2019;, n=1886) over a variety of different disinfection treatments (e, ***, p&lt;0.001) (<xref ref-type="supplementary-material" rid="ST1"><bold>Supplementary Table S1</bold></xref>). Scale bar 5&#xa0;mm <bold>(a)</bold> and 10&#xa0;mm <bold>(b,c)</bold>. Error bars indicate standard error <bold>(d, e)</bold>.</p>
+</caption>
+<graphic mimetype="image" mime-subtype="tiff" xlink:href="fpls-17-1907649-g001.tif">
+<alt-text content-type="machine-generated">Panel a shows a pile of seeds on a white background. Panel b displays seeds with fungal contamination growing on a clear agar plate. Panel c presents green seedlings with roots on an agar plate. Panel d is a bar graph comparing percent germinated uncontaminated seedlings among different treatments, showing higher success with sodium hypochlorite and combined treatments. Panel e is a bar graph demonstrating a higher percentage of germinated uncontaminated seedlings from in-house seeds versus industry seeds, with a statistically significant difference noted by triple asterisks.</alt-text>
+</graphic></fig>
+<p>Next, four NaOCl-based protocols were compared to assess whether supplementary biocidal agents improve disinfected seedling yield (<xref ref-type="fig" rid="f1"><bold>Figure&#xa0;1d</bold></xref>). In addition to 1% NaOCl alone we supplemented NaOCl with the fungicide Octave and Plant Preservative Mixture (PPM&#x2122;). Here, the yield of non-contaminated seedlings was significantly higher than in water, sodium chloride and vinegar treatments (Tukey&#x2019;s HSD, p&lt;0.001), but broadly similar across 1% NaOCl alone, NaOCl combined with Octave, NaOCl combined with PPM&#x2122;, and NaOCl combined with both Octave and PPM&#x2122;, with no statistically significant differences detected among the latter treatments (<xref ref-type="fig" rid="f1"><bold>Figure&#xa0;1d</bold></xref>). While all experiments outlined so far used seeds produced locally in our greenhouse or growth rooms (termed in-house seeds henceforth), we also tested H<sub>2</sub>O<sub>2</sub> and NaOCl based protocols on commercially sourced seeds. Commercially sourced seeds generally exhibited lower disinfection rates compared to in-house seeds, yielding an overall mean of ~10% disinfected seedlings across all treatments. (<xref ref-type="supplementary-material" rid="ST1"><bold>Supplementary Table S1</bold></xref>). In commercially sourced seeds, NaOCl combined with PPM&#x2122; performed significantly better than all other NaOCl based treatments (<xref ref-type="supplementary-material" rid="SF2"><bold>Supplementary Figure S2</bold></xref>). The observation that in-house seeds produced a higher percentage of sterile seedlings when compared to industry-sourced seeds persisted across all accessions and treatments in our screens. In-house seeds achieved a higher disinfection rate as compared to commercially sourced material across a variety of different hemp cultivars and treatments in our hands (Student&#x2019;s t-test, p&lt;0.001; <xref ref-type="fig" rid="f1"><bold>Figure&#xa0;1e</bold></xref>; <xref ref-type="supplementary-material" rid="ST1"><bold>Supplementary Table S1</bold></xref>). Uncontaminated viable seedlings appeared mostly healthy, free of necrosis or visible signs of stress such as discoloration (<xref ref-type="fig" rid="f1"><bold>Figure&#xa0;1c</bold></xref>).</p>
+</sec>
+<sec id="s3_2">
+<title>Disinfection treatments influence hemp hypocotyl regeneration outcomes</title>
+<p>One important aspect of tissue culture is plant regeneration. For hemp, regeneration of plants from hypocotyls is one prominent approach. To test hypocotyl regeneration for hemp, hypocotyl explants recovered from sterilized seeds were transferred to hormone-free &#xbd; MS medium and scored for regeneration outcome after 25 days. Notably, we sometimes observed bipolar regeneration from hypocotyl explants, with both shoot and roots developing from opposite sides of the same explant, referred further as root and shoot regeneration. Regeneration of only either shoot or root from hypocotyl explants was also frequently observed (<xref ref-type="fig" rid="f2"><bold>Figure&#xa0;2</bold></xref>).</p>
+<fig id="f2" position="float">
+<label>Figure&#xa0;2</label>
+<caption>
+<p>Effect of different disinfection additives on the regeneration outcomes and viability of <italic>Cannabis sativa</italic>. L hypocotyl explants. Explants derived from seedlings of the hemp cultivar &#x2018;Felina 32&#x2019; which underwent different disinfection protocols (x-axis) at different times of the year (<xref ref-type="supplementary-material" rid="ST2"><bold>Supplementary Table S2</bold></xref>) were scored for their regeneration and categorized as no regeneration (yellow), only root regeneration (teal), only shoot regeneration (green) and shoot and root regeneration (dark blue). Selected significant differences are indicated with brackets (Fishers exact test, **, p&lt;0.01; ***, p&lt;0.001).</p>
+</caption>
+<graphic mimetype="image" mime-subtype="tiff" xlink:href="fpls-17-1907649-g002.tif">
+<alt-text content-type="machine-generated">Bar chart showing the percentage of explants with four regeneration responses across seven treatments: 1% hydrogen peroxide, 3% hydrogen peroxide, 1% sodium hypochlorite, 3% sodium hypochlorite, 1% sodium hypochlorite plus Octave, 1% sodium hypochlorite plus PPM, and 1% sodium hypochlorite plus Octave and PPM. Colors represent no regeneration (yellow), only root regeneration (teal), only shoot regeneration (green), and shoot and root regeneration (purple). Statistical significance is indicated by asterisks above specific comparisons.</alt-text>
+</graphic></fig>
+<p>Different seed disinfection treatments were analyzed for their effect on hypocotyl regeneration. Most hypocotyl explants generated from seeds of the cultivar &#x2018;Felina 32&#x2019; (in-house) disinfected with 1% H<sub>2</sub>O<sub>2</sub> or NaOCl did not regenerate or regenerated only roots, with only a minor proportion producing shoots or shoots and roots (<xref ref-type="fig" rid="f2"><bold>Figure&#xa0;2</bold></xref>). In contrast, explants from seeds disinfected with NaOCl combined with Octave as well as NaOCl combined with Octave and PPM showed a significantly higher proportion of shoot and root regeneration compared to sole NaOCl or H<sub>2</sub>O<sub>2</sub> treatments (Fisher&#x2019;s Exact Test, p&lt;0.01). Additionally, the percentage of explants showing no regeneration was significantly lower in explants originally disinfected with 1% NaOCl combined with PPM&#x2122; as compared to those treated with 1% NaOCl alone (Fisher&#x2019;s Exact Test, p&lt;0.001; <xref ref-type="fig" rid="f2"><bold>Figure&#xa0;2</bold></xref>; <xref ref-type="supplementary-material" rid="ST2"><bold>Supplementary Table S2</bold></xref>). In contrast, explants derived from seeds of the cultivar &#x2018;Ferimon&#x2019; (commercial), regenerated shoots as well as roots best when initially disinfected with H<sub>2</sub>O<sub>2</sub> without the addition of more stringent disinfection agents (<xref ref-type="supplementary-material" rid="SF3"><bold>Supplementary Figure S3</bold></xref>).</p>
+</sec>
+<sec id="s3_3">
+<title>Regeneration capacity varied across hemp accessions and was influenced by seed provenance</title>
+<p>Given the different responses of the two cultivars tested, we assessed the regeneration of hypocotyl explants across multiple accessions under a standardized disinfection protocol to establish whether regeneration competence is broadly conserved or variable within hemp (<xref ref-type="fig" rid="f3"><bold>Figure&#xa0;3</bold></xref>). Explants from four hemp cultivars were evaluated following disinfection with 1% H<sub>2</sub>O<sub>2</sub> (&#x2018;Fedora 17&#x2019;, &#x2018;Felina 32&#x2019;, &#x2018;Kompolti&#x2019; and &#x2018;USO31&#x2019;). Significant variation in morphogenic outcome distribution was detected among the accessions (Chi-squared test, &#x3c7;<sup>2</sup>&#xa0;=&#xa0;27.71, df =9, p&lt;0.01). Shoot and root co-regeneration was most frequent in &#x2018;Fedora17&#x2019;, with around a third of explants, while co-regeneration rate was significantly lower in &#x2018;Kompolti&#x2019; and &#x2018;Felina 32&#x2019; (Fishers exact test, p&lt;0.05). However, in all cultivars around half of the total explants did not show visible regeneration of either leaves or roots (<xref ref-type="fig" rid="f3"><bold>Figure&#xa0;3</bold></xref>).</p>
+<fig id="f3" position="float">
+<label>Figure&#xa0;3</label>
+<caption>
+<p>Regeneration outcomes across various <italic>Cannabis sativa.</italic> L cultivars following 1% H<sub>2</sub>O<sub>2</sub> surface disinfection. Explants of seeds disinfected with 1% H<sub>2</sub>O<sub>2</sub> of different hemp cultivars were treated at same the time (<xref ref-type="supplementary-material" rid="ST2"><bold>Supplementary Table S2</bold></xref>) (&#x2018;Fedora 17&#x2019; (n=27), &#x2018;Felina 32&#x2019; (n=83), &#x2018;Kompolti&#x2019; (n=25), &#x2018;USO 31&#x2019; (n=37)) were scored for their regeneration and categorized as no regeneration (yellow), only root regeneration (teal), only shoot regeneration (green) and shoot and root regeneration (dark blue). Selected significant differences are indicated with brackets (Fishers exact test, *, p&lt;0.05).</p>
+</caption>
+<graphic mimetype="image" mime-subtype="tiff" xlink:href="fpls-17-1907649-g003.tif">
+<alt-text content-type="machine-generated">Bar chart comparing four cultivars&#x2014;Fedora 17, Felina 32, Kompolti, and USO31&#x2014;by percentages of explants showing no regeneration, only root, only shoot, or both shoot and root regeneration. Felina 32 demonstrates significantly higher combined regeneration compared to other cultivars as indicated by statistical bracket markers.</alt-text>
+</graphic></fig>
+</sec>
+<sec id="s3_4">
+<title>Seed-to-seed regeneration via hypocotyl explants in hemp</title>
+<p>To demonstrate that sterilized explants can complete the full regeneration cycle, the developmental progression from hypocotyl explant to fertile adult plant was documented (<xref ref-type="fig" rid="f4"><bold>Figure&#xa0;4</bold></xref>). Sterile hypocotyl explants placed on hormone-free &#xbd; MS medium developed shoots within two weeks (<xref ref-type="fig" rid="f4"><bold>Figures&#xa0;4a&#x2013;d</bold></xref>). Explants regenerated shoots and roots from the same hypocotyl in a polar way, with one end developing shoots and the other developing roots (<xref ref-type="fig" rid="f4"><bold>Figure&#xa0;4e</bold></xref>) after approximately three weeks. Plantlets that established both roots and shoots were subsequently transferred to soil and grown to maturity in a growth room (<xref ref-type="fig" rid="f4"><bold>Figure&#xa0;4f</bold></xref>). Plants derived from this protocol reached reproductive maturity at 16 weeks and set seed after 19 weeks (<xref ref-type="fig" rid="f4"><bold>Figures&#xa0;4g, h</bold></xref>) which were successfully germinated and grown into a mature plant (not shown).</p>
+<fig id="f4" position="float">
+<label>Figure&#xa0;4</label>
+<caption>
+<p><italic>In vitro</italic> hypocotyl-mediated regeneration and <italic>ex vitro</italic> establishment of <italic>Cannabis sativa.</italic> <bold>(L)</bold> Hypocotyl explants of the hemp cultivar &#x2018;Felina 32&#x2019; were excised from aseptically germinated seedlings and inoculated on hormone free growth medium <bold>(a)</bold>. After approximately four days growth of ground tissue was observed <bold>(b)</bold>. Adventitious roots emerged after about five days directly from the hypocotyl explant <bold>(c)</bold>, demonstrating direct root regeneration without an intervening callus phase. Multiple shoots with leaves emerged from the regenerating hypocotyl explant after approximately 7&#x2013;15 days <bold>(d)</bold>. Both shoots and roots were present on a proportion of explants after a minimum of 25 days <bold>(e)</bold>. Rooted plantlets with shoots were transferred to soil and acclimatized in a vermiculite-soil based substrate under controlled humidity and light conditions <bold>(f)</bold>. Hemp plants reached full maturity and reproductive stage after circa 115 days <bold>(g)</bold> and were able to produce mature seeds after a total of 135 days of cultivation (h, white arrowhead). Scale bars: <bold>(a, e)</bold> = 10&#xa0;mm; (b&#x2013;d) = 5&#xa0;mm; <bold>(f)</bold> = 10&#xa0;mm; <bold>(g)</bold> = 50&#xa0;mm; <bold>(h)</bold> = 20&#xa0;mm.</p>
+</caption>
+<graphic mimetype="image" mime-subtype="tiff" xlink:href="fpls-17-1907649-g004.tif">
+<alt-text content-type="machine-generated">Panel a shows several small green plant segments on a light background. Panel b depicts a close-up of a single plant segment. Panel c displays a germinating plant with a white root emerging. Panel d shows a small plant with roots and green shoots. Panel e presents a longer plantlet with roots and leafy growth. Panel f shows a young plantlet in soil with green foliage. Panel g displays a taller potted plant with elongated leaves and multiple branches. Panel h shows a mature plant with broad leaves and prominent buds against a purple background.</alt-text>
+</graphic></fig>
+</sec>
+</sec>
+<sec id="s4" sec-type="discussion">
+<title>Discussion</title>
+<p>Establishing axenic seedling cultures from surface-disinfected hemp seeds is a prerequisite for hypocotyl-based regeneration and any downstream genetic transformation pipeline, yet this upstream step has received surprisingly little systematic attention in the hemp tissue culture literature, where usually standard disinfection methods are used (<xref ref-type="bibr" rid="B32">Yildiz and Er, 2002</xref>; <xref ref-type="bibr" rid="B13">Huang et&#xa0;al., 2011</xref>). Here we present a comparative evaluation of disinfection strategies for hemp, and examine how treatment chemistry, seed provenance and cultivar influence the subsequent morphogenic competence of hypocotyl explants.</p>
+<p>Water, sodium chloride and vinegar controls produced near-universal contamination or germination failure across all accessions, confirming that more stringent treatment is a prerequisite for axenic hemp seed culture. Among the treatments evaluated, a 75% ethanol baseline combined with sequential 1% H<sub>2</sub>O<sub>2</sub> incubation performed broadly comparably to NaOCl-based protocols supplemented with Octave or PPM&#x2122;. It is important point out that intrinsic germination failure of seedlings is difficult to distinguish from disinfection-induced decrease in germination rate. Hemp seed germination rate is lower on MS plates than on soil, thus a baseline comparison with soil is not informative. A baseline with non-disinfected seeds on MS plates is equally not feasible, because seedlings developing from non-disinfected seeds will have a much higher likelihood of contamination, therefore failing to germinate or progress into vegetative growth. While we did not observe adverse effects of the treatment such as necrosis or signs of oxidative stress in viable seedlings, we cannot exclude that our disinfection treatment is altering the plant physiology or causing adverse effects in the surviving seedlings due to phytotoxic effects. However, since germination rates observed for disinfected seeds germinated on soil were only slightly reduced as compared to untreated seeds germinated on soil, we consider phytotoxic effects of treatments largely negligible. A consistent finding across the entire dataset was the effect of seed provenance. In-house glasshouse-produced seeds achieved sterile seedling rates approximately over three times higher than commercially sourced material, and this difference was statistically significant and robust across accessions and treatment conditions. Commercially sourced seeds showed an overall average of ~10% disinfected seedling yield, but supplementation with Octave or PPM&#x2122; did lower contamination in some cases. While PPM is an established disinfection agent in plant cell culture (<xref ref-type="bibr" rid="B8">George and Tripepi, 2001</xref>), Octave is mostly used in industrial contexts as a fungizide (<xref ref-type="bibr" rid="B5">Denner et&#xa0;al., 1997</xref>; <xref ref-type="bibr" rid="B10">Henricot and Wedgwood, 2013</xref>) and is not typically used in plant cell culture. Here we demonstrate that it can be used for seed disinfection although further research regarding its effectiveness in hemp and possible applications for other species is needed. The provenance-driven difference likely reflects a higher and more variable microbial burden in field-produced, commercially or long-term stored hemp seeds relative to fresh seed material produced under controlled glasshouse conditions. Here, contamination load rather than disinfectant stringency appears to be the primary limiting factor for protocol success. Additionally, and not mutually exclusive, variations in cultivar used, storage duration and conditions, moisture content and seed maturity might significantly influence germination, regeneration and survival of seedlings, and are difficult to control for especially in commercially sourced seeds. The practical implication is direct: fresh, in-house produced seeds are strongly preferable for tissue culture work, and protocols benchmarked on laboratory-produced material should not be assumed to transfer to commercially sourced batches without re-validation.</p>
+<p>With the developed protocol, we consistently were able to regenerate fertile hemp plants from hemp hypocotyl explants without hormone supplementation, confirming previously published observations (<xref ref-type="bibr" rid="B15">Long et&#xa0;al., 2022</xref>). Hemp is unusual in this hormone-free regeneration as approaches in other plant species usually require one or multiple plant growth regulators such as cytokinins or auxins for regeneration (<xref ref-type="bibr" rid="B15">Long et&#xa0;al., 2022</xref>). This regenerative capacity could be driven by endogenous hormone balance, explants maintaining juvenile tissue competence, or wound-induced organogenic signaling (<xref ref-type="bibr" rid="B21">Skoog and Miller, 1957</xref>; <xref ref-type="bibr" rid="B25">Sugimoto et&#xa0;al., 2010</xref>, <xref ref-type="bibr" rid="B26">2019</xref>). The observed differences among cultivars indicate that genetic variation in intrinsic regeneration pathways may influence this hormone-independent response. Notably, we observed bipolar regeneration from hypocotyl explants, with shoots and roots developing from opposite ends of the same hypocotyl, which was previously reported as a side effect of hormone-free hypocotyl regeneration (<xref ref-type="bibr" rid="B6">Gal&#xe1;n-&#xc1;vila et&#xa0;al., 2020</xref>). This observation suggests that a polarity remains within the hypocotyl and that cells within the hypocotyl retain totipotency, however, further research detailing the concrete mechanisms and possible specifics in hemp are required to complete our understanding of this process. The consistently high proportion of root-only regenerating explants across conditions suggests that supplementation with cytokinin warrants evaluation as a means of promoting hemp shoot organogenesis. The complete developmental cycle from disinfected hypocotyl explant through to fertile adult plant and viable seed was achieved, confirming that the disinfection conditions described here do not impair subsequent development or reproductive capacity. Further, we demonstrate that explantation and rooting of the newly generated shoot is not a required step in regeneration of hemp, which potentially lowers handling time and associated contamination risk. We also did not observe callus formation from hypocotyl explants under the described conditions, which is usually achieved by adding plant growth regulators (<xref ref-type="bibr" rid="B11">Hesami and Jones, 2021</xref>; <xref ref-type="bibr" rid="B2">Ahsan et&#xa0;al., 2024</xref>). For many applications, callus formation is not desirable and plant regeneration from hemp calli can be challenging, hence hormone-free regeneration might be a viable route in these cases.</p>
+<p>Beyond their effect on contamination, disinfection treatments appeared to have a marked and independent influence on the morphogenic fate of hypocotyl explants. For in-house generated seeds of the hemp cultivar &#x2018;Felina 32&#x2019;, explants from seedlings previously treated with NaOCl combined with either Octave, or both Octave and PPM&#x2122;, showed significantly higher rates of shoot and root co-regeneration on hormone-free medium compared to H<sub>2</sub>O<sub>2</sub> or NaOCl alone. PPM&#x2122; supplementation also significantly reduced explant no regeneration relative to NaOCl alone. While these findings indicate an association between the disinfection treatments and morphogenic outcomes, they do not establish a direct pro-regenerative effect of Octave or PPM&#x2122;. For example, it is possible that enhanced regeneration observed after treatment with Octave or PPM&#x2122; on hormone-free medium may reflect indirect effects of improved explant health or reduced microbial burden, which could preserve endogenous morphogenic competence, rather than a direct stimulation of regenerative pathways by these sterilizing agents. Notably, high concentrations of PPM&#x2122; have been reported as being phytotoxic and reducing regeneration rates (<xref ref-type="bibr" rid="B8">George and Tripepi, 2001</xref>), therefore optimizing for the lowest required concentration should be considered to further maximize the morphogenic outcomes. For commercially sourced seeds of the cultivar &#x2018;Ferimon&#x2019;, the pattern was reversed, with H<sub>2</sub>O<sub>2</sub>-treated explants showing the best regeneration outcomes. Hence, the relationship between disinfection treatment and morphogenic response could be source or even cultivar-dependent and should not be generalized from a single accession. Therefore, we recommend testing at least two different disinfection protocols when establishing the method for the first time in any given laboratory environment.</p>
+<p>Plant regeneration from hypocotyl explants was achievable across all four accessions examined, demonstrating that this developmental capacity is broadly distributed within industrial hemp. Regeneration frequency and consistency varied substantially among accessions. &#x2018;Fedora 17&#x2019; and &#x2018;USO31&#x2019; showed the most favorable regeneration profiles, confirming previous findings (<xref ref-type="bibr" rid="B6">Gal&#xe1;n-&#xc1;vila et&#xa0;al., 2020</xref>), with approximately one third of &#x2018;Fedora 17&#x2019; explants achieving shoot and root co-regeneration, while &#x2018;Kompolti&#x2019; and &#x2018;Felina 32&#x2019; showed significantly lower rates of full regeneration under the same conditions. All accessions retained a high proportion of non-regenerating explants, and inter-accession variation in morphogenic trajectory is expected given the high heterozygosity and phenotypic diversity of industrial hemp <xref ref-type="bibr" rid="B28">Vergara et&#xa0;al., 2017</xref>, <xref ref-type="bibr" rid="B29">2021</xref>; <xref ref-type="bibr" rid="B14">Kavanagh et&#xa0;al., 2025</xref>; <xref ref-type="bibr" rid="B27">Trubanov&#xe1; et&#xa0;al., 2026</xref>). Protocol optimization will therefore need to be at minimum accession-specific, and possibly batch-specific.</p>
+<p>Taken together, these results support the following practical recommendations. Fresh, in-house produced seeds should be used wherever possible. Where commercially sourced material must be used, disinfection treatment with NaOCl combined with PPM&#x2122; and Octave should be considered. The protocol described here (<xref ref-type="fig" rid="f5"><bold>Figure&#xa0;5</bold></xref>) provides a practical and documented starting framework that should be adapted based on seed source, batch history and intended downstream application.</p>
+<fig id="f5" position="float">
+<label>Figure&#xa0;5</label>
+<caption>
+<p>Protocol for disinfection, explantation and regeneration of <italic>Cannabis sativa.</italic> L. The workflow describes disinfection, explantation and regeneration from seed to seed via hypocotyl explants and regeneration.</p>
+</caption>
+<graphic mimetype="image" mime-subtype="tiff" xlink:href="fpls-17-1907649-g005.tif">
+<alt-text content-type="machine-generated">Flowchart diagram illustrating a plant tissue culture process from seeds to plants. Steps include disinfection with ethanol, NaOCl, and hydrogen peroxide; plating on MS plates; explantation; regeneration on MS plates, then transfer to MS cups and soil, with durations noted for each stage.</alt-text>
+</graphic></fig>
+</sec>
+</body>
+<back>
+<sec id="s5" sec-type="data-availability">
+<title>Data availability statement</title>
+<p>The original contributions presented in the study are included in the article/<xref ref-type="supplementary-material" rid="ST1"><bold>Supplementary Material</bold></xref>. Further inquiries can be directed to the corresponding authors.</p></sec>
+<sec id="s6" sec-type="author-contributions">
+<title>Author contributions</title>
+<p>RG: Writing &#x2013; original draft, Writing &#x2013; review &amp; editing, Formal analysis, Visualization. GP: Methodology, Writing &#x2013; review &amp; editing. JK: Writing &#x2013; review &amp; editing, Methodology, Conceptualization. AD: Writing &#x2013; review &amp; editing, Supervision. AN: Supervision, Funding acquisition, Writing &#x2013; review &amp; editing. RM: Project administration, Conceptualization, Methodology, Writing &#x2013; review &amp; editing, Supervision, Funding acquisition. SS: Data curation, Conceptualization, Writing &#x2013; review &amp; editing, Methodology, Funding acquisition, Writing &#x2013; original draft, Supervision.</p></sec>
+<ack>
+<title>Acknowledgments</title>
+<p>The authors also wish to thank Frances (School of Biological and Environmental Sciences, University College Dublin, Ireland) and Gordon (UCD Rosemount Environmental Research Station) for their valuable technical assistance.</p>
+</ack>
+<sec id="s8" sec-type="COI-statement">
+<title>Conflict of interest </title>
+<p>AD and AN were employed by and hold shares in Plantik Biosciences SAS. The remaining authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest. </p>
+<p>The author RM declared that they were an editorial board member of Frontiers at the time of submission. This had no impact on the peer review process and the final decision.</p></sec>
+<sec id="s9" sec-type="ai-statement">
+<title>Generative AI statement</title>
+<p>The author(s) declared that generative AI was used in the creation of this manuscript. Generative AI was used for the initial draft generation.</p>
+<p>Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.</p></sec>
+<sec id="s10" sec-type="disclaimer">
+<title>Publisher&#x2019;s note</title>
+<p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></sec>
+<sec id="s11" sec-type="supplementary-material">
+<title>Supplementary material</title>
+<p>The Supplementary Material for this article can be found online at: <ext-link ext-link-type="uri" xlink:href="https://www.frontiersin.org/articles/10.3389/fpls.2026.1907649/full#supplementary-material">https://www.frontiersin.org/articles/10.3389/fpls.2026.1907649/full#supplementary-material</ext-link></p>
+<supplementary-material xlink:href="Table1.xlsx" id="ST1" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"><label>Supplementary Table&#xa0;1</label>
+<caption>
+<p>Disinfection treatment outcomes for in-house and commercial seeds.</p>
+</caption></supplementary-material>
+<supplementary-material xlink:href="Table1.xlsx" id="ST2" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"><label>Supplementary Table&#xa0;2</label>
+<caption>
+<p>Disinfection treated regeneration outcomes for in-house and commercial seeds.</p>
+</caption></supplementary-material>
+<supplementary-material xlink:href="DataSheet1.pdf" id="SF1" mimetype="application/pdf"><label>Supplementary Figure&#xa0;1</label>
+<caption>
+<p>Surface disinfection efficacy of chemical and baseline treatments on hemp seeds.</p>
+</caption></supplementary-material>
+<supplementary-material xlink:href="DataSheet1.pdf" id="SF2" mimetype="application/pdf"><label>Supplementary Figure&#xa0;2</label>
+<caption>
+<p>Effect of NaOCl-based disinfection treatments on hemp seeds of the cultivar &#x2018;Ferimon&#x2019;.</p>
+</caption></supplementary-material>
+<supplementary-material xlink:href="DataSheet1.pdf" id="SF3" mimetype="application/pdf"><label>Supplementary Figure&#xa0;3</label>
+<caption>
+<p>Effect of different disinfection additives on the regeneration outcomes and viability of hemp hypocotyl explants of the cultivar &#x2018;Ferimon&#x2019;.</p>
+</caption></supplementary-material></sec>
+<ref-list>
+<title>References</title>
+<ref id="B1">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Adhikary</surname> <given-names>D.</given-names></name>
+<name><surname>Kulkarni</surname> <given-names>M.</given-names></name>
+<name><surname>El-Mezawy</surname> <given-names>A.</given-names></name>
+<name><surname>Mobini</surname> <given-names>S.</given-names></name>
+<name><surname>Elhiti</surname> <given-names>M.</given-names></name>
+<name><surname>Gjuric</surname> <given-names>R.</given-names></name>
+<etal/>
+</person-group>. (<year>2021</year>). 
+<article-title>Medical <italic>Cannabis</italic> and industrial hemp tissue culture: Present status and future potential</article-title>. <source>Front. Plant Sci.</source> <volume>12</volume>, <elocation-id>627240</elocation-id>. doi:&#xa0;<pub-id pub-id-type="doi">10.3389/fpls.2021.627240</pub-id><pub-id pub-id-type="pmid">33747008</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B2">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Ahsan</surname> <given-names>S.</given-names></name>
+<name><surname>Kwon</surname> <given-names>D.</given-names></name>
+<name><surname>Injamum-Ul-Hoque</surname> <given-names>M.</given-names></name>
+<name><surname>Rahman</surname> <given-names>M.</given-names></name>
+<name><surname>Yeam</surname> <given-names>I.</given-names></name>
+<name><surname>Choi</surname> <given-names>H.</given-names></name>
+</person-group> (<year>2024</year>). 
+<article-title>De novo regeneration of <italic>Cannabis sativa</italic> cv. Cheungsam and evaluation of secondary metabolites of its callus</article-title>. <source>Horticulturae</source> <volume>10</volume>, <elocation-id>1331</elocation-id>. doi:&#xa0;<pub-id pub-id-type="doi">10.3390/horticulturae10121331</pub-id><pub-id pub-id-type="pmid">30654563</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B3">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Andre</surname> <given-names>C. M.</given-names></name>
+<name><surname>Hausman</surname> <given-names>J.-F.</given-names></name>
+<name><surname>Guerriero</surname> <given-names>G.</given-names></name>
+</person-group> (<year>2016</year>). 
+<article-title><italic>Cannabis sativa</italic>: The plant of the thousand and one molecules</article-title>. <source>Front. Plant Sci.</source> <volume>7</volume>. doi:&#xa0;<pub-id pub-id-type="doi">10.3389/fpls.2016.00019</pub-id><pub-id pub-id-type="pmid">26870049</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B4">
+<mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name><surname>Chandra</surname> <given-names>S.</given-names></name>
+<name><surname>Lata</surname> <given-names>H.</given-names></name>
+<name><surname>ElSohly</surname> <given-names>M. A.</given-names></name>
+</person-group> (<year>2017</year>). <source>Cannabis Sativa L. - Botany and Biotechnology</source>. Eds. 
+<person-group person-group-type="editor">
+<name><surname>Chandra</surname> <given-names>S.</given-names></name>
+<name><surname>Lata</surname> <given-names>H.</given-names></name>
+<name><surname>ElSohly</surname> <given-names>M. A.</given-names></name>
+</person-group> (<publisher-loc>Cham</publisher-loc>: 
+<publisher-name>Springer International Publishing</publisher-name>). doi:&#xa0;<pub-id pub-id-type="doi">10.1007/978-3-319-54564-6</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B5">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Denner</surname> <given-names>F. D. N.</given-names></name>
+<name><surname>Millard</surname> <given-names>C.</given-names></name>
+<name><surname>Geldenhuys</surname> <given-names>A.</given-names></name>
+<name><surname>Wehner</surname> <given-names>F. C.</given-names></name>
+</person-group> (<year>1997</year>). 
+<article-title>Treatment of seed potatoes with prochloraz for simultaneous control of silver scurf and black dot on progeny tubers</article-title>. <source>Potato Res.</source> <volume>40</volume>, <fpage>221</fpage>&#x2013;<lpage>227</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1007/BF02358247</pub-id><pub-id pub-id-type="pmid">30311153</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B6">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Gal&#xe1;n-&#xc1;vila</surname> <given-names>A.</given-names></name>
+<name><surname>Garc&#xed;a-Fortea</surname> <given-names>E.</given-names></name>
+<name><surname>Prohens</surname> <given-names>J.</given-names></name>
+<name><surname>Herraiz</surname> <given-names>F. J.</given-names></name>
+</person-group> (<year>2020</year>). 
+<article-title>Development of a direct <italic>in vitro</italic> plant regeneration protocol from <italic>Cannabis sativa</italic> L. seedling explants: Developmental morphology of shoot regeneration and ploidy level of regenerated plants</article-title>. <source>Front. Plant Sci.</source> <volume>11</volume>, <elocation-id>645</elocation-id>. doi:&#xa0;<pub-id pub-id-type="doi">10.3389/fpls.2020.00645</pub-id><pub-id pub-id-type="pmid">32670304</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B7">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Gal&#xe1;n-&#xc1;vila</surname> <given-names>A.</given-names></name>
+<name><surname>Gramazio</surname> <given-names>P.</given-names></name>
+<name><surname>Ron</surname> <given-names>M.</given-names></name>
+<name><surname>Prohens</surname> <given-names>J.</given-names></name>
+<name><surname>Herraiz</surname> <given-names>F. J.</given-names></name>
+</person-group> (<year>2021</year>). 
+<article-title>A novel and rapid method for Agrobacterium-mediated production of stably transformed <italic>Cannabis sativa</italic> L. plants</article-title>. <source>Ind. Crops Prod.</source> <volume>170</volume>, <elocation-id>113691</elocation-id>. doi:&#xa0;<pub-id pub-id-type="doi">10.1016/j.indcrop.2021.113691</pub-id><pub-id pub-id-type="pmid">42574925</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B8">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>George</surname> <given-names>M. W.</given-names></name>
+<name><surname>Tripepi</surname> <given-names>R. R.</given-names></name>
+</person-group> (<year>2001</year>). 
+<article-title>Plant Preservative Mixture<sup>TM</sup> can affect shoot regeneration from leaf explants of chrysanthemum, European birch, and rhododendron</article-title>. <volume>36</volume>(<issue>4</issue>):<page-range>768&#x2013;9</page-range>.
+</mixed-citation>
+</ref>
+<ref id="B9">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Gilbert</surname> <given-names>G. S.</given-names></name>
+<name><surname>Diaz</surname> <given-names>A.</given-names></name>
+<name><surname>Bregoff</surname> <given-names>H. A.</given-names></name>
+</person-group> (<year>2023</year>). 
+<article-title>Seed disinfestation practices to control seed-borne fungi and bacteria in home production of sprouts</article-title>. <source>Foods</source> <volume>12</volume>, <elocation-id>747</elocation-id>. doi:&#xa0;<pub-id pub-id-type="doi">10.3390/foods12040747</pub-id><pub-id pub-id-type="pmid">36832822</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B10">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Henricot</surname> <given-names>B.</given-names></name>
+<name><surname>Wedgwood</surname> <given-names>E.</given-names></name>
+</person-group> (<year>2013</year>). 
+<article-title>Evaluation of foliar fungicide sprays for the control of boxwood blight, caused by the fungus <italic>Cylindrocladium buxicola</italic></article-title>. <source>Plant Health Prog.</source> <volume>14</volume>, <elocation-id>2</elocation-id>. doi:&#xa0;<pub-id pub-id-type="doi">10.1094/PHP-2013-1024-01-RS</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B11">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Hesami</surname> <given-names>M.</given-names></name>
+<name><surname>Jones</surname> <given-names>A. M. P.</given-names></name>
+</person-group> (<year>2021</year>). 
+<article-title>Modeling and optimizing callus growth and development in <italic>Cannabis sativa</italic> using random forest and support vector machine in combination with a genetic algorithm</article-title>. <source>Appl. Microbiol. Biotechnol.</source> <volume>105</volume>, <fpage>5201</fpage>&#x2013;<lpage>5212</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1007/s00253-021-11375-y</pub-id><pub-id pub-id-type="pmid">34086118</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B12">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Hesami</surname> <given-names>M.</given-names></name>
+<name><surname>Baiton</surname> <given-names>A.</given-names></name>
+<name><surname>Alizadeh</surname> <given-names>M.</given-names></name>
+<name><surname>Pepe</surname> <given-names>M.</given-names></name>
+<name><surname>Torkamaneh</surname> <given-names>D.</given-names></name>
+<name><surname>Jones</surname> <given-names>A. M. P.</given-names></name>
+</person-group> (<year>2021</year>). 
+<article-title>Advances and perspectives in tissue culture and genetic engineering of <italic>Cannabis</italic></article-title>. <source>Int. J. Mol. Sci.</source> <volume>22</volume>, <elocation-id>5671</elocation-id>. doi:&#xa0;<pub-id pub-id-type="doi">10.3390/ijms22115671</pub-id><pub-id pub-id-type="pmid">34073522</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B13">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Huang</surname> <given-names>A.-X.</given-names></name>
+<name><surname>She</surname> <given-names>X.-P.</given-names></name>
+<name><surname>Cao</surname> <given-names>B.-H.</given-names></name>
+<name><surname>Ren</surname> <given-names>Y.</given-names></name>
+</person-group> (<year>2011</year>). 
+<article-title>Distribution of hydrogen peroxide during adventitious roots initiation and development in mung bean hypocotyls cuttings</article-title>. <source>Plant Growth Regul.</source> <volume>64</volume>, <fpage>109</fpage>&#x2013;<lpage>118</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1007/s10725-010-9545-y</pub-id><pub-id pub-id-type="pmid">30311153</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B14">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kavanagh</surname> <given-names>G.</given-names></name>
+<name><surname>Schilling</surname> <given-names>S.</given-names></name>
+<name><surname>Melzer</surname> <given-names>R.</given-names></name>
+<name><surname>Hodge</surname> <given-names>S.</given-names></name>
+</person-group> (<year>2025</year>). 
+<article-title>The response of monoecious and dioecious cultivars of agricultural hemp to an organic fertiliser derived from black soldier fly frass</article-title>. <source>Insects</source> <volume>16</volume>, <elocation-id>918</elocation-id>. doi:&#xa0;<pub-id pub-id-type="doi">10.3390/insects16090918</pub-id><pub-id pub-id-type="pmid">41009100</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B15">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Long</surname> <given-names>Y.</given-names></name>
+<name><surname>Yang</surname> <given-names>Y.</given-names></name>
+<name><surname>Pan</surname> <given-names>G.</given-names></name>
+<name><surname>Shen</surname> <given-names>Y.</given-names></name>
+</person-group> (<year>2022</year>). 
+<article-title>New insights into tissue culture plant-regeneration mechanisms</article-title>. <source>Front. Plant Sci.</source> <volume>13</volume>, <elocation-id>926752</elocation-id>. doi:&#xa0;<pub-id pub-id-type="doi">10.3389/fpls.2022.926752</pub-id><pub-id pub-id-type="pmid">35845646</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B16">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Nakaune</surname> <given-names>M.</given-names></name>
+<name><surname>Tsukazawa</surname> <given-names>K.</given-names></name>
+<name><surname>Uga</surname> <given-names>H.</given-names></name>
+<name><surname>Asamizu</surname> <given-names>E.</given-names></name>
+<name><surname>Imanishi</surname> <given-names>S.</given-names></name>
+<name><surname>Matsukura</surname> <given-names>C.</given-names></name>
+<etal/>
+</person-group>. (<year>2012</year>). 
+<article-title>Low sodium chloride priming increases seedling vigor and stress tolerance to <italic>Ralstonia solanacearum</italic> in tomato</article-title>. <source>Plant Biotechnol.</source> <volume>29</volume>, <fpage>9</fpage>&#x2013;<lpage>18</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.5511/plantbiotechnology.11.1122a</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B17">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Punja</surname> <given-names>Z. K.</given-names></name>
+<name><surname>Collyer</surname> <given-names>D.</given-names></name>
+<name><surname>Scott</surname> <given-names>C.</given-names></name>
+<name><surname>Lung</surname> <given-names>S.</given-names></name>
+<name><surname>Holmes</surname> <given-names>J.</given-names></name>
+<name><surname>Sutton</surname> <given-names>D.</given-names></name>
+</person-group> (<year>2019</year>). 
+<article-title>Pathogens and molds affecting production and quality of <italic>Cannabis sativa</italic> L</article-title>. <source>Front. Plant Sci.</source> <volume>10</volume>, <elocation-id>1120</elocation-id>. doi:&#xa0;<pub-id pub-id-type="doi">10.3389/fpls.2019.01120</pub-id><pub-id pub-id-type="pmid">31681341</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B18">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Punja</surname> <given-names>Z. K.</given-names></name>
+<name><surname>Scott</surname> <given-names>C.</given-names></name>
+<name><surname>Chen</surname> <given-names>S.</given-names></name>
+</person-group> (<year>2018</year>). 
+<article-title>Root and crown rot pathogens causing wilt symptoms on field-grown marijuana (<italic>Cannabis sativa</italic> L.) plants</article-title>. <source>Can. J. Plant Pathol.</source> <volume>40</volume>, <fpage>528</fpage>&#x2013;<lpage>541</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1080/07060661.2018.1535470</pub-id><pub-id pub-id-type="pmid">37339054</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B19">
+<mixed-citation publication-type="book">
+<person-group person-group-type="author"><collab>R Core Team</collab>
+</person-group>. (<year>2026</year>). <source>R: A Language and Environment for Statistical Computing. Version 2026.04.0</source>. <publisher-loc>Vienna, Austria</publisher-loc>: 
+<publisher-name>R Foundation for Statistical Computing</publisher-name>. Available online at: <uri xlink:href="https://r-project.org">https://r-project.org</uri> (Accessed <date-in-citation content-type="access-date">30 September 2026</date-in-citation>).
+</mixed-citation>
+</ref>
+<ref id="B20">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Schilling</surname> <given-names>S.</given-names></name>
+<name><surname>Melzer</surname> <given-names>R.</given-names></name>
+<name><surname>Dowling</surname> <given-names>C. A.</given-names></name>
+<name><surname>Shi</surname> <given-names>J.</given-names></name>
+<name><surname>Muldoon</surname> <given-names>S.</given-names></name>
+<name><surname>McCabe</surname> <given-names>P. F.</given-names></name>
+</person-group> (<year>2023</year>). 
+<article-title>A protocol for rapid generation cycling (speed breeding) of hemp (<italic>Cannabis sativa</italic>) for research and agriculture</article-title>. <source>Plant J.</source> <volume>113</volume>, <fpage>437</fpage>&#x2013;<lpage>445</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1111/tpj.16051</pub-id><pub-id pub-id-type="pmid">36458321</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B21">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Skoog</surname> <given-names>F.</given-names></name>
+<name><surname>Miller</surname> <given-names>C. O.</given-names></name>
+</person-group> (<year>1957</year>). 
+<article-title>Chemical regulation of growth and organ formation in plant tissues cultured <italic>in vitro</italic></article-title>. <source>Symp. Soc Exp. Biol.</source> <volume>11</volume>, <fpage>118</fpage>&#x2013;<lpage>130</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1002/chin.199621020</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B22">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Small</surname> <given-names>E.</given-names></name>
+</person-group> (<year>2015</year>). 
+<article-title>Evolution and classification of <italic>Cannabis sativa</italic> (marijuana, hemp) in relation to human utilization</article-title>. <source>Bot. Rev.</source> <volume>81</volume>, <fpage>189</fpage>&#x2013;<lpage>294</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1007/s12229-015-9157-3</pub-id><pub-id pub-id-type="pmid">30311153</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B23">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Sm&#xfd;kalov&#xe1;</surname> <given-names>I.</given-names></name>
+<name><surname>Vrbov&#xe1;</surname> <given-names>M.</given-names></name>
+<name><surname>Cve&#x10d;kov&#xe1;</surname> <given-names>M.</given-names></name>
+<name><surname>Pla&#x10d;kov&#xe1;</surname> <given-names>L.</given-names></name>
+<name><surname>&#x17d;ukauskait&#x117;</surname> <given-names>A.</given-names></name>
+<name><surname>Zatloukal</surname> <given-names>M.</given-names></name>
+<etal/>
+</person-group>. (<year>2019</year>). 
+<article-title>The effects of novel synthetic cytokinin derivatives and endogenous cytokinins on the <italic>in vitro</italic> growth responses of hemp (<italic>Cannabis sativa</italic> L.) explants</article-title>. <source>Plant Cell. Tissue Organ. Cult. PCTOC</source> <volume>139</volume>, <fpage>381</fpage>&#x2013;<lpage>394</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1007/s11240-019-01693-5</pub-id><pub-id pub-id-type="pmid">30311153</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B24">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Sorokin</surname> <given-names>A.</given-names></name>
+<name><surname>Yadav</surname> <given-names>N.</given-names></name>
+<name><surname>Gaudet</surname> <given-names>D.</given-names></name>
+<name><surname>Kovalchuk</surname> <given-names>I.</given-names></name>
+</person-group> (<year>2021</year>). 
+<article-title>Development and standardization of rapid and efficient seed germination protocol for <italic>Cannabis sativa</italic></article-title>. <source>BIO-Protoc</source> <volume>11</volume>. doi:&#xa0;<pub-id pub-id-type="doi">10.21769/BioProtoc.3875</pub-id><pub-id pub-id-type="pmid">33732764</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B25">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Sugimoto</surname> <given-names>K.</given-names></name>
+<name><surname>Jiao</surname> <given-names>Y.</given-names></name>
+<name><surname>Meyerowitz</surname> <given-names>E. M.</given-names></name>
+</person-group> (<year>2010</year>). 
+<article-title><italic>Arabidopsis</italic> regeneration from multiple tissues occurs via a root development pathway</article-title>. <source>Dev. Cell</source> <volume>18</volume>, <fpage>463</fpage>&#x2013;<lpage>471</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1016/j.devcel.2010.02.004</pub-id><pub-id pub-id-type="pmid">20230752</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B26">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Sugimoto</surname> <given-names>K.</given-names></name>
+<name><surname>Temman</surname> <given-names>H.</given-names></name>
+<name><surname>Kadokura</surname> <given-names>S.</given-names></name>
+<name><surname>Matsunaga</surname> <given-names>S.</given-names></name>
+</person-group> (<year>2019</year>). 
+<article-title>To regenerate or not to regenerate: Factors that drive plant regeneration</article-title>. <source>Curr. Opin. Plant Biol.</source> <volume>47</volume>, <fpage>138</fpage>&#x2013;<lpage>150</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1016/j.pbi.2018.12.002</pub-id><pub-id pub-id-type="pmid">30703741</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B27">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Trubanov&#xe1;</surname> <given-names>N.</given-names></name>
+<name><surname>Pender</surname> <given-names>G.</given-names></name>
+<name><surname>McCabe</surname> <given-names>P. F.</given-names></name>
+<name><surname>Melzer</surname> <given-names>R.</given-names></name>
+<name><surname>Schilling</surname> <given-names>S.</given-names></name>
+</person-group> (<year>2026</year>). 
+<article-title>Exploring phenotypic and genetic variability in hemp (<italic>Cannabis sativa</italic>)</article-title>. <source>Genet. Resour. Crop Evol.</source> <volume>73</volume>, <fpage>77</fpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1007/s10722-025-02700-9</pub-id><pub-id pub-id-type="pmid">30311153</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B28">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Vergara</surname> <given-names>D.</given-names></name>
+<name><surname>Bidwell</surname> <given-names>L. C.</given-names></name>
+<name><surname>Gaudino</surname> <given-names>R.</given-names></name>
+<name><surname>Torres</surname> <given-names>A.</given-names></name>
+<name><surname>Du</surname> <given-names>G.</given-names></name>
+<name><surname>Ruthenburg</surname> <given-names>T. C.</given-names></name>
+<etal/>
+</person-group>. (<year>2017</year>). 
+<article-title>Compromised external validity: Federally produced cannabis does not reflect legal markets</article-title>. <source>Sci. Rep.</source> <volume>7</volume>, <elocation-id>46528</elocation-id>. doi:&#xa0;<pub-id pub-id-type="doi">10.1038/srep46528</pub-id><pub-id pub-id-type="pmid">28422145</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B29">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Vergara</surname> <given-names>D.</given-names></name>
+<name><surname>Huscher</surname> <given-names>E. L.</given-names></name>
+<name><surname>Keepers</surname> <given-names>K. G.</given-names></name>
+<name><surname>Pisupati</surname> <given-names>R.</given-names></name>
+<name><surname>Schwabe</surname> <given-names>A. L.</given-names></name>
+<name><surname>McGlaughlin</surname> <given-names>M. E.</given-names></name>
+<etal/>
+</person-group>. (<year>2021</year>). 
+<article-title>Genomic evidence that governmentally produced <italic>Cannabis sativa</italic> poorly represents genetic variation available in state markets</article-title>. doi:&#xa0;<pub-id pub-id-type="doi">10.1101/2021.02.13.431041</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B30">
+<mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<name><surname>Wickham</surname> <given-names>H.</given-names></name>
+</person-group> (<year>2016</year>). &#x201c;
+<article-title>Getting started with ggplot2</article-title>,&#x201d; in <source>Ggplot2, Use R!</source> (
+<publisher-name>Springer International Publishing</publisher-name>, <publisher-loc>Cham</publisher-loc>), <fpage>11</fpage>&#x2013;<lpage>31</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1007/978-3-319-24277-4_2</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B31">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Wielgus</surname> <given-names>K.</given-names></name>
+<name><surname>Luwanska</surname> <given-names>A.</given-names></name>
+<name><surname>Lassocinski</surname> <given-names>W.</given-names></name>
+<name><surname>Kaczmarek</surname> <given-names>Z.</given-names></name>
+</person-group> (<year>2008</year>). 
+<article-title>Estimation of <italic>Cannabis sativa</italic> L. tissue culture conditions essential for callus induction and plant regeneration</article-title>. <source>J. Nat. Fibers</source> <volume>5</volume>, <fpage>199</fpage>&#x2013;<lpage>207</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1080/15440470801976045</pub-id><pub-id pub-id-type="pmid">37339054</pub-id>
+</mixed-citation>
+</ref>
+<ref id="B32">
+<mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name><surname>Yildiz</surname> <given-names>M.</given-names></name>
+<name><surname>Er</surname> <given-names>C.</given-names></name>
+</person-group> (<year>2002</year>). 
+<article-title>The effect of sodium hypochlorite solutions on <italic>in vitro</italic> seedling growth and shoot regeneration of flax (<italic>Linum usitatissimum</italic>)</article-title>. <source>Naturwissenschaften</source> <volume>89</volume>, <fpage>259</fpage>&#x2013;<lpage>261</lpage>. doi:&#xa0;<pub-id pub-id-type="doi">10.1007/s00114-002-0310-6</pub-id><pub-id pub-id-type="pmid">12146790</pub-id>
+</mixed-citation>
+</ref>
+</ref-list>
+<fn-group>
+<fn id="n1" fn-type="custom" custom-type="edited-by">
+<p>Edited by: <ext-link ext-link-type="uri" xlink:href="https://loop.frontiersin.org/people/455297">Vita Maria Cristiana Moliterni</ext-link>, Council for Agricultural Research and Agricultural Economy Analysis | CREA, Italy</p></fn>
+<fn id="n2" fn-type="custom" custom-type="reviewed-by">
+<p>Reviewed by: <ext-link ext-link-type="uri" xlink:href="https://loop.frontiersin.org/people/1413664">Kgabo Martha Pofu</ext-link>, University of Limpopo, South Africa</p>
+<p><ext-link ext-link-type="uri" xlink:href="https://loop.frontiersin.org/people/3594327">Yadiana Ontivero</ext-link>, Autonomous University of Chile, Chile</p></fn>
+</fn-group>
+</back>
+</article>

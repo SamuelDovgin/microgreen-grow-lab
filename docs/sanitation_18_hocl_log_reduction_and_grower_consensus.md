@@ -6,6 +6,8 @@
 
 ## 1. Direct answer: HOCl has positive experimental evidence
 
+[Follow-up: tissue-culture seed preparation](19_tissue_culture_seed_disinfection_and_microgreen_protocols.md) compares laboratory disinfection with these food-seed results, including contact conditions, seed-lot effects and why longer exposure need not yield a larger reduction.
+
 **Yes. Specific chlorine concentration–time conditions have produced substantial microbial reductions on seeds and sprouts.** The gap is not whether HOCl has antimicrobial activity. The gap is whether an exact treatment reliably achieves a specified outcome for a particular crop, lot, organism, formulation and production system.
 
 The planner’s **400 ppm / 30 min** and **12% peroxide / 1.25 min** remain arithmetic extrapolations. They are not published microbial-kill results. Asterisks must identify that gap without implying that no HOCl treatment has ever been tested.

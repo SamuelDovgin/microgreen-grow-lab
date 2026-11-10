@@ -372,3 +372,143 @@ Used in: screen for material/stage mismatch, not a recommended seed-treatment co
 Key record: finished commercial sprouts and physical cleaning methods are distinct from seed pretreatment.
 Limits: no additional numeric seed protocol extracted; not treated as seed-pathogen validation.
 Access and preservation: primary indexed record consulted; URL-only, no local full text preserved.
+
+TISSUE-CULTURE FOLLOW-UP — 2026-11-10
+Question: Can plant tissue-culture seed preparation inform mold/bacteria control for our five microgreen crops?
+Scope: targeted primary-source comparison, not a systematic review or representative laboratory survey. S39–S54 extend S01–S38. No experiments, author contacts or unpublished datasets obtained.
+Used in: guide19, planner #tissue-culture, forward links from guides17/18 and hub.
+Section map: workflow/chemicals S39–S41/S44; pea/sunflower overlap S42; internal contamination/lots S43/S46/S54; recovery artifacts S45; time/loading transfer S49; food-seed context S01/S20–S26. S47–S53 provide context or screened leads, not new food-use validation.
+Finding: process controls and chlorine-family support, without validation of 400 ppm / 30 min HOCl or 12% / 75 sec peroxide. Culture cleanliness, fungal incidence, germination and pathogen reduction remain distinct.
+Preservation: four unaltered OA article XML files, original authors/licenses retained. Manifest and README under tissue_culture/. No article figures or adapted full texts redistributed.
+
+[S39] Lindsey et al. (2017), Standardized Method for High-throughput Sterilization of Arabidopsis Seeds — DOI 10.3791/56587; PMID 29155739; PMC5752416
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC5752416/ ; https://doi.org/10.3791/56587
+Accessed: 2026-11-10. Class/access: Primary laboratory protocol/experiment; full official Europe PMC XML read after PMC and publisher browser challenges.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Workflow; injury tradeoff; culture versus pathogen endpoints. Four commercial-bleach fractions × five times in Col-0; five independent repeats in Figure 1. Selected 50% commercial product (v/v), 10 min, wetting agent, rinsing and aseptic MS plating. Selected Table 1 cell: 0.50% mold. Further comparison across 100 SALK lines, three independent repeats. Higher 80/100% product fractions beyond 10 min injured germination/development; up to 32% mortality reported.
+Limits / conflicts: Commercial stock active percentage not established here: no active-NaOCl conversion. Arabidopsis is not an edible broccoli/radish validation. No Salmonella-log endpoint. Chlorine-gas arm not propagated as a home procedure. NSF grants DBI-1049341/MCB-1143813.
+Local preservation: tissue_culture/Arabidopsis-2017-PMC5752416.xml; unaltered XML, 59068 bytes, captured 2026-11-10; SHA-256 680c255b9af6b32a1da18d02e1eafb38721dfe4802ef26b143f0a4096d8d2fc6. License and authors in original XML and capture manifest.
+
+[S40] MilliporeSigma / Merck, Explant Sterilization — official plant tissue culture protocol
+URL: https://www.sigmaaldrich.com/US/en/technical-documents/protocol/cell-culture-and-cell-culture-analysis/plant-tissue-culture/explant-sterilization ; https://www.merckmillipore.com/CD/en/technical-documents/protocol/cell-culture-and-cell-culture-analysis/plant-tissue-culture/explant-sterilization
+Accessed: 2026-11-10. Class/access: Official supplier protocol, commercial context; live text and table reviewed; regional extraction sometimes omitted table.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Chemical categories, contact, separate stages and bleach units. General ranges: NaOCl 0.5–5% / 5–30 min; peroxide 3–12% / 5–15 min. Notes 10–20% of roughly 5% commercial bleach gives about 0.5–1% active NaOCl. Orchid dry-seed method differs: 5–10% commercial product, 5–10 min, wetting, rinsing, sterile transfer.
+Limits / conflicts: Ranges are not evidence for every concentration/time pairing or any of the five edible crops. No food-use approval inferred. Heavy metals and culture biocides not imported into planner.
+Local preservation: URL-only — no full-text local copy made or redistributed. Access limits and copyright status are stated above.
+
+[S41] University of Hohenheim, Surface sterilization of Arabidopsis seeds
+URL: https://www.uni-hohenheim.de/fileadmin/einrichtungen/pflanzenphysiologie/Protokolle/IX.Pflanzen/oberflaechensterilisation_von_arabidopsis_samen_en.pdf
+Accessed: 2026-11-10. Class/access: Official institutional teaching protocol; indexed official PDF text reviewed.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Protocol variation and aseptic transfer: ethanol 70% / 5 min, then 7% bleach with Tween 20 / 15 min, five sterile-water rinses and agar plating.
+Limits / conflicts: Bleach stock active strength unspecified: 7% bleach must not become 7% NaOCl. No efficacy statistics, pathogen-log or edible-crop evaluation. Separate sequence is not a mixed-chemical recommendation.
+Local preservation: URL-only — no full-text local copy made or redistributed. Access limits and copyright status are stated above.
+
+[S42] McQuade, Atchison & Parisi (1969), Effectiveness of Certain Sterilizing Agents for Seedling Incubation in Radiothymidine — DOI 10.1104/pp.44.2.180; PMID 16657042; PMC396058
+URL: https://doi.org/10.1104/pp.44.2.180 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC396058/
+Accessed: 2026-11-10. Class/access: Historical primary seedling experiment; publisher and PMC abstracts reviewed, scanned full-text tables not appraised.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Direct pea/sunflower overlap: abstract reports hypochlorite and ethylene oxide sterilized pea/sunflower seeds; hypochlorite failed on onion. Microbiological and thymidine-degradation checks. Public Health Service grant RH00347.
+Limits / conflicts: No numeric dose/time or replicate n extracted. No modern Salmonella challenge or coir harvest validation. Ethylene oxide excluded from home protocol.
+Local preservation: URL-only — no full-text local copy made or redistributed. Access limits and copyright status are stated above.
+
+[S43] Sweet & Bolton (1979), Surface Decontamination of Seeds to Produce Axenic Seedlings — DOI 10.2307/2442414; Am J Bot 66(6):692–698
+URL: https://stars.library.ucf.edu/facultybib1970/21/
+Accessed: 2026-11-10. Class/access: Historical primary experiment; live author-institution abstract, no full text available there.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Internal microbes, lot/storage differences and delayed release. Authors proposed other-lot screening when surface treatment failed; severe treatments could injure seedlings. Their microbial certification needed at least 11 days of observation.
+Limits / conflicts: Not a universal 11-day microgreen standard. Internal microbes are not automatically foodborne pathogens. No crop-specific log target, n or funding extracted.
+Local preservation: URL-only — no full-text local copy made or redistributed. Access limits and copyright status are stated above.
+
+[S44] Davoudpour et al. (2020), High resolution microscopy to evaluate the efficiency of surface sterilization of Zea Mays seeds — DOI 10.1371/journal.pone.0242247; PMID 33253171; PMC7703986
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC7703986/
+Accessed: 2026-11-10. Class/access: Primary axenic seedling/microscopy experiment; full PMC text and official Europe PMC XML read.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: 72 treated maize seeds; peroxide, hypochlorite, and separate ethanol then hypochlorite, with stirring ± vacuum. Ethanol/hypochlorite gave about four orders lower microbial cell counts, 100% germination but 50% of seeds showing microbial growth. Counts were DAPI cell abundance in incubation broth, not immediate viable Salmonella CFU kill. Small endpoint groups; methods describe two independent runs and two individual seeds per treatment.
+Limits / conflicts: Paper reports 10% NaOCl from 12% stock; not reinterpreted here as a fraction of commercial bleach. Intensive lab sequence; no cross-crop food safety or residue validation. Authors declare no competing interests.
+Local preservation: tissue_culture/Maize-2020-PMC7703986.xml; unaltered XML, 140958 bytes, captured 2026-11-10; SHA-256 4097a4a5b9dc8d26e8f84ad09905966a0fd535db3948b00a6cf178310bc9536a. License and authors in original XML and capture manifest.
+
+[S45] Miché & Balandreau (2001), Effects of Rice Seed Surface Sterilization with Hypochlorite on Inoculated Burkholderia vietnamiensis — DOI 10.1128/AEM.67.7.3046-3052.2001; PMID 11425720; PMC92979
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC92979/
+Accessed: 2026-11-10. Class/access: Primary plant–microbe methodology experiment; live full text read.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Residual activity and recovery artifacts. Dehusked rice treated in separate peroxide/hypochlorite stages with extensive rinsing suppressed subsequently added bacteria by roughly 2–4 orders during first 15 h; neutralizing control removed the hypochlorite effect. Figure 1 four replicates; mutation arm two experiments × four replicates. Regrowth occurred.
+Limits / conflicts: Not a recipe for mixing agents or using home neutralizers. Not a dietary risk assessment or evidence that ordinary food seed washing causes antibiotic resistance. Copyright ASM; no additional copy captured.
+Local preservation: URL-only — no full-text local copy made or redistributed. Access limits and copyright status are stated above.
+
+[S46] Bennur et al. (2025), Genotype-independent de novo regeneration protocol in Cannabis sativa L. through direct organogenesis from cotyledonary nodes — DOI 10.1186/s13007-025-01468-4; PMID 41206436; PMC12595704
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC12595704/
+Accessed: 2026-11-10. Class/access: Primary tissue-culture experiment; full text and official Europe PMC XML read.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Seed provenance and endophytes. Authors report 1% (v/v) H2O2, two 24-h stages, manual hull/coat removal and a 1-h secondary stage. Methods reference 7.5% stock without a complete normalization recipe; authored notation retained. Han FNQ fresh seeds: 95.7 ± 2.1% responsive endophyte-free versus distributor 29.6 ± 11.3% after 5 d on medium. Three independent replicate groups: distributor 116/100/200 seeds; fresh 50/50/240.
+Limits / conflicts: Prolonged/dissected hemp system, not intact edible microgreen treatment or pathogen-log validation. Endophytes inferred partly from appearance; identities not all confirmed. Seed production conditions and lot/provenance confound age alone.
+Local preservation: tissue_culture/Hemp-2025-PMC12595704.xml; unaltered XML, 207288 bytes, captured 2026-11-10; SHA-256 ec34d883d45f4cd42979235bf70dcb42a1a9a8725a46537ff5027b11f99a665c. License and authors in original XML and capture manifest.
+
+[S47] UC Davis Tomato Genetics Resource Center, Seed Germination Recommendations
+URL: https://tgrc.ucdavis.edu/seedgermination
+Accessed: 2026-11-10. Class/access: Official institutional seed-collection practice; live full page, last update May 24, 2023.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Context for species specificity: tomato/Solanum routine approximately 2.7% NaOCl / 30 min, sometimes longer for particular lines; dormancy/germination and media objectives.
+Limits / conflicts: No pathogen-log validation. Strong species-specific method not transferred to five crops. Numeric recipe is not added to planner.
+Local preservation: URL-only — no full-text local copy made or redistributed. Access limits and copyright status are stated above.
+
+[S48] Cornell Vegetables, Treatments for Managing Bacterial Pathogens in Vegetable Seed
+URL: https://www.vegetables.cornell.edu/pest-management/disease-factsheets/treatments-for-managing-bacterial-pathogens-in-vegetable-seed/
+Accessed: 2026-11-10. Class/access: Official extension guidance; indexed official excerpts reviewed; direct retrieval failed with 502 twice.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Context for surface-versus-internal access and crop/lot-dependent injury. No new quantitative protocol based on this blocked page.
+Limits / conflicts: Plant-pathogen guidance is not automatically foodborne-pathogen validation. Heat recipe not operationalized.
+Local preservation: URL-only — no full-text local copy made or redistributed. Access limits and copyright status are stated above.
+
+[S49] Stan & Daeschel (2003), Reduction of Salmonella enterica on alfalfa seeds with acidic electrolyzed oxidizing water and enhanced uptake into seeds by gas exchange — J Food Prot 66(11):2017–2022
+URL: https://horticulture.oregonstate.edu/publication/reduction-salmonella-enterica-alfalfa-seeds-acidic-electrolyzed-oxidizing-water-and
+Accessed: 2026-11-10. Class/access: Primary food-pathogen experiment; live author-institution abstract, not full replicate tables.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Time plateau, seed loading and suspension-versus-seed difference. At 1:100 seed mass:solution volume, Salmonella reduction 2.04 log CFU/g at 15 min versus 1.96 log at 60 min. Suspension inactivation at least 6.6 log CFU/mL. Germination not significantly affected up to 60 min. Loading changed solution properties.
+Limits / conflicts: Alfalfa acidic EO water is not a 400-ppm HOCl validation or proof time never matters. Exact ACC and replicate n not extracted from abstract.
+Local preservation: URL-only — no full-text local copy made or redistributed. Access limits and copyright status are stated above.
+
+[S50] TAIR/EMBO Arabidopsis manual, chapter 5
+URL: https://www.arabidopsis.org/api/download-files/download?filePath=Protocols%2FEMBOmanual%2Fch5.pdf
+Accessed: 2026-11-10. Class/access: Official protocol archive; indexed excerpts reviewed during scoping.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Time control, sterile plating and selection context. Screened, not a new efficacy claim in guide19.
+Limits / conflicts: Laboratory selection objective; no food-process log validation extracted.
+Local preservation: URL-only — no full-text local copy made or redistributed. Access limits and copyright status are stated above.
+
+[S51] Ensifer-mediated Arabidopsis thaliana Root Transformation, Bio-protocol 2564
+URL: https://en.bio-protocol.org/en/bpdetail?id=2564&type=0
+Accessed: 2026-11-10. Class/access: Primary laboratory protocol; indexed procedure reviewed during scoping.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Separate ethanol/bleach stages: 70% ethanol 2 min, water rinses, 50% commercial bleach + Tween20 10 min, five rinses. No stock active conversion.
+Limits / conflicts: Transformation workflow, not a food-process validation. No additional efficacy claim in guide19.
+Local preservation: URL-only — no full-text local copy made or redistributed. Access limits and copyright status are stated above.
+
+[S52] UC Davis Yoder laboratory, Germinating Triphysaria seeds in vitro
+URL: https://psfaculty.plantsciences.ucdavis.edu/yoder/Methods/Germinating_trp_seeds_in_vitro.html
+Accessed: 2026-11-10. Class/access: Official laboratory method; indexed procedure excerpts reviewed during scoping.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Ethanol, commercial bleach and wetting agent in seed preparation. Not used to endorse a microgreen dose.
+Limits / conflicts: Unrelated parasitic plant; no efficacy statistics appraised.
+Local preservation: URL-only — no full-text local copy made or redistributed. Access limits and copyright status are stated above.
+
+[S53] Investigation of Seed Treatments for Management of Bacterial Leaf Spot of Lettuce — PMID 30823312
+URL: https://pubmed.ncbi.nlm.nih.gov/30823312/
+Accessed: 2026-11-10. Class/access: Primary plant-pathogen treatment paper, discovery-level indexed abstract; direct PubMed retrieval did not expose full abstract.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Screened variable treatment performance and injury; no final numeric claim based on this limited record.
+Limits / conflicts: Not tissue culture or human-pathogen validation. No exact protocol adopted.
+Local preservation: URL-only — no full-text local copy made or redistributed. Access limits and copyright status are stated above.
+
+[S54] Gowlikar et al. (2026), The viability gambit: an optimized disinfection protocol for industrial hemp seeds — DOI 10.3389/fpls.2026.1907649; Front Plant Sci 17:1907649; published October 13, 2026
+URL: https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2026.1907649/full
+Accessed: 2026-11-10. Class/access: Primary peer-reviewed tissue-culture experiment; full publisher text and official XML read.
+Used in: guide19 / tissue-culture source comparison (or scoping only where indicated).
+Supports / key record: Seven cultivars; in-house seed n=3681 and commercial n=1886 across treatments; in-house performed better. Success after 14 d required visible cleanliness and true leaves. Groups varied 20–200 seeds. Separate-stage ethanol/peroxide or hypochlorite and culture-biocide comparisons.
+Limits / conflicts: Provenance not randomized; source confounding remains. No food-pathogen log challenge. AD/AN employed by and hold shares in Plantik Biosciences; RM on Frontiers editorial board; AI initial-draft assistance disclosed. PPM/Octave not recommended as food-seed additives.
+Local preservation: tissue_culture/Hemp-2026-Frontiers-1907649.xml; unaltered XML, 84633 bytes, captured 2026-11-10; SHA-256 5612edc5b68ebb20b5efc5025c2e873f90efe13f7c70ed663fd23214bf52a27b. License and authors in original XML and capture manifest.
+
+ADDITIONAL DISCOVERY LIMIT: PMID12597478 (Efficacy of electrolyzed oxidizing water in inactivating Salmonella on alfalfa seeds and sprouts) was screened; direct PubMed retrieval was challenged/empty. No new numeric conclusion extracted. Other unappraised search-result leads were not used to set doses.
+
+CHANGE NOTE: Added guide19 and visible planner lessons, linked from guides17/18. Existing chemical badge values and crop priorities unchanged. No evidence found to validate constant concentration × time equivalence. Four original OA sources preserved with license/attribution records.

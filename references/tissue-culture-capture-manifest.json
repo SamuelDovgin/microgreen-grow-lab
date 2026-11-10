@@ -1,0 +1,78 @@
+{
+  "captured": "2026-11-10",
+  "files": [
+    {
+      "file": "Arabidopsis-2017-PMC5752416.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5752416/fullTextXML",
+      "accessed": "2026-11-10",
+      "format": "unaltered publisher/archive XML",
+      "bytes": 59068,
+      "sha256": "680c255b9af6b32a1da18d02e1eafb38721dfe4802ef26b143f0a4096d8d2fc6",
+      "title": "Standardized Method for High-throughput Sterilization of Arabidopsis Seeds",
+      "authors": [
+        "Lindsey Benson E. III",
+        "Rivero Luz",
+        "Calhoun Chistopher S.",
+        "Grotewold Erich",
+        "Brkljacic Jelena"
+      ],
+      "license": "https://creativecommons.org/licenses/by-nc-nd/3.0/ This is an open-access article distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "doi": "10.3791/56587"
+    },
+    {
+      "file": "Maize-2020-PMC7703986.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7703986/fullTextXML",
+      "accessed": "2026-11-10",
+      "format": "unaltered publisher/archive XML",
+      "bytes": 140958,
+      "sha256": "4097a4a5b9dc8d26e8f84ad09905966a0fd535db3948b00a6cf178310bc9536a",
+      "title": "High resolution microscopy to evaluate the efficiency of surface sterilization of Zea Mays seeds",
+      "authors": [
+        "Davoudpour Yalda",
+        "Schmidt Matthias",
+        "Calabrese Federica",
+        "Richnow Hans Hermann",
+        "Musat Niculina"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/ This is an open access article distributed under the terms of the Creative Commons Attribution License , which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+      "doi": "10.1371/journal.pone.0242247"
+    },
+    {
+      "file": "Hemp-2025-PMC12595704.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12595704/fullTextXML",
+      "accessed": "2026-11-10",
+      "format": "unaltered publisher/archive XML",
+      "bytes": 207288,
+      "sha256": "ec34d883d45f4cd42979235bf70dcb42a1a9a8725a46537ff5027b11f99a665c",
+      "title": "Genotype-independent de novo regeneration protocol in Cannabis sativa L. through direct organogenesis from cotyledonary nodes",
+      "authors": [
+        "Bennur Praveen Lakshman",
+        "O’Brien Martin",
+        "Fernando Shyama C.",
+        "Doblin Monika S."
+      ],
+      "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/ Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/ .",
+      "doi": "10.1186/s13007-025-01468-4"
+    },
+    {
+      "file": "Hemp-2026-Frontiers-1907649.xml",
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2026.1907649/xml",
+      "accessed": "2026-11-10",
+      "format": "unaltered publisher/archive XML",
+      "bytes": 84633,
+      "sha256": "5612edc5b68ebb20b5efc5025c2e873f90efe13f7c70ed663fd23214bf52a27b",
+      "title": "The viability gambit: an optimized disinfection protocol for industrial hemp ( Cannabis sativa L.) seeds",
+      "authors": [
+        "Gowlikar Rachna",
+        "Pender Grace",
+        "Kacprzyk Joanna",
+        "Destailleur Alice",
+        "Nayak Aditya",
+        "Melzer Rainer",
+        "Schilling Susanne"
+      ],
+      "license": "https://creativecommons.org/licenses/by/4.0/ This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY) . The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.",
+      "doi": "10.3389/fpls.2026.1907649"
+    }
+  ]
+}

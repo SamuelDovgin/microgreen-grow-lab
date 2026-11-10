@@ -6,6 +6,8 @@
 
 ## Latest evidence review
 
+[Tissue-culture seed preparation and lessons for microgreens](19_tissue_culture_seed_disinfection_and_microgreen_protocols.md) adds laboratory workflow, seed-lot effects, culture-versus-pathogen endpoints and a five-crop comparison. It does not validate the calculated badge times.
+
 [HOCl measured studies, log-reduction targets and grower agreement](18_hocl_log_reduction_and_grower_consensus.md) adds direct sunflower Salmonella evidence, FDA’s explicit sprout target, and a firsthand grower comparison. HOCl has positive measured results; the unconfirmed gap concerns particular extrapolated times and transfer to your crop/process. The timing math below is not a validated kill model.
 
 ## 1. Why 12% appeared to need longer than 3%
