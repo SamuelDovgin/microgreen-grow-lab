@@ -4,6 +4,10 @@
 
 [Open the planner](site/dist/seed-sanitation.html) · [Source-preservation notebook](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt)
 
+## Latest evidence review
+
+[HOCl measured studies, log-reduction targets and grower agreement](18_hocl_log_reduction_and_grower_consensus.md) adds direct sunflower Salmonella evidence, FDA’s explicit sprout target, and a firsthand grower comparison. HOCl has positive measured results; the unconfirmed gap concerns particular extrapolated times and transfer to your crop/process. The timing math below is not a validated kill model.
+
 ## 1. Why 12% appeared to need longer than 3%
 
 The earlier card combined **12% H₂O₂ for 15 minutes from a broccoli bacterial experiment** with **3% for 3–5 minutes from a grower article**. Different organisms, outcomes and evidence standards made those values unsuitable as points on one concentration–time curve. Their juxtaposition was misleading. It did not show that stronger peroxide biologically requires longer. [S01](https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/), [S02](https://www.bootstrapfarmer.com/blogs/microgreens/how-to-disinfect-seeds-before-planting-and-sprouting)
