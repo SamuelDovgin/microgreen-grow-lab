@@ -4,7 +4,9 @@
   "sources": {
     "grower": "https://www.bootstrapfarmer.com/blogs/microgreens/how-to-disinfect-seeds-before-planting-and-sprouting",
     "soaking": "https://www.bootstrapfarmer.com/blogs/microgreens/microgreens-soaking-seeds-when-why",
-    "study": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/"
+    "study": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/",
+    "peroxideSpray": "https://scholars.wlu.ca/etd/2215/",
+    "radishSpray": "https://www.sciencedirect.com/science/article/abs/pii/S0956713516300913"
   },
   "crops": {
     "broccoli": {
@@ -410,6 +412,138 @@
     "Flax": {
       "status": "Avoid routine bath",
       "basis": "editorial"
+    }
+  },
+  "quickProfiles": {
+    "sunflower": {
+      "label": "Sunflower",
+      "recommended": true,
+      "answer": "Yes \u2014 recommended",
+      "why": "Prioritize sanitation for mold-prone hulls; check the seed lot and drainage too.",
+      "hocl": {
+        "status": "No recommended dose",
+        "concentration": "Not established here",
+        "time": "Not established here",
+        "note": "The broccoli HOCl result does not establish a treatment for this seed.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/"
+      },
+      "peroxide": {
+        "status": "Grower option",
+        "concentration": "3% H\u2082O\u2082",
+        "time": "3\u20135 min",
+        "note": "Rinse thoroughly afterward. Grower practice; use a product labeled for edible seeds.",
+        "source": "https://www.bootstrapfarmer.com/blogs/microgreens/how-to-disinfect-seeds-before-planting-and-sprouting"
+      },
+      "spray": {
+        "hocl": "No \u2014 not recommended",
+        "peroxide": "No \u2014 not recommended",
+        "concentration": "No concentration recommended",
+        "note": "Peroxide spray research tested plant tolerance, not a reliable daily mold-prevention dose."
+      }
+    },
+    "pea-basic": {
+      "label": "Pea",
+      "recommended": true,
+      "answer": "Yes \u2014 recommended",
+      "why": "Prioritize sanitation for presoaked peas, separate from the normal water soak.",
+      "hocl": {
+        "status": "No recommended dose",
+        "concentration": "Not established here",
+        "time": "Not established here",
+        "note": "The broccoli HOCl result does not establish a treatment for this seed.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/"
+      },
+      "peroxide": {
+        "status": "Grower option",
+        "concentration": "3% H\u2082O\u2082",
+        "time": "3\u20135 min",
+        "note": "Rinse thoroughly afterward. Grower practice; use a product labeled for edible seeds.",
+        "source": "https://www.bootstrapfarmer.com/blogs/microgreens/how-to-disinfect-seeds-before-planting-and-sprouting"
+      },
+      "spray": {
+        "hocl": "No \u2014 not recommended",
+        "peroxide": "No \u2014 not recommended",
+        "concentration": "No concentration recommended",
+        "note": "Keep the surface moist without pooling; use potable water when needed."
+      }
+    },
+    "mung": {
+      "label": "Mung bean",
+      "recommended": true,
+      "answer": "Yes \u2014 recommended",
+      "why": "Large-seed grower guidance includes mung; a bath does not establish raw-food safety.",
+      "hocl": {
+        "status": "No recommended dose",
+        "concentration": "Not established here",
+        "time": "Not established here",
+        "note": "The broccoli HOCl result does not establish a treatment for this seed.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/"
+      },
+      "peroxide": {
+        "status": "Grower option",
+        "concentration": "3% H\u2082O\u2082",
+        "time": "3\u20135 min",
+        "note": "Rinse thoroughly afterward. Grower practice; use a product labeled for edible seeds.",
+        "source": "https://www.bootstrapfarmer.com/blogs/microgreens/how-to-disinfect-seeds-before-planting-and-sprouting"
+      },
+      "spray": {
+        "hocl": "No \u2014 not recommended",
+        "peroxide": "No \u2014 not recommended",
+        "concentration": "No concentration recommended",
+        "note": "Keep the surface moist without pooling; use potable water when needed."
+      }
+    },
+    "radish-daikon": {
+      "label": "Radish",
+      "recommended": false,
+      "answer": "No \u2014 not routinely",
+      "why": "Clean Daikon seed is normally direct-sown; routine chemical pretreatment is optional here.",
+      "hocl": {
+        "status": "No routine seed bath",
+        "concentration": "No dose recommended",
+        "time": "No bath recommended",
+        "note": "Radish-sprout research does not establish a routine treatment for coir-grown Daikon microgreens.",
+        "source": "https://www.sciencedirect.com/science/article/abs/pii/S0956713516300913"
+      },
+      "peroxide": {
+        "status": "No routine seed bath",
+        "concentration": "No dose recommended",
+        "time": "No bath recommended",
+        "note": "No mold-control protocol is selected here for your direct-sown Daikon seed.",
+        "source": "https://www.bootstrapfarmer.com/blogs/microgreens/microgreens-soaking-seeds-when-why"
+      },
+      "spray": {
+        "hocl": "No \u2014 not recommended",
+        "peroxide": "No \u2014 not recommended",
+        "concentration": "No concentration recommended",
+        "note": "30\u201350 ppm HOCl was studied on radish sprouts; that is not a daily coir-tray recommendation. Peroxide tolerance is not mold-control proof."
+      }
+    },
+    "broccoli": {
+      "label": "Broccoli",
+      "recommended": false,
+      "answer": "No \u2014 not routinely",
+      "why": "Direct sow clean seed. If treatment is needed, distinguish the broccoli research below from routine advice.",
+      "hocl": {
+        "status": "Research option \u00b7 broccoli",
+        "concentration": "~800 ppm chlorine",
+        "time": "15 min",
+        "note": "Tested on broccoli; follow a suitable product\u2019s edible-seed directions. Your 200 ppm stock cannot reproduce 800 ppm by dilution.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/"
+      },
+      "peroxide": {
+        "status": "Not preferred for mold",
+        "concentration": "3% H\u2082O\u2082 \u00b7 tested",
+        "time": "15 min \u00b7 tested",
+        "note": "Not effective in the broccoli head-to-head test. The separate 12% \u00d7 15 min result assessed bacteria.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/"
+      },
+      "spray": {
+        "hocl": "No \u2014 not recommended",
+        "peroxide": "No \u2014 not recommended",
+        "concentration": "No concentration recommended",
+        "note": "The seed-bath study does not establish a daily HOCl or peroxide spray protocol."
+      }
     }
   }
 }

@@ -26,7 +26,7 @@
     "data/crop-starting-rates.csv": "ecdba4a0dc7325f600ef25da7c922d1a5103c226772200a6639331ecae887ea1",
     "data/quick-start-growing-guidance.json": "f43548735eeb0bd32e3e6618c82f96dcc4b3234c4da051057e98034a04a3bbed",
     "data/seed-rate-history.json": "a888ed83316ebfa282d45dfc5452ba8768d2a787144250b026f254e1d9e90bff",
-    "data/seed-sanitation.json": "6151e98cfc19d46efe46cc4e2c3e59d2d31fb68bff9bcc9036b33a7761d4047f",
+    "data/seed-sanitation.json": "f78ff5ed31111c8cbc6f673316a9b45300acedbb6099b796ea479333e5d9c01e",
     "data/video-review.json": "bf6cd3f3a6e5d782caddd362d1d220002eb8e05bf1fd8845011dd420376eeb58",
     "docs/01_specific_lighting_guide.md": "bdb5f68c77324caaa5ea54aa77a6cf142675916ce4b04ebf54c6c8e06faef30b",
     "docs/02_lighting_model_and_validation.md": "3b6ea6534a876d5cfba0143c307e3ed51c66bfd3d04abc224cc963e74f8809ab",
@@ -64,7 +64,7 @@
     "grow-log.html": "de9ac397ae26d5e96948c759d9917eaaae628559575d71b70aa587b31c68e263",
     "grow-log.js": "8b77accc752a7b183c5bf79fb3c52db4dd469556291e924446fa803d62bc1435",
     "guide.html": "1802cf08661448215ead5e05557dabedfe4e31356c1b8af3f3a4fdfe04b1c4a5",
-    "index.html": "9a61a52a136a349fe3d78e43392710c866df9ca409c8a22dd1902382c99da067",
+    "index.html": "4838e0c87c2dc0c3973313ea5dfb240d1819d4f7f6329f19bf512d01ff74b3d3",
     "lighting.html": "0e2249dfdf4babdd9aa8f30dc62750623ab87702922c78a3c47cfcf5175c708b",
     "lighting.js": "6cc6e7bbcba072852b5ea70f0ff27f6c2a6c1cfff1b111eed4b05956fd4b56e2",
     "model-notes.html": "9cc9ebfa6cc9015ad809f8bcefecb16cda425841a1e5eec7d16629573407d645",
@@ -89,11 +89,11 @@
     "seed-rate-notes.html": "f2b002fc64b41ef0f9900b2bd34ca20fdd6989e78040953493daff0baa926210",
     "seed-rate-source-log.html": "31ee7f7e77ce6fa86da668034c2b396ccfd09a2798d4fc37247dc028a284830b",
     "seed-rates.js": "cb53d2a3c0bd033939bc7b06d71825dab4be5bdf6063480408a19653c133ab4a",
-    "seed-sanitation-data.js": "8ca6ea70de5f52cbf9e70608f1249cab3dab93cbe0626a78d70a1c3446925d59",
-    "seed-sanitation-model.js": "e143f7d41bb87ed315e49a56968931df75e34e7816092f3eb42edaa6496fe412",
-    "seed-sanitation.css": "4542dc10c64a31e0d63e017f0d35cc388571d17ee7701553d46caf3207eaae07",
-    "seed-sanitation.html": "dcf75132ad6c00651f3184c968a4f5fcbb4435cd3455c29aff8464f2b891e95b",
-    "seed-sanitation.js": "2e02b2b81dfb98ee267cb9e1e331342b02021324ffd143e39ea5a2e2e0d37a78",
+    "seed-sanitation-data.js": "b9673ec5832a68cf7dcfe66c76829feaa5c999c0a8ecad8ae1715b4e067bf837",
+    "seed-sanitation-model.js": "cc107fd2ab17a6688e56cc1e687bd7c3f705cd3286512eabaef887dc1ee4a5cd",
+    "seed-sanitation.css": "5eec977b1022f397f1133c7984fb95b8adbce7bec309b5321f25986445c9bb4c",
+    "seed-sanitation.html": "d97e0caff4157d9bc12c2a91614d8b638b64816ba8606f96eb9be73788824590",
+    "seed-sanitation.js": "0de92e8d6d76106800f2dd12358ef584ac67ca49e6e1850db8a89eb509526090",
     "setup-assessment.html": "900e9c6aedd822ffbe9d3cfbb4b083d472306ed31265b51c6182c66a397cd478",
     "sources/Arthur-2025-herbal-microgreen-density-substrate.pdf": "1f97369073924e2b54c095eb7000aca26cd45a2d08589aaa64865369209273d4",
     "sources/Cowden-2024-light-density-fertilizer-microgreens.pdf": "db02330f10200b543878995ef6e4a12ae8a52a94d4f096b76d83fbc3fa69bb8e",
@@ -113,5 +113,5 @@
     "style.css": "745f7f22dd404d93a58c210f34ed68a4b93df47b2864d8260dfd2bd1b98bdf40"
   },
   "publisher": "grow-lab",
-  "source_commit": "7a7a34fbd44a337b7c92973e3c63dcb0d83edc34"
+  "source_commit": "3d270faa8b87018456964f75f94f58185de3dc01"
 }
