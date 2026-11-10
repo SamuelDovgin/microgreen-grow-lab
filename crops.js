@@ -76,6 +76,8 @@ function renderSeed(s,d){
  $('count-controls').hidden=s.mode!=='count';
  $('species-line').textContent=crop.family+' / '+crop.species;
  $('crop-title').textContent=crop.name;
+ const sanitation=window.SeedSanitationData?.crops[crop.id];
+ if(sanitation&&$('crop-sanitation'))$('crop-sanitation').innerHTML='<strong>Seed sanitation: '+esc(sanitation.status.toLowerCase())+'.</strong> <a href="seed-sanitation.html?crop='+encodeURIComponent(crop.id)+'">Why &amp; options ↗</a>';
  $('included-packet').hidden=!crop.includedPacket;
  $('included-packet').textContent=crop.ownedPacket?'Your packet: '+crop.ownedPacket.name+' · True Leaf Market. The selected coir starter and named supplier alternatives keep their own rates and methods.':crop.includedPacket?'Includes '+crop.includedPacket+'. Select its True Leaf recipe for packet-specific settings.':'';
  $('confidence').textContent=recipe.id==='tested'?'Tested rate · context applies':recipe.id==='comparison'?'Starting rate from seed comparison':recipe.confidence||crop.confidence;
