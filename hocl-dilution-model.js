@@ -2,6 +2,7 @@
  'use strict';
  const FEED_G_L=6,ML_PER_SPRAY=1.66/10;
  const DEFAULTS=Object.freeze({mode:'final',stock:200,target:50,finalVolume:500,stockVolume:250,unit:'mL',sprays:10,applications:10,measuredFinal:'',ph:''});
+ const PEROXIDE_DEFAULTS=Object.freeze({stock:12,target:100,finalVolume:500,sprays:10,applications:10});
  const missing=v=>v===''||v===null||v===undefined;
  const positive=v=>!missing(v)&&Number.isFinite(Number(v))&&Number(v)>0;
  function verification(input){
@@ -34,5 +35,29 @@
   const checks={emptyStock:!calculate({...DEFAULTS,stock:''}).ok,defaultMix:a.finalMl===500&&a.stockMl===125&&a.waterMl===375,conservation:near(a.stockMl+a.waterMl,a.finalMl)&&near(a.stockMl*a.stockPpm,a.finalMl*a.targetPpm),reverse:near(b.finalMl,500),salt:near(a.load.totalSaltMg,24.9),strongerTarget:!calculate({...DEFAULTS,stock:30,target:50}).ok};
   return {ok:Object.values(checks).every(Boolean),checks};
  }
- return {DEFAULTS,FEED_G_L,ML_PER_SPRAY,calculate,verification,selfTest};
+ function calculatePeroxide(input){
+  if(![input.stock,input.target,input.finalVolume].every(positive)||Number(input.stock)>100){
+   return {ok:false,reason:'Enter a positive batch and target, and a stock percentage from above 0 through 100.'};
+  }
+  const stockPct=Number(input.stock), targetMgL=Number(input.target), finalMl=Number(input.finalVolume);
+  const activeMg=targetMgL*(finalMl/1000);
+  const stockGrams=activeMg/(10*stockPct);
+  if(!positive(stockGrams)||stockGrams>=finalMl){
+   return {ok:false,reason:'Choose a lower target or stronger stock for a dilute spray.'};
+  }
+  // A 1% w/w working solution contains 10 mg peroxide per gram.
+  const workingGrams=activeMg/10;
+  let twoStep=null;
+  if(stockPct>1&&workingGrams<finalMl){
+   const batchGrams=Math.max(stockPct,Math.ceil(workingGrams));
+   const concentrateGrams=batchGrams/stockPct;
+   twoStep={batchGrams,concentrateGrams,waterGrams:batchGrams-concentrateGrams,workingGrams};
+  }
+  const counts=[input.sprays,input.applications];
+  const validCounts=counts.every(value=>!missing(value)&&Number.isSafeInteger(Number(value))&&Number(value)>=0);
+  const appliedMl=validCounts?ML_PER_SPRAY*Number(input.sprays)*Number(input.applications):null;
+  const appliedMg=appliedMl===null?null:targetMgL*(appliedMl/1000);
+  return {ok:true,stockPct,targetMgL,finalMl,stockGrams,twoStep,appliedMl,appliedMg:Number.isFinite(appliedMg)?appliedMg:null};
+ }
+ return {DEFAULTS,PEROXIDE_DEFAULTS,FEED_G_L,ML_PER_SPRAY,calculate,calculatePeroxide,verification,selfTest};
 });

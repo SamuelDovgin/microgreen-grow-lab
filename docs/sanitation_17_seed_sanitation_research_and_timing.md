@@ -222,7 +222,7 @@ Conditions supporting that assessment: reasonably low-salt starting coir/water, 
 
 ## 12. HOCl dilution card
 
-[Open the dilution card](site/dist/seed-sanitation.html#hocl-dilution). It sits after the three quick-help cards. Stock FAC now starts at **200 ppm** based on the user's tentative estimate; replace it with a verified, in-range free available chlorine (FAC) reading. **Final solution volume defaults to 500 mL**; the 50-ppm target is an arithmetic example, not a crop recommendation. Presets 30/50/70/100/200/300 ppm and custom positive targets are available.
+[Open the dilution card](site/dist/seed-sanitation.html#hocl-dilution). Choose HOCl in the spray dilution card after the three quick-help cards. Stock FAC starts at **200 ppm** based on the user's tentative estimate; replace it with a verified, in-range free available chlorine (FAC) reading. **Final solution volume defaults to 500 mL**; the 50-ppm target is an arithmetic example, not a crop recommendation. Presets 30/50/70/100/200/300 ppm and custom positive targets are available.
 
 **Batch note [S71]:** The user identified the top pH strip as tap water and the two vertical strips as generated solution. Their tentative chlorine estimate was about **200 mg/L**; the pasted comparison estimated a solution pH of roughly **4.0–4.5**. The photo does not confirm a 200 mg/L FAC reading, whether the strip measures free or total chlorine, or whether the sample was diluted before testing. The earlier 300-ppm figure was a target in the working recipe. Neither photo nor target establishes which recipe amounts were actually used. The new prefill is a planning assumption.
 
@@ -295,3 +295,27 @@ A useful crop comparison would use the same seed lot, coir, seed density and tot
 The original 300-ppm scenario gives approximately **83.33 mL stock + 416.67 mL water** for 500 mL at 50 ppm. Under the same recorded salt and spray assumptions, that scenario gives **16.6 mg per tray** for 10 sprays × 10 applications; the current 200-ppm scenario gives **24.9 mg** because it uses more stock to reach 50 ppm. Both are mass-balance estimates. Final pH is not predicted by the dilution ratio. [Current dilution example](#12-hocl-dilution-card) · [Measured spray output](#11-measured-spray-salt-load).
 
 **Finding:** the attached proposal has a credible research basis as an experimental hypothesis, strongest for radish/pea sprout production. Its blanket growth-tolerance claim needs correction, and the exact five-crop germination-only misting schedule remains unconfirmed.
+
+
+## 14. Peroxide spray dilution and chlorate
+
+[Open the spray dilution calculator](site/dist/seed-sanitation.html#hocl-dilution). It opens on **H₂O₂**, with **12% w/w stock**, a **100 mg/L calculation target** and **500 mL final volume**. Use the HOCl button for [free-chlorine dilution](#12-hocl-dilution-card). The separate custom seed-bath form also starts on peroxide.
+
+### Peroxide amounts and the sunflower study
+
+For a weight-percent label, 12% stock contains 120 mg H₂O₂ per gram. A 500 mL batch at 100 mg/L needs 50 mg of H₂O₂. The calculator offers two ways to measure that amount.
+
+- **Two-step example.** Mix **1 g of 12% stock with 11 g of water** to get 12 g of 1% working solution. Weigh **5 g of that working solution** and add water to the 500 mL mark.
+- **Direct example.** Weigh **0.417 g of 12% stock** and add water to the 500 mL mark. The calculator uses the label's mass fraction and the finished volume, so stock density is unnecessary. Follow the concentrate's label and keep it separate from HOCl and bleach.
+
+The recorded 0.166 mL per spray gives **16.6 mL across 100 sprays**, or **1.66 mg H₂O₂ delivered** at 100 mg/L. This estimates the amount in the sprayed liquid. The fraction that reaches or remains on the seedlings is unknown.
+
+Eicher-Sodo et al. tested 0–200 mg/L in daily greenhouse sprays. Black-oil sunflower showed no increase in measured leaf damage through 200 mg/L. Radish, arugula and the lettuce cultivars showed leaf injury at some tested levels. The study measured growth and leaf damage. Mold prevention, antimicrobial effect size and pathogen reduction for the proposed covered germination spray remain unknown. [2019 HortTechnology study, S05](https://doi.org/10.21273/HORTTECH04255-18)
+
+### Chlorate and the five days after spraying
+
+Free available chlorine (FAC) and chlorate are different measurements. At 50 mg/L FAC, the same 16.6 mL spray schedule delivers **0.83 mg chlorine equivalent** before reactions. Chlorate in the diluted solution requires its own concentration measurement. A FAC reading or estimated salt load leaves that amount unknown.
+
+Plants can transform chlorate. In Arabidopsis, nitrate reductase converts it to chlorite. A baby lettuce study found chlorate in harvested leaves after irrigation with electrolyzed water. Together these findings support both metabolism and retention as possibilities. [Arabidopsis enzyme study, S73](https://pmc.ncbi.nlm.nih.gov/articles/PMC1081098/) · [Baby lettuce irrigation study, S74](https://pubmed.ncbi.nlm.nih.gov/29171869/)
+
+Stopping the spray for five days ends further input from that spray. It leaves the amount already present in sunflower tissue unknown. Growth can reduce the concentration per gram if a fixed residue is distributed through more biomass. Measuring residue at harvest would be needed to assess clearance in this setup.

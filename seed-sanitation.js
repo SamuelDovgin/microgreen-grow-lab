@@ -38,7 +38,7 @@
  $('san-form').addEventListener('submit',e=>e.preventDefault());
  $('san-form').addEventListener('input',e=>{if(e.target.id!=='san-label-ok')$('san-label-ok').checked=false;render();});
  $('san-chemical').addEventListener('change',chemicalChanged);
- $('san-form').addEventListener('reset',()=>{setTimeout(()=>{$('san-chemical').value='hocl';$('san-batch').value=1000;chemicalChanged();},0);});
+ $('san-form').addEventListener('reset',()=>{setTimeout(()=>{$('san-chemical').value='peroxide';$('san-batch').value=1000;chemicalChanged();},0);});
  $('san-crop').addEventListener('change',()=>selectCrop($('san-crop').value));
  for(const id of badgeCrops)$('seed-badge-'+id).addEventListener('click',()=>selectCrop(id));
  for(const chem of ['hocl','peroxide'])for(const strength of D.chemicalComparisons[chem].options)$(chem+'-badge-'+strength).addEventListener('click',()=>{strengths[chem]=strength;renderComparisons();});
