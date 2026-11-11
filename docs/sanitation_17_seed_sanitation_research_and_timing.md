@@ -6,6 +6,8 @@
 
 ## Latest evidence review
 
+**Foliar use review, November 11.** Commercial HOCl examples, the organic chlorine residual standard, municipal water data and the peroxide label comparison are in [section 15](#15-foliar-sprays-food-contact-and-product-labels).
+
 **50-ppm spray proposal reviewed, November 10:** section 13 compares six primary studies behind the attached assessment. Radish and pea provide relevant sprout-production evidence; broccoli evidence includes a fresh-weight penalty. **50 ppm is a plausible experimental comparison, not a validated twice-daily germination spray for the five coir-grown crops.**
 
 **Recorded spray observation, November 10:** 10 trigger pulls delivered **1.66 g of liquid**. At up to 10 applications, the generator recipe contributes approximately **0.10 g salt-equivalent per 1020 tray**. Assessment: **likely a minor salinity concern in adequately moist, low-salt coir; moderate confidence**, separate from chlorine tolerance or mold-control efficacy. Full calculation and evidence are recorded in section 11 below.
@@ -222,7 +224,7 @@ Conditions supporting that assessment: reasonably low-salt starting coir/water, 
 
 ## 12. HOCl dilution card
 
-[Open the dilution card](site/dist/seed-sanitation.html#hocl-dilution). Choose HOCl in the spray dilution card after the three quick-help cards. Stock FAC starts at **200 ppm** based on the user's tentative estimate; replace it with a verified, in-range free available chlorine (FAC) reading. **Final solution volume defaults to 500 mL**; the 50-ppm target is an arithmetic example, not a crop recommendation. Presets 30/50/70/100/200/300 ppm and custom positive targets are available.
+[Open the dilution card](site/dist/seed-sanitation.html#hocl-dilution). Choose HOCl in the spray dilution card after the three quick-help cards. Stock FAC starts at **200 ppm** based on the user's tentative estimate; replace it with a verified, in-range free available chlorine (FAC) reading. **Final solution volume defaults to 500 mL**; the 50-ppm target is an arithmetic example, not a crop recommendation. Presets 10/30/50/70/100/200/300 ppm and custom positive targets are available.
 
 **Batch note [S71]:** The user identified the top pH strip as tap water and the two vertical strips as generated solution. Their tentative chlorine estimate was about **200 mg/L**; the pasted comparison estimated a solution pH of roughly **4.0–4.5**. The photo does not confirm a 200 mg/L FAC reading, whether the strip measures free or total chlorine, or whether the sample was diluted before testing. The earlier 300-ppm figure was a target in the working recipe. Neither photo nor target establishes which recipe amounts were actually used. The new prefill is a planning assumption.
 
@@ -319,3 +321,47 @@ Free available chlorine (FAC) and chlorate are different measurements. At 50 mg/
 Plants can transform chlorate. In Arabidopsis, nitrate reductase converts it to chlorite. A baby lettuce study found chlorate in harvested leaves after irrigation with electrolyzed water. Together these findings support both metabolism and retention as possibilities. [Arabidopsis enzyme study, S73](https://pmc.ncbi.nlm.nih.gov/articles/PMC1081098/) · [Baby lettuce irrigation study, S74](https://pubmed.ncbi.nlm.nih.gov/29171869/)
 
 Stopping the spray for five days ends further input from that spray. It leaves the amount already present in sunflower tissue unknown. Growth can reduce the concentration per gram if a fixed residue is distributed through more biomass. Measuring residue at harvest would be needed to assess clearance in this setup.
+
+## 15. Foliar sprays, food contact and product labels
+
+For U.S. edible microgreens, start with the intended use and the actual product or generator. A preharvest crop spray, a postharvest produce wash, and a sanitizer for empty trays have different conditions. The reviewed sources establish no single HOCl foliar concentration for conventional microgreens. [EPA product labeling guidance](https://www.epa.gov/pesticide-labels/pesticide-labeling-questions-answers)
+
+| Use | What the U.S. sources say |
+|---|---|
+| Organic preharvest water contacting the crop | The rule lists HOCl generated from electrolyzed water. It limits the **residual chlorine in water in direct crop contact** to the drinking-water maximum residual disinfectant level, **4 mg/L as Cl₂** for chlorine. USDA guidance calls for monitoring at the last point of contact. The rule separately addresses edible sprout production under EPA label directions. FDA treats microgreens as a distinct crop category in its produce safety guidance. [7 CFR § 205.601(a)(2)](https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205/subpart-G/section-205.601) · [40 CFR § 141.65](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-141/subpart-G/section-141.65) · [USDA NOP 5026 Rev. 03](https://www.ams.usda.gov/sites/default/files/media/5026.pdf) · [FDA sprout guidance](https://www.fda.gov/media/102430/download) |
+| Organic postharvest produce wash | NOP 5026 allows chlorine at levels authorized for the specific use and calls for an immediate qualifying potable-water rinse. The residual limit applies at the final rinse. [USDA NOP 5026, § 4.3](https://www.ams.usda.gov/sites/default/files/media/5026.pdf) |
+| Commercial postharvest produce wash | FDA FCN 1811 covers the listed supplier and its customers. It specifies up to **60 ppm FAC** and, for produce eaten raw, a potable-water rinse or a 10-minute drain. [FDA FCN 1811](https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=1811&set=FCN) |
+| Sanitizing hard food-contact surfaces | The federal residue exemption specifies up to **200 ppm total available chlorine** under its conditions. The EcaFlo/Danolyte label has a **200 ppm FAC** hard-surface use with 60 seconds wet contact, followed by draining and drying. Follow the end-use label for the product in hand. [40 CFR § 180.940](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-E/part-180/subpart-D/section-180.940) · [EPA label 91582-1, February 2026](https://www3.epa.gov/pesticides/chem_search/ppls/091582-00001-20260202.pdf) |
+
+The **4 ppm** value is a residual-water standard in the organic context. An initial **10 or 50 ppm** mix has a different measurement point. Measure at the relevant point when evaluating compliance. For conventional crops, verify the authorized use, crop and directions for the actual product. EPA explains that some on-site generators are pesticide devices, with different rules for generators supplied with substances or distributed output. Device status alone leaves the crop use unverified. [EPA device guidance](https://www.epa.gov/pesticides/pesticide-devices-guide-consumers)
+
+### Commercial HOCl examples and dilution arithmetic
+
+The manufacturer materials identify HOCl as the principal antimicrobial. The concentrations below are published targets or stock specifications. The last columns show a **250 mL finished batch** using those nominal stocks and the amount delivered by **1.66 mL per ten sprays**, using the concentration as FAC for the comparison. These are reference calculations. The labels reviewed did not establish a U.S. preharvest use on edible microgreens for any of these three products.
+
+| Manufacturer example | Nominal stock | Published target and use | Stock + water for 250 mL | mg FAC equivalent per 10 sprays |
+|---|---:|---|---:|---:|
+| AGrowlyte prevention | 500 ppm FAC | 8 ppm foliar, twice weekly | 4 + 246 mL | 0.0133 |
+| AGrowlyte treatment | 500 ppm FAC | 40 ppm foliar, daily. The guide describes up to twice daily in severe cases. | 20 + 230 mL | 0.0664 |
+| GroWash | 50 ppm FAC at production | 50 ppm ready-to-use plant hygiene spray, daily | 250 + 0 mL | 0.0830 |
+| Green Houston HOCl 500 | 500 ppm nominal HOCl | 50–100 ppm foliar or greenhouse fogging | 25–50 + 225–200 mL | 0.0830–0.166 |
+| Green Houston HOCl 500 | 500 ppm nominal HOCl | 150 ppm outbreak fogging, episodic | 75 + 175 mL | 0.249 |
+| Green Houston HOCl 100 | 100 ppm nominal HOCl | 100 ppm foliar and cuttings product | 250 + 0 mL | 0.166 |
+
+**AGrowlyte.** Its grower guide specifies checking residual fluid for up to 4 ppm and cautions against use during seedling and prevegetative stages. At exactly 500 ppm stock, the guide’s printed stock-to-water ratios calculate to about 7.7 and 36.2 ppm before demand. The table uses the advertised 8 and 40 ppm targets. The EPA 91582-1 master label reviewed includes hard-surface uses. Its text has no edible-crop foliar directions. [AGrowlyte grower guide](https://www.agrowlyte.com/_files/ugd/48b9e9_f6fe6bfbd01c48efa9d89038916af76d.pdf) · [EPA master label](https://www3.epa.gov/pesticides/chem_search/ppls/091582-00001-20260202.pdf)
+
+**GroWash and Green Houston.** GroWash specifies FAC at manufacture. Green Houston, a South African supplier, lists nominal HOCl strengths and describes the 50 ppm lower end under fogging. The reviewed page provides separate foliar directions for its 100 ppm product. The table treats those nominal concentrations as FAC for arithmetic only. The manufacturer’s directions and measured product concentration are the relevant inputs for a real batch. [GroWash product directions](https://growash.com/products/) · [Green Houston product directions](https://www.greenhouston.co.za/products/hypochlorous-acid-hocl-organic-disinfectant-foliar-spray) · [Cornell EPA label research tools](https://cals.cornell.edu/produce-safety-alliance/resources)
+
+### Tap water and the 10 ppm calculation
+
+Tinley Park’s municipal report lists **0.8–0.9 ppm chlorine** for its 2025 monitoring, with a reported high of **0.9 ppm** and no chlorine violation. That range describes the utility’s samples. A faucet reading requires testing the actual water. Numerically, 50 ppm is about 56 times 0.9 ppm. Those numbers describe the water concentrations. [Village water quality report, 2025 data](https://cms6.revize.com/revize/tinleypark/document_center/Water%20Quality%20Report/Water%20Quality%20Report%202025.pdf)
+
+The calculator’s **10 ppm FAC** preset gives **25 mL of stock verified at 200 ppm FAC**, with water added to **500 mL final volume** (about **475 mL** water). It assumes negligible FAC in the diluent and reports a mixing target. Check final FAC with a test suited to the low range. At 10 ppm, 100 sprays at the recorded volume deliver **0.166 mg FAC equivalent** across a tray. At 50 ppm the same schedule delivers **0.83 mg**. These figures describe FAC introduced with the spray. Chlorate concentration, residues on greens at harvest, and whether a previously moldy tray is suitable to eat require other evidence. [Spray dilution calculator](site/dist/seed-sanitation.html#hocl-dilution) · [Chlorate and harvest residue evidence](#14-peroxide-spray-dilution-and-chlorate)
+
+### Peroxide comparison from the discussion
+
+The **1% H₂O₂ per application** in 40 CFR § 180.1197 is a residue-tolerance exemption for growing and postharvest crops. Organic crop rules list hydrogen peroxide for crop disease control under § 205.601(i)(5), subject to applicable restrictions and product directions. The **100 ppm** calculator example comes from the concentration range in a greenhouse plant-tolerance study, with microbial effectiveness on germinating sunflower still unknown. [40 CFR § 180.1197](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-E/part-180/subpart-D/section-180.1197) · [7 CFR § 205.601](https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205/subpart-G/section-205.601) · [Eicher-Sodo et al. 2019](https://doi.org/10.21273/HORTTECH04255-18)
+
+ZeroTol 2.0 is a separate example with **27.1% hydrogen peroxide and 2.0% peroxyacetic acid**. BioSafe’s V16.3 specimen lists microgreens under leafy vegetables, with preventive **1:200–1:400** rates and a zero-day preharvest interval under the label directions. The pasted estimate of roughly 680–1,350 mg/L H₂O₂ assumes a stock density near water. Using the SDS density of 9.18 lb/gal (about 1.10 kg/L) gives roughly **740–1,480 mg/L H₂O₂** on the stated volume ratios. This is a formulation-specific estimate. [BioSafe V16.3 specimen](https://biosafesystems.com/wp-content/uploads/2020/08/6000-ZeroTol-2.0-V16.3-49st-Specimen1.pdf) · [EPA label record 70299-12](https://www3.epa.gov/pesticides/chem_search/ppls/070299-00012-20210903.pdf) · [BioSafe SDS, section 9](https://biosafesystems.com/wp-content/uploads/2025/05/SDS-6000-ZeroTol-2.0-Rev-1.pdf)
+
+[Archived USDA NOP 5026 PDF](source_docs/seed_sanitation/USDA-NOP-5026-chlorine-rev03.pdf) · [Source notebook, S75–S86](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt)

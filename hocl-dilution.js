@@ -1,6 +1,6 @@
 (function(){'use strict';
  const $=id=>document.getElementById('hcd-'+id),M=window.HoclDilutionModel;
- const fields=['mode','stock','target','finalVolume','stockVolume','unit','sprays','applications','measuredFinal','ph'],presets=[30,50,70,100,200,300];
+ const fields=['mode','stock','target','finalVolume','stockVolume','unit','sprays','applications','measuredFinal','ph'],presets=[10,30,50,70,100,200,300];
  const fmt=n=>Math.abs(n)>0&&Math.abs(n)<.01?Number(n.toPrecision(3)).toString():new Intl.NumberFormat(undefined,{maximumFractionDigits:2}).format(n);
  let current,lastUnit='mL';
  const read=()=>Object.fromEntries(fields.map(id=>[id,$(id).value]));

@@ -684,3 +684,61 @@ Effect of chlorate treatment on nitrate reductase and nitrite reductase gene exp
 
 [S74] López-Gálvez et al., Journal of the Science of Food and Agriculture 98:2981–2988 (2018)
 Disinfection by-products in baby lettuce irrigated with electrolysed water. DOI 10.1002/jsfa.8796. Primary abstract read at https://pubmed.ncbi.nlm.nih.gov/29171869/ (2026-11-11). Reports 0.02–0.14 mg/L chlorate in irrigation water and 0.05–0.10 mg/kg in fresh produce over consecutive greenhouse harvests. The system differs from covered sunflower germination. URL only.
+
+[S75] User-pasted foliar HOCl, municipal chlorine and peroxide comparison
+Reviewed 2026-11-11 from a private attachment. The explicit request adds the research findings and a 10 ppm HOCl preset. The attachment proposed other presets as part of the quoted discussion. The product figures are recorded as references in section 15. The raw attachment remains private. It does not establish a measured faucet value, the product's FAC at use, an approved crop use for the generator, or residues at harvest.
+
+[S76] Organic chlorine in crop production and handling
+7 CFR 205.601(a)(2), current eCFR text checked 2026-11-11, https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205/subpart-G/section-205.601
+USDA AMS NOP 5026 Rev. 03, sections 4.1 and 4.3, https://www.ams.usda.gov/sites/default/files/media/5026.pdf
+Records preharvest water residual at direct contact, the specific edible sprout provision, and the immediate qualifying potable rinse for authorized organic postharvest washes. The USDA PDF is a public agency document preserved unaltered at USDA-NOP-5026-chlorine-rev03.pdf (221650 bytes, SHA-256 90fc5f860505f3b07a73da54410b427d1180eb03d7e3c7681a0feb3ef085bac2). The PDF revision includes the electrolyzed-HOCl listing and sprout provision.
+
+[S77] Chlorine in municipal drinking water
+40 CFR 141.65, chlorine MRDL 4.0 mg/L as Cl2, https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-141/subpart-G/section-141.65
+Village of Tinley Park Water Quality Report, 2025 monitoring table, https://cms6.revize.com/revize/tinleypark/document_center/Water%20Quality%20Report/Water%20Quality%20Report%202025.pdf
+Checked 2026-11-11. The village chlorine row shows range 0.8–0.9 ppm, high 0.9 ppm and no chlorine violation. The document is a municipal report, not a measurement of the user's water. URL only for the municipal report.
+
+[S78] FDA postharvest wash and crop definitions
+Effective FCN 1811, https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=1811&set=FCN
+FDA 2023 final sprout guidance, https://www.fda.gov/media/102430/download (existing archive under deep_review).
+Checked in this conversation. FCN 1811 is specific to IET/EcoloxTech and its customers. It covers specified food-processing uses up to 60 ppm FAC with a potable rinse or ten-minute drain for raw produce. FDA guidance distinguishes growing microgreens from sprouts under the Produce Safety Rule. These conditions do not establish preharvest germination-spray authorization.
+
+[S79] HOCl on hard food-contact surfaces and EPA registration 91582-1
+40 CFR 180.940, https://www.ecfr.gov/current/title-40/chapter-I/subchapter-E/part-180/subpart-D/section-180.940
+EPA PPLS EcaFlo Anolyte / Danolyte accepted label 2026-02-02, https://www3.epa.gov/pesticides/chem_search/ppls/091582-00001-20260202.pdf
+PPLS record checked 2026-11-11, https://ordspub.epa.gov/ords/pesticides/cswu/ppls/91582-1
+The regulation's HOCl limit is 200 ppm measured as total available chlorine in its stated surface use. The label includes 200 ppm FAC on hard, nonporous food-contact surfaces, 60-second wet contact, drain and air dry. A search of the accepted label found no crop, foliar or irrigation directions. Reviewed master label only. URL only.
+
+[S80] EPA pesticide label and generator guidance
+https://www.epa.gov/pesticide-labels/pesticide-labeling-questions-answers
+https://www.epa.gov/pesticides/pesticide-devices-guide-consumers
+Checked 2026-11-11. EPA distinguishes devices from distribution with substances or output as a pesticide product, and describes a concentration tied to the end-use product label. The guidance is not a crop-use determination for an unidentified generator. URL only.
+
+[S81] AGrowlyte grower directions and formulation
+https://www.agrowlyte.com/_files/ugd/48b9e9_f6fe6bfbd01c48efa9d89038916af76d.pdf
+https://www.agrowlyte.com/_files/ugd/48b9e9_d5f85651868b448d8c86dacaa358948f.pdf
+Manufacturer documents checked 2026-11-11. Agricultural sheet names 8 ppm prevention twice weekly, 40 ppm treatment daily, severe cases at least eight hours apart, a 4 ppm residual check, and a seedling/prevegetative exclusion. Nominal stock reference 500 ppm from manufacturer and associated EPA label. Guide ratios are water-to-stock, so 500/(64+1) and 500/(12.8+1) give 7.7 and 36.2 ppm before chlorine demand. The manufacturer materials and the EPA accepted label are different documents. URL only.
+
+[S82] GroWash manufacturer product page
+https://growash.com/products/
+Checked 2026-11-11. Advertises HOCl solution at 50 ppm FAC at production and once-daily use on plant leaves. No EPA-approved edible-microgreen foliar label verified. URL only.
+
+[S83] Green Houston manufacturer product page
+https://www.greenhouston.co.za/products/hypochlorous-acid-hocl-organic-disinfectant-foliar-spray
+Checked 2026-11-11. Lists 500 and 100 ppm nominal HOCl products. The 500 stock directions describe 50–100 ppm greenhouse/foliar fogging and up to 150 ppm for outbreaks. The 100 product is listed for foliar spray and cuttings. No separate direct-spray-only 50 ppm direction was verified. South African manufacturer guidance and nominal concentrations, with FAC equivalence assumed for arithmetic. URL only.
+
+[S84] Hydrogen peroxide residue exemption and organic National List
+https://www.ecfr.gov/current/title-40/chapter-I/subchapter-E/part-180/subpart-D/section-180.1197
+https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205/subpart-G/section-205.601
+Checked 2026-11-11. Section 180.1197 exempts residues for up to 1% H2O2 per application on growing and postharvest crops. Section 205.601(i)(5) lists hydrogen peroxide for organic disease control, and the section preamble and pest-management requirements apply. Plant tolerance evidence remains S05. URL only.
+
+[S85] ZeroTol 2.0 label and density correction
+https://www3.epa.gov/pesticides/chem_search/ppls/070299-00012-20210903.pdf
+https://ordspub.epa.gov/ords/pesticides/cswu/ppls/70299-12
+https://biosafesystems.com/wp-content/uploads/2020/08/6000-ZeroTol-2.0-V16.3-49st-Specimen1.pdf
+https://biosafesystems.com/wp-content/uploads/2025/05/SDS-6000-ZeroTol-2.0-Rev-1.pdf
+Checked 2026-11-11. EPA label record 70299-12 and manufacturer V16.3 specimen. The specimen lists microgreens in leafy vegetables, preventive 1:200–1:400 and a zero-day PHI under label conditions. Concentrate actives are 27.1% H2O2 and 2.0% peroxyacetic acid. SDS section 9 gives 9.18 lb/gal, about 1.10 kg/L. Assuming one volume stock per 200 or 400 volumes water and additive volumes, 0.271 × 1.10 × 1,000,000 / (201 or 401) gives approximately 1,480 or 740 mg/L H2O2. The pasted numbers assumed near-water stock density. Formulation-specific arithmetic only. URL only.
+
+[S86] Cornell Produce Safety Alliance sanitizer search resources
+https://cals.cornell.edu/produce-safety-alliance/resources
+Checked 2026-11-11. Cornell links its EPA-labeled produce sanitizer tool and its selection guidance. The directory is a way to locate uses and labels. Section 15 bases the 91582-1 finding on the accepted label and makes no exhaustive claim about all products. URL only.
