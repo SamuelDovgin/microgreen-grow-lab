@@ -337,6 +337,9 @@ The **4 ppm** value is a residual-water standard in the organic context. An init
 
 ### Commercial HOCl examples and dilution arithmetic
 
+- **10 ppm is a prevention reference.** It is near the 8 ppm preventive foliar rate in AGrowlyte’s guide. [AGrowlyte grower guide](https://www.agrowlyte.com/_files/ugd/48b9e9_f6fe6bfbd01c48efa9d89038916af76d.pdf)
+- **50 ppm is a treatment-range reference.** It is near AGrowlyte’s 40 ppm rate for existing plant disease. GroWash also markets 50 ppm for routine leaf hygiene. These examples leave prevention and treatment doses for germinating edible microgreens unverified. [AGrowlyte grower guide](https://www.agrowlyte.com/_files/ugd/48b9e9_f6fe6bfbd01c48efa9d89038916af76d.pdf) · [GroWash product directions](https://growash.com/products/)
+
 The manufacturer materials identify HOCl as the principal antimicrobial. The concentrations below are published targets or stock specifications. The last columns show a **250 mL finished batch** using those nominal stocks and the amount delivered by **1.66 mL per ten sprays**, using the concentration as FAC for the comparison. These are reference calculations. The labels reviewed did not establish a U.S. preharvest use on edible microgreens for any of these three products.
 
 | Manufacturer example | Nominal stock | Published target and use | Stock + water for 250 mL | mg FAC equivalent per 10 sprays |
