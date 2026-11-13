@@ -29,6 +29,12 @@
 .hcd-peroxide-steps {
   display: grid;
   gap: 9px;
+  margin-top: 14px;
+}
+
+.hcd-peroxide-steps h4 {
+  margin: 0;
+  font-size: 13px;
 }
 
 .hcd-result .hcd-peroxide-steps p {

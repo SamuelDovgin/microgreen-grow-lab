@@ -33,15 +33,22 @@
     if (!result.ok) return;
 
     field('target-pct').textContent = `${format(result.targetMgL)} mg/L ≈ ${format(result.targetMgL / 10000)}% in dilute water.`;
-    field('batch').textContent = `Make ${format(result.finalMl)} mL`;
-    field('direct').textContent = `${format(result.stockGrams)} g stock`;
+    const volume = `${format(result.finalMl)} mL`;
+    const stockFraction = result.stockGrams / result.finalMl;
+    const waterParts = 1 / stockFraction - 1;
+    field('batch').textContent = `Make ${volume}`;
+    field('direct').textContent = `${format(result.stockGrams)} g`;
+    field('water').textContent = volume;
+    field('stock-fill').style.width = `${stockFraction * 100}%`;
+    field('ratio').textContent = Number.isFinite(waterParts)
+      ? `1 part stock + ${format(waterParts)} parts water by weight · ≈${format(stockFraction * 100)}% stock`
+      : '';
     field('two-step').hidden = !result.twoStep;
     if (result.twoStep) {
       const {concentrateGrams, waterGrams, workingGrams} = result.twoStep;
       field('working-mix').textContent = `${format(concentrateGrams)} g stock + ${format(waterGrams)} g water`;
       field('working-use').textContent = `${format(workingGrams)} g of the 1% solution`;
     }
-    field('direct-label').textContent = result.twoStep ? 'Direct alternative' : 'Direct dilution';
     field('load').textContent = result.appliedMg === null
       ? 'Enter whole-number spray and application counts.'
       : `${format(result.appliedMg)} mg H₂O₂ in ${format(result.appliedMl)} mL sprayed per tray.`;
@@ -65,10 +72,12 @@
   field('copy').addEventListener('click', async () => {
     if (!result.ok) return;
     const lines = [`H₂O₂ dilution calculation · ${format(result.stockPct)}% w/w stock`, `${field('batch').textContent} at ${format(result.targetMgL)} mg/L H₂O₂.`];
+    lines.push(`Direct dilution: weigh ${field('direct').textContent} stock and add water to ${field('water').textContent} total.`);
+    if (field('ratio').textContent) lines.push(`${field('ratio').textContent} (assumes 1 g/mL finished solution).`);
     if (result.twoStep) {
       lines.push(`1% working solution: ${field('working-mix').textContent}.`, `Final batch: ${field('working-use').textContent}. Add water to the final volume.`);
     }
-    lines.push(`${field('direct-label').textContent}: ${field('direct').textContent}. Add water to the final volume.`, field('load').textContent, 'Experimental calculation. Mold prevention and pathogen reduction are unverified.');
+    lines.push(field('load').textContent, 'Experimental calculation. Mold prevention and pathogen reduction are unverified.');
     try {
       await navigator.clipboard.writeText(lines.join('\n'));
       field('copy-status').textContent = 'Dilution notes copied.';
