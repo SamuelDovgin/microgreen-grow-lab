@@ -88,7 +88,7 @@ The greenhouse method targets contamination on reusable growing containers and i
 
 ### Small batches and spray application
 
-The [empty-tray bleach calculator](site/dist/seed-sanitation.html?dilution=bleach#hocl-dilution) opens on the 7.5% greenhouse rinse-off recipe. Set your finished batch size, choose a matching label example below, or enter your bottle's bleach and water amounts.
+The [empty-tray bleach calculator](site/dist/seed-sanitation.html?dilution=bleach#hocl-dilution) opens on **Tandil 7.5% · Rinse-off**, which scales the greenhouse recipe above. Set your finished batch size, choose a matching label example below, or enter your bottle's bleach and water amounts.
 
 | Label example | Label dilution | Scaled to 500 mL total | Application and finish |
 | --- | --- | --- | --- |
