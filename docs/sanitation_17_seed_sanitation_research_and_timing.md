@@ -301,16 +301,18 @@ The original 300-ppm scenario gives approximately **83.33 mL stock + 416.67 mL w
 
 ## 14. Peroxide spray dilution and chlorate
 
-[Open the spray dilution calculator](site/dist/seed-sanitation.html#hocl-dilution). It opens on **H₂O₂**, with **12% w/w stock**, a **100 mg/L calculation target** and **500 mL final volume**. Use the HOCl button for [free-chlorine dilution](#12-hocl-dilution-card). The separate custom seed-bath form also starts on peroxide.
+[Open the spray dilution calculator](site/dist/seed-sanitation.html#hocl-dilution). It opens on **H₂O₂**, with **12% w/w stock**, a **900 mg/L grower-reference target** and **500 mL final volume**. Use the HOCl button for [free-chlorine dilution](#12-hocl-dilution-card). The separate custom seed-bath form also starts on peroxide.
 
 ### Peroxide amounts and the sunflower study
 
-For a weight-percent label, 12% stock contains 120 mg H₂O₂ per gram. A 500 mL batch at 100 mg/L needs 50 mg of H₂O₂. The calculator offers two ways to measure that amount.
+On The Grow describes mixing 15 mL of 3% peroxide into 500 mL of water for a light germination mist. That is approximately 870 mg/L after mixing. The calculator rounds this grower reference to 900 mg/L. Sunflower crop tolerance, disease prevention and pathogen reduction at that concentration remain unverified. [On The Grow germination spray example](https://onthegrow.net/blogs/microgreens/microgreens-mold-prevention-identification-complete-guide)
 
-- **Two-step example.** Mix **1 g of 12% stock with 11 g of water** to get 12 g of 1% working solution. Weigh **5 g of that working solution** and add water to the 500 mL mark.
-- **Direct example.** Weigh **0.417 g of 12% stock** and add water to the 500 mL mark. The calculator uses the label's mass fraction and the finished volume, so stock density is unnecessary. Follow the concentrate's label and keep it separate from HOCl and bleach.
+For a weight-percent label, 12% stock contains 120 mg H₂O₂ per gram. A 500 mL batch at 900 mg/L needs 450 mg of H₂O₂. The calculator offers two ways to measure that amount.
 
-The recorded 0.166 mL per spray gives **16.6 mL across 100 sprays**, or **1.66 mg H₂O₂ delivered** at 100 mg/L. This estimates the amount in the sprayed liquid. The fraction that reaches or remains on the seedlings is unknown.
+- **Direct example.** Weigh **3.75 g of 12% stock** and add water to the 500 mL mark. The calculator uses the label's mass fraction and the finished volume, so stock density is unnecessary. Follow the concentrate's label and keep it separate from HOCl and bleach.
+- **Two-step example.** Mix **3.75 g of 12% stock with 41.25 g of water** to get 45 g of 1% working solution. Use **45 g of that solution** and add water to the 500 mL mark.
+
+The recorded 0.166 mL per spray gives **16.6 mL across 100 sprays**, or **14.94 mg H₂O₂ in the spray** at 900 mg/L. The fraction that reaches or remains on the seedlings is unknown.
 
 Eicher-Sodo et al. tested 0–200 mg/L in daily greenhouse sprays. Black-oil sunflower showed no increase in measured leaf damage through 200 mg/L. Radish, arugula and the lettuce cultivars showed leaf injury at some tested levels. The study measured growth and leaf damage. Mold prevention, antimicrobial effect size and pathogen reduction for the proposed covered germination spray remain unknown. [2019 HortTechnology study, S05](https://doi.org/10.21273/HORTTECH04255-18)
 

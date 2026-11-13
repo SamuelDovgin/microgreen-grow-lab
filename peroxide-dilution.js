@@ -6,7 +6,7 @@
   const defaults = model.PEROXIDE_DEFAULTS;
   const number = new Intl.NumberFormat(undefined, {maximumFractionDigits: 3});
   const format = value => value > 0 && value < 0.001 ? value.toPrecision(3) : number.format(value);
-  const concentrations = [50, 100, 200];
+  const concentrations = [50, 100, 200, 900];
   const chemicals = ['peroxide', 'hocl', 'bleach'];
   let result;
 

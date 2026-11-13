@@ -2,7 +2,7 @@
  'use strict';
  const FEED_G_L=6,ML_PER_SPRAY=1.66/10;
  const DEFAULTS=Object.freeze({mode:'final',stock:200,target:50,finalVolume:500,stockVolume:250,unit:'mL',sprays:10,applications:10,measuredFinal:'',ph:''});
- const PEROXIDE_DEFAULTS=Object.freeze({stock:12,target:100,finalVolume:500,sprays:10,applications:10});
+ const PEROXIDE_DEFAULTS=Object.freeze({stock:12,target:900,finalVolume:500,sprays:10,applications:10});
  const missing=v=>v===''||v===null||v===undefined;
  const positive=v=>!missing(v)&&Number.isFinite(Number(v))&&Number(v)>0;
  function verification(input){

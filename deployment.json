@@ -54,7 +54,7 @@
     "docs/research_resource_log_2026-11-07.txt": "75e6296f31a954cf03e0f1624f3b1a79a35f6b432322c6603aa8bad148af7e17",
     "docs/research_resource_log_2026-11-09.txt": "49014b1b5861bdf075e74380e303342b8b87a0718d167bd85e43e32502bb91b1",
     "docs/sanitation_16_tray_cleaning_and_sanitizing.md": "877740d4aef57cac9dead6c121d250e962155d7dac9902ba63b4f9451bd9633c",
-    "docs/sanitation_17_seed_sanitation_research_and_timing.md": "36e0f19bd14f0fb496ae33731f27879941b89806f72e442c117dc81973f61e21",
+    "docs/sanitation_17_seed_sanitation_research_and_timing.md": "3b29d534e73b26becc49975ff2be2c48a00d8d816183d0657471cacbdbee7141",
     "docs/sanitation_18_hocl_log_reduction_and_grower_consensus.md": "1d5edf8ff9dbc14ed971d4f8252442893eeef858c2bc989b89a752c2891a277d",
     "docs/sanitation_19_tissue_culture_seed_disinfection_and_microgreen_protocols.md": "7c922aa1982cc4cd30c8359fb4a2091e9b2867169b53fd05a9acdc3b1028fba7",
     "docs/sanitation_research_resource_log_2026-11-09.txt": "f344eee1f93aaf1a990630dc09a45d047ab6ab866b0fb7dd7d1a3931cbb4e019",
@@ -69,7 +69,7 @@
     "grow-log.html": "de9ac397ae26d5e96948c759d9917eaaae628559575d71b70aa587b31c68e263",
     "grow-log.js": "8b77accc752a7b183c5bf79fb3c52db4dd469556291e924446fa803d62bc1435",
     "guide.html": "1802cf08661448215ead5e05557dabedfe4e31356c1b8af3f3a4fdfe04b1c4a5",
-    "hocl-dilution-model.js": "e632e2d9e9ad0bae76d4e78bf5372c4dba397eff0f43d36885b10a45a166b84c",
+    "hocl-dilution-model.js": "5e0a24f8747aae933133efbf407d4cc2b1e00332ebee511a7e40a33629c8cba9",
     "hocl-dilution.css": "5e64230c5ff0535c8f7d29dca30baa0932cbf6822b588881ad14e49573355570",
     "hocl-dilution.js": "56764b01bfc4fe1cde27e79ff87ed229d15743d07a3ea0aef04bd3bb4eb9c15f",
     "index.html": "4ce06f5f6855c44c0efc8f3b9b1abbc56f936456b49f71cef36b4790380354c0",
@@ -83,7 +83,7 @@
     "nutrients.css": "ac573918f83c7f6155cce2d5e2e3ba0ea15c77779e7674b7340e28e0fefb1281",
     "nutrients.html": "88d4803ad43efe0f921e56bee69ea987c759707898f55f6944a27fa422547dba",
     "nutrients.js": "9df82dfa34428ce1c8bee66d672b19ca51661cc781bb7f1b75c21efdf99397f0",
-    "peroxide-dilution.js": "dffa6bc33b2a7dc66b71299866d4342bb4075e5f0f4666faae89291567d1afd3",
+    "peroxide-dilution.js": "db216159e34fbe3a44f9c8e673cb28f1d31a9de91b38f50265489af581116484",
     "qa.html": "c368ace86eb2e8148fced1961addb8b2ea84d214aefc7e5dffaa08b76f43b249",
     "quick-start-source-log.html": "78d90c287c87c8b8a119a1c9c1f1482f360325dc79b87dc78757eeaff045e03b",
     "rack-notes.html": "a768d286680ae556fb8547ed8fb398ef50bef5b8595d01f6e0e54473fe9e81a6",
@@ -118,11 +118,11 @@
     "seed-sanitation-data.js": "7b99f7e73509d7393c679daba317e00d95876a79e4b423cf3b63ec3c679104a8",
     "seed-sanitation-evidence.html": "0c9cca62f84a1b4899371379ea1d76c86ba62256fdb198d0b0d750a83fbe922f",
     "seed-sanitation-model.js": "b25abbff5cbcbf035ef3b3b18798fde6094ae2949078c244be4fdedc5e647b03",
-    "seed-sanitation-research.html": "c2dcc264023c30a01c6624706f2b6001f00645e56bd52593ee868703c842ecb3",
+    "seed-sanitation-research.html": "ceb9aa7e4dfc58c0f54bc7a1178725b94aaf7a8a4a663d93950e40e2f6fa4a9e",
     "seed-sanitation-source-log.html": "fbc2e6ea85db1e0c6a95a1682672765f241321802c39fa5e6b7788ffa16a09fa",
     "seed-sanitation-tissue-culture.html": "b17f0b84b28658f2fab20454c1a4aa49bd3ee9b904ea2fc72b57dbbfde300af7",
     "seed-sanitation.css": "0c57bfbc5ad49e4071236e592b021ab490bada1772e9fe1b2bd52f7c9756dd23",
-    "seed-sanitation.html": "d9da56d1fcf1beb44259f001efce9a5cb63a41d23073cb0e86f41886877b2671",
+    "seed-sanitation.html": "fd6eca522d7690711be6b252915247cc258be15a21724e3d862cf9b5626d9065",
     "seed-sanitation.js": "918e9f658b02976156873ce2f1b1fbec1e6c04f5e4fbab319d73b181462768ef",
     "setup-assessment.html": "900e9c6aedd822ffbe9d3cfbb4b083d472306ed31265b51c6182c66a397cd478",
     "sources/Arthur-2025-herbal-microgreen-density-substrate.pdf": "1f97369073924e2b54c095eb7000aca26cd45a2d08589aaa64865369209273d4",
@@ -144,5 +144,5 @@
     "tray-bleach-dilution.js": "6e3d8779ecbdbc20c9230223f4eecd17fb1730db3bb64ddffbcc0e3533b25c9b"
   },
   "publisher": "grow-lab",
-  "source_commit": "dd7fc28a1b2e75e703b8c53f4f91accccc321861"
+  "source_commit": "346761d3310f4176312af3f507bab606db09f107"
 }
