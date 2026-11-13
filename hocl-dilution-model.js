@@ -59,7 +59,7 @@
   const appliedMg=appliedMl===null?null:targetMgL*(appliedMl/1000);
   return {ok:true,stockPct,targetMgL,finalMl,stockGrams,twoStep,appliedMl,appliedMg:Number.isFinite(appliedMg)?appliedMg:null};
  }
- const BLEACH_WATER_PARTS=Object.freeze({greenhouse:14,clorox:384,vertex:320});
+ const BLEACH_WATER_PARTS=Object.freeze({tandil:64,clorox:384,vertex:320});
  function calculateTrayBleach({recipe,finalVolume,bleachMl,waterMl}){
   if(!positive(finalVolume)) return null;
   if(recipe==='label'&&![bleachMl,waterMl].every(positive)) return null;

@@ -9,7 +9,7 @@
   function render() {
     const recipe = field('recipe').value;
     field('label-ratio').hidden = recipe !== 'label';
-    for (const name of ['greenhouse', 'clorox', 'vertex', 'label']) {
+    for (const name of ['tandil', 'clorox', 'vertex', 'label']) {
       field(name + '-directions').hidden = recipe !== name;
     }
     const result = model.calculateTrayBleach({

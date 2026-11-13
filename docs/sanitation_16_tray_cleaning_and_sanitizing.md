@@ -6,7 +6,7 @@
 
 Start with the workflow below, then choose one method. **Bleach is an option. Whether you rinse afterward depends on the exact product and the labeled use.** Use the food-contact sanitizing directions for routine empty-tray sanitation, and check that the product and tray manufacturer allow the application. [T01,T02,T03]
 
-[Greenhouse rinse-off method](#greenhouse-rinse-off-method) · [Dollar Tree & label checklist](#can-i-buy-dollar-tree-or-store-brand-bleach) · [Clorox shopping example](#exact-bleach-to-buy) · [Bleach steps](#bleach-step-by-step) · [Compare methods](#choose-your-method) · [Rinse decision](#do-i-rinse-afterward) · [Source notebook](source_docs/sanitation/research_resource_log_2026-11-09.txt)
+[Tandil rinse-off directions](#tandil-hard-surface-rinse-off) · [Dollar Tree & label checklist](#can-i-buy-dollar-tree-or-store-brand-bleach) · [Clorox shopping example](#exact-bleach-to-buy) · [Bleach steps](#bleach-step-by-step) · [Compare methods](#choose-your-method) · [Rinse decision](#do-i-rinse-afterward) · [Source notebook](source_docs/sanitation/research_resource_log_2026-11-09.txt)
 
 ## Can I buy Dollar Tree or store-brand bleach?
 
@@ -76,19 +76,21 @@ The second row scales the same published recipe; mL values are unit conversions.
 
 **Never mix bleach with vinegar/acids, ammonia, peroxide, other disinfectants or detergent.** Wash and rinse as separate steps. Keep chemicals away from seeds, greens, fertilizer mixing and children/pets. Follow label storage, protective-equipment and disposal instructions; do not pour spent sanitizer into growing trays or a nutrient reservoir. [T02; operating synthesis]
 
+### Tandil hard-surface rinse-off
+
+The photographed 121 fl oz Tandil Concentrated Disinfecting Bleach is **EPA Reg. No. 9009-19-73664**. The front label gives **7.5% sodium hypochlorite** as the active ingredient and **7.14% available chlorine** as its chlorine equivalent. Both values describe the stock. The hard-surface directions use **¼ US cup per US gallon of water**. The matching EPA master label specifies **at least 5 minutes visibly wet**, followed by a thorough rinse and air-drying. [EPA label 9009-19, product use directions](https://www3.epa.gov/pesticides/chem_search/ppls/009009-00019-20251003.pdf#page=4)
+
+1. For a compatible empty hard, nonporous tray, scrub out old media and roots, then rinse away the detergent.
+2. For **500 mL finished**, measure **7.69 mL of Tandil bleach + 492.31 mL water**. This preserves the label’s volume ratio of 1 part bleach to 64 parts water. The EPA dilution table lists this recipe at a nominal **1,000 ppm available chlorine**.
+3. Apply as directed on the jug and keep the whole surface wet for at least **5 minutes**. Rinse well with clean water, including the corners and drain holes, then air-dry before adding soil or coir.
+
 ### Greenhouse rinse-off method
 
-**For an empty, hard plastic 1020 tray, keep it visibly wet for 10 minutes, rinse thoroughly with clean water, then air-dry.** UC IPM's greenhouse guidance uses about **0.5% sodium hypochlorite** to disinfect clean, nonporous equipment and recommends a clean-water rinse to avoid seedling injury. Check that your bleach label and tray manufacturer permit the use and application method. [UC IPM greenhouse guidance](https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/management-of-soilborne-pathogens/)
-
-1. Scrub out old media and roots, then rinse away the detergent.
-2. For **500 mL finished**, use **33.33 mL of regular, unscented 7.5% liquid bleach + 466.67 mL water**. This is an approximate dilution by volume of 1 part bleach to 14 parts water. Confirm the 7.5% strength and directions on your Tandil jug. Aldi lists a 121 oz 7.5% product. [Aldi product listing](https://www.aldi.us/store/aldi/products/128146330-tandil-75-percent-bleach-121-oz)
-3. Wet the entire tray by a method allowed on the bottle and keep it wet for the full 10 minutes. Rinse the corners and drain holes as well as the flat surfaces, then air-dry before adding soil or coir.
-
-The greenhouse method targets contamination on reusable growing containers and includes a water rinse to remove residual bleach. The 150 ppm food-contact soak in the EPA master label has its own two-minute contact time and drain-only finish. Use the dilution, wet time and finish from the same method. [EPA 7.5% bleach master label](https://www3.epa.gov/pesticides/chem_search/ppls/055852-00006-20260206.pdf) · [UC IPM greenhouse guidance](https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/management-of-soilborne-pathogens/)
+The earlier calculator used UC IPM’s general greenhouse reference of about **0.5% sodium hypochlorite**. The Tandil preset now follows the dilution on the photographed jug. Use a labeled food-contact sanitizer when the equipment directly touches harvested greens. [UC IPM greenhouse guidance](https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/management-of-soilborne-pathogens/)
 
 ### Small batches and spray application
 
-The [empty-tray bleach calculator](site/dist/seed-sanitation.html?dilution=bleach#hocl-dilution) opens on **Tandil 7.5% · Rinse-off**, which scales the greenhouse recipe above. Set your finished batch size, choose a matching label example below, or enter your bottle's bleach and water amounts.
+The [empty-tray bleach calculator](site/dist/seed-sanitation.html?dilution=bleach#hocl-dilution) opens on **Tandil 7.5% · Hard-surface rinse-off**, which scales the bottle ratio above. Set your finished batch size, choose a matching label example below, or enter your bottle's bleach and water amounts.
 
 | Label example | Label dilution | Scaled to 500 mL total | Application and finish |
 | --- | --- | --- | --- |
@@ -156,7 +158,7 @@ No-rinse permission applies to a specified product, dilution, surface and use. I
 
 ## Sources, labels and limits
 
-The decision order is: **exact chemical label + material compatibility → extension food-safety practice → grower workflow tips**. This page gives practical examples, not evidence that home tray sanitation is a validated kill step for the crop. The user's bleach bottle and strength have not been identified; compare its food-contact directions before using the example. Commercial growers also need a procedure suited to their operation and applicable local requirements.
+Start with the exact product label and tray material, then consult extension guidance. These examples cover surface cleaning and treatment between crops. Commercial growers also need a procedure suited to their operation and applicable local requirements.
 
 - **T01:** [Clorox: how to wash and sanitize dishes](https://www.clorox.com/learn/how-to-sanitize-dishes-with-bleach/), named-product example, checked November 9, 2026.
 - **T17–T18:** [Clorox Disinfecting Bleach — Unscented, official product page](https://www.clorox.com/products/clorox-disinfecting-bleach/) and its linked [121 fl oz Regular bottle, UPC 044600324166](https://smartlabel.labelinsight.com/product/6190840/ingredients), exact shopping identity checked November 9, 2026.
