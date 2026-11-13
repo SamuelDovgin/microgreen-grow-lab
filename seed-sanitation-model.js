@@ -1,5 +1,9 @@
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.SeedSanitationModel=api;})(typeof window==='object'?window:this,function(){
  'use strict';
+ function bathFromSeed(seedGrams,bathPerGram){
+  const seed=Number(seedGrams),ratio=Number(bathPerGram),bath=seed*ratio;
+  return seed>0&&ratio>0&&Number.isFinite(bath)&&bath>0?bath:null;
+ }
  function dilution({stock,target,batch}){
   const values=[stock,target,batch];
   if(values.some(v=>v===''||v===null||v===undefined||!Number.isFinite(Number(v))||Number(v)<=0))return {ok:false,reason:'Enter positive stock strength, target strength and finished batch.'};
@@ -36,5 +40,5 @@
   const note=anchor?'800 ppm × 15 minutes is the broccoli reference. This is not a validated treatment for your seed lot.':'15 × (800 ÷ '+c+') = '+minutes+' min assumes constant concentration × time. This exceeds the studied 1–15 minute window; effectiveness and germination at this duration were not established.';
   return {chemical,selected:c,minutes,concentration:c+' ppm*',time:minutes+' min*',status:anchor?'Broccoli study reference*':'Unconfirmed time extrapolation*',footnote:anchor?'* Broccoli study reference; not a confirmed protocol for your seed lot.':settings.footnote,note,source:settings.source,confirmed:false,kind:anchor?'study-reference':'hypothetical-extrapolation',sensitivity};
  }
- return {dilution,plan,quickProfile,comparison};
+ return {dilution,plan,quickProfile,comparison,bathFromSeed};
 });
