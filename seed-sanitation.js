@@ -10,13 +10,7 @@
  function cropNote(){
   const cropId=$('san-crop').value,p=M.quickProfile(cropId,D);
   $('san-selected-name').textContent=p.label;$('san-answer').textContent=p.answer;$('san-answer').setAttribute('class',p.recommended?'answer-yes':'answer-no');$('san-crop-note').textContent=p.why;
-  for(const chem of ['hocl','peroxide']){
-   const reference=p[chem];
-   for(const field of ['status','concentration','time','note'])$('quick-reference-'+chem+'-'+field).textContent=reference[field];
-   $('quick-reference-'+chem+'-source').setAttribute('href',reference.source);
-  }
   renderComparisons();
-  for(const field of ['hocl','peroxide','concentration','note'])$('quick-spray-'+field).textContent=p.spray[field];
   for(const id of badgeCrops)$('seed-badge-'+id).setAttribute('aria-pressed',String(id===cropId));
  }
  function renderComparisons(){
