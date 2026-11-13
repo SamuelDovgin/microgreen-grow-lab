@@ -7,10 +7,11 @@
   const number = new Intl.NumberFormat(undefined, {maximumFractionDigits: 3});
   const format = value => value > 0 && value < 0.001 ? value.toPrecision(3) : number.format(value);
   const concentrations = [50, 100, 200];
+  const chemicals = ['peroxide', 'hocl', 'bleach'];
   let result;
 
   function selectChemical(chemical) {
-    for (const name of ['peroxide', 'hocl']) {
+    for (const name of chemicals) {
       const selected = name === chemical;
       get('dilution-select-' + name).setAttribute('aria-pressed', String(selected));
       get('dilution-panel-' + name).hidden = !selected;
@@ -46,7 +47,7 @@
       : `${format(result.appliedMg)} mg H₂O₂ in ${format(result.appliedMl)} mL sprayed per tray.`;
   }
 
-  for (const name of ['peroxide', 'hocl']) {
+  for (const name of chemicals) {
     get('dilution-select-' + name).addEventListener('click', () => selectChemical(name));
   }
   field('form').addEventListener('submit', event => event.preventDefault());
@@ -75,6 +76,7 @@
       field('copy-status').textContent = 'Clipboard unavailable. Copy the visible amounts.';
     }
   });
-  selectChemical('peroxide');
+  const requested = new URLSearchParams(window.location?.search).get('dilution');
+  selectChemical(chemicals.includes(requested) ? requested : 'peroxide');
   render();
 })();

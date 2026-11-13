@@ -1,6 +1,6 @@
 # Clean and sanitize your trays
 
-*Checked November 9, 2026 · reusable empty trays between crops.*
+*Updated November 12, 2026 · reusable empty trays between crops.*
 
 **Yes: clean and sanitize after every finished tray/crop cycle, before planting again.** Include the perforated grow tray, solid watering tray, blackout/weighting tray and reusable covers. This is a between-crops reset, not a reason to spray sanitizer onto a growing crop. On The Grow recommends sanitation between grows; Virginia Cooperative Extension likewise recommends cleaning growing containers between rotations. [T04,T06]
 
@@ -75,6 +75,17 @@ The second row scales the same published recipe; mL values are unit conversions.
 5. Prepare fresh diluted bleach daily, and replace sooner if dirty or outside the labeled concentration. Use chlorine test strips matched to the label's range and follow their instructions; odor and solution clarity cannot verify sanitizer strength. Do not top up an unknown dirty bath by guessing. [T02,T03; operating synthesis]
 
 **Never mix bleach with vinegar/acids, ammonia, peroxide, other disinfectants or detergent.** Wash and rinse as separate steps. Keep chemicals away from seeds, greens, fertilizer mixing and children/pets. Follow label storage, protective-equipment and disposal instructions; do not pour spent sanitizer into growing trays or a nutrient reservoir. [T02; operating synthesis]
+
+### Small batches and spray application
+
+The [empty-tray bleach calculator](site/dist/seed-sanitation.html?dilution=bleach#hocl-dilution) scales a label's liquid bleach-to-water ratio to your finished batch size. Choose a matching label example or enter your bottle's bleach and water amounts.
+
+| Label example | Label dilution | Scaled to 500 mL total | Application and finish |
+| --- | --- | --- | --- |
+| Clorox CRB, EPA Reg. No. 5813-120 | 2 US tsp per US gal water, labeled 185 ppm available chlorine | 1.30 mL bleach + 498.70 mL water | Wipe a washed and rinsed hard food-contact surface and keep it visibly wet for 2 minutes. Air-dry without a final water rinse. Follow the matching immersion directions if soaking. |
+| Vertex CSS-6, EPA Reg. No. 9616-11 | 2 US fl oz per 5 US gal water, labeled 200 ppm available chlorine | 1.56 mL bleach + 498.44 mL water | Use the hard, nonporous food-contact spray method only if it appears on your container. Thoroughly wet the surface with bleach-compatible spray equipment, let excess drain, and vacate the area for at least 2 hours. Allow the tray to air-dry. The 200 ppm spray directions proceed to draining without a final water rinse. |
+
+The two-minute Clorox food-contact wipe directions apply to wiping. For a spray bottle, look for food-contact directions that explicitly permit spraying and follow their wet time or other timing instructions. If your bottle requires a final potable-water rinse, finish the contact time, rinse, then air-dry. Wear the protection specified on the bottle, work with ventilation, and use a dedicated marked tool to measure small amounts. Make fresh solution for the day's use and keep bleach separate from detergents, acids, peroxide and other sanitizers. [Clorox accepted label, household food-contact directions](https://www3.epa.gov/pesticides/chem_search/ppls/005813-00120-20240708.pdf) · [Vertex accepted label, nonporous food-contact spray method](https://www3.epa.gov/pesticides/chem_search/ppls/009616-00011-20261021.pdf) · [CDC bleach precautions](https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html)
 
 ### Why a grower's “10% bleach” recipe is different
 

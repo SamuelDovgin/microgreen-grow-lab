@@ -59,5 +59,17 @@
   const appliedMg=appliedMl===null?null:targetMgL*(appliedMl/1000);
   return {ok:true,stockPct,targetMgL,finalMl,stockGrams,twoStep,appliedMl,appliedMg:Number.isFinite(appliedMg)?appliedMg:null};
  }
- return {DEFAULTS,PEROXIDE_DEFAULTS,FEED_G_L,ML_PER_SPRAY,calculate,calculatePeroxide,verification,selfTest};
+ const BLEACH_WATER_PARTS=Object.freeze({clorox:384,vertex:320});
+ function calculateTrayBleach({recipe,finalVolume,bleachMl,waterMl}){
+  if(!positive(finalVolume)) return null;
+  if(recipe==='label'&&![bleachMl,waterMl].every(positive)) return null;
+  const waterParts=recipe==='label'?Number(waterMl)/Number(bleachMl):BLEACH_WATER_PARTS[recipe];
+  if(!positive(waterParts)) return null;
+  const finalMl=Number(finalVolume);
+  const stockMl=finalMl/(1+waterParts);
+  const dilutedWaterMl=finalMl-stockMl;
+  if(!positive(stockMl)||!positive(dilutedWaterMl)) return null;
+  return {finalMl,stockMl,waterMl:dilutedWaterMl};
+ }
+ return {DEFAULTS,PEROXIDE_DEFAULTS,FEED_G_L,ML_PER_SPRAY,calculate,calculatePeroxide,calculateTrayBleach,verification,selfTest};
 });
