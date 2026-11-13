@@ -6,7 +6,7 @@
 
 Start with the workflow below, then choose one method. **Bleach is an option. Whether you rinse afterward depends on the exact product and the labeled use.** Use the food-contact sanitizing directions for routine empty-tray sanitation, and check that the product and tray manufacturer allow the application. [T01,T02,T03]
 
-[Dollar Tree & label checklist](#can-i-buy-dollar-tree-or-store-brand-bleach) · [Clorox shopping example](#exact-bleach-to-buy) · [Bleach steps](#bleach-step-by-step) · [Compare methods](#choose-your-method) · [Rinse decision](#do-i-rinse-afterward) · [Source notebook](source_docs/sanitation/research_resource_log_2026-11-09.txt)
+[Greenhouse rinse-off method](#greenhouse-rinse-off-method) · [Dollar Tree & label checklist](#can-i-buy-dollar-tree-or-store-brand-bleach) · [Clorox shopping example](#exact-bleach-to-buy) · [Bleach steps](#bleach-step-by-step) · [Compare methods](#choose-your-method) · [Rinse decision](#do-i-rinse-afterward) · [Source notebook](source_docs/sanitation/research_resource_log_2026-11-09.txt)
 
 ## Can I buy Dollar Tree or store-brand bleach?
 
@@ -76,9 +76,19 @@ The second row scales the same published recipe; mL values are unit conversions.
 
 **Never mix bleach with vinegar/acids, ammonia, peroxide, other disinfectants or detergent.** Wash and rinse as separate steps. Keep chemicals away from seeds, greens, fertilizer mixing and children/pets. Follow label storage, protective-equipment and disposal instructions; do not pour spent sanitizer into growing trays or a nutrient reservoir. [T02; operating synthesis]
 
+### Greenhouse rinse-off method
+
+**For an empty, hard plastic 1020 tray, keep it visibly wet for 10 minutes, rinse thoroughly with clean water, then air-dry.** UC IPM's greenhouse guidance uses about **0.5% sodium hypochlorite** to disinfect clean, nonporous equipment and recommends a clean-water rinse to avoid seedling injury. Check that your bleach label and tray manufacturer permit the use and application method. [UC IPM greenhouse guidance](https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/management-of-soilborne-pathogens/)
+
+1. Scrub out old media and roots, then rinse away the detergent.
+2. For **500 mL finished**, use **33.33 mL of regular, unscented 7.5% liquid bleach + 466.67 mL water**. This is an approximate dilution by volume of 1 part bleach to 14 parts water. Confirm the 7.5% strength and directions on your Tandil jug. Aldi lists a 121 oz 7.5% product. [Aldi product listing](https://www.aldi.us/store/aldi/products/128146330-tandil-75-percent-bleach-121-oz)
+3. Wet the entire tray by a method allowed on the bottle and keep it wet for the full 10 minutes. Rinse the corners and drain holes as well as the flat surfaces, then air-dry before adding soil or coir.
+
+The greenhouse method targets contamination on reusable growing containers and includes a water rinse to remove residual bleach. The 150 ppm food-contact soak in the EPA master label has its own two-minute contact time and drain-only finish. Use the dilution, wet time and finish from the same method. [EPA 7.5% bleach master label](https://www3.epa.gov/pesticides/chem_search/ppls/055852-00006-20260206.pdf) · [UC IPM greenhouse guidance](https://ipm.ucanr.edu/agriculture/floriculture-and-ornamental-nurseries/management-of-soilborne-pathogens/)
+
 ### Small batches and spray application
 
-The [empty-tray bleach calculator](site/dist/seed-sanitation.html?dilution=bleach#hocl-dilution) scales a label's liquid bleach-to-water ratio to your finished batch size. Choose a matching label example or enter your bottle's bleach and water amounts.
+The [empty-tray bleach calculator](site/dist/seed-sanitation.html?dilution=bleach#hocl-dilution) opens on the 7.5% greenhouse rinse-off recipe. Set your finished batch size, choose a matching label example below, or enter your bottle's bleach and water amounts.
 
 | Label example | Label dilution | Scaled to 500 mL total | Application and finish |
 | --- | --- | --- | --- |

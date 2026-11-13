@@ -9,7 +9,7 @@
   function render() {
     const recipe = field('recipe').value;
     field('label-ratio').hidden = recipe !== 'label';
-    for (const name of ['clorox', 'vertex', 'label']) {
+    for (const name of ['greenhouse', 'clorox', 'vertex', 'label']) {
       field(name + '-directions').hidden = recipe !== name;
     }
     const result = model.calculateTrayBleach({
@@ -20,7 +20,9 @@
     });
     field('stock-out').textContent = result ? format(result.stockMl) + ' mL' : '—';
     field('water-out').textContent = result ? format(result.waterMl) + ' mL' : '—';
-    field('status').textContent = result ? '' : 'Enter a positive batch volume and both label amounts for a custom recipe.';
+    field('status').textContent = result ? '' : recipe === 'label'
+      ? 'Enter a positive batch volume and both label amounts.'
+      : 'Enter a positive batch volume.';
   }
 
   field('form').addEventListener('submit', event => event.preventDefault());
