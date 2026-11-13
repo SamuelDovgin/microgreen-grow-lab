@@ -419,16 +419,16 @@
       "label": "Sunflower",
       "recommended": true,
       "answer": "Yes \u2014 recommended",
-      "why": "Prioritize sanitation for mold-prone hulls; check the seed lot and drainage too.",
+      "why": "Consider a seed bath for recurring hull mold. On The Grow usually rinses and sows sunflower.",
       "hocl": {
         "status": "No recommended dose",
         "concentration": "Not established here",
         "time": "Not established here",
-        "note": "The broccoli HOCl result does not establish a treatment for this seed.",
-        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/"
+        "note": "A sunflower study tested acidic electrolyzed water at 48 ppm available chlorine and pH 2.76 for 15 min. It measured Salmonella reduction under those conditions.",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/35410797/"
       },
       "peroxide": {
-        "status": "Grower option",
+        "status": "Bootstrap Farmer immersion reference",
         "concentration": "3% H\u2082O\u2082",
         "time": "3\u20135 min",
         "note": "Rinse thoroughly afterward. Grower practice; use a product labeled for edible seeds.",

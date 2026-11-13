@@ -146,7 +146,8 @@ function renderSchedule(s,rows){
  const items=[['Sow',(recipe.topdress??crop.topdress)?'Sow evenly and use a thin species-appropriate top dress; do not bury fine seeds indiscriminately.':'Evenly surface-sow on a level, moistened medium. Keep clumps and multi-layer seed piles out of the tray.'],['Uncover / light readiness',readiness.action],['Water checks',g.water],['Harvest cue',g.stage]];
  $('protocol-steps').innerHTML=items.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
  const soak=recipe.soak||crop.soakHours;
- $('soak-note').textContent=`Recipe: ${soak[1]===0?'direct sow':range(soak)+' h presoak'}. ${recipe.soakBasis||'Use the selected crop preparation.'}`;
+ $('soak-note').textContent=`Recipe: ${soak[1]===0?'direct sow':range(soak)+' h water presoak'}. ${recipe.soakBasis||'Use the selected crop preparation.'}`;
+ $('soak-water-note').hidden=!(s.soakHours>0);
  $('cover-load-note').textContent=recipe.weightBasis||'Use a load appropriate to this recipe and tray.';
  $('calendar-source-basis').innerHTML=(recipe.calendarSources||crop.calendar.waterSources).map(id=>sourceLink(id)).join(' · ');
  $('demand-basis').textContent=crop.calendar.waterBasis+' Default '+fmt(crop.calendar.demand,1)+' mm/day. Change it using your own tray observations.';

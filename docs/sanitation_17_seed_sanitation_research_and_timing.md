@@ -41,6 +41,19 @@ S01 used repeated controlled experiments and separately evaluated bacteria, fung
 
 ## 3. Grower guidance and the five seed priorities
 
+### Grower seed bath comparison
+
+Growers sometimes call this step “sterilizing.” Their published procedures describe seed surface treatments, and their reports leave sterility and foodborne pathogen reduction unverified. The hours-long water presoak hydrates the seed. For sunflower, the [Seed & Water planner](site/dist/crops.html#growing-plan) starts at **8 hours** and includes a rinse-only recipe. If soaking, start with **3 parts potable water to 1 part dry seed by volume** and keep the seed submerged as it swells. [Bootstrap Farmer soaking guide](https://www.bootstrapfarmer.com/blogs/microgreens/microgreens-soaking-seeds-when-why) · [On The Grow sunflower guide](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens)
+
+| Grower | Reported peroxide seed treatment | Contact time and follow-up |
+| --- | --- | --- |
+| [Bootstrap Farmer](https://www.bootstrapfarmer.com/blogs/microgreens/how-to-disinfect-seeds-before-planting-and-sprouting) | Immerse in **3% finished H₂O₂**, using enough to cover the seed. | **3–5 min**, then drain and rinse thoroughly. |
+| [Home Microgreens](https://homemicrogreens.com/growing-sunflower-microgreens-presoaking-the-seed/) | Apply **1 US tsp of 3% H₂O₂ per 25 g of sunflower seed** and stir. | **5–10 min** before adding water for the hydration soak. The grower drains and rinses before sowing. |
+| [On The Grow mold guide](https://onthegrow.net/blogs/microgreens/microgreens-mold-prevention-identification-complete-guide) | For problem lots, **1 US tbsp of 3% H₂O₂ per US cup of water**, approximately **0.18% finished**. The grower’s usual sunflower method is rinse and sow. | **15–20 min** before the regular soak in the optional procedure. |
+| [Leath sunflower guide](https://growleath.com/blogs/education/sunflower) | **1 US tbsp of 3% H₂O₂ per US cup of water**, approximately **0.18% finished**, in its detailed optional bath recipe. | **5 min**, rinse thoroughly, then water-soak. |
+
+Three of these four guides include **5 minutes**. The median of the four time-range midpoints is **6.25 minutes** (4, 5, 7.5 and 17.5 minutes). The contacts include both immersion and a small-volume seed treatment. This small sample supports a short contact time as a common practice and leaves a consensus concentration or effective time undetermined. The **3% immersion** is Bootstrap Farmer’s example. A **12% w/w stock** makes **3% w/w** at **1 part stock to 3 parts water by weight**. Follow the product’s edible-seed directions for use and rinsing. The **900 ppm** grower-reference spray has a separate calculator.
+
 Bootstrap Farmer describes rinsing, a **3% peroxide bath for 3–5 minutes**, thorough rinsing afterward and disposal of spent solution. Its soaking guide discusses larger seeds including sunflower, peas and mung. These are grower procedures, not validated pathogen-kill processes. [S02](https://www.bootstrapfarmer.com/blogs/microgreens/how-to-disinfect-seeds-before-planting-and-sprouting), [S03](https://www.bootstrapfarmer.com/blogs/microgreens/microgreens-soaking-seeds-when-why)
 
 | Seed | Planner priority | Why / boundary |

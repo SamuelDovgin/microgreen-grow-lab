@@ -7964,8 +7964,8 @@
         3
       ],
       "soakHours": [
-        6,
-        12
+        8,
+        8
       ],
       "method": "stack",
       "topdress": false,
@@ -7993,10 +7993,10 @@
           "method": "stack",
           "source": "P01",
           "note": "130 g dry seed for a standard 1020 starting plan. On The Grow uses 125 g on a shallow Bootstrap tray and Piedmont reports 130 g. Utah State’s 48 g and the 250–255 g chart recipes illustrate method differences. Keep 130 g.",
-          "soakBasis": "MGM reports overnight; 6–12 h is the planner window.",
+          "soakBasis": "On The Grow’s optional 8 h water soak. Its rinse-only recipe is also available.",
           "soak": [
-            6,
-            12
+            8,
+            8
           ],
           "topdress": false,
           "blackoutDays": 1,
