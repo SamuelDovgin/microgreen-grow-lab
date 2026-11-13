@@ -1,6 +1,6 @@
 # Coco coir: dry grams, rehydration water and shallow-tray fill
 
-*Added November 1, 2026; fill-height target updated November 4, 2026. Built around the supplied Back to the Roots 10 lb / 51 US quart brick notes and Bootstrap Farmer shallow 1020 trays.*
+*Added November 1, 2026. Default fill trial updated November 13, 2026. Built around the supplied Back to the Roots 10 lb / 51 US quart brick notes and Bootstrap Farmer shallow 1020 trays.*
 
 [Open the coir calculator and visualizer](site/dist/coir.html) · [Detailed source notebook](source_docs/coir/research_resource_log_2026-11-01.txt)
 
@@ -8,15 +8,21 @@
 
 For a small sowing batch, separate and hydrate the portion you will sow. Keep the rest of the brick dry. This is a practical storage choice, not a demonstrated yield benefit. Whole-brick hydration makes sense when the material will be used promptly and there is adequate clean mixing/storage space. Wetting one edge can make separation easier, but that edge is no longer dry coir for weighing. [C0]
 
-The calculator starts with your full-tray trial. The **½-inch gap** is available as a separate comparison. Working backward from the published 1¼-inch outside height and 19¾ × 9½-inch inside floor gives about 9.75 US cups for that gap in a rectangular model. The 10-cup preset gives roughly 0.48 inch of modeled headspace. Inside depth, taper, ridges and leveling can shift the result. [C3]
+The calculator starts with the **+10% full-tray trial**, using **145 g dry coir and 580 mL starting water per tray** at the default weighing precision. The **½-inch gap** is available as a separate comparison. Working backward from the published 1¼-inch outside height and 19¾ × 9½-inch inside floor gives about 9.75 US cups for that gap in a rectangular model. The 10-cup preset gives roughly 0.48 inch of modeled headspace. Inside depth, taper, ridges and leveling can shift the result. [C3]
 
 ## Your full tray measurement
 
-On November 4, 2026, one Bootstrap Farmer shallow 1020 was filled from the stated **225 g dry coir + 900 mL water** batch, and **466 g hydrated coir remained**. The starting mass was not weighed after mixing. Water weighs about 1 g/mL, so the ingredients imply about 1,125 g before losses. Subtracting 466 g gives **659 g hydrated coir attributed to the tray**. At 4 mL/g, an evenly mixed batch with little loss is one part dry coir to four parts water by mass. The inferred dry coir is therefore **659 ÷ 5 = 131.8 g**. The calculator rounds up to **132 g dry coir + 528 mL starting water per tray** by default.
+On November 4, 2026, one Bootstrap Farmer shallow 1020 was filled from the stated **225 g dry coir + 900 mL water** batch, and **466 g hydrated coir remained**. The starting mass was not weighed after mixing. Water weighs about 1 g/mL, so the ingredients imply about 1,125 g before losses. Subtracting 466 g gives **659 g hydrated coir attributed to the tray**. At 4 mL/g, an evenly mixed batch with little loss is one part dry coir to four parts water by mass. The inferred dry coir was **659 ÷ 5 = 131.8 g**. This gave the previous rounded recipe of **132 g dry coir + 528 mL starting water per tray**.
 
 The modeled near-rim volume is **about 3.8 L or 16 US cups** from the tray dimensions. It does not enter the mass calculation. The same dry mass would expand to about 6 cups under the brick label estimate, which highlights why the 16 cups should be treated as geometry only. A measuring jug can settle how many cups went into the actual tray. Weigh the mixed batch before filling and the leftover after filling, and account for any drainage or spills. This records one trial at its original moisture and leveling.
 
-The full-tray setting uses the mass inferred from the leftover. Other fills use the brick label or a measured expansion sample. Test cover clearance before using the full fill for a larger seed. The archived source record is the user's reported scale measurement in the November 4 conversation, with the earlier batch ingredients supplied in the same chat.
+The archived source record is the user's reported scale measurement in the November 4 conversation, with the earlier batch ingredients supplied in the same chat.
+
+### November 13 tray-fill test
+
+Some trays had low spots and an uneven coir surface. The next batch tests **10% more dry coir and starting water**, keeping hydration at **4 mL per gram**. Applying the increase to the unrounded 131.8 g estimate gives 144.98 g. The default rounds up to **145 g dry coir and 580 mL starting water per tray**, or **580 g and 2.32 L for four trays**.
+
+Spread the hydrated coir evenly and level it gently. Before sowing, measure from the rim to the leveled coir at the center and near each corner. Record any leftover coir and check cover clearance, especially for pea and sunflower. The roughly 16 cups shown for each full tray represent modeled tray capacity. Record the volume actually used during this test. Cup-based fills use the brick label or a measured expansion sample.
 
 ## Compare cup-based fills
 
@@ -139,7 +145,7 @@ One sample has unknown repeatability. Repeat with a consistent moisture endpoint
 ## Equations and variable roles
 
 - Controlled recipe inputs: whole-number tray counts and expanded cups per tray.
-- Goal presets: about ½ inch below the rim (10 cups by geometry), source-baseline six cups, USU-style eight cups, uniform near-rim twelve cups and a clearly labeled 12/12/8/8-cup seed-clearance adaptation.
+- Goal presets: the +10% full-tray test, about ½ inch below the rim (10 cups by geometry), source-baseline six cups, USU-style eight cups, uniform near-rim twelve cups and a 12/12/8/8-cup seed-clearance adaptation.
 - Label inputs: brick dry grams and expanded US quarts; these jointly set estimated g/cup.
 - Locked starting ratio: 4 mL/g until replaced by an actual retained-water measurement.
 - Measured inputs: sample dry mass, expanded cups, moisture observation and optional retained water.
@@ -148,7 +154,9 @@ One sample has unknown repeatability. Repeat with a consistent moisture endpoint
 
 `g_per_cup = brick_g / (4 × brick_US_qt)`
 
-`exact_dry_g_per_tray = target_cups × g_per_cup`
+`exact_dry_g_per_tray (cup-based) = target_cups × g_per_cup`
+
+`exact_dry_g_per_tray (full-tray test) = 131.8 × 1.10`
 
 `weigh_g = ceil(exact_dry_g / weighing_step_g) × weighing_step_g`
 

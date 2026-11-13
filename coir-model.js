@@ -13,6 +13,7 @@ const fullTrayTrial=Object.freeze({...trialInputs,startingBatchG,hydratedTrayG,
  dryTrayG:hydratedTrayG*trialInputs.dryBatchG/startingBatchG,
  waterRatio:trialInputs.startingWaterMl/trialInputs.dryBatchG,
  estimatedCups:FULL_TRAY_CUPS,estimatedVolumeL:FULL_TRAY_CUPS*CUP_ML/1000});
+const FULL_TRAY_FILL_FACTOR=1.1;
 const crops=[
  {id:'broccoli',name:'Broccoli · Waltham',family:'Brassicaceae',seedG:22,treatment:'No presoak. Sow dry seed onto evenly moist coir.',basis:'22 g seed is the trial from your notes.'},
  {id:'radish',name:'Radish · Daikon',family:'Brassicaceae',seedG:30,treatment:'No presoak. Sow evenly and avoid dense clumps.',basis:'30 g seed is the trial from your notes.'},
@@ -33,7 +34,7 @@ function calibration(s){
 const depth=cups=>cups*CUP_DEPTH_IN;
 function row(cups,count,basis,rounding,fill){
  const usesTrial=fill==='trial';
- const exactG=usesTrial?fullTrayTrial.dryTrayG:cups*basis.gramsPerCup;
+ const exactG=usesTrial?fullTrayTrial.dryTrayG*FULL_TRAY_FILL_FACTOR:cups*basis.gramsPerCup;
  const waterRatio=usesTrial?fullTrayTrial.waterRatio:basis.waterRatio;
  const step=Number(rounding),weighG=step===0?exactG:Math.ceil((exactG-1e-9)/step)*step;
  return {cups,count,fill,exactG,weighG,waterMl:weighG*waterRatio,liters:cups*CUP_ML/1000,depthIn:depth(cups),headroomIn:TRAY_HEIGHT_IN-depth(cups),batchG:weighG*count,batchWaterMl:weighG*waterRatio*count};
@@ -49,7 +50,7 @@ function calculate(s){
  let trays=0;
  for(const r of rows){if(!present(r.count)||!Number.isInteger(Number(r.count))||Number(r.count)<0||Number(r.count)>MAX_TRAYS_PER_CROP)errors.push(`Each tray count must be a whole number from 0 to ${MAX_TRAYS_PER_CROP}.`);else trays+=Number(r.count);
  if(!present(r.cups)||!Number.isFinite(Number(r.cups))||Number(r.cups)<4||Number(r.cups)>FULL_TRAY_CUPS)errors.push('Each fill must be from 4 to 16 expanded US cups.');
- if(r.fill==='trial'&&Number(r.cups)!==FULL_TRAY_CUPS)errors.push('The recorded full-tray fill uses its own volume estimate.');}
+ if(r.fill==='trial'&&Number(r.cups)!==FULL_TRAY_CUPS)errors.push('The full-tray test fill uses the modeled tray capacity.');}
  const basis=calibration(s);if(!basis.valid)errors.push(basis.message);
  if(errors.length)return {valid:false,errors:[...new Set(errors)]};
  const detail=rows.map((r,i)=>({...crops[i],...row(Number(r.cups),Number(r.count),basis,s.rounding,r.fill==='trial'?'trial':'volume')}));
@@ -60,7 +61,7 @@ function calculate(s){
  // A deliberate +/-20% scenario, not a confidence interval or final-water recommendation.
  waterSensitivity:[waterMl*.8,waterMl*1.2]};
 }
-function worksheet(s,p){if(!p.valid)return null;return {tool:'Grow Lab coco coir',version:'2026-11-04',inputs:s,outputs:p,fullTrayTrial:p.trialTrays?fullTrayTrial:null,notes:['Expanded volumes are US cups of damp, lightly leveled coir.','Full-tray mass is estimated from the recorded leftover, assuming an evenly mixed batch and little loss. Its cup volume is estimated from tray dimensions.','Cup-based fills use label yield or one measured expansion sample. Rounding applies per tray.','Initial water is for coir hydration and excludes soaking and irrigation.','Check headspace from the rim of the drainage tray to the leveled coir before sowing. Estimated geometry uses published outside height and a rectangular bottom footprint.']};}
-function selfTest(){const s=defaults(),a=calculate(s);if(!a.valid||a.dryG!==528||a.waterMl!==2112||a.trialTrays!==4)throw Error('Default tray trial batch failed');s.rows.forEach(r=>r.count=0);if(!calculate(s).empty)throw Error('Empty batch failed');return {passed:2};}
+function worksheet(s,p){if(!p.valid)return null;return {tool:'Grow Lab coco coir',version:'2026-11-13',inputs:s,outputs:p,fullTrayTrial:p.trialTrays?fullTrayTrial:null,notes:['Expanded volumes are US cups of damp, lightly leveled coir.','The full-tray test scales the leftover-based estimate by 10% before rounding because some trays had low, uneven spots. Full-tray cups describe the modeled tray capacity.','Cup-based fills use label yield or one measured expansion sample. Rounding applies per tray.','Initial water is for coir hydration and excludes soaking and irrigation.','Check headspace from the rim of the drainage tray to the leveled coir before sowing. Estimated geometry uses published outside height and a rectangular bottom footprint.']};}
+function selfTest(){const s=defaults(),a=calculate(s);if(!a.valid||a.dryG!==580||a.waterMl!==2320||a.trialTrays!==4)throw Error('Default tray trial batch failed');s.rows.forEach(r=>r.count=0);if(!calculate(s).empty)throw Error('Empty batch failed');return {passed:2};}
 return {crops,defaults,calculate,calibration,depth,worksheet,selfTest,fullTrayTrial,CUP_ML,MAX_TRAYS_PER_CROP,TRAY_HEIGHT_IN,HEADSPACE_TARGET_IN,HALF_INCH_CUPS,FULL_TRAY_CUPS};
 });

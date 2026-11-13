@@ -1,18 +1,17 @@
 (function(){
 'use strict';
 const M=window.CoirModel,$=id=>document.getElementById(id),key='grow-lab:coir-plan:v1';
-const trial=M.fullTrayTrial;
+const quickTrial=M.calculate(M.defaults()).rows[0];
 const ids=['brickG','brickQt','price','rounding','sampleG','sampleCups','sampleWater','condition'];
 let last;
 const fmt=(n,d=0)=>Number(n).toLocaleString('en-US',{maximumFractionDigits:d,minimumFractionDigits:d});
 const mass=(n,exact=false)=>fmt(n,exact?1:0)+' g';
 const water=n=>n>=1000?fmt(n/1000,2)+' L':fmt(n,0)+' mL';
-const trialWeighG=Math.ceil(trial.dryTrayG);
 function renderQuickBatch(count){
- $('tray-trial-title').textContent=count===1?'What one full shallow 1020 used':`Prepare ${count} full shallow 1020 trays`;
- $('trial-dry').textContent=mass(trialWeighG*count);
- $('trial-water').textContent=fmt(trialWeighG*trial.waterRatio*count)+' mL';
- $('trial-volume').textContent=`≈ ${fmt(trial.estimatedVolumeL*count,1)} L / ${trial.estimatedCups*count} US cups`;
+ $('tray-trial-title').textContent=count===1?'Prepare one full shallow 1020 tray':`Prepare ${count} full shallow 1020 trays`;
+ $('trial-dry').textContent=mass(quickTrial.weighG*count);
+ $('trial-water').textContent=fmt(quickTrial.waterMl*count)+' mL';
+ $('trial-volume').textContent=`≈ ${fmt(quickTrial.liters*count,1)} L / ${quickTrial.cups*count} US cups`;
  for(let n=1;n<=4;n++)$('trial-batch-'+n).setAttribute('aria-pressed',String(n===count));
 }
 for(let n=1;n<=4;n++)$('trial-batch-'+n).addEventListener('click',()=>renderQuickBatch(n));
@@ -31,23 +30,23 @@ function render(){
  M.crops.forEach((c,i)=>{const count=Number(s.rows[i].count);$(c.id+'-remove').disabled=!Number.isFinite(count)||count<=0;$(c.id+'-add').disabled=count>=M.MAX_TRAYS_PER_CROP;});
  const fills=s.rows.map(r=>Number(r.cups)).join('/');
  const isHalfInch=s.rows.every(r=>Number(r.cups)===M.HALF_INCH_CUPS);
- $('fill-mode').textContent=s.rows.every(r=>r.fill==='trial')?'Your full tray is the starting fill. Dry grams come from the leftover trial. Cup volume is estimated from tray dimensions.':isHalfInch?'½-inch headspace target: about '+M.HALF_INCH_CUPS+' cups per tray by geometry. Check the gap on the leveled coir before sowing.':fills==='6/6/6/6'?'Source baseline: 6 cups for all four crops.':fills==='12/12/8/8'?'Seed-clearance trial: broccoli/radish 12 cups; pea/sunflower 8 cups. The relative fill pattern follows grower practice. The cup amounts are an adaptation.':fills==='8/8/8/8'?'USU-style comparison: 2 US quarts / 8 cups per tray.':'Custom fills. Check the leveled coir and confirm that the cover can contact the seeds evenly.';
- M.crops.forEach((c,i)=>{const useTrial=s.rows[i].fill==='trial';$(c.id+'-cups-out').textContent=useTrial?'≈ '+trial.estimatedCups+' US cups':fmt(Number(s.rows[i].cups),1)+' US cups';$(c.id+'-note').textContent=useTrial?'Reproduces your recorded full tray. Check cover clearance before sowing.':'Cup-based fill uses the brick label or your measured expansion sample.';});
+ $('fill-mode').textContent=s.rows.every(r=>r.fill==='trial')?'Your full tray is the starting fill. This test increases dry coir and starting water by 10% before rounding. Cup volume describes the modeled tray capacity.':isHalfInch?'½-inch headspace target: about '+M.HALF_INCH_CUPS+' cups per tray by geometry. Check the gap on the leveled coir before sowing.':fills==='6/6/6/6'?'Source baseline: 6 cups for all four crops.':fills==='12/12/8/8'?'Seed-clearance trial: broccoli/radish 12 cups; pea/sunflower 8 cups. The relative fill pattern follows grower practice. The cup amounts are an adaptation.':fills==='8/8/8/8'?'USU-style comparison: 2 US quarts / 8 cups per tray.':'Custom fills. Check the leveled coir and confirm that the cover can contact the seeds evenly.';
+ M.crops.forEach((c,i)=>{const useTrial=s.rows[i].fill==='trial';$(c.id+'-cups-out').textContent=useTrial?'≈ '+quickTrial.cups+' US cups':fmt(Number(s.rows[i].cups),1)+' US cups';$(c.id+'-note').textContent=useTrial?'Full-tray test with 10% extra coir and hydration water. Check cover clearance after leveling.':'Cup-based fill uses the brick label or your measured expansion sample.';});
  $('coir-results').hidden=!p.valid;$('export-coir').disabled=!p.valid||p.empty;
  $('coir-verdict').className='notice'+(!p.valid?' error':'');
  const b=M.calibration(s);$('calibration-tag').textContent=s.calibration?(b.valid?'One measured sample':'Calibration incomplete'):'Label estimate';
  $('calibration-result').textContent=b.valid?`${b.basis}. ${fmt(b.gramsPerCup,3)} g per expanded US cup. ${b.waterBasis}: ${fmt(b.waterRatio,2)} mL/g.`:b.message;
  if(!p.valid){$('coir-verdict').textContent=p.errors.join(' ');$('batch-title').textContent='Check your batch';$('tray-visuals').innerHTML='';$('fill-comparison').innerHTML='';M.crops.forEach(c=>$(c.id+'-facts').textContent='— Check the inputs to recalculate.');return;}
- const batchBasis=p.trialTrays===p.trays?'Full-tray leftover estimate':p.trialTrays?`${p.trialTrays} full-tray trial fill${p.trialTrays===1?'':'s'} plus cup-based fills`:p.basis.basis;
+ const batchBasis=p.trialTrays===p.trays?'Full-tray +10% test':p.trialTrays?`${p.trialTrays} full-tray trial fill${p.trialTrays===1?'':'s'} plus cup-based fills`:p.basis.basis;
  $('coir-verdict').textContent=p.empty?'No trays selected. Tap + Add tray on a crop to prepare a batch.':p.shortfallG>0?`This batch exceeds one whole brick by ${mass(p.shortfallG,true)}. Use more coir or reduce the fill/count.`:`${p.trays} tray${p.trays===1?'':'s'} selected · ${batchBasis}. Check expansion and moisture before sowing.`;
  $('batch-title').textContent=p.empty?'Choose your next tray.':`One bucket. ${p.trays===1?'One tray':p.trays+' trays'}.`;
- $('total-coir').textContent=mass(p.dryG,s.rounding==='0');$('total-water').textContent=water(p.waterMl);$('total-volume').textContent=(p.trialTrays?'≈ ':'')+fmt(p.cups,1)+' cups';$('total-volume-sub').textContent=fmt(p.liters,2)+' L / '+fmt(p.quarts,2)+' US qt '+(p.trialTrays?'estimated volume':'expanded target');$('total-cost').textContent='$'+fmt(p.cost,2);
+ $('total-coir').textContent=mass(p.dryG,s.rounding==='0');$('total-water').textContent=water(p.waterMl);$('total-volume').textContent=(p.trialTrays?'≈ ':'')+fmt(p.cups,1)+' cups';$('total-volume-sub').textContent=fmt(p.liters,2)+' L / '+fmt(p.quarts,2)+' US qt '+(p.trialTrays===p.trays&&!p.empty?'modeled tray capacity':p.trialTrays?'estimated volume':'expanded target');$('total-cost').textContent='$'+fmt(p.cost,2);
  const waterBasis=p.trialTrays?(p.trialTrays===p.trays?'Full-tray fill uses 4 mL/g.':'Full-tray fill uses 4 mL/g. Cup-based fills use the selected water ratio.'):`${p.basis.waterBasis}.`;
  $('basis-label').textContent=`${waterBasis} Water follows ${s.rounding==='0'?'exact':'rounded'} dry grams.`;
  $('brick-used').style.width=Math.min(100,p.fraction*100)+'%';$('brick-meter').setAttribute('aria-label',fmt(p.fraction*100,1)+' percent of one dry brick required');
  $('brick-caption').textContent=`${fmt(p.fraction*100,1)}% of a ${mass(Number(s.brickG))} brick · ${mass(p.remainingG,true)} remaining${p.shortfallG>0?' · extra brick material required':''}. This is a batch estimate, not an inventory record.`;
  $('water-sensitivity').textContent=`Sensitivity only: 20% less/more water would be ${water(p.waterSensitivity[0])}–${water(p.waterSensitivity[1])}. This is not a final-water target or confidence interval. The squeeze test decides when to stop.`;
- $('bucket-action').textContent=p.empty?'No coir or water needed.':`Break off ${mass(p.dryG,s.rounding==='0')} dry coir and stage ${water(p.waterMl)} water beside a clean bucket with room for at least ${fmt(p.liters,1)} L of expanded coir plus mixing space.`;
+ $('bucket-action').textContent=p.empty?'No coir or water needed.':`Break off ${mass(p.dryG,s.rounding==='0')} dry coir and stage ${water(p.waterMl)} water beside a clean bucket with room for at least ${fmt(p.liters,1)} L of coir plus extra mixing space.`;
  p.rows.forEach(r=>{$(r.id+'-facts').innerHTML=`<span><strong>${mass(r.weighG,s.rounding==='0')}</strong> dry / tray</span><span><strong>${water(r.waterMl)}</strong> water / tray</span><span>≈ <strong>${fmt(r.headroomIn,2)}″</strong> below rim</span><span>${r.count} × = ${mass(r.batchG,s.rounding==='0')} + ${water(r.batchWaterMl)}</span>`;});
  $('tray-visuals').innerHTML=p.rows.map(tray).join('');
  const reasons=['Thin-fill comparison','OTG general shallow-tray baseline','USU 2-quart baseline / clearance-trial large seed','About ½″ below the rim','Near-rim comparison','Earlier ~300 g comparison'];

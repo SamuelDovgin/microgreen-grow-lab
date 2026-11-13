@@ -3,12 +3,12 @@
     "bean-crop-notes.html": "1bb332f1fc301b73c7e218aba52abce4283fb7185b039c3768af5c99caf1c479",
     "bean-source-log.html": "bbb252c95b21d4df44f7c544a5e0837a71276a8c1e545447c9c8569af98f1870",
     "coir-fill-source-log.html": "6e2660ec93c639017d28980830f7d18ba7c46988ed794409fbf9159b6d69a87d",
-    "coir-guide.html": "96c030a3ee635a749bde93351f57c074a4ba6097ee574572eb1815ef108eb42f",
-    "coir-model.js": "f41b38e2e2b199d9d66d90284e598dcca51e1921b3b975e701dc1fd57d081c3a",
+    "coir-guide.html": "e037df9648cbe4e1f00847da97e0e2f58933ef68fb8ce6a8b234e4d591141896",
+    "coir-model.js": "2a7d2514bd67dd86a5d33a65a1e24f9214c752731847ea200b2ee67f3c445285",
     "coir-source-log.html": "e4ec88564738824c4b107193f13d6d0ce98472fdc627e6af68ff185aadcc38d6",
     "coir.css": "8947ba39a6061c6ee32421a7898c1bfe83a59ec1dbedbd1d347aeffe9e34442c",
-    "coir.html": "df7314e2421fd787436a6ed4b434713b9c8ba1210df4b50c9c50cee014eb5e72",
-    "coir.js": "bfeca58561baec4c8a50ef28c69260e0f4f9602b6fb7936bcf1261d3c8728207",
+    "coir.html": "e2caa8e6f85e164a2f8d55e1dbd8f5428ff95529ea2880310cda883707a1e84d",
+    "coir.js": "10cc92b60b546394fe778b06e114af231f70968a47a41ad5a2180643f898857a",
     "creator-notes.html": "2ba4789c1760d8cec399be187c4c8333b64b682e19a59e6dfb9495b1279bee50",
     "crop-calendar-sources.html": "e9b35ab3149f315eab1f7ac37622a5b7d616ea689c7fff02e35f377196074fa7",
     "crop-catalog.html": "5b3cc47aa5a0b182bbd9c8e31486f167065917c81c8967835c71a84442422e64",
@@ -40,7 +40,7 @@
     "docs/09_species_density_and_protocol_catalog.md": "c41c64da556b6628bd5e1e87b2630053ae258e88d3167275c7bddfd87ab9a9bf",
     "docs/10_crop_model_equations_and_validation.md": "cfb45b6bf3afa970572caa6a4320b3a7e3b74802a1924f793f379e2bc44e2df8",
     "docs/11_grow_log_and_protocol_calibration.md": "90caaf51485b01a4dc76fcbabea76384e0ad20431e9f21cb035a4a6fad3100c0",
-    "docs/12_coco_coir_preparation_and_calculator.md": "f5339b9b3ed26caf5b13b291d853744b2b8f4a934eed85a2739f839a702f1ba3",
+    "docs/12_coco_coir_preparation_and_calculator.md": "00e9a650587fc1436c562c1af217bff41c3fde3de940223edc0eaf817db81192",
     "docs/13_mung_and_soybean_1020_protocols.md": "4c4e710a9c39780279f3bce87107f658ebe5e9bfbdce52451899bcef431f3f34",
     "docs/14_seed_packets_and_rate_history.md": "0e82dbb2e90eaf1c4b96f3249b6133984357049cae4eaae351f296100bdeb5c5",
     "docs/coir_research_resource_log_2026-11-01.txt": "80b874cce1f3faab2c0cf7437a107093317afab6597316084a8cb309afaddbba",
@@ -144,5 +144,5 @@
     "tray-bleach-dilution.js": "6e3d8779ecbdbc20c9230223f4eecd17fb1730db3bb64ddffbcc0e3533b25c9b"
   },
   "publisher": "grow-lab",
-  "source_commit": "346761d3310f4176312af3f507bab606db09f107"
+  "source_commit": "db433bb98907d1c94c0acd09d7496c3d4c57045e"
 }
