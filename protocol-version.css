@@ -8,8 +8,7 @@
 .protocol-version input:focus-visible {outline:2px solid #192a20;outline-offset:3px}
 .protocol-version label:has(input:checked) .protocol-new,
 .protocol-version label:has(input:not(:checked)) .protocol-old {font-weight:800;text-decoration:underline;text-underline-offset:.22em}
-main:has([data-protocol-switch]:checked) [data-protocol-view="old"]:not([data-unmodified-seed="true"] [data-seed-comparison]),
-main[data-unmodified-seed="true"] [data-protocol-view="new"],
+main:has([data-protocol-switch]:checked) [data-protocol-view="old"],
 main:has([data-protocol-switch]:not(:checked)) [data-protocol-view="new"] {display:none}
 .protocol-card {margin:0 0 1.5rem;padding:1.15rem 1.25rem;border:1px solid #b8c5ae;border-radius:1rem;background:#f3f6ec}
 .protocol-card > :first-child {margin-top:0}

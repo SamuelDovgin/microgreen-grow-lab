@@ -54,7 +54,7 @@
     "docs/research_resource_log_2026-11-07.txt": "75e6296f31a954cf03e0f1624f3b1a79a35f6b432322c6603aa8bad148af7e17",
     "docs/research_resource_log_2026-11-09.txt": "49014b1b5861bdf075e74380e303342b8b87a0718d167bd85e43e32502bb91b1",
     "docs/sanitation_16_tray_cleaning_and_sanitizing.md": "877740d4aef57cac9dead6c121d250e962155d7dac9902ba63b4f9451bd9633c",
-    "docs/sanitation_17_seed_sanitation_research_and_timing.md": "27f7caaa72eb698d5f46e73a287224f258c10a3b56932760d2c1757467358048",
+    "docs/sanitation_17_seed_sanitation_research_and_timing.md": "aa080efce99233dcee4de0dd522f355aed5fc10b0122e3e067e002ccd2622671",
     "docs/sanitation_18_hocl_log_reduction_and_grower_consensus.md": "1d5edf8ff9dbc14ed971d4f8252442893eeef858c2bc989b89a752c2891a277d",
     "docs/sanitation_19_tissue_culture_seed_disinfection_and_microgreen_protocols.md": "7c922aa1982cc4cd30c8359fb4a2091e9b2867169b53fd05a9acdc3b1028fba7",
     "docs/sanitation_research_resource_log_2026-11-09.txt": "f344eee1f93aaf1a990630dc09a45d047ab6ab866b0fb7dd7d1a3931cbb4e019",
@@ -84,7 +84,7 @@
     "nutrients.html": "88d4803ad43efe0f921e56bee69ea987c759707898f55f6944a27fa422547dba",
     "nutrients.js": "9df82dfa34428ce1c8bee66d672b19ca51661cc781bb7f1b75c21efdf99397f0",
     "peroxide-dilution.js": "ebc443922810d0137a4c33603994f152d62f4edb68a76475ed8bdd684af9b849",
-    "protocol-version.css": "61b5d6d8756f64185559f01d7d2a82360807372b83957dae8b07121417db519b",
+    "protocol-version.css": "7237eb428ac43526fc2d3d7bb1c04539d1cfdf9191b13863894ac9dd7254a7a4",
     "qa.html": "c368ace86eb2e8148fced1961addb8b2ea84d214aefc7e5dffaa08b76f43b249",
     "quick-start-source-log.html": "78d90c287c87c8b8a119a1c9c1f1482f360325dc79b87dc78757eeaff045e03b",
     "rack-notes.html": "a768d286680ae556fb8547ed8fb398ef50bef5b8595d01f6e0e54473fe9e81a6",
@@ -119,12 +119,12 @@
     "seed-sanitation-data.js": "bfa6f2babf5feb864ba23acfe219a4d671460d5a8e9bca21d00726e26cb1f633",
     "seed-sanitation-evidence.html": "0c9cca62f84a1b4899371379ea1d76c86ba62256fdb198d0b0d750a83fbe922f",
     "seed-sanitation-model.js": "44cd1990c178781dbe8153c4d6141d5d4ad215835eedcb02ddea3f0d16163e92",
-    "seed-sanitation-research.html": "450f78d36bdcca7d4ede2e73f354b5c06e74b7e83f68e2f3e55d85bce3fe641d",
+    "seed-sanitation-research.html": "b498fc91846d8d8366a368764edc9913fcfa8033428ea3f23ed6dc410b2e466a",
     "seed-sanitation-source-log.html": "fbc2e6ea85db1e0c6a95a1682672765f241321802c39fa5e6b7788ffa16a09fa",
     "seed-sanitation-tissue-culture.html": "b17f0b84b28658f2fab20454c1a4aa49bd3ee9b904ea2fc72b57dbbfde300af7",
     "seed-sanitation.css": "41e724bb0d0df70a5d1b71a6a6b81416a452f9ab15127fa90dce72ae404f7a5f",
-    "seed-sanitation.html": "80ed2e096f2cf0571e58dd56e293a293b6f096e48cb0ed066d736d7e3371d948",
-    "seed-sanitation.js": "f4a20824900704accce7b08271d970accc68e2f5afb6b3b56d531747bf3debe6",
+    "seed-sanitation.html": "ee8ffcba15dd75d248a96c22481f2a93f39203a4af71387a220c3861e57f4203",
+    "seed-sanitation.js": "8f6b30844dfe307a998b52a1bf5e7cd21d86c9ebc841ce60c210ef12334b300c",
     "setup-assessment.html": "900e9c6aedd822ffbe9d3cfbb4b083d472306ed31265b51c6182c66a397cd478",
     "sources/Arthur-2025-herbal-microgreen-density-substrate.pdf": "1f97369073924e2b54c095eb7000aca26cd45a2d08589aaa64865369209273d4",
     "sources/Cowden-2024-light-density-fertilizer-microgreens.pdf": "db02330f10200b543878995ef6e4a12ae8a52a94d4f096b76d83fbc3fa69bb8e",
@@ -145,5 +145,5 @@
     "tray-bleach-dilution.js": "6e3d8779ecbdbc20c9230223f4eecd17fb1730db3bb64ddffbcc0e3533b25c9b"
   },
   "publisher": "grow-lab",
-  "source_commit": "1ca3c644091a1494f72cc2e2f1c436085f111c1e"
+  "source_commit": "b8cd33cf679f8705b234e8752f55914702000fcd"
 }

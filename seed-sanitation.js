@@ -9,11 +9,6 @@
  const badgeCrops=['sunflower','pea-basic','radish-daikon','broccoli','mung'];
  function cropNote(){
   const cropId=$('san-crop').value,p=M.quickProfile(cropId,D);
-  const newCrop=['sunflower','pea-basic','pea-tendril'].includes(cropId);
-  $('main')?.setAttribute('data-unmodified-seed',String(!newCrop));
-  const pea=cropId==='pea-basic'||cropId==='pea-tendril';
-  if($('new-seed-protocol')) $('new-seed-protocol').textContent=pea?'Pea seed prep for the next shallow 1020':'Sunflower seed prep for the next shallow 1020';
-  if($('new-seed-prep')) $('new-seed-prep').textContent=pea?'For the speckled/field pea trial, presoak in potable water for 6–8 hours, then drain and rinse before sowing.':'Rinse sunflower seed with potable water, drain and sow directly.';
   $('san-selected-name').textContent=p.label;$('san-answer').textContent=p.answer;$('san-answer').setAttribute('class',p.recommended?'answer-yes':'answer-no');$('san-crop-note').textContent=p.why;
   renderComparisons();
   for(const id of badgeCrops)$('seed-badge-'+id).setAttribute('aria-pressed',String(id===cropId));
