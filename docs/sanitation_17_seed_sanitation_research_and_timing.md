@@ -15,14 +15,14 @@
 - **Chlorine comparison, non-food research only:** The trial comparison uses a bath of about **2,000 ppm available chlorine for 15 minutes**, with a potable-water rinse control. Run sunflower and field pea separately; the field pea timings are an exploratory comparison. This comparison is informed by the Canadian sprout guidance’s 2,000 ppm hypochlorite example and its 15–20 minute range; it does not validate sunflower hull-mold suppression, pea tolerance or commercial U.S. microgreen use. Use an appropriate product and follow its applicable handling, mixing, contact, rinsing and disposal directions. Never mix bleach with vinegar, acidified HOCl, peroxide, ammonia or other cleaners. [CFIA sprouted-seed guidance](https://inspection.canada.ca/en/preventive-controls/fresh-fruits-vegetables/sprouted-seeds) · [FDA produce-safety coverage](https://www.fda.gov/media/133546/download?attachment=)
 - **Your Tandil:** The pictured product (EPA Reg. No. **9009-19-73664**) lists **7.5% sodium hypochlorite** and **7.14% available chlorine** by weight. Its hard-surface directions support the [empty-tray dilution](site/dist/seed-sanitation.html?dilution=bleach#hocl-dilution). I found no edible-seed directions in the matching master label. Rinsing does not establish that use. [EPA master label](https://www3.epa.gov/pesticides/chem_search/ppls/009009-00019-20251003.pdf) · [EPA label rules](https://www.epa.gov/pesticide-registration/about-pesticide-registration)
 
-**Bottle-strength calculation for the non-food reference.** Using the nominal **7.14% available chlorine by weight** gives 71,400 mg/kg in stock. For a nominal **2,000 mg/kg** mixture, stock mass is `finished mass × 2,000 ÷ 71,400` (about 1 part stock to 34.7 parts water by weight). These figures show what the label strengths imply; they are not Tandil seed-use directions.
+**Bottle-strength calculation for the non-food reference.** Using the nominal **7.14% available chlorine by weight** gives 71,400 mg/kg in stock. For a nominal **2,000 mg/kg** mixture, stock mass is `starting water mass × 2,000 ÷ (71,400 − 2,000)` (about 1 part stock to 34.7 parts water by weight). These figures show what the label strengths imply; they are not Tandil seed-use directions.
 
 | Example dry batch | CFIA sizing benchmark | Approximate bath with margin | Tandil stock by weight | Water by weight |
 | --- | ---: | ---: | ---: | ---: |
 | 130 g | 650 mL | 715 mL | 20.0 g | 695.0 g |
-| 225 g | 1,125 mL | 1,240 mL | 34.7 g | 1,205.3 g |
+| 225 g | 1,125 mL | 1,240 mL | 34.7 g | 1,205 g |
 
-The compact recipe card sizes the bath from the dry seed weight. The Canadian sprout guidance uses at least **5 mL per gram of seed**. The calculator adds **10%** to the larger of that estimate and any measured water volume required to cover the seeds, then rounds up in 5 mL increments. The margin is a practical allowance for coverage. Measure coverage in the same vessel with an equivalent water-only batch at the same hydration stage, especially for swollen seeds. The dilute bath is close to water in density, so the displayed mL are approximate and the actual weigh-out is given in grams. [CFIA sprouted-seed guidance](https://inspection.canada.ca/en/preventive-controls/fresh-fruits-vegetables/sprouted-seeds)
+The compact recipe card sizes the bath from the dry seed weight. The Canadian sprout guidance uses at least **5 mL per gram of seed**. The calculator adds **10%** to the larger of that estimate and any measured water volume required to cover the seeds, then rounds the starting water up in 5 g steps and calculates how much stock to add. The margin is a practical allowance for coverage. Measure coverage in the same vessel with an equivalent water-only batch at the same hydration stage, especially for swollen seeds. The dilute bath is close to water in density, so the displayed mL are approximate and the actual weigh-out is given in grams. [CFIA sprouted-seed guidance](https://inspection.canada.ca/en/preventive-controls/fresh-fruits-vegetables/sprouted-seeds)
 
 For the non-food comparison, time **15 minutes from full immersion**, drain completely, and do **three separate changes of fresh potable water**: cover, gently swirl, drain; repeat twice, then drain well. For sunflower, sow after the last drain. For the field pea comparison, keep the separate 6–8 hour water presoak first, then drain before the bath. The three changes are a practical trial procedure informed by the [broccoli study’s three rinses](https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/); they do not establish residue removal on these crops or replace a product’s directions. Mark those trays “Do not eat.” For edible-seed treatment, follow the approved product’s own sequence, timer and rinsing directions.
 
@@ -67,7 +67,7 @@ For the other seeds in the planner, **broccoli** has the closest head-to-head ev
 
 To compare performance on your trays, split one seed lot between rinse-only and a labeled seed treatment. Match seed mass, coir moisture, cover time, and airflow. Record emergence, visible mold patches, and usable yield across several batches. Those observations can tell you whether a treatment helps your grow; they cannot establish pathogen reduction or clear a moldy tray for eating.
 
-The [peroxide calculator](site/dist/seed-sanitation.html#hocl-dilution) now has a **3% by weight** seed-soak preset. For 12% stock, weigh **1 part stock to 3 parts water** (125 g and 375 g for a 500 g batch). The preset calculates the mixture. Use the product’s edible-seed directions for contact time and rinsing.
+The [peroxide calculator](site/dist/seed-sanitation.html#hocl-dilution) now has a **3% by weight** seed-soak preset. For 12% stock, start with **500 g water** and add **166.67 g stock** (3 parts water to 1 part stock by weight). The preset calculates the mixture. Use the product’s edible-seed directions for contact time and rinsing.
 
 **Foliar use review, November 11.** Commercial HOCl examples, the organic chlorine residual standard, municipal water data and the peroxide label comparison are in [section 15](#15-foliar-sprays-food-contact-and-product-labels).
 
@@ -121,7 +121,7 @@ Three of these four guides include **5 minutes**. The median of the four time-ra
 
 Bootstrap Farmer gives a **coverage instruction** for its 3% peroxide example: use enough solution to reach about 1 inch above the seeds. It gives no amount per gram. The vessel width and the volume of the seeds determine how much solution reaches that depth. Ocho Bernal et al. used **50 mL for 12 g** of amaranth, borage or carrot seed, about **4.17 mL/g** in their test jars. Canadian sprout guidance gives **5 mL/g** as an immersion-volume benchmark. These sources support a planning estimate for bath volume. They leave the effective amount for a particular sunflower seed lot and peroxide treatment unverified. [Bootstrap Farmer](https://www.bootstrapfarmer.com/blogs/microgreens/how-to-disinfect-seeds-before-planting-and-sprouting) · [Ocho Bernal et al.](https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1264472/full) · [Canadian Food Inspection Agency](https://inspection.canada.ca/en/preventive-controls/fresh-fruits-vegetables/sprouted-seeds)
 
-The calculator defaults to **5 mL of finished bath per gram of dry seed**. For a weight-based aqueous mix it uses **5 g/g** as an approximate equivalent. At **130 g of dry sunflower seed**, this gives **650 g of finished bath** in weight mode. To mix the **3% w/w grower reference** from **12% w/w stock**, weigh **162.5 g stock and 487.5 g water**. Use the edible-seed product label for volume, concentration, contact time and rinsing. Check coverage in your vessel and increase the finished batch at the same concentration if the applicable directions require more liquid. The calculator also accepts a measured finished batch amount directly.
+The calculator uses **5 mL of finished bath per gram of dry seed** for sizing. In weight mode, it uses 5 g/g as a volume estimate for a dilute mix. With **130 g dry seed** and a **3% w/w** target from **12% w/w stock**, the card rounds up to **488 g starting water** and calculates **162.67 g stock**. The finished bath weighs about 651 g. You can also enter a starting water amount directly. Follow the edible-seed product label for volume, concentration, contact time and rinsing, and check coverage in your vessel.
 
 Bootstrap Farmer describes rinsing, a **3% peroxide bath for 3–5 minutes**, thorough rinsing afterward and disposal of spent solution. Its soaking guide discusses larger seeds including sunflower, peas and mung. These are grower procedures, not validated pathogen-kill processes. [S02](https://www.bootstrapfarmer.com/blogs/microgreens/how-to-disinfect-seeds-before-planting-and-sprouting), [S03](https://www.bootstrapfarmer.com/blogs/microgreens/microgreens-soaking-seeds-when-why)
 
@@ -197,18 +197,18 @@ A generator setting is not a measured bath concentration. Stock age, storage, de
 For matching weight-percent units:
 
 ```text
-stock mass = final batch mass × target wt% / stock wt%
-water mass = final mass − stock mass
+stock mass = starting water mass × target wt% / (stock wt% − target wt%)
+finished mass = starting water mass + stock mass
 ```
 
-| Target from 12% stock | Stock for 1,000 g final batch | Added water |
+| Target from 12% stock | Add stock to 500 g water | Approximate finished mass |
 |---|---:|---:|
-| 6% | 500 g | 500 g |
-| 3% | 250 g | 750 g |
-| 2% | 166.7 g | 833.3 g |
-| 1% | 83.3 g | 916.7 g |
+| 6% | 500 g | 1,000 g |
+| 3% | 166.67 g | 666.67 g |
+| 2% | 100 g | 600 g |
+| 1% | 45.45 g | 545.45 g |
 
-This is a **1,000 g batch**, not an exact one-liter recipe. If the bottle uses weight percentages, volume substitution needs density information. The often-cited 250 mL stock + 750 mL water is only an approximate volumetric interpretation for a weight-percent bottle. For compatible mg/L chlorine units, dilution uses the corresponding final volume.
+These are weighed amounts. If the bottle uses weight percentages, converting the stock to mL requires its density. For matching mg/L chlorine units, use mL for both the stock and starting water.
 
 For aqueous dilute comparisons, 100–200 ppm peroxide corresponds approximately to 0.01–0.02%; it is far below 3% or 12%. Those spray-study concentrations must not be confused with seed-bath percentages. [S05]
 
@@ -306,38 +306,33 @@ Conditions supporting that assessment: reasonably low-salt starting coir/water, 
 
 ## 12. HOCl dilution card
 
-[Open the dilution card](site/dist/seed-sanitation.html#hocl-dilution). Choose HOCl in the spray dilution card after the three quick-help cards. Stock FAC starts at **200 ppm** based on the user's tentative estimate; replace it with a verified, in-range free available chlorine (FAC) reading. **Final solution volume defaults to 500 mL**; the 50-ppm target is an arithmetic example, not a crop recommendation. Presets 10/30/50/70/100/200/300 ppm and custom positive targets are available.
+[Open the dilution card](site/dist/seed-sanitation.html#hocl-dilution). Choose HOCl in the spray dilution card after the three quick-help cards. Stock FAC starts at **200 ppm** based on the user's tentative estimate; replace it with a verified, in-range free available chlorine (FAC) reading. **Starting water defaults to 500 mL**; the 50-ppm target is an arithmetic example, not a crop recommendation. Presets 10/30/50/70/100/200/300 ppm and custom positive targets are available.
 
 **Batch note [S71]:** The user identified the top pH strip as tap water and the two vertical strips as generated solution. Their tentative chlorine estimate was about **200 mg/L**; the pasted comparison estimated a solution pH of roughly **4.0–4.5**. The photo does not confirm a 200 mg/L FAC reading, whether the strip measures free or total chlorine, or whether the sample was diluted before testing. The earlier 300-ppm figure was a target in the working recipe. Neither photo nor target establishes which recipe amounts were actually used. The new prefill is a planning assumption.
 
 | Input or output | Basis |
 |---|---|
 | Measured stock FAC | User-entered ppm; use a suitable-range free-chlorine measurement. A target or off-scale strip reading is not a stock measurement. |
-| Target FAC | Calculation input; must be positive and no higher than stock. No crop-specific efficacy or safety score. |
-| Final batch | Default500mL **total**, including stock and water. Changing to liters converts the entered amounts. |
-| Available-stock mode | Enter existing stock volume; calculate the larger final volume and water addition. Separate from choosing a final batch. |
+| Target FAC | Calculation input; must be positive and below the stock reading. No crop-specific efficacy or safety score. |
+| Starting water | Defaults to 500 mL. Changing units converts the entered amount. |
+| Finished batch | The water and stock volumes added together. |
 | Salt estimates | Recorded6g/L feed and0.166mL per trigger pull; optional spray/application counts default10/10. Feed-salt equivalents, not measured residual NaCl or plant uptake. |
 | Final measured FAC and pH | Optional observation fields; FAC difference from target is shown without an invented pass/fail band. pH is recorded, never predicted. Changing batch inputs clears stale post-mix measurements. |
 
 ```text
-Final-volume mode:
-stock mL = final mL × target ppm / measured stock ppm
-water mL = final mL − stock mL
-
-Available-stock mode:
-final mL = available stock mL × measured stock ppm / target ppm
-water mL = final mL − available stock mL
+stock mL = starting water mL × target ppm / (measured stock ppm − target ppm)
+final mL = starting water mL + stock mL
 
 Diluted feed-salt equivalent mg/mL = 6 × target ppm / measured stock ppm
 Batch salt-equivalent mg = 6 × stock mL
 Tray salt-equivalent mg = diluted mg/mL × 0.166 × sprays/application × applications
 ```
 
-**Current example:** if the stock is verified at **200 ppm FAC**, a 50-ppm target and 500 mL final batch give **125 mL stock + 375 mL water**, or 1 part stock to 3 parts water. Add water to the final-volume mark; the calculation assumes approximately additive volumes and negligible FAC in the diluent. Using the recorded 6 g/L feed assumption, the estimate is **1.5 mg/mL**, **750 mg per batch** and **24.9 mg per tray** for 10 sprays × 10 applications. The feed assumption has not been verified for the photographed batch. Batch size is not the amount to apply to one tray.
+**Current example:** if the stock is verified at **200 ppm FAC**, a 50-ppm target uses **500 mL water + 166.67 mL stock**, or 1 part stock to 3 parts water. The finished volume is about 667 mL. The calculation assumes approximately additive volumes and negligible FAC in the diluent. Using the recorded 6 g/L feed assumption, the estimate is **1.5 mg/mL**, **1,000 mg per batch** and **24.9 mg per tray** for 10 sprays × 10 applications. The feed assumption has not been verified for the photographed batch. Batch size is not the amount to apply to one tray.
 
 Recheck FAC and pH after mixing. Water demand, chlorine decay and measurement resolution can change the achieved concentration. Use only water for dilution and follow product directions; the tool does not adjust generator salt, acid, electrolysis time or pH. Final measurements and dilution arithmetic do not validate crop tolerance, contact time, mold prevention or food-safety performance. The existing daily-spray guidance is unchanged.
 
-**Provenance:** user requested a compact functional card with500mL final volume; the attached earlier proposal used250mL, so the live request takes precedence. Its additional2025 seedling-research claim was initially unverified; it is now appraised separately in section 13. The previous measured spray record (section11/S55) supplies the salt/spray assumptions. Copy notes reproduce current quantities, salt assumptions and any recorded post-dilution observations. Spray estimates (including all salt figures) and mixed-batch measurement fields each start collapsed and can be expanded independently; primary stock/water amounts stay visible. The browser exposes `HoclDilutionApp.selfTest()` for deterministic arithmetic checks. [S60–S61 in the source notebook](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt)
+**Provenance:** The live card now uses a measured starting water amount, which defaults to 500 mL. Its additional2025 seedling-research claim was initially unverified; it is now appraised separately in section 13. The previous measured spray record (section11/S55) supplies the salt/spray assumptions. Copy notes reproduce current quantities, salt assumptions and any recorded post-dilution observations. Spray estimates (including all salt figures) and mixed-batch measurement fields each start collapsed and can be expanded independently; primary stock/water amounts stay visible. The browser exposes `HoclDilutionApp.selfTest()` for deterministic arithmetic checks. [S60–S61 in the source notebook](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt)
 
 ## 13. Evidence behind the 50 ppm spray proposal
 
@@ -383,16 +378,16 @@ The original 300-ppm scenario gives approximately **83.33 mL stock + 416.67 mL w
 
 ## 14. Peroxide spray dilution and chlorate
 
-[Open the spray dilution calculator](site/dist/seed-sanitation.html#hocl-dilution). It opens on **H₂O₂**, with **12% w/w stock**, a **900 mg/L grower-reference target** and **500 mL final volume**. Use the HOCl button for [free-chlorine dilution](#12-hocl-dilution-card). The separate custom seed-bath form also starts on peroxide.
+[Open the spray dilution calculator](site/dist/seed-sanitation.html#hocl-dilution). It opens on **H₂O₂**, with **12% w/w stock**, a **900 mg/L grower-reference target** and **500 g starting water**. Use the HOCl button for [free-chlorine dilution](#12-hocl-dilution-card). The separate custom seed-bath form also starts on peroxide.
 
 ### Peroxide amounts and the sunflower study
 
 On The Grow describes mixing 15 mL of 3% peroxide into 500 mL of water for a light germination mist. That is approximately 870 mg/L after mixing. The calculator rounds this grower reference to 900 mg/L. Sunflower crop tolerance, disease prevention and pathogen reduction at that concentration remain unverified. [On The Grow germination spray example](https://onthegrow.net/blogs/microgreens/microgreens-mold-prevention-identification-complete-guide)
 
-For a weight-percent label, 12% stock contains 120 mg H₂O₂ per gram. A 500 mL batch at 900 mg/L needs 450 mg of H₂O₂. The calculator offers two ways to measure that amount.
+For a weight-percent label, 12% stock contains 120 mg H₂O₂ per gram. For a dilute spray, the calculator approximates the finished density as 1 g/mL. It offers two ways to mix the 900 mg/L example using 500 g of starting water.
 
-- **Direct example.** Weigh **3.75 g of 12% stock** and add water to the 500 mL mark. The calculator uses the label's mass fraction and the finished volume, so stock density is unnecessary. Follow the concentrate's label and keep it separate from HOCl and bleach.
-- **Two-step example.** Mix **3.75 g of 12% stock with 41.25 g of water** to get 45 g of 1% working solution. Use **45 g of that solution** and add water to the 500 mL mark.
+- **Direct example.** Weigh **500 g water** and add **3.778 g of 12% stock**. This makes about 504 mL. Follow the concentrate's label and keep it separate from HOCl and bleach.
+- **Two-step example.** Start with **46 g water** and add **4.182 g of 12% stock** to make a 1% working solution. Weigh **500 g fresh water** and add **49.451 g of the working solution**.
 
 The recorded 0.166 mL per spray gives **16.6 mL across 100 sprays**, or **14.94 mg H₂O₂ in the spray** at 900 mg/L. The fraction that reaches or remains on the seedlings is unknown.
 
@@ -424,16 +419,16 @@ The **4 ppm** value is a residual-water standard in the organic context. An init
 - **10 ppm is a prevention reference.** It is near the 8 ppm preventive foliar rate in AGrowlyte’s guide. [AGrowlyte grower guide](https://www.agrowlyte.com/_files/ugd/48b9e9_f6fe6bfbd01c48efa9d89038916af76d.pdf)
 - **50 ppm is a treatment-range reference.** It is near AGrowlyte’s 40 ppm rate for existing plant disease. GroWash also markets 50 ppm for routine leaf hygiene. These examples leave prevention and treatment doses for germinating edible microgreens unverified. [AGrowlyte grower guide](https://www.agrowlyte.com/_files/ugd/48b9e9_f6fe6bfbd01c48efa9d89038916af76d.pdf) · [GroWash product directions](https://growash.com/products/)
 
-The manufacturer materials identify HOCl as the principal antimicrobial. The concentrations below are published targets or stock specifications. The last columns show a **250 mL finished batch** using those nominal stocks and the amount delivered by **1.66 mL per ten sprays**, using the concentration as FAC for the comparison. These are reference calculations. The labels reviewed did not establish a U.S. preharvest use on edible microgreens for any of these three products.
+The manufacturer materials identify HOCl as the principal antimicrobial. The concentrations below are published targets or stock specifications. The last columns show stock to add to **250 mL of starting water** and the amount delivered by **1.66 mL per ten sprays**, treating the listed strengths as FAC for the comparison. These are reference calculations. The labels reviewed did not establish a U.S. preharvest use on edible microgreens for any of these three products.
 
-| Manufacturer example | Nominal stock | Published target and use | Stock + water for 250 mL | mg FAC equivalent per 10 sprays |
+| Manufacturer example | Nominal stock | Published target and use | Stock to add to 250 mL water | mg FAC equivalent per 10 sprays |
 |---|---:|---|---:|---:|
-| AGrowlyte prevention | 500 ppm FAC | 8 ppm foliar, twice weekly | 4 + 246 mL | 0.0133 |
-| AGrowlyte treatment | 500 ppm FAC | 40 ppm foliar, daily. The guide describes up to twice daily in severe cases. | 20 + 230 mL | 0.0664 |
-| GroWash | 50 ppm FAC at production | 50 ppm ready-to-use plant hygiene spray, daily | 250 + 0 mL | 0.0830 |
-| Green Houston HOCl 500 | 500 ppm nominal HOCl | 50–100 ppm foliar or greenhouse fogging | 25–50 + 225–200 mL | 0.0830–0.166 |
-| Green Houston HOCl 500 | 500 ppm nominal HOCl | 150 ppm outbreak fogging, episodic | 75 + 175 mL | 0.249 |
-| Green Houston HOCl 100 | 100 ppm nominal HOCl | 100 ppm foliar and cuttings product | 250 + 0 mL | 0.166 |
+| AGrowlyte prevention | 500 ppm FAC | 8 ppm foliar, twice weekly | 4.07 mL | 0.0133 |
+| AGrowlyte treatment | 500 ppm FAC | 40 ppm foliar, daily. The guide describes up to twice daily in severe cases. | 21.74 mL | 0.0664 |
+| GroWash | 50 ppm FAC at production | 50 ppm ready-to-use plant hygiene spray, daily | Use as supplied | 0.0830 |
+| Green Houston HOCl 500 | 500 ppm nominal HOCl | 50–100 ppm foliar or greenhouse fogging | 27.78–62.50 mL | 0.0830–0.166 |
+| Green Houston HOCl 500 | 500 ppm nominal HOCl | 150 ppm outbreak fogging, episodic | 107.14 mL | 0.249 |
+| Green Houston HOCl 100 | 100 ppm nominal HOCl | 100 ppm foliar and cuttings product | Use as supplied | 0.166 |
 
 **AGrowlyte.** Its grower guide specifies checking residual fluid for up to 4 ppm and cautions against use during seedling and prevegetative stages. At exactly 500 ppm stock, the guide’s printed stock-to-water ratios calculate to about 7.7 and 36.2 ppm before demand. The table uses the advertised 8 and 40 ppm targets. The EPA 91582-1 master label reviewed includes hard-surface uses. Its text has no edible-crop foliar directions. [AGrowlyte grower guide](https://www.agrowlyte.com/_files/ugd/48b9e9_f6fe6bfbd01c48efa9d89038916af76d.pdf) · [EPA master label](https://www3.epa.gov/pesticides/chem_search/ppls/091582-00001-20260202.pdf)
 
@@ -443,7 +438,7 @@ The manufacturer materials identify HOCl as the principal antimicrobial. The con
 
 Tinley Park’s municipal report lists **0.8–0.9 ppm chlorine** for its 2025 monitoring, with a reported high of **0.9 ppm** and no chlorine violation. That range describes the utility’s samples. A faucet reading requires testing the actual water. Numerically, 50 ppm is about 56 times 0.9 ppm. Those numbers describe the water concentrations. [Village water quality report, 2025 data](https://cms6.revize.com/revize/tinleypark/document_center/Water%20Quality%20Report/Water%20Quality%20Report%202025.pdf)
 
-The calculator’s **10 ppm FAC** preset gives **25 mL of stock verified at 200 ppm FAC**, with water added to **500 mL final volume** (about **475 mL** water). It assumes negligible FAC in the diluent and reports a mixing target. Check final FAC with a test suited to the low range. At 10 ppm, 100 sprays at the recorded volume deliver **0.166 mg FAC equivalent** across a tray. At 50 ppm the same schedule delivers **0.83 mg**. These figures describe FAC introduced with the spray. Chlorate concentration, residues on greens at harvest, and whether a previously moldy tray is suitable to eat require other evidence. [Spray dilution calculator](site/dist/seed-sanitation.html#hocl-dilution) · [Chlorate and harvest residue evidence](#14-peroxide-spray-dilution-and-chlorate)
+The calculator’s **10 ppm FAC** preset uses **500 mL starting water** plus **26.32 mL of stock verified at 200 ppm FAC**. The finished batch is about 526 mL. It assumes negligible FAC in the diluent and reports a mixing target. Check final FAC with a test suited to the low range. At 10 ppm, 100 sprays at the recorded volume deliver **0.166 mg FAC equivalent** across a tray. At 50 ppm the same schedule delivers **0.83 mg**. These figures describe FAC introduced with the spray. Chlorate concentration, residues on greens at harvest, and whether a previously moldy tray is suitable to eat require other evidence. [Spray dilution calculator](site/dist/seed-sanitation.html#hocl-dilution) · [Chlorate and harvest residue evidence](#14-peroxide-spray-dilution-and-chlorate)
 
 ### Peroxide comparison from the discussion
 

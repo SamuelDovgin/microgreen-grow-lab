@@ -81,7 +81,7 @@ The second row scales the same published recipe; mL values are unit conversions.
 The photographed 121 fl oz Tandil Concentrated Disinfecting Bleach is **EPA Reg. No. 9009-19-73664**. The front label gives **7.5% sodium hypochlorite** as the active ingredient and **7.14% available chlorine** as its chlorine equivalent. Both values describe the stock. The hard-surface directions use **¼ US cup per US gallon of water**. The matching EPA master label specifies **at least 5 minutes visibly wet**, followed by a thorough rinse and air-drying. [EPA label 9009-19, product use directions](https://www3.epa.gov/pesticides/chem_search/ppls/009009-00019-20251003.pdf#page=4)
 
 1. For a compatible empty hard, nonporous tray, scrub out old media and roots, then rinse away the detergent.
-2. For **500 mL finished**, measure **7.69 mL of Tandil bleach + 492.31 mL water**. This preserves the label’s volume ratio of 1 part bleach to 64 parts water. The EPA dilution table lists this recipe at a nominal **1,000 ppm available chlorine**.
+2. Measure **500 mL water** first, then add **7.81 mL Tandil bleach**. This makes about 508 mL. This preserves the label’s volume ratio of 1 part bleach to 64 parts water. The EPA dilution table lists this recipe at a nominal **1,000 ppm available chlorine**.
 3. Apply as directed on the jug and keep the whole surface wet for at least **5 minutes**. Rinse well with clean water, including the corners and drain holes, then air-dry before adding soil or coir.
 
 ### Greenhouse rinse-off method
@@ -90,12 +90,12 @@ The earlier calculator used UC IPM’s general greenhouse reference of about **0
 
 ### Small batches and spray application
 
-The [empty-tray bleach calculator](site/dist/seed-sanitation.html?dilution=bleach#hocl-dilution) opens on **Tandil 7.5% · Hard-surface rinse-off**, which scales the bottle ratio above. Set your finished batch size, choose a matching label example below, or enter your bottle's bleach and water amounts.
+The [empty-tray bleach calculator](site/dist/seed-sanitation.html?dilution=bleach#hocl-dilution) opens on **Tandil 7.5% · Hard-surface rinse-off**, which scales the bottle ratio above. Set your starting water volume, choose a matching label example below, or enter your bottle's bleach and water amounts.
 
-| Label example | Label dilution | Scaled to 500 mL total | Application and finish |
+| Label example | Label dilution | Add to 500 mL water | Application and finish |
 | --- | --- | --- | --- |
-| Clorox CRB, EPA Reg. No. 5813-120 | 2 US tsp per US gal water, labeled 185 ppm available chlorine | 1.30 mL bleach + 498.70 mL water | Wipe a washed and rinsed hard food-contact surface and keep it visibly wet for 2 minutes. Air-dry without a final water rinse. Follow the matching immersion directions if soaking. |
-| Vertex CSS-6, EPA Reg. No. 9616-11 | 2 US fl oz per 5 US gal water, labeled 200 ppm available chlorine | 1.56 mL bleach + 498.44 mL water | Use the hard, nonporous food-contact spray method only if it appears on your container. Thoroughly wet the surface with bleach-compatible spray equipment, let excess drain, and vacate the area for at least 2 hours. Allow the tray to air-dry. The 200 ppm spray directions proceed to draining without a final water rinse. |
+| Clorox CRB, EPA Reg. No. 5813-120 | 2 US tsp per US gal water, labeled 185 ppm available chlorine | 1.30 mL bleach | Wipe a washed and rinsed hard food-contact surface and keep it visibly wet for 2 minutes. Air-dry without a final water rinse. Follow the matching immersion directions if soaking. |
+| Vertex CSS-6, EPA Reg. No. 9616-11 | 2 US fl oz per 5 US gal water, labeled 200 ppm available chlorine | 1.56 mL bleach | Use the hard, nonporous food-contact spray method only if it appears on your container. Thoroughly wet the surface with bleach-compatible spray equipment, let excess drain, and vacate the area for at least 2 hours. Allow the tray to air-dry. The 200 ppm spray directions proceed to draining without a final water rinse. |
 
 The two-minute Clorox food-contact wipe directions apply to wiping. For a spray bottle, look for food-contact directions that explicitly permit spraying and follow their wet time or other timing instructions. If your bottle requires a final potable-water rinse, finish the contact time, rinse, then air-dry. Wear the protection specified on the bottle, work with ventilation, and use a dedicated marked tool to measure small amounts. Make fresh solution for the day's use and keep bleach separate from detergents, acids, peroxide and other sanitizers. [Clorox accepted label, household food-contact directions](https://www3.epa.gov/pesticides/chem_search/ppls/005813-00120-20240708.pdf) · [Vertex accepted label, nonporous food-contact spray method](https://www3.epa.gov/pesticides/chem_search/ppls/009616-00011-20261021.pdf) · [CDC bleach precautions](https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html)
 

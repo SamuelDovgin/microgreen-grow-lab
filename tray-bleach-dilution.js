@@ -14,15 +14,16 @@
     }
     const result = model.calculateTrayBleach({
       recipe,
-      finalVolume: field('volume').value,
+      waterVolume: field('volume').value,
       bleachMl: Number(field('label-stock').value) * mlPerUnit[field('stock-unit').value],
       waterMl: Number(field('label-water').value) * mlPerUnit[field('water-unit').value],
     });
+    field('finished-out').textContent = result ? 'Makes about ' + format(result.finalMl) + ' mL.' : '';
     field('stock-out').textContent = result ? format(result.stockMl) + ' mL' : '—';
     field('water-out').textContent = result ? format(result.waterMl) + ' mL' : '—';
     field('status').textContent = result ? '' : recipe === 'label'
-      ? 'Enter a positive batch volume and both label amounts.'
-      : 'Enter a positive batch volume.';
+      ? 'Enter a positive starting water volume and both label amounts.'
+      : 'Enter a positive starting water volume.';
   }
 
   field('form').addEventListener('submit', event => event.preventDefault());

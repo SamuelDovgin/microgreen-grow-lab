@@ -13,6 +13,17 @@
   if(!Number.isFinite(amount))return {ok:false,reason:'The quantities are outside the calculation range.'};
   return {ok:true,stock:amount,water:batch-amount,final:batch};
  }
+ function dilutionFromWater({stock,target,water}){
+  if (![stock,target,water].every(value => Number.isFinite(Number(value)) && Number(value)>0)) {
+   return {ok:false,reason:'Enter positive stock strength, target strength and starting water.'};
+  }
+  const fraction = Number(target) / Number(stock);
+  if (fraction >= 1) return {ok:false,reason:'Use a target below the stock strength when adding water.'};
+  const amount = Number(water) * (fraction / (1 - fraction));
+  const final = Number(water) + amount;
+  if (!Number.isFinite(final)||amount<=0) return {ok:false,reason:'The quantities are outside the calculation range.'};
+  return {ok:true, stock:amount, water:Number(water), final};
+ }
  function bleachTrialBatch(seedGrams, coverMl=''){
   const seed = Number(seedGrams);
   if (!Number.isFinite(seed) || seed < 10) {
@@ -24,17 +35,26 @@
   }
   // Use 10% above the larger of the sprout benchmark and measured vessel coverage.
   const benchmark = seed * 5;
-  const finished = Math.ceil(Math.max(benchmark, measuredCover) * 11 / 50) * 5;
-  const mix = dilution({stock:7.14, target:0.2, batch:finished});
+  const stockPct = 7.14, targetPct = 0.2;
+  const minimumFinished = Math.max(benchmark, measuredCover) * 1.1;
+  const water = Math.ceil(minimumFinished * (1 - targetPct / stockPct) / 5) * 5;
+  const mix = dilutionFromWater({stock:stockPct, target:targetPct, water});
   if (!mix.ok) return mix;
   const stock = Math.round(mix.stock * 10) / 10;
-  return {ok:true, estimatedMl:finished, stockG:stock, waterG:finished-stock};
+  return {ok:true, estimatedMl:water+stock, stockG:stock, waterG:water};
  }
  function plan(input){
   if(!['peroxide','hocl','bleach'].includes(input.chemical)||!['mass','volume'].includes(input.basis))return {ok:false,reason:'Choose a chemical and matching concentration basis.'};
   if(input.chemical!=='hocl'&&(Number(input.stock)>100||Number(input.target)>100))return {ok:false,reason:'A percentage cannot exceed 100%.'};
   if(input.chemical==='hocl'&&input.basis!=='volume')return {ok:false,reason:'Available chlorine uses measured ppm and final volume in this planner.'};
-  const result=dilution(input);if(!result.ok)return result;
+  let water = input.water;
+  if (input.sizing==='seed' && Number.isFinite(Number(input.batch)) && Number(input.batch)>0) {
+   const sizing = dilution(input);
+   if (!sizing.ok) return sizing;
+   water = Math.ceil(sizing.water);
+  }
+  const result = water===undefined ? dilution(input) : dilutionFromWater({...input,water});
+  if(!result.ok)return result;
   const time=Number(input.contact),hasTime=input.contact!==''&&input.contact!==null&&input.contact!==undefined&&Number.isFinite(time)&&time>0;
   return {...result,unit:input.basis==='mass'?'g':'mL',contact:hasTime?time:null,ready:input.labelOk===true&&hasTime};
  }
@@ -57,5 +77,5 @@
   const note=anchor?'800 ppm × 15 minutes is the broccoli reference. This is not a validated treatment for your seed lot.':'15 × (800 ÷ '+c+') = '+minutes+' min assumes constant concentration × time. This exceeds the studied 1–15 minute window; effectiveness and germination at this duration were not established.';
   return {chemical,selected:c,minutes,concentration:c+' ppm*',time:minutes+' min*',status:anchor?'Broccoli study reference*':'Unconfirmed time extrapolation*',footnote:anchor?'* Broccoli study reference; not a confirmed protocol for your seed lot.':settings.footnote,note,source:settings.source,confirmed:false,kind:anchor?'study-reference':'hypothetical-extrapolation',sensitivity};
  }
- return {dilution,plan,quickProfile,comparison,bathFromSeed,bleachTrialBatch};
+ return {dilution,dilutionFromWater,plan,quickProfile,comparison,bathFromSeed,bleachTrialBatch};
 });
