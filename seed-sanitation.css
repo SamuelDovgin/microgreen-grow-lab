@@ -111,3 +111,19 @@
 .bleach-recipe details .bleach-recipe-size {
   margin-top: 9px;
 }
+
+.bleach-recipe .bleach-recipe-size:has(#bleach-trial-crop) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(6.25rem, 0.4fr);
+  align-items: end;
+}
+
+.bleach-recipe-size select,
+#bleach-trial-seed {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 36px;
+  padding: 5px 7px;
+  font-size: 16px;
+}

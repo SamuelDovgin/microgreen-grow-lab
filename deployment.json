@@ -122,9 +122,9 @@
     "seed-sanitation-research.html": "d929d1d10e6448c73ef34b065f657894c5ac2968c8d1cdd54a4dda762e18681a",
     "seed-sanitation-source-log.html": "fbc2e6ea85db1e0c6a95a1682672765f241321802c39fa5e6b7788ffa16a09fa",
     "seed-sanitation-tissue-culture.html": "b17f0b84b28658f2fab20454c1a4aa49bd3ee9b904ea2fc72b57dbbfde300af7",
-    "seed-sanitation.css": "7b33ccbedaa5cb0a3ee5fd2cc7e6927ba60eb19e5a3efc2fe78b3955046d3882",
-    "seed-sanitation.html": "226082a48d8998dfbb0cf14e330fe5071dd37ec5bfebf88fab17266ea8145fc2",
-    "seed-sanitation.js": "8b9dc22693040f25e7e0b219f6e8c0792446ab18c4a838d09f16ddc83702b100",
+    "seed-sanitation.css": "9c7429b3488098866250c065c3162d9378a567da8e5c01cada9b898bc438f57a",
+    "seed-sanitation.html": "03bfb308a16810353a8a551a4740ffc2683a27311cafe5fd202bdf1ba3dc7f2e",
+    "seed-sanitation.js": "d23abcafd3059efd9ee6d681379dd7b7b0364a397f3b03c738e180e9797e7d27",
     "setup-assessment.html": "900e9c6aedd822ffbe9d3cfbb4b083d472306ed31265b51c6182c66a397cd478",
     "sources/Arthur-2025-herbal-microgreen-density-substrate.pdf": "1f97369073924e2b54c095eb7000aca26cd45a2d08589aaa64865369209273d4",
     "sources/Cowden-2024-light-density-fertilizer-microgreens.pdf": "db02330f10200b543878995ef6e4a12ae8a52a94d4f096b76d83fbc3fa69bb8e",
@@ -145,5 +145,5 @@
     "tray-bleach-dilution.js": "6e3d8779ecbdbc20c9230223f4eecd17fb1730db3bb64ddffbcc0e3533b25c9b"
   },
   "publisher": "grow-lab",
-  "source_commit": "39fb971486dc6bee4db9e5eccf56cc427058a32b"
+  "source_commit": "2f02a255479654fb551827f025fcdd3c183f737a"
 }

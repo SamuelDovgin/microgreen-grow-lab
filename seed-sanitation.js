@@ -7,10 +7,12 @@
  const strengths={hocl:D.chemicalComparisons.hocl.default,peroxide:D.chemicalComparisons.peroxide.default};
  const comparisonState=()=>Object.fromEntries(['hocl','peroxide'].map(chem=>[chem,M.comparison(chem,strengths[chem],$('san-crop').value,D)]));
  const badgeCrops=['sunflower','pea-basic','radish-daikon','broccoli','mung'];
+ const bleachCrop = $('bleach-trial-crop');
  const bleachSeed = $('bleach-trial-seed');
  const bleachCover = $('bleach-trial-cover');
  const bleachResult = $('bleach-trial-result');
  const blendWeight = new Intl.NumberFormat(undefined, {minimumFractionDigits:1, maximumFractionDigits:1});
+ let selectedCropId = 'sunflower';
  function renderBleachTrial(){
   const batch = M.bleachTrialBatch(bleachSeed.value, bleachCover.validity?.badInput ? NaN : bleachCover.value);
   bleachResult.textContent = batch.ok
@@ -19,7 +21,6 @@
  }
  bleachSeed.addEventListener('input', renderBleachTrial);
  bleachCover.addEventListener('input', renderBleachTrial);
- renderBleachTrial();
  function cropNote(){
   const cropId=$('san-crop').value,p=M.quickProfile(cropId,D);
   $('san-selected-name').textContent=p.label;$('san-answer').textContent=p.answer;$('san-answer').setAttribute('class',p.recommended?'answer-yes':'answer-no');$('san-crop-note').textContent=p.why;
@@ -36,7 +37,33 @@
   }
   $('san-copy-status').textContent='';
  }
- function selectCrop(cropId){if(!D.crops[cropId])return;$('san-crop').value=cropId;$('san-label-ok').checked=false;cropNote();render();}
+ function selectCrop(cropId){
+  const knownCrop = Object.hasOwn(D.crops, cropId);
+  if (!knownCrop && cropId !== 'other') return;
+  const changed = selectedCropId !== cropId;
+  selectedCropId = cropId;
+  bleachCrop.value = cropId;
+  const option = bleachCrop.selectedOptions[0];
+  if (option) {
+   $('bleach-trial-prep-text').textContent = option.dataset.prep;
+   if (changed) {
+    bleachSeed.value = option.dataset.grams ?? '';
+    bleachCover.value = '';
+   }
+  }
+  renderBleachTrial();
+  $('quick-answer').hidden = !knownCrop;
+  $('old-custom-seed').hidden = knownCrop;
+  $('quick-explanations').hidden = !knownCrop;
+  if (knownCrop) {
+   $('san-crop').value = cropId;
+   $('san-label-ok').checked = false;
+   cropNote();
+   render();
+  } else {
+   for (const id of badgeCrops) $('seed-badge-'+id).setAttribute('aria-pressed', 'false');
+  }
+ }
  function input(){
   const sizing=$('san-sizing').value,seedGrams=$('san-seed-grams').value,bathPerGram=$('san-bath-ratio').value;
   const batch=sizing==='seed'?M.bathFromSeed(seedGrams,bathPerGram):$('san-batch').value;
@@ -61,10 +88,13 @@
  $('san-chemical').addEventListener('change',chemicalChanged);
  $('san-form').addEventListener('reset',()=>{setTimeout(()=>{$('san-chemical').value='peroxide';$('san-sizing').value='seed';$('san-seed-grams').value=130;$('san-bath-ratio').value=5;$('san-batch').value=1000;chemicalChanged();},0);});
  $('san-crop').addEventListener('change',()=>selectCrop($('san-crop').value));
+ bleachCrop.addEventListener('change', event => selectCrop(event.target.value));
  for(const id of badgeCrops)$('seed-badge-'+id).addEventListener('click',()=>selectCrop(id));
  for(const chem of ['hocl','peroxide'])for(const strength of D.chemicalComparisons[chem].options)$(chem+'-badge-'+strength).addEventListener('click',()=>{strengths[chem]=strength;renderComparisons();});
  $('san-copy').addEventListener('click',async()=>{const {s,r}=current,c=D.crops[$('san-crop').value],p=M.quickProfile($('san-crop').value,D),comparisons=comparisonState();const note=['Seed sanitation planning notes',c.name+' — '+p.answer,p.why,'HOCl reference: '+p.hocl.concentration+'; '+p.hocl.time+' — '+p.hocl.status,p.hocl.note,'H2O2 reference: '+p.peroxide.concentration+'; '+p.peroxide.time+' — '+p.peroxide.status,p.peroxide.note,'UNCONFIRMED COMPARISONS — not treatment instructions','HOCl comparison: '+comparisons.hocl.concentration+'; '+comparisons.hocl.time+' — '+comparisons.hocl.status,comparisons.hocl.footnote,comparisons.hocl.note,'H2O2 comparison: '+comparisons.peroxide.concentration+'; '+comparisons.peroxide.time+' — '+comparisons.peroxide.status,comparisons.peroxide.footnote,comparisons.peroxide.note,'Daily spray: HOCl '+p.spray.hocl+'; H2O2 '+p.spray.peroxide+'. '+p.spray.concentration,'Custom mixing example below (separate from crop advice):','Chemical: '+s.chemical,'Stock: '+s.stock+(s.chemical==='hocl'?' ppm':'% ('+s.basis+' basis)'), 'Target: '+s.target+(s.chemical==='hocl'?' ppm':'%'),...(r.ok?[('Finished bath: '+fmt(r.final)+' '+r.unit+(s.sizing==='seed'?' for '+fmt(Number(s.seedGrams))+' g dry seed at '+fmt(Number(s.bathPerGram))+' '+r.unit+'/g (coverage estimate).':'.')),$('san-mix-ratio').textContent]:[]),r.ok?'Stock: '+fmt(r.stock)+' '+r.unit+'; water: '+fmt(r.water)+' '+r.unit:'INVALID: '+r.reason,'Contact time: '+(r.contact?fmt(r.contact)+' min, entered from label':'not entered'),'Label suitability acknowledged: '+(s.labelOk?'yes':'no'),'Status: '+(r.ready?'Label-based quantities; effectiveness not validated':'Arithmetic example only — not an application protocol'),'Keep normal water presoak separate. Follow label rinse/disposal instructions. Never mix chemicals.','Sources: '+D.sources.study+' ; '+D.sources.grower].join('\n');
  try{await navigator.clipboard.writeText(note);$('san-copy-status').textContent='Planning notes copied.';}catch{$('san-copy-status').textContent='Clipboard unavailable. Select the visible results to copy them.';}});
- const requested=new URLSearchParams(location.search).get('crop');$('san-crop').value=D.crops[requested]?requested:'sunflower';cropNote();chemicalChanged();
+ const requested = new URLSearchParams(location.search).get('crop');
+ selectCrop(requested === 'other' || Object.hasOwn(D.crops, requested) ? requested : 'sunflower');
+ chemicalChanged();
  window.GrowSeedSanitation={snapshot:()=>({...current,crop:$('san-crop').value,quick:M.quickProfile($('san-crop').value,D),comparisons:comparisonState()})};
 })();
