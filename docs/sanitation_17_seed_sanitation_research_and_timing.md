@@ -17,12 +17,12 @@
 
 **Bottle-strength calculation for the non-food reference.** Using the nominal **7.14% available chlorine by weight** gives 71,400 mg/kg in stock. For a nominal **2,000 mg/kg** mixture, stock mass is `finished mass × 2,000 ÷ 71,400` (about 1 part stock to 34.7 parts water by weight). These figures show what the label strengths imply; they are not Tandil seed-use directions.
 
-| One shallow 1020 | Dry seed | Nominal finished mass | Tandil stock | Water |
+| Example dry batch | CFIA sizing benchmark | Approximate bath with margin | Tandil stock by weight | Water by weight |
 | --- | ---: | ---: | ---: | ---: |
-| Black oil sunflower | 130 g | 750 g | 21 g | 729 g |
-| Speckled/field pea | 225 g | 1,250 g | 35 g | 1,215 g |
+| 130 g | 650 mL | 715 mL | 20.0 g | 695.0 g |
+| 225 g | 1,125 mL | 1,240 mL | 34.7 g | 1,205.3 g |
 
-These batches round up from the CFIA sprout-handling example of **5 mL bath per gram of seed**, or 650 mL for 130 g and 1,125 mL for 225 g. The gram recipes approximate those volumes because the final dilute bath is mostly water. Check coverage in the actual container, especially after peas swell; use a narrower container or mix more in the same proportion if needed. [CFIA sprouted-seed guidance](https://inspection.canada.ca/en/preventive-controls/fresh-fruits-vegetables/sprouted-seeds)
+The compact recipe card sizes the bath from the dry seed weight. The Canadian sprout guidance uses at least **5 mL per gram of seed**. The calculator adds **10%** to the larger of that estimate and any measured water volume required to cover the seeds, then rounds up in 5 mL increments. The margin is a practical allowance for coverage. Measure coverage in the same vessel with an equivalent water-only batch at the same hydration stage, especially for swollen seeds. The dilute bath is close to water in density, so the displayed mL are approximate and the actual weigh-out is given in grams. [CFIA sprouted-seed guidance](https://inspection.canada.ca/en/preventive-controls/fresh-fruits-vegetables/sprouted-seeds)
 
 For the non-food comparison, time **15 minutes from full immersion**, drain completely, and do **three separate changes of fresh potable water**: cover, gently swirl, drain; repeat twice, then drain well. For sunflower, sow after the last drain. For the field pea comparison, keep the separate 6–8 hour water presoak first, then drain before the bath. The three changes are a practical trial procedure informed by the [broccoli study’s three rinses](https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/); they do not establish residue removal on these crops or replace a product’s directions. Mark those trays “Do not eat.” For edible-seed treatment, follow the approved product’s own sequence, timer and rinsing directions.
 

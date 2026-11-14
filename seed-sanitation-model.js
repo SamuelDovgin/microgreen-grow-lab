@@ -13,6 +13,23 @@
   if(!Number.isFinite(amount))return {ok:false,reason:'The quantities are outside the calculation range.'};
   return {ok:true,stock:amount,water:batch-amount,final:batch};
  }
+ function bleachTrialBatch(seedGrams, coverMl=''){
+  const seed = Number(seedGrams);
+  if (!Number.isFinite(seed) || seed < 10) {
+   return {ok:false, reason:'Enter at least 10 g of dry seed for this 0.1 g scale recipe.'};
+  }
+  const measuredCover = coverMl === '' ? 0 : Number(coverMl);
+  if (coverMl !== '' && (!Number.isFinite(measuredCover) || measuredCover <= 0)) {
+   return {ok:false, reason:'Enter a positive volume to cover the seed, or leave it blank.'};
+  }
+  // Use 10% above the larger of the sprout benchmark and measured vessel coverage.
+  const benchmark = seed * 5;
+  const finished = Math.ceil(Math.max(benchmark, measuredCover) * 11 / 50) * 5;
+  const mix = dilution({stock:7.14, target:0.2, batch:finished});
+  if (!mix.ok) return mix;
+  const stock = Math.round(mix.stock * 10) / 10;
+  return {ok:true, estimatedMl:finished, stockG:stock, waterG:finished-stock};
+ }
  function plan(input){
   if(!['peroxide','hocl','bleach'].includes(input.chemical)||!['mass','volume'].includes(input.basis))return {ok:false,reason:'Choose a chemical and matching concentration basis.'};
   if(input.chemical!=='hocl'&&(Number(input.stock)>100||Number(input.target)>100))return {ok:false,reason:'A percentage cannot exceed 100%.'};
@@ -40,5 +57,5 @@
   const note=anchor?'800 ppm × 15 minutes is the broccoli reference. This is not a validated treatment for your seed lot.':'15 × (800 ÷ '+c+') = '+minutes+' min assumes constant concentration × time. This exceeds the studied 1–15 minute window; effectiveness and germination at this duration were not established.';
   return {chemical,selected:c,minutes,concentration:c+' ppm*',time:minutes+' min*',status:anchor?'Broccoli study reference*':'Unconfirmed time extrapolation*',footnote:anchor?'* Broccoli study reference; not a confirmed protocol for your seed lot.':settings.footnote,note,source:settings.source,confirmed:false,kind:anchor?'study-reference':'hypothetical-extrapolation',sensitivity};
  }
- return {dilution,plan,quickProfile,comparison,bathFromSeed};
+ return {dilution,plan,quickProfile,comparison,bathFromSeed,bleachTrialBatch};
 });

@@ -7,6 +7,19 @@
  const strengths={hocl:D.chemicalComparisons.hocl.default,peroxide:D.chemicalComparisons.peroxide.default};
  const comparisonState=()=>Object.fromEntries(['hocl','peroxide'].map(chem=>[chem,M.comparison(chem,strengths[chem],$('san-crop').value,D)]));
  const badgeCrops=['sunflower','pea-basic','radish-daikon','broccoli','mung'];
+ const bleachSeed = $('bleach-trial-seed');
+ const bleachCover = $('bleach-trial-cover');
+ const bleachResult = $('bleach-trial-result');
+ const blendWeight = new Intl.NumberFormat(undefined, {minimumFractionDigits:1, maximumFractionDigits:1});
+ function renderBleachTrial(){
+  const batch = M.bleachTrialBatch(bleachSeed.value, bleachCover.validity?.badInput ? NaN : bleachCover.value);
+  bleachResult.textContent = batch.ok
+   ? `≈${fmt(batch.estimatedMl)} mL finished · Weigh ${blendWeight.format(batch.stockG)} g Tandil 7.5% + ${blendWeight.format(batch.waterG)} g water.`
+   : batch.reason;
+ }
+ bleachSeed.addEventListener('input', renderBleachTrial);
+ bleachCover.addEventListener('input', renderBleachTrial);
+ renderBleachTrial();
  function cropNote(){
   const cropId=$('san-crop').value,p=M.quickProfile(cropId,D);
   $('san-selected-name').textContent=p.label;$('san-answer').textContent=p.answer;$('san-answer').setAttribute('class',p.recommended?'answer-yes':'answer-no');$('san-crop-note').textContent=p.why;

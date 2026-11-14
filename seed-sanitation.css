@@ -84,3 +84,30 @@
 .bleach-recipe details p {
   margin-top: 9px;
 }
+
+.bleach-recipe-size {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  font-size: 13px;
+}
+
+.bleach-recipe-size label {
+  font-weight: 650;
+}
+
+.bleach-recipe-size input {
+  width: 5.5rem;
+  padding: 5px 7px;
+  font: inherit;
+  font-size: 16px;
+}
+
+#bleach-trial-result {
+  font-weight: 650;
+}
+
+.bleach-recipe details .bleach-recipe-size {
+  margin-top: 9px;
+}
