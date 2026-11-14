@@ -30,6 +30,12 @@ The nominal stock conversion is by weight. A 7.14% weight label is not 71,400 mg
 
 **What to compare:** Use one sunflower seed lot and hold coir, seed mass, cover and airflow constant across the water-rinse control and any appropriately treated non-food tray. Score visible hull mold and emergence at 48, 72 and 96 hours, plus healthy stand and usable yield at harvest. Keep the coir comparison separate so the effects are distinguishable. A sunflower study measured *Salmonella* reduction, including with vinegar, but did not test mold. The stronger direct antifungal evidence for chlorine came from broccoli; neither endpoint verifies the safety of the resulting microgreens. A labeled peroxide seed treatment is a secondary comparison with weaker mold evidence. Discard spreading mold. [Sunflower study](https://pubmed.ncbi.nlm.nih.gov/35410797/) · [Broccoli study](https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/) · [Coir calculator](site/dist/coir.html)
 
+#### Does field pea need a longer water presoak?
+
+Published timings do not establish that field pea needs longer than black oil sunflower. Utah State Extension lists **6 hours for pea and 12 for sunflower**. University of Florida Extension lists **8–12 hours for pea and 8 for sunflower**. A microgreen production study used **6 hours for both**. The water taken up represented 42% of the drained pea seed weight and 43% of the drained sunflower seed weight. The study used one duration for those lots. [Utah State Extension](https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens) · [University of Florida Extension](https://gardeningsolutions.ifas.ufl.edu/plants/edibles/vegetables/microgreens/) · [Microgreen production study, §§2.3 and 3.1](https://www.mdpi.com/2311-7524/7/11/446)
+
+For these coir trays, keep **6–8 hours in plain potable water for field pea** as a starting setting. **Rinse and direct-sow black oil sunflower** for the baseline. On The Grow reported a successful no-presoak grow and a higher yield in its single side-by-side tray comparison. If comparing a sunflower presoak, **6–8 hours** overlaps the published growing methods. Hold the seed lot, coir and cover constant, and compare emergence and usable yield. The water presoak is a growing decision separate from the timed chlorine reference. [On The Grow sunflower trial](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [University of Maryland Extension](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors)
+
 <!-- /protocol -->
 
 <!-- protocol:old -->

@@ -5,3 +5,82 @@
 @media(max-width:760px){.quick-decision{display:flex;flex-wrap:wrap;gap:10px}.quick-decision h2{margin:0}}
 
 .strength-badges{display:flex;flex-wrap:wrap;gap:5px;margin:10px 0 12px}.strength-badges button{font-size:11px;line-height:1.4;padding:6px 9px;min-height:34px;border-radius:17px;border:1px solid #bdcbb2;background:var(--white);color:var(--green);font-weight:600}.strength-badges button[aria-pressed=true]{background:var(--green);color:white;border-color:var(--green)}.comparison-caveat{font-size:12px;line-height:1.6;padding:9px 12px;background:#eee8d9;border-left:2px solid #b89451;margin:12px 0}.quick-cards .comparison-footnote{font-size:11px;line-height:1.5;margin:12px 0 0;color:#755423}.strength-label{font-size:10px!important;color:var(--muted);margin:0!important}.timing-model{margin-bottom:28px}.timing-model>p{font-size:13px}@media(max-width:760px){.strength-badges{gap:5px}.strength-badges button{font-size:10px;padding:6px 8px}.quick-cards .comparison-footnote{font-size:10px}}
+
+.bleach-recipe {
+  display: grid;
+  gap: 7px;
+  padding: 11px 13px;
+}
+
+.bleach-recipe-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  row-gap: 3px;
+}
+
+.bleach-recipe-heading h2 {
+  margin: 0;
+  font-size: 23px;
+  line-height: 1.15;
+}
+
+.bleach-recipe-heading .quick-status,
+.bleach-recipe p,
+.bleach-recipe details {
+  margin: 0;
+}
+
+.bleach-recipe p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.bleach-recipe p.small {
+  font-size: 12px;
+}
+
+.bleach-recipe-facts {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.bleach-recipe-facts > div {
+  padding: 6px 7px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--white);
+}
+
+.bleach-recipe-facts dt {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.bleach-recipe-facts dd {
+  margin: 3px 0 0;
+  color: var(--green);
+  font-size: clamp(13px, 3.7vw, 17px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.protocol-card.bleach-recipe details {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.bleach-recipe summary {
+  padding: 7px 0 1px;
+  color: var(--green);
+  font-size: 13px;
+}
+
+.bleach-recipe details p {
+  margin-top: 9px;
+}
