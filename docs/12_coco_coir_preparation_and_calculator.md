@@ -1,6 +1,6 @@
 # Coco coir: dry grams, rehydration water and shallow-tray fill
 
-*Added November 1, 2026. Default fill trial updated November 13, 2026. Built around the supplied Back to the Roots 10 lb / 51 US quart brick notes and Bootstrap Farmer shallow 1020 trays.*
+*Added November 1, 2026. Moisture trial updated November 14, 2026. Built around the supplied Back to the Roots 10 lb / 51 US quart brick notes and Bootstrap Farmer shallow 1020 trays.*
 
 [Open the coir calculator and visualizer](site/dist/coir.html) · [Detailed source notebook](source_docs/coir/research_resource_log_2026-11-01.txt)
 
@@ -8,7 +8,30 @@
 
 For a small sowing batch, separate and hydrate the portion you will sow. Keep the rest of the brick dry. This is a practical storage choice, not a demonstrated yield benefit. Whole-brick hydration makes sense when the material will be used promptly and there is adequate clean mixing/storage space. Wetting one edge can make separation easier, but that edge is no longer dry coir for weighing. [C0]
 
+<!-- protocol:new -->
+
+### November 14 moisture trial
+
+Start with **180 g dry coir + 600 mL potable water per shallow 1020** (**3.33 mL/g**). For 2, 3 and 4 trays, use 360 g / 1,200 mL, 540 g / 1,800 mL and 720 g / 2,400 mL. That is starting mixing water, before any drainage or later watering. Around eight expanded cups is a label-based estimate; measure how much the batch actually yields and how much fits under the cover.
+
+1. Hydrate in stages, break up all dry cores, then level the damp coir without packing it. There should be no pooling or streams of water when squeezed. Check cover contact and clearance before sowing.
+2. Skip scheduled misting for the first **48 hours**. Check the center, edges and surface daily. If the contact zone dries or seed swelling becomes uneven and the medium is dry, add a small amount of potable water and log it. Bottom-water when established roots can wick from below; drain excess.
+3. Keep **300 g + 1,200 mL (4 mL/g)** as your previous grow-method comparison. The recipes change both dry mass and water, so that test compares the whole setup. To isolate hydration ratio, compare **180 g + 600 mL** with **180 g + 720 mL**, keeping the lot, seed mass, seed prep, cover and room conditions the same. Compare emergence, visible mold, water added after sowing and usable yield.
+
+The Bootstrap Farmer figure of **8–9× dry weight** gives roughly **37–42%** only if the coir had that capacity and all 600 mL stayed in it. At 45% of that advertised maximum, the arithmetic would be 648–729 mL for 180 g. The 1994 study tested sunflower seed buried in mineral soil at 15%, 30% and 45% of a differently measured capacity. Its 95.3% result at 45% is for the unaged-seed row; 45% was the highest tested, and the experiment did not measure mold on surface-sown coir. Use the moisture checks above to calibrate your own brick. [Bootstrap Farmer spec](https://www.bootstrapfarmer.com/products/coco-coir-bricks) · [1994 sunflower study, Table 1](https://www.isasunflower.org/fileadmin/documents/HELIA_issues/Helia20/HELIA_20_-_PAGE_55.pdf)
+
+<!-- /protocol -->
+
+<!-- protocol:old -->
+
+### Previous calculator starter
+
 The calculator starts with the **+10% full-tray trial**, using **145 g dry coir and 580 mL starting water per tray** at the default weighing precision. The **½-inch gap** is available as a separate comparison. Working backward from the published 1¼-inch outside height and 19¾ × 9½-inch inside floor gives about 9.75 US cups for that gap in a rectangular model. The 10-cup preset gives roughly 0.48 inch of modeled headspace. Inside depth, taper, ridges and leveling can shift the result. [C3]
+
+Your earlier grow-method reference was **300 g dry coir + 1,200 mL water**. It is a separate comparison from the November 13 calculator starter.
+
+<!-- /protocol -->
+
 
 ## Your full tray measurement
 
@@ -20,7 +43,7 @@ The archived source record is the user's reported scale measurement in the Novem
 
 ### November 13 tray-fill test
 
-Some trays had low spots and an uneven coir surface. The next batch tests **10% more dry coir and starting water**, keeping hydration at **4 mL per gram**. Applying the increase to the unrounded 131.8 g estimate gives 144.98 g. The default rounds up to **145 g dry coir and 580 mL starting water per tray**, or **580 g and 2.32 L for four trays**.
+Some trays had low spots and an uneven coir surface. The November 13 batch tested **10% more dry coir and starting water**, keeping hydration at **4 mL per gram**. Applying the increase to the unrounded 131.8 g estimate gives 144.98 g. The Old mode rounds up to **145 g dry coir and 580 mL starting water per tray**, or **580 g and 2.32 L for four trays**.
 
 Spread the hydrated coir evenly and level it gently. Before sowing, measure from the rim to the leveled coir at the center and near each corner. Record any leftover coir and check cover clearance, especially for pea and sunflower. The roughly 16 cups shown for each full tray represent modeled tray capacity. Record the volume actually used during this test. Cup-based fills use the brick label or a measured expansion sample.
 
@@ -34,7 +57,7 @@ Spread the hydrated coir evenly and level it gently. Before sowing, measure from
 
 This comparison table uses the optional **round up to 5 g** setting. The calculator defaults to rounding up to 1 g and derives water from the actual dry weigh-out. Price and precision are editable. [C0, C5]
 
-Six cups follows On The Grow's current general shallow-tray guide. Its article lists the same external/bottom dimensions as these Bootstrap trays, but its stated six-cup medium capacity does not geometrically describe a full 1¼-inch bed. Treat it as a use amount, not a rim-height measurement. Eight cups for radish and sunflower in the original version was a moisture-buffering assumption with no demonstrated requirement; it should not have been the crop-specific default. The 4 mL/g starting-water factor remains a trial assumption until measured. [C0, C1, C3]
+Six cups follows On The Grow's current general shallow-tray guide. Its article lists the same external/bottom dimensions as these Bootstrap trays, but its stated six-cup medium capacity does not geometrically describe a full 1¼-inch bed. Treat it as a use amount, not a rim-height measurement. Eight cups for radish and sunflower in the original version was a moisture-buffering assumption with no demonstrated requirement; it should not have been the crop-specific default. These tables use the Old 4 mL/g factor. New uses 3.33 mL/g for uncalibrated cup-based presets; both are starting estimates. [C0, C1, C3]
 
 ## Why larger seeds can use a lower fill
 
@@ -130,7 +153,7 @@ USU's two-quart coir method includes a later two-cup bottom-water step and remov
 | Speckled pea | 230 g | Soak 8–12 h, then rinse and drain | Supplied plan; within OTG's 200–260 g 1020 range. [C0, C8] |
 | Black-oil sunflower | 125 g | Rinse and sow without presoak; roughly 8 h soaking is an alternative experiment | Current OTG approach differs from its older soaking demonstrations. [C9] |
 
-These chosen seed rates stay fixed in this component and are shown as companions; fill sliders do not change seed mass. Use the full crop planner to compare alternate seed protocols. The crop formulas scale the selected recipe, not the inherent requirements of an entire family. Fill height can be changed for physical clearance independently of seed mass.
+These chosen seed rates stay fixed in this component and are shown as companions. The pea presoak in this source table is the older 8–12 hour example; the new speckled/field pea trial uses 6–8 hours. The fill sliders and protocol switch do not change seed mass. Use the full crop planner to compare alternate seed protocols. The crop formulas scale the selected recipe, not the inherent requirements of an entire family. Fill height can be changed for physical clearance independently of seed mass.
 
 ## Calibrate this brick
 
@@ -138,16 +161,16 @@ The original label estimate is 4,536 ÷ (51 × 4) = **22.235 g per expanded US c
 
 Weigh a fresh dry sample; hydrate and mix until the no-drip texture is achieved; measure the expanded cups using the same light-leveling method you intend to use for trays. Enable **Use my measured sample** and enter both quantities plus the moisture check. No measurements are prefilled. If 135 g yields six cups, the measured conversion is 22.5 g/cup. If it yields only five cups, it becomes 27 g/cup and the six-cup target needs 162 g before weighing-rounding.
 
-Optional measured water is the volume retained in that sample: added water minus measured water removed, with none unaccounted for. The calculator uses sample retained mL ÷ sample dry grams. Without this optional measurement, expansion can be calibrated while water stays at the uncalibrated 4 mL/g starting factor. Blank, partial, zero, dry-patch and dripping-sample states have specific messages; invalid enabled calibration suppresses the recipe rather than quietly showing the label result.
+Optional measured water is the volume retained in that sample: added water minus measured water removed, with none unaccounted for. The calculator uses sample retained mL ÷ sample dry grams. Without this optional measurement, cup-based fills keep the starting factor for the active version: 3.33 mL/g in New or 4 mL/g in Old. The fixed tray presets keep their own listed amounts. Blank, partial, zero, dry-patch and dripping-sample states have specific messages; invalid enabled calibration suppresses the recipe rather than quietly showing the label result.
 
 One sample has unknown repeatability. Repeat with a consistent moisture endpoint, jug and leveling method. Increased measurement precision does not validate a yield forecast. The ±20% water display is a deliberate sensitivity scenario, **not a confidence interval, empirical range or final-water recommendation**.
 
 ## Equations and variable roles
 
 - Controlled recipe inputs: whole-number tray counts and expanded cups per tray.
-- Goal presets: the +10% full-tray test, about ½ inch below the rim (10 cups by geometry), source-baseline six cups, USU-style eight cups, uniform near-rim twelve cups and a 12/12/8/8-cup seed-clearance adaptation.
+- Goal presets: the 180 g / 600 mL shallow-tray trial, the previous +10% full-tray test, about ½ inch below the rim (10 cups by geometry), source-baseline six cups, USU-style eight cups, uniform near-rim twelve cups and a 12/12/8/8-cup seed-clearance adaptation.
 - Label inputs: brick dry grams and expanded US quarts; these jointly set estimated g/cup.
-- Locked starting ratio: 4 mL/g until replaced by an actual retained-water measurement.
+- Locked cup-based starting ratio: 3.33 mL/g in New or 4 mL/g in Old until replaced by a retained-water sample.
 - Measured inputs: sample dry mass, expanded cups, moisture observation and optional retained water.
 - Derived results: dry grams, starting water, expanded liters/quarts, depth/headroom, fraction of brick and coir-only cost.
 - Stop states: invalid counts/quantities, partial/invalid enabled calibration, dry or dripping calibration sample. A batch exceeding one brick gets an explicit shortfall message.
@@ -162,7 +185,7 @@ One sample has unknown repeatability. Repeat with a consistent moisture endpoint
 
 `batch_dry_g = sum(count_i × weigh_g_i)`
 
-`starting_water_mL = batch_dry_g × starting_ratio_mL_per_g`
+`starting_water_mL = sum(tray count × dry weigh-out per tray × ratio for that fill)`
 
 `expanded_L = sum(count_i × cups_i) × 236.5882365 / 1000`
 

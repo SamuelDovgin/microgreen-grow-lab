@@ -4,6 +4,38 @@
 
 [Open the planner](site/dist/seed-sanitation.html) · [Source-preservation notebook](source_docs/seed_sanitation/research_resource_log_2026-11-10.txt)
 
+## Compare seed protocols
+
+<!-- protocol:new -->
+
+### November 14: sunflower first, peas as a separate trial
+
+- **Sunflower:** Sort out damaged seeds. Rinse with potable water, drain and sow directly on the evenly moistened coir. Skip the extended water presoak. This is the baseline for edible trays unless using a product whose label explicitly covers the intended edible-seed treatment.
+- **Speckled/field peas:** Keep a separate **6–8 hour potable-water presoak**, then drain and rinse before sowing. If using a labeled seed treatment, let its directions determine where treatment and rinsing fit in the sequence. Soak water is separate from the coir recipe.
+- **Chlorine comparison, non-food research only:** The proposed sunflower comparison is **2,000 ppm available chlorine for 15 minutes**, with a potable-water rinse control. This comparison is informed by the Canadian sprout guidance’s 2,000 ppm hypochlorite example and its 15–20 minute range; it does not validate sunflower hull-mold suppression, pea tolerance or commercial U.S. microgreen use. Use an appropriate product and follow its applicable handling, mixing, contact, rinsing and disposal directions. Never mix bleach with vinegar, acidified HOCl, peroxide, ammonia or other cleaners. [CFIA sprouted-seed guidance](https://inspection.canada.ca/en/preventive-controls/fresh-fruits-vegetables/sprouted-seeds) · [FDA produce-safety coverage](https://www.fda.gov/media/133546/download?attachment=)
+- **Your Tandil:** The pictured product (EPA Reg. No. **9009-19-73664**) lists **7.5% sodium hypochlorite** and **7.14% available chlorine** by weight. Its hard-surface directions support the [empty-tray dilution](site/dist/seed-sanitation.html?dilution=bleach#hocl-dilution). I found no edible-seed directions in the matching master label. Rinsing does not establish that use. [EPA master label](https://www3.epa.gov/pesticides/chem_search/ppls/009009-00019-20251003.pdf) · [EPA label rules](https://www.epa.gov/pesticide-registration/about-pesticide-registration)
+
+**Bottle-strength calculation for the non-food reference.** Using the nominal **7.14% available chlorine by weight** gives 71,400 mg/kg in stock. For a nominal **2,000 mg/kg** mixture, stock mass is `finished mass × 2,000 ÷ 71,400` (about 1 part stock to 34.7 parts water by weight). These figures show what the label strengths imply; they are not Tandil seed-use directions.
+
+| Finished mass | Nominal Tandil stock | Water by weight |
+| --- | ---: | ---: |
+| 500 g | 14.0 g | 486.0 g |
+| 1,000 g | 28.0 g | 972.0 g |
+
+The table uses **grams**, including for the stock. A 7.14% weight label is not 71,400 mg/L without a density conversion. At this dilution, 2,000 mg/kg is approximately 2,000 mg/L if solution density is close to 1 kg/L; verify the finished available chlorine with a suitable high-range test before interpreting any research result. Stock age and organic matter can change the reading. Use the exact label directions for an edible-seed product rather than substituting these numbers.
+
+**What to compare:** Use one sunflower seed lot and hold coir, seed mass, cover and airflow constant across the water-rinse control and any appropriately treated non-food tray. Score visible hull mold and emergence at 48, 72 and 96 hours, plus healthy stand and usable yield at harvest. Keep the coir comparison separate so the effects are distinguishable. A sunflower study measured *Salmonella* reduction, including with vinegar, but did not test mold. The stronger direct antifungal evidence for chlorine came from broccoli; neither endpoint verifies the safety of the resulting microgreens. A labeled peroxide seed treatment is a secondary comparison with weaker mold evidence. Discard spreading mold. [Sunflower study](https://pubmed.ncbi.nlm.nih.gov/35410797/) · [Broccoli study](https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/) · [Coir calculator](site/dist/coir.html)
+
+<!-- /protocol -->
+
+<!-- protocol:old -->
+
+### Previous seed planner
+
+The previous planner flagged sunflower and pea for seed sanitation consideration. It opened with the HOCl and peroxide comparison cards: **200 ppm HOCl** and **12% H₂O₂** were the initial comparison inputs, with starred extrapolated contact times. The previous Seed & Water sunflower starter included an **8 hour optional water presoak** and had an alternate rinse-and-sow recipe; its field-pea starter used a **6 hour presoak**. The previously documented methods and limits are preserved in the evidence below.
+
+<!-- /protocol -->
+
 ## Latest evidence review
 
 ### Protocol evidence review
@@ -64,7 +96,7 @@ S01 used repeated controlled experiments and separately evaluated bacteria, fung
 
 ### Grower seed bath comparison
 
-Growers sometimes call this step “sterilizing.” Their published procedures describe seed surface treatments, and their reports leave sterility and foodborne pathogen reduction unverified. The hours-long water presoak hydrates the seed. For sunflower, the [Seed & Water planner](site/dist/crops.html#growing-plan) starts at **8 hours** and includes a rinse-only recipe. If soaking, start with **3 parts potable water to 1 part dry seed by volume** and keep the seed submerged as it swells. [Bootstrap Farmer soaking guide](https://www.bootstrapfarmer.com/blogs/microgreens/microgreens-soaking-seeds-when-why) · [On The Grow sunflower guide](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens)
+Growers sometimes call this step “sterilizing.” Their published procedures describe seed surface treatments, and their reports leave sterility and foodborne pathogen reduction unverified. The hours-long water presoak hydrates the seed. For sunflower, the [Seed & Water planner](site/dist/crops.html#growing-plan) now starts with rinse and direct sow. The previous **8-hour** water presoak remains available under Old and as a source recipe. If soaking, start with **3 parts potable water to 1 part dry seed by volume** and keep the seed submerged as it swells. [Bootstrap Farmer soaking guide](https://www.bootstrapfarmer.com/blogs/microgreens/microgreens-soaking-seeds-when-why) · [On The Grow sunflower guide](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens)
 
 | Grower | Reported peroxide seed treatment | Contact time and follow-up |
 | --- | --- | --- |

@@ -110,16 +110,17 @@ function schedule(s,c,recipe,densityResult){
  for(let day=0;day<=s.harvestDay;day++){
   const phase=day===0?'sow':day<s.coverDays?'emergence':day<lightStart?'blackout':day===s.harvestDay?'harvest':'light';
   const stage=day<s.coverDays?coverStage:phase==='blackout'?'Blackout · loose cover, 0 lb':phase==='harvest'?'Harvest checkpoint':day===lightStart?'Light readiness check':'Under lights';
-  const wateringMethod=day<bottomStart?'spray':'bottom';
+  const wateringMethod=day>=bottomStart?'bottom':recipe?.moistureTrial&&day<2?'check':'spray';
   let action,cue;
   if(day===0){
    const prep=soakHours>0?'Rinse and drain soaked seed well.':sunflower?`Weigh ${seed}, rinse and drain it, then sow the same day.`:`Weigh ${seed} and direct-sow.`;
-   action=[prep,'Use evenly moistened, drained medium. Sow evenly and mist to settle the seeds without pooling.',protocol.sow,
+   const moisture=recipe?.moistureTrial?'For one shallow 1020, mix 180 g dry coir with 600 mL potable water. Sow evenly onto uniformly damp, drained coir. Skip routine misting for 48 hours; add water if the seed contact zone dries.':'Use evenly moistened, drained medium. Sow evenly and mist to settle the seeds without pooling.';
+   action=[prep,moisture,recipe?.moistureTrial?'':protocol.sow,
            topdress?'Apply a thin top dress as directed by the selected recipe.':'',coverAction].filter(Boolean).join(' ');
-   cue=soakHours>0?'Drain, rinse, sow and cover':'Direct-sow, mist and cover';
+   cue=soakHours>0?'Drain, rinse, sow and cover':recipe?.moistureTrial?'Rinse, direct-sow and cover':'Direct-sow, mist and cover';
   }else if(phase==='emergence'){
-   action='Keep the selected cover in place. Check the seed surface and lightly mist only if it is drying.';
-   cue='Keep covered · mist only if drying';
+   action=recipe?.moistureTrial&&day<2?'Keep the cover in place between checks. Check the center and edges; add a little potable water only if the seed contact zone is drying. Log any addition.':'Keep the selected cover in place. Check the seed surface and lightly mist only if it is drying.';
+   cue=recipe?.moistureTrial&&day<2?'Keep covered · water only if drying':'Keep covered · mist only if drying';
   }else{
    const actions=[];
    if(day===s.coverDays){
@@ -129,6 +130,7 @@ function schedule(s,c,recipe,densityResult){
    if(phase==='blackout')actions.push('Keep the tray dark under a raised or inverted solid cover with space above the shoots. Leave all added weight off.',`Check for the estimated light-transition height of ${readiness.height}, rooted and upright. Move to light earlier if ready; do not wait for the calendar date or stretch weak stems.`);
    if(day===lightStart)actions.push(readiness.action,'When ready, remove the cover and move under lights. If uncovering is delayed, update the covered/blackout days so later planned tasks follow the actual transition.');
    if(phase==='harvest')actions.push(protocol.harvest||'Check leaf stage and harvest when ready.','Water only if the tray needs it and you are leaving it to grow.');
+   else if(wateringMethod==='check')actions.push('Check the center and edges; water only if the seed contact zone is drying.');
    else if(wateringMethod==='spray')actions.push('Lightly mist only if the seed surface is drying.');
    else if(day===bottomStart)actions.push('Bottom-water only if the tray needs it and the medium can wick from below. Delay the switch if it cannot.');
    else actions.push('Check tray weight and moisture. Bottom-water only as needed and drain excess.');

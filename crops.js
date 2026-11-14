@@ -1,6 +1,16 @@
 (function(){
 'use strict';
 const D=window.CropData,M=window.CropModel,$=id=>document.getElementById(id);
+const versionSwitch=$('protocol-version');
+const newProtocol=()=>!versionSwitch||versionSwitch.checked;
+const moistureRecipe=(c)=>{
+ if(!newProtocol()||!['sunflower','pea-basic'].includes(c.id))return null;
+ return {...c.alternatives[0],id:'moisture-trial',label:'November 14 · shallow coir trial',moistureTrial:true,
+  soak:c.id==='sunflower'?[0,0]:[6,8],
+  soakBasis:c.id==='sunflower'?'Rinse, drain and sow the same day.':'Potable-water hydration only. Drain and rinse before sowing; any seed treatment follows its own label.',
+  note:c.alternatives[0].note+' This trial changes seed preparation and initial coir hydration.'};
+};
+const availableRecipes=()=>[moistureRecipe(crop),...crop.alternatives,extraRecipe].filter(Boolean);
 const R=window.SeedRates,rateStore=R?.createStore({getItem:k=>window.localStorage.getItem(k),setItem:(k,v)=>window.localStorage.setItem(k,v)},D.crops.map(c=>c.id));
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=(n,d=1)=>Number.isFinite(n)?n.toLocaleString('en-US',{maximumFractionDigits:d,minimumFractionDigits:0}):'—';
@@ -14,13 +24,15 @@ function state(){const s={};nums.forEach(id=>s[id]=n(id));texts.forEach(id=>s[id
 function set(id,value){$(id).value=String(value);}
 function range(a){return a[0]===a[1]?String(a[0]):a.join('–');}
 function notice(text,error=false){return `<p class="notice${error?' error':''}">${esc(text)}</p>`;}
-function fillRecipes(selected=crop.alternatives[0].id){
- const all=[...crop.alternatives,...(extraRecipe?[extraRecipe]:[])];
+function fillRecipes(selected){
+ const all=availableRecipes();
+ if(!all.some(r=>r.id===selected))selected=all[0].id;
  $('recipe').innerHTML=all.map(r=>`<option value="${esc(r.id)}">${esc(r.label)}</option>`).join('');set('recipe',selected);recipe=all.find(r=>r.id===selected)||all[0];
 }
 function applyRecipe(){
  loggedWaterNote='';
- recipe=[...crop.alternatives,...(extraRecipe?[extraRecipe]:[])].find(r=>r.id===$('recipe').value)||crop.alternatives[0];
+ const all=availableRecipes();
+ recipe=all.find(r=>r.id===$('recipe').value)||all[0];
  set('mode','reference');
  set('multiplier',1);
  set('coverDays',Math.round((recipe.cover[0]+recipe.cover[1])/2));
@@ -46,7 +58,7 @@ function chooseCrop(id){
  const saved=rateStore?.latest(crop.id);if(saved)extraRecipe={...saved.recipe,id:'personal-rate',label:'My saved trial · '+fmt(saved.toGrams,1)+' g/200 in²',source:'PERSONAL',confidence:'Personal trial · evaluate measured yields'};
  rateMessage='';for(const id of ['rate-grams','rate-lot','rate-reason','rate-evidence'])if($(id))set(id,'');
  set('seedDiameterMm','');set('seedsPerGram',crop.seedsPerGram);set('germination',95);set('establishment',90);set('shootsPerUnit',1);set('trials','');$('trial-status').textContent='Use one crop, substrate, lot and harvest stage per comparison. Include failed trays as zero saleable grams.';
- fillRecipes(saved?'personal-rate':crop.alternatives[0].id);fillCurves();applyRecipe();
+ fillRecipes(saved?'personal-rate':undefined);fillCurves();applyRecipe();
 }
 function filterCrops(){
  const family=$('family-filter').value,list=D.crops.filter(c=>family==='all'||c.family===family);
@@ -77,7 +89,7 @@ function renderSeed(s,d){
  $('species-line').textContent=crop.family+' / '+crop.species;
  $('crop-title').textContent=crop.name;
  const sanitation=window.SeedSanitationData?.crops[crop.id];
- if(sanitation&&$('crop-sanitation'))$('crop-sanitation').innerHTML='<strong>Seed sanitation: '+esc(sanitation.status.toLowerCase())+'.</strong> <a href="seed-sanitation.html?crop='+encodeURIComponent(crop.id)+'">Why &amp; options ↗</a>';
+ if(sanitation&&$('crop-sanitation'))$('crop-sanitation').innerHTML='<strong>Seed sanitation: '+esc(recipe.moistureTrial?'any edible-seed treatment follows its label':sanitation.status.toLowerCase())+'.</strong> <a href="seed-sanitation.html?crop='+encodeURIComponent(crop.id)+'">Why &amp; options ↗</a>';
  $('included-packet').hidden=!crop.includedPacket;
  $('included-packet').textContent=crop.ownedPacket?'Your packet: '+crop.ownedPacket.name+' · True Leaf Market. The selected coir starter and named supplier alternatives keep their own rates and methods.':crop.includedPacket?'Includes '+crop.includedPacket+'. Select its True Leaf recipe for packet-specific settings.':'';
  $('confidence').textContent=recipe.id==='tested'?'Tested rate · context applies':recipe.id==='comparison'?'Starting rate from seed comparison':recipe.confidence||crop.confidence;
@@ -143,7 +155,7 @@ function renderWater(s,w){
 function renderSchedule(s,rows){
  const g=D.groups[crop.group];$('group-label').textContent=crop.family+' / '+g.name;$('protocol-title').textContent=g.name;$('protocol-exception').textContent=g.exception;
  const readiness=M.lightReadiness(s,crop);
- const items=[['Sow',(recipe.topdress??crop.topdress)?'Sow evenly and use a thin species-appropriate top dress; do not bury fine seeds indiscriminately.':'Evenly surface-sow on a level, moistened medium. Keep clumps and multi-layer seed piles out of the tray.'],['Uncover / light readiness',readiness.action],['Water checks',g.water],['Harvest cue',g.stage]];
+ const items=[...(recipe.moistureTrial?[['Coir','Mix 180 g dry coir with 600 mL starting water per shallow 1020. Measure actual fill and cover clearance.']]:[]),['Sow',(recipe.topdress??crop.topdress)?'Sow evenly and use a thin species-appropriate top dress; do not bury fine seeds indiscriminately.':'Evenly surface-sow on a level, moistened medium. Keep clumps and multi-layer seed piles out of the tray.'],['Uncover / light readiness',readiness.action],['Water checks',g.water],['Harvest cue',g.stage]];
  $('protocol-steps').innerHTML=items.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
  const soak=recipe.soak||crop.soakHours;
  $('soak-note').textContent=`Recipe: ${soak[1]===0?'direct sow':range(soak)+' h water presoak'}. ${recipe.soakBasis||'Use the selected crop preparation.'}`;
@@ -167,8 +179,8 @@ function renderSchedule(s,rows){
  const prepText=prep?`Presoak starts ${prep.date} at ${prep.time} for ${s.soakHours} h. Drain and rinse before sowing.`:crop.id==='sunflower'?'Rinse, drain and sow on day 0.':'Direct sow on day 0.';
  const blackoutText=s.blackoutDays?`After ${s.coverDays} covered days, remove the contact tray and any load. Allow ${s.blackoutDays} d under a loose unweighted blackout cover.`:'This recipe goes directly to lights after covered emergence.';
  $('schedule-note').textContent=[prepText,blackoutText,`Estimated light-transition height: ${readiness.height} above the medium. ${readiness.basis}`,'Dates are planning checkpoints. Use actual emergence and root anchoring; if uncovering is delayed, update covered/blackout days to shift later tasks. Once uncovered, continue under lights.',...flags].join(' ');
- $('watering-transition').textContent=`First planned bottom-water check: D${s.bottomStartDay} (${M.dateAt(s.sowDate,s.bottomStartDay)}). Water only if the tray needs it and the medium can wick from below. Until the switch, lightly mist a drying seed surface as needed.`;
- const method=r=>r.wateringMethod==='prep'?'Seed prep':r.wateringMethod==='spray'?(r.day===0?'Mist at sowing':'Mist only if drying'):'Bottom-water check';
+ $('watering-transition').textContent=`First planned bottom-water check: D${s.bottomStartDay} (${M.dateAt(s.sowDate,s.bottomStartDay)}). Water only if the tray needs it and the medium can wick from below. Until the switch, lightly mist a drying seed surface as needed.`+(recipe.moistureTrial?' Skip routine misting for the first 48 hours.':'');
+ const method=r=>r.wateringMethod==='prep'?'Seed prep':r.wateringMethod==='check'?'Water only if drying':r.wateringMethod==='spray'?(r.day===0?'Mist at sowing':'Mist only if drying'):'Bottom-water check';
  const volume=(cups,ml)=>cups===null?'—':`≈ ${fmt(cups,2)} cups <small>(${fmt(ml,0)} mL)</small>`;
  const budget=r=>r.dailyCups===null?'—':`${fmt(r.dailyCups,2)} cups <small>${fmt(r.lowCups,2)}–${fmt(r.highCups,2)} cups sensitivity</small>`;
  const dayLabel=r=>r.phase==='presoak'?'Prep':'D'+r.day;
@@ -219,7 +231,7 @@ function renderSources(){
 }
 function render(){
  const s=state(),d=M.density(s,crop,recipe),w=M.water(s),rows=M.schedule(s,crop,recipe,d);labelOutputs(s);renderSeed(s,d);renderWater(s,w);renderSchedule(s,rows);renderOptimization(s,d);renderSources();
- lastPlan={version:D.version,crop:{id:crop.id,name:crop.name,packetName:recipe.packetName||crop.ownedPacket?.name||null,species:crop.species,family:crop.family,protocolGroup:crop.group},sourceRecipe:recipe,inputs:s,density:d,water:w,schedule:rows,wateringPlan:{cupMl:M.CUP_ML,amSharePercent:s.amShare,bottomStartDay:s.bottomStartDay,volumeBasis:'Editable crop/family loss scenario split between morning and late day. The range is sensitivity to the demand input. Check moisture and wicking before watering.'},optimizer:activeCurve?{source:activeCurve.source,context:activeCurve.context,ranking:ranked}:null,evidenceBoundary:'Published starting plan and measured arithmetic; no universal agronomic optimum. All unmeasured seed sizes, capacities and demand inputs are illustrative.',sourceRecords:[...new Set([recipe.source,crop.seedSizeSource,'D01','D09','D16',...(recipe.calendarSources||crop.calendar.waterSources)].filter(Boolean))].map(id=>D.sources[id]).filter(Boolean)};
+ lastPlan={version:D.version,protocolVersion:newProtocol()?'new':'old',crop:{id:crop.id,name:crop.name,packetName:recipe.packetName||crop.ownedPacket?.name||null,species:crop.species,family:crop.family,protocolGroup:crop.group},sourceRecipe:recipe,inputs:s,density:d,water:w,schedule:rows,wateringPlan:{cupMl:M.CUP_ML,amSharePercent:s.amShare,bottomStartDay:s.bottomStartDay,volumeBasis:'Editable crop/family loss scenario split between morning and late day. The range is sensitivity to the demand input. Check moisture and wicking before watering.'},optimizer:activeCurve?{source:activeCurve.source,context:activeCurve.context,ranking:ranked}:null,evidenceBoundary:'Published starting plan and measured arithmetic; no universal agronomic optimum. All unmeasured seed sizes, capacities and demand inputs are illustrative.',sourceRecords:[...new Set([recipe.source,crop.seedSizeSource,'D01','D09','D16',...(recipe.calendarSources||crop.calendar.waterSources)].filter(Boolean))].map(id=>D.sources[id]).filter(Boolean)};
  lastPlan.seedRateRevision={published:D.seedRateHistory?.entries.filter(e=>e.cropId===crop.id).slice(-1)[0]||null,personal:recipe.id==='personal-rate'?rateStore?.latest(crop.id):null};
  renderRateHistory(s);renderOwnedRates();
 }
@@ -287,6 +299,14 @@ $('apply-optimum').addEventListener('click',()=>{
  fillRecipes('tested');applyRecipe();$('seed-plan').scrollIntoView({behavior:'smooth',block:'start'});
 });
 const now=new Date(),today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');set('sowDate',today);
+if(versionSwitch){
+ versionSwitch.checked=true;
+ versionSwitch.addEventListener('change',()=>{
+  const replace=recipe.id==='moisture-trial'||recipe.id===crop.alternatives[0].id&&moistureRecipe(crop);
+  fillRecipes(replace?undefined:recipe.id);
+  if(replace)applyRecipe();else render();
+ });
+}
 filterCrops();
 // Only explicit actions in My grow log create this one-time handoff.
 try{
