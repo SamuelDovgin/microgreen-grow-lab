@@ -2,7 +2,7 @@
   "schema": "grow-lab-published-seed-rates/1",
   "referenceAreaIn2": 200,
   "timezone": "America/Chicago",
-  "note": "Append-only rate history reconstructed from committed planner snapshots. Dates are revision dates, not sowing dates. Counts use the seed-size input saved in each historical snapshot. Personal browser refinements are exported separately.",
+  "note": "Append-only rate history from committed planner snapshots and dated user choices. Dates are revision dates, not sowing dates. Counts use the seed-size input saved in each historical snapshot. Personal browser refinements are exported separately.",
   "entries": [
     {
       "id": "771f7f55bd62-broccoli",
@@ -1487,6 +1487,48 @@
       "source": "U01",
       "commit": null,
       "evidence": "User trial choice; harvest yield unknown"
+    },
+    {
+      "id": "2026-11-14-mung",
+      "cropId": "mung",
+      "changedAt": null,
+      "date": "2026-11-14",
+      "dateBasis": "User message date; planned future tray",
+      "fromGrams": 180,
+      "toGrams": 153,
+      "referenceAreaIn2": 200,
+      "reason": "User chose 15% less dry seed for the next mung tray.",
+      "source": "U02",
+      "commit": null,
+      "evidence": "Trial choice; yield has not been measured"
+    },
+    {
+      "id": "2026-11-14-sunflower",
+      "cropId": "sunflower",
+      "changedAt": null,
+      "date": "2026-11-14",
+      "dateBasis": "User message date; planned future tray",
+      "fromGrams": 130,
+      "toGrams": 117,
+      "referenceAreaIn2": 200,
+      "reason": "User chose 10% less dry seed for the next Black Oil sunflower tray.",
+      "source": "U02",
+      "commit": null,
+      "evidence": "Trial choice; yield has not been measured"
+    },
+    {
+      "id": "2026-11-14-radish-daikon",
+      "cropId": "radish-daikon",
+      "changedAt": null,
+      "date": "2026-11-14",
+      "dateBasis": "User message date; planned future tray",
+      "fromGrams": 28,
+      "toGrams": 30.8,
+      "referenceAreaIn2": 200,
+      "reason": "User chose 10% more dry seed for the next Daikon Minowase radish tray.",
+      "source": "U02",
+      "commit": null,
+      "evidence": "Trial choice; yield has not been measured"
     }
   ]
 }

@@ -10,7 +10,18 @@ const moistureRecipe=(c)=>{
   soakBasis:c.id==='sunflower'?'Rinse, drain and sow the same day.':'Potable-water hydration only. Drain and rinse before sowing; any seed treatment follows its own label.',
   note:c.alternatives[0].note+' This trial changes seed preparation and initial coir hydration.'};
 };
-const availableRecipes=()=>[moistureRecipe(crop),...crop.alternatives,extraRecipe].filter(Boolean);
+const starterRecipe=c=>moistureRecipe(c)||c.alternatives[0];
+const publishedRates=cropId=>(D.seedRateHistory?.entries||[]).filter(entry=>entry.cropId===cropId);
+function historicalRecipe(){
+ if(!historicalRate)return null;
+ const base=starterRecipe(crop);
+ return {...base,id:'historical-rate',label:historicalRate.date+' · '+fmt(historicalRate.toGrams,1)+' g',
+  grams:historicalRate.toGrams,area:historicalRate.referenceAreaIn2,source:historicalRate.source,
+  calendarSources:[...new Set([historicalRate.source,...base.calendarSources.filter(id=>id!==base.source)])],
+  confidence:'Previous seed rate · current preparation settings',
+  note:fmt(historicalRate.toGrams,1)+' g per nominal 1020. '+historicalRate.reason};
+}
+const availableRecipes=()=>[moistureRecipe(crop),...crop.alternatives,historicalRecipe(),extraRecipe].filter(Boolean);
 const R=window.SeedRates,rateStore=R?.createStore({getItem:k=>window.localStorage.getItem(k),setItem:(k,v)=>window.localStorage.setItem(k,v)},D.crops.map(c=>c.id));
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=(n,d=1)=>Number.isFinite(n)?n.toLocaleString('en-US',{maximumFractionDigits:d,minimumFractionDigits:0}):'—';
@@ -18,7 +29,7 @@ const n=id=>$(id).value.trim()===''?NaN:Number($(id).value);
 const nums=['length','width','seedsPerGram','germination','establishment','shootsPerUnit','multiplier','targetShoots','depth','theta','reserve','depletion','wetWeight','currentWeight','measuredBuffer','demand','demandUncertainty','temp','rh','ppfd','hours','ph','ec','coverDays','blackoutDays','harvestDay','bottomStartDay','amShare','weightLb','soakHours','seedPrice','salePrice','otherCost','turnaround'];
 const texts=['mode','substrate','waterBasis','airflow','sowDate','sowTime','method','objective'];
 let crop=D.crops[0],recipe=crop.alternatives[0],localTrials=null,activeCurve=null,ranked=null,lastPlan=null,extraRecipe=null,weightResetNote='',loggedWaterNote='';
-let rateMessage='';
+let rateMessage='',historicalRate=null;
 const sourceLink=(id,label)=>{const s=D.sources[id];return s?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(label||s.title)} ↗</a>`:esc(label||(id==='PERSONAL'?'Your saved trial choice':'Your measured trays'));};
 function state(){const s={};nums.forEach(id=>s[id]=n(id));texts.forEach(id=>s[id]=$(id).value);s.showWaterEstimate=!!$('show-water-estimate').checked;s.seedDiameterMm=$('seedDiameterMm').value.trim()===''?null:n('seedDiameterMm');return s;}
 function set(id,value){$(id).value=String(value);}
@@ -53,12 +64,14 @@ function applyRecipe(){
  const s=state(),d=M.density(s,crop,recipe);if(d)set('targetShoots',Math.min(150,Math.max(.1,Math.round(d.shootsIn2*10)/10)));
  render();
 }
-function chooseCrop(id){
+function chooseCrop(id,rateChoice){
  crop=D.crops.find(c=>c.id===id)||D.crops[0];set('crop',crop.id);extraRecipe=null;localTrials=null;
+ historicalRate=publishedRates(crop.id).slice(0,-1).find(entry=>entry.id===rateChoice)||null;
  const saved=rateStore?.latest(crop.id);if(saved)extraRecipe={...saved.recipe,id:'personal-rate',label:'My saved trial · '+fmt(saved.toGrams,1)+' g/200 in²',source:'PERSONAL',confidence:'Personal trial · evaluate measured yields'};
  rateMessage='';for(const id of ['rate-grams','rate-lot','rate-reason','rate-evidence'])if($(id))set(id,'');
  set('seedDiameterMm','');set('seedsPerGram',crop.seedsPerGram);set('germination',95);set('establishment',90);set('shootsPerUnit',1);set('trials','');$('trial-status').textContent='Use one crop, substrate, lot and harvest stage per comparison. Include failed trays as zero saleable grams.';
- fillRecipes(saved?'personal-rate':undefined);fillCurves();applyRecipe();
+ const selected=historicalRate?'historical-rate':saved&&rateChoice!=='default'?'personal-rate':undefined;
+ fillRecipes(selected);fillCurves();applyRecipe();
 }
 function filterCrops(){
  const family=$('family-filter').value,list=D.crops.filter(c=>family==='all'||c.family===family);
@@ -232,15 +245,42 @@ function renderSources(){
 function render(){
  const s=state(),d=M.density(s,crop,recipe),w=M.water(s),rows=M.schedule(s,crop,recipe,d);labelOutputs(s);renderSeed(s,d);renderWater(s,w);renderSchedule(s,rows);renderOptimization(s,d);renderSources();
  lastPlan={version:D.version,protocolVersion:newProtocol()?'new':'old',crop:{id:crop.id,name:crop.name,packetName:recipe.packetName||crop.ownedPacket?.name||null,species:crop.species,family:crop.family,protocolGroup:crop.group},sourceRecipe:recipe,inputs:s,density:d,water:w,schedule:rows,wateringPlan:{cupMl:M.CUP_ML,amSharePercent:s.amShare,bottomStartDay:s.bottomStartDay,volumeBasis:'Editable crop/family loss scenario split between morning and late day. The range is sensitivity to the demand input. Check moisture and wicking before watering.'},optimizer:activeCurve?{source:activeCurve.source,context:activeCurve.context,ranking:ranked}:null,evidenceBoundary:'Published starting plan and measured arithmetic; no universal agronomic optimum. All unmeasured seed sizes, capacities and demand inputs are illustrative.',sourceRecords:[...new Set([recipe.source,crop.seedSizeSource,'D01','D09','D16',...(recipe.calendarSources||crop.calendar.waterSources)].filter(Boolean))].map(id=>D.sources[id]).filter(Boolean)};
- lastPlan.seedRateRevision={published:D.seedRateHistory?.entries.filter(e=>e.cropId===crop.id).slice(-1)[0]||null,personal:recipe.id==='personal-rate'?rateStore?.latest(crop.id):null};
+ const currentRate=publishedRates(crop.id).at(-1)||null;
+ lastPlan.seedRateRevision={published:recipe.id==='historical-rate'?historicalRate:currentRate,personal:recipe.id==='personal-rate'?rateStore?.latest(crop.id):null};
  renderRateHistory(s);renderOwnedRates();
 }
 function publishedGrams(c){const r=c.alternatives[0];return c.sownCountCm2&&r.id==='baseline'?c.sownCountCm2*1290.32/c.seedsPerGram:r.grams*200/r.area;}
 const quickStartCropIds=[...(D.ownedPackets||[]).map(p=>p.cropId),'mung'];
-function renderOwnedRates(){for(const cropId of quickStartCropIds){const el=$('owned-'+cropId+'-rate'),c=D.crops.find(c=>c.id===cropId);if(el)el.textContent=fmt(rateStore?.latest(cropId)?.toGrams??publishedGrams(c),1)+' g';}}
+const ratePicker=cropId=>$('owned-'+cropId+'-version');
+function fillRateChoices(preferPersonal){
+ for(const cropId of quickStartCropIds){
+  const picker=ratePicker(cropId);
+  if(!picker)continue;
+  const revisions=publishedRates(cropId).reverse(),saved=rateStore?.latest(cropId);
+  const addPersonal=saved&&!Array.from(picker.options).some(option=>option.value==='personal-rate');
+  const selected=saved&&(preferPersonal===cropId||addPersonal)?'personal-rate':picker.value||'default';
+  const options=revisions.map((entry,index)=>{
+   const date=new Date(entry.date+'T00:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'});
+   const label=index===0?'Current · '+date:date+' · '+fmt(entry.toGrams,1)+' g';
+   return `<option value="${esc(index===0?'default':entry.id)}">${esc(label)}</option>`;
+  });
+  if(saved)options.push(`<option value="personal-rate">My saved trial · ${esc(fmt(saved.toGrams,1))} g</option>`);
+  picker.innerHTML=options.join('');
+  picker.value=selected;
+ }
+}
+function renderOwnedRates(){
+ for(const cropId of quickStartCropIds){
+  const el=$('owned-'+cropId+'-rate'),c=D.crops.find(c=>c.id===cropId),choice=ratePicker(cropId)?.value;
+  const selected=publishedRates(cropId).find(entry=>entry.id===choice);
+  const saved=!choice||choice==='personal-rate'?rateStore?.latest(cropId):null;
+  const label=fmt(selected?.toGrams??saved?.toGrams??publishedGrams(c),1)+' g';
+  if(el&&el.textContent!==label)el.textContent=label;
+ }
+}
 function renderRateHistory(s){
  if(!$('rate-history-body'))return;
- const published=(D.seedRateHistory?.entries||[]).filter(e=>e.cropId===crop.id),personal=(rateStore?.read().entries||[]).filter(e=>e.cropId===crop.id);
+ const published=publishedRates(crop.id),personal=(rateStore?.read().entries||[]).filter(e=>e.cropId===crop.id);
  const entries=[...published.map(e=>({...e,scope:'Website',order:e.changedAt||e.date+'T00:00:00Z'})),...personal.map(e=>({...e,scope:'My trial',date:new Date(e.changedAt).toLocaleDateString('en-CA'),order:e.changedAt}))].sort((a,b)=>b.date.localeCompare(a.date)||Date.parse(b.order)-Date.parse(a.order));
  $('rate-history-body').innerHTML=entries.map(e=>`<tr><td>${esc(e.date)}<br><small>${esc(e.scope)}</small></td><td>${e.fromGrams===null?'Initial':fmt(e.fromGrams,1)+' g'} → ${fmt(e.toGrams,1)} g</td><td>${esc(e.reason)}${e.seedLot?'<br>Lot: '+esc(e.seedLot):''}${e.evidence?'<br><small>'+esc(e.evidence)+'</small>':''}</td></tr>`).join('');
  const latest=rateStore?.latest(crop.id);$('rate-current-basis').textContent='Website default: '+fmt(publishedGrams(crop),1)+' g/200 in².'+(latest?' Your saved next-trial default: '+fmt(latest.toGrams,1)+' g/200 in².':' No personal override saved in this browser.');
@@ -248,7 +288,7 @@ function renderRateHistory(s){
  $('rate-history-status').textContent=rateMessage||rateStore?.status().error||'Personal revisions stay in this browser. Export a backup to move them to another browser or device.';
 }
 function startFromNow(cropId){
- set('family-filter','all');filterCrops();set('length',20);set('width',10);chooseCrop(cropId);
+ set('family-filter','all');filterCrops();set('length',20);set('width',10);chooseCrop(cropId,ratePicker(cropId)?.value);
  const prep=new Date(),sow=new Date(prep.getTime()+n('soakHours')*3600000),date=[sow.getFullYear(),String(sow.getMonth()+1).padStart(2,'0'),String(sow.getDate()).padStart(2,'0')].join('-');
  set('sowDate',date);set('sowTime',String(sow.getHours()).padStart(2,'0')+':'+String(sow.getMinutes()).padStart(2,'0'));render();
  $('start-plan-status').textContent=(n('soakHours')?'Begin the selected '+fmt(n('soakHours'),0)+' h water soak now; planned sowing ':'Direct sowing planned ')+date+' at '+$('sowTime').value+' local time. '+fmt(lastPlan.density.grams,1)+' g dry seed for this nominal 1020. Verify actual inputs before logging the tray.';
@@ -262,6 +302,7 @@ function saveTrialRate(event){
  const savedRecipe={...recipe,id:'personal-rate',source:'PERSONAL',grams:toGrams,area:200,cover:[s.coverDays,s.coverDays],harvest:[s.harvestDay,s.harvestDay],soak:[s.soakHours,s.soakHours],method:s.method,blackoutDays:s.blackoutDays,weightLb:s.weightLb,substrateId:s.substrate,substrateDepth:s.depth,substrateTheta:s.theta,substrateReserve:s.reserve,lightHours:s.hours,note:reason};
  const entry={id:'rate-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,10),cropId:crop.id,changedAt:at,fromGrams:previous,toGrams,actualSeedG:grams,areaIn2:area,reason,seedLot:$('rate-lot').value.trim(),evidence:$('rate-evidence').value.trim(),recipe:savedRecipe};
  const result=rateStore.append(entry);if(!result.ok){rateMessage=result.error;render();return;}
+ fillRateChoices(crop.id);
  extraRecipe={...savedRecipe,label:'My saved trial · '+fmt(toGrams,1)+' g/200 in²',confidence:'Personal trial · evaluate measured yields'};fillRecipes('personal-rate');applyRecipe();
  rateMessage=result.persisted?'Trial rate saved with date, previous amount, area and reason. Existing tray records are unchanged.':'Trial rate is held in this tab only. '+result.error;render();
 }
@@ -276,10 +317,13 @@ $('all-sources').innerHTML=Object.values(D.sources).map(s=>`<li id="source-${esc
 $('family-filter').addEventListener('change',filterCrops);
 $('crop').addEventListener('change',()=>chooseCrop($('crop').value));
 $('recipe').addEventListener('change',applyRecipe);
-for(const cropId of quickStartCropIds)if($('start-'+cropId))$('start-'+cropId).addEventListener('click',()=>startFromNow(cropId));
+for(const cropId of quickStartCropIds){
+ if($('start-'+cropId))$('start-'+cropId).addEventListener('click',()=>startFromNow(cropId));
+ ratePicker(cropId)?.addEventListener('change',renderOwnedRates);
+}
 if($('rate-history-form'))$('rate-history-form').addEventListener('submit',saveTrialRate);
 if($('export-rate-history'))$('export-rate-history').addEventListener('click',()=>download('grow-lab-seed-rate-history.json',JSON.stringify({...rateStore?.read()||{schema:R?.SCHEMA,revision:0,entries:[]},exportedAt:new Date().toISOString(),publishedHistory:D.seedRateHistory},null,2),'application/json'));
-if($('import-rate-history'))$('import-rate-history').addEventListener('change',async()=>{const file=$('import-rate-history').files?.[0];if(!file)return;try{if(!rateStore||file.size>20*1024*1024){rateMessage='Rate history is unavailable or the backup exceeds 20 MB.';}else{const result=rateStore.import(await file.text());if(result.ok){chooseCrop(crop.id);rateMessage=result.added+' personal revision(s) imported. '+(result.error||'Existing revision IDs were preserved.');}else rateMessage=result.error;}}catch{rateMessage='Could not read this rate-history file; existing revisions were preserved.';}finally{set('import-rate-history','');render();}});
+if($('import-rate-history'))$('import-rate-history').addEventListener('change',async()=>{const file=$('import-rate-history').files?.[0];if(!file)return;try{if(!rateStore||file.size>20*1024*1024){rateMessage='Rate history is unavailable or the backup exceeds 20 MB.';}else{const result=rateStore.import(await file.text());if(result.ok){fillRateChoices();chooseCrop(crop.id);rateMessage=result.added+' personal revision(s) imported. '+(result.error||'Existing revision IDs were preserved.');}else rateMessage=result.error;}}catch{rateMessage='Could not read this rate-history file; existing revisions were preserved.';}finally{set('import-rate-history','');render();}});
 $('show-water-estimate').addEventListener('change',render);
 for(const [id,calendar] of [['calendar-view',true],['list-view',false]])$(id).addEventListener('click',()=>{$('watering-calendar').hidden=!calendar;$('schedule-list').hidden=calendar;$('calendar-view').setAttribute('aria-pressed',String(calendar));$('list-view').setAttribute('aria-pressed',String(!calendar));});
 for(const form of ['seed-form','water-form','schedule-form']){$(form).addEventListener('submit',e=>e.preventDefault());$(form).addEventListener('input',e=>{if(['coverDays','blackoutDays'].includes(e.target.id))set('bottomStartDay',n('coverDays')+n('blackoutDays'));if(['length','width','depth','reserve','multiplier'].includes(e.target.id)&&$('waterBasis').value==='measured'){set('waterBasis','scenario');weightResetNote='The tray/seed/root-zone setup changed. Reweigh the revised assembly before reusing measured refill mode.';}render();});$(form).addEventListener('change',render);}
@@ -303,10 +347,12 @@ if(versionSwitch){
  versionSwitch.checked=true;
  versionSwitch.addEventListener('change',()=>{
   const replace=recipe.id==='moisture-trial'||recipe.id===crop.alternatives[0].id&&moistureRecipe(crop);
+  const wasHistorical=recipe.id==='historical-rate',changedPrep=wasHistorical&&recipe.moistureTrial!==starterRecipe(crop).moistureTrial;
   fillRecipes(replace?undefined:recipe.id);
-  if(replace)applyRecipe();else render();
+  if(replace||changedPrep)applyRecipe();else render();
  });
 }
+fillRateChoices();
 filterCrops();
 // Only explicit actions in My grow log create this one-time handoff.
 try{

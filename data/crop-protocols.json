@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-07",
+  "version": "2026-11-14",
   "retiredCropIds": {
     "pea-speckled": {
       "cropId": "pea-basic",
@@ -410,9 +410,9 @@
       "species": "Raphanus sativus",
       "family": "Brassicaceae",
       "group": "radish",
-      "defaultGrams": 28.0,
+      "defaultGrams": 30.8,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
+      "referenceAreaBasis": "User-selected dry seed per nominal 1020 trial, 200 in²",
       "harvestDays": [
         8,
         8
@@ -435,6 +435,42 @@
       "confidence": "Published starting rate",
       "notes": "",
       "alternatives": [
+        {
+          "id": "next-trial",
+          "label": "Your next tray · 30.8 g",
+          "grams": 30.8,
+          "area": 200,
+          "harvest": [
+            8,
+            8
+          ],
+          "cover": [
+            2,
+            3
+          ],
+          "method": "stack",
+          "source": "U02",
+          "note": "30.8 g dry seed per nominal 1020. User chose 10% more dry seed for the next Daikon Minowase radish tray.",
+          "soakBasis": "Selected crop or group planning window; check the seed lot.",
+          "soak": [
+            0,
+            0
+          ],
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
+          "calendarSources": [
+            "U02",
+            "P01",
+            "D02",
+            "D16",
+            "D35",
+            "D41"
+          ],
+          "substrateId": "peat",
+          "confidence": "User-selected starting trial"
+        },
         {
           "id": "comparison",
           "label": "Seed rate comparison · starting plan",
@@ -632,7 +668,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "P01",
+        "density": "U02: user-selected 30.8 g next-tray trial",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -7952,9 +7988,9 @@
       "species": "Helianthus annuus",
       "family": "Asteraceae",
       "group": "sunflower",
-      "defaultGrams": 130.0,
+      "defaultGrams": 117,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "Nominal 1020 comparison, 200 in²",
+      "referenceAreaBasis": "User-selected dry seed per nominal 1020 trial, 200 in²",
       "harvestDays": [
         9,
         9
@@ -7977,6 +8013,46 @@
       "confidence": "Published starting rate",
       "notes": "120 g is the 2024 recipe; 130 g appears in MGM’s 2025 germination table. Seed hull/lot size matters.",
       "alternatives": [
+        {
+          "id": "next-trial",
+          "label": "Your next tray · 117 g",
+          "grams": 117,
+          "area": 200,
+          "harvest": [
+            9,
+            9
+          ],
+          "cover": [
+            3,
+            3
+          ],
+          "method": "stack",
+          "source": "U02",
+          "note": "117 g dry seed per nominal 1020. User chose 10% less dry seed for the next Black Oil sunflower tray.",
+          "soakBasis": "On The Grow’s optional 8 h water soak. Its rinse-only recipe is also available.",
+          "soak": [
+            8,
+            8
+          ],
+          "topdress": false,
+          "blackoutDays": 1,
+          "weightLb": 15,
+          "weightBasis": "On The Grow specifies a 15 lb paver and about one loose dark day. The MGM recipe keeps its own covered time and overnight soak.",
+          "calendarSources": [
+            "U02",
+            "P01",
+            "D05",
+            "D31",
+            "D04",
+            "D40",
+            "D35",
+            "D41",
+            "D45"
+          ],
+          "substrateId": "coir",
+          "lightHours": 16,
+          "confidence": "User-selected starting trial"
+        },
         {
           "id": "comparison",
           "label": "Seed rate comparison · starting plan",
@@ -8365,7 +8441,7 @@
         "waterBasis": "High-use planning scenario; grower example is about one cup at a time, once or twice daily."
       },
       "provenance": {
-        "density": "P01",
+        "density": "U02: user-selected 117 g next-tray trial",
         "harvest": "D05; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -9959,9 +10035,9 @@
       "species": "Vigna radiata",
       "family": "Fabaceae",
       "group": "legume",
-      "defaultGrams": 180,
+      "defaultGrams": 153,
       "referenceAreaIn2": 200,
-      "referenceAreaBasis": "User-selected 180 g per nominal 1020 trial; actual weighed seed is preserved in each tray record",
+      "referenceAreaBasis": "User-selected dry seed per nominal 1020 trial, 200 in²",
       "harvestDays": [
         7,
         10
@@ -9984,6 +10060,46 @@
       "confidence": "Your chosen trial · yield pending",
       "notes": "You reported starting with 180 g dry mung seed. Recorded November 7, 2026; actual sowing date and harvest yield are still unknown. This is your trial choice, not a measured optimum. Keep the weighed 180 g in the tray log even if you later refine the area.",
       "alternatives": [
+        {
+          "id": "next-trial",
+          "label": "Your next tray · 153 g",
+          "grams": 153,
+          "area": 200,
+          "harvest": [
+            7,
+            10
+          ],
+          "cover": [
+            3,
+            4
+          ],
+          "method": "stack",
+          "source": "U02",
+          "note": "153 g dry seed per nominal 1020. User chose 15% less dry seed for the next mung tray.",
+          "soak": [
+            8,
+            12
+          ],
+          "soakBasis": "On The Grow recommends 8–12 h for mung; 10 h is selected. MP Seeds’ table and prose disagree on soak duration.",
+          "topdress": false,
+          "blackoutDays": 0,
+          "weightLb": 0,
+          "weightBasis": "Empty contact cover, 0 lb added: editorial pilot setting; no numeric bean-specific load verified.",
+          "calendarSources": [
+            "U02",
+            "U01",
+            "P02",
+            "D16",
+            "D36",
+            "D41",
+            "D11",
+            "D62",
+            "D67",
+            "D70"
+          ],
+          "confidence": "User-selected starting trial",
+          "substrateId": "coir"
+        },
         {
           "id": "user180",
           "label": "Your first mung trial · 180 g",
@@ -10154,7 +10270,7 @@
         "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
       },
       "provenance": {
-        "density": "U01: user selected 180 g; no yield measurement yet",
+        "density": "U02: user-selected 153 g next-tray trial",
         "harvest": "P02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "Editorial emergence check window; full soybean supplier method retained separately",
         "method": "Editorial coir/empty-cover adaptation; no added numeric weight verified",
@@ -11570,6 +11686,15 @@
       "accessed": "2026-11-07",
       "local": null
     },
+    "U02": {
+      "id": "U02",
+      "title": "Your next-tray seed rates · November 14",
+      "url": "seed-rate-notes.html#dated-seed-rate-choices",
+      "kind": "User-selected trial rates",
+      "note": "For the next trays, reduce the previous dry-seed rates by 15% for mung and 10% for Black Oil sunflower, and increase Daikon Minowase radish by 10%. Yield has not been measured for these revisions.",
+      "accessed": "2026-11-14",
+      "local": null
+    },
     "V01": {
       "id": "V01",
       "title": "On The Grow · Red Acre cabbage seed-to-harvest",
@@ -12979,7 +13104,7 @@
     "schema": "grow-lab-published-seed-rates/1",
     "referenceAreaIn2": 200,
     "timezone": "America/Chicago",
-    "note": "Append-only rate history reconstructed from committed planner snapshots. Dates are revision dates, not sowing dates. Counts use the seed-size input saved in each historical snapshot. Personal browser refinements are exported separately.",
+    "note": "Append-only rate history from committed planner snapshots and dated user choices. Dates are revision dates, not sowing dates. Counts use the seed-size input saved in each historical snapshot. Personal browser refinements are exported separately.",
     "entries": [
       {
         "id": "771f7f55bd62-broccoli",
@@ -14464,6 +14589,48 @@
         "source": "U01",
         "commit": null,
         "evidence": "User trial choice; harvest yield unknown"
+      },
+      {
+        "id": "2026-11-14-mung",
+        "cropId": "mung",
+        "changedAt": null,
+        "date": "2026-11-14",
+        "dateBasis": "User message date; planned future tray",
+        "fromGrams": 180,
+        "toGrams": 153,
+        "referenceAreaIn2": 200,
+        "reason": "User chose 15% less dry seed for the next mung tray.",
+        "source": "U02",
+        "commit": null,
+        "evidence": "Trial choice; yield has not been measured"
+      },
+      {
+        "id": "2026-11-14-sunflower",
+        "cropId": "sunflower",
+        "changedAt": null,
+        "date": "2026-11-14",
+        "dateBasis": "User message date; planned future tray",
+        "fromGrams": 130,
+        "toGrams": 117,
+        "referenceAreaIn2": 200,
+        "reason": "User chose 10% less dry seed for the next Black Oil sunflower tray.",
+        "source": "U02",
+        "commit": null,
+        "evidence": "Trial choice; yield has not been measured"
+      },
+      {
+        "id": "2026-11-14-radish-daikon",
+        "cropId": "radish-daikon",
+        "changedAt": null,
+        "date": "2026-11-14",
+        "dateBasis": "User message date; planned future tray",
+        "fromGrams": 28,
+        "toGrams": 30.8,
+        "referenceAreaIn2": 200,
+        "reason": "User chose 10% more dry seed for the next Daikon Minowase radish tray.",
+        "source": "U02",
+        "commit": null,
+        "evidence": "Trial choice; yield has not been measured"
       }
     ]
   },
