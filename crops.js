@@ -155,7 +155,7 @@ function renderWater(s,w){
 function renderSchedule(s,rows){
  const g=D.groups[crop.group];$('group-label').textContent=crop.family+' / '+g.name;$('protocol-title').textContent=g.name;$('protocol-exception').textContent=g.exception;
  const readiness=M.lightReadiness(s,crop);
- const items=[...(recipe.moistureTrial?[['Coir','Mix 180 g dry coir with 600 mL starting water per shallow 1020. Measure actual fill and cover clearance.']]:[]),['Sow',(recipe.topdress??crop.topdress)?'Sow evenly and use a thin species-appropriate top dress; do not bury fine seeds indiscriminately.':'Evenly surface-sow on a level, moistened medium. Keep clumps and multi-layer seed piles out of the tray.'],['Uncover / light readiness',readiness.action],['Water checks',g.water],['Harvest cue',g.stage]];
+ const items=[...(recipe.moistureTrial?[['Coir','Mix 185 g dry coir with about 617 mL starting water per shallow 1020. Measure actual fill and cover clearance.']]:[]),['Sow',(recipe.topdress??crop.topdress)?'Sow evenly and use a thin species-appropriate top dress; do not bury fine seeds indiscriminately.':'Evenly surface-sow on a level, moistened medium. Keep clumps and multi-layer seed piles out of the tray.'],['Uncover / light readiness',readiness.action],['Water checks',g.water],['Harvest cue',g.stage]];
  $('protocol-steps').innerHTML=items.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
  const soak=recipe.soak||crop.soakHours;
  $('soak-note').textContent=`Recipe: ${soak[1]===0?'direct sow':range(soak)+' h water presoak'}. ${recipe.soakBasis||'Use the selected crop preparation.'}`;

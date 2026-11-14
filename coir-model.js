@@ -14,8 +14,14 @@ const fullTrayTrial=Object.freeze({...trialInputs,startingBatchG,hydratedTrayG,
  waterRatio:trialInputs.startingWaterMl/trialInputs.dryBatchG,
  estimatedCups:FULL_TRAY_CUPS,estimatedVolumeL:FULL_TRAY_CUPS*CUP_ML/1000});
 const FULL_TRAY_FILL_FACTOR=1.1;
-const moistureTrial=Object.freeze({dryG:180,waterMl:600,cupsEstimate:8});
-const startingRatio=s=>s.version==='new'?moistureTrial.waterMl/moistureTrial.dryG:4;
+const MOISTURE_TRIAL_RATIO = 600 / 180;
+const MOISTURE_TRIAL_DRY_G = 185;
+const moistureTrial = Object.freeze({
+ dryG: MOISTURE_TRIAL_DRY_G,
+ waterMl: MOISTURE_TRIAL_DRY_G * MOISTURE_TRIAL_RATIO,
+ cupsEstimate: 8,
+});
+const startingRatio=s=>s.version==='new'?MOISTURE_TRIAL_RATIO:4;
 const crops=[
  {id:'broccoli',name:'Broccoli · Waltham',family:'Brassicaceae',seedG:22,treatment:'No presoak. Sow dry seed onto evenly moist coir.',basis:'22 g seed is the trial from your notes.'},
  {id:'radish',name:'Radish · Daikon',family:'Brassicaceae',seedG:30,treatment:'No presoak. Sow evenly and avoid dense clumps.',basis:'30 g seed is the trial from your notes.'},
@@ -38,7 +44,7 @@ const depth=cups=>cups*CUP_DEPTH_IN;
 function row(cups,count,basis,rounding,fill){
  const usesTrial=fill==='trial';
  const exactG=fill==='moisture'?moistureTrial.dryG:usesTrial?fullTrayTrial.dryTrayG*FULL_TRAY_FILL_FACTOR:cups*basis.gramsPerCup;
- const waterRatio=fill==='moisture'?moistureTrial.waterMl/moistureTrial.dryG:usesTrial?fullTrayTrial.waterRatio:basis.waterRatio;
+ const waterRatio=fill==='moisture'?MOISTURE_TRIAL_RATIO:usesTrial?fullTrayTrial.waterRatio:basis.waterRatio;
  const step=Number(rounding),weighG=step===0?exactG:Math.ceil((exactG-1e-9)/step)*step;
  return {cups,count,fill,exactG,weighG,waterMl:weighG*waterRatio,liters:cups*CUP_ML/1000,depthIn:depth(cups),headroomIn:TRAY_HEIGHT_IN-depth(cups),batchG:weighG*count,batchWaterMl:weighG*waterRatio*count};
 }
@@ -66,7 +72,7 @@ function calculate(s){
  // A deliberate +/-20% scenario, not a confidence interval or final-water recommendation.
  waterSensitivity:[waterMl*.8,waterMl*1.2]};
 }
-function worksheet(s,p){if(!p.valid)return null;return {tool:'Grow Lab coco coir',version:'2026-11-14',inputs:s,outputs:p,fullTrayTrial:p.trialTrays?fullTrayTrial:null,notes:['Expanded volumes are US cups of damp, lightly leveled coir. The 180 g / 600 mL trial uses a nominal eight-cup estimate; measure actual expansion and clearance.','The full-tray test scales the leftover-based estimate by 10% before rounding because some trays had low, uneven spots. Full-tray cups describe the modeled tray capacity.','Cup-based fills use label yield or one measured expansion sample. Rounding applies per tray.','Initial water is for coir hydration and excludes soaking and irrigation.','Check headspace from the rim of the drainage tray to the leveled coir before sowing. Estimated geometry uses published outside height and a rectangular bottom footprint.']};}
-function selfTest(){const s=defaults(),a=calculate(s),old=calculate(defaults('old'));if(!a.valid||a.dryG!==720||a.waterMl!==2400||a.moistureTrays!==4||old.dryG!==580||old.waterMl!==2320)throw Error('Default tray trials failed');s.rows.forEach(r=>r.count=0);if(!calculate(s).empty)throw Error('Empty batch failed');return {passed:2};}
+function worksheet(s,p){if(!p.valid)return null;return {tool:'Grow Lab coco coir',version:'2026-11-14',inputs:s,outputs:p,fullTrayTrial:p.trialTrays?fullTrayTrial:null,notes:['Expanded volumes are US cups of damp, lightly leveled coir. The 185 g starter uses a nominal eight-cup estimate; measure actual expansion and clearance.','The full-tray test scales the leftover-based estimate by 10% before rounding because some trays had low, uneven spots. Full-tray cups describe the modeled tray capacity.','Cup-based fills use label yield or one measured expansion sample. Rounding applies per tray.','Initial water is for coir hydration and excludes soaking and irrigation.','Check headspace from the rim of the drainage tray to the leveled coir before sowing. Estimated geometry uses published outside height and a rectangular bottom footprint.']};}
+function selfTest(){const s=defaults(),a=calculate(s),old=calculate(defaults('old'));if(!a.valid||a.dryG!==740||Math.round(a.waterMl)!==2467||a.moistureTrays!==4||old.dryG!==580||old.waterMl!==2320)throw Error('Default tray trials failed');s.rows.forEach(r=>r.count=0);if(!calculate(s).empty)throw Error('Empty batch failed');return {passed:2};}
 return {crops,defaults,calculate,calibration,depth,worksheet,selfTest,fullTrayTrial,moistureTrial,CUP_ML,MAX_TRAYS_PER_CROP,TRAY_HEIGHT_IN,HEADSPACE_TARGET_IN,HALF_INCH_CUPS,FULL_TRAY_CUPS};
 });

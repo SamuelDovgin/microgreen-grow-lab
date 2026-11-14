@@ -12,13 +12,13 @@ For a small sowing batch, separate and hydrate the portion you will sow. Keep th
 
 ### November 14 moisture trial
 
-Start with **180 g dry coir + 600 mL potable water per shallow 1020** (**3.33 mL/g**). For 2, 3 and 4 trays, use 360 g / 1,200 mL, 540 g / 1,800 mL and 720 g / 2,400 mL. That is starting mixing water, before any drainage or later watering. Around eight expanded cups is a label-based estimate; measure how much the batch actually yields and how much fits under the cover.
+Start with **185 g dry coir + about 617 mL potable water per shallow 1020**. The ratio stays at **3⅓ mL/g**, giving 616⅔ mL before rounding. For 2, 3 and 4 trays, use 370 g / 1,233 mL, 555 g / 1,850 mL and 740 g / 2,467 mL. That is starting mixing water, before any drainage or later watering. Around eight expanded cups is a label-based estimate; measure how much the batch actually yields and how much fits under the cover.
 
 1. Hydrate in stages, break up all dry cores, then level the damp coir without packing it. There should be no pooling or streams of water when squeezed. Check cover contact and clearance before sowing.
 2. Skip scheduled misting for the first **48 hours**. Check the center, edges and surface daily. If the contact zone dries or seed swelling becomes uneven and the medium is dry, add a small amount of potable water and log it. Bottom-water when established roots can wick from below; drain excess.
-3. Keep **300 g + 1,200 mL (4 mL/g)** as your previous grow-method comparison. The recipes change both dry mass and water, so that test compares the whole setup. To isolate hydration ratio, compare **180 g + 600 mL** with **180 g + 720 mL**, keeping the lot, seed mass, seed prep, cover and room conditions the same. Compare emergence, visible mold, water added after sowing and usable yield.
+3. Keep **300 g + 1,200 mL (4 mL/g)** as your previous grow-method comparison. The recipes change both dry mass and water, so that test compares the whole setup. To isolate hydration ratio, compare **185 g + about 617 mL** with **185 g + 740 mL**, keeping the lot, seed mass, seed prep, cover and room conditions the same. Compare emergence, visible mold, water added after sowing and usable yield.
 
-The Bootstrap Farmer figure of **8–9× dry weight** gives roughly **37–42%** only if the coir had that capacity and all 600 mL stayed in it. At 45% of that advertised maximum, the arithmetic would be 648–729 mL for 180 g. The 1994 study tested sunflower seed buried in mineral soil at 15%, 30% and 45% of a differently measured capacity. Its 95.3% result at 45% is for the unaged-seed row; 45% was the highest tested, and the experiment did not measure mold on surface-sown coir. Use the moisture checks above to calibrate your own brick. [Bootstrap Farmer spec](https://www.bootstrapfarmer.com/products/coco-coir-bricks) · [1994 sunflower study, Table 1](https://www.isasunflower.org/fileadmin/documents/HELIA_issues/Helia20/HELIA_20_-_PAGE_55.pdf)
+The Bootstrap Farmer figure of **8–9× dry weight** gives roughly **37–42%** only if the coir had that capacity and all 617 mL stayed in it. At 45% of that advertised maximum, the arithmetic would be about 666–749 mL for 185 g. The 1994 study tested sunflower seed buried in mineral soil at 15%, 30% and 45% of a differently measured capacity. Its 95.3% result at 45% is for the unaged-seed row; 45% was the highest tested, and the experiment did not measure mold on surface-sown coir. Use the moisture checks above to calibrate your own brick. [Bootstrap Farmer spec](https://www.bootstrapfarmer.com/products/coco-coir-bricks) · [1994 sunflower study, Table 1](https://www.isasunflower.org/fileadmin/documents/HELIA_issues/Helia20/HELIA_20_-_PAGE_55.pdf)
 
 <!-- /protocol -->
 
@@ -168,7 +168,7 @@ One sample has unknown repeatability. Repeat with a consistent moisture endpoint
 ## Equations and variable roles
 
 - Controlled recipe inputs: whole-number tray counts and expanded cups per tray.
-- Goal presets: the 180 g / 600 mL shallow-tray trial, the previous +10% full-tray test, about ½ inch below the rim (10 cups by geometry), source-baseline six cups, USU-style eight cups, uniform near-rim twelve cups and a 12/12/8/8-cup seed-clearance adaptation.
+- Goal presets: the 185 g / 617 mL shallow-tray starter, the previous +10% full-tray test, about ½ inch below the rim (10 cups by geometry), source-baseline six cups, USU-style eight cups, uniform near-rim twelve cups and a 12/12/8/8-cup seed-clearance adaptation.
 - Label inputs: brick dry grams and expanded US quarts; these jointly set estimated g/cup.
 - Locked cup-based starting ratio: 3.33 mL/g in New or 4 mL/g in Old until replaced by a retained-water sample.
 - Measured inputs: sample dry mass, expanded cups, moisture observation and optional retained water.

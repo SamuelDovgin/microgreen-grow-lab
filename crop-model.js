@@ -114,7 +114,7 @@ function schedule(s,c,recipe,densityResult){
   let action,cue;
   if(day===0){
    const prep=soakHours>0?'Rinse and drain soaked seed well.':sunflower?`Weigh ${seed}, rinse and drain it, then sow the same day.`:`Weigh ${seed} and direct-sow.`;
-   const moisture=recipe?.moistureTrial?'For one shallow 1020, mix 180 g dry coir with 600 mL potable water. Sow evenly onto uniformly damp, drained coir. Skip routine misting for 48 hours; add water if the seed contact zone dries.':'Use evenly moistened, drained medium. Sow evenly and mist to settle the seeds without pooling.';
+   const moisture=recipe?.moistureTrial?'For one shallow 1020, mix 185 g dry coir with about 617 mL potable water. Sow evenly onto uniformly damp, drained coir. Skip routine misting for 48 hours; add water if the seed contact zone dries.':'Use evenly moistened, drained medium. Sow evenly and mist to settle the seeds without pooling.';
    action=[prep,moisture,recipe?.moistureTrial?'':protocol.sow,
            topdress?'Apply a thin top dress as directed by the selected recipe.':'',coverAction].filter(Boolean).join(' ');
    cue=soakHours>0?'Drain, rinse, sow and cover':recipe?.moistureTrial?'Rinse, direct-sow and cover':'Direct-sow, mist and cover';
