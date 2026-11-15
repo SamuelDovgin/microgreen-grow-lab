@@ -1,0 +1,109 @@
+.tips {
+  width: min(100% - 48px, 1080px);
+  margin: 30px auto 60px;
+}
+
+.tips h1 {
+  max-width: 18ch;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin: 16px 0;
+}
+
+.tips > p {
+  max-width: 72ch;
+}
+
+.tip-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 16px 0;
+  border-block: 1px solid var(--line);
+  margin: 28px 0 36px;
+}
+
+.tip-jumps a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 6px 13px;
+  background: var(--soft);
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.tip-section {
+  margin: 40px 0;
+}
+
+.tip-section h2 {
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  margin: 0 0 16px;
+}
+
+.tip-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.tip-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 20px 24px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.tip-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.tip-card p {
+  margin: 10px 0 0;
+}
+
+.tip-card p:nth-last-child(2) {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  font-size: .9rem;
+}
+
+.tip-card p:nth-last-child(3) {
+  margin-bottom: auto;
+  padding-bottom: 5px;
+}
+
+.tip-card p:last-child {
+  margin-top: 6px;
+  font-size: .8rem;
+}
+
+.tip-card:first-child:has(#refill-and-lightly-firm-shallow-corners) {
+  grid-column: 1 / -1;
+  border-inline-start: 4px solid var(--green);
+  background: #f0f4e8;
+}
+
+#about-the-sunflower-screenshots + p {
+  max-width: 75ch;
+}
+
+.tips pre, .tips-notebook pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 680px) {
+  .tips { width: calc(100% - 36px); margin-top: 26px; }
+  .tip-grid { grid-template-columns: 1fr; }
+  .tip-card { padding: 17px 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

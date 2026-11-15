@@ -1,0 +1,207 @@
+Lesser-known tips & tricks
+Source notebook · November 15, 2026
+
+The guide applies research and firsthand practices to shallow 1020 trays. The
+suggested measurements are local checks. No tray-level improvement has been
+measured for this guide. Relative archive paths below start at research_project/.
+
+[T01] User observation and sunflower screenshots
+Access: 2026-11-15; user text and two attachments. Class: anecdote.
+Used in: corner anchoring and sunflower screenshot note.
+Record: user observed corner-only lodging as a reason to check for limited
+substrate. Two screenshots show a sunflower grower and commenters discussing
+visible mold and home sanitizer mixtures. They do not establish the cause of
+the pictured growth, a seed treatment, or the outcome of a paired tray test.
+Preservation: paraphrase here; originals stay with the user’s attachments.
+Status: source video and comment thread were not independently identified.
+
+[T02] Grow Lab coir guide and existing research
+Access: 2026-11-15; local archive. Used in: tray and corner checks, overlap review.
+Record: the coir guide already asks for a center and four corner depth readings.
+The cultivation and irrigation guides cover dry corners, tray level, uneven
+light, and damping-off. The seed guide covers vigor, and the experiment and
+economics guides already use saleable weight and labor efficiency. The tips
+apply them through before/after measurements, marked orientation, cross-swaps,
+visible quality checks and side-by-side throughput tests.
+Preservation: 17_visualizers/12_coco_coir_preparation_and_calculator.md;
+17_visualizers/11_grow_log_and_protocol_calibration.md;
+04_light_environment_equipment/04_irrigation_system_design.md;
+05_cultivation_workflows/01_practical_growing_guide.md through 04;
+02_crops_seeds/03_seed_quality_storage_testing.md;
+07_nutrition_postharvest/02_harvest_cold_chain_packaging.md;
+08_economics_system_design/06_batch_costing_and_sell_through_log.md;
+09_experiments/03_scale_adaptive_trial_playbook.md;
+14_microgreen_manager/02_seed_to_harvest_protocol.md through 05;
+15_growing_with_jonah/02_seed_to_harvest_protocol.md;
+16_donny_greens/05_harvest_pack_clean_and_deliver.md.
+
+[T03] UMass Greenhouse Best Management Practices, growing media
+URL: https://www.umass.edu/agriculture-food-environment/book/export/html/9854
+Access: 2026-11-15; live. Class: extension. Used in: corners and wetting plugs.
+Record: mix, container height, handling and watering influence air and water
+in media; compaction can limit air space. Corner anchoring and local comparisons
+are an inference. The manual has no microgreen corner intervention yield data.
+Preservation: URL and support notes; no full copy redistributed.
+
+[T04] UMN Extension, How to prevent seedling damping off
+URL: https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/yard-and-garden-problems/how-to-prevent-seedling-damping-off
+Access: 2026-11-15; live. Class: extension.
+Used in: the first card and sunflower note.
+Record: thinning and water-soaking at the stem base, decay and tissue collapse
+are diagnostic clues. General seedling guidance rather than a food-safety
+test. The local response is documented in
+05_cultivation_workflows/02_mold_disease_pest_diagnostics.md.
+Preservation: URL and support notes; no full copy redistributed.
+
+[T05] Virginia Tech Extension, Introduction to Microgreen Production in Indoor
+Vertical Farms and Greenhouses, SPES-756
+URL: https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-756/SPES-756.pdf
+Access: 2026-11-15; live. Class: extension. Used in: orientation, sowing and release.
+Record: describes weighed rates, hand distribution and shaker sowing,
+several covers, species-specific germination and system-specific trials.
+Orientation and photo-based comparisons are local adaptations.
+Preservation: source_docs/extension/virginia-tech-microgreen-production-SPES-756.pdf.
+
+[T06] UF/IFAS, Measuring Uniformity of Water Application of Sprinkler Systems,
+AE194, Haman and Yeager
+URL: https://edis.ifas.ufl.edu/publication/AE194/pdf
+Access: 2026-11-15; publication PDF retrieved. Class: extension methods.
+Used in: loaded shelf and catch cups.
+Record: compare equal collectors across locations to identify uneven delivery.
+The authors evaluate nursery sprinkler irrigation. Hand passes and shallow
+reservoir water depth are adaptations; omit nursery acceptance thresholds.
+Preservation: URL and support notes; no full copy redistributed.
+
+[T07] Paperpot / Scintilla Farms, Arugula Microgreens in Paperpot Trays and
+Microgreens Growing Guide
+URLs: https://paperpot.co/how-to-grow-arugula-microgreens-in-paperpot-trays/
+https://paperpot.co/wp-content/uploads/2023/02/Microgreens-Growing-Guide.pdf
+Access: 2026-11-15; live. Class: firsthand farm practice via supplier.
+Used in: cover fit, blade height and direct packing.
+Record: tray geometry and headspace differ across products. The farm describes
+sharp knife cuts above the medium and direct packing. The check of rocking,
+the cut-height comparison and the timing trial were developed for this guide.
+Commercial relationship and no controlled comparison for these tests. Only
+harvest and tray-fit observations were used.
+Preservation: URL and support notes; no full copy redistributed.
+
+[T08] Purdue Extension, Evaluating Container Substrates and Their Components,
+HO-255-W
+URL: https://www.extension.purdue.edu/extmedia/HO/HO-255-W.pdf
+Access: 2026-11-15; live. Class: extension. Used in: settled depth.
+Record: discusses settling, air space and container capacity as functions of
+material and geometry. The before/after bed test uses actual grow trays.
+Preservation: URL and support notes; no full copy redistributed.
+
+[T09] Johnny’s Selected Seeds, Yield Data Trial for 29 Microgreen Varieties
+URL: https://prod-na02.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html
+Access: 2026-11-15; live. Class: supplier’s firsthand trial.
+Used in: shaker mass, early/late trays, harvest-delay test and separate blends.
+Record: at least three sowings per variety in 1020 flats. Weighed packet before
+and after seeding. First true leaf was the general harvest stage, with a
+reported gain after delaying ‘Gem’ marigold roughly 1–2 days. The system was a
+greenhouse with natural day length. Its crop results depend on variety, stage
+and growing conditions; the shelf-day weights in the guide are illustrative.
+Preservation: source_docs/supplier/Johnnys-2017-microgreens-yield-trial-29-varieties.pdf.
+
+[T10] Deng et al., Sunflower and pea shoot microgreens, Horticulturae 7(11):446
+URL: https://www.mdpi.com/2311-7524/7/11/446
+Access: 2026-11-15; live. Class: primary microgreen study.
+Used in: soaked seed drain check. Only seed water-retention measurements used.
+Record: measured seed mass before and after water uptake in sunflower and pea.
+The study did not optimize mechanical drain duration or moisture for 1020 coir.
+Preservation: canonical open-access article and relevant method summary.
+
+[T11] Tavan et al., Sensor-Based Irrigation Management in a Soilless Vertical Farm
+URL: https://doi.org/10.3389/fsufs.2020.622720
+Access: 2026-11-15; live. Class: primary microgreen trial.
+Used in: paired water-uptake trial.
+Record: kale on a soilless vertical farm, sensor-based versus gravimetric
+irrigation at four water levels; sensor-based irrigation increased water use
+efficiency by 13% overall. The 1020 capillary comparison does not transfer
+the sensor thresholds or predict a similar gain.
+Preservation: source_docs/studies/Tavan-2021-sensor-irrigation-kale-microgreens.pdf;
+also available in Grow Lab’s sources directory.
+
+[T12] University of Maryland Extension, Growing Microgreens and Baby Greens Indoors
+URL: https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors
+Access: 2026-11-15; live. Class: extension. Used in: cross-swap nested trays.
+Record: documents the perforated insert over a solid tray for growing
+microgreens. Cross-swapping pairs tests how seating affects the wetting pattern.
+Preservation: URL and support notes; no full copy redistributed.
+
+[T13] Both et al., Guidelines for measuring and reporting environmental
+parameters for experiments in greenhouses. Plant Methods 11:43 (2015).
+URL: https://doi.org/10.1186/s13007-015-0083-5
+Access: 2026-11-15; live. Class: controlled environment methods.
+Used in: loaded canopy airflow and lighting timer verification.
+Record: measuring environmental conditions where crops experience them,
+including light and air conditions. Ribbon and power recovery are practical
+qualitative checks. The paper provides no microgreen airflow or recovery target.
+Preservation: 17_visualizers/source_docs/growing_tips/Both-2015-greenhouse-environment-measurement.pdf,
+CC BY 4.0. Capture 2026-11-15, SHA-256
+a25950d0695fe03f4eab5af0a42caf34934277aa700c37ab7f31c60c0f6cf0df.
+
+[T14] Garrett Corwin / Piedmont Microgreens, Growing Sunflower Microgreens
+URL: https://microgreenmanager.com/blog/growing-sunflower-microgreens
+Access: 2026-11-15; live. Class: firsthand farm practice.
+Used in: before-cut hull counts and timing.
+Record: Corwin describes gently brushing open shoots across several days and
+sorting at harvest. Cultivar, handling and quality specifications vary.
+The 20-stem count and total-time comparison are local process checks.
+Preservation: URL and support notes; local creator research at
+14_microgreen_manager/04_crop_methods.md.
+
+[T15] Ghoora and Srividya, Packaging and Coating Technique and Postharvest Quality
+URL: https://doi.org/10.3390/foods9050653
+Access: 2026-11-15; live. Class: primary microgreen packaging trial.
+Used in: keep pack trial fill weight fixed.
+Record: radish and roselle, 15 g fill, two macro-perforated formats (PET
+clamshell vs LDPE bag), 5°C experimental storage. The clamshell preserved
+quality better in that comparison. This provides a design principle for
+comparing packages, with no transfer of a storage temperature or shelf-life claim.
+Preservation: source_docs/studies/Radish-roselle-packaging-postharvest-2020.pdf.
+
+[T16] FDA, Refrigerator Thermometers — Cold Facts about Food Safety
+URL: https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety
+Access: 2026-11-15; live. Class: official food-handling guidance.
+Used in: cold shelf under normal harvest load.
+Record: use an independent appliance thermometer; keep refrigerator at or
+below 40°F. The two-position loaded-shelf check is a local implementation.
+Preservation: URL and notes; related FDA produce guidance is archived at
+source_docs/regulatory/food_safety/FDA-selecting-serving-produce-safely-2026-10-29.html.
+
+[T17] Penn State Extension, The ABCs of Microgreens
+URL: https://extension.psu.edu/the-abcs-of-microgreens
+Access: 2026-11-15; indexed public text available. Class: extension.
+Used in: outgoing versus incoming seed lots.
+Record: rate calculator can use lot germination along with seed size and
+area. Simultaneous early stand scoring is a local scheduling check.
+Preservation: URL and support notes; see also T02.
+
+[T18] Garrett Corwin / Microgreen Manager, What Is a Harvest?
+URL: https://feedback.microgreenmanager.com/help/articles/7569727-what-is-a-harvest
+Access: 2026-11-15; live. Class: firsthand operator workflow documentation.
+Used in: staggered components for blends.
+Record: crop harvest and blends are tracked as distinct operations in the
+workflow. Working back from two measured crop finish times is a local adaptation.
+Preservation: URL and support notes; existing research at
+14_microgreen_manager/13_software_research_and_likely_design.md.
+
+[T19] Ale and Cabrera-Garcia, Missouri Microgreens Planning Budget, G693
+URLs: https://extension.missouri.edu/publications/g693
+https://extension.missouri.edu/media/wysiwyg/Extensiondata/Pub/pdf/agguides/agecon/g00693.pdf
+Access: 2026-11-15; live. Class: extension enterprise budget.
+Used in: timing hands-on work. Record: published planning assumptions include
+15 minutes per tray, 11.5–15 ounces and 10–13.5 days for the named examples.
+The guide’s 15- versus 12-minute example illustrates local arithmetic only.
+Preservation: source_docs/economics/MU-Extension-microgreens-planning-budget-G693-2024.pdf.
+
+[T20] Transport Canada, Improper mixing of common household cleaning products
+URL: https://tc.canada.ca/en/dangerous-goods/canutec/articles/improper-mixing-common-household-cleaning-products
+Access: 2026-11-15; live. Class: official chemical safety guidance.
+Used in: response to sanitizer comments in the sunflower screenshots.
+Record: the peroxide/vinegar combination can produce irritating, corrosive
+peracetic acid. Used for compatibility guidance, with no crop treatment drawn
+from the screenshot thread.
+Preservation: URL and support notes.
