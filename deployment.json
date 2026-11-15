@@ -127,8 +127,8 @@
     "seed-sanitation-research.html": "b292a6d23811e9d4c157ebd885dfe2bb78404acfbf1866ba1954840fb5c10079",
     "seed-sanitation-source-log.html": "fbc2e6ea85db1e0c6a95a1682672765f241321802c39fa5e6b7788ffa16a09fa",
     "seed-sanitation-tissue-culture.html": "b17f0b84b28658f2fab20454c1a4aa49bd3ee9b904ea2fc72b57dbbfde300af7",
-    "seed-sanitation.css": "2731f0398fee81000651c3aaffa84813091203357a1b3067b612ce9c12bafafd",
-    "seed-sanitation.html": "7c5c0bf99678dd1362aba662f55b377d6ce3a6bf31b108d7073ff0b01f09fafc",
+    "seed-sanitation.css": "c8c3d5ccd75d329fc1f3b7526b22730048abfc0e970c5b00c37c472c8affc305",
+    "seed-sanitation.html": "9e82e6441dca1a3ac4c30350d7ed52c2e64576c6e903fe74e5f5ed77796a43ac",
     "seed-sanitation.js": "9bbfb998b6c090a0f5e3a33ec4d4c00628835fb859f16b78d42d004a69e1ee94",
     "setup-assessment.html": "900e9c6aedd822ffbe9d3cfbb4b083d472306ed31265b51c6182c66a397cd478",
     "sources/Arthur-2025-herbal-microgreen-density-substrate.pdf": "1f97369073924e2b54c095eb7000aca26cd45a2d08589aaa64865369209273d4",
@@ -151,5 +151,5 @@
     "tray-bleach-dilution.js": "287212fbaf4289728ab0a0aafdbe1432ed3c29ddf57e7d84f8a6ff5cf2b9ce0f"
   },
   "publisher": "grow-lab",
-  "source_commit": "2eeab149f48d246b4a6a7f64ae6f7474677ee77c"
+  "source_commit": "98baed059c82f3ea36b379b93f90c884225cd32a"
 }

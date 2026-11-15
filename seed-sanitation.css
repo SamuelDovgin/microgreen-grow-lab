@@ -45,6 +45,7 @@
 .bleach-recipe > ul {
   margin: 0;
   padding-inline-start: 1.25em;
+  font-size: 12px;
   line-height: 1.4;
 }
 
