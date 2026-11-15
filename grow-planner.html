@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Track four individual microgreen trays, check what might be ready, and record actual growth stages.">
+<meta name="theme-color" content="#f5f4ed">
+<title>Grow Planner · Grow Lab</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="grow-planner.css">
+<script defer src="crop-data.js"></script>
+<script defer src="crop-model.js"></script>
+<script defer src="grow-planner-model.js"></script>
+<script defer src="grow-planner-store.js"></script>
+<script defer src="grow-planner.js"></script>
+</head>
+<body class="planner">
+<a class="skip" href="#main">Skip to planner</a>
+<header class="planner-site-header">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">↟</span>Microgreen Guide <small>Grow Lab</small></a>
+  <nav aria-label="Main">
+    <a href="index.html">All tools</a><a href="crops.html">Seed &amp; water</a><a href="coir.html">Coco coir</a><a href="sanitation.html">Tray care</a><a href="nutrients.html">MaxiGro mix</a><a href="lighting.html">Lighting</a><a href="rack.html">Rack model</a><a href="grow-log.html">My grow log</a>
+    <a class="planner-switch" href="grow-planner.html" aria-current="page">Grow Planner <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+<main id="main" class="planner-main">
+  <section class="planner-intro" aria-labelledby="planner-title">
+    <div>
+      <p class="planner-kicker"><span aria-hidden="true"></span>Your growing workspace</p>
+      <h1 id="planner-title">Grow Planner</h1>
+      <p class="planner-lead">See what to check today and keep a record of when each tray moves.</p>
+    </div>
+    <button class="pl-button pl-primary" id="add-tray" data-action="add"><span aria-hidden="true">＋</span> Add one tray</button>
+  </section>
+  <p id="storage-warning" class="pl-alert" role="alert" hidden></p>
+  <p id="planner-error" class="pl-alert" role="alert" hidden></p>
+  <div id="live-status" class="pl-sr" role="status" aria-live="polite"></div>
+  <section class="outlook" aria-labelledby="outlook-heading">
+    <div class="outlook-head">
+      <div class="outlook-icon" aria-hidden="true">☀</div>
+      <div><p class="planner-kicker" id="daypart">Today</p><h2 id="outlook-heading">Today’s outlook</h2></div>
+      <time id="outlook-date"></time>
+    </div>
+    <div id="digest" class="digest"></div>
+  </section>
+  <section class="planner-workspace" aria-labelledby="workspace-heading">
+    <div class="workspace-heading">
+      <div>
+        <p class="planner-kicker">Rack 1 / one shelf</p>
+        <h2 id="workspace-heading">Your trays</h2>
+      </div>
+      <div class="workspace-actions">
+        <div class="view-switch" role="group" aria-label="Tray view">
+          <button data-action="board" aria-pressed="true">Board</button>
+          <button data-action="calendar" aria-pressed="false">Calendar</button>
+        </div>
+        <button class="pl-button pl-quiet" data-action="history" aria-pressed="false">History</button>
+      </div>
+    </div>
+    <div class="slot-line">
+      <span id="slot-meter" class="slot-meter" aria-hidden="true"></span>
+      <strong id="capacity"></strong>
+      <span class="slot-explain">Workflow stages only · four tracked trays per rack</span>
+    </div>
+    <p id="capacity-message" class="capacity-message" hidden>Four active trays — harvest or end an existing grow before adding another.</p>
+    <div id="board"></div>
+    <div id="calendar" hidden></div>
+    <div id="history" hidden></div>
+  </section>
+  <section class="planner-utility" aria-label="Planner data and growing guides">
+    <div>
+      <h2>Keep a copy of your trays</h2>
+      <p>Saved in this browser. Records don’t sync across devices or with My Grow Log. Export a backup to keep a copy or move to another browser.</p>
+      <div class="pl-actions">
+        <button class="pl-button" data-action="export">Export backup</button>
+        <button class="pl-button" data-action="import">Import backup</button>
+        <input hidden id="backup-file" type="file" accept=".json,application/json" aria-label="Planner backup file">
+      </div>
+      <p id="backup-status" hidden></p>
+    </div>
+    <div>
+      <h2>Growing references</h2>
+      <div class="guide-links"><a href="crops.html">Crop guide ↗</a><a href="coir.html">Coir guide ↗</a><a href="grow-log.html">My Grow Log ↗</a></div>
+    </div>
+  </section>
+  <noscript><p class="pl-alert">Enable JavaScript to track trays in this browser.</p></noscript>
+</main>
+<dialog id="planner-dialog" aria-labelledby="dialog-title"></dialog>
+<footer><span>Microgreen Guide / Grow Lab</span><span>Start small. Measure. Adjust.</span></footer>
+</body>
+</html>

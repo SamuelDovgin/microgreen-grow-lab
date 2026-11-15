@@ -1,0 +1,484 @@
+/* Browser controller: drag and button actions both open the same transition form. */
+(() => {
+'use strict';
+const M=window.GrowPlannerModel, S=window.GrowPlannerStore;
+const el=id=>document.getElementById(id), dialog=el('planner-dialog');
+const now=()=>Date.now();
+const focus=(node, preventScroll=true)=>node?.focus({preventScroll});
+const id=()=>crypto.randomUUID?.() || Array.from(crypto.getRandomValues(new Uint8Array(16)),n=>n.toString(16).padStart(2,'0')).join('');
+const store=S.open({
+  storage:{getItem:k=>window.localStorage.getItem(k),setItem:(k,v)=>window.localStorage.setItem(k,v)},
+  lock:fn=>navigator.locks?navigator.locks.request(S.KEY,fn):fn()
+});
+const dateLong=new Intl.DateTimeFormat('en-US',{weekday:'long',month:'long',day:'numeric'});
+const dateShort=new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric'});
+const agendaDate=new Intl.DateTimeFormat('en-US',{weekday:'short',month:'short',day:'numeric'});
+const hour=new Intl.DateTimeFormat('en-US',{hour:'numeric',minute:'2-digit'});
+const dateOnly=key=>new Date(key+'T12:00');
+const dragMedia=window.matchMedia('(hover: hover) and (pointer: fine)');
+const labels={past:'Past typical window',check:'Inspect today',tomorrow:'Possibly tomorrow',early:'Growing',none:'Timing unavailable'};
+const laneCopy={
+  germination:{icon:'◉',sub:'Covered establishment',empty:'New trays start here.',hint:'Add a tray to record germination.'},
+  blackout:{icon:'◒',sub:'Loose cover · only for some methods',empty:'No trays in blackout.',hint:'A separate, optional stretch stage.'},
+  lights:{icon:'☼',sub:'Lit growth & harvest checks',empty:'No trays under lights.',hint:'Confirm when you move a tray to light.'}
+};
+let view='board', lastLiveView='board', weekOffset=0, weekAnchor=M.startOfWeek(now()), dragId=null, guidance=null, guidanceError='';
+let change=null, returnTo=null, busy=false;
+const esc=x=>String(x??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const find=id=>store.current().cycles.find(c=>c.id===id);
+const guideText='No reliable standard window stored. Use the crop guide and what you observe.';
+const getCardName=c=>c.name===c.cropMethodSnapshot.cropName?'':c.cropMethodSnapshot.cropName;
+const flag=p=>p.current==='lights'&&['early','none'].includes(p.status)?'Growing under lights':labels[p.status];
+const timestamp=(at,compact=false)=>`<time datetime="${esc(at)}">${esc(M.formatTime(at,compact))}</time>`;
+const estimateDates=window=>{
+  const text=window.map(at=>dateShort.format(new Date(at)));
+  return text[0]===text[1]?text[0]:text.join(' – ');
+};
+const currentWindow=p=>p.window?`${p.stageLabel}: ${M.bandText(p.days)} after ${p.current==='lights'?'moving to light':p.current==='blackout'?'starting blackout':'sowing'} (${estimateDates(p.window)}).`:guideText;
+function status(message) { el('live-status').textContent=message; }
+function showError(message='') {
+  const box=el('planner-error');
+  box.hidden=!message;
+  box.textContent=message;
+  if (message) status(message);
+}
+function warning() {
+  const {issue}=store.refresh();
+  el('storage-warning').textContent=issue;
+  el('storage-warning').hidden=!issue;
+}
+function setHTML(target, html) {
+  // Keep native focus/drag nodes stable when a clock tick has not changed the content.
+  if (target.renderedMarkup===html) return;
+  const focused=document.activeElement;
+  const key=target.contains(focused)?focused.dataset.focusKey:null;
+  target.innerHTML=html;
+  target.renderedMarkup=html;
+  if (key) focus([...target.querySelectorAll('[data-focus-key]')].find(n=>n.dataset.focusKey===key));
+}
+const button=(text,action,attrs='',classes='')=>`<button type="button" class="pl-button ${classes}" data-action="${action}" ${attrs}>${text}</button>`;
+const trayAttrs=(c,location)=>`data-tray="${esc(c.id)}" data-focus-key="${esc(location+'-'+c.id)}"`;
+function plantArt(phase,big) {
+  // The vector is an illustration keyed only to recorded phase. It is not a growth measurement.
+  const green=phase==='lights', pale=phase==='blackout';
+  const shoots=Array.from({length:9},(_,i)=>{
+    const x=24+i*14, h=green?23+(i*7)%19:pale?17+(i*5)%13:3+(i*3)%12;
+    if (!green&&!pale&&i%3===0) return `<ellipse cx="${x}" cy="54" rx="${big?4:2.4}" ry="2" fill="#c2a366"/>`;
+    return `<path d="M${x} 56q-2 -${h*.48} 1 -${h}" fill="none" stroke="${green?'#45804d':pale?'#9c9f69':'#a8a570'}" stroke-width="${big?2.1:1.5}"/>
+      <ellipse cx="${x-3}" cy="${55-h}" rx="${big?5:3.5}" ry="${big?2.7:2}" transform="rotate(24 ${x-3} ${55-h})" fill="${green?'#6c9e54':pale?'#d3d29e':'#bbb980'}"/>
+      <ellipse cx="${x+4}" cy="${54-h}" rx="${big?5:3.7}" ry="${big?2.6:2}" transform="rotate(-25 ${x+4} ${54-h})" fill="${green?'#498350':pale?'#baba83':'#b0ad7b'}"/>`;
+  }).join('');
+  return `<svg class="tray-fig" viewBox="0 0 160 76" aria-hidden="true" focusable="false">
+    <rect width="160" height="76" fill="${green?'#e7efdd':pale?'#efeee0':'#eeeadb'}"/>
+    <ellipse cx="80" cy="65" rx="73" ry="7" fill="#384635" opacity=".09"/>
+    <path d="M14 54H146L138 66H22Z" fill="${green?'#42644a':'#6c6f55'}"/>
+    <path d="M13 53H147L144 57H16Z" fill="#796647"/>${shoots}<path d="M14 57H146" stroke="#a19c7b"/>
+  </svg>`;
+}
+function card(c,instant) {
+  const p=M.projection(c,instant);
+  const stage=p.current==='germination'?M.PHASE[p.current]:p.current==='blackout'?'Blackout':'Lights';
+  const sub=p.days?`${p.stageLabel} · ${M.bandText(p.days)}`:p.current==='lights'?'Harvest timing unavailable':'See crop guide';
+  return `<article class="tray-card" data-drag-tray="${esc(c.id)}" draggable="${dragMedia.matches}">
+    <button class="tray-open" type="button" data-action="open" ${trayAttrs(c,'board')} aria-label="${esc(c.name+', '+stage+', Day '+p.day+', '+flag(p)+'. Open tray')}">
+      <span class="tray-flag" data-status="${p.status}">${flag(p)}</span>
+      ${plantArt(p.current,['pea-basic','sunflower','mung'].includes(c.cropId))}
+      <span class="tray-copy">
+        <strong class="tray-name">${esc(c.name)}</strong>
+        ${getCardName(c)?`<span class="tray-meta">${esc(getCardName(c))}</span>`:''}
+        <span class="tray-stage">${stage} · Day ${p.day}${p.current!=='germination'?' · Stage day '+p.phaseDay:''}</span>
+        <span class="tray-meta">${esc(sub)}</span>
+        <span class="tray-meta">Started ${timestamp(p.started,true)}</span>
+        <span class="tray-handle"><span class="desktop-hint" aria-hidden="true">⠿ Drag or </span>Open tray →</span>
+      </span>
+    </button>
+  </article>`;
+}
+function renderBoard(doc,instant) {
+  const cycles=M.active(doc);
+  setHTML(el('board'),`<div class="lanes">${M.ACTIVE.map(key=>{
+    const meta=laneCopy[key], rows=cycles.filter(c=>M.phase(c)===key);
+    return `<section class="lane" data-lane="${key}" aria-labelledby="lane-${key}">
+      <div class="lane-top"><span class="lane-icon" aria-hidden="true">${meta.icon}</span><div><h3 id="lane-${key}">${M.PHASE[key]}</h3><p class="lane-subtitle">${meta.sub}</p></div><span class="lane-count" aria-label="${rows.length} trays">${rows.length}</span></div>
+      <div class="lane-drop" data-default="${meta.hint}">${meta.hint}</div>
+      ${rows.length?`<div class="lane-cards">${rows.map(c=>card(c,instant)).join('')}</div>`:`<div class="lane-empty">${meta.empty}</div>`}
+    </section>`;
+  }).join('')}</div><div class="board-help"><span>Open a tray to see its history and record a move.<span class="desktop-hint"> You can also drag it to the next stage.</span></span>
+  ${cycles.length<M.CAPACITY?button('＋ Add one tray','add','data-focus-key="add-slot"'):''}</div>`);
+}
+function entry(row) {
+  const when=row.actual?`<time datetime="${esc(row.at)}">${esc(hour.format(new Date(row.at))+' '+M.zoneAt(row.at))}</time>`:
+    `<span>${esc(estimateDates(row.window))}</span>`;
+  return `<li><button type="button" class="agenda-item" data-action="open" ${trayAttrs(row.c,'agenda-'+row.label+'-'+row.at)}>
+    <span aria-hidden="true" class="agenda-marker ${row.actual?'actual':''}">${row.actual?'✓':''}</span>
+    <span class="agenda-item-copy"><strong>${esc(row.c.name)}</strong> <span class="agenda-tag">${row.actual?'Actual':'Forecast'}</span><br>
+    <span class="agenda-detail">${esc(row.label)} · ${when}</span></span>
+  </button></li>`;
+}
+function renderCalendar(doc,instant) {
+  const first=M.weekDay(weekAnchor,weekOffset*7), last=M.weekDay(first,6);
+  const today=M.dayKey(instant);
+  const title=`${dateShort.format(dateOnly(first))} – ${dateShort.format(dateOnly(last))}, ${last.slice(0,4)}`;
+  setHTML(el('calendar'),`<div class="week-header"><div><h3>${esc(title)}</h3><div class="week-legend"><span><span class="agenda-marker actual" aria-hidden="true">✓</span> Actual event</span><span><span class="agenda-marker" aria-hidden="true"></span> Forecast check</span></div></div>
+    <div class="pl-actions">${button('‹ Previous','prev','aria-label="Previous week" data-focus-key="prev"')}${button('Today','today','data-focus-key="today"')}${button('Next ›','next','aria-label="Next week" data-focus-key="next"')}</div></div>
+    <div class="agenda">${M.agenda(doc,first,instant).map(({key,rows})=>`<section class="agenda-day ${key===today?'today':''}"><h4><time datetime="${key}">${agendaDate.format(dateOnly(key))}</time>${key===today?'<span class="today-tag">Today</span>':''}</h4>
+    ${rows.length?`<ul class="agenda-list">${rows.map(entry).join('')}</ul>`:'<p class="agenda-detail">No events</p>'}</section>`).join('')}</div>`);
+}
+function renderHistory(doc) {
+  const rows=doc.cycles.filter(c=>!M.ACTIVE.includes(M.phase(c))).map(c=>({c,e:M.effectiveHistory(c).at(-1)}))
+    .sort((a,b)=>Date.parse(b.e.occurredAt)-Date.parse(a.e.occurredAt));
+  setHTML(el('history'),rows.length?`<div class="past-list">${rows.map(({c,e})=>`<button type="button" class="past-grow" data-action="open" ${trayAttrs(c,'history')}><strong>${esc(c.name)}</strong><span>${M.PHASE[e.toPhase]}</span><small>${timestamp(e.occurredAt)}</small></button>`).join('')}</div>`:'<div class="lane-empty">Harvested and ended trays will appear here with their complete history.</div>');
+}
+function render() {
+  if (dragId) return;
+  const doc=store.current(), instant=now(), rows=M.digest(doc,instant), count=M.active(doc).length;
+  el('daypart').textContent='Good '+M.daypart(instant);
+  el('outlook-date').dateTime=M.dayKey(instant);
+  el('outlook-date').textContent=dateLong.format(instant);
+  setHTML(el('digest'),rows.length?`<ul class="digest-items">${rows.map(({c,p})=>`<li><button type="button" data-action="open" ${trayAttrs(c,'digest')}>
+    <strong>${esc(c.name)} · ${esc(flag(p))}</strong><span>${p.stageLabel} · Day ${p.day}. ${p.status==='tomorrow'?'First suggested check may be tomorrow.':esc(p.cues[0] || 'Inspect the tray before changing stages.')}</span>
+  </button></li>`).join('')}</ul>`:
+    `<p>${count?'No important stage changes suggested right now. Open a tray to see its timing and notes.':'No trays to check yet. Add one with its actual start time, even if you sowed it days ago.'}</p>`);
+  el('capacity').textContent=`${count} of ${M.CAPACITY} active tray slots`;
+  el('capacity-message').hidden=count<M.CAPACITY;
+  el('add-tray').setAttribute('aria-disabled',String(count>=M.CAPACITY));
+  setHTML(el('slot-meter'),Array.from({length:M.CAPACITY},(_,i)=>`<span class="${i<count?'used':''}"></span>`).join(''));
+  for (const key of ['board','calendar','history']) {
+    el(key).hidden=key!==view;
+    document.querySelector(`button[data-action="${key}"]`).setAttribute('aria-pressed',String(key===view));
+  }
+  if (view==='board') renderBoard(doc,instant);
+  if (view==='calendar') renderCalendar(doc,instant);
+  if (view==='history') renderHistory(doc);
+}
+function chooseView(next) {
+  if (next==='history') {
+    if (view==='history') view=lastLiveView;
+    else { lastLiveView=view; view='history'; }
+  } else view=next;
+  render();
+}
+function dialogError(message='') {
+  const box=el('dialog-error');
+  box.hidden=!message;
+  box.textContent=message;
+  if (message) box.scrollIntoView({block:'nearest'});
+}
+function showDialog(mode,title,kicker,content,state, origin=null) {
+  const wasOpen=dialog.open;
+  if (!wasOpen) returnTo=origin||document.activeElement;
+  change={mode, expected:store.current().revision,...state};
+  dialog.classList.toggle('drawer',mode==='tray');
+  dialog.innerHTML=`<div class="dialog-content">
+    <div class="dialog-head"><div><p class="planner-kicker">${esc(kicker)}</p><h2 id="dialog-title" tabindex="-1">${esc(title)}</h2></div>
+    ${button('×','close','aria-label="Close dialog"','dialog-close')}</div>
+    <p id="dialog-error" class="pl-alert" role="alert" hidden></p>${content}
+  </div>`;
+  if (!wasOpen) dialog.showModal();
+  dialog.scrollTop=0;
+  focus(el('dialog-title'));
+}
+function cancel() {
+  if (busy) return;
+  if (change?.fromTray && find(change.trayId)) openTray(find(change.trayId),null,change.backFocus);
+  else closeDialog();
+}
+function focusAfter() {
+  if (returnTo?.isConnected && returnTo.getClientRects().length) focus(returnTo);
+  else if (returnTo?.dataset.tray) focus([...document.querySelectorAll('[data-action="open"]')].find(n=>n.dataset.tray===returnTo.dataset.tray&&n.getClientRects().length)||el('add-tray'));
+  else focus(el('add-tray'));
+  returnTo=null;
+}
+dialog.addEventListener('keydown',e=>{
+  if (e.key!=='Tab') return;
+  const targets=[...dialog.querySelectorAll('a[href],button,input,select,textarea,summary,[tabindex="0"]')]
+    .filter(n=>!n.disabled && n.getClientRects().length && getComputedStyle(n).visibility!=='hidden');
+  const first=targets[0], last=targets.at(-1), current=document.activeElement;
+  if (e.shiftKey && (current===first||current===el('dialog-title'))) {e.preventDefault();focus(last,false);}
+  else if (!e.shiftKey && current===last) {e.preventDefault();focus(first,false);}
+});
+dialog.addEventListener('cancel',e=>{e.preventDefault();cancel();});
+function closeDialog() {
+  dialog.close();
+  change=null;
+  focusAfter();
+}
+function timeFields(heading, instant) {
+  const [d,t]=M.localInput(instant).split('T');
+  return `<fieldset style="margin:0;border:0;padding:0;min-width:0"><legend>${esc(heading)}</legend><div class="fields-two">
+    <label>Date <input type="date" name="date" value="${d}" required></label>
+    <label>Time <input type="time" name="time" value="${t}" required></label>
+  </div><label id="fold-picker" hidden>Which occurrence of this local time? <select name="fold"></select></label>
+  <p class="pl-help">Use the local time when it happened. Earlier dates are welcome.</p></fieldset>`;
+}
+const formFooter=(save,back='Cancel')=>`<div class="pl-actions"><button class="pl-button pl-primary" type="submit">${esc(save)}</button>${button(back,'close')}</div>`;
+function refreshFold(preferred) {
+  const form=dialog.querySelector('form');
+  if (!form?.elements.date) return;
+  const picker=el('fold-picker'), fold=form.elements.fold;
+  const before=preferred||fold.value;
+  picker.hidden=true;
+  fold.innerHTML='';
+  try {
+    const matching=M.timeOptions(`${form.elements.date.value}T${form.elements.time.value}`);
+    if (matching.length<2) return;
+    picker.hidden=false;
+    fold.innerHTML=matching.map((at,i)=>`<option value="${at}">${i?'Second':'First'} occurrence · ${esc(M.zoneAt(at))}</option>`).join('');
+    if (matching.includes(before)) fold.value=before;
+  } catch { /* Invalid local times receive an explicit validation message on submit. */ }
+}
+function startTray(origin) {
+  if (M.active(store.current()).length>=M.CAPACITY) { showError(el('capacity-message').textContent); return; }
+  if (!guidance) { showError(guidanceError||'Crop guidance is loading. Try again in a moment.'); return; }
+  const crops=[...window.CropData.crops].sort((a,b)=>a.name.localeCompare(b.name));
+  showDialog('create','Add one tray','New germination',`<form>
+    <label><span>Crop</span><select name="crop" required><option value="">Choose a crop</option>${crops.map(c=>`<option value="${esc(c.id)}">${esc(c.name)}</option>`).join('')}</select></label>
+    <label>Tray name <input name="label" maxlength="80" placeholder="e.g. Broccoli A"></label>
+    ${timeFields('Actual germination start',now())}
+    <label>Note (optional) <textarea name="note" maxlength="1500" placeholder="Anything you want to remember?"></textarea></label>
+    ${formFooter('Save tray')}</form>`,{},origin);
+  refreshFold();
+}
+const cuesList=cues=>cues.length?`<ul class="cues">${cues.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>`:'';
+function harvestDetail(p) {
+  if (!M.ACTIVE.includes(p.current)) return '';
+  return `<p>${p.harvest?`<strong>Estimated harvest check: ${esc(estimateDates(p.harvest))}</strong>${p.current==='lights'?'.':' if moved to light near the estimated window.'} <span class="pl-help">Method: ${esc(p.harvestMethod.label)} (${esc(p.harvestMethod.source)}).</span>`:'Harvest estimate unavailable for this method or stage path.'}</p>`;
+}
+function chronology(c,p) {
+  const rows=[];
+  for (const e of p.history) {
+    if (e.toPhase==='lights'&&!p.dark && c.cropMethodSnapshot.canBlackout)
+      rows.push('<li class="estimate">Optional blackout · skipped</li>');
+    const corrected=e.corrections.length?`<details><summary>Correction history (${e.corrections.length})</summary>
+      <p>Originally logged as ${timestamp(e.originalOccurredAt)}</p>
+      ${e.corrections.map(item=>`<p>Changed to ${timestamp(item.occurredAt)} · recorded ${timestamp(item.recordedAt)}</p>`).join('')}</details>`:'';
+    rows.push(`<li><strong>${M.eventLabel(e.toPhase)} · Actual</strong>
+      <dl><dt>Happened</dt><dd>${timestamp(e.occurredAt)}</dd><dt>Recorded</dt><dd>${timestamp(e.recordedAt)}</dd></dl>
+      ${e.note?`<p class="note-text">${esc(e.note)}</p>`:''}${corrected}
+      ${button('Correct time','correct',`data-event="${esc(e.id)}" aria-label="Correct time: ${M.eventLabel(e.toPhase)}"`,'pl-quiet')}
+      </li>`);
+  }
+  return rows.join('');
+}
+function openTray(c,origin=null,backFocus=null) {
+  const p=M.projection(c,now()), live=M.ACTIVE.includes(p.current);
+  const move=(label,dest,primary=false)=>button(label,'transition',`data-to="${dest}"`,primary?'pl-primary':'');
+  const actions=live?`<div class="pl-actions">
+    ${p.current==='lights'?move('Mark harvested','harvested',true):move('Move to lights','lights',true)}
+    ${p.current==='germination'&&c.cropMethodSnapshot.canBlackout?move('Begin blackout','blackout'):''}
+    </div>`:'';
+  const notes=M.notes(c);
+  showDialog('tray',c.name,`${M.PHASE[p.current]} · Tray ${c.id.slice(0,8)}`,`
+    <section class="detail-info">
+      ${getCardName(c)?`<p><strong>${esc(getCardName(c))}</strong></p>`:''}
+      <p>Germination started ${timestamp(p.started)}.</p>
+      ${live?`<p><strong>Day ${p.day}</strong> · ${Math.max(0,Math.round(p.age*240)/10)} hours since ${p.current==='germination'?'sowing':p.current==='blackout'?'starting blackout':'moving to light'}.</p>`:''}
+    </section>
+    ${actions}
+    ${live?`<section class="dialog-section"><h3>What to look for</h3><p>${esc(currentWindow(p))}</p>${cuesList(p.cues)}
+    ${harvestDetail(p)}<p class="pl-help">Typical timing. Use what you observe. <a href="crops.html">Crop guide</a> · <a href="quick-start-source-log.html">Timing sources</a></p></section>`:''}
+    <section class="dialog-section"><h3>Stage history</h3><ol class="timeline">${chronology(c,p)}</ol></section>
+    <section class="dialog-section"><h3>Tray notes</h3>
+      ${notes.length?notes.map(e=>`<div><p class="note-text">${esc(e.note)}</p><p class="pl-help">Recorded ${timestamp(e.recordedAt)}</p></div>`).join(''):'<p class="pl-help">No notes yet.</p>'}
+      <div class="pl-actions">${button('Add note','note')}</div></section>
+    ${live?`<details><summary>More tray actions</summary>${button('End grow','transition','data-to="ended"','danger')}</details>`:''}
+    <div class="guide-links"><a href="coir.html">Coir guide ↗</a><a href="grow-log.html">My Grow Log ↗</a></div>
+  `,{trayId:c.id},origin);
+  if (backFocus) {
+    const trigger=[...dialog.querySelectorAll('button')].find(b=>b.dataset.action===backFocus.action &&
+      (b.dataset.to||'')===backFocus.to && (b.dataset.event||'')===backFocus.event);
+    focus(trigger||el('dialog-title'),false);
+  }
+}
+const track=b=>({action:b.dataset.action,to:b.dataset.to||'',event:b.dataset.event||''});
+function propose(c,to,{source,trigger}) {
+  const offer=M.previewTransition(c,to);
+  if (!offer.ok) { if (dialog.open) dialogError(offer.reason);else showError(offer.reason); return; }
+  const fromTray=source==='drawer', p=M.projection(c,now());
+  const naming={
+    blackout:['Begin blackout','Confirm moved to blackout'],
+    lights:['Move to lights','Confirm moved to lights'],
+    harvested:['Mark harvested','Confirm harvest'],
+    ended:['End grow','Confirm end grow']
+  };
+  const [title,save]=naming[to];
+  const cues=to==='ended'?[]:p.cues;
+  const actionText=to==='blackout'?c.cropMethodSnapshot.blackoutUse:to==='lights'?'Record when you removed the cover and moved this tray into light.':
+    to==='harvested'?'Record when you actually harvested. This will free an active slot and retain the tray in History.':'This will free an active slot and retain the tray as Ended in History.';
+  showDialog('transition',`${title}: ${c.name}?`,fromTray?'Record an actual event':'Proposed move',
+    `<p>${esc(actionText)}</p><form>
+    ${to!=='ended'?`<div class="detail-info"><strong>Typical readiness window</strong><p>${esc(currentWindow(p))}</p>${cuesList(cues)}
+    ${p.status==='early'||p.status==='past'?'<p class="pl-help">This phase is outside the typical window now. You can still record the action you took.</p>':'<p class="pl-help">Typical, not a guarantee. Use what you observe.</p>'}</div>`:''}
+    ${timeFields('Actual event time',now())}
+    ${to==='ended'?'<label>Reason (optional) <textarea name="note" maxlength="1500"></textarea></label>':''}
+    ${formFooter(save)}</form>`,{trayId:c.id,to,source,fromTray,backFocus:trigger&&track(trigger)},source==='drag'?trigger:null);
+  refreshFold();
+}
+function editTime(c,eventId,b) {
+  const event=M.effectiveHistory(c).find(e=>e.id===eventId);
+  if (!event) return;
+  showDialog('correct',`Correct time: ${M.eventLabel(event.toPhase)}`,c.name,`<form>
+    <p>Keep this stage and correct when it happened. The old time stays in the correction history.</p>
+    ${timeFields('Corrected actual time',event.occurredAt)}${formFooter('Save correction')}</form>`,
+    {trayId:c.id,eventId,fromTray:true,backFocus:track(b)});
+  refreshFold(event.occurredAt);
+}
+function editNote(c,b) {
+  showDialog('note','Add note',c.name,`<form><label>Note <textarea name="note" required maxlength="1500"></textarea></label>${formFooter('Save note')}</form>`,
+    {trayId:c.id,fromTray:true,backFocus:track(b)});
+}
+async function submit(event) {
+  const form=event.target;
+  if (!(form instanceof HTMLFormElement) || !change || busy) return;
+  event.preventDefault();
+  const state=change, data=new FormData(form), submitButton=form.querySelector('[type=submit]');
+  busy=true;submitButton.disabled=true;
+  status('');dialogError();
+  try {
+    const opts={now:now(),id,guidance};
+    const local=`${data.get('date')}T${data.get('time')}`;
+    const occurredAt=form.elements.date ? data.get('fold')||M.localInstant(local):null;
+    const note=data.get('note'), input={trayId:state.trayId,expectedRevision:state.expected,occurredAt,note};
+    const updates={
+      create:d=>M.createTray(d,{cropId:data.get('crop'),startedAt:occurredAt,name:data.get('label'),note},opts),
+      transition:d=>M.confirmTransition(d,{...input,toPhase:state.to,source:state.source},opts),
+      correct:d=>M.correctEvent(d,{...input,eventId:state.eventId},opts),
+      note:d=>M.addNote(d,input,opts),
+      import:d=>M.importBackup(d,state.backup)
+    };
+    const before=store.current(), next=await store.commit(state.expected,updates[state.mode]);
+    showError();
+    warning();
+    render();
+    status(state.mode==='transition'?M.eventLabel(state.to)+'.':
+      state.mode==='import'?'':'Saved.');
+    if (state.mode==='import') backupStatus(next===before?'This backup has no new trays to add.':'Planner backup imported.');
+    const c=find(state.trayId);
+    if (state.fromTray && c) openTray(c,null,state.mode==='transition'?null:state.backFocus);
+    else closeDialog();
+  } catch (error) {
+    dialogError(error.message);
+    render();
+  } finally { busy=false; submitButton.disabled=false; }
+}
+function backupStatus(message) {
+  el('backup-status').textContent=message;
+  el('backup-status').hidden=!message;
+  status(message);
+}
+function exportBackup() {
+  const blob=new Blob([store.exportBackup(now())],{type:'application/json'});
+  const url=URL.createObjectURL(blob), a=document.createElement('a');
+  a.href=url;
+  a.download=`grow-lab-planner-${M.dayKey(now())}.json`;
+  document.body.append(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),1000);
+  backupStatus('Planner backup downloaded.');
+}
+el('backup-file').addEventListener('change',async event=>{
+  const file=event.target.files[0];
+  event.target.value='';
+  if (!file) return;
+  backupStatus('');
+  try {
+    if (file.size>20*1024*1024) throw new Error('Choose a Grow Planner backup under 20 MB.');
+    const backup=M.parse(await file.text());
+    // Validate the full proposed merge before asking the grower to confirm it.
+    const before=store.current(), next=M.importBackup(before,backup);
+    const additions=next.cycles.length-before.cycles.length;
+    if (!additions) { showError();backupStatus('This backup has no new trays to add.');return; }
+    showDialog('import','Import planner backup','Restore trays',`<form><p>Add ${additions} ${additions===1?'tray':'trays'} from this backup. Existing records stay as they are. Identical copies are skipped.</p>${formFooter('Confirm import')}</form>`,
+      {backup},document.querySelector('[data-action=import]'));
+  } catch (error) { showError(error.message); }
+});
+document.addEventListener('click',event=>{
+  const b=event.target.closest('button[data-action]');
+  if (!b || busy) return;
+  const action=b.dataset.action, c=find(b.dataset.tray||change?.trayId);
+  if (action==='add') startTray(b);
+  if (action==='open'&&c) openTray(c,b);
+  if (action==='close') cancel();
+  if (action==='transition'&&c) propose(c,b.dataset.to,{source:'drawer',trigger:b});
+  if (action==='correct'&&c) editTime(c,b.dataset.event,b);
+  if (action==='note'&&c) editNote(c,b);
+  if (['board','calendar','history'].includes(action)) chooseView(action);
+  if (['prev','next','today'].includes(action)) {
+    if (action==='today') {weekOffset=0;weekAnchor=M.startOfWeek(now());}
+    else weekOffset+=action==='next'?1:-1;
+    render();
+  }
+  if (action==='export') exportBackup();
+  if (action==='import') el('backup-file').click();
+});
+dialog.addEventListener('submit',submit);
+dialog.addEventListener('input',e=>{if (['date','time'].includes(e.target.name)) refreshFold();});
+dialog.addEventListener('change',e=>{if (['date','time'].includes(e.target.name)) refreshFold();});
+const lanes=()=>[...el('board').querySelectorAll('[data-lane]')];
+function clearDrag() {
+  const wasDragging=!!dragId;
+  dragId=null;
+  for (const lane of lanes()) {
+    lane.classList.remove('valid','invalid','over');
+    const tip=lane.querySelector('.lane-drop');
+    tip.textContent=tip.dataset.default;
+  }
+  el('board').querySelector('.dragging')?.classList.remove('dragging');
+  if (wasDragging) render();
+}
+el('board').addEventListener('dragstart',e=>{
+  const card=e.target.closest('[data-drag-tray]');
+  const c=find(card?.dataset.dragTray);
+  if (!c||!dragMedia.matches||!e.dataTransfer) {e.preventDefault();return;}
+  dragId=c.id;
+  card.classList.add('dragging');
+  e.dataTransfer.effectAllowed='move';
+  e.dataTransfer.setData('text/plain',c.id);
+  for (const lane of lanes()) {
+    if (M.previewTransition(c,lane.dataset.lane).ok) lane.classList.add('valid');
+  }
+});
+el('board').addEventListener('dragover',e=>{
+  const lane=e.target.closest('[data-lane]'), c=find(dragId);
+  if (!lane||!c) return;
+  e.preventDefault(); // Also accept the drop gesture on an invalid lane to explain why it is unavailable.
+  for (const other of lanes()) if (other!==lane) {
+    other.classList.remove('over','invalid');
+    const tip=other.querySelector('.lane-drop');tip.textContent=tip.dataset.default;
+  }
+  const offer=M.previewTransition(c,lane.dataset.lane);
+  lane.classList.toggle('over',offer.ok);
+  lane.classList.toggle('invalid',!offer.ok);
+  e.dataTransfer.dropEffect='move';
+  lane.querySelector('.lane-drop').textContent=offer.ok?'Drop to propose move':offer.reason;
+});
+el('board').addEventListener('dragleave',e=>{
+  const lane=e.target.closest('[data-lane]');
+  if (!lane||!dragId||lane.contains(e.relatedTarget)) return;
+  lane.classList.remove('over','invalid');
+  const tip=lane.querySelector('.lane-drop');tip.textContent=tip.dataset.default;
+});
+el('board').addEventListener('drop',e=>{
+  const lane=e.target.closest('[data-lane]'), c=find(dragId);
+  if (!lane||!c) return;
+  e.preventDefault();
+  clearDrag();
+  const trigger=[...el('board').querySelectorAll('.tray-open')].find(b=>b.dataset.tray===c.id);
+  propose(c,lane.dataset.lane,{source:'drag',trigger});
+});
+document.addEventListener('dragend',clearDrag);
+dragMedia.addEventListener('change',render);
+window.addEventListener('storage',e=>{
+  if (e.key===S.KEY||e.key===null) {warning();render();status('Planner records refreshed from this browser.');}
+});
+function refresh() {
+  if (!weekOffset) weekAnchor=M.startOfWeek(now());
+  warning();render();
+}
+document.addEventListener('visibilitychange',()=>{if (!document.hidden) refresh();});
+window.addEventListener('pageshow',refresh);
+setInterval(refresh,30000);
+refresh();
+fetch('data/quick-start-growing-guidance.json').then(r=>{if(!r.ok) throw new Error();return r.json();})
+  .then(doc=>{if(!Array.isArray(doc.crops)) throw new Error();guidance=doc;})
+  .catch(()=>{guidanceError='Crop guidance could not load. Reload Grow Planner to add a tray. Saved trays are still available.';showError(guidanceError);});
+})();

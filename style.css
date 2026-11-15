@@ -9,3 +9,11 @@ header nav{gap:18px;flex-wrap:wrap}header nav a{display:inline-flex;align-items:
 @media(max-width:1100px){header{height:auto;min-height:77px;flex-wrap:wrap;gap:4px;padding-top:12px;padding-bottom:8px}header nav{gap:8px 20px}.tool-library{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){header{position:static;padding:12px 18px 8px}header nav{width:100%;gap:0 18px}header nav a{font-size:12px}.tool-library{grid-template-columns:1fr}.tool-card{padding:24px}.tool-card h3{font-size:29px}.hub .hero h1{font-size:clamp(39px,10vw,55px)}.hub .hero-art{max-width:330px}.hub .hero{gap:22px}.hub .research-links{grid-template-columns:1fr}.hub .hero .actions .button{flex:1 1 auto}.workspace-note{padding:24px}html{scroll-padding-top:20px}}
 @media(prefers-reduced-motion:no-preference){.tool-card{transition:border-color .15s ease}}
+
+/* Secondary workspace entry; the hub remains the landing page. */
+header nav a.planner-switch { min-height:38px; padding:0 12px; gap:5px; border-radius:8px; border:1px solid #a7ba9e; background:#e4eede; color:#244c35; font-weight:750; text-decoration:none; }
+header nav a.planner-switch:hover,header nav a.planner-switch[aria-current=page] { background:#285a3d; border-color:#285a3d; color:white; }
+@media(max-width:680px) {
+  .hub header,.planner-site-header { position:relative; }
+  .hub header nav a.planner-switch,.planner-site-header nav a.planner-switch { position:absolute; right:18px; top:8px; }
+}
