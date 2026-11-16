@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Track four individual microgreen trays, check what might be ready, and record actual growth stages.">
+<meta name="description" content="Track your microgreen trays, get automatic cover and harvest forecasts, and record actual growth stages.">
 <meta name="theme-color" content="#f5f4ed">
 <title>Grow Planner · Grow Lab</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -29,7 +29,7 @@
     <div>
       <p class="planner-kicker"><span aria-hidden="true"></span>Your growing workspace</p>
       <h1 id="planner-title">Grow Planner</h1>
-      <p class="planner-lead">See what to check today and keep a record of when each tray moves.</p>
+      <p class="planner-lead">Add a tray to get suggested check dates. Record each move to keep its forecast up to date.</p>
     </div>
     <button class="pl-button pl-primary" id="add-tray" data-action="add"><span aria-hidden="true">＋</span> Add one tray</button>
   </section>
@@ -47,7 +47,7 @@
   <section class="planner-workspace" aria-labelledby="workspace-heading">
     <div class="workspace-heading">
       <div>
-        <p class="planner-kicker">Rack 1 / one shelf</p>
+        <p class="planner-kicker">Grow workspace</p>
         <h2 id="workspace-heading">Your trays</h2>
       </div>
       <div class="workspace-actions">
@@ -58,12 +58,7 @@
         <button class="pl-button pl-quiet" data-action="history" aria-pressed="false">History</button>
       </div>
     </div>
-    <div class="slot-line">
-      <span id="slot-meter" class="slot-meter" aria-hidden="true"></span>
-      <strong id="capacity"></strong>
-      <span class="slot-explain">Workflow stages only · four tracked trays per rack</span>
-    </div>
-    <p id="capacity-message" class="capacity-message" hidden>Four active trays — harvest or end an existing grow before adding another.</p>
+    <p class="active-count"><strong id="active-count"></strong></p>
     <div id="board"></div>
     <div id="calendar" hidden></div>
     <div id="history" hidden></div>

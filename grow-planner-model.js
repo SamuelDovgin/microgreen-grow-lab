@@ -3,7 +3,7 @@
 'use strict';
 const CropData = typeof module === 'object' ? require('./crop-data.js') : root.CropData;
 const {dateAt} = typeof module === 'object' ? require('./crop-model.js') : root.CropModel;
-const DAY = 86400000, CAPACITY = 4, SCHEMA = 'grow-lab-planner/1';
+const DAY = 86400000, SCHEMA = 'grow-lab-planner/1';
 const PHASE = {germination:'Germination', blackout:'Optional Blackout', lights:'Under Lights', harvested:'Harvested', ended:'Ended'};
 const ACTIVE = ['germination','blackout','lights'];
 const kindFor = {germination:'germination_started', blackout:'blackout_started', lights:'lights_started', harvested:'harvested', ended:'ended'};
@@ -55,10 +55,11 @@ const shift = (anchor, days) => stamp(time(anchor)+days*DAY);
 const band = (anchor, days) => days?.map(d=>shift(anchor,d)) || null;
 const bandText = days => days[0]===days[1] ? `${days[0]} ${days[0]===1?'day':'days'}` : `${days[0]}–${days[1]} days`;
 const normalizeCrop = id => Object.hasOwn(CropData.retiredCropIds,id) ? CropData.retiredCropIds[id].cropId : id;
+const cropById = new Map(CropData.crops.map(crop=>[crop.id,crop]));
+const findCrop = id => cropById.get(normalizeCrop(id));
 
-// Germination windows/cues come from the quick-start synthesis. Later estimates are
-// deliberately path-specific. Select only same-method anchors, never the synthesis's
-// broad lightDays band. For a source with cover+total only, subtract the outer bounds.
+// Prefer the quick-start checks and their path-specific harvest anchors.
+// For a source with cover+total only, subtract the outer bounds.
 const anchors = {
   broccoli:{direct:['bootstrap'], blackout:['otg-coir']},
   'radish-daikon':{blackout:[null,[3,4],'G09','On The Grow · radish']},
@@ -78,9 +79,28 @@ const germCue = {
   'pea-basic':'Shoots are anchored across most of the tray. Check for cover lift and move before shoots tangle.',
   mung:'Roots are anchored and shoots are upright across most of the tray. A tiny root tip alone is too early.'
 };
+function catalogSchedule(crop) {
+  if (!crop) return {};
+  const cover = range(crop.coverDays) ? [...crop.coverDays] : null;
+  const sowDays = crop.harvestDays;
+  // The catalog gives days from sowing. Keep that window until an actual light
+  // time is recorded, then use the possible light durations for the catalog method.
+  const days = cover && range(sowDays) ? [sowDays[0]-cover[1],sowDays[1]-cover[0]] : null;
+  const harvest = range(days) ? {
+    days, sowDays:[...sowDays],
+    source:crop.provenance?.harvest?.split(';')[0] || crop.source,
+    label:'Crop catalog'
+  } : null;
+  return {cover,harvest};
+}
+const catalogCues = {
+  germination:crop=>[crop?.calendar?.exit].filter(Boolean),
+  lights:crop=>[crop?.calendar?.harvest,'Inspect several spots across the tray before deciding to cut.'].filter(Boolean)
+};
 function snapshot(crop, guidance) {
   const q = guidance?.crops?.find(row=>row.cropId===crop.id && range(row.germinationDays) && text(row.germinationReady,400));
   const reference = anchors[crop.id] || {};
+  const catalog = catalogSchedule(crop);
   function timing(path) {
     const [id, explicit, source, label] = reference[path] || [];
     const recipe = crop.alternatives?.find(r=>r.id===id);
@@ -94,22 +114,24 @@ function snapshot(crop, guidance) {
   const blackoutRecipe = crop.alternatives?.find(r=>r.id===reference.blackout?.[0]);
   // G09 records one loose blackout day; the other durations come from their named recipes.
   const darkDays = canBlackout ? (crop.id==='radish-daikon' ? 1 : blackoutRecipe?.blackoutDays) : null;
+  const directHarvest = (q && timing('direct')) || catalog.harvest;
   return {
     dataVersion:CropData.version, reviewed:q ? guidance.reviewed : null, cropId:crop.id, cropName:crop.name,
-    recipeId:q?'quick-start':'tracking-only', methodLabel:q?'Quick-start inspection guide':'Tracking only',
-    canBlackout, coverRangeDays:q ? [...q.germinationDays] : null, blackoutRangeDays:darkDays>0?[darkDays,darkDays]:null,
-    directHarvest:q ? timing('direct') : null, blackoutHarvest:q && canBlackout ? timing('blackout') : null,
+    recipeId:q?'quick-start':'catalog-estimate', methodLabel:q?'Quick-start inspection guide':'Crop catalog estimate',
+    canBlackout, coverRangeDays:q ? [...q.germinationDays] : catalog.cover, blackoutRangeDays:darkDays>0?[darkDays,darkDays]:null,
+    directHarvest, blackoutHarvest:q && canBlackout ? timing('blackout') : null,
     readinessCues:{
-      germination:q?[germCue[crop.id] || q.germinationReady,q.note].filter(Boolean):[],
+      germination:q?[germCue[crop.id] || q.germinationReady,q.note].filter(Boolean):catalogCues.germination(crop),
       blackout:canBlackout?[blackoutCue[crop.id],'Remove the loose cover when you move the tray to light.']:[],
-      lights:q?[crop.calendar?.harvest,'Inspect several spots across the tray before deciding to cut.'].filter(Boolean):[]
+      lights:catalogCues.lights(crop)
     },
     blackoutUse:canBlackout?q.blackoutUse:null,
-    sourceReferences:[...(q?.sources || [])]
+    sourceReferences:[...new Set([...(q?.sources || []),...(directHarvest?.sowDays?[directHarvest.source]:[])])]
   };
 }
 function validateSnapshot(s, cropId) {
-  const timing = v => v===null || object(v)&&range(v.days)&&text(v.source)&&text(v.label);
+  const timing = v => v===null || object(v)&&range(v.days)&&text(v.source)&&text(v.label)
+    && (v.sowDays===undefined||range(v.sowDays));
   requireThat(object(s) && s.cropId===cropId && text(s.cropName) && text(s.dataVersion)
     && (s.reviewed===null||text(s.reviewed)) && text(s.recipeId) && text(s.methodLabel) && typeof s.canBlackout==='boolean'
     && optionalRange(s.coverRangeDays) && optionalRange(s.blackoutRangeDays) && timing(s.directHarvest) && timing(s.blackoutHarvest)
@@ -138,7 +160,7 @@ function effectiveHistory(cycle) {
   }
   return history;
 }
-const phase = cycle => effectiveHistory(cycle).at(-1)?.toPhase;
+const phase = cycle => cycle.events.findLast(e=>e.toPhase)?.toPhase;
 const active = doc => doc.cycles.filter(c=>ACTIVE.includes(phase(c)));
 const empty = () => ({schema:SCHEMA,revision:0,cycles:[]});
 const notes = cycle => cycle.events.filter(e=>e.kind==='note_added');
@@ -188,7 +210,6 @@ function validate(doc) {
       }
     }
   }
-  requireThat(active(doc).length<=CAPACITY,'Four active trays is the limit. Harvest or end an existing grow before adding another.');
   return doc;
 }
 function parse(raw) {
@@ -205,8 +226,7 @@ function enteredAt(occurredAt, now, earliest=-Infinity) {
 }
 const nextDoc = (doc, cycles) => validate({schema:SCHEMA,revision:doc.revision+1,cycles});
 function createTray(doc, input, {now,id,guidance}) {
-  requireThat(active(doc).length<CAPACITY,'Four active trays is the limit. Harvest or end an existing grow before adding another.');
-  const crop = CropData.crops.find(c=>c.id===normalizeCrop(input.cropId));
+  const crop = findCrop(input.cropId);
   requireThat(crop,'Choose a crop.');
   const startedAt=enteredAt(input.startedAt,now), recordedAt=stamp(now);
   const note=input.note?.trim(), activeNames=new Set(active(doc).map(c=>c.name));
@@ -275,8 +295,15 @@ function importBackup(doc, backup) {
 function projection(cycle, now) {
   const history=effectiveHistory(cycle), started=history[0].occurredAt, entry=history.at(-1), current=entry.toPhase;
   const s=cycle.cropMethodSnapshot, dark=history.some(e=>e.toPhase==='blackout');
-  const harvestMethod=dark?s.blackoutHarvest:s.directHarvest;
-  const days=current==='germination'?s.coverRangeDays:current==='blackout'?s.blackoutRangeDays:current==='lights'?harvestMethod?.days:null;
+  // Old backups and saved trays lack some forecasts. Fill gaps in the view so
+  // importing an identical backup still works and no saved facts need rewriting.
+  const crop=findCrop(s.cropId);
+  const catalog=s.coverRangeDays && s.directHarvest ? {} : catalogSchedule(crop);
+  const harvestMethod=dark?s.blackoutHarvest:(s.directHarvest || catalog.harvest || null);
+  const days=current==='germination'?(s.coverRangeDays || catalog.cover):current==='blackout'?s.blackoutRangeDays:current==='lights'?harvestMethod?.days:null;
+  const estimated=current==='germination'
+    ? !!days && (s.recipeId==='catalog-estimate' || !s.coverRangeDays)
+    : current==='lights' && !!harvestMethod?.sowDays;
   const window=band(entry.occurredAt,days), age=(now-time(entry.occurredAt))/DAY;
   const stageLabel=current==='lights'?'Harvest inspection':current==='blackout'?'Light check':'Cover check';
   let status='none';
@@ -288,10 +315,13 @@ function projection(cycle, now) {
   }
   // Before lights, a harvest estimate is conditional on the projected next stage.
   const lightWindow=current==='lights'?[entry.occurredAt,entry.occurredAt]:window;
-  const harvest=ACTIVE.includes(current) && lightWindow && harvestMethod
-    ? [shift(lightWindow[0],harvestMethod.days[0]),shift(lightWindow[1],harvestMethod.days[1])] : null;
+  const harvest=current==='germination' && harvestMethod?.sowDays ? band(started,harvestMethod.sowDays)
+    : ACTIVE.includes(current) && lightWindow && harvestMethod
+      ? [shift(lightWindow[0],harvestMethod.days[0]),shift(lightWindow[1],harvestMethod.days[1])] : null;
+  const savedCues=s.readinessCues[current];
   return {history,started,entry,current,age,day:dayDelta(now,started),phaseDay:dayDelta(now,entry.occurredAt),
-    dark,days,window,status,stageLabel,harvest,harvestMethod,cues:s.readinessCues[current]||[]};
+    dark,days,window,status,stageLabel,harvest,harvestMethod,estimated,
+    cues:savedCues?.length?savedCues:(catalogCues[current]?.(crop) || [])};
 }
 function digest(doc, now) {
   const weight={past:0,check:1,tomorrow:2};
@@ -300,21 +330,24 @@ function digest(doc, now) {
     .sort((a,b)=>priority(a.p)-priority(b.p));
 }
 function agenda(doc, weekStart, now) {
-  const rows=[];
+  const week=Array.from({length:7},(_,i)=>({key:weekDay(weekStart,i),rows:[]}));
+  const days=new Map(week.map(day=>[day.key,day.rows]));
+  const add=row=>days.get(dayKey(row.at))?.push(row);
   for (const c of doc.cycles) {
     const p=projection(c,now);
-    for (const e of p.history) rows.push({c,actual:true,at:e.occurredAt,label:eventLabel(e.toPhase)});
+    for (const e of p.history) add({c,actual:true,at:e.occurredAt,label:eventLabel(e.toPhase)});
     if (p.window) {
       const at=['past','check'].includes(p.status) ? stamp(now) : p.window[0];
-      rows.push({c,actual:false,at,label:p.status==='past'?`${p.stageLabel} · past typical window`:p.stageLabel,window:p.window});
+      add({c,actual:false,at,label:p.status==='past'?`${p.stageLabel} · past typical window`:p.stageLabel,window:p.window,estimated:p.estimated});
     }
-    if (p.harvest && p.current!=='lights' && time(p.harvest[0])>now)
-      rows.push({c,actual:false,at:p.harvest[0],label:'Harvest inspection · if moved to light near the estimate',window:p.harvest});
+    if (p.harvest && p.current!=='lights' && time(p.harvest[0])>now) {
+      const estimated=!!p.harvestMethod.sowDays;
+      const label=estimated?'Harvest inspection · updates after move to light':'Harvest inspection · if moved to light near the estimate';
+      add({c,actual:false,at:p.harvest[0],label,window:p.harvest,estimated});
+    }
   }
-  return Array.from({length:7},(_,i)=>{
-    const key=weekDay(weekStart,i);
-    return {key,rows:rows.filter(e=>dayKey(e.at)===key).sort((a,b)=>Number(b.actual)-Number(a.actual)||time(a.at)-time(b.at))};
-  });
+  for (const {rows} of week) rows.sort((a,b)=>Number(b.actual)-Number(a.actual)||time(a.at)-time(b.at));
+  return week;
 }
 function eventLabel(p) {
   return {germination:'Germination started',blackout:'Blackout started',lights:'Moved to lights',harvested:'Harvested',ended:'Grow ended'}[p];
@@ -323,7 +356,7 @@ function daypart(now) {
   const h=new Date(now).getHours();
   return h<12?'morning':h<17?'midday':'evening';
 }
-const api={DAY,CAPACITY,SCHEMA,PHASE,ACTIVE,empty,active,phase,parse,validate,createTray,previewTransition,confirmTransition,
+const api={DAY,SCHEMA,PHASE,ACTIVE,empty,active,phase,parse,validate,createTray,previewTransition,confirmTransition,
   correctEvent,addNote,importBackup,projection,digest,agenda,notes,effectiveHistory,localInstant,localInput,timeOptions,zoneAt,
   formatTime,dayKey,dayDelta,startOfWeek,weekDay,bandText,eventLabel,daypart};
 if (typeof module==='object') module.exports=api; else root.GrowPlannerModel=api;

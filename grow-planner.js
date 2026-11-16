@@ -34,7 +34,7 @@ const estimateDates=window=>{
   const text=window.map(at=>dateShort.format(new Date(at)));
   return text[0]===text[1]?text[0]:text.join(' – ');
 };
-const currentWindow=p=>p.window?`${p.stageLabel}: ${M.bandText(p.days)} after ${p.current==='lights'?'moving to light':p.current==='blackout'?'starting blackout':'sowing'} (${estimateDates(p.window)}).`:guideText;
+const currentWindow=p=>p.window?`${p.stageLabel}: ${p.estimated?'about ':''}${M.bandText(p.days)} after ${p.current==='lights'?'moving to light':p.current==='blackout'?'starting blackout':'sowing'} (${estimateDates(p.window)}).`:guideText;
 function status(message) { el('live-status').textContent=message; }
 function showError(message='') {
   const box=el('planner-error');
@@ -78,7 +78,7 @@ function plantArt(phase,big) {
 function card(c,instant) {
   const p=M.projection(c,instant);
   const stage=p.current==='germination'?M.PHASE[p.current]:p.current==='blackout'?'Blackout':'Lights';
-  const sub=p.days?`${p.stageLabel} · ${M.bandText(p.days)}`:p.current==='lights'?'Harvest timing unavailable':'See crop guide';
+  const sub=p.days?`${p.estimated?'Approx. '+p.stageLabel.toLowerCase():p.stageLabel} · ${M.bandText(p.days)}`:p.current==='lights'?'Harvest timing unavailable':'See crop guide';
   return `<article class="tray-card" data-drag-tray="${esc(c.id)}" draggable="${dragMedia.matches}">
     <button class="tray-open" type="button" data-action="open" ${trayAttrs(c,'board')} aria-label="${esc(c.name+', '+stage+', Day '+p.day+', '+flag(p)+'. Open tray')}">
       <span class="tray-flag" data-status="${p.status}">${flag(p)}</span>
@@ -104,14 +104,14 @@ function renderBoard(doc,instant) {
       ${rows.length?`<div class="lane-cards">${rows.map(c=>card(c,instant)).join('')}</div>`:`<div class="lane-empty">${meta.empty}</div>`}
     </section>`;
   }).join('')}</div><div class="board-help"><span>Open a tray to see its history and record a move.<span class="desktop-hint"> You can also drag it to the next stage.</span></span>
-  ${cycles.length<M.CAPACITY?button('＋ Add one tray','add','data-focus-key="add-slot"'):''}</div>`);
+  ${button('＋ Add one tray','add','data-focus-key="add-tray-footer"')}</div>`);
 }
 function entry(row) {
   const when=row.actual?`<time datetime="${esc(row.at)}">${esc(hour.format(new Date(row.at))+' '+M.zoneAt(row.at))}</time>`:
     `<span>${esc(estimateDates(row.window))}</span>`;
   return `<li><button type="button" class="agenda-item" data-action="open" ${trayAttrs(row.c,'agenda-'+row.label+'-'+row.at)}>
     <span aria-hidden="true" class="agenda-marker ${row.actual?'actual':''}">${row.actual?'✓':''}</span>
-    <span class="agenda-item-copy"><strong>${esc(row.c.name)}</strong> <span class="agenda-tag">${row.actual?'Actual':'Forecast'}</span><br>
+    <span class="agenda-item-copy"><strong>${esc(row.c.name)}</strong> <span class="agenda-tag">${row.actual?'Actual':row.estimated?'Approx. forecast':'Forecast'}</span><br>
     <span class="agenda-detail">${esc(row.label)} · ${when}</span></span>
   </button></li>`;
 }
@@ -136,13 +136,10 @@ function render() {
   el('outlook-date').dateTime=M.dayKey(instant);
   el('outlook-date').textContent=dateLong.format(instant);
   setHTML(el('digest'),rows.length?`<ul class="digest-items">${rows.map(({c,p})=>`<li><button type="button" data-action="open" ${trayAttrs(c,'digest')}>
-    <strong>${esc(c.name)} · ${esc(flag(p))}</strong><span>${p.stageLabel} · Day ${p.day}. ${p.status==='tomorrow'?'First suggested check may be tomorrow.':esc(p.cues[0] || 'Inspect the tray before changing stages.')}</span>
+    <strong>${esc(c.name)} · ${esc(flag(p))}</strong><span>${p.estimated?'Approx. ':''}${p.stageLabel} · Day ${p.day}. ${p.status==='tomorrow'?'First suggested check may be tomorrow.':esc(p.cues[0] || 'Inspect the tray before changing stages.')}</span>
   </button></li>`).join('')}</ul>`:
     `<p>${count?'No important stage changes suggested right now. Open a tray to see its timing and notes.':'No trays to check yet. Add one with its actual start time, even if you sowed it days ago.'}</p>`);
-  el('capacity').textContent=`${count} of ${M.CAPACITY} active tray slots`;
-  el('capacity-message').hidden=count<M.CAPACITY;
-  el('add-tray').setAttribute('aria-disabled',String(count>=M.CAPACITY));
-  setHTML(el('slot-meter'),Array.from({length:M.CAPACITY},(_,i)=>`<span class="${i<count?'used':''}"></span>`).join(''));
+  el('active-count').textContent=`${count} active ${count===1?'tray':'trays'}`;
   for (const key of ['board','calendar','history']) {
     el(key).hidden=key!==view;
     document.querySelector(`button[data-action="${key}"]`).setAttribute('aria-pressed',String(key===view));
@@ -228,7 +225,6 @@ function refreshFold(preferred) {
   } catch { /* Invalid local times receive an explicit validation message on submit. */ }
 }
 function startTray(origin) {
-  if (M.active(store.current()).length>=M.CAPACITY) { showError(el('capacity-message').textContent); return; }
   if (!guidance) { showError(guidanceError||'Crop guidance is loading. Try again in a moment.'); return; }
   const crops=[...window.CropData.crops].sort((a,b)=>a.name.localeCompare(b.name));
   showDialog('create','Add one tray','New germination',`<form>
@@ -242,7 +238,11 @@ function startTray(origin) {
 const cuesList=cues=>cues.length?`<ul class="cues">${cues.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>`:'';
 function harvestDetail(p) {
   if (!M.ACTIVE.includes(p.current)) return '';
-  return `<p>${p.harvest?`<strong>Estimated harvest check: ${esc(estimateDates(p.harvest))}</strong>${p.current==='lights'?'.':' if moved to light near the estimated window.'} <span class="pl-help">Method: ${esc(p.harvestMethod.label)} (${esc(p.harvestMethod.source)}).</span>`:'Harvest estimate unavailable for this method or stage path.'}</p>`;
+  if (!p.harvest) return '<p>Harvest estimate unavailable for this method or stage path.</p>';
+  const condition=p.current==='lights'?'.':p.harvestMethod.sowDays
+    ? ' from sowing. This estimate updates when you record the move to lights.'
+    : ' if moved to light near the estimated window.';
+  return `<p><strong>Estimated harvest check: ${esc(estimateDates(p.harvest))}</strong>${condition} <span class="pl-help">Method: ${esc(p.harvestMethod.label)} (${esc(p.harvestMethod.source)}).</span></p>`;
 }
 function chronology(c,p) {
   const rows=[];
@@ -304,7 +304,7 @@ function propose(c,to,{source,trigger}) {
   const [title,save]=naming[to];
   const cues=to==='ended'?[]:p.cues;
   const actionText=to==='blackout'?c.cropMethodSnapshot.blackoutUse:to==='lights'?'Record when you removed the cover and moved this tray into light.':
-    to==='harvested'?'Record when you actually harvested. This will free an active slot and retain the tray in History.':'This will free an active slot and retain the tray as Ended in History.';
+    to==='harvested'?'Record when you actually harvested. The tray and its records will move to History.':'This will retain the tray as Ended in History.';
   showDialog('transition',`${title}: ${c.name}?`,fromTray?'Record an actual event':'Proposed move',
     `<p>${esc(actionText)}</p><form>
     ${to!=='ended'?`<div class="detail-info"><strong>Typical readiness window</strong><p>${esc(currentWindow(p))}</p>${cuesList(cues)}

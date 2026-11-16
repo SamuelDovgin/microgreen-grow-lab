@@ -27,7 +27,6 @@
 .pl-primary { background:var(--pl-green); border-color:var(--pl-green); color:white; }
 .pl-primary:hover { background:var(--pl-deep); }
 #add-tray { flex:none; }
-#add-tray[aria-disabled=true] { background:#e6e9df; border-color:#cbd1c6; color:var(--pl-muted); cursor:not-allowed; }
 .pl-quiet { background:transparent; }
 .pl-quiet[aria-pressed=true] { background:#dbe8d5; border-color:#91ac8c; }
 .pl-sr { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
@@ -50,12 +49,7 @@
 .view-switch { align-items:stretch; gap:3px; padding:3px; border-radius:10px; background:#e8ebe1; }
 .view-switch button { background:transparent; border-color:transparent; min-height:38px; }
 .view-switch button[aria-pressed=true] { background:var(--pl-white); border-color:#c7d3c2; color:#234932; }
-.slot-line { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:10px 0 13px; font-size:13px; }
-.slot-meter { display:inline-flex; gap:4px; }
-.slot-meter span { width:12px; height:13px; border-radius:3px; background:#e5e9df; border:1px solid #b2c1ae; }
-.slot-meter span.used { background:#3e7650; border-color:#3e7650; }
-.slot-explain { font-size:12px; color:var(--pl-muted); margin-inline-start:auto; }
-.capacity-message { margin:0 0 12px !important; color:var(--pl-warn); font-weight:650; }
+.planner-workspace .active-count { margin:10px 0 13px; font-size:13px; }
 .lanes { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:13px; align-items:stretch; }
 .lane { min-width:0; padding:12px; border:1px solid var(--pl-line); border-radius:12px; background:#f0eee6; }
 .lane[data-lane=blackout] { background:#eef0ed; }
@@ -158,7 +152,6 @@
   .outlook-icon { width:33px; height:36px; }
   .outlook-head time { font-size:11px; }
   .planner-workspace { margin-top:18px; }
-  .slot-explain { flex-basis:100%; margin:0; }
   .lanes { display:flex; flex-direction:column; gap:8px; }
   .lane { padding:9px; }
   .lane-empty { min-height:44px; padding:5px; }
