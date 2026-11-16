@@ -236,6 +236,18 @@ function startTray(origin) {
   refreshFold();
 }
 const cuesList=cues=>cues.length?`<ul class="cues">${cues.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>`:'';
+const decisionLabels={
+  'blackout-recommended':'Short blackout recommended',
+  'blackout-optional':'Blackout is optional',
+  'direct-light':'Skip extra blackout'
+};
+function germinationGuide(decision,heading=decision.nextStep==='direct-light'?'When to move to lights':'When to begin blackout') {
+  const {days,window,lookFor,action,nextStep}=decision;
+  return `<h3>${heading}</h3>
+    <p><strong>${decisionLabels[nextStep]}.</strong> Check about ${esc(M.bandText(days))} after sowing (${esc(estimateDates(window))}).</p>
+    <p><strong>Look for:</strong> ${esc(lookFor)}</p>
+    <p><strong>When ready:</strong> ${esc(action)}</p>`;
+}
 function harvestDetail(p) {
   if (!M.ACTIVE.includes(p.current)) return '';
   if (!p.harvest) return '<p>Harvest estimate unavailable for this method or stage path.</p>';
@@ -261,11 +273,13 @@ function chronology(c,p) {
   return rows.join('');
 }
 function openTray(c,origin=null,backFocus=null) {
-  const p=M.projection(c,now()), live=M.ACTIVE.includes(p.current);
+  const p=M.projection(c,now(),guidance), live=M.ACTIVE.includes(p.current), decision=p.germinationDecision;
   const move=(label,dest,primary=false)=>button(label,'transition',`data-to="${dest}"`,primary?'pl-primary':'');
+  const preferBlackout=decision?.nextStep==='blackout-recommended';
+  const lights=move('Move to lights','lights',!preferBlackout);
+  const blackout=p.current==='germination'&&c.cropMethodSnapshot.canBlackout?move('Begin blackout','blackout',preferBlackout):'';
   const actions=live?`<div class="pl-actions">
-    ${p.current==='lights'?move('Mark harvested','harvested',true):move('Move to lights','lights',true)}
-    ${p.current==='germination'&&c.cropMethodSnapshot.canBlackout?move('Begin blackout','blackout'):''}
+    ${p.current==='lights'?move('Mark harvested','harvested',true):preferBlackout?blackout+lights:lights+blackout}
     </div>`:'';
   const notes=M.notes(c);
   showDialog('tray',c.name,`${M.PHASE[p.current]} · Tray ${c.id.slice(0,8)}`,`
@@ -274,8 +288,9 @@ function openTray(c,origin=null,backFocus=null) {
       <p>Germination started ${timestamp(p.started)}.</p>
       ${live?`<p><strong>Day ${p.day}</strong> · ${Math.max(0,Math.round(p.age*240)/10)} hours since ${p.current==='germination'?'sowing':p.current==='blackout'?'starting blackout':'moving to light'}.</p>`:''}
     </section>
-    ${actions}
-    ${live?`<section class="dialog-section"><h3>What to look for</h3><p>${esc(currentWindow(p))}</p>${cuesList(p.cues)}
+    ${decision?`<section class="dialog-section">${germinationGuide(decision)}${actions}</section>`:actions}
+    ${live?`<section class="dialog-section">
+    ${decision?'':`<h3>What to look for</h3><p>${esc(currentWindow(p))}</p>${cuesList(p.cues)}`}
     ${harvestDetail(p)}<p class="pl-help">Typical timing. Use what you observe. <a href="crops.html">Crop guide</a> · <a href="quick-start-source-log.html">Timing sources</a></p></section>`:''}
     <section class="dialog-section"><h3>Stage history</h3><ol class="timeline">${chronology(c,p)}</ol></section>
     <section class="dialog-section"><h3>Tray notes</h3>
@@ -294,7 +309,7 @@ const track=b=>({action:b.dataset.action,to:b.dataset.to||'',event:b.dataset.eve
 function propose(c,to,{source,trigger}) {
   const offer=M.previewTransition(c,to);
   if (!offer.ok) { if (dialog.open) dialogError(offer.reason);else showError(offer.reason); return; }
-  const fromTray=source==='drawer', p=M.projection(c,now());
+  const fromTray=source==='drawer', p=M.projection(c,now(),guidance), decision=p.germinationDecision;
   const naming={
     blackout:['Begin blackout','Confirm moved to blackout'],
     lights:['Move to lights','Confirm moved to lights'],
@@ -303,11 +318,11 @@ function propose(c,to,{source,trigger}) {
   };
   const [title,save]=naming[to];
   const cues=to==='ended'?[]:p.cues;
-  const actionText=to==='blackout'?c.cropMethodSnapshot.blackoutUse:to==='lights'?'Record when you removed the cover and moved this tray into light.':
+  const actionText=to==='blackout'?(decision?'Record when you replaced the contact cover with a loose dark dome.':c.cropMethodSnapshot.blackoutUse):to==='lights'?'Record when you removed the cover and moved this tray into light.':
     to==='harvested'?'Record when you actually harvested. The tray and its records will move to History.':'This will retain the tray as Ended in History.';
   showDialog('transition',`${title}: ${c.name}?`,fromTray?'Record an actual event':'Proposed move',
     `<p>${esc(actionText)}</p><form>
-    ${to!=='ended'?`<div class="detail-info"><strong>Typical readiness window</strong><p>${esc(currentWindow(p))}</p>${cuesList(cues)}
+    ${to!=='ended'?`<div class="detail-info">${decision?germinationGuide(decision,to==='lights'?'Before you uncover':undefined):`<strong>Typical readiness window</strong><p>${esc(currentWindow(p))}</p>${cuesList(cues)}`}
     ${p.status==='early'||p.status==='past'?'<p class="pl-help">This phase is outside the typical window now. You can still record the action you took.</p>':'<p class="pl-help">Typical, not a guarantee. Use what you observe.</p>'}</div>`:''}
     ${timeFields('Actual event time',now())}
     ${to==='ended'?'<label>Reason (optional) <textarea name="note" maxlength="1500"></textarea></label>':''}
@@ -479,6 +494,14 @@ window.addEventListener('pageshow',refresh);
 setInterval(refresh,30000);
 refresh();
 fetch('data/quick-start-growing-guidance.json').then(r=>{if(!r.ok) throw new Error();return r.json();})
-  .then(doc=>{if(!Array.isArray(doc.crops)) throw new Error();guidance=doc;})
+  .then(doc=>{
+    if(!Array.isArray(doc.crops)) throw new Error();
+    guidance=doc;
+    const c=change?.mode==='tray' && find(change.trayId);
+    if (c && !c.cropMethodSnapshot.germinationDecision && M.projection(c,now(),guidance).germinationDecision) {
+      const active=document.activeElement;
+      openTray(c,null,active instanceof HTMLButtonElement?track(active):null);
+    }
+  })
   .catch(()=>{guidanceError='Crop guidance could not load. Reload Grow Planner to add a tray. Saved trays are still available.';showError(guidanceError);});
 })();

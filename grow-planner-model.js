@@ -97,6 +97,14 @@ const catalogCues = {
   germination:crop=>[crop?.calendar?.exit].filter(Boolean),
   lights:crop=>[crop?.calendar?.harvest,'Inspect several spots across the tray before deciding to cut.'].filter(Boolean)
 };
+const decisionFits = (decision,canBlackout) => object(decision) && range(decision.days)
+  && text(decision.lookFor,400) && text(decision.action,400)
+  && (canBlackout ? ['blackout-recommended','blackout-optional'].includes(decision.nextStep) : decision.nextStep==='direct-light');
+function quickStartDecision(row,canBlackout) {
+  const decision={days:row?.transitionCheckDays || row?.germinationDays, lookFor:row?.germinationReady,
+    action:row?.blackoutUse, nextStep:row?.nextStep};
+  return decisionFits(decision,canBlackout)?{...decision,days:[...decision.days]}:null;
+}
 function snapshot(crop, guidance) {
   const q = guidance?.crops?.find(row=>row.cropId===crop.id && range(row.germinationDays) && text(row.germinationReady,400));
   const reference = anchors[crop.id] || {};
@@ -111,6 +119,7 @@ function snapshot(crop, guidance) {
     return range(days) ? {days:[...days], source:source||recipe.source, label:label||recipe.label} : null;
   }
   const canBlackout = q?.extraBlackoutDays?.[1]>0 || false;
+  const decision = quickStartDecision(q,canBlackout);
   const blackoutRecipe = crop.alternatives?.find(r=>r.id===reference.blackout?.[0]);
   // G09 records one loose blackout day; the other durations come from their named recipes.
   const darkDays = canBlackout ? (crop.id==='radish-daikon' ? 1 : blackoutRecipe?.blackoutDays) : null;
@@ -119,6 +128,7 @@ function snapshot(crop, guidance) {
     dataVersion:CropData.version, reviewed:q ? guidance.reviewed : null, cropId:crop.id, cropName:crop.name,
     recipeId:q?'quick-start':'catalog-estimate', methodLabel:q?'Quick-start inspection guide':'Crop catalog estimate',
     canBlackout, coverRangeDays:q ? [...q.germinationDays] : catalog.cover, blackoutRangeDays:darkDays>0?[darkDays,darkDays]:null,
+    ...(decision && {germinationDecision:decision}),
     directHarvest, blackoutHarvest:q && canBlackout ? timing('blackout') : null,
     readinessCues:{
       germination:q?[germCue[crop.id] || q.germinationReady,q.note].filter(Boolean):catalogCues.germination(crop),
@@ -136,6 +146,7 @@ function validateSnapshot(s, cropId) {
     && (s.reviewed===null||text(s.reviewed)) && text(s.recipeId) && text(s.methodLabel) && typeof s.canBlackout==='boolean'
     && optionalRange(s.coverRangeDays) && optionalRange(s.blackoutRangeDays) && timing(s.directHarvest) && timing(s.blackoutHarvest)
     && (s.canBlackout || s.blackoutRangeDays===null && s.blackoutHarvest===null && s.blackoutUse===null)
+    && (s.germinationDecision===undefined || decisionFits(s.germinationDecision,s.canBlackout))
     && (s.blackoutUse===null || text(s.blackoutUse,400)) && object(s.readinessCues)
     && ACTIVE.every(k=>stringList(s.readinessCues[k],3)) && stringList(s.sourceReferences),
     'The backup contains an invalid crop guidance snapshot.');
@@ -292,7 +303,7 @@ function importBackup(doc, backup) {
   }
   return additions.length?nextDoc(doc,[...doc.cycles,...additions]):doc;
 }
-function projection(cycle, now) {
+function projection(cycle, now, guidance) {
   const history=effectiveHistory(cycle), started=history[0].occurredAt, entry=history.at(-1), current=entry.toPhase;
   const s=cycle.cropMethodSnapshot, dark=history.some(e=>e.toPhase==='blackout');
   // Old backups and saved trays lack some forecasts. Fill gaps in the view so
@@ -319,8 +330,12 @@ function projection(cycle, now) {
     : ACTIVE.includes(current) && lightWindow && harvestMethod
       ? [shift(lightWindow[0],harvestMethod.days[0]),shift(lightWindow[1],harvestMethod.days[1])] : null;
   const savedCues=s.readinessCues[current];
+  // Show the reviewed decision on existing quick-start trays without editing their snapshots.
+  const decision=current==='germination' && (s.germinationDecision || (s.recipeId==='quick-start'
+    && quickStartDecision(guidance?.crops?.find(row=>row.cropId===s.cropId),s.canBlackout)));
   return {history,started,entry,current,age,day:dayDelta(now,started),phaseDay:dayDelta(now,entry.occurredAt),
     dark,days,window,status,stageLabel,harvest,harvestMethod,estimated,
+    germinationDecision:decision?{...decision,window:band(started,decision.days)}:null,
     cues:savedCues?.length?savedCues:(catalogCues[current]?.(crop) || [])};
 }
 function digest(doc, now) {
