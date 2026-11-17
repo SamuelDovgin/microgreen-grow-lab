@@ -4,6 +4,7 @@
 const CropData = typeof module === 'object' ? require('./crop-data.js') : root.CropData;
 const {dateAt} = typeof module === 'object' ? require('./crop-model.js') : root.CropModel;
 const DAY = 86400000, SCHEMA = 'grow-lab-planner/1';
+const MAX_PHOTO_LENGTH = 80*1024;
 const PHASE = {germination:'Germination', blackout:'Optional Blackout', lights:'Under Lights', harvested:'Harvested', ended:'Ended'};
 const ACTIVE = ['germination','blackout','lights'];
 const kindFor = {germination:'germination_started', blackout:'blackout_started', lights:'lights_started', harvested:'harvested', ended:'ended'};
@@ -180,6 +181,14 @@ function withinTimeline(rows, index) {
   return (index===0 || current>=time(rows[index-1].occurredAt)) &&
     (index===rows.length-1 || current<=time(rows[index+1].occurredAt));
 }
+function validateHarvest(harvest) {
+  requireThat(object(harvest),'The tray contains invalid harvest details.');
+  const {weightG,note,photo}=harvest;
+  requireThat(weightG===null || Number.isFinite(weightG) && weightG>=0,'Enter a nonnegative harvest weight in grams.');
+  requireThat(note===null || text(note,1500),'Enter a harvest note up to 1,500 characters.');
+  requireThat(photo===null || typeof photo==='string' && photo.length<=MAX_PHOTO_LENGTH &&
+    /^data:image\/jpeg;base64,\/9j\/[A-Za-z0-9+/]*={0,2}$/.test(photo),'The tray contains an invalid harvest photo.');
+}
 function validate(doc) {
   requireThat(object(doc) && doc.schema===SCHEMA && revision(doc.revision) && Array.isArray(doc.cycles)
     && (doc.exportedAt===undefined||isInstant(doc.exportedAt)), 'This is not a supported Grow Planner backup.');
@@ -219,6 +228,10 @@ function validate(doc) {
           requireThat(withinTimeline(effective,j),'This time would put stages out of order. It must be between the preceding and following actual stages.');
         } else requireThat(e.kind==='note_added' && text(e.note,1500),'The history contains an invalid event.');
       }
+    }
+    if (c.harvest!==undefined) {
+      requireThat(from==='harvested','Harvest details require a harvested tray.');
+      validateHarvest(c.harvest);
     }
   }
   return doc;
@@ -261,19 +274,44 @@ function previewTransition(cycle, to) {
   if (ACTIVE.indexOf(to)>=0 && ACTIVE.indexOf(to)<ACTIVE.indexOf(from)) return {ok:false,reason:'That would reverse a recorded stage. Open the tray and use Correct time to fix a timestamp.'};
   return {ok:false,reason:'This stage change is unavailable.'};
 }
-function append(doc, input, build) {
+function updateTray(doc, input, update) {
   requireThat(input.expectedRevision===doc.revision,'Planner changed in another tab or this action was already saved. Reopen the tray and review its history.');
   const c=doc.cycles.find(c=>c.id===input.trayId);
   requireThat(c,'This tray is no longer available.');
-  return nextDoc(doc,doc.cycles.map(row=>row===c ? {...c,revision:c.revision+1,events:[...c.events,build(c)]} : row));
+  const next=update(c);
+  return next===c ? doc : nextDoc(doc,doc.cycles.map(row=>row===c ? next : row));
+}
+function withEvent(c,event) {
+  return {...c,revision:c.revision+1,events:[...c.events,event]};
+}
+function append(doc, input, build) {
+  return updateTray(doc,input,c=>withEvent(c,build(c)));
+}
+function withHarvest(c,{weightG=null,note=null,photo=null}={}) {
+  const harvest={weightG,note:typeof note==='string' ? note.trim()||null : note,photo};
+  validateHarvest(harvest);
+  if (!c.harvest && weightG===null && !harvest.note && !photo) return c;
+  if (c.harvest?.weightG===weightG && c.harvest.note===harvest.note && c.harvest.photo===photo) return c;
+  const next={...c};
+  if (weightG!==null || harvest.note || photo) next.harvest=harvest;
+  else delete next.harvest;
+  return next;
 }
 function confirmTransition(doc, input, {now,id}) {
-  return append(doc,input,c=>{
+  return updateTray(doc,input,c=>{
     const result=previewTransition(c,input.toPhase);
     requireThat(result.ok,result.reason);
     const occurredAt=enteredAt(input.occurredAt,now,time(effectiveHistory(c).at(-1).occurredAt));
     const note=input.toPhase==='ended' && input.note?.trim();
-    return {id:id(),kind:kindFor[input.toPhase],fromPhase:result.from,toPhase:input.toPhase,occurredAt,recordedAt:stamp(now),...(note?{note}:{})};
+    const event={id:id(),kind:kindFor[input.toPhase],fromPhase:result.from,toPhase:input.toPhase,occurredAt,recordedAt:stamp(now),...(note?{note}:{})};
+    const next=withEvent(c,event);
+    return input.toPhase==='harvested' && input.harvest ? withHarvest(next,input.harvest) : next;
+  });
+}
+function saveHarvest(doc,input) {
+  return updateTray(doc,input,c=>{
+    requireThat(phase(c)==='harvested','Mark this tray harvested before adding harvest details.');
+    return withHarvest(c,input.harvest);
   });
 }
 function correctEvent(doc, input, {now,id}) {
@@ -371,8 +409,8 @@ function daypart(now) {
   const h=new Date(now).getHours();
   return h<12?'morning':h<17?'midday':'evening';
 }
-const api={DAY,SCHEMA,PHASE,ACTIVE,empty,active,phase,parse,validate,createTray,previewTransition,confirmTransition,
-  correctEvent,addNote,importBackup,projection,digest,agenda,notes,effectiveHistory,localInstant,localInput,timeOptions,zoneAt,
+const api={DAY,SCHEMA,PHASE,ACTIVE,MAX_PHOTO_LENGTH,empty,active,phase,parse,validate,createTray,previewTransition,confirmTransition,
+  saveHarvest,correctEvent,addNote,importBackup,projection,digest,agenda,notes,effectiveHistory,localInstant,localInput,timeOptions,zoneAt,
   formatTime,dayKey,dayDelta,startOfWeek,weekDay,bandText,eventLabel,daypart};
 if (typeof module==='object') module.exports=api; else root.GrowPlannerModel=api;
 })(typeof window==='undefined'?globalThis:window);

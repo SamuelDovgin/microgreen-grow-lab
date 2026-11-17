@@ -30,6 +30,8 @@ const guideText='No reliable standard window stored. Use the crop guide and what
 const getCardName=c=>c.name===c.cropMethodSnapshot.cropName?'':c.cropMethodSnapshot.cropName;
 const flag=p=>p.current==='lights'&&['early','none'].includes(p.status)?'Growing under lights':labels[p.status];
 const timestamp=(at,compact=false)=>`<time datetime="${esc(at)}">${esc(M.formatTime(at,compact))}</time>`;
+const harvestWeight=c=>c.harvest?.weightG!=null?`${c.harvest.weightG} g`:'';
+const harvestPhoto=(src,alt)=>`<img class="harvest-photo" src="${esc(src)}" alt="${esc(alt)}">`;
 const estimateDates=window=>{
   const text=window.map(at=>dateShort.format(new Date(at)));
   return text[0]===text[1]?text[0]:text.join(' – ');
@@ -127,7 +129,7 @@ function renderCalendar(doc,instant) {
 function renderHistory(doc) {
   const rows=doc.cycles.filter(c=>!M.ACTIVE.includes(M.phase(c))).map(c=>({c,e:M.effectiveHistory(c).at(-1)}))
     .sort((a,b)=>Date.parse(b.e.occurredAt)-Date.parse(a.e.occurredAt));
-  setHTML(el('history'),rows.length?`<div class="past-list">${rows.map(({c,e})=>`<button type="button" class="past-grow" data-action="open" ${trayAttrs(c,'history')}><strong>${esc(c.name)}</strong><span>${M.PHASE[e.toPhase]}</span><small>${timestamp(e.occurredAt)}</small></button>`).join('')}</div>`:'<div class="lane-empty">Harvested and ended trays will appear here with their complete history.</div>');
+  setHTML(el('history'),rows.length?`<div class="past-list">${rows.map(({c,e})=>`<button type="button" class="past-grow" data-action="open" ${trayAttrs(c,'history')}><strong>${esc(c.name)}</strong><span>${M.PHASE[e.toPhase]}</span>${harvestWeight(c)?`<span>${harvestWeight(c)}</span>`:''}<small>${timestamp(e.occurredAt)}</small></button>`).join('')}</div>`:'<div class="lane-empty">Harvested and ended trays will appear here with their complete history.</div>');
 }
 function render() {
   if (dragId) return;
@@ -272,6 +274,24 @@ function chronology(c,p) {
   }
   return rows.join('');
 }
+function harvestSummary(c) {
+  const h=c.harvest;
+  return `<section class="dialog-section"><h3>Harvest details</h3>
+    ${harvestWeight(c)?`<p>Final harvest weight <strong>${harvestWeight(c)}</strong></p>`:''}
+    ${h?.note?`<p class="note-text">${esc(h.note)}</p>`:''}
+    ${h?.photo?harvestPhoto(h.photo,`Harvest photo for ${c.name}`):''}
+    <div class="pl-actions">${button(h?'Edit harvest details':'Add harvest details','harvest')}</div></section>`;
+}
+function harvestFields(h={}) {
+  return `<fieldset class="harvest-fields"><legend>Harvest details (optional)</legend>
+    <label>Final harvest weight (g) <input type="number" name="weightG" min="0" step="any" inputmode="decimal" value="${esc(h.weightG)}"></label>
+    <label>Harvest notes <textarea name="harvestNote" maxlength="1500">${esc(h.note)}</textarea></label>
+    ${h.photo?`${harvestPhoto(h.photo,'Current harvest photo')}
+      <label class="harvest-remove"><input type="checkbox" name="removePhoto"> Remove current photo</label>`:''}
+    <label>${h.photo?'Replace harvest photo':'Harvest photo'} <input type="file" name="photo" accept="image/*" aria-describedby="harvest-photo-help"></label>
+    <p id="harvest-photo-help" class="pl-help">The planner resizes photos and includes them in backups.</p>
+    </fieldset>`;
+}
 function openTray(c,origin=null,backFocus=null) {
   const p=M.projection(c,now(),guidance), live=M.ACTIVE.includes(p.current), decision=p.germinationDecision;
   const move=(label,dest,primary=false)=>button(label,'transition',`data-to="${dest}"`,primary?'pl-primary':'');
@@ -292,6 +312,7 @@ function openTray(c,origin=null,backFocus=null) {
     ${live?`<section class="dialog-section">
     ${decision?'':`<h3>What to look for</h3><p>${esc(currentWindow(p))}</p>${cuesList(p.cues)}`}
     ${harvestDetail(p)}<p class="pl-help">Typical timing. Use what you observe. <a href="crops.html">Crop guide</a> · <a href="quick-start-source-log.html">Timing sources</a></p></section>`:''}
+    ${p.current==='harvested'?harvestSummary(c):''}
     <section class="dialog-section"><h3>Stage history</h3><ol class="timeline">${chronology(c,p)}</ol></section>
     <section class="dialog-section"><h3>Tray notes</h3>
       ${notes.length?notes.map(e=>`<div><p class="note-text">${esc(e.note)}</p><p class="pl-help">Recorded ${timestamp(e.recordedAt)}</p></div>`).join(''):'<p class="pl-help">No notes yet.</p>'}
@@ -322,9 +343,10 @@ function propose(c,to,{source,trigger}) {
     to==='harvested'?'Record when you actually harvested. The tray and its records will move to History.':'This will retain the tray as Ended in History.';
   showDialog('transition',`${title}: ${c.name}?`,fromTray?'Record an actual event':'Proposed move',
     `<p>${esc(actionText)}</p><form>
-    ${to!=='ended'?`<div class="detail-info">${decision?germinationGuide(decision,to==='lights'?'Before you uncover':undefined):`<strong>Typical readiness window</strong><p>${esc(currentWindow(p))}</p>${cuesList(cues)}`}
+    ${to!=='ended'&&to!=='harvested'?`<div class="detail-info">${decision?germinationGuide(decision,to==='lights'?'Before you uncover':undefined):`<strong>Typical readiness window</strong><p>${esc(currentWindow(p))}</p>${cuesList(cues)}`}
     ${p.status==='early'||p.status==='past'?'<p class="pl-help">This phase is outside the typical window now. You can still record the action you took.</p>':'<p class="pl-help">Typical, not a guarantee. Use what you observe.</p>'}</div>`:''}
     ${timeFields('Actual event time',now())}
+    ${to==='harvested'?harvestFields():''}
     ${to==='ended'?'<label>Reason (optional) <textarea name="note" maxlength="1500"></textarea></label>':''}
     ${formFooter(save)}</form>`,{trayId:c.id,to,source,fromTray,backFocus:trigger&&track(trigger)},source==='drag'?trigger:null);
   refreshFold();
@@ -342,6 +364,30 @@ function editNote(c,b) {
   showDialog('note','Add note',c.name,`<form><label>Note <textarea name="note" required maxlength="1500"></textarea></label>${formFooter('Save note')}</form>`,
     {trayId:c.id,fromTray:true,backFocus:track(b)});
 }
+function editHarvest(c,b) {
+  showDialog('harvest','Harvest details',c.name,`<form>${harvestFields(c.harvest)}${formFooter('Save harvest details')}</form>`,
+    {trayId:c.id,fromTray:true,backFocus:track(b)});
+}
+async function resizeHarvestPhoto(file) {
+  const url=URL.createObjectURL(file), img=new Image();
+  try {
+    img.src=url;
+    try { await img.decode(); }
+    catch { throw new Error('Could not open that photo. Choose a JPEG, PNG, or another supported image.'); }
+    const canvas=document.createElement('canvas'), ctx=canvas.getContext('2d');
+    for (const [size,quality] of [[800,.76],[640,.68],[440,.62],[280,.55]]) {
+      const scale=Math.min(1,size/Math.max(img.naturalWidth,img.naturalHeight));
+      canvas.width=Math.max(1,Math.round(img.naturalWidth*scale));
+      canvas.height=Math.max(1,Math.round(img.naturalHeight*scale));
+      ctx.fillStyle='#fff';
+      ctx.fillRect(0,0,canvas.width,canvas.height);
+      ctx.drawImage(img,0,0,canvas.width,canvas.height);
+      const photo=canvas.toDataURL('image/jpeg',quality);
+      if (photo.startsWith('data:image/jpeg;base64,') && photo.length<=M.MAX_PHOTO_LENGTH) return photo;
+    }
+    throw new Error('Could not resize that photo. Choose a smaller image.');
+  } finally { URL.revokeObjectURL(url); }
+}
 async function submit(event) {
   const form=event.target;
   if (!(form instanceof HTMLFormElement) || !change || busy) return;
@@ -350,15 +396,22 @@ async function submit(event) {
   busy=true;submitButton.disabled=true;
   status('');dialogError();
   try {
-    const opts={now:now(),id,guidance};
     const local=`${data.get('date')}T${data.get('time')}`;
     const occurredAt=form.elements.date ? data.get('fold')||M.localInstant(local):null;
     const note=data.get('note'), input={trayId:state.trayId,expectedRevision:state.expected,occurredAt,note};
+    if (form.elements.weightG) {
+      const weight=data.get('weightG'), file=data.get('photo');
+      const previous=data.has('removePhoto')?null:find(state.trayId)?.harvest?.photo;
+      input.harvest={weightG:weight===''?null:Number(weight),note:data.get('harvestNote'),
+        photo:file.name?await resizeHarvestPhoto(file):previous};
+    }
+    const opts={now:now(),id,guidance};
     const updates={
       create:d=>M.createTray(d,{cropId:data.get('crop'),startedAt:occurredAt,name:data.get('label'),note},opts),
       transition:d=>M.confirmTransition(d,{...input,toPhase:state.to,source:state.source},opts),
       correct:d=>M.correctEvent(d,{...input,eventId:state.eventId},opts),
       note:d=>M.addNote(d,input,opts),
+      harvest:d=>M.saveHarvest(d,input),
       import:d=>M.importBackup(d,state.backup)
     };
     const before=store.current(), next=await store.commit(state.expected,updates[state.mode]);
@@ -416,6 +469,7 @@ document.addEventListener('click',event=>{
   if (action==='transition'&&c) propose(c,b.dataset.to,{source:'drawer',trigger:b});
   if (action==='correct'&&c) editTime(c,b.dataset.event,b);
   if (action==='note'&&c) editNote(c,b);
+  if (action==='harvest'&&c) editHarvest(c,b);
   if (['board','calendar','history'].includes(action)) chooseView(action);
   if (['prev','next','today'].includes(action)) {
     if (action==='today') {weekOffset=0;weekAnchor=M.startOfWeek(now());}

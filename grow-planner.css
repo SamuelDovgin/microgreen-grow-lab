@@ -124,6 +124,11 @@
 .planner dialog textarea { min-height:82px; resize:vertical; }
 .fields-two { display:grid; grid-template-columns:1.2fr 1fr; gap:8px; }
 .dialog-section { display:grid; gap:8px; padding-top:11px; border-top:1px solid var(--pl-line); }
+.harvest-fields { display:grid; gap:10px; min-width:0; margin:0; padding:10px; border:1px solid var(--pl-line); border-radius:9px; }
+.harvest-fields legend { padding:0 4px; font-weight:720; }
+.harvest-photo { display:block; max-width:100%; max-height:280px; object-fit:contain; border-radius:8px; }
+.planner dialog .harvest-remove { display:flex; align-items:center; gap:8px; }
+.planner dialog .harvest-remove input { width:18px; min-height:32px; margin:0; }
 .cues { margin:4px 0; padding-left:21px; font-size:14px; }
 .cues li+li { margin-top:4px; }
 .detail-info { background:#eef3e8; border-radius:9px; padding:10px; }
