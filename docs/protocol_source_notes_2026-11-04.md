@@ -53,3 +53,72 @@ Sources accessed November 4, 2026: [D41, On The Grow transition guide](https://o
 The daily target is a planning budget. At nominal 200 in², 2.0 mm/day is about 258 mL or 1.09 cups for broccoli and 3.7 mm/day is about 477 mL or 2.02 cups for sunflower late under lights. Those values are editable. Peas, wheatgrass and radish have higher planning defaults than most fine herbs. Sensitivity changes the displayed range. The late-to-early ramp is illustrative, and spray, initial coir hydration and soaking have separate purposes.
 
 The higher-use defaults reflect grower context, not a controlled comparison of crop water loss. A Reddit grower describes sunflower, peas, radish and wheatgrass sometimes using twice their typical under-light amount. Bootstrap Farmer describes bottom watering and checking the medium after absorption. Replace the estimate with observations from your trays as soon as available. [D35 grower discussion](https://www.reddit.com/r/microgreens/comments/uqvwd0/) · [D36 watering method](https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best) · [D16 Microgreen Manager](https://microgreenmanager.com/blog/top-or-bottom-watering)
+
+
+## Heights at every stage
+
+*Updated November 17, 2026. Applies to all 55 catalog profiles, Grow Planner trays (including existing saved trays), quick-start cards and daily crop calendars.*
+
+Measure from the **medium surface to the top of a typical upright shoot**, checking several spots. Do not measure from the tray rim, include roots, or mistake contact-tray lift for shoot height. At sowing the above-medium shoot height is **0 inches**. During germination, plants develop toward the existing crop/group light-readiness range; it is an approximate end-of-stage inspection cue, not an instruction to hold pressure on elongating shoots. Remove pressure when shoots lift or bend beneath the contact tray. Loose blackout is used only by the selected method; never add or prolong it just to meet an inch target. See the earlier height/uncovering notes and H05.
+
+Under lights, the height shown is the **harvest inspection range**, not a predicted height for that day. Leaf development, anchorage, upright stems and tenderness remain the deciding observations. The planner does not change dates, automatically advance stages, or rewrite stored events when height guidance is displayed.
+
+| Functional crop group | Approximate harvest inspection height |
+|---|---|
+| Brassicas, radish, Apiaceae herbs, beet/chard | 2–3 inches |
+| Basil/chia, shiso, amaranth, lettuce/chicory, sorrel, Gem marigold | 1–2 inches |
+| Mung/soybean/lentil/fenugreek, alliums, nasturtium, cantaloupe | 2–4 inches |
+| Sunflower | 3–5 inches |
+| Pea shoots | 4–5 inches |
+| Wheatgrass | 6–7 inches |
+
+**What this section found:** General sources use different product sizes: Maryland's extension table gives 2–3 inches (H01), while Johnny's describes a smaller 0.5–2 inch product (H02). Therefore the group ranges above are explicitly **editorial estimates**, except the teaching-guide pea cue (H03) and supplier wheatgrass cue (H04). These are starting points for inspection, not tested optima for each cultivar. Mung's 2–4 inch range is an editorial legume estimate; its supplier describes a short lit cycle without a verified inch endpoint. Keep its tender green seed-leaf cue. Do not wait for extra height once a crop reaches its desired leaf stage or becomes tough. The 55 per-crop tables retain each crop's harvest morphology and identify the estimate basis.
+
+### Height source notebook · November 17, 2026
+
+**H01 — University of Maryland Extension, Growing Microgreens and Baby Greens Indoors.**
+URL: https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors
+Accessed: 2026-11-17; live public HTML.
+Class: primary extension growing guidance.
+Used in: group harvest inspection estimates, crop catalog, daily schedule and Grow Planner.
+Supports/key record: general table gives microgreens 2–3 inches at 7–21 days; contrasts baby greens at 4–6 inches. No replicated cultivar-height comparison is reported.
+Limits: general product description does not verify all group ranges or a mandatory harvest minimum. The selected 1–2, 2–4 and 3–5 inch group estimates are editorial adaptations, not quotations from this source.
+Local preservation: URL-only; original claim/limitations preserved here; full copyrighted webpage not redistributed.
+
+**H02 — Johnny's Selected Seeds, fast-growing microgreens comparison chart (2023).**
+URL: https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf
+Accessed: 2026-11-17; live public two-page PDF.
+Class: primary seed-supplier growing guidance.
+Used in: smaller/delicate crop-group inspection estimates and uncertainty wording.
+Supports/key record: page 2 general harvest section describes 0.5–2 inch micros, developed cotyledons or emerging true leaves; product size and conditions affect timing.
+Limits: not a height experiment for each listed cultivar; does not establish 1–2 inches as an optimum for all herbs. Maryland describes a larger general product.
+Local preservation: URL-only; original paraphrase retained here; copyrighted supplier chart not republished.
+
+**H03 — Cooking with Kids, Pea Tasting, Grades 2–3 (2019), Cornell Cooperative Extension hosted curriculum.**
+URL: https://s3.amazonaws.com/assets.cce.cornell.edu/attachments/42247/Cooking-with-Kids_Pea-Tasting_Grades-2-3.pdf?1579887714=
+Accessed: 2026-11-17; live public 17-page PDF.
+Class: primary educational growing activity, not a controlled agronomic trial.
+Used in: pea-basic and pea-tendril harvest inspection height.
+Supports/key record: page 4 describes a flat-grown pea-shoot activity with harvest at 4–5 inches around activity days 10–11.
+Limits: cultivar is not specified; applying this to both pea profiles is approximate. Other sow/soak/light/watering instructions do not replace the selected recipes. Days are not imported into planner timing.
+Local preservation: URL-only; short original support note retained here; full curriculum not redistributed.
+
+**H04 — True Leaf Market, Wheatgrass Growing Kit Instructions.**
+URL: https://trueleafmarket.com/pages/wheatgrass-kit-instructions
+Accessed: 2026-11-17; live public HTML.
+Class: primary seed-supplier kit instructions.
+Used in: wheatgrass harvest inspection height.
+Supports/key record: remove the covering at 1–2 inches; harvest grass at 6–7 inches.
+Limits: supplier instructions, no cultivar-specific height experiment. Only height guidance is adopted. Nutrition/consumption claims and mold-handling advice are not adopted. The sunflower group estimate is not attributed to the wheatgrass endpoint.
+Local preservation: URL-only; original claim/limitations retained here; full copyrighted webpage not redistributed.
+
+**H05 — Existing quick-start grower comparison.**
+Local records: data/quick-start-growing-guidance.json and source_docs/research_resource_log_2026-11-09.txt, especially G04/G09/G11/G12 and G15.
+Accessed: 2026-11-17; local archive.
+Class: local synthesis of firsthand grower/supplier guidance, not new independent evidence.
+Used in: end-of-optional-blackout heights for broccoli, Daikon radish, sunflower and field pea.
+Supports/key record: method-dependent light-entry cues about 1–2 inches for the first three and about 0.75–1.25 inches for early-light pea. Existing direct-light group cues stay separate from longer-stem methods.
+Limits: these are light-entry cues, not a universal minimum for beginning loose blackout. Move earlier if stems lean, crowd or tangle.
+Local preservation: existing JSON and original source notebook; no new full-page copies.
+
+**Cross-checks/discovery:** Existing D67 (MP Seeds mung page, live rechecked November 17) specifies 3–4 germination days plus roughly three lit days without a verified height. True Leaf's Speckled Pea page was also checked and supplied no inch endpoint; H03 supplies the approximate harvest-height cue. Johnny's year-round growing page and Bootstrap Farmer's cheat-sheet page were checked for height detail; their existing method records remain unchanged. Search-only results and an inaccessible guessed wheatgrass blog URL do not supply any recommendations.

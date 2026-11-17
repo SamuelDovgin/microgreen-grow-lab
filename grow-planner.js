@@ -250,6 +250,16 @@ function germinationGuide(decision,heading=decision.nextStep==='direct-light'?'W
     <p><strong>Look for:</strong> ${esc(lookFor)}</p>
     <p><strong>When ready:</strong> ${esc(action)}</p>`;
 }
+function heightGuide(height) {
+  if (!height) return '';
+  return `<div class="height-guide"><p><strong>${esc(height.label)}: about ${esc(height.height)} tall.</strong></p>
+    <p>${esc(height.cue)}</p><p class="pl-help">Measure from the medium surface to the top of a typical shoot, in several spots. ${esc(height.basis)} <a href="crop-calendar-sources.html#heights-at-every-stage">Height sources &amp; limits</a></p></div>`;
+}
+function stageHeights(p) {
+  return `<details class="stage-heights"><summary>Height recommendations for every stage</summary><dl>
+    ${p.stageHeights.map(h=>`<dt>${esc({sow:'Sowing',germination:'End of germination',blackout:'End of optional blackout',lights:'Under lights → harvest'}[h.phase])}</dt><dd><strong>About ${esc(h.height)}.</strong> ${esc(h.basis)}</dd>`).join('')}
+    </dl><p class="pl-help">Shoot height above the medium, not above the tray rim. Ranges guide inspection; leaf stage, rooting and stem strength decide readiness.</p></details>`;
+}
 function harvestDetail(p) {
   if (!M.ACTIVE.includes(p.current)) return '';
   if (!p.harvest) return '<p>Harvest estimate unavailable for this method or stage path.</p>';
@@ -308,11 +318,12 @@ function openTray(c,origin=null,backFocus=null) {
       <p>Germination started ${timestamp(p.started)}.</p>
       ${live?`<p><strong>Day ${p.day}</strong> · ${Math.max(0,Math.round(p.age*240)/10)} hours since ${p.current==='germination'?'sowing':p.current==='blackout'?'starting blackout':'moving to light'}.</p>`:''}
     </section>
-    ${decision?`<section class="dialog-section">${germinationGuide(decision)}${actions}</section>`:actions}
+    ${decision?`<section class="dialog-section">${germinationGuide(decision)}${heightGuide(p.height)}${actions}</section>`:actions}
     ${live?`<section class="dialog-section">
-    ${decision?'':`<h3>What to look for</h3><p>${esc(currentWindow(p))}</p>${cuesList(p.cues)}`}
+    ${decision?'':`<h3>What to look for</h3><p>${esc(currentWindow(p))}</p>${heightGuide(p.height)}${cuesList(p.cues)}`}
     ${harvestDetail(p)}<p class="pl-help">Typical timing. Use what you observe. <a href="crops.html">Crop guide</a> · <a href="quick-start-source-log.html">Timing sources</a></p></section>`:''}
     ${p.current==='harvested'?harvestSummary(c):''}
+    ${stageHeights(p)}
     <section class="dialog-section"><h3>Stage history</h3><ol class="timeline">${chronology(c,p)}</ol></section>
     <section class="dialog-section"><h3>Tray notes</h3>
       ${notes.length?notes.map(e=>`<div><p class="note-text">${esc(e.note)}</p><p class="pl-help">Recorded ${timestamp(e.recordedAt)}</p></div>`).join(''):'<p class="pl-help">No notes yet.</p>'}
@@ -343,7 +354,8 @@ function propose(c,to,{source,trigger}) {
     to==='harvested'?'Record when you actually harvested. The tray and its records will move to History.':'This will retain the tray as Ended in History.';
   showDialog('transition',`${title}: ${c.name}?`,fromTray?'Record an actual event':'Proposed move',
     `<p>${esc(actionText)}</p><form>
-    ${to!=='ended'&&to!=='harvested'?`<div class="detail-info">${decision?germinationGuide(decision,to==='lights'?'Before you uncover':undefined):`<strong>Typical readiness window</strong><p>${esc(currentWindow(p))}</p>${cuesList(cues)}`}
+    ${to!=='ended'?`<div class="detail-info">${decision?germinationGuide(decision,to==='lights'?'Before you uncover':undefined):`<strong>Typical readiness window</strong><p>${esc(currentWindow(p))}</p>${cuesList(cues)}`}
+    ${heightGuide(to==='lights'?p.stageHeights.find(h=>h.phase===p.current):p.height)}
     ${p.status==='early'||p.status==='past'?'<p class="pl-help">This phase is outside the typical window now. You can still record the action you took.</p>':'<p class="pl-help">Typical, not a guarantee. Use what you observe.</p>'}</div>`:''}
     ${timeFields('Actual event time',now())}
     ${to==='harvested'?harvestFields():''}

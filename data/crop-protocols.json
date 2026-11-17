@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-14",
+  "version": "2026-11-17",
   "retiredCropIds": {
     "pea-speckled": {
       "cropId": "pea-basic",
@@ -377,12 +377,33 @@
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
           "D32"
         ],
-        "waterBasis": "Lower starting scenario; grower reports 1–2 cups/day in its setup."
+        "waterBasis": "Lower starting scenario; grower reports 1–2 cups/day in its setup.",
+        "blackoutReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Quick-start light-transition cue after optional stretch; move earlier if stems lean.",
+          "sources": [
+            "H05"
+          ]
+        }
       },
       "provenance": {
         "density": "P01",
@@ -659,13 +680,34 @@
           ],
           "check": "Even rooted emergence, before stems tangle beneath the cover."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 3.1,
         "waterSources": [
           "D16",
           "D35"
         ],
-        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate.",
+        "blackoutReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Quick-start light-transition cue after optional stretch; move earlier if stems lean.",
+          "sources": [
+            "H05"
+          ]
+        }
       },
       "provenance": {
         "density": "U02: user-selected 30.8 g next-tray trial",
@@ -768,6 +810,17 @@
           ],
           "check": "Even rooted emergence, before stems tangle beneath the cover."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 3.1,
         "waterSources": [
@@ -869,6 +922,17 @@
             "D41"
           ],
           "check": "Even rooted emergence, before stems tangle beneath the cover."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 3.1,
@@ -1041,6 +1105,17 @@
             "D41"
           ],
           "check": "Even rooted emergence, before stems tangle beneath the cover."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 3.1,
@@ -1280,6 +1355,17 @@
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -1451,6 +1537,17 @@
             "D41"
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 2,
@@ -1656,6 +1753,17 @@
             "D41"
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 2,
@@ -1864,6 +1972,17 @@
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2069,6 +2188,17 @@
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2242,6 +2372,17 @@
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2413,6 +2554,17 @@
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2548,6 +2700,17 @@
             "D41"
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 2,
@@ -2685,6 +2848,17 @@
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -2786,6 +2960,17 @@
             "D41"
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 2,
@@ -2992,6 +3177,17 @@
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -3196,6 +3392,17 @@
             "D41"
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 2,
@@ -3436,6 +3643,17 @@
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -3572,6 +3790,17 @@
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -3674,6 +3903,17 @@
             "D41"
           ],
           "check": "Roots anchor; a broad, even stand emerges. Remove the contact cover before shoots bend or interlock."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 2,
@@ -3956,6 +4196,17 @@
           ],
           "check": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -4094,6 +4345,17 @@
             "D44"
           ],
           "check": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 1.6,
@@ -4270,6 +4532,17 @@
           ],
           "check": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -4445,6 +4718,17 @@
           ],
           "check": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -4585,6 +4869,17 @@
             "D44"
           ],
           "check": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 1.6,
@@ -4753,6 +5048,17 @@
             "D41"
           ],
           "check": "An even rooted stand; germination can be lot- and cultivar-sensitive."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 1.6,
@@ -4959,6 +5265,17 @@
           ],
           "check": "An even rooted stand; germination can be lot- and cultivar-sensitive."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -5163,6 +5480,17 @@
             "D41"
           ],
           "check": "An even rooted stand; germination can be lot- and cultivar-sensitive."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 1.6,
@@ -5402,6 +5730,17 @@
             "D41"
           ],
           "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 1.6,
@@ -5673,6 +6012,17 @@
           ],
           "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -5879,6 +6229,17 @@
             "D41"
           ],
           "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 1.6,
@@ -6119,6 +6480,17 @@
           ],
           "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -6325,6 +6697,17 @@
             "D41"
           ],
           "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 1.6,
@@ -6533,6 +6916,17 @@
           ],
           "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -6739,6 +7133,17 @@
             "D41"
           ],
           "check": "Rooted, reasonably even emergence; do not wait for every late seed at the expense of the leading stand."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 1.6,
@@ -6977,6 +7382,17 @@
           ],
           "check": "Anchored roots and emerging cotyledons; evaluate hull shedding before removing the contact cover."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -7214,6 +7630,17 @@
           ],
           "check": "Anchored roots and emerging cotyledons; evaluate hull shedding before removing the contact cover."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            3
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2,
         "waterSources": [
@@ -7418,6 +7845,17 @@
             "D41"
           ],
           "check": "Fine roots anchor and seedlings emerge; avoid crushing the delicate stand."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 1.5,
@@ -7740,13 +8178,33 @@
           ],
           "check": "Strong anchored shoots lifting the contact cover; prevent unstable tall stacks."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            4,
+            5
+          ],
+          "basis": "Teaching-guide height cue; cultivar and desired leaf stage may differ.",
+          "sources": [
+            "H03"
+          ]
+        },
         "litCare": "",
         "demand": 3.7,
         "waterSources": [
           "D16",
           "D35"
         ],
-        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate."
+        "waterBasis": "Editorial family planning scenario. Use tray measurements to calibrate.",
+        "blackoutReadiness": {
+          "heightIn": [
+            0.75,
+            1.25
+          ],
+          "basis": "Quick-start light-transition cue after optional stretch; move earlier if stems lean.",
+          "sources": [
+            "H05"
+          ]
+        }
       },
       "provenance": {
         "density": "P01",
@@ -7960,6 +8418,16 @@
             "D46"
           ],
           "check": "Strong anchored shoots lifting the contact cover; prevent unstable tall stacks."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            4,
+            5
+          ],
+          "basis": "Teaching-guide height cue; cultivar and desired leaf stage may differ.",
+          "sources": [
+            "H03"
+          ]
         },
         "litCare": "",
         "demand": 3.7,
@@ -8432,13 +8900,34 @@
           ],
           "check": "Strong, even roots and shoots lifting the cover; avoid stacked seed layers."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            3,
+            5
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "Check for trapped hulls after blackout. If needed, soften them with a targeted mist and gently lift loose hulls; let the foliage dry.",
         "demand": 3.7,
         "waterSources": [
           "D31",
           "D35"
         ],
-        "waterBasis": "High-use planning scenario; grower example is about one cup at a time, once or twice daily."
+        "waterBasis": "High-use planning scenario; grower example is about one cup at a time, once or twice daily.",
+        "blackoutReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Quick-start light-transition cue after optional stretch; move earlier if stems lean.",
+          "sources": [
+            "H05"
+          ]
+        }
       },
       "provenance": {
         "density": "U02: user-selected 117 g next-tray trial",
@@ -8647,6 +9136,17 @@
           ],
           "check": "Emergence and root anchoring; vent promptly to avoid humid stagnant conditions."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 1.7,
         "waterSources": [
@@ -8854,6 +9354,17 @@
           ],
           "check": "Rooted loops/green shoots appearing across the tray; inspect hulls and anchorage."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            4
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 1.7,
         "waterSources": [
@@ -8955,6 +9466,17 @@
           ],
           "check": "Rooted loops/green shoots appearing across the tray; inspect hulls and anchorage."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            4
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 1.7,
         "waterSources": [
@@ -9055,6 +9577,17 @@
             "D41"
           ],
           "check": "Rooted loops/green shoots appearing across the tray; inspect hulls and anchorage."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            4
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 1.7,
@@ -9295,6 +9828,17 @@
           ],
           "check": "Anchored shoots emerging through the top dress."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            4
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2.3,
         "waterSources": [
@@ -9465,6 +10009,17 @@
             "D41"
           ],
           "check": "An established stand; avoid drying the top layer during slow emergence."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 1.5,
@@ -9638,6 +10193,17 @@
           ],
           "check": "Uniform anchored cotyledon emergence."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            4
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2.3,
         "waterSources": [
@@ -9739,6 +10305,17 @@
             "D41"
           ],
           "check": "Even emerged stand with anchored roots."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 1.6,
@@ -9874,6 +10451,17 @@
           ],
           "check": "Uniform emergence and anchored roots; progressively vent/remove the dome before excess humidity accumulates."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            1,
+            2
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 1.6,
         "waterSources": [
@@ -10007,6 +10595,17 @@
             "D41"
           ],
           "check": "Anchored, even emergence; monitor seed decay independently of crop size."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            4
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 2.3,
@@ -10261,6 +10860,17 @@
           ],
           "check": "Anchored, even emergence; monitor seed decay independently of crop size."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            4
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2.3,
         "waterSources": [
@@ -10401,6 +11011,17 @@
           ],
           "check": "Anchored, even emergence; monitor seed decay independently of crop size."
         },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            4
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
+        },
         "litCare": "",
         "demand": 2.3,
         "waterSources": [
@@ -10502,6 +11123,17 @@
             "D41"
           ],
           "check": "Anchored, even emergence; monitor seed decay independently of crop size."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            2,
+            4
+          ],
+          "basis": "Editorial group estimate; no crop-specific harvest-height trial verified.",
+          "sources": [
+            "H01",
+            "H02"
+          ]
         },
         "litCare": "",
         "demand": 2.3,
@@ -10636,6 +11268,16 @@
             "D41"
           ],
           "check": "Anchored, even emerging grass shoots."
+        },
+        "harvestReadiness": {
+          "heightIn": [
+            6,
+            7
+          ],
+          "basis": "Supplier wheatgrass height cue; inspect the actual stand.",
+          "sources": [
+            "H04"
+          ]
         },
         "litCare": "",
         "demand": 3.7,
@@ -11666,6 +12308,51 @@
       "kind": "Editorial synthesis of primary sources",
       "note": "Source comparison: mung 215 g/200 in² supplier alternative, 8–12 h soak; soybean 150 g/200 in² within a supplier range, 8 h soak. The user’s current 180 g mung trial is recorded separately as U01. Separate dense-study evidence is not pooled into an average. Coir/calendar remain planning adaptations.",
       "accessed": "2026-11-06",
+      "local": null
+    },
+    "H01": {
+      "id": "H01",
+      "title": "Maryland Extension · microgreen harvest size",
+      "url": "https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors",
+      "kind": "Extension",
+      "note": "General microgreen comparison gives 2–3 inches and 7–21 days. This is not a species/cultivar trial and does not establish all group-specific ranges below.",
+      "accessed": "2026-11-17",
+      "local": null
+    },
+    "H02": {
+      "id": "H02",
+      "title": "Johnny’s · microgreen comparison chart",
+      "url": "https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf",
+      "kind": "Seed supplier",
+      "note": "General harvest guidance gives 0.5–2 inches with developed cotyledons or emerging true leaves. Different product specification from Maryland; delicate-group 1–2 inch ranges are editorial selections within this broad guidance.",
+      "accessed": "2026-11-17",
+      "local": null
+    },
+    "H03": {
+      "id": "H03",
+      "title": "Cooking with Kids · pea shoot growing activity",
+      "url": "https://s3.amazonaws.com/assets.cce.cornell.edu/attachments/42247/Cooking-with-Kids_Pea-Tasting_Grades-2-3.pdf?1579887714=",
+      "kind": "Teaching growing guide",
+      "note": "Page 4 of the 2019 curriculum hosted by Cornell Cooperative Extension describes harvesting tray pea shoots at 4–5 inches. No named cultivar or replicated height comparison; applied to both pea profiles as an approximate inspection cue.",
+      "accessed": "2026-11-17",
+      "local": null
+    },
+    "H04": {
+      "id": "H04",
+      "title": "True Leaf Market · wheatgrass kit instructions",
+      "url": "https://trueleafmarket.com/pages/wheatgrass-kit-instructions",
+      "kind": "Seed supplier",
+      "note": "Wheatgrass light cue is 1–2 inches; harvest cue is 6–7 inches. Only these height cues are used. Nutrition, mold handling, sanitation and consumption claims are not adopted.",
+      "accessed": "2026-11-17",
+      "local": null
+    },
+    "H05": {
+      "id": "H05",
+      "title": "Quick-start · method-specific stretch heights",
+      "url": "quick-start-source-log.html",
+      "kind": "Local grower-source synthesis",
+      "note": "November 9 notebook and quick-start-growing-guidance.json: broccoli/radish/sunflower around 1–2 inches at light; pea around 0.75–1.25 inches for early light. A stretch endpoint is not a fixed height for starting loose blackout.",
+      "accessed": "2026-11-17",
       "local": null
     },
     "P01": {

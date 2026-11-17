@@ -2,7 +2,7 @@
 (function (root) {
 'use strict';
 const CropData = typeof module === 'object' ? require('./crop-data.js') : root.CropData;
-const {dateAt} = typeof module === 'object' ? require('./crop-model.js') : root.CropModel;
+const {dateAt,stageHeight} = typeof module === 'object' ? require('./crop-model.js') : root.CropModel;
 const DAY = 86400000, SCHEMA = 'grow-lab-planner/1';
 const MAX_PHOTO_LENGTH = 80*1024;
 const PHASE = {germination:'Germination', blackout:'Optional Blackout', lights:'Under Lights', harvested:'Harvested', ended:'Ended'};
@@ -373,6 +373,8 @@ function projection(cycle, now, guidance) {
     && quickStartDecision(guidance?.crops?.find(row=>row.cropId===s.cropId),s.canBlackout)));
   return {history,started,entry,current,age,day:dayDelta(now,started),phaseDay:dayDelta(now,entry.occurredAt),
     dark,days,window,status,stageLabel,harvest,harvestMethod,estimated,
+    height:current==='ended'?null:stageHeight(crop,current),
+    stageHeights:['sow','germination',...(s.canBlackout?['blackout']:[]),'lights'].map(phase=>({phase,...stageHeight(crop,phase)})),
     germinationDecision:decision?{...decision,window:band(started,decision.days)}:null,
     cues:savedCues?.length?savedCues:(catalogCues[current]?.(crop) || [])};
 }

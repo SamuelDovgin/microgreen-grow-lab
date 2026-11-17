@@ -180,3 +180,9 @@
   .planner .tray-card:hover,.planner .tray-card:focus-within { transform:none; }
   html:has(body.planner) { scroll-behavior:auto; }
 }
+.height-guide { margin: 1rem 0; padding: .8rem 1rem; border-left: 4px solid #a5bd97; background: #f0f4ec; border-radius: .35rem; }
+.height-guide p { margin: .25rem 0 .6rem; }
+.height-guide p:last-child { margin-bottom: 0; }
+.stage-heights { margin: 1rem 0; }
+.stage-heights dt { font-weight: 700; margin-top: .8rem; }
+.stage-heights dd { margin: .25rem 0 .8rem; }

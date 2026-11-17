@@ -726,6 +726,56 @@ Local preservation: URL-only — no full lawful local copy redistributed; biblio
 Status: Original November 6 editorial synthesis; local rendered guide and dated bean notebook preserve the assumptions.
 Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
 
+[H01] Maryland Extension · microgreen harvest size
+URL: https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors
+Accessed: 2026-11-17
+Class: Extension
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: General microgreen comparison gives 2–3 inches and 7–21 days. This is not a species/cultivar trial and does not establish all group-specific ranges below.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[H02] Johnny’s · microgreen comparison chart
+URL: https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf
+Accessed: 2026-11-17
+Class: Seed supplier
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: General harvest guidance gives 0.5–2 inches with developed cotyledons or emerging true leaves. Different product specification from Maryland; delicate-group 1–2 inch ranges are editorial selections within this broad guidance.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[H03] Cooking with Kids · pea shoot growing activity
+URL: https://s3.amazonaws.com/assets.cce.cornell.edu/attachments/42247/Cooking-with-Kids_Pea-Tasting_Grades-2-3.pdf?1579887714=
+Accessed: 2026-11-17
+Class: Teaching growing guide
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Page 4 of the 2019 curriculum hosted by Cornell Cooperative Extension describes harvesting tray pea shoots at 4–5 inches. No named cultivar or replicated height comparison; applied to both pea profiles as an approximate inspection cue.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[H04] True Leaf Market · wheatgrass kit instructions
+URL: https://trueleafmarket.com/pages/wheatgrass-kit-instructions
+Accessed: 2026-11-17
+Class: Seed supplier
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: Wheatgrass light cue is 1–2 inches; harvest cue is 6–7 inches. Only these height cues are used. Nutrition, mold handling, sanitation and consumption claims are not adopted.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
+[H05] Quick-start · method-specific stretch heights
+URL: quick-start-source-log.html
+Accessed: 2026-11-17
+Class: Local grower-source synthesis
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: November 9 notebook and quick-start-growing-guidance.json: broccoli/radish/sunflower around 1–2 inches at light; pea around 0.75–1.25 inches for early light. A stretch endpoint is not a fixed height for starting loose blackout.
+Local preservation: URL-only — no full lawful local copy redistributed; bibliographic and original support notes preserved here.
+Status: Live official source reviewed.
+Limits: creator/supplier or extension guidance is not a controlled universal optimum; numeric recipe context must remain intact.
+
 [P01] Seed rate comparison and source audit
 URL: crop-catalog.html#seed-rate-comparison
 Accessed: 2026-11-04

@@ -72,6 +72,25 @@ function soakStart(sowDate,sowTime,hours){
  return {date:[start.getFullYear(),pad(start.getMonth()+1),pad(start.getDate())].join('-'),
          time:pad(start.getHours())+':'+pad(start.getMinutes())};
 }
+function stageHeight(c,phase){
+ const p=c?.calendar;
+ if(!p)return null;
+ const seed=phase==='sow'||phase==='presoak';
+ const germ=phase==='germination'||phase==='emergence';
+ const dark=phase==='blackout';
+ const transition=dark||phase==='light-transition';
+ const r=seed?{heightIn:[0,0],basis:'Seed stage; no above-medium shoot yet.',sources:[]}
+   :germ||phase==='light-transition'?p.lightReadiness:dark?(p.blackoutReadiness||p.lightReadiness):p.harvestReadiness;
+ const h=r?.heightIn;
+ if(!Array.isArray(h)||h.length!==2||!h.every(x=>between(x,0,12))||h[0]>h[1])return null;
+ const height=(h[0]===h[1]?`${h[0]}`:`${h[0]}–${h[1]}`)+' inches';
+ const label=seed?'At sowing':germ?'Near the end of germination':transition?'Before moving to lights':'Harvest inspection';
+ const cue=seed?'No shoot height to reach yet.'
+   :germ?'Use this as an approximate end-of-stage guide. Check rooted, upright emergence across the tray; remove pressure when shoots lift or bend beneath the cover.'
+   :transition?'Move to lights while shoots support themselves; do not extend darkness to chase height.'
+   :'Start checking as the crop approaches this range. Use leaf stage and tenderness even if your tray is shorter or taller.';
+ return {label,height,heightIn:[...h],cue,basis:r.basis,sources:[...r.sources]};
+}
 function lightReadiness(s,c){
  const r=c?.calendar?.lightReadiness;
  const h=r?.heightIn;
@@ -103,7 +122,7 @@ function schedule(s,c,recipe,densityResult){
  if(soakHours>0){
   const start=soakStart(s.sowDate,sowTime,soakHours);
   list.push({day:start.date===s.sowDate?0:-1,date:start.date,time:start.time,phase:'presoak',
-   stage:`Presoak · ${soakHours} h`,cue:'Weigh dry seed, then start soak',action:`Weigh ${seed}${sunflower?', rinse it and': ' and'} soak in ${recipe?.source==='D37'?'cold ':''}clean water for ${soakHours} h. Drain and rinse before sowing at ${sowTime} on ${s.sowDate}.`,
+   stage:`Presoak · ${soakHours} h`,cue:'Weigh dry seed, then start soak · shoot height: 0 inches',action:`Weigh ${seed}${sunflower?', rinse it and': ' and'} soak in ${recipe?.source==='D37'?'cold ':''}clean water for ${soakHours} h. Drain and rinse before sowing at ${sowTime} on ${s.sowDate}. Shoot height: 0 inches; no above-medium shoot yet.`,
    wateringMethod:'prep',bottomStartDay:bottomStart,waterScenarioMl:null,amMl:null,pmMl:null,dailyCups:null,amCups:null,pmCups:null,lowCups:null,highCups:null});
  }
  const topdress=recipe?.topdress??c?.topdress;
@@ -148,6 +167,11 @@ function schedule(s,c,recipe,densityResult){
     cue+=' · check harvest readiness';
    }
    action=actions.join(' ');
+  }
+  const height=stageHeight(c,phase==='light'&&day===lightStart?(s.blackoutDays?'blackout':'light-transition'):phase);
+  if(height){
+   cue+=` · ${height.label}: ${height.height}`;
+   action+=` ${height.label}: about ${height.height} above the medium. ${height.cue} ${height.basis}`;
   }
   const waterScenarioMl=wateringMethod==='bottom'&&s.showWaterEstimate?dailyDemand(s,day):null;
   const amMl=waterScenarioMl===null?null:waterScenarioMl*amShare/100,pmMl=waterScenarioMl===null?null:waterScenarioMl-amMl;
@@ -195,6 +219,6 @@ function parseTrials(text,expectedCrop){
  if(new Set(points.map(p=>p.seedGm2.toFixed(5))).size<2)return {error:'Provide at least two distinct seed rates; repeated rows at one rate cannot locate a density winner.'};
  return {rows,points,context:rows[0].substrate+' / '+rows[0].lot+' / '+rows[0].stage,warning:points.some(p=>p.n<3)?'Fewer than three trays at one or more rates: exploratory evidence only.':'Replicates summarized by mean and sample SD; repeated independent cycles are still needed.'};
 }
-const api={IN2_M2,IN3_ML,CUP_ML,area,density,climate,reservoir,water,dailyDemand,dateAt,seedDiameter,lightReadiness,schedule,rank,parseTrials};
+const api={IN2_M2,IN3_ML,CUP_ML,area,density,climate,reservoir,water,dailyDemand,dateAt,seedDiameter,stageHeight,lightReadiness,schedule,rank,parseTrials};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.CropModel=api;
 })(typeof window!=='undefined'?window:globalThis);

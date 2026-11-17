@@ -158,6 +158,15 @@ Water planning default 2 mm/day at late growth. Lower starting scenario; grower 
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Grower/supplier height cue; approximate and method-dependent. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D42](https://mpseeds.eu/broccoli-calabrese-microgreens-seeds) · [D43](https://quantummicrogreens.com/how-to-grow-broccoli-microgreens/)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| End of optional blackout, if using that method | 1–2 inches; move earlier if stems lean |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Radish · Daikon
 
 Botanical identity: *Raphanus sativus*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -182,6 +191,15 @@ Water planning default 3.1 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| End of optional blackout, if using that method | 1–2 inches; move earlier if stems lean |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons; inspect flavor and texture before extending the cycle. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Radish · Red Arrow
 
 Botanical identity: *Raphanus sativus*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -199,6 +217,14 @@ Water planning default 3.1 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons; inspect flavor and texture before extending the cycle. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Radish · Hong Vit
 
 Botanical identity: *Raphanus sativus*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -215,6 +241,14 @@ Spread the larger radish seed evenly without overlap. The selected cultivar has 
 Water planning default 3.1 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons; inspect flavor and texture before extending the cycle. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Radish · Rambo / Triton
 
@@ -234,6 +268,14 @@ Spread the larger radish seed evenly without overlap. The selected cultivar has 
 Water planning default 3.1 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons; inspect flavor and texture before extending the cycle. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Red cabbage
 
@@ -256,6 +298,14 @@ Water planning default 2 mm/day at late growth. Editorial family planning scenar
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Green cabbage
 
 Botanical identity: *Brassica oleracea var. capitata*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -274,6 +324,14 @@ Surface-sow evenly. Check the selected recipe for a separate dark stage; the Red
 Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Kale · Red Russian
 
@@ -295,6 +353,14 @@ Water planning default 2 mm/day at late growth. Editorial family planning scenar
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Kale · curly / generic farm recipe
 
 Botanical identity: *Brassica oleracea var. acephala*. Planting unit: single seed. MGM table does not identify the cultivar; confirm the supplied seed’s botanical identity.
@@ -314,6 +380,14 @@ Keep the medium level and surface-sow. Record the kale type and lot before compa
 Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Kohlrabi · Purple
 
@@ -335,6 +409,14 @@ Water planning default 2 mm/day at late growth. Editorial family planning scenar
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Cauliflower
 
 Botanical identity: *Brassica oleracea var. botrytis*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -353,6 +435,14 @@ Sow evenly on the surface. Check early for a uniformly rooted stand before remov
 Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Pak choi · Red
 
@@ -373,6 +463,14 @@ Water planning default 2 mm/day at late growth. Editorial family planning scenar
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Mizuna
 
 Botanical identity: *Brassica rapa var. japonica*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -390,6 +488,14 @@ Spread the small Brassica rapa seed in a thin surface layer. Keep the varieties 
 Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Tatsoi
 
@@ -409,6 +515,14 @@ Water planning default 2 mm/day at late growth. Editorial family planning scenar
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Tokyo Bekana
 
 Botanical identity: *Brassica rapa (pekinensis group)*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -425,6 +539,14 @@ Spread the small Brassica rapa seed in a thin surface layer. Keep the varieties 
 Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Mustard · Garnet Giant
 
@@ -446,6 +568,14 @@ Water planning default 2 mm/day at late growth. Editorial family planning scenar
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Mustard · Ruby Streaks
 
 Botanical identity: *Brassica juncea*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -465,6 +595,14 @@ Direct-sow the fine mustard seed and mist gently so it does not gather in patche
 Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Arugula / rocket
 
@@ -487,6 +625,14 @@ Water planning default 2 mm/day at late growth. Editorial family planning scenar
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Garden cress · Cressida
 
 Botanical identity: *Lepidium sativum*. Planting unit: single seed. Mucilaginous: direct sow; avoid seed clumps and free-water presoaking.
@@ -505,6 +651,14 @@ Water planning default 2 mm/day at late growth. Editorial family planning scenar
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Rutabaga
 
 Botanical identity: *Brassica napus (napobrassica group)*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -521,6 +675,14 @@ Surface-sow the dry seed and check emergence at the earlier end of the selected 
 Water planning default 2 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons to first true leaf; specify the product before comparing yields. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Basil · Genovese
 
@@ -544,6 +706,14 @@ Water planning default 1.6 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Grower/supplier height cue; approximate and method-dependent. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D44](https://www.whollywaterfarms.com/blog/basil-microgreens-growing-guide)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Basil at the selected leaf size; chia has its own shorter study schedule. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Basil · Italian Large Leaf
 
 Botanical identity: *Ocimum basilicum*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -561,6 +731,14 @@ Surface-sow dry basil seed in one layer. Wet seed forms mucilage; use a fine mis
 Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Grower/supplier height cue; approximate and method-dependent. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D44](https://www.whollywaterfarms.com/blog/basil-microgreens-growing-guide)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Basil at the selected leaf size; chia has its own shorter study schedule. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Basil · Dark Opal
 
@@ -581,6 +759,14 @@ Water planning default 1.6 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Grower/supplier height cue; approximate and method-dependent. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D44](https://www.whollywaterfarms.com/blog/basil-microgreens-growing-guide)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Basil at the selected leaf size; chia has its own shorter study schedule. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Basil · Red Rubin
 
 Botanical identity: *Ocimum basilicum*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -600,6 +786,14 @@ Water planning default 1.6 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Grower/supplier height cue; approximate and method-dependent. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D44](https://www.whollywaterfarms.com/blog/basil-microgreens-growing-guide)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Basil at the selected leaf size; chia has its own shorter study schedule. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Basil · Lemon
 
 Botanical identity: *Ocimum × africanum / citriodorum trade types*. Planting unit: single seed. Confirm exact botanical identity on the lot; “lemon basil” can refer to different taxa.
@@ -617,6 +811,14 @@ Surface-sow dry basil seed in one layer. Wet seed forms mucilage; use a fine mis
 Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Grower/supplier height cue; approximate and method-dependent. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D44](https://www.whollywaterfarms.com/blog/basil-microgreens-growing-guide)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Basil at the selected leaf size; chia has its own shorter study schedule. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Shiso · Britton
 
@@ -636,6 +838,14 @@ Surface-sow evenly, verify the lot and monitor the seed surface through the long
 Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.25–0.75 in (0.6–1.9 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.25–0.75 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded aromatic leaves at the chosen market specification. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Shiso · Green
 
@@ -657,6 +867,14 @@ Water planning default 1.6 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.25–0.75 in (0.6–1.9 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.25–0.75 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded aromatic leaves at the chosen market specification. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Shiso · Purple
 
 Botanical identity: *Perilla frutescens var. crispa*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -676,6 +894,14 @@ Surface-sow evenly, verify the lot and monitor the seed surface through the long
 Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.25–0.75 in (0.6–1.9 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.25–0.75 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded aromatic leaves at the chosen market specification. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Cilantro · whole fruit
 
@@ -697,6 +923,14 @@ Spread whole fruits evenly. Retain the thin top dress when the selected recipe c
 Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Usually recognizable first true leaves for culinary identity. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Cilantro · split mericarps
 
@@ -720,6 +954,14 @@ Water planning default 1.6 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Usually recognizable first true leaves for culinary identity. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Dill
 
 Botanical identity: *Anethum graveolens*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -739,6 +981,14 @@ Direct-sow evenly and maintain surface moisture through slow emergence. Check fo
 Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Usually recognizable first true leaves for culinary identity. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Fennel
 
@@ -761,6 +1011,14 @@ Water planning default 1.6 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Usually recognizable first true leaves for culinary identity. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Chervil
 
 Botanical identity: *Anthriscus cerefolium*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -780,6 +1038,14 @@ Direct-sow in an even layer and check surface moisture through the longer cover 
 Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Usually recognizable first true leaves for culinary identity. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Parsley
 
@@ -801,6 +1067,14 @@ Water planning default 1.6 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Usually recognizable first true leaves for culinary identity. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Celery
 
 Botanical identity: *Apium graveolens*. Planting unit: single seed. Species override: MGM uses a humidity dome for this slow, tiny seed.
@@ -820,6 +1094,14 @@ Scatter the tiny seed over a level, moist surface. Use a vented dome when the se
 Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Usually recognizable first true leaves for culinary identity. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Beet · Bull’s Blood
 
@@ -842,6 +1124,14 @@ Water planning default 2 mm/day at late growth. Editorial family planning scenar
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded colored cotyledons to first true leaf; remove retained hard hulls. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Chard · Bright Lights
 
 Botanical identity: *Beta vulgaris (cicla group)*. Planting unit: multigerm seed cluster. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -863,6 +1153,14 @@ Water planning default 2 mm/day at late growth. Editorial family planning scenar
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–3 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded colored cotyledons to first true leaf; remove retained hard hulls. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Amaranth · Garnet Red
 
 Botanical identity: *Amaranthus tricolor / cruentus trade types*. Planting unit: single seed. Confirm supplier botanical identity; “Garnet Red” is not a complete species identifier.
@@ -882,6 +1180,14 @@ Scatter the fine seed without piling. Use a gentle mist so seeds stay where they
 Water planning default 1.5 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.25–0.5 in (0.6–1.3 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.25–0.5 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Sufficient leaf development and stem strength; often first/second true leaf. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Pea · field / basic
 
@@ -908,6 +1214,15 @@ Water planning default 3.7 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.75–1.25 in (1.9–3.2 cm)** above the medium. Grower/supplier height cue; approximate and method-dependent. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D46](https://lanitexhydrogarden.com.au/blogs/microgreen-blog/how-to-grow-pea-microgreens-australia)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.75–1.25 inches; rooted, upright emergence matters more than height |
+| End of optional blackout, if using that method | 0.75–1.25 inches; move earlier if stems lean |
+| Under lights → harvest inspection | 4–5 inches; check leaf stage and tenderness |
+
+Teaching-guide height cue; cultivar and desired leaf stage may differ. Tender shoots with the cultivar’s desired leaf/tendril development. These are inspection ranges, not daily growth predictions or mandatory minima. [H03](https://s3.amazonaws.com/assets.cce.cornell.edu/attachments/42247/Cooking-with-Kids_Pea-Tasting_Grades-2-3.pdf?1579887714=) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Pea · tendril
 
 Botanical identity: *Pisum sativum*. Planting unit: single seed. MGM specifies overnight, not a precise duration; 6–12 h is an editorial operating window to test.
@@ -927,6 +1242,14 @@ Spread drained peas in one layer. Cut promptly once the shoots are tender and be
 Water planning default 3.7 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.75–1.25 in (1.9–3.2 cm)** above the medium. Grower/supplier height cue; approximate and method-dependent. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D46](https://lanitexhydrogarden.com.au/blogs/microgreen-blog/how-to-grow-pea-microgreens-australia)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.75–1.25 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 4–5 inches; check leaf stage and tenderness |
+
+Teaching-guide height cue; cultivar and desired leaf stage may differ. Harvest tender shoots before the tendrils mat together. These are inspection ranges, not daily growth predictions or mandatory minima. [H03](https://s3.amazonaws.com/assets.cce.cornell.edu/attachments/42247/Cooking-with-Kids_Pea-Tasting_Grades-2-3.pdf?1579887714=) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Sunflower · black oil
 
@@ -957,6 +1280,15 @@ Water planning default 3.7 mm/day at late growth. High-use planning scenario; gr
 
 Estimated height at the light transition: **1–2 in (2.5–5.1 cm)** above the medium. Grower/supplier height cue; approximate and method-dependent. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) · [D45](https://windrivergreens.com/blogs/guides/how-to-grow-sunflower-microgreens-step-by-step-complete-beginner-s-guide)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 1–2 inches; rooted, upright emergence matters more than height |
+| End of optional blackout, if using that method | 1–2 inches; move earlier if stems lean |
+| Under lights → harvest inspection | 3–5 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Well-expanded tender cotyledons before objectionable true-leaf texture/flavor. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Lettuce
 
 Botanical identity: *Lactuca sativa*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -976,6 +1308,14 @@ Surface-sow and keep the seed surface lightly moist. The farm dome method uses a
 Water planning default 1.7 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.25–0.5 in (0.6–1.3 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.25–0.5 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Tender true leaves; watch bolting/elongation and harvest specification. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Bulb onion
 
@@ -997,6 +1337,14 @@ Water planning default 1.7 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–4 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Tender green shoots at the desired loop/leaf development. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Scallion · Evergreen Hardy White
 
 Botanical identity: *Allium fistulosum*. Planting unit: single seed. 375 g/m² was the highest tested yield rate in Arthur’s study, not an interior optimum.
@@ -1014,6 +1362,14 @@ Water planning default 1.7 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–4 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Tender green shoots at the desired loop/leaf development. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Common chives
 
 Botanical identity: *Allium schoenoprasum*. Planting unit: single seed. 300 g/m² is the lower tested member of an overlapping top-yield group in Arthur; no local 1020 validation.
@@ -1030,6 +1386,14 @@ Sow the dry seed evenly and check for anchored green loops before removing the c
 Water planning default 1.7 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–4 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Tender green shoots at the desired loop/leaf development. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Nasturtium
 
@@ -1052,6 +1416,14 @@ Water planning default 2.3 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1.5 in (1.3–3.8 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1.5 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–4 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded cotyledons/young leaves at the chosen culinary size. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Sorrel · Red Veined
 
 Botanical identity: *Rumex sanguineus*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -1070,6 +1442,14 @@ Surface-sow fine seed evenly. Keep the seed zone moist under the dome without sa
 Water planning default 1.5 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.25–0.5 in (0.6–1.3 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.25–0.5 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Recognizable red-veined true leaves. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Cantaloupe
 
@@ -1090,6 +1470,14 @@ Water planning default 2.3 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **1–2 in (2.5–5.1 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 1–2 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–4 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Expanded, tender seed leaves before the crop becomes fibrous. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Marigold · Gem
 
 Botanical identity: *Tagetes tenuifolia*. Planting unit: single seed. Use the named source as a starting point and verify the actual crop endpoint locally.
@@ -1106,6 +1494,14 @@ Use food-use Gem marigold seed and sow evenly. Check for sufficient true-leaf de
 Water planning default 1.6 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.25–0.75 in (0.6–1.9 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.25–0.75 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Johnny’s notes waiting for a second true-leaf set may improve harvestability. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Chia
 
@@ -1125,6 +1521,14 @@ Water planning default 1.6 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 1–2 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Basil at the selected leaf size; chia has its own shorter study schedule. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Fenugreek / methi
 
 Botanical identity: *Trigonella foenum-graecum*. Planting unit: single seed. Published central treatment with a tray-dimension conflict. Covered phase is an editorial starting window, not reported exact study timing.
@@ -1142,6 +1546,14 @@ Sow evenly and track the lot and tray dimensions. The selected density study has
 Water planning default 2.3 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–4 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Use a species-specific endpoint and count units. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Mung bean
 
@@ -1164,6 +1576,14 @@ Water planning default 2.3 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–4 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Check for expanded, tender green seed leaves around day 7–10; cut above the medium, leaving roots behind. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Soybean · pilot
 
 Botanical identity: *Glycine max*. Planting unit: single seed. 150 g dry seed per nominal 200 in² is a starting trial within Pestuj’s area-scaled 133–178 g range. Its 56×28 cm tray uses 162–216 g. A separate dense study used 2 seeds/cm²; do not average unlike methods or infer mass without the lot count. Coir and the four-day cover are local adaptations.
@@ -1182,6 +1602,14 @@ Water planning default 2.3 mm/day at late growth. Editorial family planning scen
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
 
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–4 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Inspect from day 7; use the supplier’s 7–14 d microgreen window and cut above seed/medium, leaving roots behind. This is a leafy microgreen pilot, not a dark-grown bean-sprout recipe. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
+
 ### Lentil · research pilot
 
 Botanical identity: *Lens culinaris*. Planting unit: single seed. 3 sown seeds/cm² converted with illustrative 36 seeds/g. Harvest-day reporting conflict; raw-food safety remains unresolved.
@@ -1198,6 +1626,14 @@ Spread the counted planting units evenly for this research pilot. Record the gen
 Water planning default 2.3 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **0.5–1 in (1.3–2.5 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 0.5–1 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 2–4 inches; check leaf stage and tenderness |
+
+Editorial group estimate; no crop-specific harvest-height trial verified. Use a species-specific endpoint and count units. These are inspection ranges, not daily growth predictions or mandatory minima. [H01](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors) · [H02](https://www.johnnyseeds.com/on/demandware.static/-/Library-Sites-JSSSharedLibrary/default/dwa9083d6f/assets/information/microgreens-fast-growing-comparison-chart.pdf) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ### Wheatgrass
 
@@ -1216,6 +1652,14 @@ Spread drained grain evenly in one layer. Follow the selected grass harvest stag
 Water planning default 3.7 mm/day at late growth. Editorial family planning scenario. Use tray measurements to calibrate.
 
 Estimated height at the light transition: **1–2 in (2.5–5.1 cm)** above the medium. Editorial group estimate; no crop-specific light-transition height verified. Use rooted, upright emergence across most of the tray. If not ready, retain a loose unweighted blackout cover, or the vented dome for a clear-dome recipe, and recheck in 12 hours. Do not extend darkness to chase height if stems lean or tangle. [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout)
+
+| Stage | Approximate shoot height above the medium |
+|---|---|
+| Sowing | 0 inches; no shoot yet |
+| End of germination | 1–2 inches; rooted, upright emergence matters more than height |
+| Under lights → harvest inspection | 6–7 inches; check leaf stage and tenderness |
+
+Supplier wheatgrass height cue; inspect the actual stand. Defined cut grass stage; exclude grain/root from cut-shoot yield. These are inspection ranges, not daily growth predictions or mandatory minima. [H04](https://trueleafmarket.com/pages/wheatgrass-kit-instructions) [Height evidence and limits](source_docs/calendar/protocol_source_notes_2026-11-04.md#heights-at-every-stage).
 
 ## Source recovery
 
