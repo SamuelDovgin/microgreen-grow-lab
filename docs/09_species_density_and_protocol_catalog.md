@@ -1,13 +1,13 @@
 # Species and cultivar density catalogue
 
-*November 14, 2026. [Open the seed/water planner](site/dist/crops.html). These are 55 crop/cultivar profiles; some share a species. The selected starting recipe is scaled to a nominal 200-in² surface below; measured usable tray area belongs in the app.*
+*November 18, 2026. [Open the seed/water planner](site/dist/crops.html). These are 55 crop/cultivar profiles; some share a species. The selected starting recipe is scaled to a nominal 200-in² surface below; measured usable tray area belongs in the app.*
 
 Some rows are varieties of one species. Seed-count examples are illustrative unless explicitly attributed; replace them with your lot. Covered emergence settings can be generalized editorial windows even when mass and harvest are directly sourced. Full per-field provenance and all alternative source recipes are in the [JSON database](data/crop-protocols.json).
 
 | Crop / cultivar | Botanical identity | Family | Starting dry g / 200 in² | Harvest checkpoint (DAS) | Working group | Seed sanitation | Source / limit |
 |---|---|---|---:|---|---|---|---|
 | Broccoli | *Brassica oleracea var. italica* | Brassicaceae | 20.0 | 12–13 | Fast small-seed brassicas | Optional · handling judgment | [P01](#seed-rate-comparison) · Starting amount from supplied comparison |
-| Radish · Daikon | *Raphanus sativus* | Brassicaceae | 30.8 | 8–8 | Fast radish | Optional · handling judgment | [U02](seed-rate-notes.html#dated-seed-rate-choices) · User-selected starting trial |
+| Radish · Daikon | *Raphanus sativus* | Brassicaceae | 35.4 | 8–8 | Fast radish | Optional · handling judgment | [U03](seed-rate-notes.html#dated-seed-rate-choices) · User-selected starting trial |
 | Radish · Red Arrow | *Raphanus sativus* | Brassicaceae | 24.5 | 8–8 | Fast radish | Optional · handling judgment | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · Published starting rate |
 | Radish · Hong Vit | *Raphanus sativus* | Brassicaceae | 28.5 | 9–10 | Fast radish | Optional · handling judgment | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · Published starting rate |
 | Radish · Rambo / Triton | *Raphanus sativus* | Brassicaceae | 40.0 | 8–8 | Fast radish | Optional · handling judgment | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · Published starting rate |
@@ -124,7 +124,7 @@ OTG = On The Grow, BF = Bootstrap Farmer, J = Johnny’s, USU = Utah State Exten
 | Alfalfa | MS 17.5 · DS 15 | 16.3 | — | — | Optional · handling judgment | Comparison only. |
 | Flax | MS 17.5 · REV 26 | 21.8 | — | — | Avoid routine bath · handling judgment | Comparison only. |
 
-See [your dated seed-rate choices](14_seed_packets_and_rate_history.md#dated-seed-rate-choices) for the November 14 next-tray defaults. [Mung/soybean source comparisons](13_mung_and_soybean_1020_protocols.md).
+See [your dated seed-rate choices](14_seed_packets_and_rate_history.md#dated-seed-rate-choices) for the next-tray defaults and earlier rates. [Mung/soybean source comparisons](13_mung_and_soybean_1020_protocols.md).
 
 ## Per-crop notes and alternative recipes
 
@@ -179,7 +179,7 @@ This profile includes Minowase (Organic). Its named True Leaf recipe appears bel
 
 | Recipe | Original dry g / reference area | Presoak | Cover / load | Loose blackout | Harvest d | Sources |
 |---|---|---|---|---|---|---|
-| Your next tray · 30.8 g | 30.8 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 0 d | 8–8 | [U02](seed-rate-notes.html#dated-seed-rate-choices) · [P01](#seed-rate-comparison) · [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |
+| Your next tray · 35.42 g | 35.42 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 0 d | 8–8 | [U03](seed-rate-notes.html#dated-seed-rate-choices) · [P01](#seed-rate-comparison) · [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |
 | Seed rate comparison · starting plan | 28 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 0 d | 8–8 | [P01](#seed-rate-comparison) · [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |
 | Research starting plan | 22.5 g / 200.00 in² | Direct sow | 2–3 d / stack, 0 lb | 0 d | 8–8 | [D02](https://www.johnnyseeds.com/growers-library/vegetables/microgreens/micro-greens-yield-data-trial-summary-discussion.html) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |
 | MGM · 2024 farm snapshot | 40 g / 200.00 in² | Direct sow | 3–3 d / stack, 0 lb | 0 d | 8–8 | [D05](https://microgreenmanager.com/blog/microgreens-yield-cheatsheet) · [D16](https://microgreenmanager.com/blog/top-or-bottom-watering) · [D35](https://www.reddit.com/r/microgreens/comments/uqvwd0/) · [D41](https://onthegrow.net/blogs/microgreens/unlocking-the-secret-knowing-the-right-time-to-transition-microgreen-trays-from-weight-to-blackout) |

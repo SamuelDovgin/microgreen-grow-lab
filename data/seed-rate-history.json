@@ -1529,6 +1529,20 @@
       "source": "U02",
       "commit": null,
       "evidence": "Trial choice; yield has not been measured"
+    },
+    {
+      "id": "2026-11-18-radish-daikon",
+      "cropId": "radish-daikon",
+      "changedAt": null,
+      "date": "2026-11-18",
+      "dateBasis": "User message date; planned future tray",
+      "fromGrams": 30.8,
+      "toGrams": 35.42,
+      "referenceAreaIn2": 200,
+      "reason": "User felt the previous tray could have used more seed and chose a 15% increase for the next Daikon Minowase radish tray.",
+      "source": "U03",
+      "commit": null,
+      "evidence": "Trial choice; yield has not been measured"
     }
   ]
 }

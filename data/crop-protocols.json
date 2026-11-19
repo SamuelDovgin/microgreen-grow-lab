@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-17",
+  "version": "2026-11-18",
   "retiredCropIds": {
     "pea-speckled": {
       "cropId": "pea-basic",
@@ -431,7 +431,7 @@
       "species": "Raphanus sativus",
       "family": "Brassicaceae",
       "group": "radish",
-      "defaultGrams": 30.8,
+      "defaultGrams": 35.42,
       "referenceAreaIn2": 200,
       "referenceAreaBasis": "User-selected dry seed per nominal 1020 trial, 200 in²",
       "harvestDays": [
@@ -458,8 +458,8 @@
       "alternatives": [
         {
           "id": "next-trial",
-          "label": "Your next tray · 30.8 g",
-          "grams": 30.8,
+          "label": "Your next tray · 35.42 g",
+          "grams": 35.42,
           "area": 200,
           "harvest": [
             8,
@@ -470,8 +470,8 @@
             3
           ],
           "method": "stack",
-          "source": "U02",
-          "note": "30.8 g dry seed per nominal 1020. User chose 10% more dry seed for the next Daikon Minowase radish tray.",
+          "source": "U03",
+          "note": "35.42 g dry seed per nominal 1020. User felt the previous tray could have used more seed and chose a 15% increase for the next Daikon Minowase radish tray.",
           "soakBasis": "Selected crop or group planning window; check the seed lot.",
           "soak": [
             0,
@@ -482,7 +482,7 @@
           "weightLb": 0,
           "weightBasis": "Empty cover is the planner setting where the recipe gives no numeric load.",
           "calendarSources": [
-            "U02",
+            "U03",
             "P01",
             "D02",
             "D16",
@@ -710,7 +710,7 @@
         }
       },
       "provenance": {
-        "density": "U02: user-selected 30.8 g next-tray trial",
+        "density": "U03: user-selected 35.42 g next-tray trial",
         "harvest": "D02; fractional source days rounded to adjacent integer checkpoints where needed",
         "coveredStage": "D04 when matching crop table exists; otherwise functional-group editorial window",
         "method": "Functional-group editorial default unless a named creator override is selected",
@@ -12382,6 +12382,15 @@
       "accessed": "2026-11-14",
       "local": null
     },
+    "U03": {
+      "id": "U03",
+      "title": "Your next Daikon Minowase seed rate · November 18",
+      "url": "seed-rate-notes.html#dated-seed-rate-choices",
+      "kind": "User-selected trial rate",
+      "note": "The previous tray felt underseeded. The user chose to increase the dry-seed rate by 15% from 30.8 g to 35.42 g per nominal 1020 tray.",
+      "accessed": "2026-11-18",
+      "local": null
+    },
     "V01": {
       "id": "V01",
       "title": "On The Grow · Red Acre cabbage seed-to-harvest",
@@ -15316,6 +15325,20 @@
         "referenceAreaIn2": 200,
         "reason": "User chose 10% more dry seed for the next Daikon Minowase radish tray.",
         "source": "U02",
+        "commit": null,
+        "evidence": "Trial choice; yield has not been measured"
+      },
+      {
+        "id": "2026-11-18-radish-daikon",
+        "cropId": "radish-daikon",
+        "changedAt": null,
+        "date": "2026-11-18",
+        "dateBasis": "User message date; planned future tray",
+        "fromGrams": 30.8,
+        "toGrams": 35.42,
+        "referenceAreaIn2": 200,
+        "reason": "User felt the previous tray could have used more seed and chose a 15% increase for the next Daikon Minowase radish tray.",
+        "source": "U03",
         "commit": null,
         "evidence": "Trial choice; yield has not been measured"
       }

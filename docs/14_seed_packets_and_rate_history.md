@@ -1,6 +1,6 @@
 # Your seed packets, rate history and next harvest
 
-*Updated November 14, 2026. [Open the crop planner](site/dist/crops.html) · [My grow log](site/dist/grow-log.html) · [Published rate history](data/seed-rate-history.json) · [Source notebook](source_docs/research_resource_log_2026-11-07.txt).*
+*Updated November 18, 2026. [Open the crop planner](site/dist/crops.html) · [My grow log](site/dist/grow-log.html) · [Published rate history](data/seed-rate-history.json) · [Source notebook](source_docs/research_resource_log_2026-11-07.txt).*
 
 The supplied photo identifies **True Leaf Market Waltham 29 broccoli (1 lb), organic Daikon Minowase radish (1 lb), Black Oil sunflower (5 lb), and organic Speckled pea (5 lb)**. The planner shows all four packets plus mung beans from your previous grow. [U01 — user photo and instructions]
 
@@ -9,7 +9,7 @@ The supplied photo identifies **True Leaf Market Waltham 29 broccoli (1 lb), org
 | Your packet / crop | Selected dry seed per nominal 200 in² tray | Selected preparation | Notes |
 |---|---:|---|---|
 | Black Oil sunflower | **117 g** | Rinse, drain and sow under the New protocol. Old selects an **8 h** water soak. | 10% less than the 130 g November 4 rate. |
-| Daikon Minowase radish, organic | **30.8 g** | **No soak** | 10% more than the 28 g November 4 rate. The supplier’s 1 oz recipe remains selectable. |
+| Daikon Minowase radish, organic | **35.42 g** | **No soak** | 15% more than the 30.8 g November 14 rate. The supplier’s 1 oz recipe remains selectable. |
 | Waltham 29 broccoli | **20 g** | **No soak** | Existing coir starter with an empty cover and no added paver. Supplier’s separate 1 oz recipe remains available. |
 | Speckled pea, organic | **225 g** | New coir trial selects **7 h** from the 6–8 h window. Old selects **6 h**. | The named supplier alternative uses 4–6 h cold soak, a dome and its own 5–8 oz mass range. |
 | Mung beans | **153 g** | Existing 8–12 h window; selects **10 h** | 15% less than the 180 g choice recorded November 7. |
@@ -22,7 +22,9 @@ Speckled pea’s supplier describes 4–6 h cold soaking, 5–8 oz per 10×20, a
 
 ## Dated seed-rate choices
 
-The November 14 revisions are your chosen rates for future trials. The dated selectors on mung, sunflower and radish show older website rates and any saved personal trial. A date records the revision. Record the actual sowing date and yield in the grow log.
+The dated selectors on mung, sunflower and radish show current and previous website rates and any saved personal trial. A date records the revision. Record the actual sowing date and yield in the grow log.
+
+Recent Daikon Minowase radish revisions were **28 g (November 4) → 30.8 g (November 14) → 35.42 g (November 18)**. You felt the previous tray could have used more seed and chose a 15% increase for the next trial.
 
 **Plan … from now** uses the selected rate for one nominal 20×10-inch tray. Dated website rates use the preparation settings from the page’s Old or New protocol. A saved personal trial uses its saved recipe. The plan follows your browser’s local clock and schedules sowing after any presoak. Adjust the plan if seed prep is already underway. Use **Log this tray** to record the actual inputs.
 

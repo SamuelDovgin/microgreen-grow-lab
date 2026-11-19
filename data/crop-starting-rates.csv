@@ -1,6 +1,6 @@
 id,crop,species,family,protocol_group,reference_seed_g,reference_area_in2,harvest_days,source,evidence_limit
 broccoli,Broccoli,Brassica oleracea var. italica,Brassicaceae,brassica,20.0,200,12–13,P01,Starting amount from supplied comparison
-radish-daikon,Radish · Daikon,Raphanus sativus,Brassicaceae,radish,30.8,200,8–8,U02,User-selected starting trial
+radish-daikon,Radish · Daikon,Raphanus sativus,Brassicaceae,radish,35.42,200,8–8,U03,User-selected starting trial
 radish-red-arrow,Radish · Red Arrow,Raphanus sativus,Brassicaceae,radish,24.5,200,8–8,D02,Published starting rate
 radish-hong-vit,Radish · Hong Vit,Raphanus sativus,Brassicaceae,radish,28.5,200,9–10,D02,Published starting rate
 radish-rambo,Radish · Rambo / Triton,Raphanus sativus,Brassicaceae,radish,40,200,8–8,D05,Published starting rate

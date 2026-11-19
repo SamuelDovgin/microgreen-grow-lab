@@ -803,7 +803,17 @@ Class: User-selected trial rates
 Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
 Supports / key record: For the next trays, reduce the previous dry-seed rates by 15% for mung and 10% for Black Oil sunflower, and increase Daikon Minowase radish by 10%. Yield has not been measured for these revisions.
 Local preservation: data/seed-rate-history.json records the prior and revised amounts.
-Status: user-selected trial rates, dated November 14, 2026.
+Status: user-selected trial rate recorded on 2026-11-14.
+Limits: no actual sowing dates or yield measurements have been supplied for the new rates.
+
+[U03] Your next Daikon Minowase seed rate · November 18
+URL: seed-rate-notes.html#dated-seed-rate-choices
+Accessed: 2026-11-18
+Class: User-selected trial rate
+Used in: research synthesis; species catalogue; calculator evidence; model notes; caption notes as applicable.
+Supports / key record: The previous tray felt underseeded. The user chose to increase the dry-seed rate by 15% from 30.8 g to 35.42 g per nominal 1020 tray.
+Local preservation: data/seed-rate-history.json records the prior and revised amounts.
+Status: user-selected trial rate recorded on 2026-11-18.
 Limits: no actual sowing dates or yield measurements have been supplied for the new rates.
 
 [V01] On The Grow · Red Acre cabbage seed-to-harvest

@@ -15,11 +15,11 @@ const publishedRates=cropId=>(D.seedRateHistory?.entries||[]).filter(entry=>entr
 function historicalRecipe(){
  if(!historicalRate)return null;
  const base=starterRecipe(crop);
- return {...base,id:'historical-rate',label:historicalRate.date+' · '+fmt(historicalRate.toGrams,1)+' g',
+ return {...base,id:'historical-rate',label:historicalRate.date+' · '+fmt(historicalRate.toGrams,2)+' g',
   grams:historicalRate.toGrams,area:historicalRate.referenceAreaIn2,source:historicalRate.source,
   calendarSources:[...new Set([historicalRate.source,...base.calendarSources.filter(id=>id!==base.source)])],
   confidence:'Previous seed rate · current preparation settings',
-  note:fmt(historicalRate.toGrams,1)+' g per nominal 1020. '+historicalRate.reason};
+  note:fmt(historicalRate.toGrams,2)+' g per nominal 1020. '+historicalRate.reason};
 }
 const availableRecipes=()=>[moistureRecipe(crop),...crop.alternatives,historicalRecipe(),extraRecipe].filter(Boolean);
 const R=window.SeedRates,rateStore=R?.createStore({getItem:k=>window.localStorage.getItem(k),setItem:(k,v)=>window.localStorage.setItem(k,v)},D.crops.map(c=>c.id));
@@ -263,7 +263,7 @@ function fillRateChoices(preferPersonal){
   const selected=saved&&(preferPersonal===cropId||addPersonal)?'personal-rate':picker.value||'default';
   const options=revisions.map((entry,index)=>{
    const date=new Date(entry.date+'T00:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'});
-   const label=index===0?'Current · '+date:date+' · '+fmt(entry.toGrams,1)+' g';
+   const label=index===0?'Current · '+date:date+' · '+fmt(entry.toGrams,2)+' g';
    return `<option value="${esc(index===0?'default':entry.id)}">${esc(label)}</option>`;
   });
   if(saved)options.push(`<option value="personal-rate">My saved trial · ${esc(fmt(saved.toGrams,1))} g</option>`);
@@ -276,7 +276,7 @@ function renderOwnedRates(){
   const el=$('owned-'+cropId+'-rate'),c=D.crops.find(c=>c.id===cropId),choice=ratePicker(cropId)?.value;
   const selected=publishedRates(cropId).find(entry=>entry.id===choice);
   const saved=!choice||choice==='personal-rate'?rateStore?.latest(cropId):null;
-  const label=fmt(selected?.toGrams??saved?.toGrams??publishedGrams(c),1)+' g';
+  const label=fmt(selected?.toGrams??saved?.toGrams??publishedGrams(c),saved?1:2)+' g';
   if(el&&el.textContent!==label)el.textContent=label;
  }
 }
@@ -284,8 +284,8 @@ function renderRateHistory(s){
  if(!$('rate-history-body'))return;
  const published=publishedRates(crop.id),personal=(rateStore?.read().entries||[]).filter(e=>e.cropId===crop.id);
  const entries=[...published.map(e=>({...e,scope:'Website',order:e.changedAt||e.date+'T00:00:00Z'})),...personal.map(e=>({...e,scope:'My trial',date:new Date(e.changedAt).toLocaleDateString('en-CA'),order:e.changedAt}))].sort((a,b)=>b.date.localeCompare(a.date)||Date.parse(b.order)-Date.parse(a.order));
- $('rate-history-body').innerHTML=entries.map(e=>`<tr><td>${esc(e.date)}<br><small>${esc(e.scope)}</small></td><td>${e.fromGrams===null?'Initial':fmt(e.fromGrams,1)+' g'} → ${fmt(e.toGrams,1)} g</td><td>${esc(e.reason)}${e.seedLot?'<br>Lot: '+esc(e.seedLot):''}${e.evidence?'<br><small>'+esc(e.evidence)+'</small>':''}</td></tr>`).join('');
- const latest=rateStore?.latest(crop.id);$('rate-current-basis').textContent='Website default: '+fmt(publishedGrams(crop),1)+' g/200 in².'+(latest?' Your saved next-trial default: '+fmt(latest.toGrams,1)+' g/200 in².':' No personal override saved in this browser.');
+ $('rate-history-body').innerHTML=entries.map(e=>`<tr><td>${esc(e.date)}<br><small>${esc(e.scope)}</small></td><td>${e.fromGrams===null?'Initial':fmt(e.fromGrams,2)+' g'} → ${fmt(e.toGrams,2)} g</td><td>${esc(e.reason)}${e.seedLot?'<br>Lot: '+esc(e.seedLot):''}${e.evidence?'<br><small>'+esc(e.evidence)+'</small>':''}</td></tr>`).join('');
+ const latest=rateStore?.latest(crop.id);$('rate-current-basis').textContent='Website default: '+fmt(publishedGrams(crop),2)+' g/200 in².'+(latest?' Your saved next-trial default: '+fmt(latest.toGrams,1)+' g/200 in².':' No personal override saved in this browser.');
  $('rate-area-note').textContent='For your entered '+fmt(s.length*s.width,2)+' in² tray. History also keeps its equivalent g/200 in² so different areas are not confused.';
  $('rate-history-status').textContent=rateMessage||rateStore?.status().error||'Personal revisions stay in this browser. Export a backup to move them to another browser or device.';
 }
