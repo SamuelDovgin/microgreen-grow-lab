@@ -299,9 +299,12 @@ function chronology(c,p) {
       <p>Originally logged as ${timestamp(e.originalOccurredAt)}</p>
       ${e.corrections.map(item=>`<p>Changed to ${timestamp(item.occurredAt)} · recorded ${timestamp(item.recordedAt)}</p>`).join('')}</details>`:'';
     rows.push(`<li><strong>${M.eventLabel(e.toPhase)} · Actual</strong>
-      <dl><dt>Happened</dt><dd>${timestamp(e.occurredAt)}</dd><dt>Recorded</dt><dd>${timestamp(e.recordedAt)}</dd></dl>
+      <dl><dt>Happened</dt><dd>${timestamp(e.occurredAt)}</dd></dl>
       ${e.note?`<p class="note-text">${esc(e.note)}</p>`:''}${corrected}
-      ${button('Correct time','correct',`data-event="${esc(e.id)}" aria-label="Correct time: ${M.eventLabel(e.toPhase)}"`,'pl-quiet')}
+      <div class="timeline-actions">
+        ${button('Correct time','correct',`data-event="${esc(e.id)}" aria-label="Correct time: ${M.eventLabel(e.toPhase)}"`,'pl-quiet')}
+        <details class="recorded-time"><summary>Recorded time</summary>${timestamp(e.recordedAt)}</details>
+      </div>
       </li>`);
   }
   return rows.join('');
