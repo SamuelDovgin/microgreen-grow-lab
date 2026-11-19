@@ -11,6 +11,7 @@
  const bleachSeed = $('bleach-trial-seed');
  const bleachCover = $('bleach-trial-cover');
  const bleachResult = $('bleach-trial-result');
+ const preplantPeroxide = $('preplant-peroxide');
  const blendWeight = new Intl.NumberFormat(undefined, {minimumFractionDigits:1, maximumFractionDigits:1});
  let selectedCropId = 'sunflower';
  function renderBleachTrial(){
@@ -44,6 +45,7 @@
   selectedCropId = cropId;
   bleachCrop.value = cropId;
   const option = bleachCrop.selectedOptions[0];
+  preplantPeroxide.hidden = option?.dataset.preplantPeroxide !== 'true';
   if (option) {
    $('bleach-trial-prep-text').textContent = option.dataset.prep;
    if (changed) {

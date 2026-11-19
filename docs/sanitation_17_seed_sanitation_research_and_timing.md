@@ -36,6 +36,14 @@ Published timings do not establish that field pea needs longer than black oil su
 
 For these coir trays, keep **6–8 hours in plain potable water for field pea** as a starting setting. **Rinse and direct-sow black oil sunflower** for the baseline. On The Grow reported a successful no-presoak grow and a higher yield in its single side-by-side tray comparison. If comparing a sunflower presoak, **6–8 hours** overlaps the published growing methods. Hold the seed lot, coir and cover constant, and compare emergence and usable yield. The water presoak is a growing decision separate from the timed chlorine reference. [On The Grow sunflower trial](https://onthegrow.net/blogs/microgreens/how-to-grow-sunflower-microgreens) · [University of Maryland Extension](https://extension.umd.edu/resource/growing-microgreens-and-baby-greens-indoors)
 
+#### Pre-plant peroxide for sunflower, mung bean and peas
+
+The **3% finished hydrogen peroxide for 5 minutes** reference comes from Bootstrap Farmer’s standalone treatment for larger seeds, including sunflower, mung bean and peas. Their sequence is to drain any plain-water presoak, use peroxide immediately before planting, then drain and rinse the seeds thoroughly before sowing. For sunflower, rinse and direct-sow remains the baseline. For other large seeds, check the crop’s growing directions and the intended seed treatment on the product label before applying the reference. [Bootstrap Farmer’s soaking guide](https://www.bootstrapfarmer.com/blogs/microgreens/microgreens-soaking-seeds-when-why)
+
+**A peroxide bath after bleach has no validated concentration or contact time in the sources reviewed**, even with intervening water rinses. The controlled microgreen study tested a 10-minute 3% soak on amaranth, borage and carrot. The broccoli experiments compared bleach and peroxide in separate treatments and found weak fungal control with 3% peroxide. Keep the Tandil bleach trial as a non-food comparison ending with potable-water rinses. Keep bleach and peroxide solutions apart. [Microgreen seed study](https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1264472/full) · [Broccoli seed study](https://pmc.ncbi.nlm.nih.gov/articles/PMC9955435/) · [CDC guidance](https://www.cdc.gov/cryptosporidium/prevention/preventing-and-controlling-crypto-childcare-facilities.html)
+
+For edible trays, use a product labeled for the intended seed treatment and follow its concentration, contact time and rinse directions. If the label calls for **3% by weight** and the stock is **12% by weight**, the dilution is **1 part stock to 3 parts water by weight**. Choose **3% · Seed soak** in the [peroxide dilution calculator](site/dist/seed-sanitation.html#hocl-dilution) to scale the quantities.
+
 <!-- /protocol -->
 
 <!-- protocol:old -->
