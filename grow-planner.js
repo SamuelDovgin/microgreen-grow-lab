@@ -202,28 +202,50 @@ function closeDialog() {
   change=null;
   focusAfter();
 }
-function timeFields(heading, instant) {
-  const [d,t]=M.localInput(instant).split('T');
-  return `<fieldset style="margin:0;border:0;padding:0;min-width:0"><legend>${esc(heading)}</legend><div class="fields-two">
+const quarterMinutes=['00','15','30','45'];
+const timeOption=(value,label,selected)=>`<option value="${value}"${value===selected?' selected':''}>${label}</option>`;
+function timeFields(heading, instant, earliest=-Infinity) {
+  const current=new Date(instant);
+  const rounded=instant-current.getMinutes()%15*60000-current.getSeconds()*1000-current.getMilliseconds();
+  // Keep the existing time when correcting a record, or the current time if
+  // the last quarter hour would put a new transition before its preceding stage.
+  const initial=rounded<earliest?instant:rounded;
+  const [d,t]=M.localInput(initial).split('T');
+  const [h,m]=t.split(':');
+  const hours=Array.from({length:24},(_,i)=>timeOption(String(i).padStart(2,'0'),`${i%12||12} ${i<12?'AM':'PM'}`,h));
+  const minutes=quarterMinutes.includes(m)?quarterMinutes:[...quarterMinutes,m].sort();
+  return `<fieldset style="margin:0;border:0;padding:0;min-width:0"><legend>${esc(heading)}</legend><div class="time-fields">
     <label>Date <input type="date" name="date" value="${d}" required></label>
-    <label>Time <input type="time" name="time" value="${t}" required></label>
+    <label>Hour <select name="hour" required>${hours.join('')}</select></label>
+    <label>Minute <select name="minute" data-initial="${initial}" required>${minutes.map(value=>timeOption(value,value,m)).join('')}</select></label>
   </div><label id="fold-picker" hidden>Which occurrence of this local time? <select name="fold"></select></label>
   <p class="pl-help">Use the local time when it happened. Earlier dates are welcome.</p></fieldset>`;
 }
 const formFooter=(save,back='Cancel')=>`<div class="pl-actions"><button class="pl-button pl-primary" type="submit">${esc(save)}</button>${button(back,'close')}</div>`;
-function refreshFold(preferred) {
+const sameMinute=(at,initial)=>Date.parse(at)===Math.floor(initial/60000)*60000;
+function refreshFold() {
   const form=dialog.querySelector('form');
   if (!form?.elements.date) return;
+  const {date,hour,minute}=form.elements;
+  const localHour=`${date.value}T${hour.value}`;
+  const initial=Number(minute.dataset.initial);
+  const initialLocal=M.localInput(initial);
+  const extra=[...minute.options].find(option=>!quarterMinutes.includes(option.value));
+  if (extra) {
+    extra.hidden=extra.disabled=localHour!==initialLocal.slice(0,-3);
+    if (extra.disabled&&extra.selected) minute.value=quarterMinutes[Math.floor(Number(extra.value)/15)];
+  }
   const picker=el('fold-picker'), fold=form.elements.fold;
-  const before=preferred||fold.value;
+  const before=fold.value;
   picker.hidden=true;
   fold.innerHTML='';
   try {
-    const matching=M.timeOptions(`${form.elements.date.value}T${form.elements.time.value}`);
+    const matching=M.timeOptions(`${localHour}:${minute.value}`);
     if (matching.length<2) return;
     picker.hidden=false;
     fold.innerHTML=matching.map((at,i)=>`<option value="${at}">${i?'Second':'First'} occurrence · ${esc(M.zoneAt(at))}</option>`).join('');
-    if (matching.includes(before)) fold.value=before;
+    const preferred=matching.includes(before)?before:matching.find(at=>sameMinute(at,initial));
+    if (preferred) fold.value=preferred;
   } catch { /* Invalid local times receive an explicit validation message on submit. */ }
 }
 function startTray(origin) {
@@ -357,7 +379,7 @@ function propose(c,to,{source,trigger}) {
     ${to!=='ended'?`<div class="detail-info">${decision?germinationGuide(decision,to==='lights'?'Before you uncover':undefined):`<strong>Typical readiness window</strong><p>${esc(currentWindow(p))}</p>${cuesList(cues)}`}
     ${heightGuide(to==='lights'?p.stageHeights.find(h=>h.phase===p.current):p.height)}
     ${p.status==='early'||p.status==='past'?'<p class="pl-help">This phase is outside the typical window now. You can still record the action you took.</p>':'<p class="pl-help">Typical, not a guarantee. Use what you observe.</p>'}</div>`:''}
-    ${timeFields('Actual event time',now())}
+    ${timeFields('Actual event time',now(),Date.parse(p.entry.occurredAt))}
     ${to==='harvested'?harvestFields():''}
     ${to==='ended'?'<label>Reason (optional) <textarea name="note" maxlength="1500"></textarea></label>':''}
     ${formFooter(save)}</form>`,{trayId:c.id,to,source,fromTray,backFocus:trigger&&track(trigger)},source==='drag'?trigger:null);
@@ -366,11 +388,12 @@ function propose(c,to,{source,trigger}) {
 function editTime(c,eventId,b) {
   const event=M.effectiveHistory(c).find(e=>e.id===eventId);
   if (!event) return;
+  const instant=Date.parse(event.occurredAt);
   showDialog('correct',`Correct time: ${M.eventLabel(event.toPhase)}`,c.name,`<form>
     <p>Keep this stage and correct when it happened. The old time stays in the correction history.</p>
-    ${timeFields('Corrected actual time',event.occurredAt)}${formFooter('Save correction')}</form>`,
+    ${timeFields('Corrected actual time',instant,instant)}${formFooter('Save correction')}</form>`,
     {trayId:c.id,eventId,fromTray:true,backFocus:track(b)});
-  refreshFold(event.occurredAt);
+  refreshFold();
 }
 function editNote(c,b) {
   showDialog('note','Add note',c.name,`<form><label>Note <textarea name="note" required maxlength="1500"></textarea></label>${formFooter('Save note')}</form>`,
@@ -408,8 +431,13 @@ async function submit(event) {
   busy=true;submitButton.disabled=true;
   status('');dialogError();
   try {
-    const local=`${data.get('date')}T${data.get('time')}`;
-    const occurredAt=form.elements.date ? data.get('fold')||M.localInstant(local):null;
+    let occurredAt=null;
+    if (form.elements.date) {
+      const local=`${data.get('date')}T${data.get('hour')}:${data.get('minute')}`;
+      occurredAt=data.get('fold')||M.localInstant(local);
+      const initial=Number(form.elements.minute.dataset.initial);
+      if (sameMinute(occurredAt,initial)) occurredAt=new Date(initial).toISOString();
+    }
     const note=data.get('note'), input={trayId:state.trayId,expectedRevision:state.expected,occurredAt,note};
     if (form.elements.weightG) {
       const weight=data.get('weightG'), file=data.get('photo');
@@ -492,8 +520,11 @@ document.addEventListener('click',event=>{
   if (action==='import') el('backup-file').click();
 });
 dialog.addEventListener('submit',submit);
-dialog.addEventListener('input',e=>{if (['date','time'].includes(e.target.name)) refreshFold();});
-dialog.addEventListener('change',e=>{if (['date','time'].includes(e.target.name)) refreshFold();});
+function onTimeEdit(e) {
+  if (['date','hour','minute'].includes(e.target.name)) refreshFold();
+}
+dialog.addEventListener('input',onTimeEdit);
+dialog.addEventListener('change',onTimeEdit);
 const lanes=()=>[...el('board').querySelectorAll('[data-lane]')];
 function clearDrag() {
   const wasDragging=!!dragId;

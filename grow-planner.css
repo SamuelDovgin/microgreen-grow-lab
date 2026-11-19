@@ -123,6 +123,7 @@
 .planner dialog :is(input,select,textarea) { width:100%; min-width:0; min-height:44px; padding:8px; border:1px solid #aebead; border-radius:7px; color:var(--pl-ink); background:white; font:inherit; font-size:16px; }
 .planner dialog textarea { min-height:82px; resize:vertical; }
 .fields-two { display:grid; grid-template-columns:1.2fr 1fr; gap:8px; }
+.time-fields { display:grid; grid-template-columns:minmax(0,1.6fr) repeat(2,minmax(0,1fr)); gap:8px; }
 .dialog-section { display:grid; gap:8px; padding-top:11px; border-top:1px solid var(--pl-line); }
 .harvest-fields { display:grid; gap:10px; min-width:0; margin:0; padding:10px; border:1px solid var(--pl-line); border-radius:9px; }
 .harvest-fields legend { padding:0 4px; font-weight:720; }
@@ -169,7 +170,7 @@
   .planner dialog.drawer { margin:auto 0 0; max-height:91dvh; height:auto; border-radius:15px 15px 0 0; }
   .dialog-content { padding:15px; }
 }
-@media (max-width:355px) { .fields-two { grid-template-columns:1fr; } }
+@media (max-width:355px) { .fields-two,.time-fields { grid-template-columns:1fr; } }
 @media (hover:none), (pointer:coarse) {
   .tray-card:hover,.tray-card:focus-within { transform:none; }
   .tray-card[draggable=true] .tray-open { cursor:pointer; }
