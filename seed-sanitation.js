@@ -11,13 +11,21 @@
  const bleachSeed = $('bleach-trial-seed');
  const bleachCover = $('bleach-trial-cover');
  const bleachResult = $('bleach-trial-result');
+ const jarNote = $('bleach-trial-jar-note');
+ const jarSeedGrams = Number(bleachSeed.defaultValue);
  const preplantPeroxide = $('preplant-peroxide');
  const blendWeight = new Intl.NumberFormat(undefined, {minimumFractionDigits:1, maximumFractionDigits:1});
  let selectedCropId = 'sunflower';
  function renderBleachTrial(){
-  const batch = M.bleachTrialBatch(bleachSeed.value, bleachCover.validity?.badInput ? NaN : bleachCover.value);
+  const usesJar = ['pea-basic', 'pea-tendril'].includes(selectedCropId);
+  const batch = M.bleachTrialBatch(bleachSeed.value, bleachCover.validity?.badInput ? NaN : bleachCover.value, usesJar ? jarSeedGrams : null);
+  jarNote.hidden = !usesJar;
+  $('bleach-trial-cover-label').textContent = usesJar ? 'Measured water to cover one portion (mL)' : 'Measured water to cover (mL)';
+  const portions = batch.portions > 1
+   ? `Split into ${fmt(batch.portions)} portions of about ${fmt(batch.seedPerPortion)} g dry seed each. For each portion, mix a fresh bath. `
+   : '';
   bleachResult.textContent = batch.ok
-   ? `≈${fmt(batch.estimatedMl)} mL finished · Start with ${fmt(batch.waterG)} g water. Add ${blendWeight.format(batch.stockG)} g Tandil 7.5%.`
+   ? `${portions}≈${fmt(batch.estimatedMl)} mL finished · Start with ${fmt(batch.waterG)} g water. Add ${blendWeight.format(batch.stockG)} g Tandil 7.5%.`
    : batch.reason;
  }
  bleachSeed.addEventListener('input', renderBleachTrial);

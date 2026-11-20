@@ -24,7 +24,7 @@
   if (!Number.isFinite(final)||amount<=0) return {ok:false,reason:'The quantities are outside the calculation range.'};
   return {ok:true, stock:amount, water:Number(water), final};
  }
- function bleachTrialBatch(seedGrams, coverMl=''){
+ function bleachTrialBatch(seedGrams, coverMl='', jarSeedGrams=null){
   const seed = Number(seedGrams);
   if (!Number.isFinite(seed) || seed < 10) {
    return {ok:false, reason:'Enter at least 10 g of dry seed for this 0.1 g scale recipe.'};
@@ -33,15 +33,24 @@
   if (coverMl !== '' && (!Number.isFinite(measuredCover) || measuredCover <= 0)) {
    return {ok:false, reason:'Enter a positive volume to cover the seed, or leave it blank.'};
   }
-  // Use 10% above the larger of the sprout benchmark and measured vessel coverage.
-  const benchmark = seed * 5;
+  // A fixed jar recipe uses the reference seed weight for each fresh bath.
+  const portions = jarSeedGrams === null ? 1 : Math.ceil(seed / jarSeedGrams);
+  if (!Number.isSafeInteger(portions) || portions < 1) {
+   return {ok:false, reason:'The quantities are outside the calculation range.'};
+  }
+  const benchmark = (jarSeedGrams ?? seed) * 5;
   const stockPct = 7.14, targetPct = 0.2;
-  const minimumFinished = Math.max(benchmark, measuredCover) * 1.1;
+  const minimumFinished = (jarSeedGrams === null ? Math.max(benchmark, measuredCover) : benchmark) * 1.1;
   const water = Math.ceil(minimumFinished * (1 - targetPct / stockPct) / 5) * 5;
   const mix = dilutionFromWater({stock:stockPct, target:targetPct, water});
   if (!mix.ok) return mix;
   const stock = Math.round(mix.stock * 10) / 10;
-  return {ok:true, estimatedMl:water+stock, stockG:stock, waterG:water};
+  const estimatedMl = water + stock;
+  if (jarSeedGrams !== null && measuredCover * 1.1 > estimatedMl) {
+   return {ok:false, reason:'Use a smaller seed portion and recheck coverage in the quart jar. The measured amount plus the 10% margin exceeds the sunflower bath.'};
+  }
+  const batch = {ok:true, estimatedMl, stockG:stock, waterG:water};
+  return jarSeedGrams === null ? batch : {...batch, portions, seedPerPortion:seed / portions};
  }
  function plan(input){
   if(!['peroxide','hocl','bleach'].includes(input.chemical)||!['mass','volume'].includes(input.basis))return {ok:false,reason:'Choose a chemical and matching concentration basis.'};
