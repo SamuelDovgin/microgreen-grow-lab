@@ -33,11 +33,6 @@
   if (coverMl !== '' && (!Number.isFinite(measuredCover) || measuredCover <= 0)) {
    return {ok:false, reason:'Enter a positive volume to cover the seed, or leave it blank.'};
   }
-  // A fixed jar recipe uses the reference seed weight for each fresh bath.
-  const portions = jarSeedGrams === null ? 1 : Math.ceil(seed / jarSeedGrams);
-  if (!Number.isSafeInteger(portions) || portions < 1) {
-   return {ok:false, reason:'The quantities are outside the calculation range.'};
-  }
   const benchmark = (jarSeedGrams ?? seed) * 5;
   const stockPct = 7.14, targetPct = 0.2;
   const minimumFinished = (jarSeedGrams === null ? Math.max(benchmark, measuredCover) : benchmark) * 1.1;
@@ -47,10 +42,9 @@
   const stock = Math.round(mix.stock * 10) / 10;
   const estimatedMl = water + stock;
   if (jarSeedGrams !== null && measuredCover * 1.1 > estimatedMl) {
-   return {ok:false, reason:'Use a smaller seed portion and recheck coverage in the quart jar. The measured amount plus the 10% margin exceeds the sunflower bath.'};
+   return {ok:false, reason:'The full batch needs more liquid than the sunflower bath allows with the coverage margin. Use a vessel and bath size that can cover the full batch.'};
   }
-  const batch = {ok:true, estimatedMl, stockG:stock, waterG:water};
-  return jarSeedGrams === null ? batch : {...batch, portions, seedPerPortion:seed / portions};
+  return {ok:true, estimatedMl, stockG:stock, waterG:water};
  }
  function plan(input){
   if(!['peroxide','hocl','bleach'].includes(input.chemical)||!['mass','volume'].includes(input.basis))return {ok:false,reason:'Choose a chemical and matching concentration basis.'};

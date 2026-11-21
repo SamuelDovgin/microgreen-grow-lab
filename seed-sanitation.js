@@ -20,12 +20,8 @@
   const usesJar = ['pea-basic', 'pea-tendril'].includes(selectedCropId);
   const batch = M.bleachTrialBatch(bleachSeed.value, bleachCover.validity?.badInput ? NaN : bleachCover.value, usesJar ? jarSeedGrams : null);
   jarNote.hidden = !usesJar;
-  $('bleach-trial-cover-label').textContent = usesJar ? 'Measured water to cover one portion (mL)' : 'Measured water to cover (mL)';
-  const portions = batch.portions > 1
-   ? `Split into ${fmt(batch.portions)} portions of about ${fmt(batch.seedPerPortion)} g dry seed each. For each portion, mix a fresh bath. `
-   : '';
   bleachResult.textContent = batch.ok
-   ? `${portions}≈${fmt(batch.estimatedMl)} mL finished · Start with ${fmt(batch.waterG)} g water. Add ${blendWeight.format(batch.stockG)} g Tandil 7.5%.`
+   ? `≈${fmt(batch.estimatedMl)} mL finished · Start with ${fmt(batch.waterG)} g water. Add ${blendWeight.format(batch.stockG)} g Tandil 7.5%.`
    : batch.reason;
  }
  bleachSeed.addEventListener('input', renderBleachTrial);
