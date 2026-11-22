@@ -52,6 +52,14 @@ function setupError(s) {
   return '';
 }
 const tare=(s,stage)=>s.holesG+s.bottomG+((stage==='germination'||stage==='blackout'&&s.coverBlackout)?s.topG:0);
+function stackBudget(setup,stage) {
+  const trays=[setup.holesG,setup.bottomG];
+  if (stage==='germination'||stage==='blackout'&&setup.coverBlackout) trays.unshift(setup.topG);
+  const trayG=tare(setup,stage), dryG=setup.dryG, seedG=grams(setup.seedG,.1)?setup.seedG:null;
+  const fixedG=trayG+dryG+(seedG??0);
+  return {trays,trayG,dryG,seedG,hydrationG:setup.hydrationG,mistG:setup.mistG,
+    remainder:(total,pool=0)=>round(total-pool-fixedG)};
+}
 const starting=(s,stage)=>round(s.sowG!==null?s.sowG-s.topG-s.holesG-s.bottomG+tare(s,stage):
   tare(s,stage)+s.dryG+s.hydrationG+s.seedG+s.mistG);
 const nearMoist=(low,high)=>[Math.max(low,round(high-REFILL_WINDOW_G)),high];
@@ -285,7 +293,7 @@ function harvests(cycles, cycle, setup, planner) {
   return {count:sample.length,median:median(weights),range:[Math.min(...weights),Math.max(...weights)],
     day:median(sample.map(r=>r.day)),matched:matched.length>0};
 }
-const api={observations,sessions,grams,coirRecipe,validCoir,validSeedBasis,setupError,tare,starting,drained,checkError,latestSetup,
+const api={observations,sessions,grams,coirRecipe,validCoir,validSeedBasis,setupError,tare,stackBudget,starting,drained,checkError,latestSetup,
   series,defaultSession,target,recipeBand,harvests,round,DAY,TRAY_TARE_G,REFILL_WINDOW_G};
 if (typeof module==='object') module.exports=api; else root.TrayWeightModel=api;
 })(typeof window==='undefined'?globalThis:window);

@@ -67,11 +67,14 @@ function defaultSetup(cycle,seed=sowingSeed(cycle)) {
     group:'My rack',am:'08:00',pm:'20:00',coverBlackout:true,sowMoist:false,sowG:null};
 }
 function goalFor(doc,cycle,stage,instant) {
-  const saved=W.latestSetup(cycle)?.setup, setup=saved||defaultSetup(cycle);
-  const seedMissing=setup.seedG==='';
-  const target=seedMissing?{}:W.target(doc.cycles,cycle,setup,stage,instant,M);
-  const postBand=target.postBand||W.recipeBand(setup,stage,target);
-  return {...target,postBand,seedMissing,estimate:!!postBand&&!target.postBand};
+  const saved=W.latestSetup(cycle)?.setup, seed=saved?null:sowingSeed(cycle);
+  const setup=saved||defaultSetup(cycle,seed);
+  const needsDrainedWeight=setup.seedG===''&&!!seed?.needsDrainedWeight;
+  const target=setup.seedG===''?{}:W.target(doc.cycles,cycle,setup,stage,instant,M);
+  const budgetSetup=needsDrainedWeight?{...setup,seedG:seed.grams}:setup;
+  const postBand=target.postBand||W.recipeBand(budgetSetup,stage,target);
+  return {...target,postBand,seedMissing:budgetSetup.seedG==='',needsDrainedWeight,saved:!!saved,
+    estimate:!!postBand&&!target.postBand,budget:W.stackBudget(budgetSetup,stage)};
 }
 function goalValue(goal) {
   return goal.postBand?bandText(goal.postBand)+(goal.seedMissing?' + seed weight':''):'Check coir first';
@@ -81,14 +84,36 @@ function boardGoal(doc,cycle,stage,instant,descriptionId) {
   return `<span id="${descriptionId}" class="tray-weight-copy">
     <span class="tray-weight-label">After watering now</span>
     <strong class="tray-weight-range">${goalValue(goal)}</strong>
-    ${goal.estimate?'<span class="tray-weight-source">Recipe estimate</span>':''}
+    ${goal.estimate?`<span class="tray-weight-source">Recipe estimate${goal.needsDrainedWeight?' · dry seed':''}</span>`:''}
   </span><span aria-hidden="true" class="tray-weight-arrow">↗</span>`;
 }
-function goalHeading(goal) {
-  return `<h3>After watering now · ${goalValue(goal)}</h3>
-    ${goal.estimate?`<p class="pl-help">Recipe estimate. Check that the coir is drying before watering, then weigh after excess water drains.
-      ${goal.seedMissing?'Enter your seed weight as sown to get the full stack target.':''}</p>`:
-      goal.postBand?'<p class="pl-help">Aim for this full-stack reading after excess water drains.</p>':''}`;
+function readingEquation(budget,totalG,poolG=0) {
+  const remainder=budget.remainder(totalG,poolG);
+  if (remainder<0) return 'The reading is below the sum of the listed parts. Check the scale and setup.';
+  return `${g(totalG)} scale − ${g(budget.trayG)} trays − ${g(budget.dryG)} dry coir${budget.seedG===null?'':` − ${fmt(budget.seedG,2)} g seed`}${poolG?` − ${g(poolG)} standing water`:''} = <strong>${g(remainder)} remaining</strong>.`;
+}
+function breakdown(goal,cycle,stage,reading,pool) {
+  const {budget:b,postBand}=goal;
+  const remainder=postBand?.map(value=>b.remainder(value));
+  const usableRemainder=remainder&&remainder[0]>=0;
+  const row=(label,value,operator='')=>`<div><dt>${label}</dt><dd>${operator?operator+' ':''}${value}</dd></div>`;
+  const broccoli=cropKey(cycle.cropId)==='broccoli'&&stage==='lights';
+  return `<h3>After-watering breakdown</h3>
+    <dl class="weight-equation">
+      ${row(`Empty trays <small>${b.trays.map(g).join(' + ')}</small>`,g(b.trayG))}
+      ${row('Dry coco coir',g(b.dryG),'+')}
+      ${row(goal.saved?'Seed as sown':'Dry seed at sowing',b.seedG===null?'Unknown':fmt(b.seedG,2)+' g','+')}
+      ${row('Water and growth',usableRemainder?bandText(remainder):'—','+')}
+      <div class="weight-equation-total"><dt>After watering now</dt><dd>${postBand?'= ':''}${goalValue(goal)}</dd></div>
+    </dl>
+    <p class="pl-help"><strong>Coir recipe at sowing</strong> · ${g(b.dryG)} dry + ${g(b.hydrationG)} water = ${g(b.dryG+b.hydrationG)} hydrated coir.
+      ${b.mistG?`Seed spray adds another ${g(b.mistG)} at sowing.`:''}
+      The remainder can include retained water, plant growth and any unmeasured mass.</p>
+    ${goal.needsDrainedWeight?`<p class="pl-help">The estimate includes ${fmt(b.seedG,2)} g of dated dry seed. Weigh the seed after rinsing or soaking and draining to account for the extra water it carries.</p>`:''}
+    ${goal.estimate?'<p class="pl-help">Recipe estimate. A drained, evenly moist reading can establish a target for this tray.</p>':''}
+    ${broccoli?`<p class="weight-reported"><strong>Your broccoli reference</strong> · 1,900 g before watering and about 1,700–2,000 g after watering.</p>`:''}
+    ${reading!==null||broccoli?`<p class="weight-reading-equation">${readingEquation(b,reading??1900,pool)}
+      ${b.seedG===null?'The remainder includes the unentered seed weight.':''}</p>`:''}`;
 }
 function setupFields(cycle) {
   const previous=W.latestSetup(cycle)?.setup;
@@ -204,13 +229,7 @@ function scaleForm(setup,stage,instant) {
     ${formActions('Save weight check','Back to tray','weight-tray')}
   </form>`;
 }
-function renderPreview(form,doc,cycle,instant) {
-  const post=form.elements.postMoist;
-  post.disabled=!form.elements.postG.value;
-  if (post.disabled) post.checked=false;
-  const setup=W.latestSetup(cycle).setup, stage=M.phase(cycle);
-  if (!form.dataset.chosenSession) form.elements.session.value=W.defaultSession(setup,instant);
-  const check=readCheck(new FormData(form)), target=goalFor(doc,cycle,stage,instant);
+function renderPreview(result,setup,stage,cycle,instant,check,target) {
   const next=M.formatTime(target.next,true);
   const {band,postTarget,conflict,lossRange,intervals,nextFloor}=target;
   const {totalG,poolG,observation}=check, drainedG=W.drained(check);
@@ -242,10 +261,8 @@ function renderPreview(form,doc,cycle,instant) {
     verdict='You observed dry coir';
     tip=`${stage==='lights'?'Bottom-water in small amounts':'Mist lightly'} if the coir feels dry. Record the drained weight once it feels evenly moist.`;
   }
-  const result=form.querySelector('#weight-result');
   const markup=`
     <p class="weight-result-label">Day ${M.projection(cycle,instant).day} · ${M.PHASE[stage]} day ${target.stageDay} · ${W.sessions[check.session]} check</p>
-    ${goalHeading(target)}
     ${target.trend?'<p class="pl-help">Adjusted using the trend in this tray’s recent evenly moist, drained weights.</p>':''}
     ${band?`<p class="pl-help">Before watering · <strong>${bandText(band)}</strong>. ${target.earlier?
       'Using earlier readings from the same stage.':'Your observed moisture range.'}</p>`:
@@ -256,10 +273,28 @@ function renderPreview(form,doc,cycle,instant) {
     <p class="pl-help">Next planned check ${escape(next)}.${lossRange?
       ` Expected net weight loss ${bandText(lossRange)} based on ${intervals} similar intervals.${postTarget-lossRange[1]<nextFloor?' Check sooner if the tray dries quickly.':''}`:
       ' Log drained after-watering weights and the next check to learn your day and overnight weight loss.'}</p>`;
-  if (result.renderedMarkup!==markup) {
-    result.innerHTML=markup;
-    result.renderedMarkup=markup;
+  updateMarkup(result,markup);
+}
+function updateMarkup(node,markup) {
+  if (node.renderedMarkup===markup) return;
+  node.innerHTML=markup;
+  node.renderedMarkup=markup;
+}
+function renderWeight(node,form,preview,doc,cycle,instant) {
+  const setup=W.latestSetup(cycle)?.setup, stage=M.phase(cycle);
+  const goal=goalFor(doc,cycle,stage,instant);
+  if (!form) {
+    const reading=preview.value===''?null:preview.valueAsNumber;
+    updateMarkup(node,breakdown(goal,cycle,stage,Number.isFinite(reading)&&reading>0?reading:null,0));
+    return;
   }
+  const post=form.elements.postMoist;
+  post.disabled=!form.elements.postG.value;
+  if (post.disabled) post.checked=false;
+  if (!form.dataset.chosenSession) form.elements.session.value=W.defaultSession(setup,instant);
+  const check=readCheck(new FormData(form));
+  updateMarkup(node,breakdown(goal,cycle,stage,check.totalG,check.poolG));
+  renderPreview(form.querySelector('#weight-result'),setup,stage,cycle,instant,check,goal);
 }
 function plot(checks,history,key,label,unit) {
   const values=checks.flatMap(row=>key==='mass'?
@@ -335,8 +370,9 @@ function harvests(doc,cycle,setup,instant) {
 }
 function content(doc,cycle,instant) {
   const setup=W.latestSetup(cycle)?.setup, checks=W.series(cycle,M), stage=M.phase(cycle), live=M.ACTIVE.includes(stage);
-  return `${live&&setup?scaleForm(setup,stage,instant):''}
-    ${live&&!setup?`<section id="weight-starter-result" class="weight-result">${goalHeading(goalFor(doc,cycle,stage,instant))}</section>`:''}
+  return `${live?'<section id="weight-breakdown" class="weight-result" aria-label="Tray weight breakdown"></section>':''}
+    ${live&&setup?scaleForm(setup,stage,instant):''}
+    ${live&&!setup?`<label>Before-watering reading (g) <input type="number" inputmode="decimal" min="0.1" step="0.1" id="weight-preview-reading"></label>`:''}
     ${live?`<div class="weight-setup-link">${setup?'':'<p>Confirm your tray weights and coir recipe to save your first check.</p>'}${action(setup?'Edit scale setup':'Set up tray weights','weight-setup')}</div>`:''}
     <section class="dialog-section"><h3>Growth and weight history</h3>${charts(cycle,checks)}</section>
     ${harvests(doc,cycle,setup,instant)}
@@ -359,11 +395,7 @@ function content(doc,cycle,instant) {
     ${live&&setup?'':`<div class="pl-actions">${action('Back to tray','weight-tray')}</div>`}`;
 }
 const refreshSowingSeed=(node,cycle)=>{node.textContent=seedLabel(sowingSeed(cycle));};
-function refreshStarter(node,doc,cycle,instant) {
-  const markup=goalHeading(goalFor(doc,cycle,M.phase(cycle),instant));
-  if (node.innerHTML!==markup) node.innerHTML=markup;
-}
 const sourceKey=key=>[R.KEY,C.ACTIVE_PLAN_KEY,...Object.values(C.PLAN_KEYS)].includes(key);
-window.TrayWeightView={content,setupFields,loadRecipe,loadSeed,refreshSetup,refreshSowingSeed,readSetup,readCheck,renderPreview,
-  sowingInputs,seedAt,boardGoal,refreshStarter,sourceKey};
+window.TrayWeightView={content,setupFields,loadRecipe,loadSeed,refreshSetup,refreshSowingSeed,readSetup,readCheck,renderWeight,
+  sowingInputs,seedAt,boardGoal,sourceKey};
 })();

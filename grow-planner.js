@@ -171,14 +171,16 @@ function showDialog(mode,title,kicker,content,state, origin=null) {
   if (!wasOpen) returnTo=origin||document.activeElement;
   change={mode, expected:store.current().revision,...state};
   dialog.classList.toggle('drawer',mode==='tray');
-  dialog.innerHTML=`<div class="dialog-content">
-    <div class="dialog-head"><div><p class="planner-kicker">${esc(kicker)}</p><h2 id="dialog-title" tabindex="-1">${esc(title)}</h2></div>
+  dialog.innerHTML=`<div class="dialog-shell">
+    <div class="dialog-head"><div><p class="planner-kicker">${esc(kicker)}</p><h2 id="dialog-title" tabindex="-1" autofocus>${esc(title)}</h2></div>
     ${button('×','close','aria-label="Close dialog"','dialog-close')}</div>
-    <p id="dialog-error" class="pl-alert" role="alert" hidden></p>${content}
+    <div class="dialog-scroll" id="dialog-scroll" tabindex="${mode.startsWith('weight')?'0':'-1'}" role="region" aria-label="Dialog content"><div class="dialog-content">
+      <p id="dialog-error" class="pl-alert" role="alert" hidden></p>${content}
+    </div></div>
   </div>`;
   if (!wasOpen) dialog.showModal();
-  dialog.scrollTop=0;
   focus(el('dialog-title'));
+  el('dialog-scroll').scrollTop=0;
 }
 function cancel() {
   if (busy) return;
@@ -381,9 +383,7 @@ function openWeightSetup(c) {
 function refreshWeightPreview() {
   const c=change?.mode==='weightCheck'&&find(change.trayId);
   if (!c || !M.ACTIVE.includes(M.phase(c))) return;
-  const form=el('weight-check-form'), starter=el('weight-starter-result'), doc=store.current(), instant=now();
-  if (form) W.renderPreview(form,doc,c,instant);
-  if (starter) W.refreshStarter(starter,doc,c,instant);
+  W.renderWeight(el('weight-breakdown'),el('weight-check-form'),el('weight-preview-reading'),store.current(),c,now());
 }
 function refreshWeightSources(key=null) {
   const c=change&&find(change.trayId);
@@ -568,6 +568,7 @@ function onTimeEdit(e) {
     if (e.target.name==='session') e.target.form.dataset.chosenSession='true';
     refreshWeightPreview();
   }
+  if (e.target.id==='weight-preview-reading') refreshWeightPreview();
   if (e.target.form?.id==='weight-setup-form') {
     if (e.target.name==='seedG') e.target.form.dataset.followSeed='false';
     if (['dryG','hydrationG'].includes(e.target.name)) e.target.form.dataset.followCoir='false';
