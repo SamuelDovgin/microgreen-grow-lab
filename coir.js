@@ -2,7 +2,7 @@
 'use strict';
 const M=window.CoirModel,$=id=>document.getElementById(id);
 const version=()=>$('protocol-version').checked?'new':'old';
-const key=()=>version()==='new'?'grow-lab:coir-plan:v2':'grow-lab:coir-plan:v1';
+const key=()=>M.PLAN_KEYS[version()];
 const defaults=()=>M.defaults(version());
 let quickCount=1;
 const ids=['brickG','brickQt','price','rounding','sampleG','sampleCups','sampleWater','condition'];
@@ -58,7 +58,10 @@ function render(){
  $('tray-visuals').innerHTML=p.rows.map(tray).join('');
  const reasons=['Thin-fill comparison','OTG general shallow-tray baseline','USU 2-quart baseline / clearance-trial large seed','About ½″ below the rim','Near-rim comparison','Earlier ~300 g comparison'];
  $('fill-comparison').innerHTML=p.comparisons.map((r,i)=>`<tr><td><strong>${fmt(r.cups,1)} cups</strong><br>${fmt(r.cups/4,2)} US qt</td><td>${mass(r.exactG,true)} → <strong>${mass(r.weighG,s.rounding==='0')}</strong></td><td>${water(r.waterMl)}</td><td>≈ ${fmt(r.depthIn,2)}″ / ${fmt(r.headroomIn,2)}″</td><td>${reasons[i]}</td></tr>`).join('');
- try{window.localStorage.setItem(key(),JSON.stringify(s));}catch(e){$('coir-export-status').textContent='Browser storage is unavailable. Download a worksheet to retain this plan.';}
+ try{
+  window.localStorage.setItem(key(),JSON.stringify(s));
+  window.localStorage.setItem(M.ACTIVE_PLAN_KEY,s.version);
+ }catch(e){$('coir-export-status').textContent='Browser storage is unavailable. Download a worksheet to retain this plan.';}
 }
 function exportPlan(){const s=read(),p=M.calculate(s);if(!p.valid||p.empty){$('coir-export-status').textContent='Choose a valid nonempty batch before exporting.';return;}const doc=M.worksheet(s,p);const blob=new Blob([JSON.stringify(doc,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='grow-lab-coir-worksheet.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('coir-export-status').textContent='Downloaded inputs, per-tray grams/water, batch totals and measurement notes.';}
 $('coir-form').addEventListener('submit',e=>e.preventDefault());

@@ -2,6 +2,8 @@
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.CoirModel=api;})(typeof window!=='undefined'?window:globalThis,function(){
 'use strict';
 const CUP_ML=236.5882365, IN3_ML=16.387064, MAX_TRAYS_PER_CROP=100;
+const PLAN_KEYS={old:'grow-lab:coir-plan:v1',new:'grow-lab:coir-plan:v2'};
+const ACTIVE_PLAN_KEY='grow-lab:active-coir-plan';
 const TRAY_HEIGHT_IN=1.25, HEADSPACE_TARGET_IN=.5;
 const CUP_DEPTH_IN=CUP_ML/(19.75*9.5*IN3_ML);
 const HALF_INCH_CUPS=Math.round((TRAY_HEIGHT_IN-HEADSPACE_TARGET_IN)/CUP_DEPTH_IN);
@@ -74,5 +76,5 @@ function calculate(s){
 }
 function worksheet(s,p){if(!p.valid)return null;return {tool:'Grow Lab coco coir',version:'2026-11-14',inputs:s,outputs:p,fullTrayTrial:p.trialTrays?fullTrayTrial:null,notes:['Expanded volumes are US cups of damp, lightly leveled coir. The 185 g starter uses a nominal eight-cup estimate; measure actual expansion and clearance.','The full-tray test scales the leftover-based estimate by 10% before rounding because some trays had low, uneven spots. Full-tray cups describe the modeled tray capacity.','Cup-based fills use label yield or one measured expansion sample. Rounding applies per tray.','Initial water is for coir hydration and excludes soaking and irrigation.','Check headspace from the rim of the drainage tray to the leveled coir before sowing. Estimated geometry uses published outside height and a rectangular bottom footprint.']};}
 function selfTest(){const s=defaults(),a=calculate(s),old=calculate(defaults('old'));if(!a.valid||a.dryG!==740||Math.round(a.waterMl)!==2467||a.moistureTrays!==4||old.dryG!==580||old.waterMl!==2320)throw Error('Default tray trials failed');s.rows.forEach(r=>r.count=0);if(!calculate(s).empty)throw Error('Empty batch failed');return {passed:2};}
-return {crops,defaults,calculate,calibration,depth,worksheet,selfTest,fullTrayTrial,moistureTrial,CUP_ML,MAX_TRAYS_PER_CROP,TRAY_HEIGHT_IN,HEADSPACE_TARGET_IN,HALF_INCH_CUPS,FULL_TRAY_CUPS};
+return {crops,defaults,calculate,calibration,depth,worksheet,selfTest,fullTrayTrial,moistureTrial,PLAN_KEYS,ACTIVE_PLAN_KEY,CUP_ML,MAX_TRAYS_PER_CROP,TRAY_HEIGHT_IN,HEADSPACE_TARGET_IN,HALF_INCH_CUPS,FULL_TRAY_CUPS};
 });

@@ -24,7 +24,26 @@ function parse(text,cropIds){
  }
  return {doc:{schema:SCHEMA,revision:d.revision,entries:clone(d.entries)}};
 }
-function latest(entries,cropId){let found=null;for(const e of entries)if(e.cropId===cropId&&(!found||Date.parse(e.changedAt)>=Date.parse(found.changedAt)))found=e;return found?clone(found):null;}
+function latest(entries,cropId,through=Infinity){let found=null;for(const e of entries)if(e.cropId===cropId&&Date.parse(e.changedAt)<=through&&(!found||Date.parse(e.changedAt)>=Date.parse(found.changedAt)))found=e;return found?clone(found):null;}
+const chicagoDate=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit'});
+function historyDay(instant){
+ const parts=Object.fromEntries(chicagoDate.formatToParts(new Date(instant)).map(part=>[part.type,part.value]));
+ return parts.year+'-'+parts.month+'-'+parts.day;
+}
+function atSowing(data,entries,cropId,sownAt){
+ const instant=Date.parse(sownAt);
+ if(!Number.isFinite(instant))return null;
+ const day=historyDay(instant);
+ const personal=latest(entries,cropId,instant);
+ if(personal)return {kind:'personal',id:personal.id,date:historyDay(personal.changedAt),changedAt:personal.changedAt,
+   grams:personal.toGrams,needsDrainedWeight:personal.recipe.soak[1]>0};
+ // Published rows follow the revision chain. Day-only decisions take effect
+ // on their Chicago date. Timestamped revisions use the recorded instant.
+ const published=data.seedRateHistory.entries.findLast(entry=>entry.cropId===cropId&&
+   (entry.changedAt?Date.parse(entry.changedAt)<=instant:entry.date<=day));
+ return published?{kind:'published',id:published.id,date:published.date,changedAt:published.changedAt,
+   grams:published.toGrams,needsDrainedWeight:false}:null;
+}
 function merge(a,b){
  const ids=new Map(a.entries.map(e=>[e.id,e]));let added=0;
  for(const e of b.entries){if(ids.has(e.id)){if(canonical(ids.get(e.id))!==canonical(e))return {error:'A revision ID conflicts with your saved history. Neither version was overwritten.'};}else{ids.set(e.id,e);added++;}}
@@ -43,6 +62,6 @@ function createStore(storage,cropIds){
  }
  return {read:()=>clone(doc),status:()=>({persisted,error,protectedData}),latest:cropId=>latest(doc.entries,cropId),append:e=>{if(doc.entries.some(x=>x.id===e.id))return {ok:false,error:'This revision ID is already present.'};return save({...doc,entries:[...doc.entries,e]});},import:text=>{const p=parse(text,cropIds);if(p.error)return {ok:false,error:p.error};const m=merge(doc,p.doc);if(m.error)return {ok:false,error:m.error};if(!m.added)return {ok:true,persisted,added:0};return {...save(m.doc),added:m.added};}};
 }
-const api={KEY,SCHEMA,empty,parse,latest,merge,createStore};
+const api={KEY,SCHEMA,empty,parse,latest,atSowing,merge,createStore};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.SeedRates=api;
 })(typeof window!=='undefined'?window:globalThis);

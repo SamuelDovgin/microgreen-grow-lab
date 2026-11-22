@@ -2,8 +2,11 @@
 (() => {
 'use strict';
 const M=window.GrowPlannerModel, W=window.TrayWeightModel;
+const D=window.CropData, R=window.SeedRates, C=window.CoirModel;
+const cropIds=D.crops.map(c=>c.id);
+const cropKey=id=>Object.hasOwn(D.retiredCropIds,id)?D.retiredCropIds[id].cropId:id;
 const escape=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const fmt=value=>Number(value).toLocaleString('en-US',{maximumFractionDigits:1});
+const fmt=(value,digits=1)=>Number(value).toLocaleString('en-US',{maximumFractionDigits:digits});
 const g=value=>fmt(value)+' g';
 const span=([low,high])=>low===high?fmt(low):fmt(low)+'–'+fmt(high);
 const bandText=band=>span(band)+' g';
@@ -16,22 +19,55 @@ const formActions=(save,back='Back',backAction='close')=>`<div class="pl-actions
 const stageClass=stage=>'weight-'+stage;
 function recipe(cropId,version) {
   let saved=null;
-  try { saved=JSON.parse(localStorage.getItem('grow-lab:coir-plan:'+(version==='old'?'v1':'v2'))); }
+  try { saved=JSON.parse(localStorage.getItem(C.PLAN_KEYS[version])); }
   catch { /* Use the calculator's starter if browser storage is unavailable. */ }
-  return W.coirRecipe(cropId,version,saved);
+  const row=W.coirRecipe(cropKey(cropId),version,saved);
+  return W.validCoir(row)?row:W.coirRecipe(cropKey(cropId),version,null);
+}
+function activeCoir(cropId) {
+  let version='new';
+  try { if (localStorage.getItem(C.ACTIVE_PLAN_KEY)==='old') version='old'; }
+  catch { /* Use the New starter if browser storage is unavailable. */ }
+  return recipe(cropId,version);
+}
+let seedRaw=null, personalEntries=[];
+function seedAt(cropId,sownAt) {
+  let raw=null;
+  try { raw=localStorage.getItem(R.KEY); } catch { /* Published history is available offline. */ }
+  if (raw!==seedRaw) {
+    seedRaw=raw;
+    personalEntries=raw?R.parse(raw,cropIds).doc?.entries||[]:[];
+  }
+  const id=cropKey(cropId), seed=R.atSowing(D,personalEntries,id,sownAt);
+  if (!seed) return null;
+  const crop=D.crops.find(item=>item.id===id);
+  const soak=seed.kind==='personal'?seed.needsDrainedWeight:crop?.alternatives[0]?.soak?.[1]>0;
+  return {...seed,sownAt,needsDrainedWeight:soak||id==='sunflower'};
+}
+function sowingSeed(cycle) {
+  const event=M.effectiveHistory(cycle)[0], current=seedAt(cycle.cropId,event.occurredAt);
+  // A backup can carry a saved personal reference into a browser without that seed-rate history.
+  const saved=[cycle.sowingInputs?.seed,...event.corrections.map(correction=>correction.seedBasis),
+    ...cycle.events.filter(record=>record.kind==='weight_setup_saved').map(record=>record.setup.seedBasis)]
+    .filter(seed=>seed?.sownAt===event.occurredAt&&seed.kind==='personal');
+  return saved.reduce((latest,seed)=>latest?.kind==='personal'&&Date.parse(latest.changedAt)>=Date.parse(seed.changedAt)?latest:seed,current);
+}
+const sowingInputs=(cropId,sownAt)=>({coir:activeCoir(cropId),seed:seedAt(cropId,sownAt)});
+const drySeedMass=seed=>seed&&!seed.needsDrainedWeight?seed.grams:'';
+function seedLabel(seed) {
+  if (!seed) return 'No seed-rate revision is recorded before sowing. Enter the amount you used.';
+  const amount=fmt(seed.grams,2);
+  const source=seed.kind==='personal'?'Personal trial':'Published rate';
+  const date=seed.changedAt?M.formatTime(seed.changedAt):seed.date+' (Chicago date)';
+  return `${amount} g dry seed per 200 in² · ${source} from ${date}.`;
 }
 function setupFields(cycle) {
   const previous=W.latestSetup(cycle)?.setup;
-  const crop=window.CropData.crops.find(item=>item.id===cycle.cropId);
-  const seed=crop?.alternatives[0];
-  const seedEstimate=seed && W.round(window.CropModel.density({
-    length:20,width:10,seedsPerGram:crop.seedsPerGram,germination:95,establishment:90,shootsPerUnit:1,
-    multiplier:1,mode:'reference',
-  },crop,seed)?.grams);
-  const needsMeasuredSeed=seed?.soak?.[1]>0 || cycle.cropId==='sunflower';
-  const s=previous||{...recipe(cycle.cropId,'new'),seedG:needsMeasuredSeed?'':seedEstimate||'',mistG:0,
+  const seed=sowingSeed(cycle);
+  const coir=cycle.sowingInputs?.coir||activeCoir(cycle.cropId);
+  const s=previous||{...coir,seedG:drySeedMass(seed),mistG:0,
     group:'My rack',am:'08:00',pm:'20:00',coverBlackout:true,sowMoist:false};
-  return `<form id="weight-setup-form">
+  return `<form id="weight-setup-form" data-follow-seed="${!previous}" data-follow-coir="${!previous&&!cycle.sowingInputs?.coir}">
     <fieldset class="weight-fields"><legend>Weigh each empty tray</legend>
       <div class="weight-grid">
         ${massField('topG','Top cover (g)',s.topG,requiredMass)}
@@ -44,16 +80,20 @@ function setupFields(cycle) {
     <fieldset class="weight-fields"><legend>What went in at sowing</legend>
       <p class="pl-help">Coco coir amounts are per tray. If you mixed a batch, enter this tray’s share. <a href="coir.html">Coco coir calculator</a></p>
       <div class="pl-actions">${action('Load New coir recipe','weight-coir-new')}${action('Load Old coir recipe','weight-coir-old')}</div>
-      <p class="pl-help" id="weight-recipe-source">${escape(s.recipe)}. Edit to match what you used.</p>
+      <p class="pl-help" id="weight-recipe-source">${escape(s.recipe)}${!previous&&cycle.sowingInputs?.coir?' when this tray was added':''}. Edit to match what you used.</p>
       <input type="hidden" name="recipe" value="${escape(s.recipe)}">
+      <p class="pl-help" id="weight-seed-source">${escape(seedLabel(seed))}</p>
+      <div class="pl-actions" id="weight-seed-action" ${previous&&drySeedMass(seed)!==''?'':'hidden'}>
+        ${action('Load dated dry seed amount','weight-seed-load')}
+      </div>
       <div class="weight-grid">
         ${massField('dryG','Dry coco coir (g)',s.dryG,{...requiredMass,step:'any'})}
         ${massField('hydrationG','Coir hydration water (mL)',s.hydrationG,{...requiredMass,step:'any'})}
-        ${massField('seedG','Seeds as sown (g)',s.seedG,requiredMass)}
+        ${massField('seedG','Seeds as sown (g)',s.seedG,{...requiredMass,step:'any'})}
         ${massField('mistG','Seed spray at sowing (mL)',s.mistG)}
         ${massField('sowG','Full sowing stack (g, optional)',s.sowG)}
       </div>
-      <p class="pl-help">Use the seed weight after soaking or rinsing and draining. ${needsMeasuredSeed&&seedEstimate?`The dry starting plan is ${g(seedEstimate)}.`:''}
+      <p class="pl-help">Use the weight you actually sowed. Weigh soaked or rinsed seeds after draining.
       A full sowing weight includes all three trays, moistened coir, seeds and spray. Leave spray at 0 if you didn’t measure it.</p>
       <label class="weight-checkbox"><input type="checkbox" name="sowMoist" ${s.sowMoist?'checked':''}> I weighed the sowing stack and the coir felt evenly moist</label>
     </fieldset>
@@ -68,15 +108,34 @@ function setupFields(cycle) {
     ${formActions('Save scale setup')}
   </form>`;
 }
-function loadRecipe(form,cycle,version) {
-  const row=recipe(cycle.cropId,version);
+function setRecipe(form,row) {
   for (const [key,value] of Object.entries(row)) form.elements[key].value=value;
   form.querySelector('#weight-recipe-source').textContent=row.recipe+'. Edit to match what you used.';
 }
-function readSetup(data) {
+function loadRecipe(form,cycle,version) {
+  form.dataset.followCoir='false';
+  setRecipe(form,recipe(cycle.cropId,version));
+}
+function refreshSetup(form,cycle,key) {
+  if (key===R.KEY || key===null) {
+    const seed=sowingSeed(cycle);
+    form.querySelector('#weight-seed-source').textContent=seedLabel(seed);
+    form.querySelector('#weight-seed-action').hidden=!W.latestSetup(cycle)||drySeedMass(seed)==='';
+    if (form.dataset.followSeed==='true') form.elements.seedG.value=drySeedMass(seed);
+  }
+  if (form.dataset.followCoir==='true' && [null,C.ACTIVE_PLAN_KEY,...Object.values(C.PLAN_KEYS)].includes(key)) {
+    setRecipe(form,activeCoir(cycle.cropId));
+  }
+}
+function loadSeed(form,cycle) {
+  form.elements.seedG.value=drySeedMass(sowingSeed(cycle));
+}
+function readSetup(data,cycle) {
+  const seedBasis=sowingSeed(cycle);
   return {...Object.fromEntries(['topG','holesG','bottomG','dryG','hydrationG','seedG','mistG','sowG'].map(key=>[key,parseMass(data,key)])),
     mistG:parseMass(data,'mistG')??0,am:data.get('am'),pm:data.get('pm'),group:data.get('group').trim(),
-    recipe:data.get('recipe'),coverBlackout:data.has('coverBlackout'),sowMoist:data.has('sowMoist')};
+    recipe:data.get('recipe'),coverBlackout:data.has('coverBlackout'),sowMoist:data.has('sowMoist'),
+    ...(seedBasis?{seedBasis}:{})};
 }
 function readCheck(data) {
   return {...Object.fromEntries(['totalG','poolG','postG','waterG','heightIn'].map(key=>[key,parseMass(data,key)])),
@@ -251,6 +310,16 @@ function content(doc,cycle,instant) {
     ${live?`<div class="weight-setup-link">${setup?'':'<p>Weigh each empty tray once and load your coir recipe to start checking this grow.</p>'}${action(setup?'Edit scale setup':'Set up tray weights','weight-setup')}</div>`:''}
     <section class="dialog-section"><h3>Growth and weight history</h3>${charts(cycle,checks)}</section>
     ${harvests(doc,cycle,setup,instant)}
+    <details><summary>Sowing inputs and seed rate</summary>
+      <p class="pl-help">Sown ${escape(M.formatTime(M.effectiveHistory(cycle)[0].occurredAt))}.</p>
+      <p class="pl-help" id="weight-sowing-seed">${escape(seedLabel(sowingSeed(cycle)))}</p>
+      ${setup?`<p class="pl-help">This tray’s saved amounts are ${fmt(setup.seedG,2)} g seed as sown, ${g(setup.dryG)} dry coir,
+        ${fmt(setup.hydrationG)} mL coir water, and ${fmt(setup.mistG)} mL seed spray.</p>`:
+        cycle.sowingInputs?.coir?`<p class="pl-help">Coir calculator when added · ${g(cycle.sowingInputs.coir.dryG)} dry coir
+        and ${fmt(cycle.sowingInputs.coir.hydrationG)} mL water per tray.</p>`:''}
+      <div class="guide-links"><a href="seed-rate-notes.html#dated-seed-rate-choices">Published seed-rate history</a>
+        <a href="crops.html">Seed &amp; water planner</a><a href="coir.html">Coco coir calculator</a></div>
+    </details>
     <details><summary>How weight guidance works</summary>
       <p class="pl-help">Ranges use nearby days in the same stage from this tray and comparable grows. Dry and wet observations adjust the edges. Shoot growth changes the scale reading, and net weight loss can vary between day and night.</p>
       <div class="guide-links"><a href="https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens">Utah State Extension on coir and tray care</a>
@@ -258,5 +327,6 @@ function content(doc,cycle,instant) {
     </details>
     ${live&&setup?'':`<div class="pl-actions">${action('Back to tray','weight-tray')}</div>`}`;
 }
-window.TrayWeightView={content,setupFields,loadRecipe,readSetup,readCheck,renderPreview};
+const refreshSowingSeed=(node,cycle)=>{node.textContent=seedLabel(sowingSeed(cycle));};
+window.TrayWeightView={content,setupFields,loadRecipe,loadSeed,refreshSetup,refreshSowingSeed,readSetup,readCheck,renderPreview,sowingInputs,seedAt};
 })();

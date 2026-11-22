@@ -26,6 +26,16 @@ function coirRecipe(cropId, version, saved) {
   return {dryG:recipe.weighG, hydrationG:recipe.waterMl,
     recipe:row?'Saved '+version+' Coco coir recipe':'Coco coir '+version+' per-tray starter'};
 }
+const validCoir=coir=>coir && grams(coir.dryG,0.1) && grams(coir.hydrationG,0.1) &&
+  typeof coir.recipe==='string' && coir.recipe.length>0 && coir.recipe.length<=80;
+function validSeedBasis(seed) {
+  return seed && ['personal','published'].includes(seed.kind) && typeof seed.id==='string' && seed.id.length>0 &&
+    seed.id.length<=150 && typeof seed.sownAt==='string' && Number.isFinite(Date.parse(seed.sownAt)) &&
+    typeof seed.date==='string' && /^\d{4}-\d{2}-\d{2}$/.test(seed.date) &&
+    (seed.changedAt===null && seed.kind==='published' ||
+      typeof seed.changedAt==='string' && Date.parse(seed.changedAt)<=Date.parse(seed.sownAt)) &&
+    grams(seed.grams,.001) && typeof seed.needsDrainedWeight==='boolean';
+}
 function setupError(s) {
   if (!s || ![s.topG,s.holesG,s.bottomG,s.dryG,s.hydrationG,s.seedG].every(n=>grams(n,0.1)) ||
     !grams(s.mistG) || (s.sowG!==null&&!grams(s.sowG,0.1))) return 'Enter the tray, coir and seed weights in grams.';
@@ -37,6 +47,7 @@ function setupError(s) {
   if (!clock(s.am) || !clock(s.pm) || s.am>='12:00' || s.pm<'12:00') return 'Choose a morning time before noon and a night time after noon.';
   if (typeof s.coverBlackout!=='boolean' || typeof s.group!=='string' || !s.group.trim() ||
     s.group.length>60 || typeof s.recipe!=='string' || s.recipe.length>80) return 'Enter a setup name up to 60 characters.';
+  if (s.seedBasis!==undefined && !validSeedBasis(s.seedBasis)) return 'The setup contains an invalid dated seed rate.';
   return '';
 }
 const tare=(s,stage)=>s.holesG+s.bottomG+((stage==='germination'||stage==='blackout'&&s.coverBlackout)?s.topG:0);
@@ -202,7 +213,7 @@ function harvests(cycles, cycle, setup, planner) {
   return {count:sample.length,median:median(weights),range:[Math.min(...weights),Math.max(...weights)],
     day:median(sample.map(r=>r.day)),matched:matched.length>0};
 }
-const api={observations,sessions,grams,coirRecipe,setupError,tare,starting,drained,checkError,latestSetup,
+const api={observations,sessions,grams,coirRecipe,validCoir,validSeedBasis,setupError,tare,starting,drained,checkError,latestSetup,
   series,defaultSession,nextCheck,target,harvests,round,DAY};
 if (typeof module==='object') module.exports=api; else root.TrayWeightModel=api;
 })(typeof window==='undefined'?globalThis:window);

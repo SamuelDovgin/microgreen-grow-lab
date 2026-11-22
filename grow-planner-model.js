@@ -205,6 +205,11 @@ function validate(doc) {
     unique(c.id);
     validateSnapshot(c.cropMethodSnapshot,c.cropId);
     const effective = [], byId = new Map();
+    if (c.sowingInputs!==undefined) {
+      const {coir,seed}=c.sowingInputs||{};
+      requireThat(Weights.validCoir(coir) && (seed===null || Weights.validSeedBasis(seed) &&
+        seed.sownAt===c.events[0]?.occurredAt),'The tray contains invalid sowing inputs.');
+    }
     let from=null, recordedAt=time(c.createdAt), weightSetup=null;
     for (const [i,e] of c.events.entries()) {
       requireThat(object(e) && isInstant(e.occurredAt) && isInstant(e.recordedAt)
@@ -225,6 +230,8 @@ function validate(doc) {
         if (e.kind==='event_corrected') {
           const j=byId.get(e.relatedEventId);
           requireThat(j!==undefined && e.note===undefined,'The correction does not refer to an actual stage.');
+          requireThat(e.seedBasis===undefined || j===0 && Weights.validSeedBasis(e.seedBasis) &&
+            e.seedBasis.sownAt===e.occurredAt,'The correction contains an invalid sowing seed rate.');
           effective[j].occurredAt=e.occurredAt;
           requireThat(withinTimeline(effective,j),'This time would put stages out of order. It must be between the preceding and following actual stages.');
         } else if (e.kind==='weight_setup_saved') {
@@ -272,6 +279,7 @@ function createTray(doc, input, {now,id,guidance}) {
     cropMethodSnapshot:snapshot(crop,guidance),
     events:[{id:id(),kind:kindFor.germination,fromPhase:null,toPhase:'germination',occurredAt:startedAt,recordedAt}]
   };
+  if (input.sowingInputs) cycle.sowingInputs=input.sowingInputs;
   if (note) cycle.events.push({id:id(),kind:'note_added',occurredAt:recordedAt,recordedAt,note});
   return nextDoc(doc,[...doc.cycles,cycle]);
 }
@@ -329,7 +337,8 @@ function correctEvent(doc, input, {now,id}) {
     requireThat(original,'Choose an actual stage to correct.');
     const occurredAt=enteredAt(input.occurredAt,now);
     requireThat(time(occurredAt)!==time(original.occurredAt),'Choose a different date or time to correct this entry.');
-    return {id:id(),kind:'event_corrected',relatedEventId:input.eventId,occurredAt,recordedAt:stamp(now)};
+    return {id:id(),kind:'event_corrected',relatedEventId:input.eventId,occurredAt,recordedAt:stamp(now),
+      ...(original.toPhase==='germination' && input.seedBasis?{seedBasis:input.seedBasis}:{})};
   });
 }
 function addNote(doc, input, {now,id}) {

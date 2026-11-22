@@ -94,7 +94,7 @@ function card(c,instant) {
         <span class="tray-handle"><span class="desktop-hint" aria-hidden="true">⠿ Drag or </span>Open tray →</span>
       </span>
     </button>
-    ${button('Weight check','weight',trayAttrs(c,'weight-board')+' aria-label="'+esc('Weight check for '+c.name)+'"','tray-weight-button')}
+    ${button('Weight check <span aria-hidden="true">↗</span>','weight',trayAttrs(c,'weight-board')+' aria-label="'+esc('Weight check for '+c.name)+'"','tray-weight-button')}
   </article>`;
 }
 function renderBoard(doc,instant) {
@@ -352,11 +352,7 @@ function openTray(c,origin=null,backFocus=null) {
     ${decision?'':`<h3>What to look for</h3><p>${esc(currentWindow(p))}</p>${heightGuide(p.height)}${cuesList(p.cues)}`}
     ${harvestDetail(p)}<p class="pl-help">Typical timing. Use what you observe. <a href="crops.html">Crop guide</a> · <a href="quick-start-source-log.html">Timing sources</a></p></section>`:''}
     ${p.current==='harvested'?harvestSummary(c):''}
-    <section class="detail-info weight-portal">
-      <div><h3>Tray weight <small>Experimental</small></h3>
-      <p class="pl-help">${live?'Check moisture by weighing the stack.':'Review saved weights and harvest results.'}</p></div>
-      ${button(live?'Weight check':'Weight history','weight')}
-    </section>
+    <div class="weight-portal">${button((live?'Weight check':'Weight history')+' <span aria-hidden="true">↗</span>','weight','','weight-detail-link')}</div>
     ${stageHeights(p)}
     <section class="dialog-section"><h3>Stage history</h3><ol class="timeline">${chronology(c,p)}</ol></section>
     <section class="dialog-section"><h3>Tray notes</h3>
@@ -383,6 +379,13 @@ function openWeightSetup(c) {
 function refreshWeightPreview() {
   const form=el('weight-check-form'), c=form&&find(change?.trayId);
   if (c && M.ACTIVE.includes(M.phase(c))) W.renderPreview(form,store.current(),c,now());
+}
+function refreshWeightSources(key=null) {
+  const c=change&&find(change.trayId);
+  if (!c || change.expected!==store.current().revision) return;
+  const form=el('weight-setup-form'), source=el('weight-sowing-seed');
+  if (form) W.refreshSetup(form,c,key);
+  if (source) W.refreshSowingSeed(source,c);
 }
 function propose(c,to,{source,trigger}) {
   const offer=M.previewTransition(c,to);
@@ -471,12 +474,13 @@ async function submit(event) {
     }
     const opts={now:now(),id,guidance};
     const updates={
-      create:d=>M.createTray(d,{cropId:data.get('crop'),startedAt:occurredAt,name:data.get('label'),note},opts),
+      create:d=>M.createTray(d,{cropId:data.get('crop'),startedAt:occurredAt,name:data.get('label'),note,
+        sowingInputs:W.sowingInputs(data.get('crop'),occurredAt)},opts),
       transition:d=>M.confirmTransition(d,{...input,toPhase:state.to,source:state.source},opts),
-      correct:d=>M.correctEvent(d,{...input,eventId:state.eventId},opts),
+      correct:d=>M.correctEvent(d,{...input,eventId:state.eventId,seedBasis:W.seedAt(find(state.trayId).cropId,occurredAt)},opts),
       note:d=>M.addNote(d,input,opts),
       harvest:d=>M.saveHarvest(d,input),
-      weightSetup:d=>M.saveWeightSetup(d,{...input,setup:W.readSetup(data)},opts),
+      weightSetup:d=>M.saveWeightSetup(d,{...input,setup:W.readSetup(data,find(state.trayId))},opts),
       weightCheck:d=>M.addWeightCheck(d,{...input,check:W.readCheck(data)},opts),
       import:d=>M.importBackup(d,state.backup)
     };
@@ -541,6 +545,7 @@ document.addEventListener('click',event=>{
   if (action==='weight'&&c) openWeight(c,b,dialog.open);
   if (action==='weight-setup'&&c) openWeightSetup(c);
   if (action==='weight-tray'&&c) openTray(c,null,change.backFocus);
+  if (action==='weight-seed-load'&&c) W.loadSeed(b.form,c);
   if (['weight-coir-new','weight-coir-old'].includes(action)&&c) W.loadRecipe(b.form,c,action.split('-').at(-1));
   if (['board','calendar','history'].includes(action)) chooseView(action);
   if (['prev','next','today'].includes(action)) {
@@ -555,6 +560,10 @@ dialog.addEventListener('submit',submit);
 function onTimeEdit(e) {
   if (['date','hour','minute'].includes(e.target.name)) refreshFold();
   if (e.target.form?.id==='weight-check-form') refreshWeightPreview();
+  if (e.target.form?.id==='weight-setup-form') {
+    if (e.target.name==='seedG') e.target.form.dataset.followSeed='false';
+    if (['dryG','hydrationG'].includes(e.target.name)) e.target.form.dataset.followCoir='false';
+  }
 }
 dialog.addEventListener('input',onTimeEdit);
 dialog.addEventListener('change',onTimeEdit);
@@ -614,11 +623,13 @@ document.addEventListener('dragend',clearDrag);
 dragMedia.addEventListener('change',render);
 window.addEventListener('storage',e=>{
   if (e.key===S.KEY||e.key===null) {warning();render();status('Planner records refreshed from this browser.');}
+  refreshWeightSources(e.key);
 });
 function refresh() {
   if (!weekOffset) weekAnchor=M.startOfWeek(now());
   warning();render();
   if (change?.expected===store.current().revision) refreshWeightPreview();
+  refreshWeightSources();
 }
 document.addEventListener('visibilitychange',()=>{if (!document.hidden) refresh();});
 window.addEventListener('pageshow',refresh);
