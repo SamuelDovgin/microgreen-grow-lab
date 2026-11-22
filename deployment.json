@@ -70,11 +70,11 @@
     "grow-log.css": "bfa8232e3e07ac52c92c63d2a06e11a20cfb3a39eaf8932cf6b5235bd663371e",
     "grow-log.html": "bbbaa8370f4d34aeac2bb40ab46cbc26b30baa16a66ea3724df4f4cf2f3977d8",
     "grow-log.js": "8b77accc752a7b183c5bf79fb3c52db4dd469556291e924446fa803d62bc1435",
-    "grow-planner-model.js": "ddc097a7fa9d4e1b04d8495c9acfb858ef9e445c5cd5a27f60f1f649565fc748",
+    "grow-planner-model.js": "a770ca6bff9d7a67b5de94e9ccfb005e3dfd1f46c9eac92d3cdf5900e30d44b8",
     "grow-planner-store.js": "064ae59f76d04433dd4be3425808e3bc921f458703c313661492c4d1a69f8f59",
-    "grow-planner.css": "e4e5194a298a672e0ec50ecd7ff6c5b37ffb5be1bea9673f964888366900af73",
-    "grow-planner.html": "7594b8039f53b2a69881792a20b477192bf23492764ef55c6025dc4d33b76a28",
-    "grow-planner.js": "9ca250da72b901a06bce3fc58a847e72379e2b9a5939f24036317f7b19fa7f4b",
+    "grow-planner.css": "633e85bc2278bb78c4dda8ef1b153c9dbdd130ad93396919098f2a0ce6958568",
+    "grow-planner.html": "3a27b589df4c222d68fb8c2dea1470117ce0fce290019210121fec983036ec47",
+    "grow-planner.js": "f16a99497a434d35520befaf471e3c7d689d03a915c50195ffc5e781577fd434",
     "growing-tips-source-log.html": "cd1676251bb6bb3c6e9888a865ad1e072d59b2f49f760c7fa7ab3f8eae8780c7",
     "growing-tips.css": "07a58d42327f41fef06db514d42e886bae8acd5cbb8ced25d23bae89a05f4910",
     "growing-tips.html": "3aaca2939390410c9f632ca051d356aa1b3c6ecec05e0aab1496e634af6379c5",
@@ -153,8 +153,10 @@
     "sources/virginia-tech-DLI-SPES-720.pdf": "ced63c97d8eef94535bc9cbe880413b395e6eee9db26bd502d3ac6c1c310dff2",
     "sources/virginia-tech-microgreen-production-SPES-756.pdf": "8f68282ed08af4b6166b53adb54fab4e0539fe44a1c48794913926e23562f18d",
     "style.css": "2ef60c04b38674866257bb3d766178b192e99d9b6e4936fac1ecaf3e5a5ef5b5",
-    "tray-bleach-dilution.js": "287212fbaf4289728ab0a0aafdbe1432ed3c29ddf57e7d84f8a6ff5cf2b9ce0f"
+    "tray-bleach-dilution.js": "287212fbaf4289728ab0a0aafdbe1432ed3c29ddf57e7d84f8a6ff5cf2b9ce0f",
+    "tray-weight-model.js": "63f8e01181e1a40fc678acec98c02e6f3c619412bf088c80fe9002967ebbac0b",
+    "tray-weight.js": "0212b99ba030bf0b8ddb0ec06070021a6351b4a4aea035d76d952f70fb5c92cc"
   },
   "publisher": "grow-lab",
-  "source_commit": "f62af781853497c8208417faabd0c3b5c636198e"
+  "source_commit": "2ffce7ec4d4364b368c9cadd4188c0b557687319"
 }

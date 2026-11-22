@@ -1,7 +1,7 @@
 /* Browser controller: drag and button actions both open the same transition form. */
 (() => {
 'use strict';
-const M=window.GrowPlannerModel, S=window.GrowPlannerStore;
+const M=window.GrowPlannerModel, S=window.GrowPlannerStore, W=window.TrayWeightView;
 const el=id=>document.getElementById(id), dialog=el('planner-dialog');
 const now=()=>Date.now();
 const focus=(node, preventScroll=true)=>node?.focus({preventScroll});
@@ -94,6 +94,7 @@ function card(c,instant) {
         <span class="tray-handle"><span class="desktop-hint" aria-hidden="true">⠿ Drag or </span>Open tray →</span>
       </span>
     </button>
+    ${button('Weight check','weight',trayAttrs(c,'weight-board')+' aria-label="'+esc('Weight check for '+c.name)+'"','tray-weight-button')}
   </article>`;
 }
 function renderBoard(doc,instant) {
@@ -179,12 +180,15 @@ function showDialog(mode,title,kicker,content,state, origin=null) {
 }
 function cancel() {
   if (busy) return;
-  if (change?.fromTray && find(change.trayId)) openTray(find(change.trayId),null,change.backFocus);
+  const c=find(change?.trayId);
+  if (change?.mode==='weightSetup' && c) openWeight(c,null,change.fromTray);
+  else if (change?.fromTray && c) openTray(c,null,change.backFocus);
   else closeDialog();
 }
 function focusAfter() {
   if (returnTo?.isConnected && returnTo.getClientRects().length) focus(returnTo);
-  else if (returnTo?.dataset.tray) focus([...document.querySelectorAll('[data-action="open"]')].find(n=>n.dataset.tray===returnTo.dataset.tray&&n.getClientRects().length)||el('add-tray'));
+  else if (returnTo?.dataset.tray) focus([...document.querySelectorAll('[data-tray]')].find(n=>
+    n.dataset.tray===returnTo.dataset.tray&&n.dataset.action===returnTo.dataset.action&&n.getClientRects().length)||el('add-tray'));
   else focus(el('add-tray'));
   returnTo=null;
 }
@@ -348,6 +352,11 @@ function openTray(c,origin=null,backFocus=null) {
     ${decision?'':`<h3>What to look for</h3><p>${esc(currentWindow(p))}</p>${heightGuide(p.height)}${cuesList(p.cues)}`}
     ${harvestDetail(p)}<p class="pl-help">Typical timing. Use what you observe. <a href="crops.html">Crop guide</a> · <a href="quick-start-source-log.html">Timing sources</a></p></section>`:''}
     ${p.current==='harvested'?harvestSummary(c):''}
+    <section class="detail-info weight-portal">
+      <div><h3>Tray weight <small>Experimental</small></h3>
+      <p class="pl-help">${live?'Check moisture by weighing the stack.':'Review saved weights and harvest results.'}</p></div>
+      ${button(live?'Weight check':'Weight history','weight')}
+    </section>
     ${stageHeights(p)}
     <section class="dialog-section"><h3>Stage history</h3><ol class="timeline">${chronology(c,p)}</ol></section>
     <section class="dialog-section"><h3>Tray notes</h3>
@@ -363,6 +372,18 @@ function openTray(c,origin=null,backFocus=null) {
   }
 }
 const track=b=>({action:b.dataset.action,to:b.dataset.to||'',event:b.dataset.event||''});
+function openWeight(c,origin=null,fromTray=false) {
+  showDialog('weightCheck','Tray weight & watering',c.name+' · Experimental',
+    W.content(store.current(),c,now()),{trayId:c.id,fromTray,backFocus:{action:'weight',to:'',event:''}},origin);
+  refreshWeightPreview();
+}
+function openWeightSetup(c) {
+  showDialog('weightSetup','Scale setup',c.name,W.setupFields(c),{trayId:c.id,fromTray:change.fromTray});
+}
+function refreshWeightPreview() {
+  const form=el('weight-check-form'), c=form&&find(change?.trayId);
+  if (c && M.ACTIVE.includes(M.phase(c))) W.renderPreview(form,store.current(),c,now());
+}
 function propose(c,to,{source,trigger}) {
   const offer=M.previewTransition(c,to);
   if (!offer.ok) { if (dialog.open) dialogError(offer.reason);else showError(offer.reason); return; }
@@ -455,6 +476,8 @@ async function submit(event) {
       correct:d=>M.correctEvent(d,{...input,eventId:state.eventId},opts),
       note:d=>M.addNote(d,input,opts),
       harvest:d=>M.saveHarvest(d,input),
+      weightSetup:d=>M.saveWeightSetup(d,{...input,setup:W.readSetup(data)},opts),
+      weightCheck:d=>M.addWeightCheck(d,{...input,check:W.readCheck(data)},opts),
       import:d=>M.importBackup(d,state.backup)
     };
     const before=store.current(), next=await store.commit(state.expected,updates[state.mode]);
@@ -462,10 +485,12 @@ async function submit(event) {
     warning();
     render();
     status(state.mode==='transition'?M.eventLabel(state.to)+'.':
+      state.mode==='weightCheck'?'Weight check saved.':
       state.mode==='import'?'':'Saved.');
     if (state.mode==='import') backupStatus(next===before?'This backup has no new trays to add.':'Planner backup imported.');
     const c=find(state.trayId);
-    if (state.fromTray && c) openTray(c,null,state.mode==='transition'?null:state.backFocus);
+    if (['weightSetup','weightCheck'].includes(state.mode) && c) openWeight(c,null,state.fromTray);
+    else if (state.fromTray && c) openTray(c,null,state.mode==='transition'?null:state.backFocus);
     else closeDialog();
   } catch (error) {
     dialogError(error.message);
@@ -513,6 +538,10 @@ document.addEventListener('click',event=>{
   if (action==='correct'&&c) editTime(c,b.dataset.event,b);
   if (action==='note'&&c) editNote(c,b);
   if (action==='harvest'&&c) editHarvest(c,b);
+  if (action==='weight'&&c) openWeight(c,b,dialog.open);
+  if (action==='weight-setup'&&c) openWeightSetup(c);
+  if (action==='weight-tray'&&c) openTray(c,null,change.backFocus);
+  if (['weight-coir-new','weight-coir-old'].includes(action)&&c) W.loadRecipe(b.form,c,action.split('-').at(-1));
   if (['board','calendar','history'].includes(action)) chooseView(action);
   if (['prev','next','today'].includes(action)) {
     if (action==='today') {weekOffset=0;weekAnchor=M.startOfWeek(now());}
@@ -525,6 +554,7 @@ document.addEventListener('click',event=>{
 dialog.addEventListener('submit',submit);
 function onTimeEdit(e) {
   if (['date','hour','minute'].includes(e.target.name)) refreshFold();
+  if (e.target.form?.id==='weight-check-form') refreshWeightPreview();
 }
 dialog.addEventListener('input',onTimeEdit);
 dialog.addEventListener('change',onTimeEdit);
@@ -588,6 +618,7 @@ window.addEventListener('storage',e=>{
 function refresh() {
   if (!weekOffset) weekAnchor=M.startOfWeek(now());
   warning();render();
+  if (change?.expected===store.current().revision) refreshWeightPreview();
 }
 document.addEventListener('visibilitychange',()=>{if (!document.hidden) refresh();});
 window.addEventListener('pageshow',refresh);

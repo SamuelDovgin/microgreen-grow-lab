@@ -2,6 +2,7 @@
 (function (root) {
 'use strict';
 const CropData = typeof module === 'object' ? require('./crop-data.js') : root.CropData;
+const Weights = typeof module === 'object' ? require('./tray-weight-model.js') : root.TrayWeightModel;
 const {dateAt,stageHeight} = typeof module === 'object' ? require('./crop-model.js') : root.CropModel;
 const DAY = 86400000, SCHEMA = 'grow-lab-planner/1';
 const MAX_PHOTO_LENGTH = 80*1024;
@@ -204,7 +205,7 @@ function validate(doc) {
     unique(c.id);
     validateSnapshot(c.cropMethodSnapshot,c.cropId);
     const effective = [], byId = new Map();
-    let from=null, recordedAt=time(c.createdAt);
+    let from=null, recordedAt=time(c.createdAt), weightSetup=null;
     for (const [i,e] of c.events.entries()) {
       requireThat(object(e) && isInstant(e.occurredAt) && isInstant(e.recordedAt)
         && time(e.occurredAt)<=time(e.recordedAt) && time(e.recordedAt)>=recordedAt,
@@ -226,6 +227,14 @@ function validate(doc) {
           requireThat(j!==undefined && e.note===undefined,'The correction does not refer to an actual stage.');
           effective[j].occurredAt=e.occurredAt;
           requireThat(withinTimeline(effective,j),'This time would put stages out of order. It must be between the preceding and following actual stages.');
+        } else if (e.kind==='weight_setup_saved') {
+          requireThat(ACTIVE.includes(from) && !Weights.setupError(e.setup),'The tray contains an invalid weight setup.');
+          weightSetup=e;
+        } else if (e.kind==='weight_check_added') {
+          const stage=effective.at(-1);
+          requireThat(ACTIVE.includes(from) && e.stageId===stage.id && e.setupId===weightSetup?.id &&
+            time(e.occurredAt)>=time(stage.occurredAt) && !Weights.checkError(e.check,weightSetup.setup,from),
+            'The tray contains an invalid weight check.');
         } else requireThat(e.kind==='note_added' && text(e.note,1500),'The history contains an invalid event.');
       }
     }
@@ -328,6 +337,26 @@ function addNote(doc, input, {now,id}) {
   requireThat(text(note,1500),'Enter a note up to 1,500 characters.');
   return append(doc,input,()=>({id:id(),kind:'note_added',occurredAt:stamp(now),recordedAt:stamp(now),note}));
 }
+function saveWeightSetup(doc, input, {now,id}) {
+  const error=Weights.setupError(input.setup);
+  requireThat(!error,error);
+  return append(doc,input,c=>{
+    requireThat(ACTIVE.includes(phase(c)),'Weight setup requires a growing tray.');
+    return {id:id(),kind:'weight_setup_saved',occurredAt:stamp(now),recordedAt:stamp(now),setup:input.setup};
+  });
+}
+function addWeightCheck(doc, input, {now,id}) {
+  return append(doc,input,c=>{
+    const setup=Weights.latestSetup(c), stage=effectiveHistory(c).at(-1);
+    requireThat(setup && ACTIVE.includes(stage.toPhase),'Set up scale weights for this growing tray first.');
+    const check={...input.check,band:null};
+    const error=Weights.checkError(check,setup.setup,stage.toPhase);
+    requireThat(!error,error);
+    check.band=Weights.target(doc.cycles,c,setup.setup,stage.toPhase,now,check.session,M).band;
+    return {id:id(),kind:'weight_check_added',occurredAt:stamp(now),recordedAt:stamp(now),
+      stageId:stage.id,setupId:setup.id,check};
+  });
+}
 function importBackup(doc, backup) {
   validate(backup);
   const known=new Map(doc.cycles.map(c=>[c.id,c]));
@@ -411,8 +440,8 @@ function daypart(now) {
   const h=new Date(now).getHours();
   return h<12?'morning':h<17?'midday':'evening';
 }
-const api={DAY,SCHEMA,PHASE,ACTIVE,MAX_PHOTO_LENGTH,empty,active,phase,parse,validate,createTray,previewTransition,confirmTransition,
-  saveHarvest,correctEvent,addNote,importBackup,projection,digest,agenda,notes,effectiveHistory,localInstant,localInput,timeOptions,zoneAt,
+const M={DAY,SCHEMA,PHASE,ACTIVE,MAX_PHOTO_LENGTH,empty,active,phase,parse,validate,createTray,previewTransition,confirmTransition,
+  saveHarvest,correctEvent,addNote,saveWeightSetup,addWeightCheck,importBackup,projection,digest,agenda,notes,effectiveHistory,localInstant,localInput,timeOptions,zoneAt,
   formatTime,dayKey,dayDelta,startOfWeek,weekDay,bandText,eventLabel,daypart};
-if (typeof module==='object') module.exports=api; else root.GrowPlannerModel=api;
+if (typeof module==='object') module.exports=M; else root.GrowPlannerModel=M;
 })(typeof window==='undefined'?globalThis:window);
