@@ -31,7 +31,7 @@
     "data/video-review.json": "bf6cd3f3a6e5d782caddd362d1d220002eb8e05bf1fd8845011dd420376eeb58",
     "docs/01_specific_lighting_guide.md": "bdb5f68c77324caaa5ea54aa77a6cf142675916ce4b04ebf54c6c8e06faef30b",
     "docs/02_lighting_model_and_validation.md": "3b6ea6534a876d5cfba0143c307e3ed51c66bfd3d04abc224cc963e74f8809ab",
-    "docs/03_qa_and_change_notes.md": "211887457ef9f8da74adb26b7da7ddaaa9e43f46f4d5682e6282e2094499d7b0",
+    "docs/03_qa_and_change_notes.md": "7c2e3286643aac6cebe65937398d48e4e7077cb41611b2243e52c912ec90b2cb",
     "docs/04_creator_lighting_notes.md": "e85f579a52b5eaeb3ffebee6b18cac8412ec77822f2d6a432349d9ac3c5239cf",
     "docs/05_trinity_rack_geometry.md": "137d6721d850f660303eedf8c1d4bb37a6f6883680d4dd5367d7854cf5cf3a06",
     "docs/06_assessment_of_mgm_lighting_setup.md": "a309fc8c46aaaa930b6c1380c4490620b9b94774aadc190509ba766a5f6672f0",
@@ -72,9 +72,9 @@
     "grow-log.js": "8b77accc752a7b183c5bf79fb3c52db4dd469556291e924446fa803d62bc1435",
     "grow-planner-model.js": "9a7de50654a89e356451c9075aa7b6611d5d825afd12daf80f78bb810735bddd",
     "grow-planner-store.js": "064ae59f76d04433dd4be3425808e3bc921f458703c313661492c4d1a69f8f59",
-    "grow-planner.css": "bc97a470890bbee78d2b9198b68e526e2be0704a419e784b9a940069e17a8b81",
-    "grow-planner.html": "9b489c740ffe62e316e77c1395d105ea98758e63a6212ee092a016209bb6d5ff",
-    "grow-planner.js": "cb2218bdb201d31f04c54f3d18f2c83981de281631e0d97d1dd4d7d27199cea5",
+    "grow-planner.css": "0ae27cfa1ad95fc95927bdb7bd67fb621716b680e54970c4f5100ed6f205c129",
+    "grow-planner.html": "9cc313f6eb2b394b1b058260a4be2c05ef9b0334a950f6edfb04e770ec3bacdb",
+    "grow-planner.js": "845c834d1b2e88d6f2c10ac9492eaf3886365e693a74c39274ee3ea55eb37fb6",
     "growing-tips-source-log.html": "cd1676251bb6bb3c6e9888a865ad1e072d59b2f49f760c7fa7ab3f8eae8780c7",
     "growing-tips.css": "07a58d42327f41fef06db514d42e886bae8acd5cbb8ced25d23bae89a05f4910",
     "growing-tips.html": "3aaca2939390410c9f632ca051d356aa1b3c6ecec05e0aab1496e634af6379c5",
@@ -95,7 +95,7 @@
     "nutrients.js": "9df82dfa34428ce1c8bee66d672b19ca51661cc781bb7f1b75c21efdf99397f0",
     "peroxide-dilution.js": "6c4b1852f7eb94a4ceaf816ae200a80cf56c15567dea9f0f1e005b973e1270e1",
     "protocol-version.css": "7237eb428ac43526fc2d3d7bb1c04539d1cfdf9191b13863894ac9dd7254a7a4",
-    "qa.html": "b139c4fdba1f5924102abf03e4044502a3df2eecf90acdb7503b03cb2c8a3f1b",
+    "qa.html": "a07ff0ca1ffa91eb4993d46d9c08b63fe90b477605046ccedc81c88f54c87c99",
     "quick-start-source-log.html": "21dc35d3cf542a943966abf440056bc6a4488046386fab704e14dbbb6e732fac",
     "rack-notes.html": "4a6c29f27d2c9b46b890151df68ab59a3cab72878e1e53cecdf0d1705be70649",
     "rack.html": "3ae77180e5cf21b7081bdfebeb5fa9d1164d31bcff12cd955cc9f78c8e7ff34d",
@@ -154,9 +154,9 @@
     "sources/virginia-tech-microgreen-production-SPES-756.pdf": "8f68282ed08af4b6166b53adb54fab4e0539fe44a1c48794913926e23562f18d",
     "style.css": "2ef60c04b38674866257bb3d766178b192e99d9b6e4936fac1ecaf3e5a5ef5b5",
     "tray-bleach-dilution.js": "287212fbaf4289728ab0a0aafdbe1432ed3c29ddf57e7d84f8a6ff5cf2b9ce0f",
-    "tray-weight-model.js": "a05a225e38c98f2bfeae8a2dd62388ef155601578fabf45637a0eee3b1f4316f",
-    "tray-weight.js": "1a3df90c386d450f81297bdc443d70e29cbe20c2ee2e6bde9d315b4a1f0a4cd7"
+    "tray-weight-model.js": "99a85409b682468e43e4c40483242274ce54afd58b7d3f17980bfb265e3a3eb3",
+    "tray-weight.js": "c61419c218b98c481ea19744033c40accaeac178698dfcd5570693d2b9298d9d"
   },
   "publisher": "grow-lab",
-  "source_commit": "84553deaf50ab3cc567b65dc26c25ccefc680991"
+  "source_commit": "074960558fa52bc3b3b09d3dd3b270cd59b185b8"
 }

@@ -77,10 +77,12 @@ function plantArt(phase,big) {
     <path d="M13 53H147L144 57H16Z" fill="#796647"/>${shoots}<path d="M14 57H146" stroke="#a19c7b"/>
   </svg>`;
 }
-function card(c,instant) {
+function card(c,instant,doc,position) {
   const p=M.projection(c,instant);
   const stage=p.current==='germination'?M.PHASE[p.current]:p.current==='blackout'?'Blackout':'Lights';
   const sub=p.days?`${p.estimated?'Approx. '+p.stageLabel.toLowerCase():p.stageLabel} · ${M.bandText(p.days)}`:p.current==='lights'?'Harvest timing unavailable':'See crop guide';
+  const descriptionId='board-weight-'+position;
+  const weightAttrs=`${trayAttrs(c,'weight-board')} aria-label="${esc('Weight check for '+c.name)}" aria-describedby="${descriptionId}"`;
   return `<article class="tray-card" data-drag-tray="${esc(c.id)}" draggable="${dragMedia.matches}">
     <button class="tray-open" type="button" data-action="open" ${trayAttrs(c,'board')} aria-label="${esc(c.name+', '+stage+', Day '+p.day+', '+flag(p)+'. Open tray')}">
       <span class="tray-flag" data-status="${p.status}">${flag(p)}</span>
@@ -94,7 +96,7 @@ function card(c,instant) {
         <span class="tray-handle"><span class="desktop-hint" aria-hidden="true">⠿ Drag or </span>Open tray →</span>
       </span>
     </button>
-    ${button('Weight check <span aria-hidden="true">↗</span>','weight',trayAttrs(c,'weight-board')+' aria-label="'+esc('Weight check for '+c.name)+'"','tray-weight-button')}
+    ${button(W.boardGoal(doc,c,p.current,instant,descriptionId),'weight',weightAttrs,'tray-weight-button')}
   </article>`;
 }
 function renderBoard(doc,instant) {
@@ -104,7 +106,7 @@ function renderBoard(doc,instant) {
     return `<section class="lane" data-lane="${key}" aria-labelledby="lane-${key}">
       <div class="lane-top"><span class="lane-icon" aria-hidden="true">${meta.icon}</span><div><h3 id="lane-${key}">${M.PHASE[key]}</h3><p class="lane-subtitle">${meta.sub}</p></div><span class="lane-count" aria-label="${rows.length} trays">${rows.length}</span></div>
       <div class="lane-drop" data-default="${meta.hint}">${meta.hint}</div>
-      ${rows.length?`<div class="lane-cards">${rows.map(c=>card(c,instant)).join('')}</div>`:`<div class="lane-empty">${meta.empty}</div>`}
+      ${rows.length?`<div class="lane-cards">${rows.map((c,i)=>card(c,instant,doc,key+'-'+i)).join('')}</div>`:`<div class="lane-empty">${meta.empty}</div>`}
     </section>`;
   }).join('')}</div><div class="board-help"><span>Open a tray to see its history and record a move.<span class="desktop-hint"> You can also drag it to the next stage.</span></span>
   ${button('＋ Add one tray','add','data-focus-key="add-tray-footer"')}</div>`);
@@ -377,8 +379,11 @@ function openWeightSetup(c) {
   showDialog('weightSetup','Scale setup',c.name,W.setupFields(c),{trayId:c.id,fromTray:change.fromTray});
 }
 function refreshWeightPreview() {
-  const form=el('weight-check-form'), c=form&&find(change?.trayId);
-  if (c && M.ACTIVE.includes(M.phase(c))) W.renderPreview(form,store.current(),c,now());
+  const c=change?.mode==='weightCheck'&&find(change.trayId);
+  if (!c || !M.ACTIVE.includes(M.phase(c))) return;
+  const form=el('weight-check-form'), starter=el('weight-starter-result'), doc=store.current(), instant=now();
+  if (form) W.renderPreview(form,doc,c,instant);
+  if (starter) W.refreshStarter(starter,doc,c,instant);
 }
 function refreshWeightSources(key=null) {
   const c=change&&find(change.trayId);
@@ -559,7 +564,10 @@ document.addEventListener('click',event=>{
 dialog.addEventListener('submit',submit);
 function onTimeEdit(e) {
   if (['date','hour','minute'].includes(e.target.name)) refreshFold();
-  if (e.target.form?.id==='weight-check-form') refreshWeightPreview();
+  if (e.target.form?.id==='weight-check-form') {
+    if (e.target.name==='session') e.target.form.dataset.chosenSession='true';
+    refreshWeightPreview();
+  }
   if (e.target.form?.id==='weight-setup-form') {
     if (e.target.name==='seedG') e.target.form.dataset.followSeed='false';
     if (['dryG','hydrationG'].includes(e.target.name)) e.target.form.dataset.followCoir='false';
@@ -623,6 +631,7 @@ document.addEventListener('dragend',clearDrag);
 dragMedia.addEventListener('change',render);
 window.addEventListener('storage',e=>{
   if (e.key===S.KEY||e.key===null) {warning();render();status('Planner records refreshed from this browser.');}
+  else if (W.sourceKey(e.key)) {render();refreshWeightPreview();}
   refreshWeightSources(e.key);
 });
 function refresh() {

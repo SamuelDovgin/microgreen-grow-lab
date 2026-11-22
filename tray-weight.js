@@ -61,12 +61,40 @@ function seedLabel(seed) {
   const date=seed.changedAt?M.formatTime(seed.changedAt):seed.date+' (Chicago date)';
   return `${amount} g dry seed per 200 in² · ${source} from ${date}.`;
 }
+function defaultSetup(cycle,seed=sowingSeed(cycle)) {
+  const coir=cycle.sowingInputs?.coir||activeCoir(cycle.cropId);
+  return {...coir,seedG:drySeedMass(seed),mistG:0,topG:W.TRAY_TARE_G,holesG:W.TRAY_TARE_G,bottomG:W.TRAY_TARE_G,
+    group:'My rack',am:'08:00',pm:'20:00',coverBlackout:true,sowMoist:false,sowG:null};
+}
+function goalFor(doc,cycle,stage,instant,chosen=null) {
+  const saved=W.latestSetup(cycle)?.setup, setup=saved||defaultSetup(cycle);
+  const session=chosen||W.defaultSession(setup,instant);
+  const seedMissing=setup.seedG==='';
+  const target=seedMissing?{}:W.target(doc.cycles,cycle,setup,stage,instant,session,M);
+  const postBand=target.postBand||W.recipeBand(setup,stage,target);
+  return {...target,session,postBand,seedMissing,estimate:!!postBand&&!target.postBand};
+}
+function goalValue(goal) {
+  return goal.postBand?bandText(goal.postBand)+(goal.seedMissing?' + seed weight':''):'Check coir first';
+}
+function boardGoal(doc,cycle,stage,instant,descriptionId) {
+  const goal=goalFor(doc,cycle,stage,instant);
+  return `<span id="${descriptionId}" class="tray-weight-copy">
+    <span class="tray-weight-label">${goal.session==='am'?'AM':'PM'} after watering</span>
+    <strong class="tray-weight-range">${goalValue(goal)}</strong>
+    ${goal.estimate?'<span class="tray-weight-source">Recipe estimate</span>':''}
+  </span><span aria-hidden="true" class="tray-weight-arrow">↗</span>`;
+}
+function goalHeading(goal) {
+  return `<h3>${W.sessions[goal.session]} after watering · ${goalValue(goal)}</h3>
+    ${goal.estimate?`<p class="pl-help">Recipe estimate. Check that the coir is drying before watering, then weigh after excess water drains.
+      ${goal.seedMissing?'Enter your seed weight as sown to get the full stack target.':''}</p>`:
+      goal.postBand?'<p class="pl-help">Aim for this full-stack reading after excess water drains.</p>':''}`;
+}
 function setupFields(cycle) {
   const previous=W.latestSetup(cycle)?.setup;
   const seed=sowingSeed(cycle);
-  const coir=cycle.sowingInputs?.coir||activeCoir(cycle.cropId);
-  const s=previous||{...coir,seedG:drySeedMass(seed),mistG:0,
-    group:'My rack',am:'08:00',pm:'20:00',coverBlackout:true,sowMoist:false};
+  const s=previous||defaultSetup(cycle,seed);
   return `<form id="weight-setup-form" data-follow-seed="${!previous}" data-follow-coir="${!previous&&!cycle.sowingInputs?.coir}">
     <fieldset class="weight-fields"><legend>Weigh each empty tray</legend>
       <div class="weight-grid">
@@ -74,6 +102,7 @@ function setupFields(cycle) {
         ${massField('holesG','Middle tray with holes (g)',s.holesG,requiredMass)}
         ${massField('bottomG','Solid bottom tray (g)',s.bottomG,requiredMass)}
       </div>
+      ${previous?'':`<p class="pl-help">The trays with and without holes default to ${g(W.TRAY_TARE_G)} each. Check the cover weight if you use a different tray on top.</p>`}
       ${cycle.cropMethodSnapshot.canBlackout?`<label class="weight-checkbox"><input type="checkbox" name="coverBlackout" ${s.coverBlackout?'checked':''}> Include top cover in optional blackout readings</label>`:
         `<input type="hidden" name="coverBlackout" value="on">`}
     </fieldset>
@@ -181,7 +210,8 @@ function renderPreview(form,doc,cycle,instant) {
   post.disabled=!form.elements.postG.value;
   if (post.disabled) post.checked=false;
   const setup=W.latestSetup(cycle).setup, stage=M.phase(cycle);
-  const check=readCheck(new FormData(form)), target=W.target(doc.cycles,cycle,setup,stage,instant,check.session,M);
+  if (!form.dataset.chosenSession) form.elements.session.value=W.defaultSession(setup,instant);
+  const check=readCheck(new FormData(form)), target=goalFor(doc,cycle,stage,instant,check.session);
   const next=M.formatTime(target.next,true);
   const {band,postTarget,conflict,lossRange,intervals}=target;
   const {totalG,poolG,observation}=check, drainedG=W.drained(check);
@@ -216,12 +246,11 @@ function renderPreview(form,doc,cycle,instant) {
   const result=form.querySelector('#weight-result');
   const markup=`
     <p class="weight-result-label">Day ${M.projection(cycle,instant).day} · ${M.PHASE[stage]} day ${target.stageDay} · ${W.sessions[check.session]} check</p>
-    <h3>${band?`Target range ${bandText(band)}`:conflict?'Observations disagree':'Learning your target range'}</h3>
-    ${band?`<p class="pl-help">${target.earlier?'Using earlier readings from the same stage. Recheck how the coir feels.':
-      `Based on ${target.samples} nearby-stage check${target.samples===1?'':'s'}.`}
-      If watering is needed, aim for about <strong>${g(postTarget)}</strong> after draining.</p>`:
+    ${goalHeading(target)}
+    ${band?`<p class="pl-help">Before watering · <strong>${bandText(band)}</strong>. ${target.earlier?
+      'Using earlier readings from the same stage.':'Your observed moisture range.'}</p>`:
       `<p class="pl-help">${conflict?'Log a fresh slightly dry reading and a higher evenly moist reading for this stage.':
-        'Save a slightly dry reading before watering and an evenly moist reading after draining to establish a range.'}</p>`}
+        'Save a slightly dry reading before watering and an evenly moist reading after draining to learn your before-watering range.'}</p>`}
     ${!band && stage==='germination'?`<p class="pl-help">${setup.sowG===null?'Estimated':'Measured'} stack at sowing <strong>${g(W.starting(setup,stage))}</strong></p>`:''}
     ${verdict?`<p><strong>${verdict}</strong>${totalG!==null&&poolG>0?` · ${g(drainedG)} without standing water`:''}</p><p>${tip}</p>`:''}
     <p class="pl-help">Next check ${escape(next)}.${lossRange?
@@ -271,7 +300,7 @@ function charts(cycle,checks) {
     <p class="pl-help">Contents include coir, plants and retained water. The graph takes out the empty trays and any measured standing water.</p>
     <div class="weight-legend" aria-label="Chart key">
       ${history.filter(event=>M.ACTIVE.includes(event.toPhase)).map(event=>`<span class="${stageClass(event.toPhase)}">${M.PHASE[event.toPhase]}</span>`).join('')}
-      <span class="weight-legend-pre">At check</span><span class="weight-legend-post">After watering</span><span class="weight-legend-band">Target at check</span>
+      <span class="weight-legend-pre">At check</span><span class="weight-legend-post">After watering</span><span class="weight-legend-band">Before-watering range</span>
     </div>
     <details><summary>Saved readings (${checks.length})</summary><ol class="weight-records">${checks.slice().reverse().map(row=>`<li>
       <strong>Day ${row.day} · ${M.PHASE[row.stage]} · ${W.sessions[row.session]}</strong>
@@ -281,7 +310,7 @@ function charts(cycle,checks) {
         row.postG!==null?`${g(row.postG)} after draining${row.postMoist?' · evenly moist':''}`:null,
         row.waterG!==null?`${fmt(row.waterG)} mL added`:null,
         row.heightIn!==null?`${fmt(row.heightIn)} in shoots`:null,
-        row.band?`Target ${bandText(row.band)}`:null
+        row.band?`Before watering ${bandText(row.band)}`:null
       ].filter(Boolean).join(' · ')}</p>
       ${row.note?`<p class="note-text">${escape(row.note)}</p>`:''}
       ${row.valid?'':'<small>This check is outside its stage after a date correction. It stays in history and is excluded from calibration.</small>'}
@@ -307,7 +336,8 @@ function harvests(doc,cycle,setup,instant) {
 function content(doc,cycle,instant) {
   const setup=W.latestSetup(cycle)?.setup, checks=W.series(cycle,M), stage=M.phase(cycle), live=M.ACTIVE.includes(stage);
   return `${live&&setup?scaleForm(setup,stage,instant):''}
-    ${live?`<div class="weight-setup-link">${setup?'':'<p>Weigh each empty tray once and load your coir recipe to start checking this grow.</p>'}${action(setup?'Edit scale setup':'Set up tray weights','weight-setup')}</div>`:''}
+    ${live&&!setup?`<section id="weight-starter-result" class="weight-result">${goalHeading(goalFor(doc,cycle,stage,instant))}</section>`:''}
+    ${live?`<div class="weight-setup-link">${setup?'':'<p>Confirm your tray weights and coir recipe to save your first check.</p>'}${action(setup?'Edit scale setup':'Set up tray weights','weight-setup')}</div>`:''}
     <section class="dialog-section"><h3>Growth and weight history</h3>${charts(cycle,checks)}</section>
     ${harvests(doc,cycle,setup,instant)}
     <details><summary>Sowing inputs and seed rate</summary>
@@ -321,12 +351,18 @@ function content(doc,cycle,instant) {
         <a href="crops.html">Seed &amp; water planner</a><a href="coir.html">Coco coir calculator</a></div>
     </details>
     <details><summary>How weight guidance works</summary>
-      <p class="pl-help">Ranges use nearby days in the same stage from this tray and comparable grows. Dry and wet observations adjust the edges. Shoot growth changes the scale reading, and net weight loss can vary between day and night.</p>
+      <p class="pl-help">The after-watering range uses expected weight loss until the next check when enough day or night intervals are recorded. With fewer readings, the app uses a ${g(W.REFILL_WINDOW_G)} scale window ending at an observed moist weight or the recipe’s starting weight. Recipe estimates are starting points. Check how the coir feels as shoots grow.</p>
       <div class="guide-links"><a href="https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens">Utah State Extension on coir and tray care</a>
       <a href="https://www.mdpi.com/2077-0472/16/12/1277">Research on weighing growing trays</a></div>
     </details>
     ${live&&setup?'':`<div class="pl-actions">${action('Back to tray','weight-tray')}</div>`}`;
 }
 const refreshSowingSeed=(node,cycle)=>{node.textContent=seedLabel(sowingSeed(cycle));};
-window.TrayWeightView={content,setupFields,loadRecipe,loadSeed,refreshSetup,refreshSowingSeed,readSetup,readCheck,renderPreview,sowingInputs,seedAt};
+function refreshStarter(node,doc,cycle,instant) {
+  const markup=goalHeading(goalFor(doc,cycle,M.phase(cycle),instant));
+  if (node.innerHTML!==markup) node.innerHTML=markup;
+}
+const sourceKey=key=>[R.KEY,C.ACTIVE_PLAN_KEY,...Object.values(C.PLAN_KEYS)].includes(key);
+window.TrayWeightView={content,setupFields,loadRecipe,loadSeed,refreshSetup,refreshSowingSeed,readSetup,readCheck,renderPreview,
+  sowingInputs,seedAt,boardGoal,refreshStarter,sourceKey};
 })();

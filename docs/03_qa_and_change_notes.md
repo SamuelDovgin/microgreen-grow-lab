@@ -144,3 +144,9 @@ Added the exact Clorox Disinfecting Bleach Unscented / Regular liquid 121 fl oz 
 ## November 9, 2026 — Dollar Tree and store-brand bleach
 
 Added a label-first selection checklist and a specific Dollar Tree catalog listing for 11 fl oz Clorox Disinfecting Bleach Regular. Clarified that the earlier brand/121 fl oz reference is optional, that EPA Est. is not EPA Reg., and that stock percentage alone does not authorize a food-contact use. LA’s Totally Awesome Fresh Scent was identified as fragranced without assigning an unverified concentration or judging every variant. Kept product-specific dilution/contact/rinse directions intact.
+
+## Grow Planner watering targets · November 22, 2026
+
+The board’s weight link now shows the full-stack range to aim for after watering and draining. The previous board showed the link alone. The range uses the current check time and stage, and learned day or overnight loss through the next check. A recipe estimate uses a 20 g window below its starting weight until there is a measured reference.
+
+New scale setups previously left the tray weights blank. The perforated and solid trays now default to the grower’s measured 290 g each. The cover also starts at 290 g for setups that reuse a solid tray on top. Each weight is editable, and saved setups retain their recorded weights.

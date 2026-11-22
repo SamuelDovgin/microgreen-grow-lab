@@ -3,6 +3,7 @@
 'use strict';
 const Coir=typeof module==='object'?require('./coir-model.js'):root.CoirModel;
 const DAY=86400000, HOUR=3600000, MAX_G=20000;
+const TRAY_TARE_G=290, REFILL_WINDOW_G=20;
 const observations={
   unknown:'Check only', ready:'Slightly dry · ready for water', dry:'Too dry',
   droop:'Drooping and coir feels dry', moist:'Evenly moist', wet:'Too wet'
@@ -53,6 +54,15 @@ function setupError(s) {
 const tare=(s,stage)=>s.holesG+s.bottomG+((stage==='germination'||stage==='blackout'&&s.coverBlackout)?s.topG:0);
 const starting=(s,stage)=>round(s.sowG!==null?s.sowG-s.topG-s.holesG-s.bottomG+tare(s,stage):
   tare(s,stage)+s.dryG+s.hydrationG+s.seedG+s.mistG);
+const nearMoist=(low,high)=>[Math.max(low,round(high-REFILL_WINDOW_G)),high];
+function recipeBand(setup,stage,target={}) {
+  const seedG=grams(setup.seedG,.1)?setup.seedG:0;
+  const recipeWeight=starting({...setup,seedG,sowG:setup.sowMoist?setup.sowG:null},stage);
+  const upper=Math.min(recipeWeight,target.wetEdge??Infinity);
+  const minimum=round(tare(setup,stage)+setup.dryG+seedG);
+  const lower=Math.max(minimum,round(recipeWeight-REFILL_WINDOW_G),target.dryEdge??minimum);
+  return grams(upper,lower)&&!target.conflict?[lower,upper]:null;
+}
 const drained=check=>round(check.totalG-check.poolG);
 function checkError(check, setup, stage) {
   if (!check || !Object.hasOwn(sessions,check.session) || !Object.hasOwn(observations,check.observation)) {
@@ -160,7 +170,6 @@ function target(cycles, cycle, setup, stage, at, session, planner) {
   if (stage==='germination' && stageDay<=1 && setup.sowMoist && moist.length<3) {
     moist.push(starting(setup,stage)-emptyG);
   }
-  const result={next,stageDay,samples:recent.length,band:null,postTarget:null,lossRange:null,intervals:0,conflict:false};
   const dry=clear.filter(r=>r.observation==='dry'||r.observation==='droop');
   const wet=clear.filter(r=>r.observation==='wet');
   const olderDry=dry.length?null:earlier.find(r=>r.poolG===0 && ['dry','droop'].includes(r.observation));
@@ -171,25 +180,33 @@ function target(cycles, cycle, setup, stage, at, session, planner) {
   if (olderWet) wet.push(olderWet);
   if (olderReady) ready.push(olderReady);
   moist.push(...olderMoist);
-  if (!moist.length || !ready.length && !dry.length) return result;
 
   // Dry feedback sets a floor. If repeated readings disagree with the previous
   // low edge, a higher confirmed-moist reading can support a new low edge.
   const dryFloor=dry.length?Math.max(...dry.map(r=>r.pre))+1:0;
   const wetCeiling=wet.length?Math.min(...wet.map(r=>r.pre))-1:Infinity;
+  const result={next,stageDay,band:null,postBand:null,postTarget:null,lossRange:null,intervals:0,
+    conflict:false,dryEdge:round(dryFloor+emptyG),wetEdge:wet.length?round(wetCeiling+emptyG):null};
+  if (!moist.length) return result;
   const allowedMoist=moist.filter(value=>value>dryFloor&&value<=wetCeiling);
+  const upper=allowedMoist.length?round(median(allowedMoist)+emptyG):NaN;
+  const usedEarlier=!!(olderReady||olderDry||olderWet||olderMoist.length);
+  const minimum=round(emptyG+setup.dryG);
+  if (!grams(upper,minimum)) return {...result,conflict:true};
+  // One verified moist weight is enough for a refill reference. A pre-water
+  // range and a forecast still need a dry edge and paired interval readings.
+  if (!ready.length && !dry.length) return {...result,postBand:nearMoist(minimum,upper),postTarget:upper,earlier:usedEarlier};
   const usualLow=ready.length?median(ready.map(r=>r.pre)):dryFloor;
   const lower=Math.max(usualLow,dryFloor,setup.dryG);
-  const upper=allowedMoist.length?median(allowedMoist):NaN;
-  const band=[round(lower+emptyG),round(upper+emptyG)];
-  if (!(band[0]<band[1]) || lower>wetCeiling || !band.every(value=>grams(value,emptyG+setup.dryG))) {
+  const band=[round(lower+emptyG),upper];
+  if (!(band[0]<band[1]) || !grams(band[0],minimum)) {
     return {...result,conflict:true};
   }
   const rates=lossRates(runs,setup,stage,stageDay,session);
   const hours=(next-at)/HOUR;
   const lossRange=rates.length>=2?[round(Math.min(...rates)*hours),round(Math.max(...rates)*hours)]:null;
-  const postTarget=lossRange?Math.min(band[1],round(band[0]+lossRange[1])):band[1];
-  return {...result,band,postTarget,lossRange,intervals:rates.length,earlier:!!(olderReady||olderDry||olderWet||olderMoist.length)};
+  const postBand=lossRange?lossRange.map(loss=>Math.min(upper,round(band[0]+loss))):nearMoist(band[0],upper);
+  return {...result,band,postBand,postTarget:postBand[1],lossRange,intervals:rates.length,earlier:usedEarlier};
 }
 function harvests(cycles, cycle, setup, planner) {
   const ownHistory=planner.effectiveHistory(cycle);
@@ -214,6 +231,6 @@ function harvests(cycles, cycle, setup, planner) {
     day:median(sample.map(r=>r.day)),matched:matched.length>0};
 }
 const api={observations,sessions,grams,coirRecipe,validCoir,validSeedBasis,setupError,tare,starting,drained,checkError,latestSetup,
-  series,defaultSession,nextCheck,target,harvests,round,DAY};
+  series,defaultSession,nextCheck,target,recipeBand,harvests,round,DAY,TRAY_TARE_G,REFILL_WINDOW_G};
 if (typeof module==='object') module.exports=api; else root.TrayWeightModel=api;
 })(typeof window==='undefined'?globalThis:window);
