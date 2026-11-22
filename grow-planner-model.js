@@ -361,7 +361,7 @@ function addWeightCheck(doc, input, {now,id}) {
     const check={...input.check,band:null};
     const error=Weights.checkError(check,setup.setup,stage.toPhase);
     requireThat(!error,error);
-    check.band=Weights.target(doc.cycles,c,setup.setup,stage.toPhase,now,check.session,M).band;
+    check.band=Weights.target(doc.cycles,c,setup.setup,stage.toPhase,now,M).band;
     return {id:id(),kind:'weight_check_added',occurredAt:stamp(now),recordedAt:stamp(now),
       stageId:stage.id,setupId:setup.id,check};
   });

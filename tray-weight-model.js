@@ -101,31 +101,44 @@ function series(cycle, planner) {
     checks.push({...event.check,at:event.occurredAt,stage:stageName,setup,setupId:event.setupId,
       day:planner.dayDelta(when,history[0].occurredAt),
       stageDay:planner.dayDelta(when,stage.occurredAt),
+      stageHours:(when-Date.parse(stage.occurredAt))/HOUR,
       valid:when>=Date.parse(stage.occurredAt) && (!next || when<=Date.parse(next.occurredAt)),
       tareG:tare(setup,stageName)});
   }
   return checks;
 }
-function scheduled(at,clockKey) {
+function scheduled(at,clockKey,day) {
   const date=new Date(at), [hour,minute]=clockKey.split(':').map(Number);
+  date.setDate(date.getDate()+day);
   date.setHours(hour,minute,0,0);
   return date;
 }
-function defaultSession(setup,at) {
-  const distances=Object.fromEntries(Object.entries(sessions).map(([key])=>{
-    const date=scheduled(at,setup[key]);
-    return [key,Math.min(...[-1,0,1].map(days=>{
-      const neighbor=new Date(date);
-      neighbor.setDate(date.getDate()+days);
-      return Math.abs(neighbor-at);
-    }))];
-  }));
-  return distances.am<=distances.pm?'am':'pm';
+function scheduledChecks(setup,at) {
+  return [-1,0,1].flatMap(day=>Object.keys(sessions).map(session=>({
+    session,time:scheduled(at,setup[session],day)
+  })));
 }
-function nextCheck(setup,session,at) {
-  const date=scheduled(at,setup[session==='am'?'pm':'am']);
-  if (date<=at) date.setDate(date.getDate()+1);
-  return date;
+function checkWindow(setup,at) {
+  const checks=scheduledChecks(setup,at);
+  const previous=checks.findLastIndex(check=>check.time<=at);
+  // Watering up to one hour early counts as this routine check.
+  const current=checks[previous+1].time-at<=HOUR?previous+1:previous;
+  const {time,session}=checks[current], next=checks[current+1].time;
+  const periods=[{session,hours:(next-Math.max(time,at))/HOUR}];
+  if (time>at) periods.unshift({session:checks[previous].session,hours:(time-at)/HOUR});
+  return {session,next,periods};
+}
+const defaultSession=(setup,at)=>checkWindow(setup,at).session;
+function lossPeriod(setup,start,end) {
+  const checks=scheduledChecks(setup,start);
+  const index=checks.findLastIndex(check=>check.time<=start);
+  const boundary=checks[index+1];
+  if (end<=boundary.time) return checks[index].session;
+  if (end>checks[index+2].time) return null;
+  const before=boundary.time-start, after=end-boundary.time;
+  // Attribute a pair to one period when it only grazes the other.
+  if (Math.min(before,after)>Math.min(HOUR,(end-start)*0.15)) return null;
+  return before>=after?checks[index].session:boundary.session;
 }
 function matching(cycles, cycle, setup, stage, at, planner) {
   return cycles.filter(c=>c.cropId===cycle.cropId && (c.id===cycle.id || planner.phase(c)!=='ended')).map(c=>({
@@ -133,35 +146,75 @@ function matching(cycles, cycle, setup, stage, at, planner) {
     checks:series(c,planner).filter(r=>r.valid && Date.parse(r.at)<=at),
   })).filter(({checks})=>checks.some(r=>r.stage===stage && closeRecipe(setup,r.setup)));
 }
-function lossRates(runs, setup, stage, stageDay, session) {
-  const rates=[];
-  for (const {checks} of runs) {
+function lossForecast(runs,setup,stage,stageHours,periods) {
+  const samples={am:[],pm:[]};
+  for (const {checks,own} of runs) {
     for (let i=1;i<checks.length;i++) {
       const a=checks[i-1], b=checks[i];
-      if (a.session!==session || a.session===b.session || a.stage!==stage || b.stage!==stage ||
-        a.setupId!==b.setupId || !closeRecipe(setup,a.setup) || Math.abs(a.stageDay-stageDay)>2 ||
+      const gap=Math.abs(a.stageHours-stageHours);
+      if (a.stage!==stage || b.stage!==stage ||
+        a.setupId!==b.setupId || !closeRecipe(setup,a.setup) || gap>60 ||
         a.poolG>0 || b.poolG>0 || a.postG===null || !a.postMoist) continue;
-      const hours=(Date.parse(b.at)-Date.parse(a.at))/HOUR;
+      const start=Date.parse(a.at), end=Date.parse(b.at), hours=(end-start)/HOUR;
       const loss=a.postG-drained(b);
-      if (hours>=4 && hours<=20 && loss>=0) rates.push({at:b.at,rate:loss/hours});
+      if (hours<2 || hours>20 || loss<0) continue;
+      const period=lossPeriod(a.setup,start,end);
+      if (period) samples[period].push({at:b.at,own,gap,rate:loss/hours});
     }
   }
-  return rates.sort((a,b)=>Date.parse(b.at)-Date.parse(a.at)).slice(0,6).map(r=>r.rate);
+  const loss=[0,0];
+  let intervals=0;
+  for (const {session,hours} of periods) {
+    // Prefer intervals at a similar elapsed growth age, including earlier runs.
+    const rates=samples[session].sort((a,b)=>a.gap-b.gap||Number(b.own)-Number(a.own)||Date.parse(b.at)-Date.parse(a.at))
+      .slice(0,6).map(row=>row.rate);
+    if (rates.length<2) return {lossRange:null,intervals:0};
+    loss[0]+=Math.min(...rates)*hours;
+    loss[1]+=Math.max(...rates)*hours;
+    intervals+=rates.length;
+  }
+  return {lossRange:loss.map(round),intervals};
+}
+function moistTrend(rows,setupId,at) {
+  const anchors=[];
+  const verified=rows.filter(row=>row.own && row.setupId===setupId && row.postMoist && row.poolG===0)
+    .sort((a,b)=>Date.parse(b.at)-Date.parse(a.at));
+  for (const row of verified) {
+    const time=Date.parse(row.at);
+    if (!anchors.length || anchors.at(-1).time-time>=4*HOUR) anchors.push({time,grams:row.post});
+    if (anchors.length===5) break;
+  }
+  const latest=anchors[0], first=anchors.at(-1);
+  if (anchors.length<3 || latest.time-first.time<12*HOUR) return null;
+  const slopes=anchors.slice(1).map((older,i)=>(anchors[i].grams-older.grams)*HOUR/(anchors[i].time-older.time));
+  const sign=Math.sign(slopes[0]);
+  if (!sign || slopes.some(value=>Math.sign(value)!==sign)) return null;
+  const rate=sign*Math.min(...slopes.map(Math.abs));
+  const until=latest.time+12*HOUR;
+  return {rate,from:first.time,to:Math.min(at,until),until};
 }
 const moistWeights=checks=>checks.flatMap(r=>[
   ...(r.postMoist?[r.post]:[]),
   ...(r.poolG===0 && r.observation==='moist'?[r.pre]:[]),
 ]).slice(0,6);
-function target(cycles, cycle, setup, stage, at, session, planner) {
+function target(cycles, cycle, setup, stage, at, planner) {
   const entry=planner.effectiveHistory(cycle).at(-1);
   const stageDay=planner.dayDelta(at,entry.occurredAt), emptyG=tare(setup,stage);
-  const next=nextCheck(setup,session,at);
+  const stageHours=(at-Date.parse(entry.occurredAt))/HOUR;
+  const {next,periods}=checkWindow(setup,at);
   const runs=matching(cycles,cycle,setup,stage,at,planner);
-  const comparable=runs.flatMap(({own,checks})=>checks
+  const rows=runs.flatMap(({own,checks})=>checks
     .filter(r=>r.stage===stage && closeRecipe(setup,r.setup) && Math.abs(r.stageDay-stageDay)<=3)
     .map(r=>({...r,own,gap:Math.abs(r.stageDay-stageDay),pre:drained(r)-r.tareG,
       post:r.postG===null?null:r.postG-r.tareG})))
     .sort((a,b)=>Number(b.own)-Number(a.own)||a.gap-b.gap||Date.parse(b.at)-Date.parse(a.at));
+  const setupId=latestSetup(cycle)?.id, trend=moistTrend(rows,setupId,at);
+  // Compare current-setup observations at today's moist reference. Older
+  // observations still contribute to paired loss rates and remain in history.
+  const comparable=trend?rows.filter(row=>row.own && row.setupId===setupId).map(row=>{
+    const shift=trend.rate*(trend.to-Math.max(trend.from,Date.parse(row.at)))/HOUR;
+    return {...row,pre:row.pre+shift,post:row.post===null?null:row.post+shift};
+  }):rows;
   const recent=comparable.filter(r=>r.gap<=1).slice(0,12);
   const earlier=comparable.filter(r=>r.gap>1 && r.stageDay<stageDay);
   const clear=recent.filter(r=>r.poolG===0);
@@ -185,7 +238,7 @@ function target(cycles, cycle, setup, stage, at, session, planner) {
   // low edge, a higher confirmed-moist reading can support a new low edge.
   const dryFloor=dry.length?Math.max(...dry.map(r=>r.pre))+1:0;
   const wetCeiling=wet.length?Math.min(...wet.map(r=>r.pre))-1:Infinity;
-  const result={next,stageDay,band:null,postBand:null,postTarget:null,lossRange:null,intervals:0,
+  const result={next,stageDay,band:null,postBand:null,postTarget:null,lossRange:null,intervals:0,trend:!!trend,
     conflict:false,dryEdge:round(dryFloor+emptyG),wetEdge:wet.length?round(wetCeiling+emptyG):null};
   if (!moist.length) return result;
   const allowedMoist=moist.filter(value=>value>dryFloor&&value<=wetCeiling);
@@ -202,11 +255,13 @@ function target(cycles, cycle, setup, stage, at, session, planner) {
   if (!(band[0]<band[1]) || !grams(band[0],minimum)) {
     return {...result,conflict:true};
   }
-  const rates=lossRates(runs,setup,stage,stageDay,session);
-  const hours=(next-at)/HOUR;
-  const lossRange=rates.length>=2?[round(Math.min(...rates)*hours),round(Math.max(...rates)*hours)]:null;
-  const postBand=lossRange?lossRange.map(loss=>Math.min(upper,round(band[0]+loss))):nearMoist(band[0],upper);
-  return {...result,band,postBand,postTarget:postBand[1],lossRange,intervals:rates.length,earlier:usedEarlier};
+  const {lossRange,intervals}=lossForecast(runs,setup,stage,stageHours,periods);
+  // Intervals give net loss on the scale. If the reference is moving, aim
+  // to stay above the projected dry edge at the next check.
+  const shiftToNext=trend?trend.rate*(Math.min(next,trend.until)-trend.to)/HOUR:0;
+  const nextFloor=round(band[0]+shiftToNext);
+  const postBand=lossRange?lossRange.map(loss=>Math.min(upper,Math.max(band[0],round(nextFloor+loss)))):nearMoist(band[0],upper);
+  return {...result,band,postBand,postTarget:postBand[1],lossRange,intervals,nextFloor,earlier:usedEarlier};
 }
 function harvests(cycles, cycle, setup, planner) {
   const ownHistory=planner.effectiveHistory(cycle);
@@ -231,6 +286,6 @@ function harvests(cycles, cycle, setup, planner) {
     day:median(sample.map(r=>r.day)),matched:matched.length>0};
 }
 const api={observations,sessions,grams,coirRecipe,validCoir,validSeedBasis,setupError,tare,starting,drained,checkError,latestSetup,
-  series,defaultSession,nextCheck,target,recipeBand,harvests,round,DAY,TRAY_TARE_G,REFILL_WINDOW_G};
+  series,defaultSession,target,recipeBand,harvests,round,DAY,TRAY_TARE_G,REFILL_WINDOW_G};
 if (typeof module==='object') module.exports=api; else root.TrayWeightModel=api;
 })(typeof window==='undefined'?globalThis:window);

@@ -66,13 +66,12 @@ function defaultSetup(cycle,seed=sowingSeed(cycle)) {
   return {...coir,seedG:drySeedMass(seed),mistG:0,topG:W.TRAY_TARE_G,holesG:W.TRAY_TARE_G,bottomG:W.TRAY_TARE_G,
     group:'My rack',am:'08:00',pm:'20:00',coverBlackout:true,sowMoist:false,sowG:null};
 }
-function goalFor(doc,cycle,stage,instant,chosen=null) {
+function goalFor(doc,cycle,stage,instant) {
   const saved=W.latestSetup(cycle)?.setup, setup=saved||defaultSetup(cycle);
-  const session=chosen||W.defaultSession(setup,instant);
   const seedMissing=setup.seedG==='';
-  const target=seedMissing?{}:W.target(doc.cycles,cycle,setup,stage,instant,session,M);
+  const target=seedMissing?{}:W.target(doc.cycles,cycle,setup,stage,instant,M);
   const postBand=target.postBand||W.recipeBand(setup,stage,target);
-  return {...target,session,postBand,seedMissing,estimate:!!postBand&&!target.postBand};
+  return {...target,postBand,seedMissing,estimate:!!postBand&&!target.postBand};
 }
 function goalValue(goal) {
   return goal.postBand?bandText(goal.postBand)+(goal.seedMissing?' + seed weight':''):'Check coir first';
@@ -80,13 +79,13 @@ function goalValue(goal) {
 function boardGoal(doc,cycle,stage,instant,descriptionId) {
   const goal=goalFor(doc,cycle,stage,instant);
   return `<span id="${descriptionId}" class="tray-weight-copy">
-    <span class="tray-weight-label">${goal.session==='am'?'AM':'PM'} after watering</span>
+    <span class="tray-weight-label">After watering now</span>
     <strong class="tray-weight-range">${goalValue(goal)}</strong>
     ${goal.estimate?'<span class="tray-weight-source">Recipe estimate</span>':''}
   </span><span aria-hidden="true" class="tray-weight-arrow">↗</span>`;
 }
 function goalHeading(goal) {
-  return `<h3>${W.sessions[goal.session]} after watering · ${goalValue(goal)}</h3>
+  return `<h3>After watering now · ${goalValue(goal)}</h3>
     ${goal.estimate?`<p class="pl-help">Recipe estimate. Check that the coir is drying before watering, then weigh after excess water drains.
       ${goal.seedMissing?'Enter your seed weight as sown to get the full stack target.':''}</p>`:
       goal.postBand?'<p class="pl-help">Aim for this full-stack reading after excess water drains.</p>':''}`;
@@ -211,9 +210,9 @@ function renderPreview(form,doc,cycle,instant) {
   if (post.disabled) post.checked=false;
   const setup=W.latestSetup(cycle).setup, stage=M.phase(cycle);
   if (!form.dataset.chosenSession) form.elements.session.value=W.defaultSession(setup,instant);
-  const check=readCheck(new FormData(form)), target=goalFor(doc,cycle,stage,instant,check.session);
+  const check=readCheck(new FormData(form)), target=goalFor(doc,cycle,stage,instant);
   const next=M.formatTime(target.next,true);
-  const {band,postTarget,conflict,lossRange,intervals}=target;
+  const {band,postTarget,conflict,lossRange,intervals,nextFloor}=target;
   const {totalG,poolG,observation}=check, drainedG=W.drained(check);
   const observedDry=['ready','dry','droop'].includes(observation);
   const observedWet=observation==='wet'||poolG>0;
@@ -234,7 +233,7 @@ function renderPreview(form,doc,cycle,instant) {
       tip='The coir feels evenly moist. Check again at your next session.';
     } else if (drainedG>band[1]) {
       tip='Check for excess moisture and wait before watering.';
-    } else if (lossRange && drainedG-lossRange[1]<band[0]) {
+    } else if (lossRange && drainedG-lossRange[1]<nextFloor) {
       tip='Your tray may reach the dry edge before the next session. Check the coir again sooner if you can.';
     } else {
       tip='Check the coir before adding water. Weigh again at your next session.';
@@ -247,14 +246,15 @@ function renderPreview(form,doc,cycle,instant) {
   const markup=`
     <p class="weight-result-label">Day ${M.projection(cycle,instant).day} · ${M.PHASE[stage]} day ${target.stageDay} · ${W.sessions[check.session]} check</p>
     ${goalHeading(target)}
+    ${target.trend?'<p class="pl-help">Adjusted using the trend in this tray’s recent evenly moist, drained weights.</p>':''}
     ${band?`<p class="pl-help">Before watering · <strong>${bandText(band)}</strong>. ${target.earlier?
       'Using earlier readings from the same stage.':'Your observed moisture range.'}</p>`:
       `<p class="pl-help">${conflict?'Log a fresh slightly dry reading and a higher evenly moist reading for this stage.':
         'Save a slightly dry reading before watering and an evenly moist reading after draining to learn your before-watering range.'}</p>`}
     ${!band && stage==='germination'?`<p class="pl-help">${setup.sowG===null?'Estimated':'Measured'} stack at sowing <strong>${g(W.starting(setup,stage))}</strong></p>`:''}
     ${verdict?`<p><strong>${verdict}</strong>${totalG!==null&&poolG>0?` · ${g(drainedG)} without standing water`:''}</p><p>${tip}</p>`:''}
-    <p class="pl-help">Next check ${escape(next)}.${lossRange?
-      ` Expected net weight loss ${bandText(lossRange)} based on ${intervals} similar intervals.${postTarget-lossRange[1]<band[0]?' Check sooner if the tray dries quickly.':''}`:
+    <p class="pl-help">Next planned check ${escape(next)}.${lossRange?
+      ` Expected net weight loss ${bandText(lossRange)} based on ${intervals} similar intervals.${postTarget-lossRange[1]<nextFloor?' Check sooner if the tray dries quickly.':''}`:
       ' Log drained after-watering weights and the next check to learn your day and overnight weight loss.'}</p>`;
   if (result.renderedMarkup!==markup) {
     result.innerHTML=markup;
@@ -351,7 +351,8 @@ function content(doc,cycle,instant) {
         <a href="crops.html">Seed &amp; water planner</a><a href="coir.html">Coco coir calculator</a></div>
     </details>
     <details><summary>How weight guidance works</summary>
-      <p class="pl-help">The after-watering range uses expected weight loss until the next check when enough day or night intervals are recorded. With fewer readings, the app uses a ${g(W.REFILL_WINDOW_G)} scale window ending at an observed moist weight or the recipe’s starting weight. Recipe estimates are starting points. Check how the coir feels as shoots grow.</p>
+      <p class="pl-help">The after-watering range uses the hours left until your next planned check and loss recorded at a similar age in the same stage. Watering up to an hour early counts as the upcoming check.</p>
+      <p class="pl-help">Repeated evenly moist, drained weights can move the reference as the tray grows. With fewer readings, the app uses a ${g(W.REFILL_WINDOW_G)} window near an observed moist weight or the recipe’s starting weight. Check how the coir feels before adding water.</p>
       <div class="guide-links"><a href="https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens">Utah State Extension on coir and tray care</a>
       <a href="https://www.mdpi.com/2077-0472/16/12/1277">Research on weighing growing trays</a></div>
     </details>
