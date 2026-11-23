@@ -4,6 +4,8 @@
 const Coir=typeof module==='object'?require('./coir-model.js'):root.CoirModel;
 const DAY=86400000, HOUR=3600000, MAX_G=20000;
 const TRAY_TARE_G=290, REFILL_WINDOW_G=20;
+// Grower-selected starting adjustment for an uncalibrated tray under lights.
+const LIGHTS_RECIPE_EXTRA_G=[150,200];
 const observations={
   unknown:'Check only', ready:'Slightly dry · ready for water', dry:'Too dry',
   droop:'Drooping and coir feels dry', moist:'Evenly moist', wet:'Too wet'
@@ -66,9 +68,10 @@ const nearMoist=(low,high)=>[Math.max(low,round(high-REFILL_WINDOW_G)),high];
 function recipeBand(setup,stage,target={}) {
   const seedG=grams(setup.seedG,.1)?setup.seedG:0;
   const recipeWeight=starting({...setup,seedG,sowG:setup.sowMoist?setup.sowG:null},stage);
-  const upper=Math.min(recipeWeight,target.wetEdge??Infinity);
+  const [extraLow,extraHigh]=stage==='lights'?LIGHTS_RECIPE_EXTRA_G:[0,0];
+  const upper=Math.min(round(recipeWeight+extraHigh),target.wetEdge??Infinity);
   const minimum=round(tare(setup,stage)+setup.dryG+seedG);
-  const lower=Math.max(minimum,round(recipeWeight-REFILL_WINDOW_G),target.dryEdge??minimum);
+  const lower=Math.max(minimum,round(recipeWeight-REFILL_WINDOW_G+extraLow),target.dryEdge??minimum);
   return grams(upper,lower)&&!target.conflict?[lower,upper]:null;
 }
 const drained=check=>round(check.totalG-check.poolG);
@@ -294,6 +297,6 @@ function harvests(cycles, cycle, setup, planner) {
     day:median(sample.map(r=>r.day)),matched:matched.length>0};
 }
 const api={observations,sessions,grams,coirRecipe,validCoir,validSeedBasis,setupError,tare,stackBudget,starting,drained,checkError,latestSetup,
-  series,defaultSession,target,recipeBand,harvests,round,DAY,TRAY_TARE_G,REFILL_WINDOW_G};
+  series,defaultSession,target,recipeBand,harvests,round,DAY,TRAY_TARE_G,REFILL_WINDOW_G,LIGHTS_RECIPE_EXTRA_G};
 if (typeof module==='object') module.exports=api; else root.TrayWeightModel=api;
 })(typeof window==='undefined'?globalThis:window);

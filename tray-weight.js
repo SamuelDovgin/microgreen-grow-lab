@@ -110,7 +110,8 @@ function breakdown(goal,cycle,stage,reading,pool) {
       ${b.mistG?`Seed spray adds another ${g(b.mistG)} at sowing.`:''}
       The remainder can include retained water, plant growth and any unmeasured mass.</p>
     ${goal.needsDrainedWeight?`<p class="pl-help">The estimate includes ${fmt(b.seedG,2)} g of dated dry seed. Weigh the seed after rinsing or soaking and draining to account for the extra water it carries.</p>`:''}
-    ${goal.estimate?'<p class="pl-help">Recipe estimate. A drained, evenly moist reading can establish a target for this tray.</p>':''}
+    ${goal.estimate?`<p class="pl-help">Recipe estimate. ${stage==='lights'?
+      `The tray-weight estimate includes an extra ${bandText(W.LIGHTS_RECIPE_EXTRA_G)} under lights. `:''}A drained, evenly moist reading can establish a target for this tray.</p>`:''}
     ${broccoli?`<p class="weight-reported"><strong>Your broccoli reference</strong> · 1,900 g before watering and about 1,700–2,000 g after watering.</p>`:''}
     ${reading!==null||broccoli?`<p class="weight-reading-equation">${readingEquation(b,reading??1900,pool)}
       ${b.seedG===null?'The remainder includes the unentered seed weight.':''}</p>`:''}`;
@@ -388,8 +389,9 @@ function content(doc,cycle,instant) {
     </details>
     <details><summary>How weight guidance works</summary>
       <p class="pl-help">The after-watering range uses the hours left until your next planned check and loss recorded at a similar age in the same stage. Watering up to an hour early counts as the upcoming check.</p>
-      <p class="pl-help">Repeated evenly moist, drained weights can move the reference as the tray grows. With fewer readings, the app uses a ${g(W.REFILL_WINDOW_G)} window near an observed moist weight or the recipe’s starting weight. Check how the coir feels before adding water.</p>
+      <p class="pl-help">Repeated evenly moist, drained weights can move the reference as the tray grows. With fewer readings, the app uses a ${g(W.REFILL_WINDOW_G)} window near an observed moist weight. Without a moist reference, it estimates from the sowing recipe and raises that range by ${bandText(W.LIGHTS_RECIPE_EXTRA_G)} under lights. Check how the coir feels before adding water.</p>
       <div class="guide-links"><a href="https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens">Utah State Extension on coir and tray care</a>
+      <a href="https://onthegrow.net/blogs/microgreens/how-to-water-microgreens-complete-guide">On The Grow’s watering schedule</a>
       <a href="https://www.mdpi.com/2077-0472/16/12/1277">Research on weighing growing trays</a></div>
     </details>
     ${live&&setup?'':`<div class="pl-actions">${action('Back to tray','weight-tray')}</div>`}`;
