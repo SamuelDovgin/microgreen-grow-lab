@@ -70,7 +70,7 @@
     "grow-log.css": "bfa8232e3e07ac52c92c63d2a06e11a20cfb3a39eaf8932cf6b5235bd663371e",
     "grow-log.html": "bbbaa8370f4d34aeac2bb40ab46cbc26b30baa16a66ea3724df4f4cf2f3977d8",
     "grow-log.js": "8b77accc752a7b183c5bf79fb3c52db4dd469556291e924446fa803d62bc1435",
-    "grow-planner-model.js": "ae084c062c5ad4878d35f329406207b7ce8eb7378309c83322fd7b6d3c1bb162",
+    "grow-planner-model.js": "461891cbc5177c5d146947e6eb3a1d4e56401416dff037fdb5fc9d888f1a9832",
     "grow-planner-store.js": "064ae59f76d04433dd4be3425808e3bc921f458703c313661492c4d1a69f8f59",
     "grow-planner.css": "0a783b1bab7206f63819db9b7ddeb6d1866ac41f741fd4af305bf805cc100b53",
     "grow-planner.html": "9462a1702986db3d7aeee75751c6fd1c561749ab2c756389f032db5b8d96fa83",
@@ -158,5 +158,5 @@
     "tray-weight.js": "b56033afb8d9806e715f5137ddc34fe6f9f2685c49305679ad67892ff8a04e5a"
   },
   "publisher": "grow-lab",
-  "source_commit": "7e13c6a0fc5ee513fd058d84db8ccc4e5946ab24"
+  "source_commit": "4f88e2c3cbc1191798888921c5836503f282b3b5"
 }

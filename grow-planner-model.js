@@ -4,7 +4,7 @@
 const CropData = typeof module === 'object' ? require('./crop-data.js') : root.CropData;
 const Weights = typeof module === 'object' ? require('./tray-weight-model.js') : root.TrayWeightModel;
 const {dateAt,stageHeight} = typeof module === 'object' ? require('./crop-model.js') : root.CropModel;
-const DAY = 86400000, SCHEMA = 'grow-lab-planner/1';
+const DAY = 86400000, CHECK_EARLY_MS = 4*60*60*1000, SCHEMA = 'grow-lab-planner/1';
 const MAX_PHOTO_LENGTH = 80*1024;
 const PHASE = {germination:'Germination', blackout:'Optional Blackout', lights:'Under Lights', harvested:'Harvested', ended:'Ended'};
 const ACTIVE = ['germination','blackout','lights'];
@@ -398,7 +398,7 @@ function projection(cycle, now, guidance) {
     const [first,last]=window;
     // An exact-day method is a first check, not a zero-length readiness window.
     const end=time(first)===time(last) ? time(last)+DAY : time(last);
-    status=now>end?'past':now>=time(first)?'check':dayDelta(first,now)===1 && time(first)-now<=1.5*DAY?'tomorrow':'early';
+    status=now>end?'past':now>=time(first)-CHECK_EARLY_MS?'check':dayDelta(first,now)===1 && time(first)-now<=1.5*DAY?'tomorrow':'early';
   }
   // Before lights, a harvest estimate is conditional on the projected next stage.
   const lightWindow=current==='lights'?[entry.occurredAt,entry.occurredAt]:window;
