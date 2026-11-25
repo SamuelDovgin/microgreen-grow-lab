@@ -10,6 +10,8 @@ const fmt=(value,digits=1)=>Number(value).toLocaleString('en-US',{maximumFractio
 const g=value=>fmt(value)+' g';
 const span=([low,high])=>low===high?fmt(low):fmt(low)+'–'+fmt(high);
 const bandText=band=>span(band)+' g';
+const rootZoneCheck='Check the coir about 5–10 mm below the surface in a few spots. A dry-looking surface is common with bottom watering. If the coir feels moist at that depth and shoots are upright, wait until the next check.';
+const absorptionCheck='Bottom-water in small amounts. Check after 20–30 minutes and drain any water left in the bottom tray. If the bottom tray is empty, add more only if the root zone still feels dry.';
 const massField=(key,label,value='',{min=0,required=false,max=20000,step='0.1'}={})=>
   `<label>${label}<input name="${key}" type="number" min="${min}" max="${max}" step="${step}" inputmode="decimal" value="${escape(value)}" ${required?'required':''}></label>`;
 const requiredMass={min:0.1,required:true};
@@ -84,7 +86,7 @@ function boardGoal(doc,cycle,stage,instant,descriptionId) {
   return `<span id="${descriptionId}" class="tray-weight-copy">
     <span class="tray-weight-label">After watering now</span>
     <strong class="tray-weight-range">${goalValue(goal)}</strong>
-    ${goal.estimate?`<span class="tray-weight-source">Recipe estimate${goal.needsDrainedWeight?' · dry seed':''}</span>`:''}
+    ${goal.estimate?`<span class="tray-weight-source">${stage==='lights'?'Recipe trial':'Recipe estimate'}${goal.needsDrainedWeight?' · dry seed':''}</span>`:''}
   </span><span aria-hidden="true" class="tray-weight-arrow">↗</span>`;
 }
 function readingEquation(budget,totalG,poolG=0) {
@@ -110,9 +112,11 @@ function breakdown(goal,cycle,stage,reading,pool) {
       ${b.mistG?`Seed spray adds another ${g(b.mistG)} at sowing.`:''}
       The remainder can include retained water, plant growth and any unmeasured mass.</p>
     ${goal.needsDrainedWeight?`<p class="pl-help">The estimate includes ${fmt(b.seedG,2)} g of dated dry seed. Weigh the seed after rinsing or soaking and draining to account for the extra water it carries.</p>`:''}
-    ${goal.estimate?`<p class="pl-help">Recipe estimate. ${stage==='lights'?
-      `The tray-weight estimate includes an extra ${bandText(W.LIGHTS_RECIPE_EXTRA_G)} under lights. `:''}A drained, evenly moist reading can establish a target for this tray.</p>`:''}
-    ${broccoli?`<p class="weight-reported"><strong>Your broccoli reference</strong> · 1,900 g before watering and about 1,700–2,000 g after watering.</p>`:''}
+    ${goal.estimate?`<p class="pl-help">${stage==='lights'?
+      `Recipe trial. The starting estimate adds ${bandText(W.LIGHTS_RECIPE_EXTRA_G)} under lights. Saved dry or wet readings can shift the range. `:
+      'Recipe estimate. '}A drained, evenly moist reading can establish a target for this tray.</p>`:''}
+    ${stage==='lights'?`<p class="pl-help">${rootZoneCheck}</p><p class="pl-help">${absorptionCheck}</p>`:''}
+    ${broccoli?`<p class="weight-reported"><strong>Earlier broccoli readings</strong> · 1,900 g before watering and about 1,700–2,000 g after watering.</p>`:''}
     ${reading!==null||broccoli?`<p class="weight-reading-equation">${readingEquation(b,reading??1900,pool)}
       ${b.seedG===null?'The remainder includes the unentered seed weight.':''}</p>`:''}`;
 }
@@ -211,13 +215,13 @@ function scaleForm(setup,stage,instant) {
         `<option value="${key}" ${key===defaultSession?'selected':''}>${label}</option>`).join('')}</select></div>
       ${massField('totalG','Scale reading (g)','',requiredMass)}
     </div>
-    <div class="weight-select"><label for="weight-observation">How does it feel?</label><select id="weight-observation" name="observation">${Object.entries(W.observations).map(([key,label])=>
+    <div class="weight-select"><label for="weight-observation">${stage==='lights'?'How does the root zone feel?':'How does it feel?'}</label><select id="weight-observation" name="observation">${Object.entries(W.observations).map(([key,label])=>
       `<option value="${key}">${label}</option>`).join('')}</select></div>
     <div id="weight-result" class="weight-result" role="status" aria-live="polite"></div>
     <details class="weight-more"><summary>Water added, standing water or growth notes</summary>
       <div class="weight-fields">
-        ${massField('poolG','Standing water in bottom tray (g)',0)}
-        <p class="pl-help">Leave at 0 if the bottom is empty. If water pooled, pour it into a tared cup to weigh it and subtract it from the reading.</p>
+        ${massField('poolG','Standing water at the initial check (g)',0)}
+        <p class="pl-help">If your initial scale reading included pooled water, weigh it in a tared cup. Use the note for any water you discard after watering.</p>
         <div class="weight-grid">
           ${massField('waterG','Water you added (mL)')}
           ${massField('postG','Weight after watering and draining (g)','',{min:0.1})}
@@ -236,19 +240,26 @@ function renderPreview(result,setup,stage,cycle,instant,check,target) {
   const {totalG,poolG,observation}=check, drainedG=W.drained(check);
   const observedDry=['ready','dry','droop'].includes(observation);
   const observedWet=observation==='wet'||poolG>0;
+  const lights=stage==='lights';
   let verdict='', tip='';
   if (totalG!==null && drainedG<W.round(W.tare(setup,stage)+setup.dryG)) {
     verdict='Check the scale reading';
     tip='The drained stack should weigh at least as much as its empty trays and dry coir.';
   } else if (observedWet) {
     verdict=poolG>0?'Standing water in the bottom tray':'You observed wet coir';
-    tip='Empty any standing water and check again later.';
+    tip=lights?'Drain any standing water and wait. If shoots droop while the root zone is wet, check drainage and root health.':
+      'Empty any standing water and check again later.';
+  } else if (lights && observation==='moist') {
+    verdict='You observed evenly moist coir';
+    tip=totalG!==null&&lossRange&&drainedG-lossRange[1]<nextFloor?'Check the coir again before the next planned session.':
+      'Check again at your next session.';
   } else if (totalG!==null && band) {
     verdict=drainedG<band[0]?'Likely on the dry side':drainedG>band[1]?'Likely on the wet side':'Within your observed range';
     if (observedDry && drainedG>=band[0]) verdict+=' · you observed dryness';
     if (observedDry || observation==='unknown' && drainedG<=band[0]) {
-      tip=drainedG<postTarget?`If the coir feels dry, ${stage==='lights'?'bottom-water':'mist lightly'}, then weigh after excess water drains. Aim near ${g(postTarget)}.`:
-        'Your dry observation will be saved. Inspect the coir in several spots before adding water.';
+      tip=drainedG<postTarget?`If the coir feels dry, ${lights?'bottom-water':'mist lightly'}, then weigh after excess water drains. Aim near ${g(postTarget)}.`:
+        lights?'If the root zone feels dry, bottom-water in small amounts and save the drained weight once evenly moist.':
+          'Your dry observation will be saved. Inspect the coir in several spots before adding water.';
     } else if (observation==='moist') {
       tip='The coir feels evenly moist. Check again at your next session.';
     } else if (drainedG>band[1]) {
@@ -260,7 +271,7 @@ function renderPreview(result,setup,stage,cycle,instant,check,target) {
     }
   } else if (observedDry) {
     verdict='You observed dry coir';
-    tip=`${stage==='lights'?'Bottom-water in small amounts':'Mist lightly'} if the coir feels dry. Record the drained weight once it feels evenly moist.`;
+    tip=`${lights?'Bottom-water in small amounts if the root zone feels dry':'Mist lightly if the coir feels dry'}. Record the drained weight once it feels evenly moist.`;
   }
   const markup=`
     <p class="weight-result-label">Day ${M.projection(cycle,instant).day} · ${M.PHASE[stage]} day ${target.stageDay} · ${W.sessions[check.session]} check</p>
@@ -389,8 +400,11 @@ function content(doc,cycle,instant) {
     </details>
     <details><summary>How weight guidance works</summary>
       <p class="pl-help">The after-watering range uses the hours left until your next planned check and loss recorded at a similar age in the same stage. Watering up to an hour early counts as the upcoming check.</p>
-      <p class="pl-help">Repeated evenly moist, drained weights can move the reference as the tray grows. With fewer readings, the app uses a ${g(W.REFILL_WINDOW_G)} window near an observed moist weight. Without a moist reference, it estimates from the sowing recipe and raises that range by ${bandText(W.LIGHTS_RECIPE_EXTRA_G)} under lights. Check how the coir feels before adding water.</p>
+      <p class="pl-help">Repeated evenly moist, drained weights can move the reference as the tray grows. With fewer readings, the app uses a ${g(W.REFILL_WINDOW_G)} window near an observed moist weight.</p>
+      ${stage==='lights'?'<p class="pl-help">The exposed surface can dry first through evaporation while bottom watering supplies moisture from below. Keep morning and night checks, and add a check sooner if plants droop or the tray dries out between sessions.</p>'+
+        `<p class="pl-help">If shoots wilt between checks and the root zone feels dry, try raising the drained target by ${g(W.DRY_TRIAL_STEP_G)}. Keep the same target when shoots stay upright and the root zone stays moist. If water repeatedly remains after absorption or the coir stays too wet, try lowering the target by 50–100 g. Check sooner if the coir gets too wet at a weight that would last until the next session.</p>`:''}
       <div class="guide-links"><a href="https://extension.usu.edu/yardandgarden/research/grow-your-own-microgreens">Utah State Extension on coir and tray care</a>
+      ${stage==='lights'?'<a href="https://www.bootstrapfarmer.com/blogs/microgreens/watering-microgreens-which-method-is-best">Bootstrap Farmer’s bottom-watering guide</a>':''}
       <a href="https://onthegrow.net/blogs/microgreens/how-to-water-microgreens-complete-guide">On The Grow’s watering schedule</a>
       <a href="https://www.mdpi.com/2077-0472/16/12/1277">Research on weighing growing trays</a></div>
     </details>

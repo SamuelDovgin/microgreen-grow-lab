@@ -5,7 +5,7 @@ const Coir=typeof module==='object'?require('./coir-model.js'):root.CoirModel;
 const DAY=86400000, HOUR=3600000, MAX_G=20000;
 const TRAY_TARE_G=290, REFILL_WINDOW_G=20;
 // Grower-selected starting adjustment for an uncalibrated tray under lights.
-const LIGHTS_RECIPE_EXTRA_G=[150,200];
+const LIGHTS_RECIPE_EXTRA_G=[400,500], DRY_TRIAL_STEP_G=100;
 const observations={
   unknown:'Check only', ready:'Slightly dry · ready for water', dry:'Too dry',
   droop:'Drooping and coir feels dry', moist:'Evenly moist', wet:'Too wet'
@@ -68,10 +68,15 @@ const nearMoist=(low,high)=>[Math.max(low,round(high-REFILL_WINDOW_G)),high];
 function recipeBand(setup,stage,target={}) {
   const seedG=grams(setup.seedG,.1)?setup.seedG:0;
   const recipeWeight=starting({...setup,seedG,sowG:setup.sowMoist?setup.sowG:null},stage);
-  const [extraLow,extraHigh]=stage==='lights'?LIGHTS_RECIPE_EXTRA_G:[0,0];
-  const upper=Math.min(round(recipeWeight+extraHigh),target.wetEdge??Infinity);
+  const lights=stage==='lights';
+  const [low,high]=lights?LIGHTS_RECIPE_EXTRA_G.map(extra=>Math.round((recipeWeight+extra)/10)*10):
+    [round(recipeWeight-REFILL_WINDOW_G),recipeWeight];
+  const dryEdge=target.dryEdge??0;
+  // The dry edge is 1 g above the dry reading. Trial up to 100 g above that reading.
+  const trialHigh=lights&&dryEdge>=high?Math.min(dryEdge+DRY_TRIAL_STEP_G-1,MAX_G):high;
+  const upper=Math.min(trialHigh,target.wetEdge??Infinity);
   const minimum=round(tare(setup,stage)+setup.dryG+seedG);
-  const lower=Math.max(minimum,round(recipeWeight-REFILL_WINDOW_G+extraLow),target.dryEdge??minimum);
+  const lower=Math.max(minimum,low,dryEdge);
   return grams(upper,lower)&&!target.conflict?[lower,upper]:null;
 }
 const drained=check=>round(check.totalG-check.poolG);
@@ -297,6 +302,6 @@ function harvests(cycles, cycle, setup, planner) {
     day:median(sample.map(r=>r.day)),matched:matched.length>0};
 }
 const api={observations,sessions,grams,coirRecipe,validCoir,validSeedBasis,setupError,tare,stackBudget,starting,drained,checkError,latestSetup,
-  series,defaultSession,target,recipeBand,harvests,round,DAY,TRAY_TARE_G,REFILL_WINDOW_G,LIGHTS_RECIPE_EXTRA_G};
+  series,defaultSession,target,recipeBand,harvests,round,DAY,TRAY_TARE_G,REFILL_WINDOW_G,LIGHTS_RECIPE_EXTRA_G,DRY_TRIAL_STEP_G};
 if (typeof module==='object') module.exports=api; else root.TrayWeightModel=api;
 })(typeof window==='undefined'?globalThis:window);
