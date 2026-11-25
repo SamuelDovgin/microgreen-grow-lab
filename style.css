@@ -17,3 +17,32 @@ header nav a.planner-switch:hover,header nav a.planner-switch[aria-current=page]
   .hub header,.planner-site-header { position:relative; }
   .hub header nav a.planner-switch,.planner-site-header nav a.planner-switch { position:absolute; right:18px; top:8px; }
 }
+
+/* Keep the iOS web view’s scroll edges on a solid background. */
+@supports (-webkit-touch-callout: none) {
+  .hub-page {
+    background:var(--paper);
+    overflow:hidden;
+  }
+  .hub {
+    height:100dvh;
+    padding:max(8px,env(safe-area-inset-top)) env(safe-area-inset-right)
+      max(12px,env(safe-area-inset-bottom)) env(safe-area-inset-left);
+    overflow:hidden;
+  }
+  .hub-viewport {
+    position:relative;
+    height:100%;
+    overflow:auto;
+    overscroll-behavior-y:none;
+    scroll-padding-top:90px;
+  }
+  @media(max-width:680px) {
+    .hub-viewport { scroll-padding-top:20px; }
+    .hub header { padding-top:16px; }
+    .hub header nav a.planner-switch { top:12px; }
+  }
+  @media(prefers-reduced-motion:no-preference) {
+    .hub-viewport { scroll-behavior:smooth; }
+  }
+}

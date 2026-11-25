@@ -82,7 +82,7 @@
     "hocl-dilution-model.js": "12f15a8e7bc36f39ab397db482168c3d0ab6646d4d2b601046cd3d21327f452b",
     "hocl-dilution.css": "5e64230c5ff0535c8f7d29dca30baa0932cbf6822b588881ad14e49573355570",
     "hocl-dilution.js": "a143469397b27131090359fd40586796645fde400643e282643c977bbd2ebde8",
-    "index.html": "afc5dce88dde291c5c76bae4c3af32e14001efcf31079c9d1187e75cf1de18b2",
+    "index.html": "75cbdec4874f7c235792503d906d5d7e333e521d0dbc064ba564228ae5f6267a",
     "lighting.html": "e5792fd779befaadc1c3922d860418ef673fa572358bc26cf6c02240e5407bc6",
     "lighting.js": "6cc6e7bbcba072852b5ea70f0ff27f6c2a6c1cfff1b111eed4b05956fd4b56e2",
     "model-notes.html": "d4d9aeb81f4f1e7b528c9931ae813808034fd7c3fa53b96a047e40f5caee077d",
@@ -152,11 +152,11 @@
     "sources/microgreen-farmer-starter-kit.pdf": "ab7453aacabc767035c9df7ebde92eaec5bba9e5f258fc959b96b8298cf8b305",
     "sources/virginia-tech-DLI-SPES-720.pdf": "ced63c97d8eef94535bc9cbe880413b395e6eee9db26bd502d3ac6c1c310dff2",
     "sources/virginia-tech-microgreen-production-SPES-756.pdf": "8f68282ed08af4b6166b53adb54fab4e0539fe44a1c48794913926e23562f18d",
-    "style.css": "2ef60c04b38674866257bb3d766178b192e99d9b6e4936fac1ecaf3e5a5ef5b5",
+    "style.css": "7621ec1fb2299dff121e85362178309351d8eae088d8f45362a2f93682e5d558",
     "tray-bleach-dilution.js": "287212fbaf4289728ab0a0aafdbe1432ed3c29ddf57e7d84f8a6ff5cf2b9ce0f",
     "tray-weight-model.js": "2a61b8efbf69cf15f3987037b736fe8615fed602f98e946f7d0ae6fbd07a198c",
     "tray-weight.js": "4ea03a730b98e7abe4ac1bc00bd09c65d96a7a838420ba5878a7bfc752dce889"
   },
   "publisher": "grow-lab",
-  "source_commit": "75980823cc6520cf3e57d94f59fd70a6e0dae10f"
+  "source_commit": "0ef02dc7b9910b2ace5947c0bf9e21a5f072104e"
 }
