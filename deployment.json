@@ -73,8 +73,8 @@
     "grow-planner-model.js": "461891cbc5177c5d146947e6eb3a1d4e56401416dff037fdb5fc9d888f1a9832",
     "grow-planner-store.js": "064ae59f76d04433dd4be3425808e3bc921f458703c313661492c4d1a69f8f59",
     "grow-planner.css": "0a783b1bab7206f63819db9b7ddeb6d1866ac41f741fd4af305bf805cc100b53",
-    "grow-planner.html": "33aacaa736cf2169e50632f63dbb3dd65f685ed1b91f6d14189aaa3a3fc13b3c",
-    "grow-planner.js": "a2f42c901033bdf24f33f91881dfd4cbfe6fecf5a91973f458334a67c5f55604",
+    "grow-planner.html": "e56271d8d45d9124c7d5bd000f71dcb7bf7d7d47f13fd0973c2c0b9722765fd0",
+    "grow-planner.js": "8f60560de2346a6c51574238a1d5fd2ff3c682e6bb067c2dcef868dde1f0a21a",
     "growing-tips-source-log.html": "cd1676251bb6bb3c6e9888a865ad1e072d59b2f49f760c7fa7ab3f8eae8780c7",
     "growing-tips.css": "07a58d42327f41fef06db514d42e886bae8acd5cbb8ced25d23bae89a05f4910",
     "growing-tips.html": "3aaca2939390410c9f632ca051d356aa1b3c6ecec05e0aab1496e634af6379c5",
@@ -158,5 +158,5 @@
     "tray-weight.js": "4ea03a730b98e7abe4ac1bc00bd09c65d96a7a838420ba5878a7bfc752dce889"
   },
   "publisher": "grow-lab",
-  "source_commit": "0ef02dc7b9910b2ace5947c0bf9e21a5f072104e"
+  "source_commit": "0d16db7d624e7a02eed1c55e7c857abe3e9becce"
 }

@@ -337,6 +337,10 @@ function harvestFields(h={}) {
 }
 function openTray(c,origin=null,backFocus=null) {
   const p=M.projection(c,now(),guidance), live=M.ACTIVE.includes(p.current), decision=p.germinationDecision;
+  const elapsedDays=Math.max(0,p.age);
+  const hours=Math.round(elapsedDays*240)/10;
+  const days=Math.round(elapsedDays*10)/10;
+  const dayLabel=hours>0&&days===0?'&lt;0.1 days':`${days} ${days===1?'day':'days'}`;
   const move=(label,dest,primary=false)=>button(label,'transition',`data-to="${dest}"`,primary?'pl-primary':'');
   const preferBlackout=decision?.nextStep==='blackout-recommended';
   const lights=move('Move to lights','lights',!preferBlackout);
@@ -349,7 +353,7 @@ function openTray(c,origin=null,backFocus=null) {
     <section class="detail-info">
       ${getCardName(c)?`<p><strong>${esc(getCardName(c))}</strong></p>`:''}
       <p>Germination started ${timestamp(p.started)}.</p>
-      ${live?`<p><strong>Day ${p.day}</strong> · ${Math.max(0,Math.round(p.age*240)/10)} hours since ${p.current==='germination'?'sowing':p.current==='blackout'?'starting blackout':'moving to light'}.</p>`:''}
+      ${live?`<p><strong>Day ${p.day}</strong> · ${hours} ${hours===1?'hour':'hours'} (${dayLabel}) since ${p.current==='germination'?'sowing':p.current==='blackout'?'starting blackout':'moving to light'}.</p>`:''}
     </section>
     ${decision?`<section class="dialog-section">${germinationGuide(decision)}${heightGuide(p.height)}${actions}</section>`:actions}
     ${live?`<section class="dialog-section">
