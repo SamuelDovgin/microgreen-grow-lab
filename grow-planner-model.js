@@ -74,6 +74,10 @@ const blackoutCue = {
   sunflower:'Shoots stand upright and hulls are loosening; look for crowding under the dome.',
   'pea-basic':'Most shoots are upright and anchored. Move to light before they start to tangle.'
 };
+const manualBlackoutCues = [
+  'Use a loose dark cover without weight.',
+  'Check that shoots are rooted and upright. Move to lights before they start to lean or crowd the cover.'
+];
 const germCue = {
   broccoli:'Rooted, pale shoots cover most of the tray. Look for shoots lifting the contact tray.',
   'radish-daikon':'Most seedlings have emerged and anchored. Pale shoots outnumber dark hulls.',
@@ -120,24 +124,25 @@ function snapshot(crop, guidance) {
     const days = explicit || inferred;
     return range(days) ? {days:[...days], source:source||recipe.source, label:label||recipe.label} : null;
   }
-  const canBlackout = q?.extraBlackoutDays?.[1]>0 || false;
-  const decision = quickStartDecision(q,canBlackout);
+  // This snapshot flag describes the source method; stage transitions are available to all trays.
+  const methodIncludesBlackout = q?.extraBlackoutDays?.[1]>0 || false;
+  const decision = quickStartDecision(q,methodIncludesBlackout);
   const blackoutRecipe = crop.alternatives?.find(r=>r.id===reference.blackout?.[0]);
   // G09 records one loose blackout day; the other durations come from their named recipes.
-  const darkDays = canBlackout ? (crop.id==='radish-daikon' ? 1 : blackoutRecipe?.blackoutDays) : null;
+  const darkDays = methodIncludesBlackout ? (crop.id==='radish-daikon' ? 1 : blackoutRecipe?.blackoutDays) : null;
   const directHarvest = (q && timing('direct')) || catalog.harvest;
   return {
     dataVersion:CropData.version, reviewed:q ? guidance.reviewed : null, cropId:crop.id, cropName:crop.name,
     recipeId:q?'quick-start':'catalog-estimate', methodLabel:q?'Quick-start inspection guide':'Crop catalog estimate',
-    canBlackout, coverRangeDays:q ? [...q.germinationDays] : catalog.cover, blackoutRangeDays:darkDays>0?[darkDays,darkDays]:null,
+    canBlackout:methodIncludesBlackout, coverRangeDays:q ? [...q.germinationDays] : catalog.cover, blackoutRangeDays:darkDays>0?[darkDays,darkDays]:null,
     ...(decision && {germinationDecision:decision}),
-    directHarvest, blackoutHarvest:q && canBlackout ? timing('blackout') : null,
+    directHarvest, blackoutHarvest:methodIncludesBlackout ? timing('blackout') : null,
     readinessCues:{
       germination:q?[germCue[crop.id] || q.germinationReady,q.note].filter(Boolean):catalogCues.germination(crop),
-      blackout:canBlackout?[blackoutCue[crop.id],'Remove the loose cover when you move the tray to light.']:[],
+      blackout:methodIncludesBlackout?[blackoutCue[crop.id],'Remove the loose cover when you move the tray to light.']:[],
       lights:catalogCues.lights(crop)
     },
-    blackoutUse:canBlackout?q.blackoutUse:null,
+    blackoutUse:methodIncludesBlackout?q.blackoutUse:null,
     sourceReferences:[...new Set([...(q?.sources || []),...(directHarvest?.sowDays?[directHarvest.source]:[])])]
   };
 }
@@ -153,10 +158,10 @@ function validateSnapshot(s, cropId) {
     && ACTIVE.every(k=>stringList(s.readinessCues[k],3)) && stringList(s.sourceReferences),
     'The backup contains an invalid crop guidance snapshot.');
 }
-function allowed(from, to, snapshot) {
+function allowed(from, to) {
   return (from===null && to==='germination') || (
     ACTIVE.includes(from) && (to==='ended' ||
-    from==='germination' && (to==='lights'||to==='blackout'&&snapshot.canBlackout) ||
+    from==='germination' && (to==='lights'||to==='blackout') ||
     from==='blackout'&&to==='lights' || from==='lights'&&to==='harvested'));
 }
 function effectiveHistory(cycle) {
@@ -219,7 +224,7 @@ function validate(doc) {
       recordedAt=time(e.recordedAt);
       if (e.note!==undefined) requireThat(text(e.note,1500),'The backup contains an invalid note.');
       if (e.toPhase!==undefined) {
-        requireThat(allowed(from,e.toPhase,c.cropMethodSnapshot) && e.kind===kindFor[e.toPhase] && e.fromPhase===from
+        requireThat(allowed(from,e.toPhase) && e.kind===kindFor[e.toPhase] && e.fromPhase===from
           && (e.note===undefined||e.toPhase==='ended'),'The history contains an unsupported stage change.');
         byId.set(e.id,effective.length);
         effective.push({...e});
@@ -284,10 +289,9 @@ function createTray(doc, input, {now,id,guidance}) {
   return nextDoc(doc,[...doc.cycles,cycle]);
 }
 function previewTransition(cycle, to) {
-  const from=phase(cycle), s=cycle.cropMethodSnapshot;
-  if (allowed(from,to,s)) return {ok:true,from,to};
+  const from=phase(cycle);
+  if (allowed(from,to)) return {ok:true,from,to};
   if (from===to) return {ok:false,reason:'This tray is already in that stage.'};
-  if (from==='germination' && to==='blackout') return {ok:false,reason:'This saved method has no separate blackout step. You can move directly to lights.'};
   if (ACTIVE.indexOf(to)>=0 && ACTIVE.indexOf(to)<ACTIVE.indexOf(from)) return {ok:false,reason:'That would reverse a recorded stage. Open the tray and use Correct time to fix a timestamp.'};
   return {ok:false,reason:'This stage change is unavailable.'};
 }
@@ -386,11 +390,14 @@ function projection(cycle, now, guidance) {
   // importing an identical backup still works and no saved facts need rewriting.
   const crop=findCrop(s.cropId);
   const catalog=s.coverRangeDays && s.directHarvest ? {} : catalogSchedule(crop);
-  const harvestMethod=dark?s.blackoutHarvest:(s.directHarvest || catalog.harvest || null);
+  const directHarvest=s.directHarvest || catalog.harvest || null;
+  const approximateAfterBlackout=dark && !s.blackoutHarvest && current==='lights' && !!directHarvest;
+  const harvestMethod=dark ? (s.blackoutHarvest || (approximateAfterBlackout
+    ? {...directHarvest,label:directHarvest.label+' · usual time under lights'} : null)) : directHarvest;
   const days=current==='germination'?(s.coverRangeDays || catalog.cover):current==='blackout'?s.blackoutRangeDays:current==='lights'?harvestMethod?.days:null;
   const estimated=current==='germination'
     ? !!days && (s.recipeId==='catalog-estimate' || !s.coverRangeDays)
-    : current==='lights' && !!harvestMethod?.sowDays;
+    : current==='lights' && (!!harvestMethod?.sowDays || approximateAfterBlackout);
   const window=band(entry.occurredAt,days), age=(now-time(entry.occurredAt))/DAY;
   const stageLabel=current==='lights'?'Harvest inspection':current==='blackout'?'Light check':'Cover check';
   let status='none';
@@ -412,9 +419,9 @@ function projection(cycle, now, guidance) {
   return {history,started,entry,current,age,day:dayDelta(now,started),phaseDay:dayDelta(now,entry.occurredAt),
     dark,days,window,status,stageLabel,harvest,harvestMethod,estimated,
     height:current==='ended'?null:stageHeight(crop,current),
-    stageHeights:['sow','germination',...(s.canBlackout?['blackout']:[]),'lights'].map(phase=>({phase,...stageHeight(crop,phase)})),
+    stageHeights:['sow','germination','blackout','lights'].map(phase=>({phase,...stageHeight(crop,phase)})),
     germinationDecision:decision?{...decision,window:band(started,decision.days)}:null,
-    cues:savedCues?.length?savedCues:(catalogCues[current]?.(crop) || [])};
+    cues:savedCues?.length?savedCues:(current==='blackout'?manualBlackoutCues:(catalogCues[current]?.(crop) || []))};
 }
 function digest(doc, now) {
   const weight={past:0,check:1,tomorrow:2};

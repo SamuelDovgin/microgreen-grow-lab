@@ -132,8 +132,7 @@ function setupFields(cycle) {
         ${massField('bottomG','Solid bottom tray (g)',s.bottomG,requiredMass)}
       </div>
       ${previous?'':`<p class="pl-help">The trays with and without holes default to ${g(W.TRAY_TARE_G)} each. Check the cover weight if you use a different tray on top.</p>`}
-      ${cycle.cropMethodSnapshot.canBlackout?`<label class="weight-checkbox"><input type="checkbox" name="coverBlackout" ${s.coverBlackout?'checked':''}> Include top cover in optional blackout readings</label>`:
-        `<input type="hidden" name="coverBlackout" value="on">`}
+      <label class="weight-checkbox"><input type="checkbox" name="coverBlackout" ${s.coverBlackout?'checked':''}> Include top cover in optional blackout readings</label>
     </fieldset>
     <fieldset class="weight-fields"><legend>What went in at sowing</legend>
       <p class="pl-help">Coco coir amounts are per tray. If you mixed a batch, enter this tray’s share. <a href="coir.html">Coco coir calculator</a></p>

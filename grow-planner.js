@@ -19,7 +19,7 @@ const dragMedia=window.matchMedia('(hover: hover) and (pointer: fine)');
 const labels={past:'Past typical window',check:'Inspect today',tomorrow:'Possibly tomorrow',early:'Growing',none:'Timing unavailable'};
 const laneCopy={
   germination:{icon:'◉',sub:'Covered establishment',empty:'New trays start here.',hint:'Add a tray to record germination.'},
-  blackout:{icon:'◒',sub:'Loose cover · only for some methods',empty:'No trays in blackout.',hint:'A separate, optional stretch stage.'},
+  blackout:{icon:'◒',sub:'Loose cover · optional for every crop',empty:'No trays in blackout.',hint:'A separate, optional stretch stage.'},
   lights:{icon:'☼',sub:'Lit growth & harvest checks',empty:'No trays under lights.',hint:'Confirm when you move a tray to light.'}
 };
 let view='board', lastLiveView='board', weekOffset=0, weekAnchor=M.startOfWeek(now()), dragId=null, guidance=null, guidanceError='';
@@ -28,7 +28,8 @@ const esc=x=>String(x??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&
 const find=id=>store.current().cycles.find(c=>c.id===id);
 const guideText='No reliable standard window stored. Use the crop guide and what you observe.';
 const getCardName=c=>c.name===c.cropMethodSnapshot.cropName?'':c.cropMethodSnapshot.cropName;
-const flag=p=>p.current==='lights'&&['early','none'].includes(p.status)?'Growing under lights':labels[p.status];
+const flag=p=>p.current==='lights'&&['early','none'].includes(p.status)?'Growing under lights':
+  p.current==='blackout'&&p.status==='none'?'Inspect shoots':labels[p.status];
 const timestamp=(at,compact=false)=>`<time datetime="${esc(at)}">${esc(M.formatTime(at,compact))}</time>`;
 const harvestWeight=c=>c.harvest?.weightG!=null?`${c.harvest.weightG} g`:'';
 const harvestPhoto=(src,alt)=>`<img class="harvest-photo" src="${esc(src)}" alt="${esc(alt)}">`;
@@ -36,7 +37,8 @@ const estimateDates=window=>{
   const text=window.map(at=>dateShort.format(new Date(at)));
   return text[0]===text[1]?text[0]:text.join(' – ');
 };
-const currentWindow=p=>p.window?`${p.stageLabel}: ${p.estimated?'about ':''}${M.bandText(p.days)} after ${p.current==='lights'?'moving to light':p.current==='blackout'?'starting blackout':'sowing'} (${estimateDates(p.window)}).`:guideText;
+const currentWindow=p=>p.window?`${p.stageLabel}: ${p.estimated?'about ':''}${M.bandText(p.days)} after ${p.current==='lights'?'moving to light':p.current==='blackout'?'starting blackout':'sowing'} (${estimateDates(p.window)}).`:
+  p.current==='blackout'?'Use shoot condition to decide when to move to lights.':guideText;
 function status(message) { el('live-status').textContent=message; }
 function showError(message='') {
   const box=el('planner-error');
@@ -80,7 +82,8 @@ function plantArt(phase,big) {
 function card(c,instant,doc,position) {
   const p=M.projection(c,instant);
   const stage=p.current==='germination'?M.PHASE[p.current]:p.current==='blackout'?'Blackout':'Lights';
-  const sub=p.days?`${p.estimated?'Approx. '+p.stageLabel.toLowerCase():p.stageLabel} · ${M.bandText(p.days)}`:p.current==='lights'?'Harvest timing unavailable':'See crop guide';
+  const sub=p.days?`${p.estimated?'Approx. '+p.stageLabel.toLowerCase():p.stageLabel} · ${M.bandText(p.days)}`:
+    {lights:'Harvest timing unavailable',blackout:'Manual blackout'}[p.current] || 'See crop guide';
   const descriptionId='board-weight-'+position;
   const weightAttrs=`${trayAttrs(c,'weight-board')} aria-label="${esc('Weight check for '+c.name)}" aria-describedby="${descriptionId}"`;
   return `<article class="tray-card" data-drag-tray="${esc(c.id)}" draggable="${dragMedia.matches}">
@@ -271,7 +274,7 @@ const cuesList=cues=>cues.length?`<ul class="cues">${cues.map(c=>`<li>${esc(c)}<
 const decisionLabels={
   'blackout-recommended':'Short blackout recommended',
   'blackout-optional':'Blackout is optional',
-  'direct-light':'Skip extra blackout'
+  'direct-light':'Direct to lights recommended'
 };
 function germinationGuide(decision,heading=decision.nextStep==='direct-light'?'When to move to lights':'When to begin blackout') {
   const {days,window,lookFor,action,nextStep}=decision;
@@ -292,6 +295,7 @@ function stageHeights(p) {
 }
 function harvestDetail(p) {
   if (!M.ACTIVE.includes(p.current)) return '';
+  if (p.current==='blackout' && !p.window) return '<p>Record the move to lights to start the harvest estimate.</p>';
   if (!p.harvest) return '<p>Harvest estimate unavailable for this method or stage path.</p>';
   const condition=p.current==='lights'?'.':p.harvestMethod.sowDays
     ? ' from sowing. This estimate updates when you record the move to lights.'
@@ -344,7 +348,7 @@ function openTray(c,origin=null,backFocus=null) {
   const move=(label,dest,primary=false)=>button(label,'transition',`data-to="${dest}"`,primary?'pl-primary':'');
   const preferBlackout=decision?.nextStep==='blackout-recommended';
   const lights=move('Move to lights','lights',!preferBlackout);
-  const blackout=p.current==='germination'&&c.cropMethodSnapshot.canBlackout?move('Begin blackout','blackout',preferBlackout):'';
+  const blackout=p.current==='germination'?move('Begin blackout','blackout',preferBlackout):'';
   const actions=live?`<div class="pl-actions">
     ${p.current==='lights'?move('Mark harvested','harvested',true):preferBlackout?blackout+lights:lights+blackout}
     </div>`:'';
@@ -408,11 +412,17 @@ function propose(c,to,{source,trigger}) {
   };
   const [title,save]=naming[to];
   const cues=to==='ended'?[]:p.cues;
-  const actionText=to==='blackout'?(decision?'Record when you replaced the contact cover with a loose dark dome.':c.cropMethodSnapshot.blackoutUse):to==='lights'?'Record when you removed the cover and moved this tray into light.':
+  const actionText=to==='blackout'?(!decision&&c.cropMethodSnapshot.blackoutUse ||
+    'Record when you switched to a loose dark cover without weight.'):to==='lights'?'Record when you removed the cover and moved this tray into light.':
     to==='harvested'?'Record when you actually harvested. The tray and its records will move to History.':'This will retain the tray as Ended in History.';
+  const manualBlackout=to==='blackout'&&!c.cropMethodSnapshot.canBlackout;
+  const readiness=manualBlackout?`<strong>Before blackout</strong>
+    <p>${decision?esc(decision.lookFor):'Begin once shoots have emerged and anchored across most of the tray.'}</p>${decision?'':cuesList(cues)}`:
+    decision?germinationGuide(decision,to==='lights'?'Before you uncover':undefined):
+      `<strong>${p.window?'Typical readiness window':'Readiness check'}</strong><p>${esc(currentWindow(p))}</p>${cuesList(cues)}`;
   showDialog('transition',`${title}: ${c.name}?`,fromTray?'Record an actual event':'Proposed move',
     `<p>${esc(actionText)}</p><form>
-    ${to!=='ended'?`<div class="detail-info">${decision?germinationGuide(decision,to==='lights'?'Before you uncover':undefined):`<strong>Typical readiness window</strong><p>${esc(currentWindow(p))}</p>${cuesList(cues)}`}
+    ${to!=='ended'?`<div class="detail-info">${readiness}
     ${heightGuide(to==='lights'?p.stageHeights.find(h=>h.phase===p.current):p.height)}
     ${p.status==='early'||p.status==='past'?'<p class="pl-help">This phase is outside the typical window now. You can still record the action you took.</p>':'<p class="pl-help">Typical, not a guarantee. Use what you observe.</p>'}</div>`:''}
     ${timeFields('Actual event time',now(),Date.parse(p.entry.occurredAt))}
